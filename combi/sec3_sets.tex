@@ -1,0 +1,220 @@
+\newpage\section{Sets}
+
+
+\subsection{Lemmas}
+
+
+\lem{}{Let $ S $ be a set with $ n $ elements, and let $ F $ be a family of subsets of S such that for any pair $ A, B $ in $ F $, $ A \cap B \not= \varnothing $. Then $ |F| \leq 2^{n-1} $ .}\label{lemma:sets_lemma_1}
+
+\begin{enumerate}
+    \iref{lemma:sets_lemma_1_1}{Iran TST 2008 D3P1}{}
+\end{enumerate}
+
+
+\theo{https://en.wikipedia.org/wiki/Erdos-Ko-Rado_theorem}{Erdos Ko Rado theorem}{Suppose that $ A $ is a family of distinct subsets of $\{ 1 , 2 \dots n \}$ such that each subset is of size $ r $ and each pair of subsets has a nonempty intersection, and suppose that $ n \geq 2r $. Then the number of sets in $ A $ is less than or equal to the binomial coefficient \[\binom {n-1}{r-1}\]}
+
+
+
+\lem{}{Let $ S $ be a set with $ n $ elements, and let $ F $ be a family of subsets of $ S $ such that for any pair $ A, B $ in $ F $, $ S $ is not contained by $ A \cup B $. Then $ |F| \leq 2^{n-1} $.}\label{lemma:sets_lemma_2}
+
+
+
+\lem{Kleitman lemma}{A set family $F$ is said to be downwards closed if the following holds: if $X$ is a set in $F$, then all subsets of $X$ are also sets in $F$. Similarly, $F$ is said to be upwards closed if whenever $X$ is a set in $F$, all sets containing $X$ are also sets in $F$. Let $F_1$ and $F_2$ be downwards closed families of subsets of $S = \{1, 2, ..., n\}$, and let $F_3$ be an upwards closed family of subsets of $S$. Then we have
+
+    \begin{align}
+        |F_1 \cap F_2| &\geq \frac{|F_1| \cdot |F_2|}{2^n}\\
+        |F_1 \cap F_3| &\leq \frac{|F_1| \cdot |F_3|}{2^n} 	 
+\end{align}}\label{lemma:sets_lemma_3_Kleitman}
+
+
+
+
+\lem{}{Let $ S $ be a set with $ n $ elements, and let $ F $ be a family of subsets of $ S $ such that for any pair $ A, B $ in $ F $, $ A \cap B \not= \varnothing $ and $ A \cap B \not= S $. Then $ |F| \leq 2^{n-2} $.}\label{lemma:sets_lemma_4}
+
+\solu{Using the sets in \hrf{lemma:sets_lemma_1}{lemma 1} and \hrf{lemma:sets_lemma_1}{lemma 2}, defining upwards and downwards sets like in \hrf{lemma:sets_lemma_3_Kleitman}{Kleitman's Lemma}.}
+
+
+
+\lem{The Sunflower Lemma}{A sunflower with $ k $ petals and a core $ X $ is a family of sets $ S_1, S_2,\dots, S_k $ such that $ S_i\cap S_j = X $ for each $ i \neq j $. (The reason for the name is that the Venn diagram representation for such a family resembles a sunflower.) The sets $ S_i \setminus X $ are known as petals and must be nonempty, though $ X $ can be empty. Show that if $ F $ is a family of sets of cardinality $ s $, and $ |F| > s!(k-1)^s $, then $ F $ contains a sunflower with $ k $ petals.}\label{problem:induction_type1_20}\label{problem:extreme_object_10}
+
+
+\solu{Applying induction and considering the best case where $ |X|=0 $}
+
+
+\newpage
+\subsection{Extremal Set Theory}
+
+\href{http://math.mit.edu/~cb_lee/18.318/lecture8.pdf}{MIT 18.314 Lecture-8}
+
+
+\theo{}{Mirsky Theorem}{A set $ S $ with a chain of height $ h $ can’t be partitioned into $ t $ anti-chains if $ t < h $. In other words, the minimum number of sets in any anti-chain partition of $ S $ is equal to the maximum height of the chains in $ S $. (And Vice Versa)}\label{theorem:mirsky_theorem}
+
+
+\theo{}{}{In any poset, the largest cardinality of an antichain is at most the smallest cardinality of a chain-decomposition of that poset.}
+
+
+\theo{}{Dilworth's Theorem}{Let $ P $ be a poset. Then there exist an antichain $ A $ and a chain decomposition $ \mathcal{C} $ of $ P $ such that $ |A| = |\mathcal{C}| $}
+
+
+
+\theo{http://mathworld.wolfram.com/Erdos-SzekeresTheorem.html}{Erdos-Szekeres Theorem}{Any sequence of $ ab+1 $ real numbers contains either a monotonically decreasing subsequence of length $ a+1 $ or a monotonically increasing subsequence of length $ b+1 $. The more useful case is when $ a=b=n $. }
+
+
+
+\prob{}{}{E}{Let $ n\ge 1 $ be an integer and let $ X $ be a set of $ n^2+1 $ positive integers such that in any subset of $ X $ with $ n+1 $ elements there exist two elements $ x\neq y $ such that $ x|y $. Prove that there exists a subset $ \{x_1, x_2\dots x_{n+1} \in X $ such that $ x_i|x_{i+1} $ for all $ i=1, 2, \dots n $.}
+
+
+
+
+\newpage
+\subsection{Problems}
+
+\prob{https://artofproblemsolving.com/community/c6h148835p841269}{USA TST 2005 P1}{E}{
+    Let $ n $ be an integer greater than $ 1 $. For a positive integer
+    $ m $ , let $ S_{m}= \{ 1,2,\ldots, mn\} $. Suppose that there exists a $
+    2n $ -element set $ T $ such that
+
+    \begin{enumerate}
+        \item each element of $ T $ is an $ m $ -element subset of $ S_{m} $
+        \item each pair of elements of $ T $ shares at most one common element
+        \item each element of $ S_{m} $ is contained in exactly two elements of $ T $
+    \end{enumerate}
+
+Determine the maximum possible value of $ m $ in terms of $ n$.
+\index[cat]{Sets!Max-set with property!USA TST 2005 P1}
+\index[strat]{Double Counting!USA TST 2005 P1}
+}
+\label{problem:double_counting_5}
+
+\solu{We use double counting to find the ans, after that the rest is easy.}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h206650p1136980}{Iran TST 2008 D3P1}{E}{
+    Let $S$ be a set with $n$ elements, and $F$ be a family of subsets of $S$ with
+    $ 2^{n-1}$ elements, such that for each $A,B,C\in F$, $A\cap B\cap C$ is not
+    empty. Prove that the intersection of all of the elements of $F$ is not empty.
+
+    \index[cat]{Sets!Local!Iran TST 2008 D3P1}
+    \index[strat]{Induction!Iran TST 2008 D3P1}
+}\label{lemma:sets_lemma_1_1}\label{problem:induction_type1_18}
+
+\solu{Using Induction with \hrf{lemma:sets_lemma_1}{this} lemma.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6t309f6h1538018}{Romanian TST
+2016 D1P2}{EM}{
+Let $n$ be a positive integer, and let $S_1, S_2,\dots S_n$ be
+a collection of finite non-empty sets such that 
+\[\sum_{1\leq i<j\leq n}{\frac{|S_i \cap S_j|}{|S_i||S_j|}} <1\]
+
+Prove that there exist pairwise distinct elements $x_1, x_2\dots x_n$ such that $x_i$ is a member of $S_i$ for each index $i$.
+
+\index[cat]{Sets!Local!Romanian TST 2016 D1P2}
+\index[strat]{Focus!Romanian TST 2016 D1P2}
+\index[strat]{Induction!Romanian TST 2016 D1P2}
+}
+\label{problem:induction_type1_25}\label{problem:forget_and_focus_7}
+
+\solu{The Inductive proof reduces the problem to
+    \hrf{problem:induction_type1_26}{American Mathematical Monthly problem
+E2309}}
+
+\solu{The other approach is to focus on the given weird condition, and interpolate it to something nice, like probabilistic condition.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h225275p1252232}{American Mathematical Monthly E2309}{EM}{If $ A_1$, $ A_2$,\dots $ A_n$ are $ n$ nonempty subsets of the set $ \left\{1,2,...,n - 1\right\}$, then prove that
+
+\[\sum_{1\leq i < j\leq n}\frac {\left|A_i\cap A_j\right|}{\left|A_i\right|\cdot\left|A_j\right|}\geq 1\]
+
+\index[cat]{Sets!Subsets of $[N]$!American Mathematical Monthly E2309}
+}
+\label{problem:induction_type1_26}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h362426p1986928}{CGMO 2010
+    P1}{E}{Let $n$ be an integer greater than two, and let $A_1,A_2, \cdots ,
+    A_{2n}$ be pairwise distinct subsets of $\{1, 2, \dots n\}$. Determine the maximum
+    value of
+    \[\sum_{i=1}^{2n} \dfrac{|A_i \cap A_{i+1}|}{|A_i| \cdot |A_{i+1}|}\]
+    Where $A_{2n+1}=A_1$ and $|X|$ denote the number of elements in $X.$
+
+    \index[cat]{Sets!Subsets of $[N]$!CGMO 2010 P1}
+}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h17340p119108}{ISL 2002 C5}{M}{
+    Let $r\geq2$ be a fixed positive integer, and let $F$ be an infinite
+    family of sets, each of size $r$, no two of which are disjoint. Prove that
+    there exists a set of size $r-1$ that meets each set in $F$.
+
+\href{https://artofproblemsolving.com/community/c6h17340p7934669}{HMMT 2016
+Team Round}:
+    Fix positive integers $r>s$, and let $\mathcal F$ be an infinite
+    family of sets, each of size $r$, no two of which share fewer than $s$
+    elements. Prove that there exists a set of size $r-1$ that shares at least $s$
+    elements with each set in $F$.
+
+\index[cat]{Sets!Local!ISL 2002 C5}
+\index[strat]{Induction!ISL 2002 C5}
+\index[strat]{Focus!ISL 2002 C5}
+\index[strat]{Adding new stuffs!ISL 2002 C5}
+
+}\label{problem:induction_type1_31}
+
+
+
+
+\solu{[Focus on a set] If we take an arbitrary set, we can say that there
+exists infinitely many sets $ \in \mathbb{F} $ which includes a fixed element
+from our test set. If we do this argument for $ r-1 $ times, we get a set $ X
+$ of $ r-1 $ elements, and an infinte family of sets that contains $ X $
+completely. At this point the problem is trivial.}
+
+
+\solu{[Adding Elements]Since it's tricky to work with one family, why not introduce another family, like the second monk. \hrf{http://artofproblemsolving.com/community/c6h17340p3251745}{This} solution generalizes the problem as such.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h57290p352698}{ISL 1988 P10}{M}{
+    Let $ N = \{1,2 \ldots, n\}, n \geq 2. $ 
+
+    A collection $ F = \{A_1, \ldots,A_t\} $ of subsets 
+    $ A_i \subseteq N, $  $ i = 1, \ldots, t, $ is said to be
+    \textbf{separating}, if for every pair $ \{x,y\} \subseteq N, $ there is a set $ A_i
+    \in F $ so that $ A_i \cap \{x,y\} $ contains just one element. 
+
+    $ F $ is said to be \textbf{covering}, if every element of $ N $ is contained 
+    in at least one set $ A_i \in F. $ 
+
+    What is the smallest value $ f(n) $ of $ t, $ so there is a set $
+    F = \{A_1, \ldots, A_t\} $ which is simultaneously separating and covering.
+
+    \index[cat]{Sets!Subsets of $[N]$!ISL 1988 P10}
+    \index[strat]{Bijection!Binary Representation!ISL 1988 P10}
+} \label{problem:binary_2}
+
+
+\solu{[Binary Representation]Using \hrf{binary}{Binary} Representations for the elements as in or not in, we get an easy bijection.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h530095p3024272}{Iran TST 2013 D1P2}{E}{
+    Find the maximum number of subsets from $\left \{ 1,...,n \right \}$ such
+    that for any two of them like $A,B$ if $A\subset B$ then $\left | B-A
+    \right |\geq 3$. (Here $\left | X \right |$ is the number of elements of
+    the set $X$.)
+    \index[cat]{Sets!Max-set with property!Iran TST 2013 D1P2}
+    \index[strat]{Roots of unity filtering!Iran TST 2013 D1P2}
+    \index[strat]{Induction!$n$ is or isn't!Iran TST 2013 D1P2}
+}
+
+
+\solu{By partitioning the maximum set of subsets into groups which contain the number $n$ and which don't and \href{induction}{Induction} on $n$ we can show that the maximum number of subset is
+\[\frac{2^{n}-(-1)^{n}}{3}\]. }

@@ -1,0 +1,82 @@
+\graphicspath{{Pics/}}
+
+\newpage\section{Mixtilinear--Curvilinear--Normal In-Excricles}
+	
+	
+	
+	\den{Mixtilinear Circle}{Let $\triangle ABC$ be an ordinary triangle, $I$ is its incenter, $D$ is the touch points of the incenter with $BC$.	Let $\omega$ be the mixtilinear incircle. Let it touch $CA, AB$ at $E, F$. Furthermore, let $\omega\cap\odot ABC\equiv T$. Let $M_a, M_b, M_c$ be the midpoints of the smaller arcs $BC, CA, AB$, and $M_A, M_B, M_C$ be the midpoints of the major arcs $BC, CA, AB$.}
+	
+	
+		\fig{1}{Mixt1}{Mixtilinear Incircle: Construction}
+	
+		\fig{1}{Mixt2}{Mixtilinear Incircle: Circlicity Lemmas}
+		
+		
+		\solu{List of small proofs
+			
+		\begin{enumerate}
+			\item $ E, I , F $ are collinear. Consider the circle $ TI'EC $ and do some angle chasing.
+			\item $ T, I, M_A $ are collinear. Consider the circle $ TIEC $ and apply reim's theorem.
+	\end{enumerate}}
+	
+	
+	\lem{}{$\frac{TM_c}{M_cA}=\frac{TM_b}{M_bA}$, in other words, the bundle $ (A, T; M_b, M_c) $ is harmonic. And $ TA $ is a symmedian of $ \triangle TM_cM_b $.}\label{lemma:mixtilinear_lemma_harmonic_with_arc_midpoints}
+	
+	
+	
+	\lem{}{Let $X$ be a variable point on the arc $AB$, and let $O_{1}$ and $O_{2}$ be the incenters of the triangles $CAX$ and $CBX$. Then $X, O_{1}, O_{2}$ and $T$ lie on a circle.}\label{lemma:two_incenters_of_a_cyclic_quad_cyclic_with_mixtilinear_touchpoint}
+	
+	
+	\solu{Using similarity and \hrf{lemma:mixtilinear_lemma_harmonic_with_arc_midpoints}{this} lemma.}
+	
+		\fig{.6}{incenters_cyclic_with_mixtilinear_touchpoint}{The two incenters are cyclic with $ T, X $}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h19777p131844}{ISL 1999 G8}{M}{Given a triangle $ABC$. The points $A$, $B$, $C$ divide the circumcircle $\Omega$ of the triangle $ABC$ into three arcs $BC$, $CA$, $AB$. Let $X$ be a variable point on the arc $AB$, and let $O_{1}$ and $O_{2}$ be the incenters of the triangles $CAX$ and $CBX$. Prove that the circumcircle of the triangle $XO_{1}O_{2}$ intersects the circle $\Omega$ in a fixed point.}
+	
+	\solu{This is actually \hrf{lemma:two_incenters_of_a_cyclic_quad_cyclic_with_mixtilinear_touchpoint}{this} lemma.}
+
+
+
+	\prob{https://artofproblemsolving.com/community/c6t48f6h1508805_nice_but_not_hard}{AoPS1}{H}{Let $ABCD$ be a quadrilateral inscribed in a circle, such that the inradius of $\triangle ABC$ and $ACD$ are the same. Let $T$ be the touchpoint of $A$-mixtilinear incircle of the triangle $ABD$ with $\odot ABCD$. Let $I_1,I_2$ be the incenters of the triangles $ABC, ACD$ respectively. Show that $I_1I_2$ and the tangents of $A,T$ wrt $\odot ABCD$ are concurrent.}
+
+	\solu{The main problem is how to relate the two mixtilinear touchpoints to the two incenters. But with our \hrf{lemma:two_incenters_of_a_cyclic_quad_cyclic_with_mixtilinear_touchpoint}{mixtilinear lemma}, we can do that easily.}
+
+
+		\fig{.6}{c6t48f6h1508805}{}
+
+	
+	\prob{https://artofproblemsolving.com/community/c6h1570826p9686418}{Generalization of Mixtilinear Incirlce}{E}{Consider triangle $ABC$ and let $M, N$ are midpoints of arcs $AB, AC$. Let $E, F$ on $AB, AC$ such that $EF\parallel MN$. Let $EM, FN$ meet $(ABC)$ second time at $P, Q$. Consider two intersection points $E', F'$ of $(EFPQ)$ with $AB, AC$ different from $E, F$. Then $EF'\cap E'F$ is the incenter of $ABC$.}
+	
+	
+	
+	\prob{}{}{}{Let the $ B $-mixtilinear and $ C $-mixtilinear circles touch $ BC $ at $ X_B, X_C $ respectively. Then $ X_B, X_C, T, M_a $ lie on a circle}
+	
+	
+	
+	\prob{}{Taiwan TST 2014 T3P3}{EH}{Let $M$ be any point on the circumcircle of $\triangle ABC$. Suppose the tangents from $M$ to the incircle meet BC at two points $X_1$ and $X_2$. Prove that $T, M, X_1, X_2$ lie on a circle.}
+	
+
+
+	\prob{}{Archer - EChen M1P3}{E}{Let the incenter  touch $ BC $ at $ D $. Let $ AI\cap BC = E,\ AI\cap \odot ABC = F $. Let $ \odot DEF \cap \odot ABC = X,\ \odot DEF \cap \odot (I_a) = S_1, S_2 $. Prove that $ AX $ goes through either $ S_1 $ or $ S_2 $.}
+	
+		\figdf{.25}{Archer_EChen_M1P3}{}
+		
+	
+	
+	
+	\den{Curvilinear Incircle}{Let $ ABCD $ be a cyclic quadrilateral. $ AC $ meets $ BD $ at $ X $. We call the circle that touches $ AX, BX $ and the circumcircle from the inside a curvilinear incircle.}
+	
+	
+	\lem{}{Let the previously defined curvilinear incircle touch $ AX, BX $ at $ P, Q $ resp. And let the incircle of $ \triangle ABD $ be $ I $. Then $ P, Q, I $ are collinear.}
+		
+		\fig{.5}{curvi_lem_1}{}
+		
+		\solu{Notice that this is similar to the circles $ TIEC $ and $ TIFB $ in the mixtilinear circle figures.}
+		
+		
+	\theo{http://forumgeom.fau.edu/FG2003volume3/FG200325.pdf}{Sawayama and Thebault's theorem}{Through the vertex $ A $ of a triangle $ ABC $, a straight line $ AD $ is drawn, cutting the side $ BC $ at $ D $. $ I $ is the center of the incircle of triangle $ ABC $. Let $ P $ be the center of the circle which touches $ DC , DA $ at $ E,F $, and the circumcircle of $ ABC $, and let $ Q $ be the center of a further circle which touches $ DB,DA $ in $ G,H $ and the circumcircle of $ ABC $. Then $ P,I $ and $ Q $ are collinear}
+
+	
+	
+

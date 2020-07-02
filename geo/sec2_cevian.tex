@@ -1,0 +1,115 @@
+\newpage\section{Cevian and Circumcevian Triangles}
+	
+	\subsection{Circumcevian Triangle}
+	
+		
+
+		\theo{https://nguyenvanlinh.files.wordpress.com/2011/12/hagge-circles-revisited.pdf}{Hagge's circles}{Let $ P $ be a point on the plane of $ \triangle ABC $, let $ \Omega $ be the circumcircle. Let $ A_1, B_1, C_1 $ be the intersections of $ AP, BP, CP $ with $ \Omega $ for the second time. Let $ A_2, B_2, C_2 $ be the reflections of $ A_1, B_1, C_1 $ wrt $ BC, CA, AB $. Prove that $ H, A_2, B_2, C_2 $ lie on a circle. This circle is called the \textbf{$ \boldsymbol{P} $-Hagge's Circle}.}
+	
+			\solu{Either using the dual of Hagge's Circle, or using the reflection points of $ A, B, C $ wrt the isogonal conjugate of $ P $. And using Lemma 1.1 to finish.}
+	
+	
+			\fig{.6}{P-HaggeCircle}{P-Hagge Circle}
+	
+	
+	
+		\coro{$ \triangle A_1B_1C_1 \sim \triangle A_2B_2C_2 $.}
+	
+			\solu{Straightforward use of Lemma 1.2.}
+	
+		\coro{If $ AH, BH, CH $ meet $ \odot A_2B_2C_2H $ at $ A_3, B_3, C_3 $, then $ A_2A_3, B_2B_3, C_2B_3 $ meet at $ P $.}
+	
+			\solu{Simple angle chase and similarity transformation.}
+	
+		\coro{If $ I $ is the incenter of $ \odot A_2B_2C_2 $, $ K $ is the reflection of $ H $ over $ I $, $ AK, BK, CK $ meet $ \odot A_2B_2C_2 $ at $ A_4, B_4, C_4 $, then $ A_4A_3, B_4B_3, C_4B_3 $ are concurrent.}
+	
+			\solu{Simple angle chasing and trig-ceva.}
+	
+	
+		
+
+
+		\prob{https://artofproblemsolving.com/community/c6h97484p550561}{China TST D2P2, Dual of the Hagge's Circle theorem}{M}{Let $\omega$ be the circumcircle of $\triangle{ABC}$. $P$ is an interior point of $\triangle{ABC}$. $A_{1}, B_{1}, C_{1}$ are the intersections of $AP, BP, CP$ respectively and $A_{2}, B_{2}, C_{2}$ are the symmetrical points of $A_{1}, B_{1}, C_{1}$ with respect to the midpoints of side $BC, CA, AB$. Show that the circumcircle of $\triangle{A_{2}B_{2}C_{2}}$ passes through the orthocenter of $\triangle{ABC}$. Further proof that if this circle's center is $ O_1 $, then $ HOPO_1 $ is a parallelogram.}
+	
+			\solu{Construct Parallelograms. You have to prove two angles are equal. Reflection the smaller trig wrt one of the midpoints.}
+	
+	
+	
+		
+
+
+		\prob{https://artofproblemsolving.com/community/c6h407514p2276387}{China TST 2011, Quiz 2, D2, P1}{E}{Let $AA',BB',CC'$ be three diameters of the circumcircle of an acute triangle $ABC$. Let $P$ be an arbitrary point in the interior of $\triangle ABC$, and let $D,E,F$ be the orthogonal projection of $P$ on $BC,CA,AB$, respectively. Let $X$ be the point such that $D$ is the midpoint of $A'X$, let $Y$ be the point such that $E$ is the midpoint of $B'Y$, and similarly let $Z$ be the point such that $F$ is the midpoint of $C'Z$. Prove that triangle $XYZ$ is similar to triangle $ABC$.}
+	
+			\solu{A straightforward application of Lemma 6.1 using the $ O $-Hagge's Circle.}
+	
+		
+
+
+
+
+	
+	\newpage\subsection{Cevian Triangle}
+	
+	
+	
+	
+	
+		
+
+
+		\lem{Isogonal Conjugate Lemma}{Let a circle $ \omega $ meet the sides of triangle $ ABC $ at $ A_1, A_2;\ B_1, B_2;\ C_1, C_2 $. Let $ P_1, P_2 $ be the miquel points of $ ABC $ wrt $ A_1B_1C_1, A_2B_2C_2 $ resp. Then $ P_1, P_2 $ are isogonal conjugates.}
+	
+			\fig{1}{IsoConjuCirclesLemma1}{The two round points are isogonal conjugates.}
+	
+	
+		
+		\theo{}{Terquem's Cevian Theorem}{Let a circle $ \omega $ meet the sides of triangle $ ABC $ at $ A_1, A_2;\ B_1, B_2;\ C_1, C_2 $. If $ AA_1, BB_1, CC_1 $ are concurrent, then so are $ AA_2, BB_2, CC_2 $}.		
+		
+	
+	
+		
+
+		\theo{https://artofproblemsolving.com/community/c3103h1052426_mannheim_circles}{Mannheim's Theorem}{Let $ABC$ be a triangle, and let $L,M,N$ be points on $BC,CA,AB$ respectively. Let $A', B', C'$ be points on $(AMN), (BNL), (CLM)$, and denote $K \equiv AA' \cap BB'$. Then if $K \in CC'$, $A',B',C',K$ are concyclic.}\label{mannheim_theorem}
+	
+			\fig{1}{MannheimTheorem}{Mannheim's Theorem}
+	
+	
+		
+
+		\theo{mannheim_theorem}{Mannheim's Theorem's Converse}{Let $ABC$ be a triangle, and let $L,M,N$ be points on $BC,CA,AB$ respectively. Let $A', B', C'$ be points on $(AMN), (BNL), (CLM)$, and denote $K \equiv AA' \cap BB'$. Then if $A',B',C',K$ are concyclic, $C' \in CK$.}
+	
+	
+		
+
+		\theo{}{Brocard Points}{Brocard Points are points inside a triangle such that \[ \angle PAB=\angle PBC=\angle PCA=\omega \] and \[ \angle QCB=\angle QBA=\angle QAC = \omega. \]}
+	
+			\fig{1}{BrocardPoints}{Brocard Points}
+	
+	
+	
+	
+		
+
+
+		\prob{http://www.artofproblemsolving.com/Forum/blog.php?u=214539&b=106944}{Rioplatense Olympiad 2013 Problem 6}{E}{Let $ABC$ be an acute-angled scalene triangle, with centroid $G$ and orthocenter $H$. The circle with diameter $AH$ cuts the circumcircle of $BHC$ at $A'$, distinct from $H$. Analogously define $B', C'$. Prove that $A', B', C', G$ are concyclic.}
+	
+	
+		
+
+
+		\prob{https://artofproblemsolving.com/community/c6h1274755p6680026}{Iran 3rd Round Training 2016}{E}{$ABC$ is an acute triangle and $H,O$ are its orthocenter and circumcenter respectively. If $AO,BO,CO$ intersect $BH,CH,AH$ at $X,Y,Z$ respectively,then prove that $H,X,Y,Z$ lie on a circle}
+	
+			\solu{Using Brocard Point}
+			\solu{Using Mannheim's Theorem}
+			
+			
+			
+			
+		
+
+		\theo{https://en.wikipedia.org/wiki/Jacobi's_theorem_(geometry)}{Jacobi's Theorem}{Suppose that $ D, E, F $ are points such that $ AE, AF $ are isogonal wrt $ \angle BAC $. Similarly with $ D, E, F $. Then $ AD, BE, CF $ are concurrent.}
+	
+
+
+
+	

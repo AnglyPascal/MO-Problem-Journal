@@ -1,0 +1,79 @@
+\graphicspath{{Pics/combi/coloring/}}
+
+
+\newpage\subsection{Coloring Problems}
+
+
+	\prob{https://artofproblemsolving.com/community/c6h1424942p8024575}{EGMO 2017 P2}{M}{Find the smallest positive integer $ k $ for which there exists a colouring of the positive integers $ \mathbb{Z}_{>0} $ with $ k $ colours and a function $ f:\mathbb{Z}_{>0}\to \mathbb{Z}_{>0} $ with the following two properties:
+
+	\begin{enumerate}
+
+		\item For all positive integers $ m,n $ of the same colour, $ f(m+n)=f(m)+f(n). $
+		\item There are positive integers $ m,n $ such that $ f(m+n)\ne f(m)+f(n). $
+
+	\end{enumerate}
+
+	In a colouring of $ \mathbb{Z}_{>0} $ with $ k $ colours, every integer is coloured in exactly one of the $ k $ colours. In both $ (i) $ and $ (ii) $ the positive integers $ m,n $ are not necessarily distinct.}\label{problem:extremal_case_whole_4}
+
+		\solu{Firstly a modular coloring shows that $ 1<k\leq 2 $. For $ k=2 $ we do some trivial case works.}
+
+
+
+	\prob{https://artofproblemsolving.com/community/c6h17337p118712}{ISL 2002 C2}{E}{For $n$ an odd positive integer, the unit squares of an $n\times n$ chessboard are coloured alternately black and white, with the four corners coloured black. A it tromino is an $L$-shape formed by three connected unit squares. For which values of $n$ is it possible to cover all the black squares with non-overlapping trominos? When it is possible, what is the minimum number of trominos needed?}\label{problem:bijection_12}
+
+		\solu{First find the first ans and a configuration that works. Then guess the second ans, and see from where that might come from, usually these anses come from some special set of problems, where bijection is applicable.}
+
+
+
+	\prob{http://codeforces.com/gym/101954/problem/G}{Codeforces 101954/G}{E/H}{Two Knights are given on a chessboard, one black one white. Which player has a winning possibility?}\label{problem:coloring_4}
+
+		\solu{A knight's move always changes the color of the cell.}
+
+
+	\prob{https://artofproblemsolving.com/community/c6h417987p2356844}{ARO 1993 P10.4}{M}{Thirty people sit at a round table. Each of them is either smart or dumb. Each of them is asked: "Is your neighbor to the right smart or dumb?" A smart person always answers correctly, while a dumb person can answer both correctly and incorrectly. It is known that the number of dumb people does not exceed $ F $. What is the largest possible value of $ F $ such that knowing what the answers of the people are, you can point at at least one person, knowing he is smart?}\label{problem:extreme_object_8}
+	
+		\solu{We see that the strings of truth only exist either when all people are dumb or the last one is the truthful one. Now we take the longest such string, and this sting has to be of the second kind. To prove this, we use bounding with the given constraint.}
+
+
+	\prob{https://artofproblemsolving.com/community/c6h1389041p7736715}{Tournament of Towns 2015S S6}{E}{An Emperor invited $2015$ wizards to a festival. Each of the wizards knows who of them is good and who is evil, however the Emperor doesn’t know this. A good wizard always tells the truth, while an evil wizard can tell the truth or lie at any moment. The Emperor gives each wizard a card with a single question, maybe different for different wizards, and after that listens to the answers of all wizards which are either “yes” or “no”. Having listened to all the answers, the Emperor expels a single wizard through a magic door which shows if this wizard is good or evil. Then the Emperor makes new cards with questions and repeats the procedure with the remaining wizards, and so on. The Emperor may stop at any moment, and after this the Emperor may expel or not expel a wizard. Prove that the Emperor can expel all the evil wizards having expelled at most one good wizard.}
+	
+		\solu{There is only one problem with the cyclic arrangement, that is what if all the answers are `yes'? We get rid of this problem by trying small case with $ n=3 $ and trying the most simple way to connect this strategy to any $ n $. Simplicity is the key.}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h214707p1187174}{ISL 2007 C1}{E}{Let $ n > 1$ be an integer. Find all sequences $ a_1, a_2, \ldots a_{n^2 + n}$ satisfying the following conditions:
+		
+		\begin{enumerate}
+			\item $ a_i \in \left\{0,1\right\} $ for all $ 1 \leq i \leq n^2 + n $
+			\item for all $ 0 \leq i \leq n^2 - n $
+			\[a_{i + 1} + a_{i + 2} + \ldots + a_{i + n} < a_{i + n + 1} + a_{i + n + 2} + \ldots + a_{i + 2n}\]
+	\end{enumerate}}
+	
+		\solu{$ n+1 $ blocks of $ n $, each strictly greater than the previous one. means the sums of the blocks have to be $ 0, 1, \dots n $. construction's easy from examples of $ 2, 3 $.}
+	
+
+
+	\prob{https://artofproblemsolving.com/community/c6h1480692p8639256}{ISL 2016 C2}{E}{Find all positive integers $n$ for which all positive divisors of $n$ can be put into the cells of a rectangular table under the following constraints:
+		each cell contains a distinct divisor;\\
+		the sums of all rows are equal; and\\
+		the sums of all columns are equal.}
+	
+		\solu{Check the sizes.}
+		
+		
+		
+	\prob{https://artofproblemsolving.com/community/c6h214709p1187179}{ISL 2007 C3}{E}{Find all positive integers $ n$ for which the numbers in the set $ S = \{1,2, \ldots,n \}$ can be colored red and blue, with the following condition being satisfied: The set $ S \times S \times S$ contains exactly $ 2007$ ordered triples $ \left(x, y, z\right)$ such that:
+	\begin{enumerate}
+		\item the numbers $ x$, $ y$, $ z$ are of the same color
+		\item the number $ x + y + z$ is divisible by $ n$.
+	\end{enumerate}}
+
+		\solu{Trying out small cases, noticing patter. It doesn't matter `which' numbers are red, but `how' many numbers are red.}
+		
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h1113185p5083550}{ISL 2014 C4}{EM}{Construct a tetromino by attaching two $2 \times 1$ dominoes along their longer sides such that the midpoint of the longer side of one domino is a corner of the other domino. This construction yields two kinds of tetrominoes with opposite orientations. Let us call them $S$- and $Z$-tetrominoes, respectively.\\
+		
+	Assume that a lattice polygon $P$ can be tiled with $S$-tetrominoes. Prove that no matter how we tile $P$ using only $S$- and $Z$-tetrominoes, we always use an even number of $Z$-tetrominoes.}
+		
+		\solu{So after we are determined to do coloring, it is not very hard to come up with a coloring. Start from stracth type coloring. Color one square at a time, this might take several tries. 
+			\figdf{.5}{ISL2014C4}{}}

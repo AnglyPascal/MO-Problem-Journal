@@ -1,0 +1,22 @@
+\subsection{2n Points}	
+	
+	\prob{https://artofproblemsolving.com/community/c5h1434584p8117190}{USAMO 2017 P4}{M}{Let $ P_1 $ , $ P_2 $ , $ \dots $ , $ P_{2n} $ be $ 2n $ distinct points on the unit circle $ x^2+y^2=1 $ , other than $ (1,0) $. Each point is colored either red or blue, with exactly $ n $ red points and $ n $ blue points. Let $ R_1 $ , $ R_2 $ , $ \dots $ , $ R_n $ be any ordering of the red points. Let $ B_1 $ be the nearest blue point to $ R_1 $ traveling counterclockwise around the circle starting from $ R_1 $. Then let $ B_2 $ be the nearest of the remaining blue points to $ R_2 $ travelling counterclockwise around the circle from $ R_2 $, and so on, until we have labeled all of the blue points $ B_1, \dots, B_n $. Show that the number of counterclockwise arcs of the form $ R_i \to B_i $ that contain the point $ (1,0) $ is independent of the way we chose the ordering $ R_1, \dots, R_n $ of the red points.}\label{problem:induction_type1_15}
+	
+		\solu{As the statement is saying that the condition is true for every positive integer $ n $, can we try induction? Which part of the condition makes the problem challenging? Obviously the circle condition and the $ (1, 0) $ point. So Lets remove a ``problematic'' pair $ R_t, B_t $. We encounter some problems, but we can pull it out of there.}
+	
+	
+	
+	
+	\prob{}{SMMC}{}{Let $ 2n $ points be uniformly distributed on a circle. Paint $ n $ of them red, and $ n $ of them blue. Let $ B $ be the list of distances between each pair of blue points. Let $ R $ be the list of distances between each pair of blue points. Prove that $ A=B $}
+	
+	
+	\prob{www.hehe.com}{Putnam 1979}{E}{Let $ A $ be a set of $ 2n $ points in the plane, no three of which are collinear, $ n $ of them are colored red and the other blue. Prove that there are $ n $ line segments, no two with a point in common, such that the endpoints of each segment are points of $ A $ having different colors.}\label{problem:convex_hull_1}\label{Putnam_1979}
+	
+		\solu{Strong induction, and a way to divide the points into two sets with the same number of red and blue points. Travel through the points around a certain point and keep track of the number of red and blue points.}
+		
+		
+		
+	\prob{https://artofproblemsolving.com/community/c6h34319p213018}{USAMO 2005 P5}{E}{Let $n$ be an integer greater than 1. Suppose $2n$ points are given in the plane, no three of which are collinear. Suppose $n$ of the given $2n$ points are colored blue and the other $n$ colored red. A line in the plane is called a balancing line if it passes through one blue and one red point and, for each side of the line, the number of blue points on that side is equal to the number of red points on the same side. Prove that there exist at least two balancing lines.}\label{problem:convex_hull_3}
+		
+		\solu{Using the same idea as in \hrf{Putnam_1979}{this} problem. }
+		

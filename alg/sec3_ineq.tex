@@ -1,0 +1,440 @@
+\graphicspath{{Pics/}}
+
+\newpage\section{Inequalities}
+
+
+	\tcbset{
+		colback=black!2!white,
+		colframe=black!70!white,
+		boxrule=0.3mm,
+	}
+	
+	
+	\faka\begin{myitemize}
+		\item \href{https://artofproblemsolving.com/articles/files/MildorfInequalities.pdf}{Olympiad Inequalities - Thomas J. Mildorf}
+		\item \href{https://artofproblemsolving.com/articles/files/KedlayaInequalities.pdf}{$ A<B $ - Keran Kedlaya}
+		\item \href{http://www.math.cmu.edu/~lohp/docs/math/mop2008/convexity-soln.pdf}{Convexity - Po Shen Loh}
+		\item \href{https://web.evanchen.cc/handouts/Ineq/en.pdf}{Brief Intro to Ineqs - Evan Chen}
+	\end{myitemize}
+
+	\vspace{2em}
+
+	\den{Majorizes}{Given two sequences of real numbers $ x_1\ge x_2\ge\cdots \ge x_n $ and $ y_1\ge y_2\ge \cdots\ge y_n  $, we say $ (x_n) $ \emph{majorizes} $ (y_n) $, written $ (x_n)\succ(y_n) $ if
+		\begin{align*}
+		x_1+x_2\cdots +x_n &=y_1+y_2\cdots +y_n\ \text{ and,}\\
+		x_1+x_2\cdots +x_k &\ge y_1+y_2\cdots +y_k \ \ \forall 1\le k \le n-1
+		\end{align*}
+	}
+
+	\den{Mean Values}{Given $ n $ \emph{positive reals} $ a_2 \dots a_n $, we have 
+		\begin{align*}
+			\text{Arithmetic Mean} &:\quad \dfrac{\sum a_i}{n} = \dfrac{a_1 + a_2 + \dots + a_n}{n}\\[1em]
+			\text{Geometric Mean} &:\quad \sqrt[\leftroot{1}\uproot{4}n]{\prod a_i} = \sqrt[\leftroot{1}\uproot{4}n]{a_1a_2\dots a_n}\\[1em]
+			\text{Quadratic Mean} &:\quad \sqrt{\dfrac{\sum a_i^2}{n}} = \sqrt{\dfrac{a_1^2+a_2^2+\dots +a_n^2}{n}}\\[1em]
+			\text{Harmonic Mean} &:\quad \dfrac{n}{\sum \tfrac{1}{a_i}} = \dfrac{n}{\tfrac{1}{a_1}+\tfrac{1}{a_2} + \dots + \tfrac{1}{a_n}}
+		\end{align*}
+	}
+
+\subsection{Basic Inequalities}
+
+	
+
+
+	\theo{}{Muirhead's Inequality}{If $ a_1, a_2,\dots a_n $ are real positive reals, and $ (x_n)\succ(y_n) $, then we have, 
+		
+		\[\impeq{\sum_{\text{sym}}a_1^{x_1}a_2^{x_2}\cdots a_n^{x_n} \ge \sum_{\text{sym}}a_1^{y_1}a_2^{y_2}\cdots a_n^{y_n}}\]}
+
+	
+	\theo{}{Jensen's Inequality}{If $ f $ is convex, then 
+		\[\impeq{\frac{f(a_1)+ f(a_2)\dots +f(a_n)}{n} \ge f\left(\frac{a_1+a_2\dots +a_n}{n}\right)}\]
+	The reverse inequality holds if $ f $ is concave.}
+	
+
+	
+	\theo{}{Karamata's Inequality}{If $ f $ is convex and $(x_n)\succ(y_n)$, then
+		\[\impeq{f(x_1) + f(x_2) \dots +f(x_n) \ge f(y_1)+f(y_2)\dots + f(x_n)}\]
+		The reverse inequality holds if $ f $ is concave.}
+	
+	\begin{BoxedTheorem}[title=Tangent Line Trick: Best-Nice bound for function]{}{}
+	Even if a fucntion is not convex or concave for us to use Jensen's Inequality, we can still find a number $ a $ such that for our required interval $ I $, $ f $ stays above (or below) the tangent line to $ f $ at $ (a,f(a)) $, that is 
+			\[f(x) \ge f(a) + f'(a)(x-a) \]
+	\figdf{.7}{tangent_line_tricc}{Here the tangent line at $ (1, f(1)) $ is the best to bound with in the interval $ [0,2] $}
+	\end{BoxedTheorem}
+	
+	
+	\theo{}{$ n-1 $ Equal Values}{Let $ a_1, a_2, \dots a_n $ be real numbers with $ a_1+a_2\dots a_n $ fixed. Let $ f:\R\to\R $ be a function with exactly one \emph{inflection point}. If
+		\[f(a_1)+f(a_2)+\dots + f(a_n)\]
+	achieves a maximal or minimal value, then $ n-1 $ of the $ a_i $ are equal to each other.	
+	}
+
+	
+	\lem{Power function convexity}{If $ (x_i), (y_i), (m_i) $ be three sequences of real numbers, $ x, y\in \R $ and $ p>1 $. Then for $ \a\in(0, 1) $,
+		\[\impeq{
+			(x+y)^p\ \le\ \a^{1-p} x^p \ + \ (1-\a)^{1-p} y^p}
+		\]
+		\[\impeq{
+			\sum (x_i+y_i)^pm_i \ \le\ \a^{1-p}\sum x_i^pm_i \ + \ (1-\a)^{1-p}\sum y_i^pm_i}
+		\]
+	Equality holds iff 
+		\[\frac{x}{y} = \frac{x_i}{y_i} = \frac{\a}{1-\a}\]
+	}
+	
+	\proof{Because $ f(x) = x^p $ is a convex function,
+		\[(\a a + (1-\a)b)^p < \a a^p + (1-\a)b^p\]
+	So setting $ \a a = x $ and $ (1-\a) b = y $, we get the first inequality. The second one is just an extention of the first one.}
+	
+	
+	\theo{}{Minkowski}{If $ x_1, x_2\dots x_n $, $ y_1, y_2,\dots y_n $ and $ m_1, m_2, \dots m_n $ be three sequence of real numbers and $ p>1 $, then
+		\[\impeq{\left(\sum \left(x_i+y_i\right)^p m_i\right)^{1/p} \le \left(\sum x_i^pm_i\right)^{1/p} + \left(\sum y_i^pm_i\right)^{1/p}}\]
+	Equality holds iff $ (x_i) $ and $ (y_i) $ are proportional.
+	}
+
+	
+	
+	\proof{
+		Let us write,
+		\begin{align*}
+			A = \left(\sum x_i^pm_i\right)^{1/p},\ B = \left(\sum y_i^pm_i\right)^{1/p}
+		\end{align*}	
+		
+		From the second equation of \autoref{lemma:Power function convexity}, for $ \a\in(0, 1) $ we have
+		\begin{align*}
+			\sum(x_i+y_i)^pm_i \le \a^{1-p}A^p + (1-\a)^{1-p}B^p
+		\end{align*}
+		Setting $ \a $ be such that $ A/B = \a/(1-\a) $, by the equality case of the first equation of the lemma we get,
+		\[\sum(x_i+y_i)^pm_i \ \le\ \a^{1-p}A^p + (1-\a)^{1-p}B^p= (A+B)^p\]
+	}
+
+
+	\theo{}{Young's Inequality}{If $a, b> 0$ and $p, q> 0$ and $\dfrac{1}{p}+\dfrac{1}{q} = 1$, then we have \[ab \le \frac{a^p}{p} + \frac{b^q}{q} \]
+	Equality occurs when $a^p = b^q $. }
+
+		\proof{Consider the function $f(x) = e^x$, it is convex. So we have 
+			\[e^{\tfrac{1}{p}x + \tfrac{1}{q}y} \le e^{\tfrac{1}{p}x} + e^{\tfrac{1}{q}y}\]
+		If we let $a=e^{\tfrac{x}{p}}, b= e^{\tfrac{y}{q}} $, we are done. Equality occurs when $ x = y $.}
+
+	
+	\lem{}{}
+	
+	
+
+	\theo{https://en.wikipedia.org/wiki/Generalized_mean}{Weighted Power Mean}{Let $ a_1, a_2, \dots a_n $ and $ w_1, w_2, \dots + w_n $ be positive real numbers with $w_1 + w_2\dots w_n=1$. For real number $ r $, we define,
+		\[P(r) = \left\{
+			\begin{array}{ll}
+				\left(w_1a_1^r + w_2a_2^r \dots +w_na_n^r\right)^{1/r} & r\ne 0\\[1em]
+				a_1^{w_1}a_2^{w_2}\dots a_n^{w_n} & r=0
+			\end{array}
+		\right.\]
+	If $ r> s $, then $ P(r)\ge P(s) $. Equality occurs iff $ a_1 = a_2 =\dots = a_n $
+	}
+
+	\proof{First we show that, $ \displaystyle \lim_{r\to 0} P(r) = P(0) $. Using L'Hopital's law,
+		\begin{align*}
+			\lim_{r\to 0} \ln P(r) &= \lim_{r\to 0}\frac{\ln \sum w_ia_i^r}{r} = \lim_{r\to 0} \frac{\dfrac{\sum w_ia_i^r\ln a_i}{\sum w_ia_i^r}}{1}\\[.5em]
+			&= \lim_{r\to 0} \frac{\sum w_ia_i^r\ln a_i}{\sum w_ia_i^r}\\[.5em]
+			&= \sum\ln a_i^{w_i} \\[.2em]
+			&= \ln P(0)
+		\end{align*}
+		
+	Now we have, 
+		 
+	
+	
+	}
+
+
+\subsection{Theorems}
+
+	
+	\faka\subsection*{\centering{\large{`Mean' Inequalities}}}
+	
+		
+	
+		
+\faka
+		
+		
+	\theo{http://mathworld.wolfram.com/TriangleInequality.html}{Triangle Inequality}{ For any complex numbers $ a_1, a_2 \ldots a_n $ the following holds:
+		\[\left | a_1 + a_2 \dots + a_k \right | \leq |a_1| + |a_2| + \dots + |a_k|\]}
+	
+		
+	\begin{enumerate}[label={\bfseries\textsection\arabic* }]
+		\item \hrf{https://artofproblemsolving.com/wiki/index.php?title=Root-Mean_Square-Arithmetic_Mean-Geometric_Mean-Harmonic_mean_Inequality}{\bfseries\large{One Mean Ineq -- QM-AM-GM-HM}}
+		
+		Given $ n $ positive real numbers $ x_1, x_2, \dots x_n $, the following relation holds:
+		
+		\begin{align*}
+		\tcboxmath{\sqrt{\dfrac{x_1^2+\cdots+x_n^2}{n}} \ge\dfrac{x_1+\cdots+x_n}{n}\ge\sqrt[n]{x_1\cdots x_n}\ge\dfrac{n}{\dfrac{1}{x_1}+\cdots+\dfrac{1}{x_n}}}
+		\end{align*}
+		
+		
+		
+		with equality if and only if $x_1=x_2=\cdots=x_n$.
+		
+		
+		\theo{https://artofproblemsolving.com/wiki/index.php?title=Arithmetic_Mean-Geometric_Mean_Inequality}{Weighted AM-GM}{If $a_1, a_2, \dotsc, a_n$ are nonnegative real numbers, and $\lambda_1, \lambda_2, \dotsc, \lambda_n$ are nonnegative real numbers (the "weights") which sum to $ 1 $, then 
+			
+			\begin{align*}
+				\tcboxmath{\lambda_1a_1 + \lambda_2a_2 +\dots +\lambda_na_n \ge a_1^{\lambda_1}a_2^{\lambda_2}\dots a_n^{\lambda_n}}
+			\end{align*}
+			
+		Equality holds if and only if $a_i = a_j$ for all integers $i, j$ such that $\lambda_i \neq 0$ and $\lambda_j \neq 0$. We obtain the unweighted form of AM-GM by setting \[\lambda_1 = \lambda_2 = \dotsb = \lambda_n = \dfrac1n\] }
+		
+	\end{enumerate}
+	
+	
+	\theo{https://artofproblemsolving.com/wiki/index.php?title=Cauchy-Schwarz_Inequality}{Cauchy-Schward Inequality}{For any real numbers $a_1, \ldots, a_n$ and $b_1, \ldots, b_n$, 
+		\begin{align*}
+			\tcboxmath{\left(a_1^2 + a_2^2 \dots a_n^2 \right) \left(b_1^2 + b_2^2\dots b_n^2 \right) \ge \left( a_1b_1 + a_2b_2 \dots a_nb_n \right)^2 }
+		\end{align*}	
+	with equality when there exist constants $\mu, \lambda$ not both zero such that for all $1 \le i \le n$, $\mu a_i = \lambda b_i$.}
+	
+	The inequality sometimes appears in the following form.
+	
+	\theo{https://artofproblemsolving.com/wiki/index.php?title=Cauchy-Schwarz_Inequality}{Cauchy-Schwarz Inequality Complex form}{Let $a_1, \ldots, a_n$ and $b_1, \ldots, b_n$ be complex numbers. Then 
+		\begin{align*}
+			\tcboxmath{\left( |a_1^2| + |a_2^2| \dots |a_n^2| \right) \left( |b_1^2| + |b_2^2| \dots |b_n^2| \right) \ge \left| a_1b_1 + a_2b_2 \dots a_nb_n \right|^2 }
+	\end{align*}}
+	
+	
+	
+	\theo{https://brilliant.org/wiki/titus-lemma/}{Titu's Lemma}{For positive reals $ a_1, a_2 \ldots a_n $ and $ b_1, b_2 \ldots b_n $ the following holds:
+		\begin{align*}
+			\tcboxmath{\dfrac{a_1^2}{b_1} + \dfrac{a_2^2}{b_2} +\dots+ \dfrac{a_n^2}{b_n} \ge \dfrac{\left(a_1 + a_2+\dots+ a_n\right)^2}{\left(b_1+b_2+\dots+b_n\right)}} 
+		\end{align*}}
+	
+	
+	
+	\theo{https://artofproblemsolving.com/wiki/index.php?title=Hölder's_Inequality}{Holder's Inequality}{If $a_1, a_2, \dotsc, a_n, b_1, b_2, \dotsc, b_n, \dotsc, z_1, z_2, \dotsc, z_n$ are nonnegative real numbers and $\lambda_a, \lambda_b, \dotsc, \lambda_z$ are nonnegative reals with sum of 1, then \[ a_1^{\lambda_a}b_1^{\lambda_b} \dots z_1^{\lambda_z} + \dots + a_n^{\lambda_a} b_n^{\lambda_b} \dots z_n^{\lambda_z}  \leq (a_1 + \dots + a_n)^{\lambda_a} (b_1 + \dots + b_n)^{\lambda_b} \dots (z_1 + \dots + z_n)^{\lambda_z} \]. }
+	
+	
+	
+	
+	
+
+\newpage\subsection{Tricks}
+	
+	
+	\begin{take_note*}[title={Some tricks to try}]{}
+		\begin{enumerate}[wide=3pt, label=\arabic*, itemsep=10pt, parsep=12pt, font=\bfseries]
+			\item Replace trigonometric functions by reals, and translate the problem
+			\item \textbf{Smoothing}, replace two variable while keeping something invariant, to make the inequality sharper.
+			\item \textbf{Convexity}, differentiate to check convexity, if the second derivative is positive on some interval, then the function is convex on that interval except probably at the endpoints, and concave otherwise. 
+			
+			An example is $ \ln \dfrac{1-x}{x} $. It is convex in $ (0, \dfrac12] $ and concave in $ [\dfrac12, 1) $
+			\item If there is product, and if the problem is `ad-hoc'y, then apply $ AM-GM $ and $ \ln $ to see if there is something to play with.
+		\end{enumerate}
+	\end{take_note*}
+
+
+	
+	\den{Homogeneous Expression}{Expression $ F(a_1, a_2 \dots a_n) $ is said to be homogeneous of degree $ k $ if and only if there exists real $ k $ such that for every $ t>0 $ we have 
+		\[t^kF(a_1, a_2\dots a_n)=F(ta_1, ta_2\dots ta_n)\]\vspace{1mm}
+		
+		If an expression is homogeneous, then the following can be assumed (one at a time):
+		
+	\begin{align}
+		\sum^n_{i=1} a_i = 1\\
+		\prod^n_{i=1} a_i = 1\\
+		a_1 = 1 \text{ or for some } i,\  a_i=1\\
+		\sum^n_{i=1} a_i^2 = 1 \\
+		\sum_{Cyc}\ a_ia_{i+1} = 1 
+	\end{align}}		
+	
+		
+	\den{Substitutions}{
+	
+	\begin{itemize}
+		\item For the condition $ abc=1 $, set  \[a=\dfrac{x}{y},\ b=\dfrac{y}{z},\ c=\dfrac{z}{x}\]\label{susbstitution:case_abc}
+		\item \[ xyx=x+y+z+2 \implies \dfrac{1}{x+1} + \dfrac{1}{y+1} + \dfrac{1}{z+1} = 1 \]implies the existence of $ a, b, c $ such that \[ x=\dfrac{b+c}{a},\ y=\dfrac{a+c}{b},\ z=\dfrac{b+a}{c} \].
+		\item $ 2xyz+xy+yz+zx=1 $ is just the inverse of the previouss condition.
+		\item \[x^2+y^2+z^2=xyz+4  \text{ and }  |x|,\ |y|,\ |z| \geq 2\] implies the existence of $ a, b, c $ such that 
+			\[abc=1 \text{ and }  x=a+\dfrac{1}{a},\ y=b+\dfrac{1}{b},\ z=c+\dfrac{1}{c}\]
+		In fact even if only $ \max(|x|, |y|, |z|) > 2 $ is given, the result still holds.
+	\end{itemize}}
+	
+	
+	\lem{}{The following inequality holds for every positive integer $ n $ 
+		\[2\sqrt{n+1} - 2\sqrt{n} < \sqrt{\dfrac{1}{n}} < 2\sqrt{n} - 2\sqrt{n-1} \]}
+	
+	
+	\lem{}{Given $ 4 $ posititve real numbers $ a<b<c<d $. Call the score of a permutation $ a_1, a_2, a_3, a_4 $ of the four given reals be equal to the real 
+		\[|\dfrac{a_1}{a_2} - \dfrac{a_3}{a_4}|\]
+	Prove that the minimum the score can get is equal to 
+		\[|\dfrac{a}{c} - \dfrac{b}{d}|\]}
+	
+	
+	
+\newpage\subsection{Problems}
+	
+	\prob{https://artofproblemsolving.com/community/c6h78687}{APMO 1991 P3}{E}{Let $a_1$, $a_2$, $\cdots$, $a_n$, $b_1$, $b_2$, $\cdots$, $b_n$ be positive real numbers such that $a_1 + a_2 + \cdots + a_n = b_1 + b_2 + \cdots + b_n$. Show that
+		\[ \dfrac{a_1^2}{a_1 + b_1} + \dfrac{a_2^2}{a_2 + b_2} + \cdots + \dfrac{a_n^2}{a_n + b_n} \geq \dfrac{a_1 + a_2 + \cdots + a_n}{2} \]}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h355781p1932917}{ISL 2009 A2}{\hl{(Kori nai)}}{Let $a$, $b$, $c$ be positive real numbers such that $\dfrac{1}{a} + \dfrac{1}{b} + \dfrac{1}{c} = a+b+c$. Prove that:
+		\[\dfrac{1}{(2a+b+c)^2}+\dfrac{1}{(a+2b+c)^2}+\dfrac{1}{(a+b+2c)^2}\leq \dfrac{3}{16}.\]}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1634929p10278399}{ARO 2018 P11.2}{M}{Let $n\geq 2$ and $x_{1}, x_{2},\dots, x_{n}$ positive real numbers. Prove that
+		\[\dfrac{1+x_{1}^2}{1+x_{1}x_{2}}+\dfrac{1+x_{2}^2}{1+x_{2}x_{3}}+...+\dfrac{1+x_{n}^2}{1+x_{n}x_{1}}\geq n\] }
+	
+	\solu{The inequality says sum is greater, so if the product is greater, then we are done by AM-GM (\ref{sharpening}). }
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1455842p8375615}{Turkey TST 2017 P5}{M}{For all positive real numbers $a,b,c$ with $a+b+c=3$, show that $$a^3b+b^3c+c^3a+9\geq 4(ab+bc+ca)$$}
+	
+	\solu{Always try the most simple ineq possible, AM-GM}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h488342p2736375}{IMO 2012 P2}{Varies}{Let $n\ge 3$ be an integer, and let $a_2,a_3,\ldots ,a_n$ be positive real numbers such that $a_{2}a_{3}\cdots a_{n}=1$. Prove that
+		\[(1 + a_2)^2 (1 + a_3)^3 \dotsm (1 + a_n)^n > n^n.\]}\label{problem:imo_2012_p2}
+	
+		\solu{The main idea is to look for the ans of the ques, $ (1+a_k)^k >= ? $. We have $ k^{th} $ power. So if we can get a $ k $ term sum inside of the brackets, we can get a clean term for $ ? $ from AM-GM. And $ 1 $ seems like it's crying to be partitioned. So we write the term as $ \left(a_k + \dfrac{1}{k-1}+\dots+\dfrac{1}{k-1}\right) $}
+	
+		\solu{*Looks at the $ a_2a_3\dots a_n=1 $ condition*\\Hey, we have a \hrf{susbstitution:case_abc}{substitution} for this one, why not try it out...\\darn it, i still have to do the partition thing to cancel out the powers $ >( $}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h18486p124417}{ISL 1998 A1}{can't judge now}{Let $a_{1},a_{2},\ldots ,a_{n}$ be positive real numbers such that $a_{1}+a_{2}+\cdots +a_{n}<1$. Prove that
+		
+		\[ \dfrac{a_{1} a_{2} \cdots a_{n} \left[ 1 - (a_{1} + a_{2} + \cdots + a_{n}) \right] }{(a_{1} + a_{2} + \cdots + a_{n})( 1 - a_{1})(1 - a_{2}) \cdots (1 - a_{n})} \leq \dfrac{1}{ n^{n+1}}. \]}\label{problem:1998A1}
+	
+		\solu{Simplifying and making it symmetric, we get to the inequality \[\prod_{i=1}{n} \dfrac{1-a_i}{a_i} \ge n^{n+1}\]Now approaching similarly as \hrf{problem:imo_2012_p2}{this} problem, we get to the solution.}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h57603p354109}{ISL 2001 A1}{E}{Let $ a, b, c$ be positive real numbers so that $ abc = 1$. Prove that
+		\[ \left( a - 1 + \dfrac 1b \right) \left( b - 1 + \dfrac 1c \right) \left( c - 1 + \dfrac 1a \right) \leq 1. \]}
+	
+		\solu{Substitute.}
+		
+	\prob{https://artofproblemsolving.com/community/c6h19778p131846}{ISL 1999 A1}{EM}{Let $n \geq 2$ be a fixed integer. Find the least constant $C$ such the inequality
+		
+	\[\sum_{i<j} x_{i}x_{j} \left(x^{2}_{i}+x^{2}_{j} \right) \leq C \left(\sum_{i}x_{i} \right)^4\]
+		
+	holds for any $x_{1}, \ldots ,x_{n} \geq 0$ (the sum on the left consists of $\binom{n}{2}$ summands). For this constant $C$, characterize the instances of equality.}
+	
+		\solu{Follow the ineq sign and remember AM-GM.}
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h1671272p10632289}{ISL 2017 A1}{E}{Let $a_1,a_2,\ldots a_n,k$, and $M$ be positive integers such that
+		\[\dfrac{1}{a_1}+\dfrac{1}{a_2}+\cdots+\dfrac{1}{a_n}=k\quad\text{and}\quad a_1a_2\cdots a_n=M\]
+	
+	If $M>1$, prove that the polynomial
+		\[P(x)=M(x+1)^k-(x+a_1)(x+a_2)\cdots (x+a_n)\]
+	has no positive roots.}
+	
+		\solu{The same idea used in \hrf{problem:1998A1}{this} and \hrf{problem:imo_2012_p2}{this}, spreading an expression to perform AM-GM on it.}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1480690p8639254}{ISL 2016 A1}{M}{Let $a$, $b$, $c$ be positive real numbers such that $\min(ab,bc,ca) \ge 1$. Prove that \[\sqrt[3]{(a^2+1)(b^2+1)(c^2+1)} \le \left(\dfrac{a+b+c}{3}\right)^2 + 1.\]}
+	
+		\solu{Try the simpler version with two variables first. Now you can use this discovery with a little bit of cleverness to solve the problem. The clever part is to notice that 4 variable ineq is more solvable than a 3 variable one.}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1480705p8639281}{ISL 2016 A2}{M}{Find the smallest constant $C > 0$ for which the following statement holds: among any five positive real numbers $a_1,a_2,a_3,a_4,a_5$ (not necessarily distinct), one can always choose distinct subscripts $i,j,k,l$ such that
+		\[ \left| \dfrac{a_i}{a_j} - \dfrac {a_k}{a_l} \right| \le C. \]}
+	
+		\solu{Simplify the problem to get the ans first. Think about what is the smallest such value for any given $ 4 $ positive reals.}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h14091p99756}{ISL 2004 A1}{E}{Let $n \geq 3$ be an integer. Let $t_1$, $t_2$, ..., $t_n$ be positive real numbers such that \[n^2 + 1 > \left( t_1 + t_2 + \cdots + t_n \right) \left( \dfrac{1}{t_1} + \dfrac{1}{t_2} + \cdots + \dfrac{1}{t_n} \right).\] Show that $t_i$, $t_j$, $t_k$ are side lengths of a triangle for all $i$, $j$, $k$ with $1 \leq i < j < k \leq n$.}
+	
+		\solu{Easy solution by induction. For a more elegant solution, write the right side as sum of paired factors. Finding when the inequality breaks and relating it to the end statement.}
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h219647p1218538}{ISL 1996 A2}{EM}{Let $ a_1 \geq a_2 \geq \ldots \geq a_n$ be real numbers such that for all integers $ k > 0,$
+		
+		\[ a^k_1 + a^k_2 + \ldots + a^k_n \geq 0.\]
+		
+		Let $ p =\max\{|a_1|, \ldots, |a_n|\}.$ Prove that $ p = a_1$ and that
+		
+		\[ (x - a_1) \cdot (x - a_2) \cdots (x - a_n) \leq x^n - a^n_1\] for all $ x > a_1.$}
+	
+		
+		\solu{After the first part, apply AM-GM on the whole left side, this not gonna work, since we can't bound $ \sum a_i $ wrt $ a_1 $. So what if we divide both side by $ (x-a_1) $ and then apply AM-GM?}
+	
+	
+	
+	
+\newpage\subsubsection{Smoothing And Convexity}
+
+\bigskip
+
+	\begin{take_note*}[title={Some usual tricks}]{}
+		\begin{enumerate}
+			\item Bring $ x, y $ closer, keeping $ x+y $ constant.
+			\item If we need to smoothen up the value $ xy $, then take $ \ln $ on both side.
+			\item Work with different variables.
+		\end{enumerate}
+	\end{take_note*}
+
+
+	\theo{}{Convexity}{
+		\begin{enumerate}[parsep=20pt]
+			\item The function is convex in interval $ I $ iff for all $ a, b\in I $ and for all $ t<1 $, \[tf(a) + (1-t)f(b) \ge f\left(ta + (1-t)b\right)\]
+			Which if put in words, means that the line segment joining $ (a, f(a)) $ and $ (b, f(b)) $ lies completely above the graph of the function.
+			
+			\item The function is convex in interval $ I $ if $ f' $ is increasing in $ I $ or $ f'' $ is positive in $ I $.
+		\end{enumerate}
+	}
+
+
+	\theo{https://artofproblemsolving.com/wiki/index.php?title=Jensen's_Inequality}{Jensen's Inequality}{Let $x_1,\dots,x_n\in\R$ and let $\a_1,\dots, \a_n\ge 0$ satisfy $\a_1+\dots+\a_n=1$.\\
+		
+		If $ f $ is a Convex Function, we have:
+		
+		\[\a_1f(x_1)+\a_2f(x_2)\dots+a_nf(x_n) \ge f(\a_1x_1+\a_2x_2\dots+\a_nx_n)\]
+		
+		If $f$ is a Concave Function, we have:
+		
+		\[\a_1f(x_1)+\a_2f(x_2)\dots+a_nf(x_n) \le f(\a_1x_1+\a_2x_2\dots+\a_nx_n)\]
+	}
+
+
+	\theo{https://en.wikipedia.org/wiki/Popoviciu's_inequality}{Popoviciu's inequality}{Let $ f $ be a convex function on and interval $ I\in \R $. Then for any numbers $ x, y, z \in I $, 
+		\[f(x)+f(y)+f(z)\ +3f\left(\frac{x+y+z}{3}\right) \ \ge\  2f\left(\frac{x+y}{2}\right)+2f\left(\frac{y+z}{2}\right)+2f\left(\frac{z+x}{2}\right)\]	
+	}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h55341p343867}{USAMO 1998 P3}{H}{Let $a_0,a_1,\cdots ,a_n$ be numbers from the interval $(0,\pi/2)$ such that 
+		\[ \tan (a_0-\dfrac{\pi}{4})+ \tan (a_1-\dfrac{\pi}{4})+\cdots +\tan (a_n-\dfrac{\pi}{4})\geq n-1. \] 
+		Prove that 
+		\[ \tan a_0\tan a_1 \cdots \tan a_n\geq n^{n+1}. \]}
+	
+	
+		\solu{Get rid of the $ \tan $'s. AM-GM, Jensen doesn't works, so try \textbf{smoothing}. The conventional smoothing trick fails at one case, but works for all other cases. Means we have to deal with that case specially.}
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h337923p1808247}{USAMO 1974 P2}{E}{Prove that if $ a,b,$ and $ c$ are positive real numbers, then \[ a^ab^bc^c \ge (abc)^{(a+b+c)/3}.\]}
+	
+		\solu{$ \ln $}
+	
+	
+	\prob{https://artofproblemsolving.com/community/q1h61144p368290}{India 1995}{E}{Let $x_{1},x_{2},...,x_{n}>0$ be real numbers such that $x_{1}+x_{2}+x_{3}+...+x_{n}=1$. Prove the inequality
+		\[\frac{x_{1}}{\sqrt{1-x_{1}}}+\frac{x_{2}}{\sqrt{1-x_{2}}}+....+\frac{x_{n}}{\sqrt{1-x_{n}}}\geq \sqrt{\frac{n}{n-1}}\]
+	}
+
+		\solu{easy smoothing}
+	
+	
+	\prob{https://artofproblemsolving.com/community/q1h355706p1932030}{Vietnam 1998}{E}{$ x_1,x_2...x_n$ are real numbers such that \[\dfrac{1}{x_1+1998} +\dots +\dfrac{1}{x_n+1998}= \dfrac{1}{1998}\]
+		Prove that \[\frac{\sqrt[n]{x_1\dots x_n}}{n-1} \ge 1998\]}
+	
+		\solu{Translate the given expression in a nicer way with new variables...}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h58608p358019}{IMO 1974 P2}{M}{The variables $a,b,c,d,$ traverse, independently from each other, the set of positive real values. What are the values which the expression \[ S= \dfrac{a}{a+b+d} + \dfrac{b}{a+b+c} + \dfrac{c}{b+c+d} + \dfrac{d}{a+c+d} \] takes?}
+	
+		\solu{$ \dfrac{x}{y+c} \le \dfrac{x}{y} \le \dfrac{x}{y-c} $}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h45679p289327}{Bulgaria 1995}{E}{Given $n$ real number $x_1,x_2,...,x_n\in [0,1]$ . Prove the following inequality
+		\[(x_1 + x_2 +\dots+ x_n) - \left( x_1x_2 + x_2x_3 +\dots+ x_nx_1\right) \le \left\lfloor\frac{n}{2}\right\rfloor\]}

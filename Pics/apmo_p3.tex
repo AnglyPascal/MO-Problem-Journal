@@ -1,0 +1,72 @@
+\documentclass{article}
+
+\usepackage{newstyle}
+
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{15pt}
+
+\begin{document}
+	\Large
+	
+	\fig{.5}{apmo3}{}
+	
+	If we invert around the point $ A $ with an arbitrary radius, the problem translates to:
+	
+	\fig{.5}{apmo3_inv}{}
+	
+	Now rename the whole configuration by removing the primes. Define points $ U, V $ on $ BC $ such that $ AU\parallel CM $ and $ AV \parallel BM $. Define $ Q = AU \cap BM, R = AV\cap CM $ 
+	
+	\lem{}{$ A, P, D, U $ are cyclic, and so are $ A, P , E, V $}
+	
+	\proof{
+		\begin{align*}	
+			\angle DPM&\\
+				&=\angle DCM \\
+				&=\angle UAE
+		\end{align*}
+	}
+	
+	\lem{}{$\odot UQB$ is tangent to $\odot ABC$ at $ B $. And $\odot CRV$ is tangent to $\odot ABC$ at $ C $.}
+	
+	\proof{by Reim's theorem on $\triangle UQB$ and $\triangle BMC$}
+	
+	
+	
+	Again by Reim's theorem we get $ DP\parallel AB,\ PE\parallel AC $. Let $ X' $ be the intersection of $ \odot ADP $ and $ \odot UQB $. 
+	
+	\lem{}{$ BXMP  $ is cyclic.}
+	
+		\proof{\[\angle X'BM = \angle XUA = \angle X'PM \]}
+		
+		
+	\lem{}{$ AM $ is the radical axis of $ \odot UQB $ and $\odot CRV$}
+	
+		\proof{Let $ AM\cap BC = N $. Since \[\angle BAN = \angle BUA \]We have \[NA^2 = NB\cdot NU\]Similarly $ NA^2 = NC\cdot NV $. And since $ TB $ is tangent to $ \odot UQB $, and $ TC $ is tangent to $ \odot CRV $, $ TN $ is the radical axis of $ \odot UQB $ and $\odot CRV$.}
+		
+		
+	\figdf{1}{apmo3_inv_1}{}
+		
+	\lem{}{$ BXY $ is cyclic.}
+	
+		\proof{Let $ BX $ meet $ AM $ at $ S $. And let $ SC $ meet $ \odot PMC $ and $ \odot CYU $ at $ Y_1, and Y_2 $, so, 
+		
+		\[SY_1\cdot SC = SM\cdot SP = SX\cdot SB = SC \cdot SY_2\]
+	
+		which means $ Y_1 \equiv Y_2 $. Meaning $ Y_1 = Y_2 = Y $.
+	
+		so, \[SX\cdot SB = SY\cdot SC \]}
+	
+	
+	\lem{}{$ UXYV $ is cyclic.}
+		
+		\proof{the same as before.}
+	
+	
+	Now, if we take the three circles, $ \odot AUV, \odot ABC, \odot UXYV $, let the radical center be $ K $. Let $ KX $ meet $ \odot UXV $ at $ Y' $. then $ KY'\cdot KX = KB\cdot KC $. So $ BXY'C $ is cyclic, implying that $ Y'=Y $. 
+	
+	So, $ XY $ passes through the intersection point of $ BC $ and the radical axis of $ \odot ABC $ and $ \odot AUV $.
+	
+	
+\end{document}
+
+

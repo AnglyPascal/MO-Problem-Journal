@@ -1,0 +1,44 @@
+\section{Permutations}
+
+\prob{https://artofproblemsolving.com/community/c5h1434000p8108658}{USAMO 2017
+    P5}{M}{
+    Let $m_1, m_2, \ldots, m_n$ be a collection of $n$ positive integers, not
+    necessarily distinct. For any sequence of integers $A = (a_1, \ldots,
+    a_n)$ and any permutation $w = w_1, \ldots, w_n$ of $m_1, \ldots, m_n$,
+    define an $A$-inversion of $w$ to be a pair of entries $w_i, w_j$ with $i
+    < j$ for which one of the following conditions holds:
+
+    $a_i \ge w_i > w_j$\\
+    $w_j > a_i \ge w_i$, or\\
+    $w_i > w_j > a_i$.\\
+
+    Show that, for any two sequences of integers $A = (a_1, \ldots, a_n)$ and $B =
+    (b_1, \ldots, b_n)$, and for any positive integer $k$, the number of
+    permutations of $m_1, \ldots, m_n$ having exactly $k$ $A$-inversions is equal
+    to the number of permutations of $m_1, \ldots, m_n$ having exactly $k$ $B$-inversions.
+
+    \index[cat]{Permuatations!USAMO 2017 P5}
+    \index[strat]{Bijection!USAMO 2017 P5}
+}
+
+\begin{solution}
+    Define the function $f^{w}_A(i)=$ the number of inversions
+    $w_i, w_j$ with $i<j$.\\
+
+    Notice that if we take $B$ as a sequence with all elements greater than
+    all $w_i$, then we have the $B$-inversions to be normal inversions wrt
+    $M$. So we need to show that the multi set 
+    \[\left\{ k \mid \ k = \sum^{n}_{i=1} f^w_B\left(i \right), \text{ for
+    some permutation } w \right\} \] 
+    is the same as the set defined with $f_A$.\\
+
+    So we need to show a bijection between $A$-inversion and normal
+    inversion. \\
+
+    But showing that for every permutation with some normal inversions there
+    is a $A$ with the same number of $A$-inversions is pretty hard. So we
+    instead show that for every permutation $w$, there is another permutation
+    $p$ such that $A$-inversions of $w$ are the same as normal inversions of
+    $p$. And that two permutations $w_1, w_2$ don't have the same set of
+    $A$-inversions. 
+\end{solution}

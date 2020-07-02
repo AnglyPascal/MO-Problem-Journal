@@ -1,0 +1,84 @@
+\graphicspath{{Pics/}}
+
+\newpage\subsection{Projective Constructions}
+	
+	\begin{minipage}{.6\linewidth}
+		\begin{construction}[Second Intersection of Line with Conic]
+			Given four points $ A, B, C, D $, no three collinear, and a point $ P $ on a line $ l $ passing through at most one of the four points, construct the point $ P'\in l $ such that $ A, B, C, D, P, P' $ line on the same conic.
+			\solu{Let $ AP\cap BC = X,\ l\cap CD = Y,\ XY\cap AD=Z $. Then by Pascal's Hexagrummum Mysticum Theorem, we have, $\ \  P' = BZ\cap l $}
+		\end{construction}
+	\end{minipage}\hfill%
+	\begin{minipage}{.35\linewidth}
+			\figdf{}{constructing_second_intersection_with_conic}{}
+	\end{minipage}
+
+	\begin{minipage}{.6\linewidth}
+		\begin{construction}[Conic touching conic]
+			Given a conic $ \mathcal{C} $, and two points $ A, B $ on it, and $ C $ inside of it. Construct the conic $ \mathcal{H} $ that is tangent to $ \mathcal{C} $ at $ A, B $ and passes through $ C $.
+		\end{construction}
+		\solu{Draw the two tangest at $ A,B $ which meet at $ X $. Take an arbitrary line passing through $ X $ that intersects $ AC, BC $ at $ Y, Z $. Take $ D=BY\cap AZ $. Then $ D $ lies on $ \mathcal{H} $ by Pascal. Construct another point $ E $ similarly and draw the conic.}
+	\end{minipage}\hfill%
+	\begin{minipage}{.35\linewidth}
+		\figdf{.9}{conic_touching_conic}{}
+	\end{minipage}
+
+	\begin{construction}[Inconic of a quadrilateral]
+		Given a convex quadrilateral $ ABCD $. $ P=AC\cap BD $, $ S\in AD, T\in BC $ such that $ S, P, T $ are collinear. Construct the conic that touches $ AB, CD $, and also touches $ AD, BC $ at $ S, T $ respectively.
+	\end{construction}
+	
+		\solu{[the\textunderscore Construction] Draw the polar line $ l $ of $ P $ wrt to the quadrilateral. Let $ Z=BC\cap l $. Let $ ZS\cap AB = U $, $ ZT\cap CD = V $. Then $ SSUUTTVV $ is our desired conic.}	
+		
+	\begin{minipage}{.5\linewidth}
+		\proof{If $ U, V\in CD, AB $ such that $ UV $ passes through $ P $, and if the conic passing through $ U, V $ and tangent to $ AD, BC $ at $ S, T $ intersects $ CD $ at $ U' $ again, then $ SV, U'T, DB $ are concurrent. So to show our construction works, we just need to prove that $ U, V, P $ are collinear.\\
+		
+		Since Pascal's theorem works on $ SVBTUD $, we know $ S, V, B, T, U, D $ lie on a conic $ \mathcal{H} $ and $ l $ is the pole of $ P $ wrt $ \mathcal{H} $. Now, applying Pascal's theorem on $ TDVUBS $, and quadrilateral theorem on $ BTUD $ and $ BVSD $, we have, $ ST\cap UV\in AC $, which is $ P $. So we are done.}	
+	\end{minipage}\hfill%
+	\begin{minipage}{.45\linewidth}
+		\figdf{}{conic_touching_quad}{}
+	\end{minipage}
+		
+	
+	
+	\begin{minipage}{.5\linewidth}
+		\begin{construction}[\href{http://www.geometry.ru/persons/beluhov/selected.pdf}{Sharygin Olympiad 2010}]
+			A conic $ \mathcal{C} $ passing through the vertices of $ \triangle ABC $ is drawn, and three points $ A', B', C' $ on its sides $ BC, CA, AB $ are chosen. Then the original triangle is erased. Prove that the original triangle can be constructed iff $ AA', BB', CC' $ are concurrent.		
+		\end{construction}
+		
+		\solu{[the\textunderscore Construction] Draw $ B'C' $. It intersects the circle at $ X_1, X_2 $. Draw the conic $ \mathcal{H} $ that is tangent to $ \mathcal{C} $ at $ X_1, X_2 $ and passes through $ A' $. Then $ BC $ is tangent to $ \mathcal{H} $ at $ A' $.}
+		
+	\end{minipage}\hfill%
+	\begin{minipage}{.45\linewidth}
+		\figdf{1}{reconstruct_ABC}{}
+	\end{minipage}
+	
+	
+	
+	
+	\proof{
+		The only if part is easy to prove. Becase if $ AA', BB', CC' $ aren't concurrent, then we can get multiple triangles $ ABC $. So suppose that they are concurrent. \\
+		
+		Now we define some intersetion points.
+		\begin{center}
+			\begin{tabular}{LLLLL}
+				W_1	&=	&BB'	&\cap &\mathcal{C}\\
+				S	&=	&X_1X_1	&\cap &AW_1\\
+				T	&=	&X_1B	&\cap &AX_2\\
+				U	&=	&X_1X_1	&\cap &BC\\
+				V	&=	&X_2X_2	&\cap &BC\\
+				R	&=	&X_2X_2	&\cap &AW_1\\
+				Y_1	&=	&A'B'	&\cap &SR
+			\end{tabular}
+		\end{center}
+			
+		$ T, S, B' $ are collinear by Pascal's theorem on $ BX_1X_1X_2AW_1 $. $ T, B', V $ are similarly collinear for $ AX_2X_2X_1BC $. And similarly $ R, B', U $ are collinear.\\
+		
+		We will prove that $ \mathcal{H} $ is an inconic of $ SRVU $ that goes through $ A', X_1, X_2 $. \\
+		
+		For a point $ X $ on $ UV $, define $ f:UV\to UV $ such that $ f(X) $ is the second intersection of the conic $ X_1X_1X_2X_2X $ ($ X_1X_1 = SU, X_2X_2=RV  $) with $ UV $. 
+		$ f $ is an involution by \autoref{theorem:Three Conic Law}. \\
+		
+		Suppose $ A_1 $ is the intersection with the inconic of $ SRUV $ through $ X_1, X_2 $ and $ UV $. Let $ A_2 = X_1X_2\cap UV $. Then $ f(A_1) =A_1, f(A_2)=A_2, f(B)=C $. \\
+		
+		Which means, $ A(B, C; A_1, A_2) = -1 $. Which means $ A_1=A' $. So, $ X_1X_2A'X_2X_2 $ is an inconic of $ SRVU $, just as we wanted.	
+		\figdf{.8}{reconstruct_ABC_1}{}
+	}

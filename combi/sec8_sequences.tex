@@ -1,0 +1,94 @@
+\newpage\section{Sequences}
+
+
+	\Faka\subsection{Lemmas}
+
+
+		\theo{https://en.wikipedia.org/wiki/Van_der_Waerden's_theorem}{Van der Waerden's Theorem}{For any given positive integers$  r $ and $ k $, there is some number $ N $ such that if the integers $ \{1, 2, ..., N\} $ are colored, each with one of $ r $ different colors, then there are at least $ k $ integers in arithmetic progression all of the same color.}
+
+
+
+	\Faka\subsection{Generating Function Lemmas}
+
+
+		\theo{}{Catalan Recursion}{The infinite series defined as following: \[ a_0 = a_1 = 1,\ a_n = \prod_{i=0}^{n} a_ia_{n-i+1} = a_0a_{n-1} + a_1a_{n-2}\dots + a_{n-1}a_0 \] has the general term $ a_n = C_n = \frac{1}{n+1} \binom{2n}{n} $}\label{lemma:catalan_recursion}
+
+
+		\begin{multicols}{2}
+			\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
+
+				\iref{problem:catalan_recursion_1}{Problem to do with generating function}{}
+			\end{enumerate}
+		\end{multicols}
+
+
+
+	\Faka\subsection{Sequence Problems}
+	
+		\href{http://alexanderrem.weebly.com/uploads/7/2/5/6/72566533/sequences.pdf}{Sequences - Alexander Remorov}
+
+
+
+		\prob{https://artofproblemsolving.com/community/c6h68945p404543}{ISL 1990}{E}{Assume that the set of all positive integers is decomposed into $ r $ (disjoint) subsets $ A_1 \cup A_2 \cup \dots \cup A_r = \mathbb{N}. $ Prove that one of them, say $ A_i, $ has the following property: There exists a positive $ m $ such that for any $ k $ one can find numbers $ a_1, a_2, \ldots, a_k $ in $ A_i $ with $ 0 < a_{j+1} - a_j \leq m, $  $ (1 \leq j \leq k-1) $.}\label{problem:induction_type1_14}
+
+
+
+		\prob{https://mathoverflow.net/questions/25313/finitely-many-arithmetic-progressions}{Result by Erdos, Dividing the integers into arithmetic progressions}{E}{Let $ d_1, d_2,\dots, d_k $ be differences of $ k $ arithmetic progressions that partition $ \N $. Show that $ d_i=d_j $ for some $ i,j $.}\label{problem:generating_function_2}\label{problem:roots_of_unity_1}
+
+
+
+		\prob{https://artofproblemsolving.com/community/c6h79784p456601}{APMO 1999 P1}{E}{Find the smallest positive integer $n$ with the following property: there does not exist an arithmetic progression of $1999$ real numbers containing exactly $n$ integers.}
+
+
+
+		\prob{https://artofproblemsolving.com/community/c6h79787p456607}{APMO 1999 P2}{E}{Let $a_1, a_2, \dots$ be a sequence of real numbers satisfying $a_{i+j} \leq a_i+a_j$ for all $i,j=1,2,\dots$. Prove that
+			\[ a_1 + \frac{a_2}{2} + \frac{a_3}{3} + \cdots + \frac{a_n}{n} \geq a_n \]
+			for each positive integer $n$.}\label{problem:induction_type2_5}
+
+
+
+		\prob{https://artofproblemsolving.com/community/c6h125791p713182}{ISL 1994 A1}{E}{Let $ a_{0} = 1994$ and $ a_{n + 1} = \frac {a_{n}^{2}}{a_{n} + 1}$ for each nonnegative integer $ n$. Prove that $ 1994 - n$ is the greatest integer less than or equal to $ a_{n}$, $ 0 \leq n \leq 998$}
+		
+			\solu{Take the differences.}
+
+
+		
+		\prob{https://artofproblemsolving.com/community/c6h214669p1186971}{ISL 2007 C4}{M}{Let $ A_0 = (a_1,\dots,a_n)$ be a finite sequence of real numbers. For each $ k\geq 0$, from the sequence $ A_k = (x_1,\dots,x_k)$ we construct a new sequence $ A_{k + 1}$ in the following way.
+		
+		\begin{enumerate}
+			\item We choose a partition $ \{1,\dots,n\} = I\cup J$, where $ I$ and $ J$ are two disjoint sets, such that the expression \[ \left|\sum_{i\in I}x_i - \sum_{j\in J}x_j\right| \] attains the smallest value. (We allow $ I$ or $ J$ to be empty; in this case the corresponding sum is 0.) If there are several such partitions, one is chosen arbitrarily.
+			\item We set $ A_{k + 1} = (y_1,\dots,y_n)$ where $ y_i = x_i + 1$ if $ i\in I$, and $ y_i = x_i - 1$ if $ i\in J$.
+		\end{enumerate}
+		
+		Prove that for some $ k$, the sequence $ A_k$ contains an element $ x$ such that $ |x|\geq\frac n2$.}\label{problem:invariant_rules_of_thumb_11}
+	
+			\solu{Suppose the contrary. Now, since $ A_i $ can only attain finite values, So $ A_i = A_j $ for some $ i, j $. Now, we are taking about changes here, so we need to think of some invariants. Firstly the sum, it's not much of an help, because it doesn't give us much control. So kinda sum-ish invariant with a bit more control is the sum of squares. We combine these two ideas.}
+		
+		
+		
+		\prob{https://artofproblemsolving.com/community/c6h288840p1561573}{ISL 2009 A6}{EM}{Suppose that $ s_1,s_2,s_3, \ldots$ is a strictly increasing sequence of positive integers such that the sub-sequences \[s_{s_1},\, s_{s_2},\, s_{s_3},\, \ldots\qquad\text{and}\qquad s_{s_1+1},\, s_{s_2+1},\, s_{s_3+1},\, \ldots\] are both arithmetic progressions. Prove that the sequence $ s_1, s_2, s_3, \ldots$ is itself an arithmetic progression.}
+		
+			\solu{First notice that the two arithmetic sequences has the same common difference. Then notice that the diffrences of the original sequence is bounded. Another advice, give everything names. After naming the smallest difference and the largest differnce, we get two different inequalities, from where we deduce that the difference is constant.}
+			
+		
+		
+		\prob{https://artofproblemsolving.com/community/c6h1181540p5720240}{ISL 2013 N2}{E}{Assume that $k$ and $n$ are two positive integers. Prove that there exist positive integers $m_1 , \dots , m_k$ such that \[1+\frac{2^k-1}{n}=\left(1+\frac1{m_1}\right)\cdots \left(1+\frac1{m_k}\right).\]}
+		
+			\solu{Just induct, and think wishfully.}
+		
+	
+	
+		\prob{https://artofproblemsolving.com/community/c6t177f6h145842_sequence__eventually_becomes_constant}{USAMO 2007 P1}{E}{$n$ be a positive integer. Define a sequence by setting $a_1=n$ and, for each $k>1$, letting $a_k$ be the unique integer in the range $0\leq a_k \leq k-1$ for which $a_0+a_1\dots +a_k$ is divisible by $k$. Prove that for any $n$ the sequence ${a_i}$ eventually becomes constant.}\label{problem:sequences_1}
+			
+			\solu{Investigate and done.}
+			
+			
+		\prob{https://artofproblemsolving.com/community/c6h1071763p4663881}{APMO 2015 P3}{E}{A sequence of real numbers $a_0, a_1, . . .$ is said to be good if the following three conditions hold.
+			\begin{enumerate}
+				\item The value of $a_0$ is a positive integer.
+				\item For each non-negative integer $i$ we have $a_{i+1} = 2a_i + 1 $ or $a_{i+1} =\dfrac{a_i}{a_i + 2} $
+				\item There exists a positive integer $k$ such that $a_k = 2014$.
+			\end{enumerate}
+		Find the smallest positive integer $n$ such that there exists a good sequence $a_0, a_1, . . .$ of real numbers with the property that $a_n = 2014$.}
+		
+		\input{dump/APMO_2015_P3}

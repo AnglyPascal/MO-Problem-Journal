@@ -1,0 +1,263 @@
+\graphicspath{{Pics/}}
+
+
+\newpage\section{Incenter--Excenter Lemma stuff}
+
+
+	\den{Incenter and Co.}{Let $\triangle ABC$ be an ordinary triangle, $I$ is its incenter, $D, E, F$ are the touch points of the incenter with $BC, CA, AB$ and $ D', E', F' $ are the reflections of $D, E, F$ wrt $ I $. 
+		
+		Let the $ I_a, I_b, I_c $ excircles touch $BC, CA, AB$ at $D_1, E_1, F_1$.
+		
+		Let $M_a, M_b, M_c$ be the midpoints of the smaller arcs $BC, CA, AB$, and $M_A, M_B, M_C$ be the midpoints of the major arcs $BC, CA, AB$. $ M $ are the midpoint of $ BC $.
+		
+		Let $ (I_a) $ touch $ BC, CA, AB $ at $ D_A, E_A, F_A $. So, $ D_A \equiv D_1 $.
+		
+		Let $ A' $ be the antipode of $ A $ wrt $ \odot ABC $.
+		
+		Call $ EF $, `$ A $-tangent line', and $ DE, DF $ similarly. And call $ E_AF_A $ `$ A_A $-tangent line.}
+	
+	
+	\begin{minipage}{.59\linewidth}
+		\lem{}{$ A'I, \odot ABC, \odot AEIF $ are concurrent at $ Y_A $. And $ Y_A, D, M_a $ are collinear.}
+		
+		\lem{}{$ DD_H \perp EF $, then $ D_H, I, A' $ are collinear.}
+		
+		\lem{}{Let $ X $ be any point on $ BC $, and let $ I_1, I_2 $ be incenters of $ \triangle ABX, \triangle ACX $. Then $ \square XI_1I_2D $ are cyclic. And the other common tangent of $ \odot I_1 $ and $ \odot I_2 $ goes through $ D $.}
+		
+		\lem{Arc Midpoint as Centers}{\[M_AE_1 = M_AF_1\]\[M_BF_1 = M_BD_1\]\[M_CD_1 = M_CE_1\]}
+		
+		\lem{Incircle Touchpoint and Cevian}{Let a cevian be $ AX $ and let $ I_1, I_2 $ be the incirlces of $ \triangle ABX, \triangle ACX $. Then $ D, I_1, I_2, X $ are concyclic.}
+	\end{minipage}\hfill%
+	\begin{minipage}{.39\linewidth}
+		\figdf{.9}{excenter_touchpoint_bigarc-midpoints}{\autoref{lemma:Arc Midpoint as Centers} Excenter Toucpoints are equidistance from the Bigger Arc-midpoint}
+		\figdf{.9}{incircle_touchpoint_and_cevian}{\autoref{lemma:Incircle Touchpoint and Cevian}}
+	\end{minipage}
+	
+	\begin{minipage}{.5\linewidth}
+		\lem{Apollonius Circle and Incenter}{Let $ \omega_a $ be the circle that goes through $ B, C $ and is tangent to $ (I) $ at $ X $. Then $ XD', EF, BC $ are concurrent and $ X, D, I_a $ are collinear. The same properties is held if the roles of incenter and excenter are swapped.
+			\begin{itemize}
+				\item The circle $ BXC $ is tangent to $ (I) $
+				\item $ X $ lies on the Apollonius Circle of $ (B, C; D, G) $. 
+				\item $ XD $ bisects $ \angle BXC $.
+			\end{itemize}
+		}
+		\medskip
+		
+		\solu{Pole-Polar. \href{https://artofproblemsolving.com/community/c6h17323p118682}{ISL 2002 G7}}
+	\end{minipage}\hfill%
+	\begin{minipage}{.48\linewidth}
+		\figdf{1}{InExLemma3}{Circle through $ BC $ tangent to incircle}
+	\end{minipage}
+
+
+	
+	\theo{}{Paul Yui Theorem}{$ B $-tangent line, $ C_A $-tangent line, and $ AH $ are concurrent.}
+	
+	\lem{Concurrent Lines in Incenter}{Let $ AD \cap \odot (I) = G, AD' \cap \odot (I) = H $. Let the line through $ D' $ parallel to $ BC $ meet $ AB, AC $ at $ B', C' $. Then $ AM,\ EF,\ GH,\ DD',\ BC',\ CB' $ are concurrent.}\label{lemma:concurrent_lines_in_incenter}
+	
+		
+	
+	\lem{Midline Concurrency with Incircle Touchpoints}{$ AI $, $ B, B_A $-tangent lines and $ C $-mid-line are concurrent. And, if the concurrency point is $ X $, then $ CS\perp AI $}
+	
+	\begin{minipage}[t]{.49\linewidth}
+		\figdf{.73}{concurrent_lines_in_incenter}{\autoref{lemma:Concurrent Lines in Incenter} The lines are concurrent.}
+	\end{minipage}\hfill%
+	\begin{minipage}[t]{.49\linewidth}
+		\figdf{1}{InExLemma4}{\autoref{lemma:Midline Concurrency with Incircle Touchpoints} $ AI $, $ B, I_A $-tangent lines and $ C $-mid-line are concurrent.}
+	\end{minipage}
+	
+
+	
+	
+	
+	
+	\coro{Let triangle $ABC$, incircle $(I)$, the $A$ - excircle $(I_a)$ touches $BC$ at $M$. $IM$ intersects $(I_a)$ at the second point $X$. Similarly, we get $Y$, $Z$. Prove that $AX$, $BY$, $CZ$ are concurrent.
+	
+	\href{http://artofproblemsolving.com/community/c6h1595900p9909100}{Extension, by buratinogigle}: Triangle $ABC$ and $XYZ$ are homothetic with center $I$ is incenter of $ABC.$ Excircles touches $BC,$ $CA,$ $AB$ at $D,$ $E,$ $F.$ $XD,$ $YE,$ $FZ$ meets excircles again at $U,$ $V,$ $W.$ Prove that $AU,$ $BV,$ $CW$ are concurrent.}
+	
+	
+	
+	
+	\den{Isodynamic Points}{Let $ ABC $ be a triangle, and let the angle bisectors of $ \angle A $ meet $ BC $ at $ X, Y $. Call $ \omega_a $ the circumcircle of $ \triangle AXY $. Define $ \omega_b, \omega_c $ similarly. The first and second isodynamic points are the points where the three circles $ \omega_a, \omega_b, \omega_c $ meet. I.e. these two points are the intersections of the three Apollonius circles. These two points satisfy the following relations:
+		\begin{enumerate}
+			\item \[PA\sin A = PB\sin B = PC\sin C \]
+			\item They are the isogonal congugates of the Fermat Points, and they lie on the `Brocard Axis'
+		\end{enumerate}	
+	\figdf{.6}{Isodynamic_Points}{}
+	}
+	
+	\autoref{definition:Isodynamic Points}
+	
+	\theo{https://en.wikipedia.org/wiki/Isodynamic_point}{Pedal Triangles of Isodynamic Points}{Prove that the pedal triangles of the isodynamic points are equilateral triangles. Also, Inverting around the Isodynamic Points trasnform $\triangle ABC $ into an equilateral triangle.}
+	
+	\prob{https://artofproblemsolving.com/community/c6h1568534p9617561}{China TST 2018 T1P3}{EM}{Circle $\omega$ is tangent to sides $AB$,$AC$ of triangle $ABC$ at $D$,$E$ respectively, such that $D\neq B$, $E\neq C$ and $BD+CE<BC$. $F$,$G$ lies on $BC$ such that $BF=BD$, $CG=CE$. Let $DG$ and $EF$ meet at $K$. $L$ lies on minor arc $DE$ of $\omega$, such that the tangent of $L$ to $\omega$ is parallel to $BC$. Prove that the incenter of $\triangle ABC$ lies on $KL$.}
+	
+	\solu{Using \autoref{lemma:Collinearity with antipode and center}, in the touch triangle of $ \omega $.}
+	
+	
+
+	\prob{https://artofproblemsolving.com/community/c6t45786f6h1618685}{Vietnamese TST 2018 P6.a}{M}{Triangle $ABC$ circumscribed $(O)$ has $A$-excircle $(I_a)$ that touches $AB,\ BC,\ AC$ at $F,\ D,\ E$, resp. $M$ is the midpoint of $BC$. Circle with diameter $MI_a$ cuts $DE,\ DF$ at $K,\ H$. Prove that $(BDK),\ (CDH)$ have an intersecting point on $(I_a)$.
+	\figdf{.5}{Vietnamese_TST_2018_P6_a_problem}{}
+	}
+	
+	\begin{minipage}{.55\linewidth}
+		\begin{solution}[Inversion]
+			Inverting around point $ D $, we have:
+			
+			\sollem{$ MD $ is a line, $ I_a $ is an arbitrary point such that $ DI_a\perp MD $. $ l $ is the perpendicular bisector of $ DI_a $. $ F, E $ are arbitrary points on $ l $. $ B=I_aF\cap MD, C=I_aE\cap MD\, H=FD\cap MI_a, K=DE\cap MI_a $. Then $ BK, CH, l $ are concurrent}.
+			
+			\proof{It is straightforward using Puppus's Theorem on lines $ BDC $ and $ HI_aK $.}
+		\end{solution}
+	\end{minipage}\hfill%
+	\begin{minipage}{.42\linewidth}
+		\figdf{}{Vietnamese_TST_2018_P6_a_inv}{After inverting around $ D $}
+	\end{minipage}
+	
+	
+	
+	\begin{solution}[Synthetic: Length Chase]
+		\sollem{Let $ G, H, B', C' $ be defined the same way in Lemma 3.2. Prove that $ F $ lies on the radical axis of $ \odot D'GI, D'C'H $. By extension prove that $ B $ lies on the radical axis of $ \odot D'B'I, D'C'H $}\label{problem:vietTST2018P6.a}
+		
+		\figdf{.7}{Vietnamese_TST_2018_P6_a_modified}{\hrf{problem:vietTST2018P6.a}{Vietnamese TST 2018 P6.a}}
+		
+			We prove the first part, and the second part follows using spiral similarity.
+			
+			Suppose $ K\in FD\cap \odot KDI $. Due to spiral similarity on $ \odot KDI, \odot (I) $, we have $ \triangle GFK \sim \triangle GD'I $. Which implies:
+			\[\frac{FK}{GF}=\frac{ID}{GD'} \implies FK = ID\frac{GF}{GD'}\]
+			Now, if $ KDCE $ is to be cyclic, we need to have $ \triangle HFK \sim \triangle HDC $. So we need,
+			\[\frac{FK}{HF}=\frac{DC}{HD}\implies FK=DC\frac{HF}{HD}\]
+			Combining two equations:
+			\[\frac{GF}{GD'}\cdot \frac{ID}{DC}=\frac{HF}{HD}\]
+			
+			Now, using Ptolemy's theorem in $ \square FDEH $, we have,
+			\begin{align*}
+			FD\cdot EH + DE\cdot FH &= DH\cdot EF\\
+			EH \cdot \frac{FD}{FH} + DE &= EF \cdot\frac{DH}{FH}\\
+			2\ \frac{DE}{EF} &= \frac{DH}{FH}
+			\end{align*}
+			Similarly from $ \square FGED' $ we get,
+			\[2\ \frac{D'E}{EF} = \frac{GD'}{FG}\]
+			Combining these two equations gives us the desired result.
+	\end{solution}
+	
+	
+	\begin{minipage}{.45\linewidth}
+		\gene{https://artofproblemsolving.com/community/c374081h1619335}{Vietnamese TST 2018 P6.a Generalization}{Let $ABC$ be a triangle. The points $D,$ $E,$ $F$ are on the lines $BC,$ $CA,$ $AB$ respectively. The circles $(AEF),$ $(CFD),$ $(CDE)$ have a common point $P.$ A circle $(K)$ passes through $P,$ $D$ meet $DE,$ $DF$ again at $Q,$ $R$ respectively. Prove that the circles $(DBQ),$ $(DCR)$ and $(DEF)$ are coaxial.}
+		\begin{solution}[Inversion]
+			Invert around $ D $, and use Pappu's Theorem as in\\ \autoref{problem:Vietnamese TST 2018 P6.a}.
+		\end{solution}
+	\end{minipage}\hfill%
+	\begin{minipage}{.52\linewidth}
+		\figdf{}{Vietnamese_TST_2018_P6_a_gene}{\hrf{VNTST2018P6a_Gene}{Vietnamese TST 2018 P6.a Generalization}}
+	\end{minipage}
+	
+	\rem{The synthetic solution of \autoref{problem:Vietnamese TST 2018 P6.a} can't be reproduced here maybe because here we don't have $ A, P, D $ collinear, and we can't have harmonic quadrilaterals either.}
+	
+	
+
+
+	\theo{https://en.wikipedia.org/wiki/Poncelet's_closure_theorem}{Poncelet's Porism}{Poncelet's porism (sometimes referred to as Poncelet's closure theorem) states that whenever a polygon is inscribed in one conic section and circumscribes another one, the polygon must be part of an infinite family of polygons that are all inscribed in and circumscribe the same two conics.}
+	
+	
+	
+	
+	
+
+
+	\prob{https://artofproblemsolving.com/community/c6h1181536p5720184}{IMO 2013 P3}{M}{Let the excircle of triangle $ABC$ opposite the vertex $A$ be tangent to the side $BC$ at the point $A_1$. Define the points $B_1$ on $CA$ and $C_1$ on $AB$ analogously, using the excircles opposite $B$ and $C$, respectively. Suppose that the circumcentre of triangle $A_1B_1C_1$ lies on the circumcircle of triangle $ABC$. Prove that triangle $ABC$ is right-angled.}
+	
+	\solu{Straightforward use of \autoref{lemma:excenter_touchpoint_bigarc-midpoints}}
+	
+	
+	
+	
+
+
+	\prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's proposed probs for Arab Saudi team 2015}{E}{Let $ABC$ be acute triangle with $AB < AC$ inscribed circle $(O)$. Bisector of $\angle BAC$ cuts $(O)$ again at $D$. $E$ is reflection of $B$ through $AD$. $DE$ cuts $BC$ at $F$. Let $(K)$ be circumcircle of triangle $BEF$. $BD, EA$ cut $(K)$ again at $M, N$, reps. Prove that $\angle BMN = \angle KFM$.	}
+	
+		\fig{.5}{SATST2015proposed_by_bura/derakynay1134-8}{}
+	
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h54506p340041}{USAMO 1999 P6}{E}{Let $ABCD$ be an isosceles trapezoid with $AB \parallel CD$. The inscribed circle $\omega$ of triangle $BCD$ meets $CD$ at $E$. Let $F$ be a point on the (internal) angle bisector of $\angle DAC$ such that $EF \perp CD$. Let the circumscribed circle of triangle $ACF$ meet line $CD$ at $C$ and $G$. Prove that the triangle $AFG$ is isosceles.}
+
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1619730p10134424}{Serbia 2018 P1}{E}{Let $\triangle ABC$ be a triangle with incenter $I$. Points $P$ and $Q$ are chosen on segments $BI$ and $CI$ such that $2\angle  PAQ=\angle BAC$. If $D$ is the touch point of incircle and side $BC$ prove that $\angle PDQ=90$.}
+	
+	\solu{Straightforward Trig application.}
+	
+
+
+	
+	\prob{https://artofproblemsolving.com/community/c6h1628676p10217476}{Iran TST T2P5}{E}{Let $\omega$ be the circumcircle of isosceles triangle $ABC$ ($AB=AC$). Points $P$ and $Q$ lie on $\omega$ and $BC$ respectively such that $AP=AQ$ .$AP$ and $BC$ intersect at $R$. Prove that the tangents from $B$ and $C$ to the incircle of $\triangle AQR$ (different from $BC$) are concurrent on $\omega$.}
+	
+	
+	
+	
+	\prob{}{}{M}{Let a point $ P $ inside of $ \triangle ABC $ be such that the following condition is satisfied
+		\[\frac{AP+BP}{AB} = \frac{BP+CP}{BC} = \frac{CP+AP}{CA}\]	
+	Lines $ AP, BP, CP $ intesect the circumcirle again at $ A', B', C' $. Prove that $ ABC $ and $ A', B', C' $ have the same incircle.}
+
+	\solu{After finiding the point $ P $, we get a lot of ideas.
+		\figdf{.8}{itti_same_incircle}{two lines are parallel}	
+		}
+	
+		
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1623012p10163453}{Iran TST 2018 P3}{EM}{In triangle $ABC$ let $M$ be the midpoint of $BC$. Let $\omega$ be a circle inside of $ABC$ and is tangent to $AB,AC$ at $E,F$, respectively. The tangents from $M$ to $\omega$ meet $\omega$ at $P,Q$ such that $P$ and $B$ lie on the same side of $AM$. Let $X \equiv PM \cap BF $ and $Y \equiv QM \cap CE $. If $2PM=BC$ prove that $XY$ is tangent to $\omega$.}
+	
+		\solu{Work backwards}
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h1623417p10167655}{Iran TST 2018 P4}{E}{Let $ABC$ be a triangle ($\angle A\neq 90^\circ$). $BE,CF$ are the altitudes of the triangle. The bisector of $\angle A$ intersects $EF,BC$ at $M,N$. Let $P$ be a point such that $MP\perp EF$ and $NP\perp BC$. Prove that $AP$ passes through the midpoint of $BC$.}
+
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1662902p10561154}{APMO 2018 P1}{E}{Let $H$ be the orthocenter of the triangle $ABC$. Let $M$ and $N$ be the midpoints of the sides $AB$ and $AC$, respectively. Assume that $H$ lies inside the quadrilateral $BMNC$ and that the circumcircles of triangles $BMH$ and $CNH$ are tangent to each other. The line through $H$ parallel to $BC$ intersects the circumcircles of the triangles $BMH$ and $CNH$ in the points $K$ and $L$, respectively. Let $F$ be the intersection point of $MK$ and $NL$ and let $J$ be the incenter of triangle $MHN$. Prove that $F J = F A$.}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h155710p875026}{ISL 2006 G6}{E}{Circles $ w_{1}$ and $ w_{2}$ with centres $ O_{1}$ and $ O_{2}$ are externally tangent at point $ D$ and internally tangent to a circle $ w$ at points $ E$ and $ F$ respectively. Line $ t$ is the common tangent of $ w_{1}$ and $ w_{2}$ at $ D$. Let $ AB$ be the diameter of $ w$ perpendicular to $ t$, so that $ A, E, O_{1}$ are on the same side of $ t$. Prove that lines $ AO_{1}$, $ BO_{2}$, $ EF$ and $ t$ are concurrent.}
+	
+		\solu{\hrf{lemma:concurrent_lines_in_incenter}{This}}
+		
+	
+	
+	
+	\lem{Tangential Quadrilateral Incenters}{Let $ ABCD $ be a tangential quatrilateral. Let $ I_1, I_2 $ be the incenters of $ \triangle ABD, \triangle BCD $. Then $ (I_1), (I_2) $ is tangent to $ BD $ at the same point.
+	\fig{.5}{tangential_quad_incenters}{}}
+
+
+	
+	\prob{https://artofproblemsolving.com/community/c6h21758p140322}{Four Incenters in a Tangential Quadrilateral}{E}{Let $ABCD$ be a quadrilateral. Denote by $X$ the point of intersection of the lines $AC$ and $BD$. Let $I_{1}$, $I_{2}$, $I_{3}$, $I_{4}$ be the centers of the incircles of the triangles $XAB$, $XBC$, $XCD$, $XDA$, respectively. Prove that the quadrilateral $I_{1}I_{2}I_{3}I_{4}$ has a circumscribed circle if and only if the quadrilateral $ABCD$ has an inscribed circle.}
+	
+		\solu{There is a lot going on in this figure, firstly, the $ J_1, J_2 $ and $ M $, then $ K $, then $ \angle I_4ME = \angle I_3ME $. Connecting them with the \hyperref[Incircle Touchpoint and Cevian]{lemma}.
+		
+		\figdf{1}{tangential_quad_four_incenters}{}}	
+		
+		
+	
+	\prob{}{Geodip}{E}{Let $ G $ be the centeroid. Dilate $ \odot I $ from $ G $ with constant $ -2 $ to get $ I'$. Then $ I' $ is tangent to the circumcircle.
+		\figdf{.5}{nice_prob_by_geodip}{}
+	}
+	
+	
+		
+	\theo{http://mathworld.wolfram.com/FuhrmannCircle.html}{Fuhrmann Circle}{Let $ X', Y', Z' $ be the midpoints of the arcs not containing $ A, B, C $ of $ \odot ABC $. Let $ X, Y, Z $ be the reflections of these points on the sides. Then $ \odot XYZ $ is called the \textbf{Fuhrmann Circle}. The orthocenter $ H $ and the nagel point $N$ lies on this circle, and $ HN $ is a diameter of this circle.
+	
+	Furthermore, $ AH, BH, CH $ cut the circle for the second time at a distance $ 2r $ from the vertices.
+
+	\figdf{1}{fuhrmann_circle}{Fuhrmann Circle}}
+
+
+	
+	\prob{https://artofproblemsolving.com/community/c6h213443p1178421}{Iran TST 2008 P12}{E}{In the acute-angled triangle $ ABC$, $ D$ is the intersection of the altitude passing through $ A$ with $ BC$ and $ I_a$ is the excenter of the triangle with respect to $ A$. $ K$ is a point on the extension of $ AB$ from $ B$, for which $ \angle AKI_a=90^\circ+\frac 34\angle C$. $ I_aK$ intersects the extension of $ AD$ at $ L$. Prove that $ DI_a$ bisects the angle $ \angle AI_aB$ iff $ AL=2R$. ($ R$ is the circumradius of $ ABC$)}
+		
+		\solu{}

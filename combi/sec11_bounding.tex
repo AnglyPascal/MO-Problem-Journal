@@ -1,0 +1,39 @@
+\section{Bounding}
+
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1789897p11836061}{RMM 2019 P3}{H}{Given any positive real number $\varepsilon$, prove that, for all but finitely many positive integers $v$, any graph on $v$ vertices with at least $(1+\varepsilon)v$ edges has two distinct simple cycles of equal lengths. (Recall that the notion of a simple cycle does not allow repetition of vertices in a cycle.)}
+	
+	
+		\solu{If suppose there are $ x $ cycles at some point, each distinct in size. \textbf{Double-counting} the number of edges in those cycles: there are at least $ \dfrac{x^2}{2} $ edges. Since there are at most $ 2n $ edges in the graph, there is one edge that is contained in at least $ \dfrac{x^2}{4n} $ cycles.
+		
+		Now, if we delete that edge, and keep doing that until there is no cycle left in the graph, how many steps might we need to make?
+		
+		Notice that $ x < 4n $. If we let $ 4n=c $, we can rephrase our question: 
+		
+		\lem{}{Given $ m<c $, let $ {a_i}_{\ge 0} $ be a sequence defined by: 
+		\[a_0=m,\ a_{i+1}=a_i-\ceil{\frac{x^2}{c}}\]
+		It is clear that eventually for some $ t $, $ a_t $ will become $ 0 $. What is the upper bound for $ t $?}
+	
+		Suppose we are at $ x $ now. The decrement we need to make now is $ k:=\dfrac{x^2}{c} $. The decrement we need to make when we are at $ \dfrac x2 $ is $ \dfrac{k}{\sqrt{2}} $. AND at each step in going from $ x \to \dfrac{x}{2} $ changes the decrement very little. So we can take the average decrement of all the steps and calculate the number of steps with that fixed.
+		
+		So, essentially \textbf{Greedy Algorithm} From this intuition, and some calculation, we get the idea of thinking about steps needed to cross an interval of $ \sqrt{\dfrac{c}{4}} $}
+	
+	
+		
+		\solu{It is easier to control cycles in a graph where there is no cycle! And the best kind of spanning tree is a BFS tree.
+			
+		Now, every edge that is not in this tree creates a cycle. We know that the lengths of these cycles are all distinct. So we can lower bound the sum of the lengths. Whenever we want to bound something, it is always a good idea to look for a way to represent the variables differently. This is where the ``jumping over vertices'' idea comes from.}
+	
+	
+		\solu{Think of the cycles as binary strings. Addition of these cycles are XOR operation. Now, let $ M $ be the set of all cycle lenghts. If we take some cycles and add them, they correspond to some subset of $ M $. This will give us an upper bound for the sum of some lengths from $ M $.
+		
+		Now, we want these sums to be distinct. How to do that? We are adding cycles together right? So we need to bring order in there. We will only take cycles from a certain set, so that it holds. These cycles need to be linearly independent of themeselvs. That gives us the construction for the set.
+		
+		After this, the rest is just bounding.}
+		
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h1876763p12752820}{ISL 2018 C5}{M}{Let $k$ be a positive integer. The organising commitee of a tennis tournament is to schedule the matches for $2k$ players so that every two players play once, each day exactly one match is played, and each player arrives to the tournament site the day of his first match, and departs the day of his last match. For every day a player is present on the tournament, the committee has to pay $1$ coin to the hotel. The organisers want to design the schedule so as to minimise the total cost of all players' stays. Determine this minimum cost.}
+	
+		

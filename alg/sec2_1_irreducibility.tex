@@ -1,0 +1,171 @@
+\newpage\subsection{Irreducibility}
+
+	\begin{myitemize}
+		\item \href{https://euclid.ucc.ie/mathenr/IMOTraining/Polynomials2015.pdf}{Summer Camp 2015 Handout}
+		\item \href{http://yufeizhao.com/olympiad/intpoly.pdf}{Yufei Zhao's Handout}
+	\end{myitemize}
+
+	
+	\begin{take_note*}{What can be showed to prove Irreducibility}
+		\begin{itemize}[wide=5pt]
+			\item Writing $ f = g\cdot h $ and equating coefficients
+			\item If the polynomial involves some prime, it's often useful to try factoring modulo that prime
+			\item If the last coefficient is a prime, then there are some obvious bounds on the roots
+			\item If there are bounds on the coefficients, then try root bounding
+		\end{itemize}
+	\end{take_note*}
+	
+	\bigskip 
+	
+	\begin{minipage}[t]{.48\linewidth}
+		\lem{Bounds On Roots}{$ P $ is a monic polynomial. Suppose $ P(0)\neq0 $ and at most one complex root of $ P $ has absolute value at least $ 1 $. Then $ P $ is irreducible.\label{lemma:root_irred_1}}
+	\end{minipage}\hfill%
+	\begin{minipage}[t]{.48\linewidth}
+		\lem{}{$ P $ is a monic polynomial. Suppose that $ |P(0)| $ is prime, and all complex roots of $ P $ have absolute value greater than $ 1 $. Then $ P $ is irreducible.\label{lemma:root_irred_2}}
+	\end{minipage}
+	
+	\bigskip
+		
+	\begin{minipage}[t]{.48\linewidth}
+		\lem{Leading Coefficient is LARGE}{Let $ P(x) = b_nx^n + b_{n-1}x^{n-1} + \dots + b_1x + b_0 $ such that
+			\[|b_n| > |b_{n-1}| + |b_{n-2}| + \dots + |b_0|\]
+		Then every root $ \alpha $ of $ P $ is \textbf{strictly inside of the unit circle}, i.e. $ |\alpha| < 1 $.\\
+			
+		i.e. If the first coefficient of the polynomial is very large, then all of the roots lie inside the unit circle.}
+	\end{minipage}\hfill%
+	\begin{minipage}[t]{.48\linewidth}
+		\lem{Coefficients form a Decreasing Sequence}{Let $ P(x) = a_nx^n + a_{n-1}x^{n-1} + \dots + a_1x + a_0 $ be a real polynomial. Such that,
+			\[a_n\ge a_{n-1} \ge \dots \ge a_1 \ge a_0 > 0\]
+		Then any complex $ z $ of $ P(x) $ satisfies $ |z|\le 1 $\\
+			
+		i.e. If the coefficients form a decreasing sequence then all of the roots lie on or inside the unit circle.}
+	\end{minipage}
+			
+	\bigskip
+			
+	\begin{minipage}[t]{.48\linewidth}
+		\lem{Constant is LARGE}{Let $ P(x) = a_nx^n + a_{n-1}x^{n-1} \dots + a_1x + a_0 $ be a polynomial over integers. Where, $ a_0 $ is a prime, and 
+			\[|a_0| > |a_n| + |a_{n-1}| + \dots + |a_1|\]
+			Prove that $ P(x) $ is irreducible.}
+	\end{minipage}\hfill%
+	\begin{minipage}[t]{.48\linewidth}
+		\theo{https://en.wikipedia.org/wiki/Rouche's_theorem}{Rouché's Theorem}{Let $ f,g $ be analytic functions on and inside a simple closed curve $ \mathcal{C} $. Suppose that \[ |f(z)| > |g(z)| \] for all points $ z $ on $ \mathcal{C} $. Then $ f $ and $ f+g $ have the same number of zeroes (counting multiplicities) interior to $ \mathcal{C} $}
+	\end{minipage}
+			
+	
+	
+	
+	
+	
+	\theo{https://artofproblemsolving.com/community/c2562h1422017s3_perrons_irreducibility_criterion}{Perron's Criterion}{Let $ P(x) = x^n + a_{n-1}x^{n-1} + a_{n-2}x^{n-2} \dots a_1x + a_0 $ be a polynomial over integers such that \[|a_{n-1}| > 1 + |a_{n-2}| + |a_{n-3}| + \dots + |a_1| + |a_0|\] Then $ P(x) $ is irreducible.}
+	
+	\rem{The crucial idea behind the proof is that $ |a_0|\ge 1 $, and if the polynomial is reducible, then there are at least two roots $ |z| \ge 1 $.}
+	
+	\begin{prooof}[Bounding Roots]
+		Let $ P(z) = 0 $ for some $ |z|=1, z\in\C $. That means we have 
+		\begin{align*}
+			-a_{n-1}z^{n-1} &=  z^n + a_{n-2}z^{n-2} \dots a_1z + a_0 \\
+			\implies |a_{n-1}| &= |z^n + a_{n-2}z^{n-2} \dots a_1z + a_0|\\
+			&\le |1| + |a_{n-2}| \dots + |a_0|
+		\end{align*}
+		Which is a contradiction. So $ |z|\ne 1 $.\\
+		
+		We know that there exist a root $ z $ that has an absolute value greater than $ 1 $. We prove that there is only one such root of $ P(x) $. \\
+		
+		First, let $ P(x)=(x-z)Q(x) $, where $ |z|>1 $, and $ Q(x) = x^{n-1} + b_{n-2}x^{n-2} + \dots + b_1x + b_0 $.
+		
+		So we have, 
+		\begin{align*}
+			P(x) &= (x-z)Q(x)\\
+			x^n + a_{n-1}x^{n-1} + a_{n-2}x^{n-2} \dots a_1x + a_0 &= x^n + (b_{n-2} - z)x^{n-1} + \dots + (b_0-zb_1)x+ zb_0\\
+		\end{align*}%
+		\begin{align*}
+			\implies |b_{n-2} - z| &> 1 + |b_{n-3} - zb_{n-2}| + \dots + |b_0 - zb_1| + |zb_0|\\[.5em]
+			|b_{n-2}| + |z| & > 1 - |b_{n-3}| + |z||b_{n-2}| + \dots |b_0| - |z||b_1| + |z|b_0|\\[.5em]
+			|b_{n-2}| + |z| &= (|z|-1)(|b_{n-2}| + |b_{n-3} \dots |b_0|) + |b_{n-2}| + 1\\[.5em]
+			1 &> |b_{n-2}| + |b_{n-3} \dots |b_0|
+		\end{align*}
+		
+		And by \autoref{lemma:Leading Coefficient is LARGE}, $ Q(x) $ does not have any root $ |z|>1 $. 
+	\end{prooof}
+		
+	
+	
+%	\theo{}{Hensel's Lemma}{Let $ a_0, a_1, \dots , a_n $ be integers, and let $ P(x) =a_nx^n+\dots a_1x+a_0 $, and let $ P'(x) $ denote the derivative of $ P(x) $. Suppose that $ x_1 $ is an integer such that $ P(x_1)\equiv 0\ (\mod\ p) $ and $ P'(x_1)\not\equiv 0\ (\mod\ p) $. Then, for any positive integer $ k $, there exists an unique residue $ x_k\ (\mod\ p^k) $, such that $ P(x_k)\equiv 0\ (\mod\ p^k) $ and $ x_k\equiv x_1 \ (\mod\ p)$.}
+	
+	
+	
+	\theo{}{Perron's Criterion's Generalization (Dominating Term)}{Let $ P(z) = a_nz^n + a_{n-1}z^{n-1} + \dots + a_1z + a_0 $ be a complex polynomial, such that its $ a_k $ term is dominant, that is,
+		\[|a_k| > |a_0| + |a_1| + \dots |a_{k-1}| + |a_{k+1}| +\dots + |a_{n}|\]
+	for some $ 0 \le k \le n $. Then exactly $ k $ roots of $ P $ lies strictly inside of the unit circle, and the other $ n-k $ roots of $ P $ lies strictly outside of the unit circle.}
+	
+	
+	\proof{A direct application of \autoref{theorem:Rouché's Theorem}.}
+	
+	\newpage
+	
+	
+	\lem{Bound on roots}{Let $ f(x) = a_nx^n + a_{n-1}x^{n-1}\dots + a_1x+a_0 $ be an integer polynomial. Suppose that $ a_n\ge 1, a_{n-1}\ge 0 $ and $ a_i\le H $ for some positive constant $ H $ and $ i = 0, 1, \dots n-2 $. Then any complex zero $ \a $ of $ f(x) $ has either \textit{nonpositive real part}, or satisfies
+	\[|\a| < \frac{1+\sqrt{1+4H}}{2}\]}
+	
+		\proof{Suppose $ z $ is a root such that $ |z|>1 $ and $ \mathrm{Re}\ z >0 $. Then we have
+			\begin{align*}
+				\left|\frac{f(z)}{z^n}\right| &\ge \left(a_n - \frac{a_{n-1}}{z}\right) - H\left(\frac{1}{|z|^2} + \frac{1}{|z|^3} \dots \frac{1}{|z|^n}\right)\\[1em]
+				&> \mathrm{Re\ }\left(a_n+\frac{a_{n-1}}{z}\right) - \frac{H}{|z|^2-|z|}\\[.5em]
+				&\ge 1 - \frac{H}{|z|^2-|z|}\\[1em]
+				& = \frac{|z|^2-|z| - H}{|z|^2-|z|}\\[.2em]
+				& \ge 0
+			\end{align*}
+		Whenever \[|z| \ge \frac{1+\sqrt{1+4H}}{2}\]
+		}
+	
+	
+	\theo{https://en.wikipedia.org/wiki/Cohn's_irreducibility_criterion}{Cohn's Criterion}{Suppose $ p $ is a prime number, expressed as $ \overline{p_np_{n-1}\dots p_1p_0} $ in base $ b\ge 2 $. Then the polynomial
+		\[f(x) = p_nx^n + p_{n-1}x^{n-1} \dots +p_1x + p_0\]
+	is irreducible.}
+	
+	
+	
+	
+	
+	
+	
+	
+
+		
+		
+		
+		
+		
+		
+	
+	
+
+		
+	\prob{https://artofproblemsolving.com/community/c6h82906p475370}{ISL 2005 A1}{E}{Find all pairs of integers $a,b$ for which there exists a polynomial $P(x) \in \mathbb{Z}[X]$ such that product $(x^2+ax+b)\cdot P(x)$ is a polynomial of a form \[ x^n+c_{n-1}x^{n-1}+\cdots+c_1x+c_0 \] where each of $c_0,c_1,\ldots,c_{n-1}$ is equal to $1$ or $-1$.}
+	
+		\solu{The idea of bounding the roots using the coefficients.}
+		
+		
+		
+	
+	
+	\prob{}{}{EM}{Let $ P(x) $ be a polynomial with real coefficients, and $ P(x)\geq 0 $ for all $ x\in \R $. Prove that there exists two polynomials $ R, S \in \Q $ such that 
+		\[P(x) = R(x)^2 + Q(x)^2\]}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h84391p488980}{Romanian TST 2006 P2}{M}{Let $p$ a prime number, $p\geq 5$. Find the number of polynomials of the form
+		\[ x^p + px^k + p x^l + 1, \quad k > l, \quad k, l \in \left\{1,2,\cdots,p-1\right\}, \] which are irreducible in $\mathbb{Z}[X]$.}
+	
+		\solu{Taking mod $ p $, we have that $ x^p+1\equiv (x+1)^p (\mod\ p) $. Now we can try equating terms or plug in some values to check for equality.}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h53271p334363}{Romanian TST 2003 P5}{M}{Let $f\in\mathbb{Z}[X]$ be an irreducible polynomial over the ring of integer polynomials, such that $|f(0)|$ is not a perfect square. Prove that if the leading coefficient of $f$ is 1 (the coefficient of the term having the highest degree in $f$) then $f(X^2)$ is also irreducible in the ring of integer polynomials.}
+	
+		\solu{If $ f(x^2) = g(x)h(x) $, plugging $ -x $ gives us $ g(x)h(x) = g(-x)h(-x) $. So we should look at the common roots of $ h(x) $ and $ h(-x) $. And it is straightforward from here.}
+		
+		\solu{}
+	
+	

@@ -1,0 +1,82 @@
+\section{Primes}
+
+	
+	\prob{https://artofproblemsolving.com/community/c6h597247p3544105}{ISL 2013 N5}{M}{Fix an integer $k>2$. Two players, called Ana and Banana, play the following game of numbers. Initially, some integer $n \ge k$ gets written on the blackboard. Then they take moves in turn, with Ana beginning. A player making a move erases the number $m$ just written on the blackboard and replaces it by some number $m'$ with $k \le m' < m$ that is coprime to $m$. The first player who cannot move anymore loses.
+	
+	An integer $n \ge k $ is called good if Banana has a winning strategy when the initial number is $n$, and bad otherwise.
+		
+	Consider two integers $n,n' \ge k$ with the property that each prime number $p \le k$ divides $n$ if and only if it divides $n'$. Prove that either both $n$ and $n'$ are good or both are bad.}
+
+		
+		\solu{Every idea that naturally follows lead to a solution, so after getting the idea of working on a single equivalence class is enough, we face the problem that ``big primes'' cause the trouble. So can we get rid of them by making some minimal number that arent ``contaminated'' by big primes?}
+		
+	
+	
+
+	\prob{https://artofproblemsolving.com/community/c6h1113198p5083569}{ISL 2014 N4}{EM}{Let $n > 1$ be a given integer. Prove that infinitely many terms of the sequence $(a_k )_{k\ge 1}$, defined by \[a_k=\left\lfloor\frac{n^k}{k}\right\rfloor,\] are odd. (For a real number $x$, $\lfloor x\rfloor$ denotes the largest integer not exceeding $x$.)}
+	
+		\solu{First we take a prime, doesnt work, then we take two primes, one being $ 2 $ (Since we need it in the bottom), but that doesn't work either. Then take $ n $ instead of $ 2 $, because we want the $ 2 $'s in the numerator vanish. Surprisingly this works.} 
+		
+		
+		
+		
+	\prob{https://artofproblemsolving.com/community/c6h545764p3156840}{ISL 2012 N3}{E}{Determine all integers $m \geq 2$ such that every $n$ with $\frac{m}{3} \leq n \leq \frac{m}{2}$ divides the binomial coefficient $\binom{n}{m-2n}$.}
+	
+		\solu{Investigate, and find out when $ n | \binom{n}{m-3n} $.}
+		
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h34224p212395}{ISL 2004 N1}{E}{Let $\tau(n)$ denote the number of positive divisors of the positive integer $n$. Prove that there exist infinitely many positive integers $a$ such that the equation $ \tau(an)=n $ does not have a positive integer solution $n$.}
+		
+		\solu{\input{dump/isl2004n1}}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h568274p3332299}{USA TST 2014 P2}{M}{Let $a_1,a_2,a_3,\ldots$ be a sequence of integers, with the property that every consecutive group of $a_i$'s averages to a perfect square. More precisely, for every positive integers $n$ and $k$, the quantity \[\frac{a_n+a_{n+1}+\cdots+a_{n+k-1}}{k}\] is always the square of an integer. Prove that the sequence must be constant (all $a_i$ are equal to the same perfect square).}
+		
+		\solu{The most obvious fact of this sequence is that every element has to be the same residue mod every prime. Using $ p=3 $ we see that if one element is divisible by $ p $, every other elements are divisible by $ p $ as well. As this is true, we try to prove it. Again we use the most obvious facts we can get from the sequence.}
+		
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h545765p3156844}{ISL 2012 N6}{M}{Let $x$ and $y$ be positive integers. If ${x^{2^n}}-1$ is divisible by $2^ny+1$ for every positive integer $n$, prove that $x=1$.}
+		
+		\solu{First notice the important things about the primes dividing $ b_n=x^{2^n}-1 $. Another important thing to notice is that if $ p|b_i $, then $ ord_p(b_i)=2^j $. So we get another bound for the primes.
+		
+		The most natural thing is to ask now if the primes that have the property $ 2||p-1 $ are infinite, because then we will have an obvious contradiction. Which leads to the following lemma.
+	
+		Another approach is to taking a $ N $ such that $ a_N = 2^Ny+1 $ becomes congruent to $ a_1 $, and show $ a_1 $ is actually congruent to some constant, but since $ N $ is arbitrary, we are done.}
+	
+	
+	
+	\lem{Primes in a recursive sequence}{Let $ a_n = 2^ny+1 $ be a sequence of positive intergers. Prove that there are infinitely many prime numbers such that $ p\equiv -1\ (\text{mod } p) $ and $ p|a_i $ for some $ i $.}
+	
+		\solu{Somehow we want to deploy Euclid. Let's first group the desired primes in a set $ T $.
+		
+		So we ask ourselves what is the most natural thing for $ a_n\equiv 1\ (\text{mod }4) $ for some $ n $ to have a prime divisor congruent to $ -1 $ mod $ 4 $? If we can factor $ a_n $ into congruent to $ -1 $ mod $ 4 $ parts. We notice that $ a_1\equiv -1\ (\text{mod } 4) $. So that should be a good starting point.
+		
+		Now we want to find some $ n $ such that $ a_1|a_n $ and $ p\in T,\ p\not|\dfrac{a_n}{a_1} $, or wishfully, $ p|\dfrac{a_n}{a_1}-1 $}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1572309p9659765}{China TST 2018 T2P4}{EM}{Let $k, M$ be positive integers such that $k-1$ is not squarefree. Prove that there exist a positive real $\alpha$, such that $\lfloor \alpha\cdot k^n \rfloor$ and $M$ are coprime for any positive integer $n$.}
+	
+		
+		\solu{Think about what $ \a $ actually represent in the numberline. It's the ratio that represents how a coprime number of $ M $ is from $ k^n $. We think wishfully and hope that $ \a $ is something like $ A + B\dfrac{1}{k-1} $. Why $ \dfrac{1}{k-1} $? Because this number is ``nice'' when multiplied by $ k^n $, because it lets us strech the ``same ratio'' motivation for all $ k^n $. With a bit of workaround to find suitable values for $ A, B $ is needed.}
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h527481p2995942}{China TST 2013 T2P2}{EM}{Prove that: there exists a positive constant $K$, and an integer series $\{a_n\}$, satisfying:
+		\begin{enumerate}[left=0pt, itemsep=0pt]
+			\item  $0<a_1<a_2<\cdots <a_n<\cdots $
+			\item  For any positive integer $n$, $a_n<1.01^n K$
+			\item  For any finite number of distinct terms in $\{a_n\}$, their sum is not a perfect square
+		\end{enumerate}}
+	
+		\rem{The basic idea is to make any sum of elements have a prime divisor with odd power. We want an extension of the set $ \{p, p^3, p^5\dots\} $ for some prime $ p $.}
+		
+		\solu{Take a prime number $ p $ which satisfies \[p^2<1.01^p\] Such prime numbers exist because the function $ f(x)=x^{\tfrac{2}{p}} $ is strictly decreasing. 
+			
+		Now let $ i=pk+j $, and let \[a_i=a_{pk+j} = jp^{2k+2} + p^{2k+1}\]
+		
+		And let $ K=p^3 $. Since $ p^2 < 1.01^p $, we have \[a_i < p^{2k+3} = (p^2)^{k}\cdot p^3 < 1.01^{pk}p^3 < 1.01^iK \]
+		
+		Also, it's easy to check that sum of every finite subset of this set has an odd power of $ p $, so no sum is a perfect square.}
+	

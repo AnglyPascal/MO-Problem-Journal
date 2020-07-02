@@ -1,0 +1,46 @@
+\newpage\section{Divisibility}
+
+	\prob{https://artofproblemsolving.com/community/c6h17329p118695}{ISL 2002 N6}{E}{Find all pairs of positive integers $m,n\geq3$ for which there exist infinitely many positive integers $a$ such that \[ \frac{a^m+a-1}{a^n+a^2-1} \] is itself an integer.}
+	
+	\begin{solution}[Manipulation]
+		\sollem{For $ a, m, n\in \N $, we have
+			\[a^n+a^2-1\ |\ a^{m-i} + (-1)^i\left(a^{n-1} - a^{n-2} +\dots + (-1)^{i+1}a^{n-i}\right) + (-1)^i\left(a-1\right)\]}
+		
+		\proof{ We proceed by induction on $ i $. For $ i=0 $, it is true. So assume for $ i<k $, it is true.
+			
+			\begin{align*}
+			a^n+a^2-1\ &|\ a^{m-i} + (-1)^i\left(a^{n-1} - a^{n-2} +\dots + (-1)^{i+1}a^{n-i}\right) + (-1)^i\left(a-1\right)\\[1em]
+			\implies a^n+a^2-1\ &|\ a^{m-i} + (-1)^i\left(a^{n-1} - a^{n-2} +\dots + (-1)^{i+1}a^{n-i}\right) + (-1)^i\left(a-1\right) - (-1)^i(a^n+a^2-1)\\[.5em]
+			&=a^{m-i} +  (-1)^i\left(-a^n+ a^{n-1} - a^{n-2} +\dots + (-1)^{i+1}a^{n-i}\right) + (-1)^{i+1}(a^2-a)\\[1em]
+			\therefore a^n+a^2-1\ &|\ a^{m-i-1} + (-1)^{i+1}\left(a^{n-1} - a^{n-2} +\dots + (-1)^{i+1}a^{n-i}\right) + (-1)^{i+1}\left(a-1\right)\\
+			\end{align*}}
+		
+		For $ i=n $, we have,
+		
+		\[a^n+a^2-1\ |\ a^{m-n}  + (-1)^n \left(\frac{a^n+1}{a+1}\right) + (-1)^n(a-1)\]
+		
+		Clearly, $ m\ge n $. Let $ m=nk+q $. If $ n $ is even,
+		\begin{align*}
+		a^n+a^2-1\ &|\ a^{m-n}+a-1 + \left(\frac{a^n+1}{a+1}\right)\\[.5em]
+		\implies a^n+a^2+1\ &|\ a^q+a-1 + k\left(\frac{a^n+1}{a+1}\right)
+		\end{align*}
+		
+		Which is not possible since the polynomial on the right side has degree at most $ n-1 $, and can't be $ 0 $ for all $ a\in \Z $.\\ 
+		
+		So, $ n $ is odd. Then we have,
+		
+		\begin{align*}
+		a^n+a^2-1\ &|\ a^{m-n} + a-1 - \left(\frac{a^n+1}{a+1}\right) - 2(a-1)\\[.5em]
+		\implies a^n+a^2-1\ &|\ a^q + a -1 - k\left(\frac{a^n+1}{a+1}\right) -2k(a-1) = P(a)
+		\end{align*}
+		
+		Since $ P(a) $ has degree at most $ n-1 $, $ P(a) =0 $ for all $ a\in \Z $.
+		
+		
+		\begin{align*}
+		P(a) &= a^q + a -1 - k\left(\frac{a^n+1}{a+1}\right) -2k(a-1)\\
+		\therefore a^q + a - 1 &= k\left(\frac{a^n+1}{a+1}\right)+2k(a-1)
+		\end{align*}
+		
+		Comparing the coefficients and degrees on both sides, we have, $ q=n-1=2,\ k=1 $. Which gives us the only solution $ (m, n) = (5, 3) $.
+	\end{solution}

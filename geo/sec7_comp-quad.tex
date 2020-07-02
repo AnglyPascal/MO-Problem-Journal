@@ -1,0 +1,109 @@
+\newpage\section{Complete Quadrilateral + Spiral Similarity}
+
+
+	
+
+
+	\lem{}{Three lines, $ l_a, l_b, l_c $, origin at point $ P $. Two circles $ \w_1, \w_2 $ passing through $ P $ meet the lines at $ A_1, B_1, C_1;\ A_2, B_2, C_2 $ resp. Let $ A_3 $ be the reflection of $ A_2 $ on $ A_1 $. Define $ B_3, C_3 $ similarly. Then $ PA_3B_3C_3 $ are concyclic.}
+
+		\fig{1}{SpiralSimiLemma1}{Spiral Similarity Lemma 1: the Blue points have been reflected wrt to the Red points to get the Green points}
+
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h355791p1932936}{ISL 2009 G4}{E}{Given a cyclic quadrilateral $ABCD$, let the diagonals $AC$ and $BD$ meet at $E$ and the lines $AD$ and $BC$ meet at $F$. The midpoints of $AB$ and $CD$ are $G$ and $H$, respectively. Show that $EF$ is tangent at $E$ to the circle through the points $E$, $G$ and $H$.}
+	
+	
+	\solu{This problem generalizes to \hrf{lemma:power_of_point_on_a_midline_of_a_self-polar_triangle}{this}}
+	
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h587990p3480801}{All Russian 2014 Grade 10 Day 1 P4}{E}{Given a triangle $ABC$ with $AB>BC$, let $ \Omega $ be the circumcircle. Let $M$, $N$ lie on the sides $AB$, $BC$ respectively, such that $AM=CN$. Let $K$ be the intersection of $MN$ and $AC$. Let $P$ be the incenter of the triangle $AMK$ and $Q$ be the $K$-excenter of the triangle $CNK$. If $R$ is midpoint of the arc $ABC$ of $ \Omega $ then prove that $RP=RQ$.}
+	
+	
+	
+	\lem{}{Let $E$ and $F$ be the intersections of opposite sides of a convex quadrilateral $ABCD$. The two diagonals meet at $P$. Let $M$ be the foot of the perpendicular from $P$ to $EF$. Show that $\angle BMC=\angle AMD$. And $ PM $ is the bisector of angles $ \angle AMC, \angle BMD $.}		
+	
+		\fig{1}{Complete_quad_anglebisector}{}
+		
+		
+	\theo{https://en.wikipedia.org/wiki/Newton_line}{Newton-Gauss Line}{Among the points $A, B, C, D$ no three are collinear. The lines $AB$ and $CD$ intersect at $E,$ and $BC$ and $DA$ intersect at $F.$ Prove that either the circles with diameters $AC, BD, EF$ pass through two common points, or no two of them have any common point.
+		
+		The previous can be stated differently: The midpoints of $AC, BD, EF$ are collinear and this line is called ``Newton-Gauss Line''.}
+	
+	\solu{Either by E.R.I.Q. Lemma, Length Chase, or configurations like \href{https://www.cut-the-knot.org/Curriculum/Geometry/Varignon.shtml}{Varignon Parallelogram}}
+	
+
+	
+	
+	\prob{}{}{M}{Let $ABCD$ incribed $(O)$ and a point so-called $M$ .Call $X,\ Y,\ Z,\ T,\ U,\ V$are the projection of $M$ onto $AB,\ BC,\ CD,\ DA,\ CA,\ BD$ respectively. Call $I,\ J,\ H$ the midpoints of $XZ,\ UV,\ YT$ respectively. Prove that $N,\ P,\ Q$ are collinear.}\label{eriq_lemma_1}
+	
+	\solu{Divide the problem in cases, and prove the easiest case first.}
+	
+	
+
+
+	\lem{}{In a cyclic quadrilateral $ ABCD $, $ AC\cap BD=P,\ AD\cap BC=Q,\ AB\cap CD=R $. $ S, T $ are the midpoints of $ PQ, PR $. And a point $ X $ is on $ ST $. Prove that the power of $ X $ wrt $ ABCD $ is $ XP^2 $.}\label{lemma:power_of_point_on_a_midline_of_a_self-polar_triangle}
+	
+		\solu{Using polar argument wrt $ P $}
+		
+		\fig{.7}{power_of_point_on_a_midline_of_a_self-polar_triangle}{}
+	
+
+
+	\prob{https://artofproblemsolving.com/community/c6h326960p1752047}{USA TST 2000 P2}{E-M}{Let $ ABCD$ be a cyclic quadrilateral and let $ E$ and $ F$ be the feet of perpendiculars from the intersection of diagonals $ AC$ and $ BD$ to $ AB$ and $ CD$, respectively. Prove that $ EF$ is perpendicular to the line through the midpoints of $ AD$ and $ BC$.}
+	
+	
+		\fig{1}{USATST2000P2}{USA TST 2000 P2}
+	
+	\solu{First solution is using some properties of the complete quad and angle bash the angle $ \measuredangle (MN, EF) $}
+	
+	\solu{Second solution is to notice the two brow triangles and proving them congruent.}
+	
+
+	
+	
+	\prob{}{}{E}{Let $2$ equal circle $(O_1), (O_2)$ meet each other at $P, Q$. $O$ be the midpoint of $PQ$. $2$ line through $P$ meet the circles at $A,\ B,\ C,\ D,\ (A, C \in (O_1);\ B, D\in (O_2))$. $M, N$ be midpoint of $AD, BC$. Prove that $M, N, O$ are collinear.}\label{eriq_lemma_2}
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1502855p8912529}{AoPS}{}{In $\triangle ADE$  a circle with center $ O $, passes through $A, D$ meets $AE, ED$ respectively at $B, C$, $BD \cap AC = G$, line $OG$ meets $\odot ADE$ at $P$. Prove that $\triangle PBD, \triangle PAC$ has the same incenter (preferably without using inversion).}
+	
+	
+	
+	
+	
+
+	\prob{}{Archer - EChen M1P2}{E}{Let a circle $ \omega $ centered at $ A $ meet $ BC $ at $ D, E $, such that $ B, D, E, C $ all lie on $ BC $ in that order. Let $ \omega $ meet $ \odot ABC $ at $ F, G $ such that $ A, F, B, C, G $ lie on the circle in that order. Let $ \odot BFD \cap AB = K,\ \odot CGE \cap AC = L $. Prove that $ FK, GL, AO $ are concurrent.}
+	
+		\figdf{.7}{Archer_EChen_M1P2}{}
+	
+	
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h477205p2672053}{Sharygin 2012 P22}{E}{A circle $\omega$ with center $I$ is inscribed into a segment of the disk, formed by an arc and a chord $AB$. Point $M$ is the midpoint of this arc $AB$, and point $N$ is the midpoint of the complementary arc. The tangents from $N$ touch $\omega$ in points $C$ and $D$. The opposite sidelines $AC$ and $BD$ of quadrilateral $ABCD$ meet in point $X$, and the diagonals of $ABCD$ meet in point $Y$. Prove that points $X, Y, I$ and $M$ are collinear.}
+	
+		\fig{1}{sharygin/2012_22}{}		
+		\solu{La Hire}
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h477204p2672051}{Sharygin 2012 P21}{E}{Two perpendicular lines pass through the orthocenter of an acute-angled triangle. The sidelines of the triangle cut on each of these lines two segments: one lying inside the triangle and another one lying outside it. Prove that the product of two internal segments is equal to the product of two external segments.}
+	
+		\fig{.7}{sharygin/2012_21}{}
+		\solu{Spiral Similarity}
+		
+	
+	\prob{https://artofproblemsolving.com/community/c6h250108p1370577}{Iran TST 2004 P4}{E}{Let $ M,M'$ be two conjugates point in triangle $ ABC$ (in the sense that $ \angle MAB=\angle M'AC,\dots$). Let $ P,Q,R,P',Q',R'$ be foots of perpendiculars from $ M$ and $ M'$ to $ BC,CA,AB$. Let $ E=QR\cap Q'R'$, $ F=RP\cap R'P'$ and $ G=PQ\cap P'Q'$. Prove that the lines $ AG, BF, CE$ are parallel.}
+
+		\figdf{.7}{irantst2004P4}{The points are collinear, by Zhao Lemmas}			
+		
+		
+		
+	\prob{https://artofproblemsolving.com/community/c6h1629942p10229160}{Iran TST 2018 D2P6}{EM}{Consider quadrilateral $ABCD $ inscribed in circle $\omega $. $P\equiv AC\cap BD$. $E$, $F$ lie on sides $AB$, $CD$ respectively such that $\hat {APE}=\hat {DPF} $. Circles $\omega_1$, $\omega_2$ are tangent to $\omega$ at $X $, $Y $ respectively and also both tangent to the circumcircle of $\triangle PEF $ at $P $. Prove that: \[\frac {EX}{EY}=\frac {FX}{FY}\]}
+	
+		
+

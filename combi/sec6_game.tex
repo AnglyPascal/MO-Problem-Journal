@@ -1,0 +1,120 @@
+\newpage\section{Game Theory}
+
+
+	\begin{myitemize}
+		\item \hrf{file:///home/ahsan/pDB/main/combi/GameTheoryPset.pdf}{Zawad's Game Theory Pset}
+	\end{myitemize}
+	
+
+\subsection{Games}
+
+
+	\den{Nimbers}{\href{file:///home/ahsan/pDB/main/combi/Game Theory/3.htm}{Nimbers} are simply `Nim values' which are assigned to a game configuration - these values are written as $ 0, *1, *2, *3 \dots $ We shall first describe how to obtain the Nim values for the game Squaring the Number. First, the Nim value of $ n=0 $ is assigned $ 0 $, since it is a state in which neither player has a valid move. We then recursively adopt the following rule for each $ n $ : \texttt{find all the possible moves from $ n $ and pick the smallest Nim value which does not occur among all these possible moves}.}
+
+
+	\theo{file:///home/ahsan/pDB/main/combi/Game Theory/3.htm}{Sprague-Grund Theorem}{The \emph{Sprague–Grundy theorem} states that every impartial game under the normal play convention is equivalent to a nimber.}
+
+
+	\khela{https://en.wikipedia.org/wiki/Chip-firing_game}{Chip Firing Game}{Let $ G=(V, E) $ be a graph without any loops or multiedges. Let a number of $ s_i $ chips be stacked on vertex $ i $. The game follows with the player choosing a vertex $ i $, taking $ d_i $ chips from it ($ s_i-d_i > 0 $), and sending one chip to each of the neighbors of the vertex where $ d_i $ is the degree of $ i $. The Problem of this game is to determine when the game will be infinte.
+	\vspace{-1em}
+		\begin{itemize}
+			\item If $ N $ is the total number of edges in $ G $, and $ S $ is the total number of chips, then
+	\end{itemize}}
+
+
+
+	\khela{}{Cutting a stack in half}{Given a number of stacks, at his/her move, a player can choose a stack with even number stones, and divide it in two stacks with the same number of stones.}
+
+
+	\khela{}{Cutting a stack in several}{Given a number of stacks, at his/her move, a player can choose a stack, and divide it in several stacks with the same number of stones.}
+
+
+
+
+
+
+\newpage\subsection{Problems}
+
+
+
+	\prob{https://artofproblemsolving.com/community/c5h202910p1116189}{USAMO 2008 P5}{M}{Three non-negative real numbers $ r_1 $ , $ r_2 $ , $ r_3 $ are written on a blackboard. These numbers have the property that there exist integers $ a_1 $ , $ a_2 $ , $ a_3 $ , not all zero, satisfying $ a_1r_1 + a_2r_2 + a_3r_3 = 0 $. We are permitted to perform the following operation: find two numbers $ x $ , $ y $ on the blackboard with $ x \le y $ , then erase $ y $ and write $ y - x $ in its place. Prove that after a finite number of such operations, we can end up with at least one $ 0 $ on the blackboard.}\label{problem:add_stuffs_2}
+
+		\solu{When can't get info out of the reals, try the integers. Observe the integers, and check if they have any invariant. Rule of thumb of finding an invariant.}
+
+
+
+	\prob{www.hehe.com}{USAMO 2014 P1}{E}{Let $ k $ be a positive integer. Two players $ A $ and $ B $ play a game on an infinite grid of regular hexagons. Initially all the grid cells are empty. Then the players alternately take turns with $ A $ moving first. In his move, $ A $ may choose two adjacent hexagons in the grid which are empty and place a counter in both of them. In his move, $ B $ may choose any counter on the board and remove it. If at any time there are $ k $ consecutive grid cells in a line all of which contain a counter, $ A $ wins. Find the minimum value of $ k $ for which $ A $ cannot win in a finite number of moves, or prove that no such minimum value exists.}\label{problem:coloring_1}
+
+		\solu{Trying to block $ A $. We see that if we could alternately color the points black and white, we could've found some strategy for $ B $. But the triangle grid doesn’t seem very friendly. How can we color the triangles? And don't forget the details idiot.}
+
+
+
+
+	\prob{www.hehe.com}{Indian TST 2004}{M}{The game of pebbles is played as followed: Initially there is one pebble at $ (0, 0) $. In a move one can remove the pebble at $ (i, j) $ and put one pebble each at $ (i+1, j) $ and $ (i, j+1) $ , given that both $ (i+1, j) $ and $ (i, j+1) $ were empty. Prove that at any point in the game, there will be a pebble at some lattice point $ (a, b) $ with $ a+b\leq 3 $.}\label{problem:invariant_rules_of_thumb_3}
+
+		\solu{Two from one, means if the weight is reduced by half in the second level, then the sum would be the same.}
+
+
+
+
+
+	\prob{https://artofproblemsolving.com/community/c6h18505p124463}{ISL 1998 C7}{H}{A solitaire game is played on an $ m\times n $ rectangular board, using $ mn $ markers which are white on one side and black on the other. Initially, each square of the board contains a marker with its white side up, except for one corner square, which contains a marker with its black side up. In each move, one may take away one marker with its black side up, but must then turn over all markers which are in squares having an edge in common with the square of the removed marker. Determine all pairs $ (m,n) $ of positive integers such that all markers can be removed from the board.}\label{problem:invariant_rules_of_thumb_4}
+
+		\solu{If we remove one marker, then this cell becomes useless. So the neighbors to this cell will act like they are not connected to this cell. Now if a cell is connected to $ w $ white cells, and $ b $ black cells, then the resulting board state will have $ b-w $ more cells. Now only this info doesn't build up an invariant. Notice that as we are doing moves, we are reducing neighborhood relations as well, in other words, neighborhood relations decrease by $ b+w $. So if we consider the sum $ W+E $ where $ W $ is the number of all white cells, and $ E $ is the number of all neighborhood relations, we get an invariant on this value.}
+
+
+	\prob{https://artofproblemsolving.com/community/c6h514376p2889829}{ARO 1999 P10.1}{E}{There are three empty jugs on a table. Winnie the pooh, Rabbit, and Piglet put walnuts in the jugs one by one. They play successively, with the initial determined by a draw. Thereby Winnie the pooh plays either in the first or second jug, Rabbit in the second or third, and Piglet in the first or third. The player after whose move there are exactly 1999 walnuts loses the games. Show that Winnie the pooh and Piglet can cooperate so as to make Rabbit lose.}
+
+	
+	\prob{https://artofproblemsolving.com/community/c6h5393p17438}{USAMO 2004, P4}{E}{Alice and Bob play a game on a $ 6 $ by $ 6 $ grid. On his or her turn, a player chooses a rational number not yet appearing in the grid and writes it in an empty square of the grid. Alice goes first and then the players alternate. When all squares have numbers written in them, in each row, the square with the greatest number in that row is colored black. Alice wins if she can then draw a line from the top of the grid to the bottom of the grid that stays in black squares, and Bob wins if she can't. (If two squares share a vertex, Alice can draw a line from one to the other that stays in those two squares.) Find, with proof, a winning strategy for one of the players.}
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1789908p11836140}{RMM 2019 P1}{E}{Amy and Bob play the game. At the beginning, Amy writes down a positive integer on the board. Then the players take moves in turn, Bob moves first. On any move of his, Bob replaces the number $n$ on the blackboard with a number of the form $n-a^2$, where a is a positive integer. On any move of hers, Amy replaces the number $n$ on the blackboard with a number of the form $n^k$, where $k$ is a positive integer. Bob wins if the number on the board becomes zero. Can Amy prevent Bob’s win?}
+	
+		\solu{Decent.}
+		
+		
+	\prob{https://artofproblemsolving.com/community/c6h1268903p6622756}{ISL 2015 C4}{M}{Let $n$ be a positive integer. Two players $A$ and $B$ play a game in which they take turns choosing positive integers $k \le n$. The rules of the game are:
+		
+		\begin{enumerate}
+			\item  A player cannot choose a number that has been chosen by either player on any previous turn.
+			\item  A player cannot choose a number consecutive to any of those the player has already chosen on any previous turn.
+			\item  The game is a draw if all numbers have been chosen; otherwise the player who cannot choose a number anymore loses the game.
+		\end{enumerate}
+		
+	The player $A$ takes the first turn. Determine the outcome of the game, assuming that both players use optimal strategies.}
+	
+		\solu{Look at the simplest things, first produce data like a good boy, and then see what $ A $ has to do to win, or at least draw that he can't because $ B $ is an asshole.}
+		
+		
+		
+		
+		
+	\prob{https://artofproblemsolving.com/community/c6h546171p3160567}{ISL 2012 C4}{EM}{Players $A$ and $B$ play a game with $N \geq 2012$ coins and $2012$ boxes arranged around a circle. Initially $A$ distributes the coins among the boxes so that there is at least $1$ coin in each box. Then the two of them make moves in the order $B,A,B,A,\ldots $ by the following rules:
+		\begin{enumerate}
+			\item On every move of his $B$ passes $1$ coin from every box to an adjacent box.
+			\item On every move of hers $A$ chooses several coins that were not involved in $B$'s previous move and are in different boxes. She passes every coin to and adjacent box.
+		\end{enumerate}
+	Player $A$'s goal is to ensure at least $1$ coin in each box after every move of hers, regardless of how $B$ plays and how many moves are made. Find the least $N$ that enables her to succeed.}
+
+		\solu{Investigate $ B $'s move, see how and where he can make $ 0 $'s}
+		
+		
+		
+		
+		
+	\prob{https://artofproblemsolving.com/community/c6h355783p1932923}{ISL 2009 C1}{E}{Consider $ 2009 $ cards, each having one gold side and one black side, lying on parallel on a long table. Initially all cards show their gold sides. Two player, standing by the same long side of the table, play a game with alternating moves. Each move consists of choosing a block of $ 50 $ consecutive cards, the leftmost of which is showing gold, and turning them all over, so those which showed gold now show black and vice versa. The last player who can make a legal move wins.
+		\vspace{-1em}
+		\begin{enumerate}
+			\itemsep-.5em
+			\item  Does the game necessarily end?
+			\item  Does there exist a winning strategy for the starting player?
+	\end{enumerate}}\label{problem:extremal_case_whole_3}
+	
+	\rem{Trying out small cases doesn't help in this problem. Rather exploring what inevitably has to happen helps to notice patterns.}
+	
+	\solu{The first part of the problem is trivial induction usage.
+		
+		For the second half, notice that card $ 1 $ has to chosen only once. And cards $ 2, \dots 50 $ have to chosen an even number of times each. Again, card $ 51 $ has to be taken an odd number of times. Inductively, cards $ 1, 51 \dots 1951 $ were chosen odd number of times each, and all other cards were chosen even number of times each. Since that means the parity of total number of moves in this game is even.}

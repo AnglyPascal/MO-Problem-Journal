@@ -1,0 +1,46 @@
+\newpage\section{Binomial Identities}
+
+
+		\theo{https://en.wikipedia.org/wiki/Vandermonde's_identity}{Vandermonde's identity}{\[ \binom{m+n}{k} = \sum_{i=0}^{k} \binom{m}{i}\binom{n}{k-i} \]}
+
+
+		\theo{}{}{\[\binom{2n}{n} = \binom{p}{0}^2 \binom{p}{1}^2 \dots + \binom{p}{p}^2 \]}
+
+
+		\prob{https://artofproblemsolving.com/community/c6h1061914p4600670}{Somewhere}{M}{Let $n$ and $m$ be positive integers with $n<m$. Prove that
+			\[ \sum_{k=0}^n \frac{(-1)^{n-k}}{m-k}\binom{n}{k}=\frac{1}{(n+1)\binom{m}{n+1}}. \]}
+		
+			\solu{Expressing the left side as the finite difference of a polynomial.}
+			
+		
+		\prob{https://artofproblemsolving.com/community/c6h358774}{USA TST 2010 P8}{M}{Let $m,n$ be positive integers with $m \geq n$, and let $S$ be the set of all $n$-term sequences of positive integers $(a_1, a_2, \ldots a_n)$ such that $a_1 + a_2 + \cdots + a_n = m$. Show that
+			\begin{center}
+				\tcboxmath[
+					arc=0mm,
+					colback=black!5!white,
+					boxrule=0mm,
+				]
+				{\sum_S 1^{a_1} 2^{a_2} \cdots n^{a_n} = {n \choose n} n^m - {n \choose n-1} (n-1)^m + \cdots + (-1)^{n-2} {n \choose 2} 2^m + (-1)^{n-1} {n \choose 1}}
+		\end{center}}
+		
+		\rem{this problem is just f**king amazing, both the combinatorial and algebraic solutions are cute as hell}		
+		
+			\solu{First, the combi solution: Look at the right side, try to translate it to combinatorial model. If we had used the inclusion-exclusion method, the right side would be the number of ways to color a row of length $ m $ with $ n $ colors, with each color appearing at least once. Now our remaining job is to prove the same for the left side.}
+			
+			
+			\solu{Now, the algebraic, GF solution: Now that we have made up our mind that we are going to use GF, let's try to apply GF to the more innocent looking term on the left side. We quickly get a polynomial for that. Now the right side, alternating sums of binomials, gives an experienced psolver the idea of finite differences. If we think of the polynomial as the $ n $'th finite difference of a polynomial, we need the original polynomial to be a 2D poly. from here the idea follows and we get a nice polynomial for the right side. But how do we show that the two polynomials on the two sides are equal? We need to get a closed form for the right side poly. But to get this, we think inductively.}
+			
+			
+		
+		\prob{https://artofproblemsolving.com/community/c6h1076934p5964577}{Binom 1}{}{\[\binom{2n}{0}-\binom{2n-1}{1}+\binom{2n-2}{2}-\dotsc+(-1)^n \binom{n}{n}=?\]}
+		
+			\solu{Generating funtion}
+			
+			\solu{Combinaorial Model: Consider the number of ways to tile a $1 \times 2n$ rectangle with squares and dominoes. Let $E$ be the set of ways to do it with an even number of dominoes, and let $O$ be the same for odd. We want to find $|E| - |O|$.}
+		
+		
+		\prob{https://artofproblemsolving.com/community/c6h1076934p5964577}{Binom 2}{}{\[\binom{n}{0}^2-\binom{n}{1}^2+\binom{n}{2}^2-...+(-1)^n\binom{n}{n}^2=?\]}
+		
+			\solu{Generating function}
+			
+			\solu{Consider the number of ways to paint the squares of a $2 \times n$ rectangle red and blue such that both rows have the same number of red squares. Let $E$ be the set of ways with an even number of red squares in each row, and let $O$ be the same for odd. We want to find $|E| - |O|$.}

@@ -1,0 +1,31 @@
+\newpage \subsection{Recurrent Sequences}	
+	
+	
+	\begin{myitemize}
+		\item \href{https://ufile.io/ywbniil2}{WOOT 2010-11 Recursion}
+	\end{myitemize}
+	
+	
+	\begin{BoxedTheorem}{Sum of Geometric Sequences}{}\label{theorem:Sum of Geometric Sequences}
+		Every recurrent sequence can be written as a sum of some geometric sequences. Given a recurrent sequence, 
+		\[x_n = a_1x_{n-1} + a_2x_{n-2}	+\dots + a_kx_{n-k}\]
+		Then $ x_n $ can be written as 
+		\[x_n = c_1r_1^n + c_2r_2^n +\dots + c_lr_l^n\]
+		For all $ c_i $ if $ r_i $ are the roots of the \emph{characteristic polynomial} of the recursion. Which is:
+		\[\tcboxmath[colback=white, colframe=white]{x^k - a_1x^{k-1} - a_2x^{k-2} \dots - a_k = 0}\]
+		If there are double roots, say $ r_1 = r_2 = r_3 $, then we instead have,
+		\[x_n = \tcboxmath[colback=white, colframe=white]{c_1r_1^n + c_2n\ r_2^n + c_3n^2\ r^n} \dots + c_lr_l^n\]
+		 
+		Reversely, we can say that a sequence defined by a sum of geometric recurrent series is a recursion. 
+	\end{BoxedTheorem}
+
+	\lem{}{Let $ F_n $ be the $ n $th Fibonacci number. Then the following holds:
+		\[F_{n}^2 + F_{n+1}^2 = F_{2n+1}\]}
+	
+	\proof{Expanding the general form of the terms, and showing that $ a_n = F_{n}^2 + F_{n+1}^2 - F_{2n+1} $ is a recursion by \autoref{theorem:Sum of Geometric Sequences}.}
+	
+	\begin{BoxedTheorem}[title=Repertoire Method]{}{}
+		Given a recurrent function defined by 
+		\[f(n) = A(n)\a + B(n)\beta + C(n)\gamma\]
+		We plug in different values for $ f(n) $, for example, $ f(n) = 1, n, 2n $ etc. for which the values are known from the recursion, and then solve for $ A, B, C $.
+	\end{BoxedTheorem}

@@ -1,0 +1,153 @@
+\graphicspath{{Pics/}}
+
+\newpage\section{Circles and Radical Axises}
+	
+	
+	
+	\prob{}{}{E}{In $\triangle ABC$, $H$ is the orthocenter, and $AD, BE$ are arbitrary cevians. Let $\omega_1, \omega_2$ denote the circles with diameters $AD, BE$ resp. $HD, HE$ meet $\omega_1, \omega_2$ again at $F,G$. $DE$ meet $\omega_1, \omega_2$ again at $P_1,P_2$. $FG$ meet $\omega_1, \omega_2$ again at $Q_1,Q_2$. $P_1H, P_2H$ meet $\omega_1, \omega_2$ at $R_1,R_2$ and $Q_1H, Q_2H$ meet $\omega_1, \omega_2$ at $S_1, S_2$. $P_1Q_1\cap P_2Q_2\equiv X$ and $R_1S_1\cap R_2S_2\equiv Y$. Prove that $X,Y,H$ are collinear.}
+	
+		\solu{Too much info...}
+		
+		
+	
+	
+	
+	\lem{Pseudo Miquel's Theorem}{In a $\triangle ABC$ let $E,F$ be points on $AC,AB$ and $D$ be a point on $\odot (ABC)$. Let $X=\odot (BFD)\cap \odot (CED)$ then $E,F,X$ are collinear.}
+	
+		\fig{.5}{PseudoMiquel}{Notice the collinearity}
+	
+	
+	
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's proposed problems for Arab Saudi team 2015}{E}{Let $ABC$ be a triangle and $(K)$ is a circle that touches segments $CA, AB$ at $E, F$, reps. $M, N$ lie on $(K)$ such that $BM, CN$ are tangent to $(K)$. $G, H$ are symmetric of $A$ through $E, F$. The circle passes through $G$ and touches to $(K)$ at $N$ that cuts $CA$ again at $S$. The circle passes through $H$ and touches $(K)$ at $M$ that cuts $AB$ again at $T$. Prove that the line passes through $K$ and perpendicular to $ST$ always passes through a fixed point when $(K)$ changes.}
+	
+		\fig{.7}{SATST2015proposed_by_bura/derakynay1134-3}{}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h17322p118681}{ISL 2002 G8}{M}{Let two circles $S_{1}$ and $S_{2}$ meet at the points $A$ and $B$. A line through $A$ meets $S_{1}$ again at $C$ and $S_{2}$ again at $D$. Let $M$, $N$, $K$ be three points on the line segments $CD$, $BC$, $BD$ respectively, with $MN$ parallel to $BD$ and $MK$ parallel to $BC$. Let $E$ and $F$ be points on those arcs $BC$ of $S_{1}$ and $BD$ of $S_{2}$ respectively that do not contain $A$. Given that $EN$ is perpendicular to $BC$ and $FK$ is perpendicular to $BD$ prove that $\angle EMF=90^{\circ}$.}
+	
+		
+		\solu{When one single property can produce a lot others, and we need to prove this property, assume the property to be true and work backwards.}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h79788p456609}{APMO 1999 P3}{E}{Let $\Gamma_1$ and $\Gamma_2$ be two circles intersecting at $P$ and $Q$. The common tangent, closer to $P$, of $\Gamma_1$ and $\Gamma_2$ touches $\Gamma_1$ at $A$ and $\Gamma_2$ at $B$. The tangent of $\Gamma_1$ at $P$ meets $\Gamma_2$ at $C$, which is different from $P$, and the extension of $AP$ meets $BC$ at $R$.	Prove that the circumcircle of triangle $PQR$ is tangent to $BP$ and $BR$.}
+	
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1751587p11419585}{USA TST 2019 P1}{E}{Let $ABC$ be a triangle and let $M$ and $N$ denote the midpoints of $\overline{AB}$ and $\overline{AC}$, respectively. Let $X$ be a point such that $\overline{AX}$ is tangent to the circumcircle of triangle $ABC$. Denote by $\omega_B$ the circle through $M$ and $B$ tangent to $\overline{MX}$, and by $\omega_C$ the circle through $N$ and $C$ tangent to $\overline{NX}$. Show that $\omega_B$ and $\omega_C$ intersect on line $BC$.}\label{problem:usatst2019p1}
+		
+		
+		\solu{[Spiral Similarity]
+			
+			Let $ \omega_C \cap BC = P $. If we extend $ NP $ to meet $ AB $ at $ R $, we get $ XANR $ cyclic. Similarly, if $ \odot XAM\cap AC = Q $, then we have to prove $ QM\cap NR = P $.\\
+			
+			Suppose $ QM\cap NR = P' $. Then by spiral similarity, $ X $ takes $ Q\to M $ and $ N\to R $. It also takes $ Q\to N $ and $ M\to R $. So $ XMP'R $ is cyclic. We now show that $ XMPR $ is also cyclic, which will prove $ P=P' $.\\
+			
+			Let $ T = \odot ABC \cap \odot XAN $. By spiral similarity, $ T $ takes $ R\to B $ and $ N\to C $. It also takes $ R\to N $ and $ B\to C $, which means $ RBPT $ is cyclic. \\
+			
+			\begin{minipage}{.45\linewidth}
+				By spiral similarity, we have, $ \triangle TXA \sim \triangle TNC,\ \triangle TXN \sim \triangle TAC,\ \triangle TBA \sim \triangle TPN $
+				Which implies,
+				
+				\begin{align*}
+				\frac{XN}{TN} = \frac{AC}{TC},\ & \frac{XA}{TA} = \frac{NC}{TC}\\[.5em]
+				\implies \frac{XN}{XA} &= 2\frac{TN}{TA}
+				\end{align*}
+				
+				And so, 
+				
+				\begin{align*}
+				\frac{AB}{TA}=\frac{NP}{TN}\quad \implies\frac{2AM}{NP} &= \frac{TA}{TN} = \frac{XA}{XN}2\\[.5em]
+				\implies \frac{AM}{NP} &= \frac{XA}{XN}
+				\end{align*}
+			\end{minipage}\hfill%
+			\begin{minipage}{.55\linewidth}
+				\figdf{}{USATST2019P1_new}{}
+			\end{minipage}
+			
+			\vspace{1.5em}
+			
+			Which means $ \triangle XAM \sim \triangle XNP $ since $ \angle XAM = \angle XNP $, which concludes the proof.
+		}
+		
+		\solu{[Clever Observation]
+			Reflect $ A $ over $ X $ to $ A' $. Draw the circle with center $ X $ with radius $ XA $. Call it $ \omega $. Let $ P=\omega\cap\odot ABC $. Let $ Q=A'B\cap \omega $.
+						
+			\begin{minipage}{.45\linewidth}
+				We will show that $ M, P, B, Q $ are cyclic, and $ XM $ is tangent to the circle.\\
+				
+				First, we have $ AQ\perp A'B $. So $ MB=MQ $. Now,
+				\begin{align*}
+				\measuredangle MPQ &= \measuredangle APQ - \measuredangle APM\\
+				&=\measuredangle AA'Q - \measuredangle ANM \\
+				&= \measuredangle AXM - \measuredangle XAM\\
+				&=\measuredangle AMX \\
+				&= \measuredangle MBQ
+				\end{align*}
+				So $ M, Q, P, B $ is cyclic. Also since $ MQ=MB $, and $ XM\parallel BQ $, $ XM $ is tangent to $ \odot MPBQ $, and $ \odot MPBQ = \omega_B $.
+			\end{minipage}\hfill %
+			\begin{minipage}{.5\linewidth}
+				\figdf{}{USATST2019P1_1}{}
+			\end{minipage}
+			
+			\vspace{1em}
+			
+			Similarly $ \omega_C $ passes through $ P $, and by Miquel's theorem, their intersection lies on $ BC $.
+		}
+		
+	
+	
+	
+	\prob{http://artofproblemsolving.com/community/c6h1751587p11419916}{USA TST 2019 P1 parallel problem}{E}{Pick a point $X$ such that $AX$ is parallel to $BC$. Let $M,N$ be the midpoints of $AB,AC$. Let $w_b$ be the circle passing through $M$ and $B$ tangent to $(AXB)$ and define $w_c$ similarly. Show that $w_b, w_c$ intersect on $(AMN)$.}
+	
+	\solu{Doing a $ \sqrt{\frac{bc}{2}} $ inversion in \autoref{problem:usatst2019p1} one ends up with this parallel problem.}            
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h374251p2066133}{Sharygin 2010 P3}{E}{Points $A', B', C'$ lie on sides $BC, CA, AB$ of triangle $ABC.$ for a point $X$ one has $\angle AXB =\angle A'C'B' + \angle ACB$ and $\angle BXC = \angle B'A'C' +\angle BAC.$ Prove that the quadrilateral $XA'BC'$ is cyclic.}
+	
+		\fig{.8}{sharygin_2010_3}{}
+	
+	
+	\prob{https://artofproblemsolving.com/community/c6h1671293p10632360}{IMO 2018 P6}{M}{A convex quadrilateral $ABCD$ satisfies $AB\cdot CD = BC\cdot DA$. Point $X$ lies inside $ABCD$ so that \[\angle{XAB} = \angle{XCD}\quad\,\,\text{and}\quad\,\,\angle{XBC} = \angle{XDA}.\]Prove that $\angle{BXA} + \angle{DXC} = 180^\circ$.}
+	
+		
+		\proof{Let $ P = AB\cap CD,\ Q = AD\cap BC $\\
+			
+		From the first condition, we get that $ \dfrac{AB}{BC} = \dfrac{AD}{DC} $, implying that the angle bisectors of $ \angle DAB, \angle DCB $ meet on $ BD $.\\
+		
+		And from the second condition, we have $ X = \odot QBD \cap \odot PAC $\\
+		
+			\figdf{1}{imo2018p6}{IMO 2018 P6, Simple Angle-Chase proof.}
+		
+		Let us define the point $ R $ such that $ AR, CR $ are isogonal to $ AC $ wrt to $ \angle DAB, \angle DCB $ respectively. In $ \triangle RAC $, we have, the bisectors of $ \angle RAC, \angle RCA $ meet on the line $ BRD $, meaning that $ RB $ bisects $ \angle ARC $.\\
+		
+		Let $ \odot ARM \cap \odot DRC = Y $. We have,
+		
+			\begin{align*}
+				\measuredangle AYC &= \measuredangle AYR + \measuredangle RYC\\
+					&= \measuredangle ABR + \measuredangle RDP\\
+					&= \measuredangle BPD\\
+					\implies \square PAYC &\text{ is cyclic.}
+			\end{align*}	
+		
+		And,
+		
+			\begin{align*}
+				\measuredangle BYD &= \measuredangle BYR + \measuredangle RYD\\
+					&= \measuredangle BAR + \measuredangle RCD\\
+					&= \measuredangle CAD + \measuredangle BCA\\
+					&= \measuredangle CQD\\
+					\implies \square QBYD &\text{ is cyclic.}
+			\end{align*}
+			
+		So, $ Y \equiv X $. So, 
+			
+			\[\measuredangle BYA + \measuredangle DYC = \measuredangle BRA + \measuredangle DRC = \measuredangle BRA + \measuredangle ARD = 180^\circ \]
+		}
+
+
+	\prob{}{Sharygin 2010}{E}{In $\triangle ABC$, let $ AL_a, AM_a $ be the external and internal bisectors of $ \angle A $ with $ L_a, M_a $ lying on $ BC $. Let $ \omega_a $ be the reflection of the circumcircle of $ \triangle AL_aM_a $wrt the midpoint of $ BC $. Let $ \omega_a $ be defined similarly. Prove that $ \omega_a, \omega_b $ are tangent to each other iff $ \triangle ABC $ is a right-angled triangle.}

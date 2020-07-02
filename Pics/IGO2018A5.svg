@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="26.964563cm"
+   height="14.516122cm"
+   viewBox="0 0 822.4442 442.53612"
+   id="svg697"
+   sodipodi:docname="IGO2018A5.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata703">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs701">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5959">
+      <rect
+         style="opacity:1;fill:none;fill-opacity:0.92936802;stroke:#000000;stroke-width:1.07600498;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.1226766;paint-order:normal"
+         id="rect5961"
+         width="825.43811"
+         height="442.75519"
+         x="0"
+         y="-0.41309804" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     id="namedview699"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.36271453"
+     inkscape:cx="632.18984"
+     inkscape:cy="240.18508"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg697" />
+  <g
+     stroke-miterlimit="10.000"
+     id="g695"
+     clip-path="url(#clipPath5959)"
+     style="stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0"
+     transform="translate(-2.9939,0.19133934)">
+    <g
+       id="misc" />
+    <!-- misc -->
+    <g
+       id="layer0">
+      <clipPath
+         id="clipa17d5b0c-73db-47a8-b0f8-d4040daa78e8">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path5"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip1)"
+         id="g16">
+        <g
+           id="g14"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="m 425.31,222.26 c 0,116.48 -94.42,210.91 -210.91,210.91 C 97.921,433.17 3.4939,338.74 3.4939,222.26 3.4939,105.77 97.921,11.347 214.4,11.347 c 116.49,0 210.91,94.423 210.91,210.913 z"
+             id="path8"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title10">Circle w</title>
+          <desc
+             id="desc12">Circle w: Circle through A, B, C</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip1 -->
+      <clipPath
+         id="clipf3ac8760-57a8-4363-8099-c2f67d4ba7dc">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path18"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip2)"
+         id="g29">
+        <g
+           id="g27"
+           style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:8.5, 8;stroke-opacity:0.69803999">
+          <path
+             d="m 1305,150.93 c 0,291.19 -236,527.25 -527.23,527.25 -291.19,0 -527.24,-236.06 -527.24,-527.25 0,-291.19 236.05,-527.24 527.24,-527.24 291.23,0 527.23,236.05 527.23,527.24 z"
+             id="path21"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title23">Circle d</title>
+          <desc
+             id="desc25">Circle d: Circle through F with center X</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip2 -->
+      <clipPath
+         id="clip7545474b-5ef7-44e5-851c-7f64883ecd42">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path31"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip3)"
+         id="g42">
+        <g
+           id="g40"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 131.88,28.163 777.77,150.93"
+             id="path34"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title36">Segment f</title>
+          <desc
+             id="desc38">Segment f: Segment A, X</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip3 -->
+      <clipPath
+         id="clip98e74753-b1b1-4c9c-a357-7cd9c87e8821">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path44"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip4)"
+         id="g55">
+        <g
+           id="g53"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 22.305,309.32 777.77,150.93"
+             id="path47"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title49">Segment g</title>
+          <desc
+             id="desc51">Segment g: Segment D, X</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip4 -->
+      <clipPath
+         id="clip9f67b519-f97b-4521-99bf-d460991bcfa9">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path57"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip5)"
+         id="g68">
+        <g
+           id="g66"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 22.305,309.32 259.8,52.478"
+             id="path60"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title62">Segment h</title>
+          <desc
+             id="desc64">Segment h: Segment D, F</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip5 -->
+      <clipPath
+         id="clip88a60936-1f61-4231-8893-e51f6c29cd37">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path70"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip6)"
+         id="g81">
+        <g
+           id="g79"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 131.88,28.163 261.75,259.12"
+             id="path73"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title75">Segment i</title>
+          <desc
+             id="desc77">Segment i: Segment A, E</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip6 -->
+      <clipPath
+         id="clipcfc51099-973d-4b02-b04d-8c225203570d">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path83"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip7)"
+         id="g94">
+        <g
+           id="g92"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 362.39,71.978 261.75,259.12"
+             id="path86"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title88">Segment j</title>
+          <desc
+             id="desc90">Segment j: Segment B, E</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip7 -->
+      <clipPath
+         id="clip7011ec89-10da-4ec6-a74e-1e64eabd57f0">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path96"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip8)"
+         id="g107">
+        <g
+           id="g105"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 259.8,52.478 425.3,224.83"
+             id="path99"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title101">Segment k</title>
+          <desc
+             id="desc103">Segment k: Segment F, C</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip8 -->
+      <clipPath
+         id="clipad6a8bab-a168-4e9a-b646-d33c74c82e14">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path109"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip9)"
+         id="g120">
+        <g
+           id="g118"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 326.94,88.874 342.01,199.11"
+             id="path112"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title114">Segment l</title>
+          <desc
+             id="desc116">Segment l: Segment I_2, I_4</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip9 -->
+      <clipPath
+         id="clipf81a088f-66c6-4b31-bf28-2a739d05c51c">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path122"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip10)"
+         id="g133">
+        <g
+           id="g131"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.69803999">
+          <path
+             d="M 195.29,73.739 177.96,221.11"
+             id="path125"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title127">Segment m</title>
+          <desc
+             id="desc129">Segment m: Segment I_3, I_1</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip10 -->
+      <clipPath
+         id="clipcc665fa6-3a0a-4c71-80a0-21fe4b0419e8">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path135"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip11)"
+         id="g146">
+        <g
+           id="g144"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 134.88,28.163 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path138"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title140">Point A</title>
+          <desc
+             id="desc142">A = (1.1, 12.31)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip11 -->
+      <clipPath
+         id="clipfb10a42c-f16e-46fe-828e-2faaf0e8f80f">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path148"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip12)"
+         id="g159">
+        <g
+           id="g157"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 134.88,28.163 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path151"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title153">Point A</title>
+          <desc
+             id="desc155">A = (1.1, 12.31)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip12 -->
+      <clipPath
+         id="clipc79d283f-d735-4e80-aa1b-91d8cedca98f">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path161"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip13)"
+         id="g172">
+        <g
+           id="g170"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 132.47,7.8906 -2.14,5.7974 h 4.29 z m -0.89,-1.5625 h 1.8 L 137.81,18 h -1.64 l -1.06,-3 h -5.25 l -1.06,3 h -1.68 z"
+             id="path164"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title166">Point A</title>
+          <desc
+             id="desc168">A = (1.1, 12.31)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip13 -->
+      <clipPath
+         id="clip52366ddb-435d-43d9-9f53-42d7378e30d0">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path174"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip14)"
+         id="g185">
+        <g
+           id="g183"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 365.39,71.978 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path177"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title179">Point B</title>
+          <desc
+             id="desc181">B = (8.65, 10.87)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip14 -->
+      <clipPath
+         id="clipe6a79a44-6550-4b62-84f7-2ca1937184e9">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path187"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip15)"
+         id="g198">
+        <g
+           id="g196"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 365.39,71.978 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path190"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title192">Point B</title>
+          <desc
+             id="desc194">B = (8.65, 10.87)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip15 -->
+      <clipPath
+         id="clip4e250704-3bf5-4528-9007-78ce8f29d38a">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path200"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip16)"
+         id="g211">
+        <g
+           id="g209"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 369.16,60.422 v 4.281 h 2.53 q 1.26,0 1.88,-0.531 0.62,-0.531 0.62,-1.61 0,-1.093 -0.62,-1.617 -0.62,-0.523 -1.88,-0.523 z m 0,-4.797 v 3.516 h 2.32 q 1.16,0 1.73,-0.43 0.57,-0.43 0.57,-1.32 0,-0.891 -0.57,-1.329 -0.57,-0.437 -1.73,-0.437 z m -1.58,-1.297 h 4.03 q 1.8,0 2.77,0.75 0.98,0.75 0.98,2.141 0,1.062 -0.5,1.695 -0.5,0.633 -1.47,0.789 1.17,0.25 1.81,1.047 0.64,0.797 0.64,1.984 0,1.563 -1.06,2.414 Q 373.72,66 371.77,66 h -4.19 z"
+             id="path203"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title205">Point B</title>
+          <desc
+             id="desc207">B = (8.65, 10.87)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip16 -->
+      <clipPath
+         id="clip21032039-8b03-4a26-8587-5622ef590db9">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path213"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip17)"
+         id="g224">
+        <g
+           id="g222"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 428.3,224.83 c 0,1.66 -1.35,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.65,0 3,1.35 3,3 z"
+             id="path216"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title218">Point C</title>
+          <desc
+             id="desc220">C = (10.71, 5.87)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip17 -->
+      <clipPath
+         id="clip834e2995-f2ac-4807-a96f-b582352e28da">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path226"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip18)"
+         id="g237">
+        <g
+           id="g235"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 428.3,224.83 c 0,1.66 -1.35,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.65,0 3,1.35 3,3 z"
+             id="path229"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title231">Point C</title>
+          <desc
+             id="desc233">C = (10.71, 5.87)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip18 -->
+      <clipPath
+         id="clipf0f6745f-775f-484d-ab67-87a696402942">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path239"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip19)"
+         id="g250">
+        <g
+           id="g248"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 439.31,233.23 v 1.66 q -0.79,-0.73 -1.7,-1.1 -0.91,-0.37 -1.92,-0.37 -2,0 -3.07,1.22 -1.06,1.22 -1.06,3.53 0,2.31 1.06,3.53 1.07,1.22 3.07,1.22 1.01,0 1.92,-0.37 0.91,-0.36 1.7,-1.1 v 1.64 q -0.83,0.57 -1.76,0.86 -0.93,0.28 -1.96,0.28 -2.64,0 -4.16,-1.62 -1.52,-1.63 -1.52,-4.44 0,-2.81 1.52,-4.43 1.52,-1.62 4.16,-1.62 1.05,0 1.98,0.28 0.93,0.27 1.74,0.83 z"
+             id="path242"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title244">Point C</title>
+          <desc
+             id="desc246">C = (10.71, 5.87)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip19 -->
+      <clipPath
+         id="clip069629e5-fe15-4066-8299-4b2b95c0828f">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path252"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip20)"
+         id="g263">
+        <g
+           id="g261"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 25.305,309.32 c 0,1.66 -1.343,3 -3,3 -1.657,0 -3,-1.34 -3,-3 0,-1.65 1.343,-3 3,-3 1.657,0 3,1.35 3,3 z"
+             id="path255"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title257">Point D</title>
+          <desc
+             id="desc259">Point D: Point on w</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip20 -->
+      <clipPath
+         id="clip91a73432-5105-459b-a0be-cc9efa5a0268">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path265"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip21)"
+         id="g276">
+        <g
+           id="g274"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 25.305,309.32 c 0,1.66 -1.343,3 -3,3 -1.657,0 -3,-1.34 -3,-3 0,-1.65 1.343,-3 3,-3 1.657,0 3,1.35 3,3 z"
+             id="path268"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title270">Point D</title>
+          <desc
+             id="desc272">Point D: Point on w</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip21 -->
+      <clipPath
+         id="clip7edb9124-3556-43cb-8030-7e4079a0bdd3">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path278"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip22)"
+         id="g289">
+        <g
+           id="g287"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 7.1562,313.62 v 9.08 h 1.9063 q 2.4065,0 3.5315,-1.09 1.125,-1.09 1.125,-3.45 0,-2.35 -1.125,-3.44 -1.125,-1.1 -3.5315,-1.1 z m -1.5781,-1.29 h 3.2344 q 3.3905,0 4.9765,1.41 1.586,1.42 1.586,4.42 0,3.01 -1.594,4.43 Q 12.188,324 8.8125,324 H 5.5781 Z"
+             id="path281"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title283">Point D</title>
+          <desc
+             id="desc285">Point D: Point on w</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip22 -->
+      <clipPath
+         id="clipc2297f29-2485-490a-b20a-6ab016a8a33b">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path291"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip23)"
+         id="g302">
+        <g
+           id="g300"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 780.77,150.93 c 0,1.66 -1.34,3 -3,3 -1.65,0 -3,-1.34 -3,-3 0,-1.65 1.35,-3 3,-3 1.66,0 3,1.35 3,3 z"
+             id="path294"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title296">Point X</title>
+          <desc
+             id="desc298">Point X: Intersection of Line(A, B) and Line(C, D)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip23 -->
+      <clipPath
+         id="clip46d4a1f3-44c5-4feb-a273-2f4d28333f14">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path304"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip24)"
+         id="g315">
+        <g
+           id="g313"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 780.77,150.93 c 0,1.66 -1.34,3 -3,3 -1.65,0 -3,-1.34 -3,-3 0,-1.65 1.35,-3 3,-3 1.66,0 3,1.35 3,3 z"
+             id="path307"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title309">Point X</title>
+          <desc
+             id="desc311">Point X: Intersection of Line(A, B) and Line(C, D)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip24 -->
+      <clipPath
+         id="clip4db73156-5ab4-469c-814c-9b2cac366ed2">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path317"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip25)"
+         id="g328">
+        <g
+           id="g326"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 783.02,133.33 h 1.68 l 2.91,4.34 2.91,-4.34 h 1.7 l -3.75,5.61 4,6.06 h -1.7 l -3.29,-4.97 -3.29,4.97 h -1.71 l 4.16,-6.23 z"
+             id="path320"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title322">Point X</title>
+          <desc
+             id="desc324">Point X: Intersection of Line(A, B) and Line(C, D)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip25 -->
+      <clipPath
+         id="clip20775c52-ea2d-45c4-918b-93924a6cd6be">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path330"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip26)"
+         id="g341">
+        <g
+           id="g339"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 264.75,259.12 c 0,1.66 -1.35,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.65,0 3,1.35 3,3 z"
+             id="path333"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title335">Point E</title>
+          <desc
+             id="desc337">Point E: Intersection point of Circle(X, sqrt(Distance(X, A) Distance(X, B))), Line(C, D)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip26 -->
+      <clipPath
+         id="clip3e9186ef-ce1f-401f-a399-c3cde77ac510">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path343"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip27)"
+         id="g354">
+        <g
+           id="g352"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 264.75,259.12 c 0,1.66 -1.35,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.65,0 3,1.35 3,3 z"
+             id="path346"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title348">Point E</title>
+          <desc
+             id="desc350">Point E: Intersection point of Circle(X, sqrt(Distance(X, A) Distance(X, B))), Line(C, D)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip27 -->
+      <clipPath
+         id="clipf94a815b-cdca-4dac-8119-c3a69921ab79">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path356"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip28)"
+         id="g367">
+        <g
+           id="g365"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 250.58,277.33 h 7.37 v 1.33 h -5.79 v 3.45 h 5.54 v 1.33 h -5.54 v 4.23 h 5.93 V 289 h -7.51 z"
+             id="path359"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title361">Point E</title>
+          <desc
+             id="desc363">Point E: Intersection point of Circle(X, sqrt(Distance(X, A) Distance(X, B))), Line(C, D)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip28 -->
+      <clipPath
+         id="clipef32201b-e052-4c45-be32-a9b1f54cd87c">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path369"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip29)"
+         id="g380">
+        <g
+           id="g378"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 262.8,52.478 c 0,1.657 -1.34,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.656 1.34,-3 3,-3 1.66,0 3,1.344 3,3 z"
+             id="path372"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title374">Point F</title>
+          <desc
+             id="desc376">Point F: Intersection point of Circle(X, sqrt(Distance(X, C) Distance(X, D))), Line(A, B)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip29 -->
+      <clipPath
+         id="clip9f9d3f68-f5c9-406a-b255-90b310846b7b">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path382"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip30)"
+         id="g393">
+        <g
+           id="g391"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 262.8,52.478 c 0,1.657 -1.34,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.656 1.34,-3 3,-3 1.66,0 3,1.344 3,3 z"
+             id="path385"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title387">Point F</title>
+          <desc
+             id="desc389">Point F: Intersection point of Circle(X, sqrt(Distance(X, C) Distance(X, D))), Line(A, B)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip30 -->
+      <clipPath
+         id="clipcc056208-dd35-4e7f-a33e-4dd478a8dc0f">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path395"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip31)"
+         id="g406">
+        <g
+           id="g404"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 247.58,34.328 h 6.7 v 1.328 h -5.12 v 3.438 h 4.62 v 1.328 h -4.62 V 46 h -1.58 z"
+             id="path398"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title400">Point F</title>
+          <desc
+             id="desc402">Point F: Intersection point of Circle(X, sqrt(Distance(X, C) Distance(X, D))), Line(A, B)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip31 -->
+      <clipPath
+         id="clipe84e890f-6260-47a2-8dda-f2fe1e017f80">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path408"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip32)"
+         id="g419">
+        <g
+           id="g417"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 191.75,129.31 c 0,1.66 -1.34,3 -3,3 -1.65,0 -3,-1.34 -3,-3 0,-1.65 1.35,-3 3,-3 1.66,0 3,1.35 3,3 z"
+             id="path411"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title413">Point G</title>
+          <desc
+             id="desc415">Point G: Intersection of Line(A, E) and Line(D, F)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip32 -->
+      <clipPath
+         id="clip88510bc3-74e2-4d0c-ad85-5cf4c0d9f5e0">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path421"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip33)"
+         id="g432">
+        <g
+           id="g430"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 191.75,129.31 c 0,1.66 -1.34,3 -3,3 -1.65,0 -3,-1.34 -3,-3 0,-1.65 1.35,-3 3,-3 1.66,0 3,1.35 3,3 z"
+             id="path424"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title426">Point G</title>
+          <desc
+             id="desc428">Point G: Intersection of Line(A, E) and Line(D, F)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip33 -->
+      <clipPath
+         id="clip0bd7fce7-6db9-47b8-95a5-0f229acbb089">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path434"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip34)"
+         id="g445">
+        <g
+           id="g443"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 175.53,124.33 v -3.13 h -2.58 v -1.29 h 4.14 v 5 q -0.92,0.65 -2.02,0.99 -1.1,0.33 -2.35,0.33 -2.74,0 -4.27,-1.6 -1.54,-1.6 -1.54,-4.46 0,-2.86 1.54,-4.45 1.53,-1.6 4.27,-1.6 1.14,0 2.17,0.29 1.03,0.28 1.89,0.82 v 1.68 q -0.87,-0.74 -1.86,-1.11 -0.98,-0.38 -2.06,-0.38 -2.14,0 -3.22,1.2 -1.08,1.19 -1.08,3.55 0,2.36 1.08,3.56 1.08,1.19 3.22,1.19 0.83,0 1.48,-0.14 0.66,-0.14 1.19,-0.45 z"
+             id="path437"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title439">Point G</title>
+          <desc
+             id="desc441">Point G: Intersection of Line(A, E) and Line(D, F)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip34 -->
+      <clipPath
+         id="clip451ffbf1-d4fe-4468-8420-efdaa8f23e17">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path447"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip35)"
+         id="g458">
+        <g
+           id="g456"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 335.28,127.96 c 0,1.66 -1.34,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.66,0 3,1.35 3,3 z"
+             id="path450"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title452">Point H</title>
+          <desc
+             id="desc454">Point H: Intersection of Line(B, E) and Line(C, F)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip35 -->
+      <clipPath
+         id="clipa24c1718-5a8f-4eac-8cc0-cbac2a17b17f">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path460"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip36)"
+         id="g471">
+        <g
+           id="g469"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 335.28,127.96 c 0,1.66 -1.34,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.66,0 3,1.35 3,3 z"
+             id="path463"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title465">Point H</title>
+          <desc
+             id="desc467">Point H: Intersection of Line(B, E) and Line(C, F)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip36 -->
+      <clipPath
+         id="clip2079c0f2-58c7-40c9-83d0-d690b44c3873">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path473"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip37)"
+         id="g484">
+        <g
+           id="g482"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 340.58,120.33 h 1.58 v 4.78 h 5.73 v -4.78 h 1.58 V 132 h -1.58 v -5.56 h -5.73 V 132 h -1.58 z"
+             id="path476"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title478">Point H</title>
+          <desc
+             id="desc480">Point H: Intersection of Line(B, E) and Line(C, F)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip37 -->
+      <clipPath
+         id="clip6dfbae95-d434-4223-a9db-035036ee42be">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path486"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip38)"
+         id="g497">
+        <g
+           id="g495"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 329.94,88.874 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path489"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title491">Point I_2</title>
+          <desc
+             id="desc493">Point I_2: TriangleCenter(B, H, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip38 -->
+      <clipPath
+         id="clip04a220e2-bc8e-4fef-b4ef-3f9cfe688374">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path499"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip39)"
+         id="g510">
+        <g
+           id="g508"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 329.94,88.874 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path502"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title504">Point I_2</title>
+          <desc
+             id="desc506">Point I_2: TriangleCenter(B, H, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip39 -->
+      <clipPath
+         id="clipc11c7165-6c41-4538-8851-3877a4d183d9">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path512"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip40)"
+         id="g523">
+        <g
+           id="g521"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 332.58,71.328 h 1.58 V 83 h -1.58 z"
+             id="path515"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title517">Point I_2</title>
+          <desc
+             id="desc519">Point I_2: TriangleCenter(B, H, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip40 -->
+      <clipPath
+         id="clipf9009d05-db42-467a-8590-68495c4be760">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path525"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip41)"
+         id="g536">
+        <g
+           id="g534"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 338.41,88.844 h 4.81 V 90 h -6.47 v -1.156 q 0.78,-0.813 2.14,-2.188 1.36,-1.375 1.7,-1.765 0.66,-0.75 0.93,-1.266 0.26,-0.516 0.26,-1.016 0,-0.812 -0.57,-1.328 -0.57,-0.515 -1.49,-0.515 -0.64,0 -1.36,0.226 -0.72,0.227 -1.55,0.696 v -1.407 q 0.83,-0.328 1.56,-0.5 0.72,-0.172 1.33,-0.172 1.58,0 2.53,0.789 0.94,0.79 0.94,2.118 0,0.64 -0.23,1.203 -0.24,0.562 -0.86,1.328 -0.17,0.187 -1.09,1.141 -0.91,0.953 -2.58,2.656 z"
+             id="path528"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title530">Point I_2</title>
+          <desc
+             id="desc532">Point I_2: TriangleCenter(B, H, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip41 -->
+      <clipPath
+         id="clip9363021d-3f2c-49a2-867e-bf4b82e76134">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path538"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip42)"
+         id="g549">
+        <g
+           id="g547"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 180.96,221.11 c 0,1.66 -1.34,3 -3,3 -1.65,0 -3,-1.34 -3,-3 0,-1.66 1.35,-3 3,-3 1.66,0 3,1.34 3,3 z"
+             id="path541"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title543">Point I_1</title>
+          <desc
+             id="desc545">Point I_1: TriangleCenter(D, G, E, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip42 -->
+      <clipPath
+         id="clip4170d572-d9ab-4c25-bf63-6de8061caea2">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path551"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip43)"
+         id="g562">
+        <g
+           id="g560"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 180.96,221.11 c 0,1.66 -1.34,3 -3,3 -1.65,0 -3,-1.34 -3,-3 0,-1.66 1.35,-3 3,-3 1.66,0 3,1.34 3,3 z"
+             id="path554"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title556">Point I_1</title>
+          <desc
+             id="desc558">Point I_1: TriangleCenter(D, G, E, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip43 -->
+      <clipPath
+         id="clip87186181-6ec4-4268-92ba-ce1899c0079c">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path564"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip44)"
+         id="g575">
+        <g
+           id="g573"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 165.58,224.33 h 1.58 V 236 h -1.58 z"
+             id="path567"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title569">Point I_1</title>
+          <desc
+             id="desc571">Point I_1: TriangleCenter(D, G, E, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip44 -->
+      <clipPath
+         id="clipee871abf-7c2e-410e-a395-20cc90f00670">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path577"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip45)"
+         id="g588">
+        <g
+           id="g586"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 170.45,241.84 h 2.27 v -7.79 l -2.47,0.5 v -1.27 l 2.45,-0.48 h 1.38 v 9.04 h 2.25 V 243 h -5.88 z"
+             id="path580"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title582">Point I_1</title>
+          <desc
+             id="desc584">Point I_1: TriangleCenter(D, G, E, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip45 -->
+      <clipPath
+         id="clip7cffe47d-6190-432c-b36d-b89b52dcfc34">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path590"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip46)"
+         id="g601">
+        <g
+           id="g599"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 198.29,73.739 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path593"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title595">Point I_3</title>
+          <desc
+             id="desc597">Point I_3: TriangleCenter(A, G, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip46 -->
+      <clipPath
+         id="clipcac047dd-acba-49d7-b44c-0ca918122839">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path603"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip47)"
+         id="g614">
+        <g
+           id="g612"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 198.29,73.739 c 0,1.657 -1.35,3 -3,3 -1.66,0 -3,-1.343 -3,-3 0,-1.657 1.34,-3 3,-3 1.65,0 3,1.343 3,3 z"
+             id="path606"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title608">Point I_3</title>
+          <desc
+             id="desc610">Point I_3: TriangleCenter(A, G, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip47 -->
+      <clipPath
+         id="clipdfe687d2-8142-4481-bac9-e54c0e39fc15">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path616"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip48)"
+         id="g627">
+        <g
+           id="g625"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 183.58,48.328 h 1.58 V 60 h -1.58 z"
+             id="path619"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title621">Point I_3</title>
+          <desc
+             id="desc623">Point I_3: TriangleCenter(A, G, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip48 -->
+      <clipPath
+         id="clip145a72b5-1218-4529-9d11-bf23ebd419b1">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path629"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip49)"
+         id="g640">
+        <g
+           id="g638"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 192.41,61.5 q 0.98,0.203 1.54,0.875 0.55,0.672 0.55,1.656 0,1.516 -1.04,2.344 -1.04,0.828 -2.94,0.828 -0.64,0 -1.32,-0.133 -0.68,-0.132 -1.42,-0.382 v -1.329 q 0.58,0.329 1.27,0.5 0.68,0.172 1.42,0.172 1.3,0 1.98,-0.508 0.67,-0.507 0.67,-1.492 0,-0.906 -0.63,-1.414 -0.63,-0.508 -1.76,-0.508 h -1.18 v -1.125 h 1.25 q 1.01,0 1.55,-0.414 0.54,-0.414 0.54,-1.179 0,-0.782 -0.55,-1.203 -0.56,-0.422 -1.61,-0.422 -0.56,0 -1.21,0.125 -0.64,0.125 -1.43,0.39 v -1.234 q 0.79,-0.219 1.47,-0.328 0.69,-0.11 1.3,-0.11 1.58,0 2.49,0.711 0.92,0.711 0.92,1.93 0,0.859 -0.49,1.438 -0.48,0.578 -1.37,0.812 z"
+             id="path632"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title634">Point I_3</title>
+          <desc
+             id="desc636">Point I_3: TriangleCenter(A, G, F, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip49 -->
+      <clipPath
+         id="clipf2d1a61a-82da-4336-b9d5-9db935723f3e">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path642"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip50)"
+         id="g653">
+        <g
+           id="g651"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 345.01,199.11 c 0,1.66 -1.35,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.65,0 3,1.35 3,3 z"
+             id="path645"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title647">Point I_4</title>
+          <desc
+             id="desc649">Point I_4: TriangleCenter(E, H, C, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip50 -->
+      <clipPath
+         id="clip2fea31cf-9c7e-4f87-8f4d-237bf8202a0e">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path655"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip51)"
+         id="g666">
+        <g
+           id="g664"
+           style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1">
+          <path
+             d="m 345.01,199.11 c 0,1.66 -1.35,3 -3,3 -1.66,0 -3,-1.34 -3,-3 0,-1.65 1.34,-3 3,-3 1.65,0 3,1.35 3,3 z"
+             id="path658"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title660">Point I_4</title>
+          <desc
+             id="desc662">Point I_4: TriangleCenter(E, H, C, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip51 -->
+      <clipPath
+         id="clipa1fc19ee-78d3-41c6-87b7-758f8cbb2360">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path668"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip52)"
+         id="g679">
+        <g
+           id="g677"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 350.58,201.33 h 1.58 V 213 h -1.58 z"
+             id="path671"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title673">Point I_4</title>
+          <desc
+             id="desc675">Point I_4: TriangleCenter(E, H, C, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip52 -->
+      <clipPath
+         id="clipf3a83b15-c610-47b2-8af2-6fa999cc6f73">
+        <path
+           d="M 0,0 V 897 H 1612 V 0 Z"
+           id="path681"
+           inkscape:connector-curvature="0" />
+      </clipPath>
+      <g
+         clip-path="url(#clip53)"
+         id="g692">
+        <g
+           id="g690"
+           style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none">
+          <path
+             d="m 359.02,211 -3.49,5.44 h 3.49 z m -0.38,-1.2 h 1.75 v 6.64 h 1.45 v 1.15 h -1.45 V 220 h -1.37 v -2.41 h -4.61 v -1.32 z"
+             id="path684"
+             inkscape:connector-curvature="0" />
+          <title
+             id="title686">Point I_4</title>
+          <desc
+             id="desc688">Point I_4: TriangleCenter(E, H, C, 1)</desc>
+        </g>
+        <!-- drawing style -->
+      </g>
+      <!-- clip53 -->
+    </g>
+    <!-- layer0 -->
+  </g>
+  <!-- default stroke -->
+</svg>
+<!-- bounding box -->
+
