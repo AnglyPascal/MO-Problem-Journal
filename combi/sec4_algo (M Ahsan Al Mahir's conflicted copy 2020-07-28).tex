@@ -1,0 +1,916 @@
+\graphicspath{{Pics/combi/algo/}}
+
+
+\newpage\section{Algorithmic}
+
+\faka
+\begin{myitemize}{}
+\item \href{https://people.bath.ac.uk/masgcs/algorithms.pdf}{Handout by Cody Johnson}
+\end{myitemize}
+\faka
+
+
+
+\subsection{Data Structures}
+
+\dstruct{http://opendatastructures.org/versions/edition-0.1d/ods-java/node52.html}{Binary
+    Heap\label{problem:binary_heap}}{Segment tree where, node \texttt{n} has
+    children \texttt{2n+1, 2n+2}. 
+    %\fig{.8}{BinaryHeap}{Binary Heap}
+}
+\figdf{.5}{asfoiha}{aoshd}
+
+\begin{enumerate}
+    \iref{problem:binary_heap_1}{timus 1862,}{Sum of operations}{}
+\end{enumerate}
+
+
+
+\dstruct{http://www.shafaetsplanet.com/?p=763}{Disjoint Set}{This data
+structure keeps track of connectivity by assigning a representative to a
+connected subset. And for any two nodes, \texttt{u, v} they are connected iff
+they have the same representative.}
+
+
+
+
+\subsection{Minimal Spanning Tree}
+
+\den{Minimum Spanning Tree}{A minimum spanning tree or minimum weight spanning
+    tree is a subset of the edges of a connected, edge-weighted (un)directed
+    graph that connects all the vertices's together, without any cycles and
+    with the minimum possible total edge weight.
+    \fig{.4}{minimum_spanning_tree}{Minimal Spanning Tree} 
+}
+
+
+
+\lem{MST Cut}{For any \hrf{definition:cut_graph_theory}{cut} of the graph, the
+lightest edge in that cut-set is in evey MST of the graph.}
+
+
+
+\algorithm{https://en.wikipedia.org/wiki/Kruskal's_algorithm}{Kruskal's
+Algorithm}{Kruskal's algorithm is a `minimum-spanning-tree algorithm' which
+finds an edge of the least possible weight that connects any two trees in the
+forest. It is a greedy algorithm in graph theory as it finds a minimum
+spanning tree for a connected weighted graph adding increasing cost arcs at
+each step.}
+
+\solu{To optimize this algorithm, Disjoint Set DS is used.}
+
+
+\algorithm{https://en.wikipedia.org/wiki/Prim's_algorithm}{Prim's
+Algorithm}{Greedily build the tree by adding edges one by one. At one step we
+add the minimal cost edge that connects the tree to the vertices's that are
+not in the tree.}
+
+
+\subsection{Shortest Path Problem}
+
+\den{Shortest Path Problem}{Finding the shortest path between two nodes in a
+weighted or unweighted graph.}
+
+
+\algorithm{https://en.wikipedia.org/wiki/Breadth-first_search}{Breadth-First
+Search}{This algo runs from a node and ``levelizes'' the other nodes.}
+
+
+\algorithm{https://en.wikipedia.org/wiki/Dijkstra's_algorithm}{Dijkstra's
+Algorithm}{It picks the unvisited vertex with the lowest distance, calculates
+the distance through it to each unvisited neighbor, and updates the neighbor's
+distance if smaller.}
+
+
+\subsection{Other CP Tricks}
+
+\theo{}{Swap Sort}{In any swap sorting algorithm, the number of swaps needed
+has the same parity.}\label{theorem:swap_sort_steps_parity}
+
+
+
+\algorithm{https://wcipeg.com/wiki/Convex_hull_trick}{Convex Hull Trick}{Given
+a lot of lines on the plane, and a lot of queries each asking for the smallest
+value for $ y $ among the lines for a given $ x $, the optimal strategy is to
+sort the lines according to their slopes, and adding them to a stack, checking
+if they are relevant to the `minimal' convex hull of those lines.}
+
+\fig{.5}{Convex_hull_trick1}{Convex Hull Trick}
+
+
+
+
+
+\subsection{Fast Fourier Transform}
+
+Let $ A(x) = a_0 + a_1x + \dots a_{n-1}x^{n-1} $ be a polinomial and let $
+\w^n = 1 $ be a $ n $th root of unity. We use \textbf{FFT} to multiply two
+polynomials in $ n\log n $ time.
+
+\den{DFT Matrix}{Let $\w$ be a $n$th root of unity. The \textbf{DFT Matrix} is
+    a $ n\times n $ matrix given by:
+    \[W = \begin{pmatrix}
+        1 & 1 & 1 & \dots & 1\\
+        1 & \w & \w^2 & \dots & \w^{n-1}\\
+        1 & \w^2 & \w^4 & \dots & \w^{2(n-1)}\\
+        \vdots & \vdots & \vdots & \vdots & \vdots\\
+        1 & \w^{n-1} & \w^{2(n-1)} & \dots & \w^{(n-1)^2}\\
+    \end{pmatrix}\]
+    And its inverse is given by:
+    \[W^{-1} = \frac{1}{n}
+        \begin{pmatrix}
+            1 & 1 & 1 & \dots & 1\\
+            1 & \w^{-1} & \w^{-2} & \dots & \w^{-(n-1)}\\
+            1 & \w^{-2} & \w^{-4} & \dots & \w^{-2(n-1)}\\
+            \vdots & \vdots & \vdots & \vdots & \vdots\\
+            1 & \w^{-(n-1)} & \w^{-2(n-1)} & \dots & \w^{-(n-1)^2}\\
+        \end{pmatrix}\]
+    }
+
+\den{Discrete Fourier Transform}{The \textbf{Discrete Fourier transform} (DFT)
+    of the polynomial $A(x)$ (or equivalently the vector of coefficients
+    $\left(a_{0}, a_{1}, \ldots, a_{n-1}\right)$ is defined as the values of
+    the polynomial at the points $x=\w_n^k,$ i.e. it is the vector:
+    \begin{align*}
+        \operatorname{DFT}\left(a_{0}, a_{1}, \ldots, a_{n-1}\right)
+        &=\left(y_{0}, y_{1}, \ldots,
+        y_{n-1}\right)=\left(A\left(\w_{n}^{0}\right),
+        A\left(\w_{n}^{1}\right), \ldots, A\left(\w_{n}^{n-1}\right)\right)
+    \end{align*}
+
+    In other words, we can write $ \operatorname{DFT}(A) $ as:
+
+    \[\operatorname{DFT}(A)=
+        \begin{pmatrix}
+            y_0\\
+            y_1\\
+            y_2\\
+            \vdots\\
+            y_n
+        \end{pmatrix} =
+        \begin{pmatrix}
+            1 & 1 & 1 & \dots & 1\\
+            1 & \w & \w^2 & \dots & \w^{n-1}\\
+            1 & \w^2 & \w^4 & \dots & \w^{2(n-1)}\\
+            \vdots & \vdots & \vdots & \vdots & \vdots\\
+            1 & \w^{n-1} & \w^{2(n-1)} & \dots & \w^{(n-1)^2}\\
+        \end{pmatrix}
+        \begin{pmatrix}
+            a_0\\
+            a_1\\
+            a_2\\
+            \vdots\\
+            a_n
+        \end{pmatrix}\]
+    }
+
+
+\den{Inverse Discrete Fourier Transform}{The \textbf{Inverse Discrete Fourier Transform}
+    of values of the polynomial $\left(y_{0}, y_{1}, \ldots,
+        y_{n-1}\right)$ are the coefficients of the polynomial $\left(a_{0}, a_{1},
+    \ldots, a_{n-1}\right)$
+    \[\text { InverseDFT }\left(y_{0}, y_{1}, \ldots, y_{n-1}\right)=\left(a_{0},
+    a_{1}, \ldots, a_{n-1}\right)\]
+}
+
+Thus, if a direct DFT computes the values of the polynomial at the points at
+the $n$ -th roots, the inverse DFT can restore the coefficients of the
+polynomial using those values.
+
+
+\begin{algo}[Multiplication of two polynomials]
+    Say we have $A, B$ two polynomials, and we want to compute $(A\cdot
+    B)(x)$. Then we first component-wise multiply $ \operatorname{DFT}(A) $
+    and $ \operatorname{DFT}(B) $, and then retrieve the coefficients of $
+    A\cdot B $ by applying the Inverse DFT.
+\end{algo}
+
+
+\begin{algo}[Fast Fourier Transform]
+    We want to compute the DFT$ (A) $ in $ n\log n $ time. Suppose $ n $ is a
+    power of $ 2 $, $ \w^n = 1 $, and $ A(x) = a_{0} x^{0}+a_{1}
+    x^{1}+\cdots+a_{n-1} x^{n-1} $. We use divide and conquer by considering:
+    \begin{align*}
+        A_{0}(x)&=a_{0} x^{0}+a_{2} x^{1}+\cdots+a_{n-2} x^{\frac{n}{2}-1} \\
+        A_{1}(x)&=a_{1} x^{0}+a_{3} x^{1}+\cdots+a_{n-1} x^{\frac{n}{2}-1}\\[.5em]
+        \and A(x) &= A_0(x^2) + xA_1(x^2)
+    \end{align*}
+
+    After we have computed $ \text{DFT}(A_0) = (y^0_i)^{\frac{n}{2} - 1}_{i=0}
+    $ and $ \text{DFT}(A_0) = (y^1_i)^{\frac{n}{2} - 1}_{i=0} $, we can
+    compute $ (y_i)^{n-1}_{i=0} $ by:
+    \[y_k =
+        \left\{\begin{array}{ll}
+                y^0_k + \w^ky^1_k, &\text{ for } k < \dfrac{n}{2}\\[1em]
+                y^0_k - \w^ky^1_k, &\text{ for } k \ge \dfrac{n}{2}
+        \end{array}\right.\]
+\end{algo}
+
+\begin{algo}[Inverse FFT]
+    Since by definition we know $ \operatorname{DFT}(A) = W\times A $, we
+    have:
+\end{algo}
+
+
+
+
+\newpage 
+\subsection{Problems}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1623516p10168885}{Iran TST
+    2018 P1}{E}{Let $A_1, A_2, ... , A_k$ be the subsets of
+    $\left\{1,2,3,...,n\right\}$ such that for all $1\leq i,j\leq k$:$A_i\cap
+    A_j \neq \varnothing$. Prove that there are $n$ distinct positive integers
+$x_1,x_2,...,x_n$ such that for each $1\leq j\leq k$: \[lcm_{i \in
+A_j}\left\{x_i\right\}>lcm_{i \notin A_j}\left\{x_i\right\}\]}
+
+\solu{Apply induction on either $ k $ or $ n $.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1480687p8639246}{ISL 2016
+C1}{TE}{The leader of an IMO team chooses positive integers $ n $ and $ k $
+with $ n > k $ , and announces them to the deputy leader and a contestant. The
+leader then secretly tells the deputy leader an $ n $ -digit binary string,
+and the deputy leader writes down all $ n $ -digit binary strings which differ
+from the leader’s in exactly $ k $ positions. (For example, if $ n = 3 $ and $
+k = 1 $ , and if the leader chooses $ 101 $ , the deputy leader would write
+down $ 001, 111 $ and $ 100 $.) The contestant is allowed to look at the
+strings written by the deputy leader and guess the leader’s string. What is
+the minimum number of guesses (in terms of $ n $ and $ k $ ) needed to
+guarantee the correct answer?}\label{problem:constructive_algo_10}
+
+\solu{Small cases check.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h44479p281572}{ISL 2005
+C2}{E}{Let $a_1,a_2,\ldots$ be a sequence of integers with infinitely many
+positive and negative terms. Suppose that for every positive integer $n$ the
+numbers $a_1,a_2,\ldots,a_n$ leave $n$ different remainders upon division by
+$n$. Prove that every integer occurs exactly once in the sequence
+$a_1,a_2,\ldots$.}\label{problem:constructive_algo_22}
+
+\solu{Constructing for the beginning.}
+
+
+\prob{http://ioi2017.org/tasks/practice/coins.pdf}{IOI Practice 2017}{M}{ $ C
+    $ plays a game with $ A $ and $ B $. There's a room with a table. First $
+    C $ goes in the room and puts $ 64 $ coins on the table in a row. Each
+    coin is facing either heads or tails. Coins are identical to one another,
+    but one of them is cursed. $ C $ decides to put that coin in position $ c
+    $. Then he calls in $ A $ and shows him the position of the cursed coin.
+    Now he allows $ A $ to flip some coins if he wants (he can't move any coin
+    to other positions). After that $ A $ and $ C $ leave the room and sends
+    in $ B $. If $ B $ can identify the cursed coin then $ C $ loses,
+    otherwise $ C $ wins.
+
+    The rules of the game are explained to $ A $ and $ B $ beforehand, so they
+    can discuss their strategy before entering the room. Find the minimum
+    number $ k $ of coin flips required by $ A $ so that no matter what
+    configuration of $ 64 $ coins C gives them and where he puts the cursed
+    coin, $ A $ and $ B $ can win with $ A $ flipping at most $ k $ coins.
+
+Find constructions for $ k=32, 8, 6, 3, 2, 1 $ }\label{problem:binary_1}
+
+
+\solu{XOR XOR XOR \hrf{binary}{binary representation}}
+
+
+
+\prob{http://codeforces.com/contest/987/problem/E}{Codeforces 987E}{E}{Petr
+    likes to come up with problems about randomly generated data. This time
+    problem is about random permutation. He decided to generate a random
+    permutation this way: he takes identity permutation of numbers from $ 1 $
+    to $ n $ and then $ 3n $ times takes a random pair of different elements
+    and swaps them. Alex envies Petr and tries to imitate him in all kind of
+    things. Alex has also come up with a problem about random permutation. He
+    generates a random permutation just like Petr but swaps elements $ 7n+1 $
+    times instead of $ 3n $ times. Because it is more random, OK?!\\
+
+You somehow get a test from one of these problems and now you want to know
+from which one.}
+
+\solu{\hrf{theorem:swap_sort_steps_parity}{This theorem} kills this problem
+instantly.}\label{problem:invariant_rules_of_thumb_10}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h53673p336210}{USAMO 2013
+P6}{H}{At the vertices's of a regular hexagon are written six nonnegative
+integers whose sum is $ 2003^{2003} $. Bert is allowed to make moves of the
+following form: he may pick a vertex and replace the number written there by
+the absolute value of the difference between the numbers written at the two
+neighboring vertices. Prove that Bert can make a sequence of moves, after
+which the number $ 0 $ appears at all six
+vertices.}\label{problem:monotonicity_with_constraints_1}
+
+\solu{Firstly what comes into mind is to decrease the maximum value, but since
+this is a P6, there must be some mistakes. Surely, we can't follow this algo
+in the case $ (k, k, 0, k, k, 0) $. But this time, the sum becomes even. So we
+have to slowly minimize the maximum,
+\hrf{monotonicity_with_constraints}{keeping the sum odd}. And since only odd
+number on the board is the easiest to handle, we solve that case first, and
+the other cases can be easly handled with an additional algo.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h546168p3160559}{ISL 2012
+C1}{E}{Several positive integers are written in a row. Iteratively, Alice
+chooses two adjacent numbers $ x $ and $ y $ such that $ x>y $ and $ x $ is to
+the left of $ y $ , and replaces the pair $ (x,y) $ by either $ (y+1,x) $ or $
+(x-1,x) $. Prove that she can perform only finitely many such
+iterations.}\label{problem:invariant_rules_of_thumb_2}
+
+\solu{Easy invariant.}
+
+
+
+\prob{https://artofproblemsolving.com/community/q1h588238p3482449}{AoPS}{E}{There
+is a number from the set $ \lbrace 1,-1\rbrace $ written in each of the
+vertices's of a regular do-decagon ( $ 12 $ -gon). In a single turn we select
+$ 3 $ numbers going in the row and change their signs. In the beginning all
+numbers, except one are equal to $ 1 $. Can we transfer the only $ -1 $ into
+adjacent vertex after a finite number of
+turns?}\label{problem:invariant_rules_of_thumb_6}
+
+\solu{Algo+Proof $ \Longrightarrow $ Invariant.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h57329p352820}{ISL 1994
+C3}{EH}{Peter has three accounts in a bank, each with an integral number of
+dollars. He is only allowed to transfer money from one account to another so
+that the amount of money in the latter is doubled. Prove that Peter can always
+transfer all his money into two accounts. Can Peter always transfer all his
+money into one account?}\label{problem:invariant_rules_of_thumb_9}
+
+\solu{Since we want to decrease the minimum, and one of the most simple way is
+to consider Euclidean algorithm. So we sort the accounts, $ A < B < C $, and
+write $ B = qA+r $, and do some experiment to turn $ B $ into $ r $.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h225457p1251792}{MEMO 2008,
+Team, P6}{M}{On a blackboard there are $ n \geq 2, n \in \mathbb{Z}^{+}$
+numbers. In each step we select two numbers from the blackboard and replace
+both of them by their sum. Determine all numbers $ n$ for which it is possible
+to yield $ n$ identical number after a finite number of
+steps.}\label{problem:monotonicity_with_constraints_2}
+
+\solu{The pair thing rules out the case of odds. For evens, we make two
+identical sets, and focus on only one of the sets, with an additional move $ x
+\rightarrow 2x $ available to use. Since we can now change the powers of $ 2 $
+at out will at any time, we only focus on the greatest odd divisors. Our aim
+is to slowly decrease the largest odd divisor.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1176476p5679356}{USA Dec
+    TST 2016, P1}{E}{Let $S = \{1, \dots, n\}$. Given a bijection $f : S \to
+    S$ an orbit of $f$ is a set of the form $\{x, f(x), f(f(x)), \dots \}$ for
+    some $x \in S$. We denote by $c(f)$ the number of distinct orbits of $f$.
+    For example, if $n=3$ and $f(1)=2$, $f(2)=1$, $f(3)=3$, the two orbits are
+    $\{1,2\}$ and $\{3\}$, hence $c(f)=2$.\\
+
+Given $k$ bijections $f_1$, $\ldots$, $f_k$ from $S$ to itself, prove that \[
+c(f_1) + \dots + c(f_k) \le n(k-1) + c(f) \]where $f : S \to S$ is the
+composed function $f_1 \circ \dots \circ
+f_k$.}\label{problem:induction_type1_32}
+
+\solu{Induction reduces the problem to the case of $ k=2 $. Then another
+inuction on $ c(f_1) $ solves the problem. The later induction works on the
+basis of the fact that a ``swap'' in the bijection changes the number of
+cycles by $ 1 $ (either adds $ +1 $ or $ -1 $).}
+
+
+\prob{}{Cody Johnson}{E}{Consider a set of $ 6 $ integers $ S = \{a_1\dots a_6
+\} $. At on step, you can add $ +1 $ or $ -1 $ to all of the $ 6 $ integers.
+Prove that you can make a finite number of moves so that after the moves, you
+have $ a_1a_5a_6 = a_2a_4a_6 = a_3a_4a_5 $}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h596930p3542095}{ISL 2014
+A1}{E}{Let $a_0 < a_1 < a_2 \ldots$ be an infinite sequence of positive
+integers. Prove that there exists a unique integer $n\geq 1$ such that \[a_n <
+\frac{a_0+a_1+a_2+\cdots+a_n}{n} \leq
+a_{n+1}.\]}\label{problem:constructive_algo_21}
+
+\solu{My idea was to construct the sequence with the assumtion that the
+condition is false. It leads to either all of the right ineq false or the
+condition being true.}
+
+\solu{The magical solution: defining $b_n=(a_n-a_{n-1})+\dots+(a_n-a_1)$ which
+eases the inequlity.}
+
+\solu{\hrf{http://artofproblemsolving.com/community/c6h596930p3542145}{The
+beautiful solution}: defining $ \delta_i $ as $ a_n = a_0 + \Delta_1 +
+\Delta_2 + ... + \Delta_n $ for all $ n, i $.}
+
+\solu{Another idea is to first prove the existence and then to prove the
+uniqueness.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h597093p3543144}{ISL 2014
+N3}{EM}{For each positive integer $n$, the Bank of Cape Town issues coins of
+denomination $\frac1n$. Given a finite collection of such coins (of not
+necessarily different denominations) with total value at most most
+$99+\frac12$, prove that it is possible to split this collection into $100$ or
+fewer groups, such that each group has total value at most
+$1$.}\label{problem:greedy_algorithm_1}\label{problem:extremal_case_whole_11}
+
+\solu{Notice that the sum of the geometric series $ S = \dfrac 1 2 + \dfrac{ 1
+}{2^2} + \dfrac{ 1 }{2^3} \dots $ is $ 1 $. And in another problem we
+partitioned the set of integers into subsets with each subset starting with an
+odd number $ k $ and every other elements of the subset being $ 2^i*k $. We do
+similarly in this problem, and partition the set of the coins in a similar
+way. Then we take the first $ 100 $ sets whose sum is less than $ 1 $ and
+insert the other left coins in these sets, with the condition that the sum of
+all of the coins is $ 99 + \dfrac 1 2 $.
+\hrf{http://artofproblemsolving.com/community/c6h597093p3543181}{Solu}}
+
+\solu{Replacing $ 100 $ by $ n $, we show that for all $ n $ the codition is
+valid. Assume otherwise. Take the minimal $ n $ for which the condition does
+not work. Ta-Da! We can show that if $ n $ does not work, so doesn't $ n-1 $.
+\hrf{http://artofproblemsolving.com/community/c6h597093p3543194}{Solu}}
+
+\solu{Or just be an EChen and prove the result for at most $k -
+\dfrac{k}{2k+1}$ with $k$ groups.}
+
+\solu{Very similar to \hrf{problem:greedy_algorithm_2}{this} problem}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h97506p550634}{China TST
+2006}{E}{Given positive integer $n$, find the biggest real number $C$ which
+satisfy the condition that if the sum of the reciprocals ($ \frac 1 n $ is the
+reciprocal of $ n $) of a set of integers (They can be the same.) that are
+greater than $1$ is less than $C$, then we can divide the set of numbers into
+no more than $n$ groups so that the sum of reciprocals of every group is less
+than $1$.}\label{problem:greedy_algorithm_2}
+
+
+
+\prob{}{}{E}{In a $ n*n $ grid, every cell is either black or white. A
+    `command' is a pair of integers, $ i, j \le n $, after which all of the
+    cells in the $ i^{th} $ row and the $ j^{th} $ column (meaning a total of
+    $ 2n-1 $ cells) will switch the state. Our goal is to make every cell of
+    the same state.
+
+    \begin{enumerate} \item Prove that if it can be done, it can be done in
+less than $ \frac{n^2}{2} $ commands.  \item Prove that it can always be done
+if $ n $ is even.  \item Prove or disprove for odd $ n $.
+\end{enumerate}}\label{problem:constructive_algo_23}
+
+\solu{(a) is really easy, just take into account that flipping all cells
+result in the switch of all of the cells. And the question did not ask for an
+algorithm.}
+
+\solu{(b) is also easy, notice that we can pair the columns and then make them
+look like the same, with a compound command. A better algo is to take the
+original algo and to modify it like, take one cell, then do the original move
+on all cells in the row and column of this cell.}
+
+\solu{(c) uses Linear Algebra, which I dont know yet, or... use double
+counting to build the criteria of the fucntion $ f:\text{states} \rightarrow
+\text{subset of moves} $ being bijective.}
+
+
+\prob{}{OIM 1994, PSMiC}{E}{In every square of an $ n\times n $ board there is
+a lamp. Initially all the lamps are turned off. Touching a lamp changes the
+state of all the lamps in its row and its column (including the lamp that was
+touched). Prove that we can always turn on all the lamps and find the minimum
+number of lamps we have to touch to do this.}	
+
+
+\prob{https://atcoder.jp/contests/agc043/tasks/agc043_b}{AtCoder GC043
+    B}{M}{Given is a sequence of $ N $ digits $ a_1, a_2\ldots a_N $, where
+    each element is $ 1, 2 $, or $ 3 $. Let $ x_{i,j} $ defined as follows:
+
+    \begin{itemize} \item $ x_{1,j} := a_j \quad (1 \leq j \leq N) $ \item $
+    x_{i,j} := | x_{i-1,j} - x_{i-1,j+1}| \quad (2 \leq i \leq N \text{ and }
+    1 \leq j \leq N+1-i) $ \end{itemize}
+
+Find $ x_{N,1} $.}
+
+\solu{Since $ |x-y| \equiv x+y (\mod\ 2) $, we can determine the parity of $
+X_{N,1} $ using binomial coefficient. Which in turn we can get in $ O(n) $
+with bitwise operator. Now we have to distinguish between $ 0, 2 $. For $ 2 $,
+all of the rows starting with the second one should have only $ 2 $ and $ 0 $.
+Where we can apply the same algorithm as before and find whether the final
+digit is $ 2 $ or $ 0 $.}
+
+
+
+\prob{acm.timus.ru/problem.aspx?space=1&num=1578}{Timus 1578}{E}{The very last
+    mammoth runs away from a group of primeval hunters. The hunters are
+    fierce, hungry and are armed with bludgeons and stone axes. In order to
+    escape from his pursuers, the mammoth tries to foul the trail. Its path is
+    a polyline (not necessarily simple). Besides, all the pairs of adjacent
+    segments of the polyline form acute angles (an angle of 0 degrees is also
+    considered acute).\\
+
+After the mammoth vanished, it turned out that it had made exactly N turns
+while running away. The points where the mammoth turned, as well as the points
+where the pursuit started and where the pursuit ended, are known. You are to
+determine one if the possible paths of the
+mammoth.}\label{problem:greedy_algorithm_3}
+
+
+
+\prob{http://codeforces.com/contest/744/problem/B}{CodeForces 744B}{E}{Given a
+hidden matrix of $ n\times n,\ n\leq1000 $ where for every $ i $ , $ M_{(i, i)
+= 0} $ , Luffy's task is to find the minimum value in the $ n $ rows, formarly
+spoken, he has to find values $ \min_{j=1\dots n,\ j\not=i} M_{(i, j)} $. To
+do this he can ask the computer questions of following types: In one question,
+Luffy picks up a set, $ {a_1, a_2\dots a_k} $ with $ a_i, k \leq n $. And
+gives the computer this set. The computer will respond with $ n $ integers.
+The $ i $ -th integer will contain the minimum value of $ \min_{j=1\dots k}
+M_{(i, a_j)}$ . And on top of this, he can only ask $ 20 $ questions. Luffy
+being the stupid he is, doesn't even have any clue how to do this, you have to
+help him solving this
+problem.}\label{problem:divide_and_conquer_2}\label{problem:binary_query_1}
+
+
+\solu{If we draw the diagonal in the matrix, we see that we can fit boxes of $
+2^i \times 2^i $ in there depending on the $ i $ 's value. Now after we have
+decomposed the matrix into such boxes, we can choose several from them to ask
+a question. The trick is that for every row, there must be questions asked
+from each of the boxes this row covers and no question from here must contain
+the $ (i, i) $ cell.}
+
+%\fig{.3}{CF744B}{}
+
+
+\solu{The \hrf{problem:binary_query_1}{magical solution} goes as following:
+For $ i\leq 10 $ , for every $ k=1\dots n $ , include $ k $ in the question if
+the $ i $ th bit of $ k $ 's binary form is $ 0 $. And then for the second
+round include $ k $ in the question if the $ i $ th bit of $ k $ 's binary
+form is $ 1 $.}
+
+
+
+\prob{}{}{E}{Alice wants to add an edge $ (u, v) $ in a graph. You want to
+know what this edge is. So, you can ask some questions to Alice. For each
+question, you will give Alice $ 2 $ non-empty disjoint sets $ S $ and $ T $ to
+Alice, and Alice will answer "true" iff $ u $ and $ v $ belongs to different
+sets. You can ask atmost $ 3 * \ceil{log_2|V|} $ questions to Alice. Describe
+a strategy to find the edge $ (u, v)
+$.}\label{problem:binary_query_2}\label{problem:divide_and_conquer_3}
+
+\solu{First find one true answer in $ \ceil{log_2|V|} $ questions, and then
+get the result out of these two sets in $ 2*\ceil{log_2|V|} $ questions.}
+
+\solu{The \hrf{problem:binary_query_2}{magical solution} goes as following: In
+the $ i^{th} $ question, $ S = {x : i^{th} \text{ bit of } x \text{ is } 0} ,\
+T = {x : i^{th} \text{ bit of } x \text{ is } 1} $ }
+
+
+\prob{https://artofproblemsolving.com/community/c5h1083477p4774079}{USAMO 2015
+    P4}{E}{Steve is piling $m\geq 1$ indistinguishable stones on the squares
+    of an $n\times n$ grid. Each square can have an arbitrarily high pile of
+    stones. After he finished piling his stones in some manner, he can then
+    perform stone moves, defined as follows. Consider any four grid squares,
+    which are corners of a rectangle, i.e. in positions $(i, k), (i, l), (j,
+    k), (j, l)$ for some $1\leq i, j, k, l\leq n$, such that $i<j$ and $k<l$.
+    A stone move consists of either removing one stone from each of $(i, k)$
+    and $(j, l)$ and moving them to $(i, l)$ and $(j, k)$ respectively,j or
+    removing one stone from each of $(i, l)$ and $(j, k)$ and moving them to
+    $(i, k)$ and $(j, l)$ respectively.\\
+
+    Two ways of piling the stones are equivalent if they can be obtained from
+    one another by a sequence of stone moves.\\
+
+How many different non-equivalent ways can Steve pile the stones on the
+grid?}\label{problem:constructive_algo_24}\label{problem:invariant_rules_of_thumb_12}
+
+\solu{Building an invariant, we see that only the sum of the columns is not
+sufficient. So to get more control, we take the row sums into account as
+well.}	
+
+
+\prob{https://artofproblemsolving.com/community/c6h5758p18993}{ISL 2003
+    C4}{E}{Let $x_1,\ldots, x_n$ and $y_1,\ldots, y_n$ be real numbers. Let $A =
+    (a_{ij})_{1\leq i,j\leq n}$ be the matrix with entries \[a_{ij} =
+        \begin{cases}1,&\text{if }x_i + y_j\geq 0;\\0,&\text{if }x_i + y_j <
+        0.\end{cases}\]Suppose that $B$ is an $n\times n$ matrix with entries $0$, $1$
+        such that the sum of the elements in each row and each column of $B$ is equal
+        to the corresponding sum for the matrix $A$. Prove that
+    $A=B$.}\label{problem:constructive_algo_25}
+
+    \solu{If done after \hrf{problem:constructive_algo_24}{this} problem, this
+    problem seems straigthforward.}
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1557188p9502889}{India
+        TST 2017 D1 P3}{E}{Let $n \ge 1$ be a positive integer. An $n \times
+        n$ matrix is called \textit{good} if each entry is a non-negative
+        integer, the sum of entries in each row and each column is equal. A
+        \textit{permutation} matrix is an $n \times n$ matrix consisting of
+        $n$ ones and $n(n-1)$ zeroes such that each row and each column has
+        exactly one non-zero entry.\\
+
+        Prove that any \textit{good} matrix is a sum of finitely many
+    \textit{permutation} matrices.}
+
+    \solu{Same algo as \hrf{problem:constructive_algo_24}{above}. Either
+    distributing uniformly or gathering all in a diagonal}
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1388469p7730613}{Tournament
+        of Towns 2015F S7}{MH}{$N$ children no two of the same height stand in a
+        line. The following two-step procedure is applied: first, the line is split
+        into the least possible number of groups so that in each group all children
+        are arranged from the left to the right in ascending order of their heights (a
+        group may consist of a single child). Second, the order of children in each
+        group is reversed, so now in each group the children stand in descending order
+        of their heights. Prove that in result of applying this procedure $N - 1$
+        times the children in the line would stand from the left to the right in
+    descending order of their heights.}
+
+    \solu{It's obvious that we need to find some invariant or mono-variant.
+        Now, an idea, we need to show that for any $ i $, for it to be on it's
+        rightful place, it doesn't need more than $ N-1 $ moves. How do we show that?
+        Another idea, think about the bad bois on either of its sides. Now,
+    observation, `junctions' decrease with each move. Find the `junctions'.}
+
+
+    \prob{https://main.edu.pl/en/archive/oi/2/sze}{Polish OI}{E}{Given $ n $
+        jobs, indexed from $ 1, 2\dots n $. Given two sequences of reals, $
+        \{a_i\}^n_{i=1}, \{b_i\}^n_{i=1} $ where, $ 0 \leq a_i, b_i \leq 1 $. If job $
+        i $ starts at time $ t $ , then the job takes $ h_i(t) = a_it+b_i $ time to
+        finish. Order the jobs in a way such that the total time taken by all of the
+        jobs is the
+    minimum.}\label{problem:forget_and_focus_2}\label{problem:swapping_1}
+
+    \solu{Example of a problem which is solved by investigating two adjacent
+    objects in the optimal arrangement.}
+
+
+
+    \prob{http://codeforces.com/problemset/problem/960/C}{CodeForces
+        960/C}{E}{Pikachu had an array with him. He wrote down all the
+        non-empty subsequences of the array on paper. Note that an array of
+        size $ n $ has $ 2^n - 1 $ non-empty subsequences in it.\\
+
+        Pikachu being mischievous as he always is, removed all the
+        subsequences in which \[ \text{Maximum element of the subsequence} -
+        \text{Minimum element of subsequence} \geq d \]
+
+        Pikachu was finally left with $ X $ subsequences. \\
+
+        However, he lost the initial array he had, and now is in serious
+        trouble. He still remembers the numbers $ X $ and $ d $. He now wants
+        you to construct any such array which will satisfy the above
+        conditions. All the numbers in the final array should be positive
+        integers less than $ 10^{18} $.\\
+
+        Note the number of elements in the output array should not be more than
+        $10^4$. If no answer is possible, print  $ -1
+    $.}\label{problem:constructive_algo_3}
+
+
+    \prob{https://artofproblemsolving.com/community/c6h35318p220230}{ARO 2005
+        P10.3, P11.2}{M}{Given $ 2005 $ distinct numbers $
+        a_1,\,a_2,\dots,a_{2005} $. By one question, we may take three different
+        indices $ 1\le i<j<k\le 2005 $ and find out the set of numbers  $
+        \{a_i,\,a_j,\,a_k\} $ (unordered, of course). Find the minimal number of
+        questions, which are necessary to find out all numbers $ a_i
+    $.}\label{problem:constructive_algo_4}
+
+    \solu{The key idea is to ask questions such that it is connected to
+        multiple other questions, and each question uniquely finds out multiple
+        elements together. One by itself immediately after the question has been
+        asked, and one after the next question which is related to this one has been
+        asked. As we find out three elements' values after one question, first,
+        second, third, so, let us find first from the previous question, second from
+    the current question, third from the next question.}
+
+
+
+    \prob{https://wcipeg.com/problem/ioi0713}{IOI 2007 P3}{M}{You are given
+        two sets of integers $ A=\{a_1, a_2 \dots a_n\} $ and $ B=\{b_1, b_2 \dots
+        b_n\} $ such that $ a_i \geq b_i $. At move $ i $ you have to pick $ b_i $
+        distinct integers from the set $ A_i = \{1, 2, \dots a_i\} $. In total, $ (b_1
+        + b_2 +\dots + b_n) $ integers are selected, but not all of these are
+        distinct. Suppose $ k $ distinct integers have been selected, with
+        multiplicities $ c_1, c_2, c_3 \dots c_k $. Your score is defined as
+        \[\sum^k_{i=1}c_i(c_i-1)\] Give an efficient algorithm to select numbers in
+        order to ``minimize'' your
+    score.}\label{problem:constructive_algo_5}\label{problem:swapping_2}
+
+    \solu{Some investigation shows that if $ c_i > c_j + 1 $ and $ i > j $ ,
+        then we can always minimize the score. and if $ i < j $ , then we can
+        minimize the score only when $ i, j \in A_k $ but $ i $ has been taken at move
+        $ k $ , but $ j $ hasn't. So in the minimal state, either both $ i, j $ has
+        been taken at move $ k $ , or $ a_k < j $. So the idea is to take elements
+        from $ A_i $ as large as possible, and then taking smaller values after wards
+        if the $ c_i $ value of a big element gets more than that of a small element.
+        In this algorithm, we see that we greedily manipulate $ c_i $. So it is a good
+    idea to greedily choose $ c_i $ 's from the very beginning.}
+
+    \solu{\textbf{Solution Algo:} at step $ i $ , take the set $ \{c_1, c_2
+        \dots c_{a_i}\} $ and take the smallest $ b_i $ from this set, and add $ 1
+        $ to each of them (in other words, take their index numbers as the numbers to
+    take).}
+
+
+
+    \prob{}{}{E}{Given $ n $ numbers $ \{a_1, a_2, ..., a_n\} $ in arbitrary
+        order, you have to select $ k $ of them such that no two consecutive
+        numbers are selected and their sum is
+    maximized.}\label{problem:constructive_algo_6}\label{problem:swapping_3}
+
+    \solu{Notice that if $ a_i $ is the maximum value, and if $ a_i $ is not
+        counted in the optimal solution, then both of $ a_{i-1}, a_{i+1} $ must be
+        in the optimal solution, and $ a_{i-1} + a_{i+1} > a_i $. And if $ a_i $ is
+        counted in the optimal solution, then none of $ a_{i-1}, a_{i+1} $ can be
+        counted in the optimal solution. So either way, we can remove these three and
+        replace them by a single element to use induction. So remove $ a_{i-1},
+    a_{i+1} $ and replace $ a_i $ by $ a_{i-1} + a_{i+1} - a_i $.}
+
+
+    \prob{https://artofproblemsolving.com/community/c5h347285p1860777}{USAMO
+        2010 P2}{EM}{There are $n$ students standing in a circle, one behind the
+        other. The students have heights $h_1<h_2<\dots <h_n$. If a student with
+        height $h_k$ is standing directly behind a student with height $h_{k-2}$ or
+        less, the two students are permitted to switch places. Prove that it is not
+        possible to make more than $\binom{n}{3}$ such switches before reaching a
+    position in which no further switches are possible.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1070674p4655727}{Serbia
+        TST 2015 P3}{H}{We have $2015$ prisinoers. The king gives everyone a hat
+        coloured in one of $5$ colors. Everyone sees all hats expect his own. Now,the
+        King orders them in a line(a prisioner can see all guys behind and in front of
+        him). The king asks the prisinoers one by one does he know the color of his
+        hat.If he answers NO,then he is killed.If he answers YES,then answers which
+        color is his hat,if his answers is true,he goes to freedom,if not,he is
+        killed.All the prisinors can hear did he answer YES or NO,but if he answered
+        YES,they don't know what did he answered(he is killed in public).They can
+        think of a strategy before the King comes,but after that they can't
+        comunicate.What is the largest number of prisinors we can guarentee that can
+    survive?}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1113653p5087465}{Taiwan
+        TST 2015 R3D1P1}{E}{A plane has several seats on it, each with its own
+        price, as shown below. $2n-2$ passengers wish to take this plane, but
+        none of them wants to sit with any other passenger in the same column
+        or row. The captain realize that, no matter how he arranges the
+        passengers, the total money he can collect is the same. Proof this
+        fact, and compute how much money the captain can collect.
+    \fig{.5}{TaiwanTST2015R3D1P1}{} }
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1113195p5083566}{ISL
+        2014 N1}{E}{Let $n \ge 2$ be an integer, and let $A_n$ be the set \[A_n =
+        \{2^n - 2^k\mid k \in \mathbb{Z},\, 0 \le k < n\}.\] Determine the largest
+        positive integer that cannot be written as the sum of one or more (not
+    necessarily distinct) elements of $A_n$ .}
+
+    \solu{Inductive approach}
+
+
+
+    \prob{https://codeforces.com/contest/330/problem/D}{Codeforces
+    330D}{E}{Biridian Forest}
+
+    \solu{Generalize the condition for a meet-up.}
+
+
+
+    \prob{https://codeforces.com/contest/1270/problem/F}{Codeforces
+        1270F}{E}{Let's call a binary string $ s $ awesome, if it has at least
+        $ 1 $ symbol \texttt{1} and length of the string is divisible by the
+        number of \texttt{1} in it. In particular, \texttt{1}, \texttt{1010},
+        \texttt{111} are awesome, but \texttt{0}, \texttt{110}, \texttt{01010}
+        aren't.\\
+
+        You are given a binary string $ s $ of size $ \le 2\times10^5 $. Count the
+    number of its awesome substrings.}
+
+    \solu{The constraint tells us the algorithm should be of complexity $
+        O(n\sqrt{n}) $. Playing with the funtion $ f(i) $ and the divisibility
+        condition gives us some ground to work with. Since we need $ \le
+        c\times\sqrt{n} $ queries around the full string, we remember the prime sieve
+    trick.}
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h60773p366562}{IMO 1986
+        P3}{M}{To each vertex of a regular pentagon an integer is assigned, so
+        that the sum of all five numbers is positive. If three consecutive vertices
+        are assigned the numbers $x,y,z$ respectively, and $y<0$, then the following
+        operation is allowed: $x,y,z$ are replaced by $x+y,-y,z+y$ respectively. Such
+        an operation is performed repeatedly as long as at least one of the five
+        numbers is negative. Determine whether this procedure necessarily comes to an
+    end after a finite number of steps.}
+
+    \solu{Notice how starting from one negative and moving to consective
+    number on one side moves the number by one vertex nicely.}
+
+
+
+
+
+
+\newpage
+\subsection{Algorithm Analysis}
+
+\prob{https://artofproblemsolving.com/community/c6h2112349}{GQMO 2020
+    P4}{MH}{Prove that, for all sufficiently large integers $n$, there exists
+    $n$ numbers $a_1, a_2, \dots, a_n$ satisfying the following three
+    conditions:
+
+    Each number $a_i$ is equal to either $-1, 0$ or $1$.  At least
+    $\dfrac{2n}{5}$ of the numbers $a_1, a_2, \dots, a_n$ are non-zero.  The
+sum $\dfrac{a_1}{1} + \dfrac{a_2}{2} + \dots + \dfrac{a_n}{n}$ is $0$.}
+
+
+
+
+
+
+
+\newpage 
+\subsection{Covering Area with Squares}
+
+\begin{myitemize} \item
+\href{https://artofproblemsolving.com/community/c301601h1551769_cover_story_squares}{A
+nice blog post by ankogonit} \end{myitemize}
+
+\prob{https://artofproblemsolving.com/community/c301601h1551769_cover_story_squares}{Brazilian
+MO 2002, ARO 1979}{E}{Given a finite collection of squares with total area at
+least $4$, prove that you can cover a unit square completely with these
+squares (with overlapping allowed, of course).}
+
+\solu{Maybe motivated by the number $ 4 $ and how nice it would be if all the
+squares had $ 2 $'s power side lengths, the idea is to shrink every square to
+a side with side of $ 2 $'s power.}
+
+
+\prob{}{ARO 1979's Sharper Version}{E}{Given a finite collection of squares
+with total area at least $3$, prove that you can cover a unit square
+completely with these squares (with overlapping allowed).}
+
+\solu{The idea is to greedily cover the unit square by covering the lowest row
+uncovered. And then using boundings to prove that it is possible.}
+
+
+\prob{}{}{E}{Prove that a finite collection of squares of total area
+$\frac{1}{2} $ can be placed inside a unit square without overlap.}
+
+\solu{The same idea as before.}
+
+
+\prob{}{Tournament of Towns Spring 2012 S7}{EM}{We attempt to cover the plane
+    with an infinite sequence of rectangles, overlapping allowed.
+    \begin{enumerate} \item Is the task always possible if the area of the
+        $n-$th rectangle is $n^2$ for each $n$?  \item Is the task always
+        possible if each rectangle is a square, and for any number $N$, there
+        exist squares with total area greater than $N$?  \end{enumerate}}
+
+\solu{Identical algo and proving technique as above.}
+
+\solu{Using the first problem in this subsection to find a better algo.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h155700p875004}{ISL 2006
+    C6}{E}{A holey triangle is an upward equilateral triangle of side length
+    $n$ with $n$ upward unit triangular holes cut out. A diamond is a
+    $60^\circ-120^\circ$ unit rhombus.\\
+
+Prove that a holey triangle $T$ can be tiled with diamonds if and only if the
+following condition holds: Every upward equilateral triangle of side length
+$k$ in $T$ contains at most $k$ holes, for $1\leq k\leq n$.}
+
+\solu{Think of induction and how you can deal with that.}
+
+
+\prob{https://artofproblemsolving.com/community/c7h442824p2494271}{Putnam 2002
+A3}{E}{Let $N$ be an integer greater than $1$ and let $T_n$ be the number of
+non empty subsets $S$ of $\{1,2,.....,n\}$ with the property that the average
+of the elements of $S$ is an integer. Prove that $T_n - n$ is always even.}
+
+\solu{Try to show an bijection between the sets with average $n$ which has $k$
+elements (Here $k$ is an even integer) and the sets with average $n$ but with
+number of elements $k+1$. This implies that the number of such sets is even.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h55343p343870}{USAMO
+1998}{E}{Prove that for each $n\geq 2$, there is a set $S$ of $n$ integders
+such that $(a-b)^2$ divides $ab$ for every distinct $a,b \in
+S$.}\label{problem:sets_scp_1}
+
+\solu{Induction comes to the rescue. Trying to find a way to get from $n$ to
+$n+1$, we see that we can \emph{shift} the integers by any integer $k$. So
+after shifting, what stays the same, and what changes?}

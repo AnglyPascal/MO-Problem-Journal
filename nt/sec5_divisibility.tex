@@ -44,3 +44,19 @@
 		
 		Comparing the coefficients and degrees on both sides, we have, $ q=n-1=2,\ k=1 $. Which gives us the only solution $ (m, n) = (5, 3) $.
 	\end{solution}
+	
+	\prob{https://artofproblemsolving.com/community/c6h1300990_number_theory}{Iran 3rd Round 2016 N3}{EM}{A sequence $P=\left \{ a_{n} \right \}$ is called a $ \text{Permutation}$ of natural numbers (positive integers) if for any natural number $m,$ there exists a unique natural number $n$ such that $a_n=m.$
+
+    We also define $S_k(P)$ as:
+    $S_k(P)=a_{1}+a_{2}+\cdots +a_{k}$ (the sum of the first $k$ elements of the sequence).
+
+    Prove that there exists infinitely many distinct $ \text{Permutations}$ of natural numbers like $P_1,P_2, \cdots$ such that$:$
+    $$\forall k, \forall i<j: S_k(P_i)|S_k(P_j)$$}
+    
+        \begin{solution}
+            Instead of giving a construction for the sequence we prove that for a given permutation $P$ we can find another permutation $Q$ such that the partial sums of $P$ divide the corresponding partial sums of $Q$.\\
+            
+            As we try to build $Q$ from $P$, we have a constraint of divisibility. And we need to make sure every integer $i$ gets to be in $Q$. For that to be always possible, we need a special property of $P$ to be true. Finding out that property is the main task of this problem. \\
+            
+            After the property is determined, we need to add in some more details, that is, for the induction to work, we need to maintain that property in $Q$ as well.
+        \end{solution}
