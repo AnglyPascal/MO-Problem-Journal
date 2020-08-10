@@ -1,19 +1,5 @@
-This is makeindex, version 2.15 [TeX Live 2019] (kpathsea + Thai support).
+This is makeindex, version 2.15 [TeX Live 2020] (kpathsea + Thai support).
 Scanning style file ./example_style.ist.......done (7 attributes redefined, 0 ignored).
-Scanning input file prob.idx....
-!! Input index error (file = prob.idx, line = 16):
-   -- Illegal null field.
-
-!! Input index error (file = prob.idx, line = 21):
-   -- Illegal null field.
-
-!! Input index error (file = prob.idx, line = 30):
-   -- Illegal null field.
-
-!! Input index error (file = prob.idx, line = 41):
-   -- Illegal null field.
-done (41 entries accepted, 4 rejected).
-Sorting entries....done (225 comparisons).
-Generating output file prob.ind....done (108 lines written, 0 warnings).
-Output written in prob.ind.
+Scanning input file prob.idx...done (0 entries accepted, 0 rejected).
+Nothing written in prob.ind.
 Transcript written in prob.ilg.
