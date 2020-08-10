@@ -1,0 +1,585 @@
+
+<!-- saved from url=(0044)http://sps.nus.edu.sg/~limchuwe/cgt/cgt3.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Introductory Combinatorial Game Theory</title>
+</head>
+<body bgcolor="#000000" text="#ffffff">
+
+<b><font size="+3"><center>Introductory Combinatorial Game Theory</center></font><br>
+<font size="+2"><center>Lesson 3 (Nim Values for Games)</center></font><br></b>
+<br>
+First let us recall the two games which were introduced previously:<br>
+<br>
+
+<ol type="i"><li>
+<i>Squaring the Number</i> : Two players alternately subtract positive 
+square integers from n, until 0 is reached.
+
+</li><li><i>Nim</i> Given some piles of stones, two players alternately 
+remove stones from a single pile, until all the piles are empty.
+</li></ol>
+
+Let us combine the concept of both games, so that we have 
+<b>Nim-Square</b> : as in Nim, we start with some piles of stones. 
+Two players A and B alternately remove a number of stones from any 
+single pile, as long as <i>the number of stones removed is a perfect 
+square</i>. A game of Nim-Square might proceed as follows: 
+<br><br>
+
+<center>
+<table>
+<tbody><tr>
+<td>(4,9,<font color="#ff0000">12</font>)</td><td><img src="./3_files/arrow1.gif"></td>
+<td>(<font color="#00ff00">4</font>,9,8)</td><td><img src="./3_files/arrow2.gif"></td>
+<td>(0,<font color="#ff0000">9</font>,8)</td><td><img src="./3_files/arrow1.gif"></td>
+<td>(0,5,<font color="#00ff00">8</font>)</td><td><img src="./3_files/arrow2.gif"></td>
+<td>(0,<font color="#ff0000">5</font>,4)</td><td><img src="./3_files/arrow1.gif"></td>
+</tr>
+<tr>
+<td>(0,1,<font color="#00ff00">4</font>)</td><td><img src="./3_files/arrow2.gif"></td>
+<td>(0,1,<font color="#ff0000">3</font>)</td><td><img src="./3_files/arrow1.gif"></td>
+<td>(0,1,<font color="#00ff00">2</font>)</td><td><img src="./3_files/arrow2.gif"></td>
+<td>(0,1,<font color="#ff0000">1</font>)</td><td><img src="./3_files/arrow1.gif"></td>
+<td>(0,<font color="#00ff00">1</font>,0)</td><td><img src="./3_files/arrow2.gif"></td>
+<td>(0,0,0)</td>
+</tr>
+</tbody></table></center>
+<br>
+So the second player wins. A thorough analysis of this game is more complex, 
+so we will accomplish this step-by-step.
+<br>
+<br>
+<center><img src="./3_files/isleline2.gif"></center>
+
+<br><br>
+
+<font size="+2">Sum of Two Games</font><br><br>
+Suppose G and H are any two games. We define the sum G + H to be the 
+'combined game' of G and H. To put it explicitly, we place the two 
+games side-by-side, and let players A and B begin. At each player's 
+turn, he or she may choose a valid move from either G or H. A player 
+is not compelled to choose from a particular game; nor does he have 
+to follow his opponent. The player who is unable to make any move 
+at all loses.<br><br>
+
+The follow diagram is an example of a sum between a game of Chinese 
+Chess and a game of International Chess. Player A has made 3 moves on 
+the left and 3 moves on the right, while Player B has made 5 moves on 
+the left but 1 move on the right. However in this case, it is not 
+clear how to determine the winner.<br><br>
+
+<center><img src="./3_files/sumboard.gif"></center><br>
+
+It is clear that the sum of two Nim games is yet another Nim game. 
+For example, the sum of the Nim games (2,5,7) and (3,4,8) is precisely 
+the game (2,3,4,5,7,8). Also, every Nim game can be broken down as a 
+sum of Nim games with a single pile. For example, the Nim game 
+(2,5,7) is the sum of the individual Nim games (2), (5) and (7). 
+Similarly, <i>Nim-Square</i> is simply the sum of individual games 
+of <i>Squaring the Number</i>.
+<br>
+<br>
+<br>
+<center><img src="./3_files/isleline2.gif"></center>
+<br><font size="+2">Nimbers</font><br><br>
+
+Nimbers are simply '<i>Nim values</i>' which are assigned to a game 
+configuration - these values are written as 0, *1, *2, *3 .... We 
+shall first describe how to obtain the Nim values for the game 
+Squaring the Number.  First, the Nim value of n=0 is assigned 0, 
+since it is a state in which neither player has a valid move.
+<br><br>
+<center><table cellpadding="5" border="">
+<tbody><tr align="center">
+<td bgcolor="#0000ff" width="20">0</td><td width="20">1</td><td width="20">2</td><td width="20">3</td>
+<td width="20">4</td><td width="20">5</td><td width="20">6</td><td width="20">7</td>
+<td width="20">8</td><td width="20">9</td><td width="20">10</td><td width="20">11</td>
+<td width="20">12</td><td width="20">13</td>
+</tr>
+<tr align="center">
+<td bgcolor="#0000ff">0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+</tbody></table></center>
+<br>
+We then recursively adopt the following rule for each n : 
+<u>find all the possible moves from <i>n</i> and pick the 
+smallest Nim value which <b>does not</b> occur among all these 
+possible moves</u>. Hence, the Nim value of <i>n</i>=1 is assigned 
+the Nim value of *1. To illustrate the above rule, let us suppose 
+the Nim values of all <i>n</i> &lt; 13 has already been obtained :
+<br><br>
+<center><table cellpadding="5" border="">
+<tbody><tr align="center">
+<td bgcolor="#0000ff" width="20">0</td><td bgcolor="#0000ff" width="20">1</td>
+<td bgcolor="#0000ff" width="20">2</td><td bgcolor="#0000ff" width="20">3</td>
+<td bgcolor="#0000ff" width="20">4</td><td bgcolor="#0000ff" width="20">5</td>
+<td bgcolor="#0000ff" width="20">6</td><td bgcolor="#0000ff" width="20">7</td>
+<td bgcolor="#0000ff" width="20">8</td><td bgcolor="#0000ff" width="20">9</td>
+<td bgcolor="#0000ff" width="20">10</td><td bgcolor="#0000ff" width="20">11</td>
+<td bgcolor="#0000ff" width="20">12</td><td width="20">13</td>
+</tr>
+<tr align="center">
+<td bgcolor="#0000ff">0</td><td bgcolor="#0000ff">*1</td>
+<td bgcolor="#0000ff">0</td><td bgcolor="#0000ff">*1</td>
+<td bgcolor="#0000ff">*2</td><td bgcolor="#0000ff">0</td>
+<td bgcolor="#0000ff">*1</td><td bgcolor="#0000ff">0</td>
+<td bgcolor="#0000ff">*1</td><td bgcolor="#0000ff">*2</td>
+<td bgcolor="#0000ff">0</td><td bgcolor="#0000ff">*1</td>
+<td bgcolor="#0000ff">0</td><td>&nbsp;</td></tr>
+</tbody></table></center>
+<br>
+
+To compute the Nim value for <i>n</i> = 13, let us look at the 
+possible moves : we can subtract 1,4, or 9, which would leave 
+<i>n</i> = 12, 9, or 4 respectively. These results have Nim values 
+of 0, *2 and *2. Hence the smallest Nim value which does not occur 
+in all these moves is *1. Now comes an important theorem in 
+combinatorial game theory :
+<br><br>
+<center>
+<table border="5">
+<tbody><tr><td>
+A game which is assigned a Nim value of *<i>m</i>, is equivalent to 
+a game of Nim with <i>m</i> sticks. Hence, a game of Nim-Square with 
+starting configuration (4,9,12) is equivalent a game of Nim with 
+starting configuration (2, 2, 0). In this game, the first player 
+loses.
+</td></tr>
+<tr><td>If games G and H have Nim values *<i>m</i> and *<i>n</i>, 
+then the Nim value of the sum G+H is *(m * n). 
+(The definition of m * n was given previously.)
+</td></tr></tbody></table></center><br>
+
+First things first : we mentioned equivalent games in the above 
+theorem. What does it really mean for two games to be equivalent? 
+This would be covered in further detail on subsequent lessons. 
+For now, we shall illustrate what the above theorem means by
+solving <i>Nim-Square</i> thoroughly.
+<br>
+<br>
+<br>
+<center><img src="./3_files/isleline2.gif"></center>
+<br>
+The best way to see the result is to actually play a game. 
+We have the following Nim values for <i>Squaring the Number</i>.
+<br><br>
+
+<center><table border="" cellpadding="5">
+<tbody><tr align="center">
+<td width="20">0</td><td width="20" bgcolor="#280028">1</td>
+<td width="20" bgcolor="#2f002f">2</td><td width="20" bgcolor="360036">3</td>
+<td width="20" bgcolor="#3d003d">4</td><td width="20" bgcolor="#440044">5</td>
+<td width="20" bgcolor="#4b004b">6</td><td width="20" bgcolor="#520052">7</td>
+<td width="20" bgcolor="#590059">8</td><td width="20" bgcolor="#600060">9</td>
+<td width="20" bgcolor="#670067">10</td><td width="20" bgcolor="#6e006e">11</td>
+<td width="20" bgcolor="#750075">12</td><td width="20" bgcolor="#7c007c">13</td>
+<td width="20" bgcolor="#830083">14</td></tr>
+<tr align="center">
+<td>0</td><td>*1</td><td bgcolor="#2f002f">0</td>
+<td bgcolor="#360036">*1</td><td bgcolor="#3d003d">*2</td>
+<td bgcolor="#440044">0</td><td bgcolor="#4b004b">*1</td>
+<td bgcolor="#520052">0</td><td bgcolor="#590059">*1</td>
+<td bgcolor="#600060">*2</td><td bgcolor="#670067">0</td>
+<td bgcolor="#6e006e">*1</td><td bgcolor="#750075">0</td>
+<td bgcolor="#7c007c">*1</td><td bgcolor="#830083">*2</td>
+</tr>
+</tbody></table></center><br>
+
+<center><table border="" cellpadding="5">
+<tbody><tr align="center">
+<td width="20">15</td><td width="20" bgcolor="280028">16</td>
+<td width="20" bgcolor="#2f002f">17</td><td width="20" bgcolor="#360036">18</td>
+<td width="20" bgcolor="#3d003d">19</td><td width="20" bgcolor="#440044">20</td>
+<td width="20" bgcolor="#4b004b">21</td><td width="20" bgcolor="#520052">22</td>
+<td width="20" bgcolor="#590059">23</td><td width="20" bgcolor="#600060">24</td>
+<td width="20" bgcolor="#670067">25</td><td width="20" bgcolor="#6e006e">26</td>
+<td width="20" bgcolor="#750075">27</td><td width="20" bgcolor="#7c007c">28</td>
+<td width="20" bgcolor="#830083">29</td></tr>
+<tr align="center">
+<td>0</td><td bgcolor="#280028">*1</td><td bgcolor="#2f002f">0</td>
+<td bgcolor="#360036">*1</td><td bgcolor="#3d003d">*2</td>
+<td bgcolor="#440044">0</td><td bgcolor="#4b004b">*1</td>
+<td bgcolor="#520052">0</td><td bgcolor="#590059">*1</td>
+<td bgcolor="#600060">*2</td><td bgcolor="#670067">*3</td>
+<td bgcolor="#6e006e">*2</td><td bgcolor="#750075">*3</td>
+<td bgcolor="#7c007c">*4</td><td bgcolor="#830083">*5</td>
+</tr>
+</tbody></table></center><br>
+
+Consider the game of Nim-Square which starts with (18, 26, 28). 
+The Nim values for <i>n</i>=18, 26 and 28 are *1, *2 and *4. 
+Thus, this is equivalent to game of Nim which starts with (1, 2, 4). 
+We shall analyze one particular game between players A and B.
+<i>Take note of the corresponding Nim values.</i>
+<br><br>
+
+<center>
+<table border="" cellpadding="5">
+<tbody><tr align="center" bgcolor="#0000ff">
+<td colspan="2">A's move</td>
+<td colspan="2">B's move</td>
+</tr>
+
+<tr align="center" bgcolor="#0000ff">
+<td>Game Value</td><td>Nim Value</td>
+<td>Game Value</td><td>Nim Value</td>
+</tr>
+
+<tr align="center" bgcolor="#606000">
+<td width="180">(18,26,<font color="#ff0000">28</font>)<img src="./3_files/arrow1.gif" width="25" height="12">
+(18,26,<font color="#ff0000">27</font>)</td>
+<td width="180">(*1,*2,<font color="#ff0000">*4</font>)<img src="./3_files/arrow1.gif" width="25" height="12">
+(*1,*2,<font color="#ff0000">*3</font>)</td>
+<td width="180">(18,<font color="#00ff00">26</font>,27)<img src="./3_files/arrow2.gif" width="25" height="12">
+(18,<font color="#00ff00">25</font>,27)</td>
+<td width="180">(*1,<font color="#00ff00">*2</font>,*3)<img src="./3_files/arrow2.gif" width="25" height="12">
+(*1,<font color="#00ff00">*3</font>,*3)</td>
+</tr>
+
+<tr align="center" bgcolor="#585800">
+<td width="180">(18,<font color="#ff0000">25</font>,27)<img src="./3_files/arrow1.gif" width="25" height="12">
+(18,<font color="#ff0000">9</font>,27)</td>
+<td width="180">(*1,<font color="#ff0000">*3</font>,*3)<img src="./3_files/arrow1.gif" width="25" height="12">
+(*1,<font color="#ff0000">*2</font>,*3)</td>
+<td width="180">(18,<font color="#00ff00">9</font>,27)<img src="./3_files/arrow2.gif" width="25" height="12">
+(18,<font color="#00ff00">0</font>,27)</td>
+<td width="180">(*1,<font color="#00ff00">*2</font>,*3)<img src="./3_files/arrow2.gif" width="25" height="12">
+(*1,<font color="#00ff00">0</font>,*3)</td>
+</tr>
+
+<tr align="center" bgcolor="#505000">
+<td width="180">(18,0,<font color="#ff0000">27</font>)<img src="./3_files/arrow1.gif" width="25" height="12">
+(18,0,<font color="#ff0000">18</font>)</td>
+<td width="180">(*1,0,<font color="#ff0000">*3</font>)<img src="./3_files/arrow1.gif" width="25" height="12">
+(*1,0,<font color="#ff0000">*1</font>)</td>
+<td width="180">(18,0,<font color="#00ff00">18</font>)<img src="./3_files/arrow2.gif" width="25" height="12">
+(18,0,<font color="#00ff00">14</font>)</td>
+<td width="180">(*1,0,<font color="#00ff00">*1</font>)<img src="./3_files/arrow2.gif" width="25" height="12">
+(*1,0,<font color="#00ff00">*2</font>)</td>
+</tr>
+
+<tr align="center" bgcolor="#484800">
+<td width="180">(18,0,<font color="#ff0000">14</font>)<img src="./3_files/arrow1.gif" width="25" height="12">
+(18,0,<font color="#ff0000">13</font>)</td>
+<td width="180">(*1,0,<font color="#ff0000">*2</font>)<img src="./3_files/arrow1.gif" width="25" height="12">
+(*1,0,<font color="#ff0000">*1</font>)</td>
+<td width="180">(18,0,<font color="#00ff00">13</font>)<img src="./3_files/arrow2.gif" width="25" height="12">
+(18,0,<font color="#00ff00">12</font>)</td>
+<td width="180">(*1,0,<font color="#00ff00">*1</font>)<img src="./3_files/arrow2.gif" width="25" height="12">
+(*1,0,<font color="#00ff00">0</font>)</td>
+</tr>
+
+<tr align="center" bgcolor="#404000">
+<td width="180">(<font color="#ff0000">18</font>,0,12)<img src="./3_files/arrow1.gif" width="25" height="12">
+(<font color="#ff0000">2</font>,0,12)</td>
+<td width="180">(<font color="#ff0000">*1</font>,0,0)<img src="./3_files/arrow1.gif" width="25" height="12">
+(<font color="#ff0000">0</font>,0,0)</td>
+<td width="180">(2,0,<font color="#00ff00">12</font>)<img src="./3_files/arrow2.gif" width="25" height="12">
+(2,0,<font color="#00ff00">8</font>)</td>
+<td width="180">(0,0,<font color="#00ff00">0</font>)<img src="./3_files/arrow2.gif" width="25" height="12">
+(0,0,<font color="#00ff00">*1</font>)</td>
+</tr>
+
+</tbody></table>
+</center><br>
+
+The game has not ended yet, but we can see how it's going to proceed.
+At each turn, A looks at the corresponding Nim game, finds the winning
+move (to a losing position) there, and makes the corresponding move
+in his game. Notice that unlike the actual game of Nim, the Nim values 
+in this case <i>may bob up and down</i>. However, B cannot postpone his defeat indefinitely
+by increasing the Nim values - since this is a finite game, 
+he's eventually forced to decrease a Nim value.
+
+<br>
+<br>
+<br>
+<center><img src="./3_files/isleline2.gif"></center><br>
+<font size="+2">Kayles</font><br><br>
+
+Let us look at another game : <b>Kayles</b>. Some rows of skittles are drawn, 
+and each player, upon his turn, knocks down any one skittle or two neighbouring 
+skittles. Such a game for (3,4,3) may proceed as follows:<br><br>
+
+<center>
+
+<img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif">
+
+<img src="./3_files/nostick.gif">
+<img src="./3_files/arrow1.gif">
+<img src="./3_files/nostick.gif">
+
+<img src="./3_files/2stickr.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif">
+
+<img src="./3_files/nostick.gif">
+<img src="./3_files/arrow2.gif">
+<img src="./3_files/nostick.gif">
+
+<img src="./3_files/2stickr.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/2stickg.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif">
+
+<br><br>
+
+<img src="./3_files/nostick.gif">
+<img src="./3_files/arrow1.gif">
+<img src="./3_files/nostick.gif">
+
+<img src="./3_files/2stickr.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/2stickg.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stickr.gif"><img src="./3_files/1stick.gif"><img src="./3_files/1stick.gif">
+
+<img src="./3_files/nostick.gif">
+<img src="./3_files/arrow2.gif">
+<img src="./3_files/nostick.gif">
+
+<img src="./3_files/2stickr.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/2stickg.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stickr.gif"><img src="./3_files/2stickg.gif">
+
+<img src="./3_files/nostick.gif">
+<img src="./3_files/arrow1.gif">
+<img src="./3_files/nostick.gif">
+
+<img src="./3_files/2stickr.gif"><img src="./3_files/1stickr.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/2stickg.gif"><img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stickr.gif"><img src="./3_files/2stickg.gif">
+
+<br><br>
+
+<img src="./3_files/nostick.gif">
+<img src="./3_files/arrow2.gif">
+<img src="./3_files/nostick.gif">
+
+<img src="./3_files/2stickr.gif"><img src="./3_files/1stickr.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif"><img src="./3_files/2stickg.gif"><img src="./3_files/1stickg.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stickr.gif"><img src="./3_files/2stickg.gif">
+
+<img src="./3_files/nostick.gif">
+<img src="./3_files/arrow1.gif">
+<img src="./3_files/nostick.gif">
+
+<img src="./3_files/2stickr.gif"><img src="./3_files/1stickr.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stickr.gif"><img src="./3_files/2stickg.gif"><img src="./3_files/1stickg.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/1stickr.gif"><img src="./3_files/2stickg.gif">
+</center>
+<br>
+Hence the first player A wins. In order to analyze the game, let us assign a Nim value 
+to a game of Kayles with <i>n</i> contiguous skittles. Clearly, when <i>n</i>=0 the 
+Nim value is 0; and when n=1, the Nim value is <i>*1</i>. To compute the Nim value for 
+<i>n</i>=2, note that a move may leave either 0 or 1 skittles (with Nim scores 0 or *1). 
+Hence, the value is *2.<br><br>
+
+Computing the Nim value for <i>n</i>=3 is a bit tricky. A move may leave either 1 
+skittle, 2 contiguous skittles, or 2 separated skittles. These have Nim scores *1, 
+*2 or *(1 * 1) = 0 respectively. Hence the desired value, being the smallest non-negative
+integer which does not occur among all the moves, must be *3. <br><br>
+
+Similarly, when <i>n</i>=4, the first move leaves (3), (1,2), (2) or (1,1). The 
+Nim values of these results are *3, *(1 * 2) = *3, *2, *(1 * 1) = 0. Hence, the 
+Nim value is *1. <br><br>
+
+When <i>n</i>=5, the first move leaves (4), (3,1), (2,2), (3) or (2,1), whose Nim 
+values are respectively *1, *(3 * 1) = *2, *(2 * 2) = 0, *3, *(2 * 1) = *3. Hence, 
+the Nim score is *4. Continuing in this manner, we obtain the following table:<br><br>
+
+<center>
+<table border="1" cellpadding="5">
+<tbody><tr align="center">
+<td bgcolor="#7f7f00" width="20">0</td><td bgcolor="#777700" width="20">1</td>
+<td bgcolor="#6f6f00" width="20">2</td><td bgcolor="#676700" width="20">3</td>
+<td bgcolor="#5f5f00" width="20">4</td><td bgcolor="#575700" width="20">5</td>
+<td bgcolor="#4f4f00" width="20">6</td><td bgcolor="#474700" width="20">7</td>
+<td bgcolor="#3f3f00" width="20">8</td><td bgcolor="#373700" width="20">9</td>
+<td bgcolor="#2f2f00" width="20">10</td>
+</tr>
+<tr align="center">
+<td bgcolor="#7f7f00" width="20">0</td><td bgcolor="#777700" width="20">*1</td>
+<td bgcolor="#6f6f00" width="20">*2</td><td bgcolor="#676700" width="20">*3</td>
+<td bgcolor="#5f5f00" width="20">*1</td><td bgcolor="#575700" width="20">*4</td>
+<td bgcolor="#4f4f00" width="20">*3</td><td bgcolor="#474700" width="20">*2</td>
+<td bgcolor="#3f3f00" width="20">*1</td><td bgcolor="#373700" width="20">*4</td>
+<td bgcolor="#2f2f00" width="20">*2</td>
+</tr>
+</tbody></table></center>
+<br>
+
+Hence our game configuration (3,4,3) as shown above has a Nim score of (*3, *1, *3), 
+which in turn has a combined score of *(3 * 1 * 3) = *1. In other words, the
+first player wins.
+<br>
+<br>
+<br>
+<center><img src="./3_files/isleline2.gif"></center>
+<br>
+<font size="+2">Grundy's Game</font><br><br>
+
+A heap of <i>n</i> stones is given. Two players alternately split the heap into 
+two smaller heaps of <u>different sizes</u>. Eventually, the heap has 1 or 2 stones left 
+and the player who is unable to perform the split loses. When <i>n</i> = 1 or 2, 
+the Nim value is obviously 0. 
+For <i>n</i>=3, the only legal move is (1,2), which has a Nim value of (0, 0) = 0. 
+Hence, the Nim value for <i>n</i>=3 is *1.<br><br>
+
+For <i>n</i>=4, the only legal move is (1,3), which has a Nim value of (0, *1) = *1. 
+Hence the Nim value for <i>n</i>=4 is 0.<br><br>
+
+For <i>n</i>=5, we have two possible moves: (1,4), (2,3), with Nim values (0, 0) = 0, 
+(0, *1) = *1 respectively. Hence the Nim value for <i>n</i>=5 is *2.<br><br>
+
+Continuing in this manner, we have the following table:<br><br>
+
+<center>
+<table border="1" cellpadding="5">
+<tbody><tr align="center">
+<td width="20" bgcolor="#7f7f00">1</td>
+<td width="20" bgcolor="#797900">2</td>
+<td width="20" bgcolor="#737300">3</td>
+<td width="20" bgcolor="#6d6d00">4</td>
+<td width="20" bgcolor="#676700">5</td>
+<td width="20" bgcolor="#616100">6</td>
+<td width="20" bgcolor="#5b5b00">7</td>
+<td width="20" bgcolor="#555500">8</td>
+<td width="20" bgcolor="#4f4f00">9</td>
+<td width="20" bgcolor="#494900">10</td>
+<td width="20" bgcolor="#434300">11</td>
+<td width="20" bgcolor="#3d3d00">12</td>
+<td width="20" bgcolor="#373700">13</td>
+<td width="20" bgcolor="#313100">14</td>
+<td width="20" bgcolor="#2b2b00">15</td>
+</tr>
+<tr align="center">
+<td width="20" bgcolor="#7f7f00">0</td>
+<td width="20" bgcolor="#797900">0</td>
+<td width="20" bgcolor="#737300">*1</td>
+<td width="20" bgcolor="#6d6d00">0</td>
+<td width="20" bgcolor="#676700">*2</td>
+<td width="20" bgcolor="#616100">*1</td>
+<td width="20" bgcolor="#5b5b00">0</td>
+<td width="20" bgcolor="#555500">*2</td>
+<td width="20" bgcolor="#4f4f00">*1</td>
+<td width="20" bgcolor="#494900">0</td>
+<td width="20" bgcolor="#434300">*2</td>
+<td width="20" bgcolor="#3d3d00">*1</td>
+<td width="20" bgcolor="#373700">*3</td>
+<td width="20" bgcolor="#313100">*2</td>
+<td width="20" bgcolor="#2b2b00">*1</td>
+</tr>
+</tbody></table></center><br>
+
+<br>
+<br>
+<center><img src="./3_files/isleline2.gif"></center>
+<br>
+<font size="+2">More Games</font><br><br>
+
+Here are some other games which you may analyze for yourself:<br><br>
+
+<ol>
+<li> Remember our childhood game of <b>Sticks</b>? We have several rows of skittles /
+sticks, and at a player's turn, he may cancel out an arbitrary number of skittles provided 
+they are all contiguous. The player to cancel the last skittle loses. Analyze this game 
+thoroughly.<br><br>
+
+</li><li> <b>Dawson's Kayles</b> is similar to Kayles, but the only legal move
+is to knock down two contiguous skittles. Analyze this game for various
+initial positions.<br><br>
+<center>
+<img src="./3_files/1stick.gif"><img src="./3_files/2stickr.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif"><img src="./3_files/nostick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/2stickg.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/nostick.gif">
+<img src="./3_files/2stickr.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/1stick.gif">
+<img src="./3_files/2stickg.gif">
+<img src="./3_files/1stick.gif">
+</center><br><br>
+
+</li><li> In <b>Nim City</b>, the towns A-K together with the hometown are
+drawn on the (simplified) map below, together with the expressways
+connecting them. Initially, there are three cars, whose respective locations
+are towns F, J and K. The game is played between two players: at each
+player's turn he must pick up a car and land it on a nearby town which
+is connected via an expressway. A car may only move from a higher letter
+to a lower one (e.g. K to C) or from a letter to the hometown. More than
+one car may be present in a town at any time. The first player to move
+all the cars back home wins. Does the first player have in this game?
+<center><img src="./3_files/map.gif"></center><br><br>
+
+
+</li><li> Analyze <b>Dawson's Chess</b> - start with a 3-by-<i>n</i> chessboard, with two rows of 
+pawns at opposite ends. Each player alternately move a pawn or capture his opponent's pawn. 
+Here, capturing is obligatory, i.e. if a player has a chance of capturing a pawn, he must 
+do so. If in the next move, he has more than one capture available, then he can choose 
+from any one of them. (Recall the rules of international chess : a pawn may move only one 
+square forward at a time, and capturing must be diagonal. Here a pawn may not be promoted.)
+<br><br>
+<center><img src="./3_files/dawsonchess.gif"></center><br>
+
+</li><li> Consider <b>Treblecross</b>, which is basically one-dimensional tic-tac-toe.
+Here, the board is a 1-by-<i>n</i> grid (<i>n</i> at least 3), and both players 
+share the same symbol X. The first player to connect 3 X's in a row wins.
+Who wins on a 1-by-100 board? (For example in the diagram below, the next player
+will lose since whatever move he makes enables the other player to connect three
+in a row.)<br><br>
+
+<center>
+<table border="1">
+<tbody><tr bgcolor="#b0b000">
+<td width="20">&nbsp;</td><td width="20"><img src="./3_files/redx.gif"></td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20"><img src="./3_files/redx.gif"></td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20"><img src="./3_files/redx.gif"></td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20"><img src="./3_files/redx.gif"></td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+</tr></tbody></table>
+</center>
+
+</li></ol>
+
+
+
+<br>
+<br>
+<center><img src="./3_files/isleline2.gif"></center>
+
+<br><br>
+<a href="http://sps.nus.edu.sg/~limchuwe/"><img src="./3_files/goback.gif"></a> Back to the main page...
+
+
+
+
+</body></html>

@@ -1,0 +1,429 @@
+
+<!-- saved from url=(0044)http://sps.nus.edu.sg/~limchuwe/cgt/cgt2.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Introductory Combinatorial Game Theory</title>
+</head>
+<body bgcolor="#000000" text="#ffffff">
+
+<b><font size="+3"><center>Introductory Combinatorial Game Theory</center></font><br>
+<font size="+2"><center>Lesson 2 (Game of Nim)</center></font><br></b>
+
+The game of <b>Nim</b> is played with a few piles of stones. At each player's turn, 
+he/she may remove any number of stones, subjected to the condition that all the stones 
+must be from a single pile. A player who is unable to remove any stones loses. An example 
+of a game of Nim (with red/green highlighting the moves of A/B) is:
+<br><br>
+
+<center><table align="center"><tbody><tr><td><font size="+1">
+(<font color="#ff0000">7</font>,8,10)</font></td><td><img src="./2_files/arrow1.gif"></td>
+<td><font size="+1">(3,<font color="#00ff00">8</font>,10)</font></td>
+<td><img src="./2_files/arrow2.gif"></td>
+<td><font size="+1">(3,2,<font color="#ff0000">10</font>)</font></td>
+<td><img src="./2_files/arrow1.gif"></td>
+<td><font size="+1">(<font color="#00ff00">3</font>,2,0)</font></td>
+<td><img src="./2_files/arrow2.gif"></td>
+<td><font size="+1">(2,<font color="#ff0000">2</font>,0)</font></td>
+<td><img src="./2_files/arrow1.gif"></td>
+<td><font size="+1">(<font color="#00ff00">2</font>,0,0)</font></td>
+<td><img src="./2_files/arrow2.gif"></td>
+<td><font size="+1">(0,0,0)</font></td>
+</tr></tbody></table><br>
+</center>
+
+So the second player wins in this case. As we shall soon see, the above game is actually a
+win for the first player. We may perform analysis similar to the game earlier to determine 
+whether each configuration is winning or losing. In practice however, it is far too tedious. 
+Here we offer a straightforward method to compute the outcome of each game of Nim.
+<br><br>
+Suppose the game consists of piles (7, 8, 10). We arrange the piles as sums of powers of 2 
+as below:<br><br>
+
+<table border="" cellpadding="6" align="center">
+<tbody><tr align="center"><td align="center" width="100">&nbsp;</td>
+<td width="30"> 8 </td>
+<td width="30"> 4 </td>
+<td width="30"> 2 </td>
+<td width="30"> 1 </td>
+<td width="60"> Sum</td>
+</tr>
+<tr><td>Pile 1</td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">7</td>
+</tr>
+<tr><td>Pile 2</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center">8</td>
+</tr>
+<tr><td>Pile 3</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">10</td>
+</tr>
+</tbody></table>
+<br>
+
+The first player A attempts to make a move so that the number of stars in each column is even. 
+This is accomplished by taking away 5 sticks from the first pile, leaving:<br><br>
+
+<table border="" cellpadding="6" align="center">
+<tbody><tr align="center"><td align="center" width="100">&nbsp;</td>
+<td width="30"> 8 </td>
+<td width="30"> 4 </td>
+<td width="30"> 2 </td>
+<td width="30"> 1 </td>
+<td width="60"> Sum</td>
+</tr>
+<tr><td>Pile 1</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">2</td>
+</tr>
+<tr><td>Pile 2</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center">8</td>
+</tr>
+<tr><td>Pile 3</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">10</td>
+</tr>
+</tbody></table>
+<br>
+Now B is forced to break this parity, so that at least one column must be odd! 
+Suppose for instance, he chooses 3 sticks from the third pile, so that we have
+<br><br>
+<table border="" cellpadding="6" align="center">
+<tbody><tr align="center"><td align="center" width="100">&nbsp;</td>
+<td width="30"> 8 </td>
+<td width="30"> 4 </td>
+<td width="30"> 2 </td>
+<td width="30"> 1 </td>
+<td width="60"> Sum</td>
+</tr>
+<tr><td>Pile 1</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">2</td>
+</tr>
+<tr><td>Pile 2</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center">8</td>
+</tr>
+<tr><td>Pile 3</td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">7</td>
+</tr>
+</tbody></table>
+<br>
+
+Player A may now retaliate by taking 3 sticks from the second pile,
+so that the number of stars in each column is again even.
+<br><br>
+<table border="" cellpadding="6" align="center">
+<tbody><tr align="center"><td align="center" width="100">&nbsp;</td>
+<td width="30"> 8 </td>
+<td width="30"> 4 </td>
+<td width="30"> 2 </td>
+<td width="30"> 1 </td>
+<td width="60"> Sum</td>
+</tr>
+<tr><td>Pile 1</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center">2</td>
+</tr>
+<tr><td>Pile 2</td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">5</td>
+</tr>
+<tr><td>Pile 3</td>
+<td align="center">&nbsp;</td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center"><img src="./2_files/star.gif"></td>
+<td align="center">7</td>
+</tr>
+</tbody></table><br>
+
+Thus play goes on until player A leaves (0,0,0) and wins. 
+Hence the key to winning Nim is as follows :
+<br><br><center>
+<table border="5" cellpadding="10" width="480">
+<tbody><tr><td><font size="+1"><b>
+A configuration is losing if and only if the number of stars 
+in each column is even. 
+Otherwise, it is winning. </b></font>
+</td>
+</tr></tbody></table></center>
+
+<br><br>
+<center><img src="./2_files/isleline2.gif"></center>
+<br>
+We shall give an explicit method of expressing the above results. Let <i>m</i> and
+<i>n</i> be two non-negative integers. We shall define the <b>XOR</b> operation (called the 
+'exclusive-or' operation) between <i>m</i> and <i>n</i>, denoted m * n. 
+Write down the binary representations of <i>m</i> and <i>n</i>, one below the other 
+and in the third row, write 0 if the 2 digits in the column are the same, and 1 if the 
+2 digits are different.<br><br>
+
+For example, to find 21 * 39, we write the binary representations as follows:<br><br>
+
+<table align="center">
+<tbody><tr align="right"><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010101<br>
+<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100111</u><br>
+<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110010</u><br>
+</td></tr></tbody></table>
+<br>
+Since (110010)<sub>2</sub> = 50, we have 21 * 39 = 50. Incidentally, the XOR operation
+is also known as <i>addition without carry</i> - it is not hard to see why this is named
+so. Now in general, we have the following rule:<br><br>
+
+<center>
+<table border="5" cellpadding="10" width="600">
+<tbody><tr><td><font size="+1"><b>
+A configuration is losing if and only if the configuration consists of <i>k</i> piles of
+sticks, containing <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub> ... <i>m<sub>k</sub></i>
+sticks respectively, such that<br><i>m</i><sub>1</sub> * <i>m</i><sub>2</sub> * ... *
+<i>m<sub>k</sub></i> = 0</b></font><b>
+</b></td>
+</tr></tbody></table></center>
+<br>
+In the above example, we have 7 = (111)<sub>2</sub>, 8 = (1000)<sub>2</sub>, 
+10 = (1010)<sub>2</sub>. Thus, 7 * 8 * 10 = (101)<sub>2</sub> which is not zero 0 and 
+(7, 8, 10) must be a winning configuration.
+<br>
+<br><br>
+<center><img src="./2_files/isleline2.gif"></center>
+<br>
+
+<font size="+2"> Finding the Winning Move</font><br><br>
+
+Here we shall give an algorithm for finding the winning move (to a losing position)
+in a particular configuration. Suppose the piles consist of <i>m</i><sub>1</sub>,
+<i>m</i><sub>2</sub> ... <i>m<sub>k</sub></i> sticks respectively so that
+<i>m</i> = <i>m</i><sub>1</sub> * <i>m</i><sub>2</sub> * ... * <i>m<sub>k</sub></i>
+is non-zero. Our objective is then to reduce one of the values <i>m<sub>i</sub></i>
+so that their XOR-sum is zero. We shall illustrate the steps using the example,
+(19, 25, 12), with binary representations (10011)<sub>2</sub>, (11001)<sub>2</sub>
+and (01100)<sub>2</sub>. Thus their XOR-sum is (00110)<sub>2</sub> = 6.
+
+<ol>
+<li> <font size="+1">Find the first leading non-zero digit of the XOR-sum,
+and remove all digits prior to that column.</font><br>
+Hence, in our example we have the digits in green:<br>
+
+<table align="center"><tbody><tr><td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10<font color="#00ff00">011</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11<font color="#00ff00">001</font><br>
+<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01<font color="#00ff00">100</font></u><br>
+<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00<font color="#00ff00">110</font></u><br>
+</td></tr></tbody></table><br>
+
+</li><li> <font size="+1">Among the remaining summands, find the one with the largest value.
+</font><br>
+In our case, we must take the last summand which is (01<font color="#00ff00">100</font>).
+<br><br>
+
+</li><li> <font size="+1">Change this summand to the desired value</font>.<br>
+
+In order to obtain (00000) in the final XOR-sum, we must replace the green digits of
+the third summand by 010. This gives us (01<font color="#00ff00">010</font>) which
+is 10 in binary. Hence, we must 2 sticks from the last pile.
+</li></ol>
+<br><br>
+<center><img src="./2_files/isleline2.gif"></center>
+<br>
+<font size="+2">Nim Variants</font><br><br>
+
+Now we shall describe some games which are actually variants of Nim.
+
+
+<ol><li>Mom has just baked a large almond cake which is divided into <i>m</i>-by-<i>n</i> 
+unit squares. Unfortunately, one of the squares is mouldy and must not be consumed. 
+Her two sons, Alfred and Bob, decide to play a game - at each turn one of them would
+cut the cake into two (by a single horizontal/vertical slice) and consume the part which
+does not contain the mouldy square. Whoever is left with the mouldy piece is
+deemed to have lost and must perform forfeit by washing the dishes. Suppose Alfred
+starts the game for the cake below. Who wins?<br><br>
+
+<center>
+<table border="1" cellspacing="0">
+<tbody><tr bgcolor="#ffff00">
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+</tr>
+<tr bgcolor="#efef00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#dfdf00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#cfcf00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td bgcolor="#a0a0a0">&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#bfbf00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#afaf00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#9f9f00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#8f8f00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#7f7f00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#6f6f00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#5f5f00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr bgcolor="#4f4f00">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+</tbody></table>
+</center><br><br>
+
+</li><li> In Northcott's Game, each player controls counters of a certain colour. 
+At his turn, he may arbitrarily shift his counters <i>left</i> or <i>right</i>
+any number of squares. However, no counter may jump over another counter. 
+Suppose red starts first. Who wins, or does the 
+game end in a draw? (Many players do not know the point behind this game and end up
+shifting the counters aimlessly left and right. However, a skilled player can easily
+win.)<br><br>
+
+<center>
+<table border="1">
+<tbody><tr align="center">
+<td width="20"><img src="./2_files/redball.gif"></td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20"><img src="./2_files/greenball.gif"></td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+</tr>
+<tr align="center">
+<td>&nbsp;</td><td>&nbsp;</td><td><img src="./2_files/greenball.gif"></td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td><img src="./2_files/redball.gif"></td><td>&nbsp;</td>
+</tr>
+<tr align="center">
+<td>&nbsp;</td><td><img src="./2_files/greenball.gif"></td><td>&nbsp;</td><td>&nbsp;</td>
+<td><img src="./2_files/redball.gif"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr align="center">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td><img src="./2_files/greenball.gif"></td><td>&nbsp;</td><td><img src="./2_files/redball.gif"></td>
+</tr>
+<tr align="center">
+<td>&nbsp;</td><td><img src="./2_files/redball.gif"></td><td>&nbsp;</td><td>&nbsp;</td>
+<td><img src="./2_files/greenball.gif"></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr align="center">
+<td>&nbsp;</td><td><img src="./2_files/redball.gif"></td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><img src="./2_files/greenball.gif"></td>
+</tr>
+<tr align="center">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><img src="./2_files/redball.gif"></td>
+<td>&nbsp;</td><td>&nbsp;</td><td><img src="./2_files/greenball.gif"></td><td>&nbsp;</td>
+</tr>
+<tr align="center">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><img src="./2_files/greenball.gif"></td>
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><img src="./2_files/redball.gif"></td>
+</tr>
+</tbody></table>
+</center>
+<br><br>
+
+</li><li> Nimble - In the following strip, each square can contain at most one coin. 
+On a player's turn, he must pick a coin and shift it an arbitrary number of squares 
+to the left, without jumping over any other coin and without sliding it off the strip. 
+Analyze the game : who wins?<br><br>
+
+<center>
+<table border="1"><tbody><tr align="center">
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">
+<img src="./2_files/purpleball.gif"></td><td width="20">&nbsp;</td>
+<td width="20">&nbsp;</td><td width="20"><img src="./2_files/purpleball.gif"></td>
+<td width="20">&nbsp;</td><td width="20"><img src="./2_files/purpleball.gif"></td>
+<td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20"><img src="./2_files/purpleball.gif"></td><td width="20">&nbsp;</td><td width="20">&nbsp;</td>
+<td width="20"><img src="./2_files/purpleball.gif"></td>
+</tr></tbody></table>
+</center>
+<br><br>
+
+</li><li> Suppose we change the rules of Nim so that the person to take away the last stick
+<i>loses</i>. How would the analysis change? (Note : this is an example of <i>misere</i>
+play, which we shall explore in further detail in subsequent lessons.)
+<br><br><br>
+
+</li><li> Analyse the following Chinese Chess configuration. <br><br>
+<center><img src="./2_files/cchess.gif"></center><br><br>
+</li>
+
+
+<br>
+<center><img src="./2_files/isleline2.gif"></center>
+
+<br><br>
+<a href="http://sps.nus.edu.sg/~limchuwe/"><img src="./2_files/goback.gif"></a> Back to the main page...
+
+
+
+
+</ol></body></html>

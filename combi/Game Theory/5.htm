@@ -1,0 +1,239 @@
+
+<!-- saved from url=(0044)http://sps.nus.edu.sg/~limchuwe/cgt/cgt5.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Introductory Combinatorial Game Theory</title>
+</head>
+<body bgcolor="#000000" text="#ffffff">
+
+<b><font size="+3"><center>Introductory Combinatorial Game Theory</center></font><br>
+<font size="+2"><center>Lesson 5 (More on Loopy Games)</center></font><br></b>
+<br>
+
+In this section, we shall analyse two more loopy games in detail.<br><br>
+
+Let us first look at <b>Adders-and-Ladders</b>, which is a modified version of
+our favourite childhood game: Snakes-and-Ladders. Unfortunately the 4-sided dice
+has been misplaced, so we shall play by a different set of rules. Begin
+with some counters placed at certain locations on the board. At each player's
+turn, he may pick up any counter and move up to a maximum of 4 spaces ahead.
+As in Snakes-and-Ladders, if the final square is a ladder, the counter has to
+climb to its top; while if the final square is the snake's head, the counter
+has to descend to its tail. The player who lands the last counter on the
+home square wins.<br><br>
+
+<center><table border="2"><tbody><tr><td><img src="./5_files/addladd.gif"></td>
+</tr></tbody></table></center><br>
+
+First consider the top row. Since there are no ladders / snakes leading
+from the top row, it is easy to compute their Nim values: the squares
+25, 24, 23, 22 and 21 have Nim values of 0, *1, *2, *3 and *4 respectively. 
+Since the ladders at 8, 9, 11 and 20 lead up to 24, 25, 21 and 23 respectively,
+the Nim values of these positions are *1, 0, *4 and *2 respectively. So we have
+<br><br>
+
+<center>
+<table border="1" cellpadding="6">
+<tbody><tr align="center" bgcolor="#0000ff">
+<td width="20">*4</td><td width="20">*3</td>
+<td width="20">*2</td><td width="20">*1</td><td width="20">0</td>
+</tr>
+<tr align="center" bgcolor="#0000df">
+<td>*2</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr align="center" bgcolor="#0000bf">
+<td>*4</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr align="center" bgcolor="#00009f">
+<td>&nbsp;</td><td>0</td><td>*1</td>
+<td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+<tr align="center" bgcolor="#00007f">
+<td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+<td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+</tbody></table></center><br>
+
+Now we shall label square 18. There are moves to squares 20, 21 and 22,
+whose respective labels are *2, *4 and *3. Can we then label square 18 
+as 0? Indeed we can, for given the move to 19 (and in turn to 7), the
+next player can easily counter it with a move to square 9 (labelled 0).
+<u><b>Thus square 18 must be labelled 0.</b></u>. <br><br>
+
+Since the ladder at square 10 leads up to square 18, <u><b>square 10 must 
+be labelled 0 as well.</b></u>Since squares 8 to 11 are all labelled, we 
+can also find the label of square 7 as well: <u><b>square 7 must be 
+labelled *2</b></u>. Since the snake at square 19 leads down to 7, 
+<u><b>square 19 is to be labelled *2</b></u>.
+<br><br>
+
+Can we label square 16? There are moves from square 16 to squares 18,
+19 and 20, which are respectively labelled with 0, *2 and *2. On
+the other hand, for a move from square 16 to 17 (and hence to 5), the
+opponent can counter it with a move to square 8 (which is labelled *1).
+Hence, <b><u>square 16 should be labelled with *1</u></b>.
+<br><br>
+
+We can similarly find the label to square 14. There are moves to
+squares 16 and 18, whose respective labels are *1 and 0. On the
+other hand, for moves to 15 and 17 (and subsequently to 5), the
+opponent can counter with a move to 7, which is of Nim score *2. 
+<b><u>Hence, square 14 must be labelled *2</u></b><u></u>.<br><br>
+
+To label square 13, note that moves to squares 14 and 16 are
+of Nim values *2 and *1 respectively. On the other hand, moves
+to 15 and 17 (and subsequently to 5) can be counteracted with
+a move to 9, which is of Nim score 0. <b><u>So we must label
+square 13 with 0</u></b>. As a result, <b><u>square 3</u></b> 
+(which leads up to square 13) <b><u>must be labelled with 0 
+as well</u></b>. <br><br>
+
+The next square to be labelled is a bit tricky. Consider
+square number 2. There is a move to square 3 which has a Nim
+score of 0. Furthermore, for moves to squares 4, 5 and 6 (which
+leads down to 4), there is a countermove to square 8 of Nim
+score *1. Hence, <b><u>square number 2 is to be labelled *1</u></b>.
+<br><br>
+
+Finally, look at the starting square: number 1. There are moves
+from the square to squares 2 and 3, of Nim scores *1 and 0. On
+the other hand, moves to squares 4 and 5 may be counteracted
+with a move to square 7 (of Nim score *2). Thus, <b><u>the starting
+square may be labelled with *2</u></b>. Since there is a snake
+which leads from square 12 to this square, <b><u>square 12 must
+be labelled with *2 as well</u></b>. In summary,<br><br>
+
+<center>
+<table border="1" cellpadding="6">
+<tbody><tr align="center" bgcolor="#0000ff">
+<td width="20">*4</td><td width="20">*3</td>
+<td width="20">*2</td><td width="20">*1</td><td width="20">0</td>
+</tr>
+<tr align="center" bgcolor="#0000df">
+<td>*2</td><td>*2</td><td>0</td>
+<td>&nbsp;</td><td>*1</td>
+</tr>
+<tr align="center" bgcolor="#0000bf"> 
+<td>*4</td><td>*2</td><td>0</td>
+<td>*2</td><td>&nbsp;</td>
+</tr>
+<tr align="center" bgcolor="#00009f">
+<td>0</td><td>0</td><td>*1</td>
+<td>*2</td><td>&nbsp;</td>
+</tr>
+<tr align="center" bgcolor="#00007f">
+<td>*2</td><td>*1</td><td>0</td>
+<td>&nbsp;</td><td>&nbsp;</td>
+</tr>
+</tbody></table></center><br>
+
+It is easy to verify that no further labellings are possible. Hence, 
+each of the other unlabelled squares should be given a Nim score of 
+infinity. 
+
+<br><br><br>
+<center>
+<img src="./5_files/treeline.gif">
+</center>
+<br>
+<font size="+2"> The Horsefly</font><br><br>
+
+A horsefly moves on a board as shown below, extended downwards infinitely (i.e.
+the board has infinitely many rows on it). Each time, a horsefly may move
+one out of the 6 directions as shown. In addition, it may not exactly
+reverse its previous move. The first player to home any horsefly
+wins the game. 
+<br><br>
+
+<center><img src="./5_files/horsefly.gif"></center><br>
+
+Note that the homes are located at A-0, D-0 and G-0. Hence, if a player were
+to move a horsefly to one of the squares at B-1, C-1, B-2, C-2, E-1, F-1,
+E-2 or F-2, then the other player would have won. Thus, we may effectively
+remove the above eight squares from the board and modify the game, so that
+a player who does not have a legal move for any horsefly loses the game. 
+<b><u>There are no legal moves from the squares A-1, D-1 and G-1, hence these squares
+are to be labelled 0.</u></b><br><br>
+
+Now the only legal move from A-2 is to C-3, from which his opponent may swiftly
+counter with a move to D-1 (labelled 0). Hence, A-2 is to be labelled 0 as well.
+Simiarly, the moves from D-2 to B-3 or F-3 may be countered with moves to
+A-1 or G-1 respectively, which are both labelled 0. Hence, these squares are
+labelled 0 as well. <b><u>Thus, we see that squares A-2, D-2 and G-2 are to be
+labelled 0 too.</u></b> By the same line of reasoning, <b><u>squares A-3, D-3
+and G-3 are also labelled 0.</u></b>
+<br><br>
+
+This may go on indefinitely. Note that for large values of <i>n</i>, a move from
+A-<i>n</i> to C-(<i>n</i>+1), C-(<i>n</i>-1) or B-(<i>n</i>-2) may be countered
+with a move to D-(<i>n</i>-1), D-(<i>n</i>-3) or D-(<i>n</i>-3) respectively. 
+Similarly, moves from D-<i>n</i> to B-(<i>n</i>+1), B-(<i>n</i>-1),
+C-(<i>n</i>-2), E-(<i>n</i>-2), F-(<i>n</i>-1) or F-(<i>n</i>+1) may be
+countered with subsequent moves to A-(<i>n</i>-1), A-(<i>n</i>-3), 
+A-(<i>n</i>-3), G-(<i>n</i>-3), G-(<i>n</i>-3) or G-(<i>n</i>-1) respectively.
+Applying mathematical induction, one easily shows that <b><u>all squares in 
+columns A, D and G are to be labelled 0.</u></b> So far we have:<br><br>
+
+<center><img src="./5_files/horsefly2.gif"></center>
+<br>
+
+Subsequently we have to be careful in our computations, since the horsefly's
+previous move cannot be reversed.
+First look at square B-3, whose legal moves to A-1, D-2 and D-4 are all labelled 0.
+Hence, <b><u>B-3 (and similarly F-3) should be labelled *1</u></b><u></u>. On the
+next row, the only moves from B-4 are to A-2, D-3 and D-5, which are all labelled 0.
+So <b><u>B-4 and F-4 are labelled *1</u></b> as well. It is easy to see that the
+above reasoning holds regardless of the horsefly's prior move.<br><br>
+
+Next look at square C-3. If the horsefly had reached there from E-4, then by virtue
+of its nonreversibility, it has to move to either A-4, A-2 or D-1, all of which are
+labelled 0. Hence, we may <b><u>label the bottom right-hand corner of the C-3
+square with *1</u></b> (the corner chosen refers to the direction from which the 
+horsefly had arrived from). Similarly, <b><u>the bottom left-hand corner of the E-3
+square is labelled *1</u></b> too.
+
+We may analyse square C-4 similarly. If the horsefly had jumped there from E-5,
+then all its possible next moves are labelled with either 0 or *1. Hence,  
+<b><u>the bottom right-hand corner of C-4 and bottom left-hand corner of E-4 
+are labelled *2</u></b>. <br><br>
+
+Look at square C-4 again. There are moves to squares A-3, D-2, and E-3,
+which are respectively labelled 0, 0, *1. Suppose the horsefly had arrived there 
+from E-3. Then together with the fact that the move to E-5 can be countered with
+a move to F-3 (labelled *1), we may hence <b><u>label upper-right corner of C-4 
+and upper-left corner of E-4 with *1</u></b>.<br><br> 
+
+<center><img src="./5_files/horsefly2a.gif"></center><br>
+
+To label B-5, note that the 
+moves to A-3, D-4, and D-6 are all labelled 0. The move to C-3 can also be 'reversed'
+to E-4 (labelled *1). Hence, <b><u>B-5 and F-5 are to be labelled *1</u></b>, which
+holds regardless of the horsefly's previous position. To label B-6, note that the
+move to C-4 can be 'reversed' to E-3 (labelled *1). This, together with the fact
+that all the other moves from B-6 are labelled 0, shows that <b><u>B-6 should be
+labelled *1</u></b>. <br><br>
+
+For values of <i>n</i> at least 7, a move from B-<i>n</i> to A-(<i>n</i>-2), D-(<i>n</i>-1)
+and D-(<i>n</i>+1) are all labelled 0; while a move to C-(<i>n</i>-2) can be 'reversed'
+to B-(<i>n</i>-4). Hence, <b><u>the entire B and F-columns are labelled *1</u></b><u></u>.
+Next we may label C-3. Since all its moves are labelled either 0 or *1,
+this process is straightforward: we shall <b><u>label C-3 and E-3 with *2</u></b>.
+Last but not least, we can alternately label the lower-right corners of the squares
+C-5, C-6, C-7 ... (resp. the lower-left corners of the squares E-5, E-6, E-7 ...) with 
+*3, *2, *3 ... . Finally, we have:<br><br>
+
+<center><img src="./5_files/horsefly2b.gif"></center><br>
+
+<br><br><br>
+<center>
+<img src="./5_files/treeline.gif">
+</center>
+
+<br><br>
+<a href="http://sps.nus.edu.sg/~limchuwe/"><img src="./5_files/goback.gif"></a> Back to the main page...
+
+
+
+
+</body></html>

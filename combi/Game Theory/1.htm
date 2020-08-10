@@ -1,0 +1,1008 @@
+
+<!-- saved from url=(0044)http://sps.nus.edu.sg/~limchuwe/cgt/cgt1.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Introductory Combinatorial Game Theory</title>
+</head>
+<body bgcolor="#000000" text="#ffffff">
+
+<b><font size="+3"><center>Introductory Combinatorial Game Theory</center></font><br>
+<font size="+2"><center>Lesson 1 (Simple Games)</center></font><br></b>
+
+We shall begin our session with a simple game: <b>Squaring the Number</b>. Beginning with a positive integer (say 75), 
+players A and B alternately subtract a positive <i>square</i> integer from it, leaving a <i>non-negative</i> integer. In 
+other words, the players can only subtract 1, 4, 9, 16, 25, 36 etc. The player who is unable to make a move loses. For 
+example, a typical game might proceed as follows:
+<br>
+
+<center><table align="center" width="450">
+<tbody><tr><td><font size="+1">75</font></td><td><img src="./1_files/arrow1.gif"></td>
+<td><font size="+1">50</font></td><td><img src="./1_files/arrow2.gif"></td>
+<td><font size="+1">46</font></td><td><img src="./1_files/arrow1.gif"></td>
+<td><font size="+1">30</font></td><td><img src="./1_files/arrow2.gif"></td>
+<td><font size="+1">5</font></td><td><img src="./1_files/arrow1.gif"></td>
+<td><font size="+1">4</font></td><td><img src="./1_files/arrow2.gif"></td>
+<td><font size="+1">0</font></td>
+</tr></tbody></table></center>
+<br>
+
+Here A's moves are indicated by a red arrow, while B's moves are indicated by a 
+green arrow. Hence, in the above game, player B wins since A has no legal move left. 
+There is a nagging suspicion though, that one (possibly both) of the players has not 
+played wisely. If both players had played well, who would win?<br><br>
+
+Suppose the game begins with the non-negative integer <i>n</i>. There are two
+possible outcomes for the game.<br><br>
+
+<table border=""><tbody><tr><td>
+<ol type="a">
+<li>the first player can definitely win, by playing a crucial move; or</li>
+<li>no such move is available to him, so the second player can definitely win.</li></ol>
+</td>
+</tr></tbody></table>
+<br>
+If (a) holds, then we say that <i>n</i> is a <b>winning number</b>; otherwise, (b) holds 
+and we call <i>n</i> a <b>losing number</b>.<br><br>
+
+Let us look at some simple examples.
+
+<ol type="i">
+
+<li>0 is definitely a losing number, because no move is available to him at all!</li>
+<li>Every square number 1, 4, 9, 16, 25 etc, is a winning number, since the first player 
+can easily reduce it to zero, thereby giving his opponent a losing position.</li></ol>
+
+After some elementary reasonings, we get:
+<b><center>Table 1</center></b>
+<center><table border="" cellspacing="1" cellpadding="5" width="270">
+<tbody><tr><td width="15%" valign="TOP">
+<p align="CENTER">0</p></td>
+<td width="17%" valign="TOP">
+<p align="CENTER">1</p></td>
+<td width="17%" valign="TOP">
+<p align="CENTER">2</p></td>
+<td width="17%" valign="TOP">
+<p align="CENTER">3</p></td>
+<td width="17%" valign="TOP">
+<p align="CENTER">4</p></td>
+<td width="17%" valign="TOP">
+<p align="CENTER">5</p></td>
+</tr>
+<tr><td width="15%" valign="TOP">
+<img src="./1_files/cross.gif">
+</td>
+<td width="17%" valign="TOP">&nbsp;</td>
+<td width="17%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="17%" valign="TOP">&nbsp;</td>
+<td width="17%" valign="TOP">&nbsp;</td>
+<td width="17%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+</tr>
+</tbody></table>
+</center>
+
+<br>
+where the cross-bones indicate a losing number and a blank space refers to a 
+winning number. The rules for continuing our analysis may be plainly stated as:
+<br><br>
+
+<table border="3" cellpadding="8"><tbody><tr><td>
+<font size="+1">
+<b><i>If the first player can make a move, such that the resulting number is losing, then n is a winning number.
+</i></b><i></i><br>
+<b><i>Otherwise, each of the first player's move results in a winning number, hence n is a losing number.</i></b></font><b><i>
+</i></b><i></i></td>
+</tr></tbody></table><br>
+
+<center><img src="./1_files/isleline.gif"></center><br>
+
+If you think about the above rules of thumb, it becomes intuitively obvious why : naturally you want the other 
+player to lose. So, <i>if you are the first player, you try to leave a losing number to the second player. 
+</i>If you are unable to do that, you lose since every move you make is a winning number for the other player.
+<br>
+
+<p>To give a feel of how the above guidelines work, suppose we have continued our analysis for table 1 till <i>n</i>=21 :</p>
+<b><p align="CENTER">Table 2</p></b>
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="550">
+<tbody><tr><td width="8%" valign="TOP">
+<p align="CENTER">0</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">1</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">2</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">3</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">4</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">5</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">6</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">7</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">8</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">9</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">10</p></td>
+</tr>
+<tr><td width="8%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+</tr>
+</tbody></table>
+</center><p></p>
+
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="550">
+<tbody><tr><td width="9%" valign="TOP">
+<p align="CENTER">11</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">12</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">13</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">14</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">15</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">16</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">17</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">18</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">19</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">20</p></td>
+<td width="9%" valign="TOP">
+<p align="CENTER">21</p></td>
+</tr>
+<tr><td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">&nbsp;</td>
+<td width="9%" valign="TOP">
+<img src="./1_files/cross.gif"></td>
+<td width="9%" valign="TOP">&nbsp;</td>
+</tr>
+</tbody></table>
+</center>
+<br>
+
+Now we wish to analyze <i>n</i>=22. From 22, 
+we have 4 possible moves: <br><br>
+<center><img src="./1_files/options.gif"></center>
+<br>
+
+Each of the four moves : 6, 13, 18, 21 are winning numbers. Hence <b>22 is a losing number</b>. 
+This gives us an efficient method of finding the status of each number.
+<br><br>
+
+<center><img src="./1_files/isleline.gif"></center><br>
+
+<b><font size="+2"><p>Making Good Moves</p></font></b>
+
+It is not enough to simply know whether each number is winning or losing. We must know how to make 'good' moves, so that we can win when placed in an advantageous situation.<p></p>
+
+<table border=""><tbody><tr><td>
+<i></i><p><i>Example 1</i> : In the game with <i>n</i>=19, what is the first move you should make?</p>
+<i>
+</i><p><i>Answer</i> : Look at Table 2 above, 19 is a winning number which spells good news for you. Now consider the options you have : <i>n</i>=18, 15, 10, or 3. Since you want your opponent to lose, you should give him a losing number : i.e. <i>n</i>=10 or 15.</p>
+</td></tr></tbody></table>
+<br>
+
+<table border=""><tbody><tr><td>
+<i></i><p><i>Example 2</i> : In the game with <i>n</i>=18, the first player decided to subtract 4, leaving <i>n</i>=14. What would happen?</p>
+
+<i></i><p><i>Answer</i> : Again, from Table 2, we see that 14 is a winning number - hence the first player's move was unwise. The second player 
+may now turn the tables around by subtracting 4, leaving a losing number <i>n</i>=10 for the first player. Victory!</p>
+</td></tr></tbody></table>
+
+<br>
+<p>Here, we shall describe an even more efficient method to find the outcome of a number <i>n</i>. This method is similar to the sieve of Eratosthenes (which finds all primes below a certain range). 
+Suppose we wish to compute the outcomes of all numbers up to 15. 
+We know for sure that 0 is a losing number :</p>
+
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="645">
+<tbody><tr><td width="5%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">0</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">1</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">2</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">3</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">4</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">5</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">6</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">7</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">8</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">9</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">10</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">11</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">12</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">13</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">14</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">15</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">16</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">17</p></td>
+</tr>
+<tr><td width="5%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+</tr>
+</tbody></table>
+</center><p></p>
+
+
+<p>Adding square numbers to 0 gives us 1, 4, 9 (which are winning numbers since there is a choice for player A to leave a losing number).</p>
+
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="645">
+<tbody><tr><td width="5%" valign="TOP">
+<p align="CENTER">0</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">1</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">2</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">3</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">4</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">5</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">6</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">7</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">8</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">9</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">10</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">11</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">12</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">13</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">14</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">15</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">16</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">17</p></td>
+</tr>
+<tr><td width="5%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/smiley.gif"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/smiley.gif"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/smiley.gif"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/smiley.gif"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+</tr>
+</tbody></table>
+</center><p></p>
+
+
+<p>So we know that the first unlabelled number is losing (2 in this case) :</p>
+
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="645">
+<tbody><tr><td width="5%" valign="TOP">
+<p align="CENTER">0</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">1</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">2</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">3</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">4</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">5</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">6</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">7</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">8</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">9</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">10</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">11</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">12</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">13</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">14</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">15</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">16</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">17</p></td>
+</tr>
+<tr><td width="5%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+</tr>
+</tbody></table>
+</center><p></p>
+
+
+<p>Adding square numbers to 2 gives us more winning numbers : (2+1, 2+4, 2+9) :</p>
+
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="645">
+<tbody><tr><td width="5%" valign="TOP">
+<p align="CENTER">0</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">1</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">2</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">3</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">4</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">5</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">6</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">7</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">8</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">9</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">10</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">11</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">12</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">13</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">14</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">15</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">16</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">17</p></td>
+</tr>
+<tr><td width="5%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">&nbsp;</td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">&nbsp;</td>
+</tr>
+</tbody></table>
+</center><p></p>
+
+
+<p>The next unlabelled number 5 must be losing. Continuing in this manner, we eventually obtain :</p>
+
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="645" bgcolor="#00b000">
+<tbody><tr><td width="5%" valign="TOP">
+<p align="CENTER">0</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">1</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">2</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">3</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">4</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">5</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">6</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">7</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">8</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">9</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">10</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">11</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">12</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">13</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">14</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">15</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">16</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">17</p></td>
+</tr>
+<tr><td width="5%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/smiley.gif" width="15" height="15"></td>
+<td width="6%" valign="TOP">
+<img src="./1_files/cross.gif" width="15" height="15"></td>
+</tr>
+</tbody></table>
+</center><p></p>
+
+<br><center><img src="./1_files/isleline.gif"></center><br>
+
+<b><font size="+2">Remoteness</font></b><br><br>
+
+<table border=""><tbody><tr><td>
+<i>Example 3</i> : Uh-oh, now I'm left with the number <i>n</i>=17,
+which is a losing number. There's no hope for me now, is there?
+<br><br>
+<i>Answer</i> : Don't panic. Although in theory a losing position
+is a sure-lose case, you can bet that your opponent isn't well-versed
+enough to find the exact strategy. Hence, your next move should <i>serve
+to confuse your opponent as much as possible</i>. In your example, it
+would be daft to take away 1 leaving 16, since 16 is such a clear-cut
+case for your opponent. In short, we want to find a move to a winning
+position for the opponent which is <i>as remote from the winning goal
+as possible</i>.
+</td></tr></tbody></table>
+<br>
+
+The remoteness values of <i>n</i> are assigned under the following rules:
+
+<ol type="i">
+<li> <i>If n=0, then the remoteness is given 0 by default.</i>
+</li><li> <i>
+If n is a winning position, then the remoteness of n is one more
+than the smallest possible remoteness among all the <u>possible moves 
+to losing positions</u>.</i>
+</li><li> <i>If n is a losing position, then the remotenes of n is one
+more than the largest possible remoteness among <u>all possible moves</u>.</i>
+</li></ol>
+
+The above values follow from the fact that if a player is given a winning
+number, he'd most definitely want to win as fast as possible to minimise
+any chance of error. Conversely, a losing player would like to delay his
+opponent's win for as long as possible, hoping that his opponent would
+blunder in some move. Hence the rule:<br><br>
+
+<center><table border="8" width="200" cellpadding="5"><tbody><tr><td align="center">WIN QUICKLY. <br>
+LOSE SLOWLY.</td></tr></tbody></table></center><br>
+
+To demonstrate the above rules of thumb, suppose the values of remoteness
+have already been found for up to <i>n</i>=16. We wish to calculate the
+case for <i>n</i>=17.
+
+<p align="CENTER"></p><center><table border="" cellspacing="1" cellpadding="7" width="645">
+<tbody><tr><td width="5%" valign="TOP">
+<p align="CENTER">0</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">1</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">2</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">3</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">4</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">5</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">6</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">7</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">8</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">9</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">10</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">11</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">12</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">13</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">14</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">15</p></td>
+<td width="6%" valign="TOP">
+<p align="CENTER">16</p></td>
+<td width="6%" valign="TOP" bgcolor="#0000ff">
+<p align="CENTER">17</p></td>
+</tr>
+<tr><td width="5%" align="center">
+0</td>
+<td width="6%" align="center">1</td>
+<td width="5%" align="center">2</td>
+<td width="5%" align="center">3</td>
+<td width="5%" align="center">1</td>
+<td width="5%" align="center">2</td>
+<td width="5%" align="center">3</td>
+<td width="5%" align="center">4</td>
+<td width="5%" align="center">5</td>
+<td width="5%" align="center">1</td>
+<td width="5%" align="center">4</td>
+<td width="5%" align="center">3</td>
+<td width="5%" align="center">6</td>
+<td width="5%" align="center">7</td>
+<td width="5%" align="center">3</td>
+<td width="5%" align="center">4</td>
+<td width="5%" align="center">1</td>
+<td width="5%" align="center" bgcolor="#0000ff">&nbsp;</td>
+</tr>
+</tbody></table>
+</center><p></p>
+
+There are 4 possible moves for <i>n=17</i>, to values of <i>n</i>=16, 13, 8
+or 1. The respective values of remoteness are 1, 7, 5, 1. Hence, the remoteness
+value of 17 is one more than the maximum of these values, which is 8. To
+answer Question 3, the best move is to make a move to 13, which has a remoteness
+value of 7, the highest among all possible moves. Finally, observe
+that <i> odd values of remoteness correspond to winning positions while
+even values correspond to losing positions</i>.<br>
+<br><center><img src="./1_files/isleline.gif"></center><br><br>
+
+<font size="+2">Wythoff's Game</font><br><br>
+
+The rules of this game are as follows: given a pair of non-negative integers
+(which may be distinct), two players alternately make a move. Each move
+consists of either (a) subtracting a positive integer from one of them,
+or (b) subtracting the same positive integer from both. The constraint
+is that none of the integers may be left negative. As before, the player
+who is unable to make a move loses (i.e. the player who leaves (0,0)
+for his opponent wins). <br><br>
+
+This game is equivalent to <i>Wythoff's Queen</i> which is played on
+a checkerboard, with the queen at position (<i>m</i>, <i>n</i>). Each
+player may, upon his turn, move a queen in one of the three directions
+towards the home square (0,0). The player who manages to '<i>home</i>'
+his queen wins.<br><br>
+
+<center><table border=""><tbody><tr><td><img src="./1_files/board.gif"></td></tr></tbody></table></center>
+<br><br>
+
+
+We may now apply the same analysis as before.<br><br>
+
+<center>
+<table border="" cellpadding="7">
+<tbody><tr>
+<td width="20">11</td><td width="20" bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td width="20">&nbsp;</td> <td width="20">&nbsp;</td> 
+<td width="20">&nbsp;</td> <td width="20">&nbsp;</td> <td width="20">&nbsp;</td> 
+<td width="20">&nbsp;</td> <td width="20">&nbsp;</td> <td width="20">&nbsp;</td> 
+<td width="20">&nbsp;</td> <td width="20">&nbsp;</td> <td bgcolor="#0000ff" width="20"><img src="./1_files/smiley.gif"></td> 
+</tr>
+<tr>
+<td width="20">10</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">9</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">8</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">7</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">6</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">5</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">4</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">3</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">2</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">1</td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr>
+<td width="20" align="center">0</td><td bgcolor="#0000ff"><img src="./1_files/cross.gif" width="15" height="15"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr>
+<td><td align="center">0</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td><td align="center">7</td><td align="center">8</td>
+<td align="center">9</td><td align="center">10</td><td align="center">11</td>
+</tr>
+</tbody></table>
+</center>
+<br><br><br>
+
+
+<center>
+<table border="" cellpadding="7">
+<tbody><tr>
+<td width="20" align="center">11</td>
+<td width="20"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff" width="20"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff" width="20"><img src="./1_files/smiley.gif"></td> 
+<td width="20">&nbsp;</td> <td width="20">&nbsp;</td> <td width="20">&nbsp;</td> 
+<td width="20">&nbsp;</td> <td width="20">&nbsp;</td> <td width="20">&nbsp;</td> 
+<td width="20">&nbsp;</td> <td bgcolor="#0000ff" width="20"><img src="./1_files/smiley.gif"></td> <td width="20"><img src="./1_files/smiley.gif"></td> 
+</tr>
+<tr><td width="20" align="center">10</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr><td width="20" align="center">9</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff">
+<img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="center">8</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="center">7</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="center">6</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff">
+<img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="center">5</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="center">4</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> 
+</tr>
+<tr><td width="20" align="center">3</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr><td width="20" align="center">2</td>
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/cross.gif" width="15" height="15"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr><td width="20" align="center">1</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/cross.gif" width="15" height="15"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr><td width="20" align="center">0</td>
+<td><img src="./1_files/cross.gif" width="15" height="15"></td> 
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr>
+<td><td align="center">0</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td><td align="center">7</td><td align="center">8</td>
+<td align="center">9</td><td align="center">10</td><td align="center">11</td>
+</tr>
+</tbody></table>
+</center>
+
+<br><br><br>
+
+<center>
+<table border="" cellpadding="7">
+<tbody><tr><td width="20" align="center">11</td>
+<td width="20"><img src="./1_files/smiley.gif"></td> <td width="20"><img src="./1_files/smiley.gif"></td> <td width="20"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff" width="20"><img src="./1_files/smiley.gif"></td> <td width="20">&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td width="20">&nbsp;</td> <td width="20">&nbsp;</td> <td width="20">&nbsp;</td> 
+<td width="20" bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td width="20"><img src="./1_files/smiley.gif"></td> 
+<td width="20"><img src="./1_files/smiley.gif"></td> 
+</tr>
+<tr><td align="center">10</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td>&nbsp;</td> <td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr><td align="center">9</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td>&nbsp;</td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr><td align="center">8</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>  <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+ <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td>
+</tr>
+<tr><td align="center">7</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td><td>&nbsp;</td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr><td align="center">6</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> 
+<td>&nbsp;</td> <td>&nbsp;</td>
+</tr>
+<tr><td align="center">5</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/cross.gif" height="15" width="15"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+</tr>
+<tr><td align="center">4</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> 
+<td>&nbsp;</td> 
+</tr>
+<tr><td align="center">3</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td>
+<td bgcolor="#0000ff"><img src="./1_files/cross.gif" height="15" width="15"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+<td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> <td bgcolor="#0000ff"><img src="./1_files/smiley.gif"></td> 
+</tr>
+<tr><td align="center">2</td>
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/cross.gif" width="15" height="15"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr>
+<td align="center">1</td><td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/cross.gif" width="15" height="15"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> 
+<td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td> <td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr>
+<td align="center">0</td><td><img src="./1_files/cross.gif" width="15" height="15"></td> 
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+<td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td><td><img src="./1_files/smiley.gif"></td>
+</tr>
+<tr>
+<td><td align="center">0</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center">4</td>
+<td align="center">5</td>
+<td align="center">6</td><td align="center">7</td><td align="center">8</td>
+<td align="center">9</td><td align="center">10</td><td align="center">11</td>
+</tr>
+
+</tbody></table>
+</center>
+<br><br>
+Continuing in this manner, we find the losing positions (<i>m</i>, <i>n</i>) 
+(<i>m</i> &lt; <i>n</i>) : (0,0), (1,2), (3,5), (4,7), (6,10), (8, 13) ... .In general, to
+find the (<i>i</i>+1)-th losing position, we look for the 
+smallest positive integer 
+<i>k</i> which has not appeared in the sequence (in either the first or second 
+position), and write down (<i>k</i>, <i>k+i</i>).
+
+<center><br><br>
+<img src="./1_files/isleline.gif"></center>
+
+<br><br>
+<a href="http://sps.nus.edu.sg/~limchuwe/"><img src="./1_files/goback.gif"></a> Back to the main page...
+
+
+
+
+</body></html>

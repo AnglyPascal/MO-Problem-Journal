@@ -1,0 +1,239 @@
+
+<!-- saved from url=(0044)http://sps.nus.edu.sg/~limchuwe/cgt/cgt4.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Introductory Combinatorial Game Theory</title>
+</head>
+<body bgcolor="#000000" text="#ffffff">
+
+<b><font size="+3"><center>Introductory Combinatorial Game Theory</center></font><br>
+<font size="+2"><center>Lesson 4 (Games With Possible Draws)</center></font><br></b>
+<br>
+Notice that all the games we've considered are finite games, and
+these games must end with a definite winner. In this chapter, we
+shall consider some finite but possibly loopy games (e.g. think
+of the perpetual check situation in international chess). Let us
+begin by playing the game of Nim City, but with a wholly different
+map:<br><br>
+
+<center><img src="./4_files/map2.gif"></center><br>
+As before, we begin with some cars (placed at some of the cities).
+A city may contain more than one car. At each player's turn, he may 
+pick up one of the cars, travel through any road, and stop the car
+at the destination. Since the towns are large one may assume that a town
+can hold any number of cars. The player who brings all the cars back 
+to the hometown wins. Now the map is problematic because there are cycles
+abound, namely BEH and EGH. If we were to compute our Nim values
+accordingly, we would end up with:<br><br>
+
+<center><img src="./4_files/map2a.gif"></center><br>
+
+So we're unable to determine the status of B, E, F, G and H. Here
+we shall give a method for finding the Nim values for <i>some</i> 
+of these towns. We will explain why this works when we cover the
+theory of general games.<br><br>
+<br>
+<center><img src="./4_files/isleline2.gif"></center><br>
+<font size="+2">Finding Nim Values (More!)</font>
+<br><br>
+First we label the home town with 0. We then repeatedly apply the 
+following golden rule:<br><br>
+<center><table border="5" cellpadding="15">
+<tbody><tr><td><font size="+1">At each stage, for a particular unlabelled town T, 
+consider the set of all labelled towns which are accessible from T. 
+As before let <i>m</i> be the <u>smallest non-negative integer which 
+does not occur in this set</u>. If for each unlabelled town U which is 
+accessible from T, there is a path from U to a town already labelled 
+with *<i>m</i>, then we label town T with *<i>m</i> as well.</font>
+</td>
+</tr></tbody></table></center>
+<br>
+Talk is nothing without some action. Let us proceed to analyse our
+game of Nim City above. <br><br>
+
+First start with town B. The only labelled town accessible from B
+is town A, which has a Nim score of *1. Hence, if B is to be labelled,
+the label must be 0. In addition, for a move from B to E, there is 
+a corresponding path from E to the hometown (which is of value 0).
+<b>Hence, B should be labelled with 0</b>.<br><br>
+
+Next, let us look at F. There are two paths from F to labelled towns:
+namely C and the hometown (of Nim scores *1 and 0 respectively). Now
+let us consider if F should be labelled with *2. F has only one move
+to an unlabelled town, which is E. But from E, there exists a path to D
+which is already given a value of *2. <b>Thus, F should be rightfully
+labelled as *2</b>.<br><br>
+
+As a final example, look at town H. It has a path to a town B, which
+we had just labelled with 0 two paragraphs ago. Now shall we label
+H with *1? Yes we should, because H has two paths to an unlabelled
+towns G and E, which can be countered with paths to C and A,
+both of which are already labelled with *1. <b>Hence, we may label 
+H as *1.</b><br><br>
+
+So far so good:<br><br>
+<center><img src="./4_files/map2b.gif"></center><br>
+
+Let's see if we label the last two towns. We can't label E since E has 
+paths to towns A, D, H and hometown, which are labelled with *1, *2, *1
+and 0 respectively. E cannot be labelled with *3 since there are no
+paths to towns which are already labelled with *3. Similarly, we can't
+label G with 0 since G has a path to itself and there is no path from
+G to a town labelled 0. <br><br>
+
+Finally, the remaining towns are labelled with infinity.<br><br>
+<center><img src="./4_files/map2c.gif"></center><br>
+
+Subsequently, in place of the infinity symbol I will use 'inf'. (Well, I
+could have used the <i>Symbols</i> font-set, but Unix users wouldn't
+be able to view it.)<br>
+<br>
+<br>
+<center><img src="./4_files/isleline2.gif"></center><br><br>
+
+<font size="+2">Analysing the Game</font><br><br>
+
+Now for the main result:<br><br>
+
+<table border="5" cellpadding="10">
+<tbody><tr><td><font size="+1">Let <i>m</i><sub>1</sub>, <i>m</i><sub>2</sub>, ... ,
+<i>m</i><sub>k</sub> be the Nim values of the initial starting
+positions of the cars (some of these values may be 'inf'). Then
+we have three cases (assuming optimal play between the players):
+<ol type="i">
+<li> If all of the values are finite, then the result is the
+same as the game of Nim with piles of <i>m</i><sub>1</sub> sticks, 
+<i>m</i><sub>2</sub> sticks, ... .
+</li><li> Suppose exactly one of the value (say <i>m</i><sub>1</sub>) is 
+infinite. 
+<ol type="a"> <li>If there is a path from <i>m</i><sub>1</sub> to a town
+marked with finite <i>m</i><sub>1</sub>', such that the Nim game
+of <i>m</i><sub>1</sub>', <i>m</i><sub>2</sub>, <i>m</i><sub>3</sub>, 
+... , <i>m</i><sub>k</sub> is a losing position (i.e. 2nd player wins),
+then our original game is a winning position. </li><li> Otherwise, the game
+ends in a draw.</li></ol><br>
+</li><li> If more than one of the values is infinite, then the game
+ends in a draw.
+</li></ol>
+</font></td></tr></tbody></table><br>
+
+Thus we have parts (i), (ii), (iii). Perhaps an example will help 
+for (i): let us first begin with three cars
+at B, D and H. These have Nim values 0, *2, and *1 respectively. 
+So by rights, this should be a first player win. The following
+table illustrates player A's winning strategy as well as how B's
+futile attempts to foil it. <i>Do take note of the corresponding
+Nim values.</i><br><br>
+
+<center>
+<table border="" cellpadding="5">
+<tbody><tr align="center" bgcolor="#0000ff">
+<td colspan="2">A's move</td>
+<td colspan="2">B's move</td>
+</tr>
+
+<tr align="center" bgcolor="#0000ff">
+<td>Game Value</td><td>Nim Value</td>
+<td>Game Value</td><td>Nim Value</td>
+</tr>
+
+<tr align="center" bgcolor="#b0b000">
+<td width="160">(B,<font color="#ff0000">D</font>,H)<img src="./4_files/arrow1.gif" width="25" height="12">
+(B,<font color="#ff0000">A</font>,H)</td>
+<td width="160">(0,<font color="#ff0000">*2</font>,*1)<img src="./4_files/arrow1.gif" width="25" height="12">
+(0,<font color="#ff0000">*1</font>,*1)</td>
+<td width="200">(B,A,<font color="#00ff00">H</font>)<img src="./4_files/arrow2.gif" width="25" height="12">
+(B,A,<font color="#00ff00">E</font>)</td>
+<td width="160">(0,*1,<font color="#00ff00">*1</font>)<img src="./4_files/arrow2.gif" width="25" height="12">
+(0,*1,<font color="#00ff00">inf</font>)</td>
+</tr>
+
+<tr align="center" bgcolor="#989800">
+<td>(B,A,<font color="#ff0000">E</font>)<img src="./4_files/arrow1.gif" width="25" height="12">
+(B,A,<font color="#ff0000">A</font>)</td>
+<td>(0,*1,<font color="#ff0000">inf</font>)<img src="./4_files/arrow1.gif" width="25" height="12">
+(0,*1,<font color="#ff0000">*1</font>)</td>
+<td>(<font color="#00ff00">B</font>,A,A)<img src="./4_files/arrow2.gif" width="25" height="12">
+(<font color="#00ff00">E</font>,A,A)</td>
+<td>(<font color="#00ff00">0</font>,*1,*1)<img src="./4_files/arrow2.gif" width="25" height="12">
+(<font color="#00ff00">inf</font>,*1,*1)</td>
+</tr>
+
+<tr align="center" bgcolor="#808000">
+<td>(<font color="#ff0000">E</font>,A,A)<img src="./4_files/arrow1.gif" width="25" height="12">
+(<font color="#ff0000">home</font>,A,A)</td>
+<td>(<font color="#ff0000">inf</font>,*1,*1)<img src="./4_files/arrow1.gif" width="25" height="12">
+(<font color="#ff0000">0</font>,*1,*1)</td>
+<td>(home,<font color="#00ff00">A</font>,A)<img src="./4_files/arrow2.gif" width="25" height="12">
+(home,<font color="#00ff00">home</font>,A)</td>
+<td>(0,<font color="#00ff00">*1</font>,*1)<img src="./4_files/arrow2.gif" width="25" height="12">
+(0,<font color="#00ff00">0</font>,*1)</td>
+</tr>
+</tbody></table>
+</center><br>
+
+And player A promptly wins the game by moving the last car back home. Notice that
+twice, B tried to confuse A by moving a car from *<i>m</i> to a position marked infinity. 
+However, by virtue of our analysis, there is definitely a position from this infinity to
+another town marked *<i>m</i>, and play continues. One question to ponder upon: 
+is it possible for this process to continue indefinitely, i.e. what if we end up 
+rotating between different towns labelled *<i>m</i>? If yes, how do we break out 
+of this loop?<br><br>
+
+<br>
+<center><img src="./4_files/isleline2.gif"></center>
+<br>
+<font size="+2">Much Ado About Infinity</font><br><br>
+
+We wish to consider parts (ii) and (iii), which involve the tricky concept
+of infinity. This section might require some thought. Read slowly!<br><br>
+
+Suppose exactly one of the initial towns T is labelled infinity. And
+suppose further there is a path from T to a town labelled *<i>m</i> such that 
+*<i>m</i> together with all the other labellings is a losing position. Now the 
+first player simply makes this move to *<i>m</i>, conveniently winning the game. 
+<br><br>
+To see that cases (ii)(b) and (iii) result in a draw, it suffices to show 
+each player may hinder his opponent's victory indefinitely. Let us see how 
+a player might go about doing this. Suppose without loss of generality
+that the other labels give an (XOR)-sum of *<i>n</i>.
+
+<ol>
+<li>For case (ii)(b), there is a unique town T which is labelled 'inf'. Consider 
+all possible Nim values accessible from town T. If it excludes one of the values 
+0, *1, *2 ... *(<i>n</i>-1), then the player may simply reduce *n to this value, 
+thus giving another case of (ii)(b). <br><br>
+</li><li>
+On the other hand, if it includes 0, *1, *2 ... *(<i>n</i>-1) but excludes *<i>n</i>,
+the very fact that T is not numbered tells us that <i>there is a move from T 
+to another town U (labelled 'inf') from which there is no move to *n. Now
+the player simply makes this move, which gives us back to case (ii)(b). </i>
+<br><br>
+</li><li> For case (iii), the player simply makes the move from one town labelled 'inf' 
+to another, thus giving back case (iii).
+</li></ol>
+
+<br>
+
+But why should a player stick to these rules, you may ask? Indeed, pick any 
+player. If it's currently case (iii) or case (ii)(b) for him, there's no way 
+he can turn it into a case (i) - losing config. If he foolishly turns the 
+game into a case (ii)(a), his opponent would grab
+the opportunity to win! So his best strategy is to wander around the safe areas
+of cases (ii)(b) and (iii). And the above reasoning serves to show that such a 
+strategy indeed does exist.
+<br>
+<br>
+<br>
+<center><img src="./4_files/isleline2.gif"></center>
+
+
+
+
+
+<br><br>
+<a href="http://sps.nus.edu.sg/~limchuwe/"><img src="./4_files/goback.gif"></a> Back to the main page...
+
+
+
+
+</body></html>
