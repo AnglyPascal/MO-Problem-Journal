@@ -4,15 +4,24 @@
 \subsection{Lemmas}
 
 
-\lem{}{Let $ S $ be a set with $ n $ elements, and let $ F $ be a family of subsets of S such that for any pair $ A, B $ in $ F $, $ A \cap B \not= \varnothing $. Then $ |F| \leq 2^{n-1} $ .}\label{lemma:sets_lemma_1}
+\lem{}{\label{lemma:sets_lemma_1}
+    Let $ S $ be a set with $ n $ elements, and let $ F $ be a family of
+    subsets of S such that for any pair $ A, B $ in $ F $, $ A \cap B \not=
+    \varnothing $. Then $ |F| \leq 2^{n-1} $ .
+}
 
-\begin{enumerate}
-    \iref{lemma:sets_lemma_1_1}{Iran TST 2008 D3P1}{}
-\end{enumerate}
+% \begin{enumerate}
+%     \iref{lemma:sets_lemma_1_1}{Iran TST 2008 D3P1}{}
+% \end{enumerate}
 
 
-\theo{https://en.wikipedia.org/wiki/Erdos-Ko-Rado_theorem}{Erdos Ko Rado theorem}{Suppose that $ A $ is a family of distinct subsets of $\{ 1 , 2 \dots n \}$ such that each subset is of size $ r $ and each pair of subsets has a nonempty intersection, and suppose that $ n \geq 2r $. Then the number of sets in $ A $ is less than or equal to the binomial coefficient \[\binom {n-1}{r-1}\]}
-
+\theo{https://en.wikipedia.org/wiki/Erdos-Ko-Rado_theorem}{Erdos Ko Rado theorem}{
+    Suppose that $ A $ is a family of distinct subsets of $\{ 1 , 2 \dots n
+    \}$ such that each subset is of size $ r $ and each pair of subsets has a
+    nonempty intersection, and suppose that $ n \geq 2r $. Then the number of
+    sets in $ A $ is less than or equal to the binomial coefficient \[\binom
+    {n-1}{r-1}\]
+}
 
 
 \lem{}{Let $ S $ be a set with $ n $ elements, and let $ F $ be a family of subsets of $ S $ such that for any pair $ A, B $ in $ F $, $ S $ is not contained by $ A \cup B $. Then $ |F| \leq 2^{n-1} $.}\label{lemma:sets_lemma_2}

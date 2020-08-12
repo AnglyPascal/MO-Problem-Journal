@@ -1,46 +1,246 @@
 \newpage\section{Binomial Identities}
 
 
-		\theo{https://en.wikipedia.org/wiki/Vandermonde's_identity}{Vandermonde's identity}{\[ \binom{m+n}{k} = \sum_{i=0}^{k} \binom{m}{i}\binom{n}{k-i} \]}
+
+\theo{https://en.wikipedia.org/wiki/Vandermonde's_identity}{Vandermonde's identity}{
+    For every positive integer $m, n, k$
+    \begin{center}
+        \tcboxmath[arc=0mm, colback=black!5!white, boxrule=0mm]{
+            \binom{m+n}{k} = \sum_{i=0}^{k} \binom{m}{i}\binom{n}{k-i}
+        }
+    \end{center}
+    \begin{center}
+        \tcboxmath[arc=0mm, colback=black!5!white, boxrule=0mm]{
+            {2n \choose n} = {n \choose 0}^2+ {n \choose 1}^2 \dots + {n \choose n}^2
+        }
+    \end{center}
+}
 
 
-		\theo{}{}{\[\binom{2n}{n} = \binom{p}{0}^2 \binom{p}{1}^2 \dots + \binom{p}{p}^2 \]}
+\prob{https://artofproblemsolving.com/community/c6h1061914p4600670}{Somewhere}{M}{
+    Let $n$ and $m$ be positive integers with $n<m$. Prove that 
+    \begin{center}
+        \tcboxmath[arc=0mm, colback=black!5!white, boxrule=0mm]{
+        \sum_{k=0}^n (-1)^{n-k}\frac{1}{m-k}\binom{n}{k}=\frac{1}{(n+1)\binom{m}{n+1}}
+        }
+    \end{center} 
+}
+
+\solu{[MellowMelon]
+    The left side is the $n$th finite difference of the unique $n$th degree
+    polynomial satisfying $P(x) = \frac{1}{m-x}$ for $x = 0,1, \ldots, n$.
+    This means that if $a_n$ is the $x^n$ coefficient of $P$, then the left
+    side is equal to $n! \cdot a_n$. Setting this equal to the right side, it
+    suffices to show that
+    \[ a_n = \frac{1}{(n+1)! \binom{m}{n+1}} = \frac{1}{m(m-1)\cdots (m-n)}. \]
+
+    Let $Q(x) = (x-m)P(x) + 1$. Then $Q$ is degree $n+1$, has roots
+    $0,1,\ldots,n$, and has leading coefficient $a_n$. So
+    \[ Q(x) = a_nx(x-1)(x-2)\cdots (x-n). \]
+    We also know $Q(m) = 1$. Plugging $x = m$ into the above equation and
+    isolating $a_n$ gives us exactly what we need to show.
+}
+
+\rem{
+    The idea to express the left hand side with finite differences is pretty
+    simple. The crux idea is to finding a $Q$ that works. Since we have to
+    show $a_n\left(m\right)\left(m-1\right) \dots \left(m-n\right) =1$, which
+    looks like a polynomial with leading coefficient $a_n$ with roots $0, 1, 2,
+    \dots n$ and $Q(m) = 1$. How can we get that?
+
+    The takeaway is, if the problem requires you to find a polynomial that
+    almost looks like the one given in the problem, try to modify the given
+    polynomial in some way first.
+
+    In this particular case was to modify $P$ bu using the fact $(x-m)P(x) =
+    -1$.
+}
+
+\solu{[Hydroxide]
+    Let $P$ be the unique polynomial of degree at most $n$ such that
+    $P(0)=P(1)=\cdots=P(n)=1$. Obviously $P(x)=1$, but we can also find $P$
+    from Lagrange interpolation. This gives us the equality of polynomials
+
+    \[ \sum_{k=0}^n \frac{(x-0)\cdots (x-(k-1))(x-(k+1))\cdots
+    (x-n)}{(k-0)\cdots (k-(k-1))(k-(k+1))\cdots (k-n)}=1. \]
+
+    Plugging in $x=m$ and doing a ton of rearranging gives the desired result.
+}
+
+\rem{
+    Both solutions can easily be extended to prove the more general result
+    that if $0\le p<n<m$ are integers, then
+    \begin{center}
+        \tcboxmath[arc=0mm, colback=black!5!white, boxrule=0mm]{
+    \sum_{k=0}^n (-1)^{n-k}\frac{1}{m-k} \binom{n}{k}k^p=\frac{m^p}{(n+1)\binom{m}{n+1}} 
+        }
+    \end{center}
+}
+
+\prob{https://artofproblemsolving.com/community/c6h358774}{USA TST 2010
+    P8}{M, 10/10}{
+    Let $m,n$ be positive integers with $m \geq n$, and let $S$ be the
+    set of all $n$-term sequences of positive integers $(a_1, a_2, \ldots
+    a_n)$ such that $a_1 + a_2 + \cdots + a_n = m$. Show that 
+    \begin{center}
+        \tcboxmath[arc=0mm, colback=black!5!white, boxrule=0mm]{
+            \sum_S 1^{a_1} 2^{a_2} \cdots n^{a_n} = {n \choose n} n^m - 
+            {n \choose n-1} (n-1)^m + \cdots + (-1)^{n-2} {n \choose 2} 2^m +
+            (-1)^{n-1} {n \choose 1}
+        } 
+    \end{center}
+}
+ 
+
+\solu{[Combinatorial, MellowMelon] 
+    Look at the right side, try to translate it to
+    combinatorial model. If we had used the inclusion-exclusion method, the
+    right side would be the number of ways to color $ m $ balls with
+    $ n $ colors, with each color appearing at least once. Now our remaining
+    job is to prove the same for the left side.\\
+
+    Trying to interpret the left hand side, we first notice that we need to
+    partition the balls in $n$ parts with sizes $a_1, a_2, \dots  a_n$ where
+    the first partition will have $1$ color to choose from, the second one
+    will have $2$ and so on. We need to refine this idea for using it.
+}
 
 
-		\prob{https://artofproblemsolving.com/community/c6h1061914p4600670}{Somewhere}{M}{Let $n$ and $m$ be positive integers with $n<m$. Prove that
-			\[ \sum_{k=0}^n \frac{(-1)^{n-k}}{m-k}\binom{n}{k}=\frac{1}{(n+1)\binom{m}{n+1}}. \]}
-		
-			\solu{Expressing the left side as the finite difference of a polynomial.}
-			
-		
-		\prob{https://artofproblemsolving.com/community/c6h358774}{USA TST 2010 P8}{M}{Let $m,n$ be positive integers with $m \geq n$, and let $S$ be the set of all $n$-term sequences of positive integers $(a_1, a_2, \ldots a_n)$ such that $a_1 + a_2 + \cdots + a_n = m$. Show that
-			\begin{center}
-				\tcboxmath[
-					arc=0mm,
-					colback=black!5!white,
-					boxrule=0mm,
-				]
-				{\sum_S 1^{a_1} 2^{a_2} \cdots n^{a_n} = {n \choose n} n^m - {n \choose n-1} (n-1)^m + \cdots + (-1)^{n-2} {n \choose 2} 2^m + (-1)^{n-1} {n \choose 1}}
-		\end{center}}
-		
-		\rem{this problem is just f**king amazing, both the combinatorial and algebraic solutions are cute as hell}		
-		
-			\solu{First, the combi solution: Look at the right side, try to translate it to combinatorial model. If we had used the inclusion-exclusion method, the right side would be the number of ways to color a row of length $ m $ with $ n $ colors, with each color appearing at least once. Now our remaining job is to prove the same for the left side.}
-			
-			
-			\solu{Now, the algebraic, GF solution: Now that we have made up our mind that we are going to use GF, let's try to apply GF to the more innocent looking term on the left side. We quickly get a polynomial for that. Now the right side, alternating sums of binomials, gives an experienced psolver the idea of finite differences. If we think of the polynomial as the $ n $'th finite difference of a polynomial, we need the original polynomial to be a 2D poly. from here the idea follows and we get a nice polynomial for the right side. But how do we show that the two polynomials on the two sides are equal? We need to get a closed form for the right side poly. But to get this, we think inductively.}
-			
-			
-		
-		\prob{https://artofproblemsolving.com/community/c6h1076934p5964577}{Binom 1}{}{\[\binom{2n}{0}-\binom{2n-1}{1}+\binom{2n-2}{2}-\dotsc+(-1)^n \binom{n}{n}=?\]}
-		
-			\solu{Generating funtion}
-			
-			\solu{Combinaorial Model: Consider the number of ways to tile a $1 \times 2n$ rectangle with squares and dominoes. Let $E$ be the set of ways to do it with an even number of dominoes, and let $O$ be the same for odd. We want to find $|E| - |O|$.}
-		
-		
-		\prob{https://artofproblemsolving.com/community/c6h1076934p5964577}{Binom 2}{}{\[\binom{n}{0}^2-\binom{n}{1}^2+\binom{n}{2}^2-...+(-1)^n\binom{n}{n}^2=?\]}
-		
-			\solu{Generating function}
-			
-			\solu{Consider the number of ways to paint the squares of a $2 \times n$ rectangle red and blue such that both rows have the same number of red squares. Let $E$ be the set of ways with an even number of red squares in each row, and let $O$ be the same for odd. We want to find $|E| - |O|$.}
+\solu{[Generating Function, MellowMelon]
+    The first step of a gf solution is to decide on a gf solution. Now we can
+    think of the left hand side as a function of $m$, namely $b_m$. So we can
+    make a generating function with it.\\
+
+    We let $F_n(x) = b_0 + b_1 x + b_2 x^2 + \cdots$ and so we get:
+    \begin{align*}
+        F_n(x) &= (x+x^2+\cdots)(2x+4x^2+\cdots)\cdots (nx+n^2x^2+\cdots), \\
+               &= \frac{x}{1-x} \frac{2x}{1-2x} \cdots \frac{nx}{1-nx}, \\
+               &= \frac{n! x^n}{(1-x)(1-2x) \cdots (1-nx)}. \\
+    \end{align*}
+
+    Now we need a generating function for the right hand side as well. The
+    right hand side looks the $n$th finite difference of the function
+    $_mg_0(x) = x^m$, that is 
+    \[_mg_n(0) = {n \choose n} n^m - {n \choose n-1} (n-1)^m + \cdots +
+    (-1)^{n-2} {n \choose 2} 2^m + (-1)^{n-1} {n \choose1}\] 
+
+    Now we can make a generating function with this:
+    \[G(y) =\ _0g_n(0)y^0 +\ _1g_n(0)y^1 \dots \]  
+    But this isn't very useful as we are getting the $n$th finite differences
+    on the right side, where we want to work with the original polynomials.\\
+
+    So what we do is, we unravel the $_mg_n(0)$ as original polynomials and
+    get:
+    \[G(x, y) = x^0y^0 + x^1y^1 + x^2+y^2\dots \]
+    Where our desired generating function for $n$ is:
+    \[G_n(0, y) =\ _0g_n(0)y^0 +\ _1g_n(0)y^1 +\dots \] 
+    
+    And we want to show that 
+    \[G_n(0, y) = \frac{n! x^n}{(1-x)(1-2x) \cdots (1-nx)} \] 
+
+    Now we notice that we can actually use induction on $n$ since we definded
+    \[G_{n+1}(x, y) = G_n(x+1, y) - G_n(x, y)\]
+
+    And so we are done.
+}
+
+
+\lem{}{
+    \[G(x)=\sum_{n=0}^{\infty} \binom{n+k}{k} x^n=\frac{1}{(1-x)^{k+1}}\]
+}
+
+\begin{prooof}
+    We have the above relation because ${n+k \choose k}$ can be interpret as
+    the number of ways write $n$ as the sum of $k+1$ numbers. And the
+    generating function for that is:
+    \[G(x) = (1+x+x^2\dots )^{k+1}\] 
+\end{prooof}
+
+\prob{https://artofproblemsolving.com/community/c6h1076934p5964577}{Binom1}{}{
+    Solve for positive integer $n$
+    \begin{center}
+        \tcboxmath[arc=0mm, colback=black!5!white, boxrule=0mm]{
+            {2n \choose 0}-{2n-1 \choose 1}+{2n-2 \choose 2}- \dots  +(-1)^n
+            {n \choose n}=?
+        }
+    \end{center}
+}
+
+\solu{[Generating funtion, Tintarn]
+    Denote this sum $a_n$. Denote $F(x)=\sum_{n=0}^{\infty} a_nx^{2n}$.
+    \begin{align*}
+        F(x)&=\sum_{k=0}^{\infty} (-1)^k \sum_{n=0}^{\infty} \binom{2n-k}{k}
+        x^{2n}\\
+        &=\sum_{k=0}^{\infty} (-x^2)^k \sum_{n=0}^{\infty} \binom{2n+k}{k}
+        x^{2n}
+    .\end{align*}
+    Now, using the well-known power series
+    \[\boxed{G(x)=\sum_{n=0}^{\infty} \binom{n+k}{k}
+    x^n=\frac{1}{(1-x)^{k+1}}}\]
+    we find
+    \[\sum_{n=0}^{\infty} \binom{2n+k}{k} x^{2n}=\frac{G(x)+G(-x)}{2}\]
+    and hence
+    \begin{align*}
+        F(x)&=\frac{1}{2(1-x)} \sum_{k=0}^{\infty} \left( \frac{x^2}{x-1} \right)^k
+        +\frac{1}{2(1+x)} \sum_{k=0}^{\infty} \left( \frac{-x^2}{x+1} \right)^k\\[.5em]
+            &=\frac{1}{2(x^2-x+1)}+\frac{1}{2(x^2+x+1)}\\[.5em]
+            &=\frac{x^2+1}{x^4+x^2+1}\\[.5em]
+            &=\frac{1-x^4}{1-x^6}\\
+            &=(1-x^4)(1+x^6+x^{12}+x^{18}+\dotsc)\\
+            &=1-x^4+x^6-x^{10}+x^{12}-x^{16}+\dots
+    .\end{align*}
+
+    \vspace{1em}
+    and hence $\boxed{a_{3k}=1, a_{3k+1}=0, a_{3k+2}=-1}$.
+}
+
+
+\solu{[Combinaorial Model, MellowMelon]
+    Consider the number of ways to tile a $1 \times 2n$ rectangle with squares
+    and dominoes. Let $E$ be the set of ways to do it with an even number of
+    dominoes, and let $O$ be the same for odd. We want to find $|E| - |O|$.\\
+
+    Trying some basic cases, we see that the only values we get are $-1, 0,
+    1$. So we want to find a pairing between the two sets that is almost a
+    bijection, but doesn't work for only one element. And that bijection is:\\
+
+    \textit{Consider the first consecutive pair of squares or domino which
+    either comes at the very start or comes right after another domino. Swap
+    the pair of squares to a domino or vice versa.}
+}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1076934p5964577}{Binom 2}{}{
+    \[{n \choose 0}^2-{n \choose 1}^2+{n \choose 2}^2-\dots +(-1)^n{n \choose n}^2=?\]
+}
+
+\solu{[Generating function, TinTarn]
+    Denote \[f(m,n)=\sum_{k=0}^{\infty} (-1)^k \binom{n}{k} \binom{n}{m-k}\]
+    We are looking for $f(n,n)$.  We have
+    \begin{align*}
+        \sum_{m=0}^{\infty} f(m,n) x^m &=\sum_{k=0}^{\infty} (-1)^k \binom{n}{k}
+        \sum_{m=0}^{\infty} \binom{n}{m-k} x^m\\
+        &=\left[\sum_{k=0}^{\infty} (-x)^k \binom{n}{k} \right]
+        \left[\sum_{m=0}^{\infty} x^m \binom{n}{m} \right]\\
+        &=(1-x)^n(1+x)^n\\
+        &=(1-x^2)^n\\
+        &=\sum_{t=0}^{\infty} (-1)^t \binom{n}{t} x^{2t}
+    .\end{align*}
+
+    Hence we see that for odd $m$ we have $f(m,n)=0$ and hence for odd $n$ we have
+    $\boxed{f(n,n)=0}$.\\
+    
+    Now, for $n=2k$ even, we find $\boxed{f(2k,2k)=(-1)^k \binom{2k}{k}}$.
+}
+
+\solu{[Combinatorial, MellowMelon]
+    Consider the number of ways to paint the squares of a $2 \times n$
+    rectangle red and blue such that both rows have the same number of red
+    squares. Let $E$ be the set of ways with an even number of red squares in each
+    row, and let $O$ be the same for odd. We want to find $|E| - |O|$.\\
+
+    \textit{Pair the selections as follows: take the first column with both
+        squares the same color, and flip both colors. This maps elements in
+        $E$ to $O$ and vice versa and is invertible, so except cases where the
+    pairing is undefined, $E$ and $O$ have the same number of elements.}
+}

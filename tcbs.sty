@@ -26,7 +26,6 @@
 
 
 
-
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -100,42 +99,53 @@
 	headfont=\bfseries,
 	headpunct={\ :},
 	postheadspace={7pt},
-	spaceabove=50pt,
-	spacebelow=10pt,
+	spaceabove=30pt,
+	spacebelow=15pt,
 	notebraces={(}{)},
 ]{problemstyle}
 
 \declaretheorem[style=problemstyle, numberwithin=section]{problem}
-\declaretheorem[style=problemstyle, title=Problem]{problem_0}
+\declaretheorem[style=problemstyle, title=Problem]{problem0}
 \declaretheorem[style=problemstyle, numberwithin=problem]{generalization}
 
 
 \declaretheoremstyle[
-	headfont=\bfseries\rmfamily\color{Magenta},
+	headfont=\bfseries\color{NavyBlue},
 	headpunct={ \color{black}\textbf{---} },
 	postheadspace={0pt},
 	spaceabove=25pt,
 	spacebelow=15pt,
-	notebraces={}{},
-	notefont=\color{black}\textbf{\rmfamily\normalfont},
-	bodyfont=\rmfamily,
+    notebraces={(}{)},
+	notefont=\color{NavyBlue}\mdseries\normalfont,
+	bodyfont=\itshape,
 ]{theoremstyle}
 
+\declaretheoremstyle[
+	headfont=\bfseries\color{NavyBlue},
+	headpunct={},
+    postheadspace={\newline},
+	spaceabove=25pt,
+	spacebelow=15pt,
+    notebraces={(}{)},
+	notefont=\color{NavyBlue}\mdseries\normalfont,
+	bodyfont=\itshape,
+]{theoremBoxstyle}
 
-\newtcbtheorem[use counter=theorem, number within=section]{BoxedTheorem}{\rmfamily Theorem}{
-	colback=Magenta!5!white,
-	colframe=Magenta, fonttitle=\bfseries\rmfamily,
-	colbacktitle=white,
-	boxrule=.15em,
-	coltitle=Magenta,
-	top=15pt, left=10pt, right=5pt, bottom=10pt,
-	enhanced,
-	boxed title style={colframe=white},
-	attach boxed title to top left={xshift=10pt, yshift=-12pt},
-	separator sign={},
-}{boxedtheorem}
+% \newtcbtheorem[use counter=theorem, number within=section]{BoxedTheorem}{\textbf{\rmseries Theorem}}{
+% 	colback=Blue!2!white,
+% 	colframe=NavyBlue, fonttitle=\ssfamily,
+% 	colbacktitle=white,
+% 	boxrule=.1em,
+% 	coltitle=NavyBlue,
+% 	top=15pt, left=10pt, right=5pt, bottom=10pt,
+% 	enhanced,
+% 	boxed title style={colframe=white},
+% 	attach boxed title to top left={xshift=10pt, yshift=-12pt},
+% 	separator sign={ },
+% }{boxedtheorem}
 
 \declaretheorem[style=theoremstyle, numberwithin=section]{theorem}
+\declaretheorem[style=theoremBoxstyle, numberwithin=section, name=Theorem]{BoxedTheorem}
 \declaretheorem[style=theoremstyle, numberwithin=section]{proposition}
 \declaretheorem[style=theoremstyle, numberwithin=theorem]{corollary}
 \declaretheorem[style=theoremstyle, sibling=theorem]{lemma}
@@ -146,34 +156,72 @@
 	left=1em,
 	before skip=40pt,
 	after skip=20pt,
-	colback=magenta!5,
-	borderline west={.2em}{0pt}{magenta},
+	borderline west={.15em}{0pt}{NavyBlue},
 }
 
+\tcolorboxenvironment{corollary}{
+	blanker,
+	breakable, 
+	left=1em,
+	before skip=40pt,
+	after skip=20pt,
+	borderline west={.15em}{0pt}{NavyBlue},
+}
+
+\tcolorboxenvironment{BoxedTheorem}{
+    tile,
+    breakable, 
+    sharp corners,
+	left=1em,
+	before skip=40pt,
+	after skip=20pt,
+    colback=NavyBlue!5,
+	borderline west={.15em}{0pt}{NavyBlue},
+%     rightrule=0pt, toprule=0pt, bottomrule=0pt,
+}
+
+\tcolorboxenvironment{lemma}{
+	blanker,
+	breakable, 
+	left=1em,
+	before skip=40pt,
+	after skip=20pt,
+	borderline west={.15em}{0pt}{NavyBlue},
+}
 
 
 \declaretheoremstyle[
 	headfont=\bfseries\sffamily\color{ForestGreen},
 	bodyfont=\normalfont,
-	spaceabove=25pt,
+	spaceabove=40pt,
 	spacebelow=15pt,
 	headpunct={ --- },
 ]{definitionstyle}
 
 \declaretheorem[style=definitionstyle, numbered=no]{definition}
+\declaretheorem[style=definitionstyle, numbered=no,
+name=Definition]{impdefinition}
 \declaretheorem[style=definitionstyle, numbered=no, name=Data Structure]{data_structure}
 \declaretheorem[style=definitionstyle, numbered=no, name=Algorithm]{algo}
 \declaretheorem[style=definitionstyle, numbered=no, name=Game]{game}
 \declaretheorem[style=definitionstyle, name=Construction]{construction}
 
-
+\tcolorboxenvironment{impdefinition}{
+	tile,
+    breakable, 
+	left=1em,
+	before skip=40pt,
+	after skip=15pt,
+    colback=ForestGreen!5,
+    borderline west={.15em}{0pt}{ForestGreen},
+}
 
 \declaretheoremstyle[
 	headfont=\bfseries\itshape\rmfamily,
 %	bodyfont={\addtolength{\@totalleftmargin}{2em}
 %		\addtolength{\textwidth}{-2em}
 %		\parshape 1 2em \textwidth},
-	spaceabove=15pt,
+	spaceabove=105pt,
 	spacebelow=30pt,
 	notebraces={[}{]},
 	notefont=\normalfont\sffamily,
@@ -186,7 +234,7 @@
 
 \tcolorboxenvironment{solution}{
 	blanker, breakable, left=1em,
-	before skip=10pt,after skip=20pt,
+	before skip=20pt,after skip=40pt,
 	borderline west={.1em}{0pt}{black!80},
 }
 
