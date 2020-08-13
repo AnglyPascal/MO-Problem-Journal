@@ -23,8 +23,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 INPUT /usr/share/texmf-dist/tex/latex/textcase/textcase.sty
 INPUT /usr/share/texmf-dist/tex/latex/textcase/textcase.sty
 INPUT /usr/share/texmf-dist/tex/latex/textcase/textcase.sty
-INPUT newstyle.sty
-INPUT newstyle.sty
+INPUT /home/ahsan/texmf/tex/latex/local/stylesheets/newstyle.sty
+INPUT /home/ahsan/texmf/tex/latex/local/stylesheets/newstyle.sty
 INPUT /usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT /usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 INPUT /usr/share/texmf-dist/tex/latex/graphics/keyval.sty
@@ -275,10 +275,10 @@ INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlib
 INPUT /usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 INPUT /usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-INPUT macros.sty
-INPUT macros.sty
-INPUT tcbs.sty
-INPUT tcbs.sty
+INPUT /home/ahsan/texmf/tex/latex/local/stylesheets/macros.sty
+INPUT /home/ahsan/texmf/tex/latex/local/stylesheets/macros.sty
+INPUT /home/ahsan/texmf/tex/latex/local/stylesheets/tcbs.sty
+INPUT /home/ahsan/texmf/tex/latex/local/stylesheets/tcbs.sty
 INPUT /usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 INPUT /usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 INPUT /usr/share/texmf-dist/tex/latex/environ/environ.sty
@@ -397,6 +397,7 @@ OUTPUT cat.idx
 OUTPUT prob.idx
 OUTPUT thm.idx
 OUTPUT strat.idx
+OUTPUT def.idx
 OUTPUT main.idx
 INPUT main.aux
 INPUT main.aux

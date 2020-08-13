@@ -1,30 +1,38 @@
 # Fdb version 3
-["makeindex cat.idx"] 1597260618 "cat.idx" "cat.ind" "cat" 1597261117
-  "cat.idx" 1597261117 512 f47a53992beaccebe28b40efeb6f90ea "pdflatex"
+["makeindex cat.idx"] 1597324167 "cat.idx" "cat.ind" "cat" 1597324180
+  "cat.idx" 1597324169 512 f47a53992beaccebe28b40efeb6f90ea "pdflatex"
   (generated)
-  "cat.ilg"
   "cat.ind"
-["makeindex main.idx"] 1597260613 "main.idx" "main.ind" "main" 1597261117
-  "main.idx" 1597261117 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cat.ilg"
+["makeindex def.idx"] 1597324167 "def.idx" "def.ind" "def" 1597324180
+  "def.idx" 1597324168 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "main.ind"
+  "def.ind"
+  "def.ilg"
+["makeindex main.idx"] 1597260613 "main.idx" "main.ind" "main" 1597324180
+  "main.idx" 1597324168 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  (generated)
   "main.ilg"
-["makeindex prob.idx"] 1597260618 "prob.idx" "prob.ind" "prob" 1597261117
-  "prob.idx" 1597261117 427 41d8d5fe750ef3ea0ee464824b0e539b "pdflatex"
+  "main.ind"
+["makeindex prob.idx"] 1597324167 "prob.idx" "prob.ind" "prob" 1597324180
+  "prob.idx" 1597324169 427 41d8d5fe750ef3ea0ee464824b0e539b "pdflatex"
   (generated)
-  "prob.ilg"
   "prob.ind"
-["makeindex strat.idx"] 1597260618 "strat.idx" "strat.ind" "strat" 1597261117
-  "strat.idx" 1597261117 587 be53bb2a3fd83a5ec1457986461e0275 "pdflatex"
+  "prob.ilg"
+["makeindex strat.idx"] 1597324167 "strat.idx" "strat.ind" "strat" 1597324180
+  "strat.idx" 1597324169 587 be53bb2a3fd83a5ec1457986461e0275 "pdflatex"
   (generated)
   "strat.ind"
   "strat.ilg"
-["makeindex thm.idx"] 1597260618 "thm.idx" "thm.ind" "thm" 1597261117
-  "thm.idx" 1597261117 378 08a6320cfe158fbb29b1246f0d0a0385 "pdflatex"
+["makeindex thm.idx"] 1597324167 "thm.idx" "thm.ind" "thm" 1597324180
+  "thm.idx" 1597324169 378 08a6320cfe158fbb29b1246f0d0a0385 "pdflatex"
   (generated)
   "thm.ilg"
   "thm.ind"
-["pdflatex"] 1597261116 "main.tex" "main.pdf" "main" 1597261117
+["pdflatex"] 1597324180 "main.tex" "main.pdf" "main" 1597324180
+  "/home/ahsan/texmf/tex/latex/local/stylesheets/macros.sty" 1594675483 5892 4ff5cfb227f45de12f2d88dcd4f3e5e9 ""
+  "/home/ahsan/texmf/tex/latex/local/stylesheets/newstyle.sty" 1594281417 2867 00a4de7300d9a99a4c68bdf81940d72d ""
+  "/home/ahsan/texmf/tex/latex/local/stylesheets/tcbs.sty" 1594675484 7745 e23123026f33c70031c502e1fbbcf6ea ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1591545468 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1591545468 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm" 1591545468 3072 19a65fbc725cfc66f5a5fc183b9d418b ""
@@ -305,30 +313,29 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1595320845 4724469 fae8ba91363d50b5e13d5b17ff985631 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1595320749 2514048 4d8b6b231cc5fcd4481bfa5e707db3f3 ""
-  "cat.ind" 1597261117 673 76bedc700805bb8daebcda3adcafa498 "makeindex cat.idx"
-  "combi/sec3_sets.aux" 1597261117 10448 f848b3f0cefaf4b87f178e8f3bd375ad "pdflatex"
-  "combi/sec3_sets.tex" 1597261116 11069 49d692790da37c1c3836f3ee50e474af ""
-  "indices.tex" 1597260540 333 bbd712ddde51b0c9d0dbea17f21f5612 ""
-  "macros.sty" 1597127997 5293 bb7aac69ca8952cccc3d1346f2287ec7 ""
-  "main.aux" 1597261117 1157 c0d6cfb7c95cab4daf81aff6591e35cc "pdflatex"
-  "main.ind" 1597261117 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.out" 1597261117 413 80a72b62860378a1c3cb1131b8bef66f "pdflatex"
-  "main.tex" 1597260614 2701 1e21fd83710b543ea4a4720d54c0e321 ""
-  "newstyle.sty" 1596739367 2872 ec4c97df9507ef9c303788b108ad08df ""
-  "prob.ind" 1597261117 919 8b25c32be98925c8e94ad96c3db05e80 "makeindex prob.idx"
-  "strat.ind" 1597261117 1209 deb8e37138adf9e1d1e902c786eb7ab1 "makeindex strat.idx"
-  "tcbs.sty" 1597260259 7744 18d03b6099419064df886f3187c9beb5 ""
-  "thm.ind" 1597261117 692 1450b0f303dec89d17f272e7e0c8f07f "makeindex thm.idx"
+  "cat.ind" 1597324169 673 76bedc700805bb8daebcda3adcafa498 "makeindex cat.idx"
+  "combi/sec3_sets.aux" 1597324169 13196 14eca5dafd2686e5f1764ec3c3ac2498 "pdflatex"
+  "combi/sec3_sets.tex" 1597262079 11068 fe41ca599f99912789617b3ad12d735d ""
+  "def.ind" 1597324167 0 d41d8cd98f00b204e9800998ecf8427e "makeindex def.idx"
+  "indices.tex" 1597324037 404 c48be7d9bb0d135f73c5f75e2f9c77fb ""
+  "main.aux" 1597324169 1157 c0d6cfb7c95cab4daf81aff6591e35cc "pdflatex"
+  "main.ind" 1597324169 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
+  "main.out" 1597324169 413 80a72b62860378a1c3cb1131b8bef66f "pdflatex"
+  "main.tex" 1597324167 2701 1e21fd83710b543ea4a4720d54c0e321 ""
+  "prob.ind" 1597324169 919 8b25c32be98925c8e94ad96c3db05e80 "makeindex prob.idx"
+  "strat.ind" 1597324169 1209 deb8e37138adf9e1d1e902c786eb7ab1 "makeindex strat.idx"
+  "thm.ind" 1597324169 692 1450b0f303dec89d17f272e7e0c8f07f "makeindex thm.idx"
   (generated)
+  "main.out"
+  "combi/sec3_sets.aux"
+  "listofprobs.tex"
   "listoftheos.tex"
+  "def.idx"
+  "strat.idx"
+  "thm.idx"
+  "main.idx"
+  "cat.idx"
   "main.pdf"
   "prob.idx"
   "main.log"
-  "cat.idx"
-  "main.idx"
-  "main.out"
-  "listofprobs.tex"
-  "strat.idx"
-  "combi/sec3_sets.aux"
   "main.aux"
-  "thm.idx"
