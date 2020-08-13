@@ -1,0 +1,13 @@
+\frametitle{Recommended Free Fonts}
+\begin{description}[Selected Fonts]
+        \item[Selected Fonts] recommended for this theme\\
+            \begin{lstlisting}[basicstyle = \ttfamily\small]
+\setmainfont{Yanone Kaffeesatz}
+\setsansfont{Andika New Basic}
+\setmonofont{Share Tech Mono}
+            \end{lstlisting}
+        \item[Download] {\small \url{https://www.fontsquirrel.com/}}
+        \item[Install Fonts] {\small \url{https://www.google.com/get/noto/help/install/}}
+        \item[Compilation] compile with \XeLaTeX~to use system-wide fonts
+    \end{description}
+

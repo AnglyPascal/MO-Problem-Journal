@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Bijection}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{New way of solving}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Defining Bijection}{14}{0}{1}
+\beamer@subsectionintoc {1}{3}{Bijection in Action}{27}{0}{1}
