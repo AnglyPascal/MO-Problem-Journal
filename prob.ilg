@@ -1,5 +1,232 @@
 This is makeindex, version 2.15 [TeX Live 2020] (kpathsea + Thai support).
 Scanning style file ./example_style.ist.......done (7 attributes redefined, 0 ignored).
-Scanning input file prob.idx...done (0 entries accepted, 0 rejected).
-Nothing written in prob.ind.
+Scanning input file prob.idx....
+!! Input index error (file = prob.idx, line = 5):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 30):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 35):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 44):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 56):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 70):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 71):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 78):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 83):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 84):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 122):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 136):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 167):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 183):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 206):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 245):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 252):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 261):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 262):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 263):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 264):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 270):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 271):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 296):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 322):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 360):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 361):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 362):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 363):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 364):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 365):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 366):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 367):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 368):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 369):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 370):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 371):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 372):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 373):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 374):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 375):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 376):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 377):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 378):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 379):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 380):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 381):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 382):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 383):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 384):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 385):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 386):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 387):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 388):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 389):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 390):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 391):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 392):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 393):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 394):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 395):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 396):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 397):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 398):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 399):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 400):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 401):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 402):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 403):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 404):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 405):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 406):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 407):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 408):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 409):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 410):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 411):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 412):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 422):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 461):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 478):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 481):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 492):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 494):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 501):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 502):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 509):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 519):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 540):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 562):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 564):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 577):
+   -- Illegal null field.
+!! Input index error (file = prob.idx, line = 578):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 584):
+   -- Illegal null field.
+
+!! Input index error (file = prob.idx, line = 605):
+   -- Illegal null field.
+done (567 entries accepted, 95 rejected).
+Sorting entries.......done (5985 comparisons).
+Generating output file prob.ind....done (685 lines written, 0 warnings).
+Output written in prob.ind.
 Transcript written in prob.ilg.
