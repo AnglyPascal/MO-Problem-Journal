@@ -1,182 +1,195 @@
 \section{Tricks}
-	
-	
-	
-	``Every object in the problem's universe is important, and should be considered when approaching the problem.'' -- me
-	
-	
-	
-	
-	
-	\begin{itemize}
-		
-		
-		\item permutation type problem
-		\item do there exist...
-		\item proving identities
-		\item Dunno
-		\item divisibility by primes and prime divisors stuff
-		
-		
-	\end{itemize}
-	
-	
-	
-	\begin{enumerate}
-		
-		\item Add. Everything. Up.
-		
-		\item Infinitude of primes:
-		
-		\begin{enumerate}
-			
-			\item Eulerian infinitude trick
-			\item For large enough numbers, there is a larger prime divisor
-			\item Assuming contradiction, if there are any number co-prime to the product of the primes, then that must be $ 1 $. 
-			
-			
-		\end{enumerate}
-		
-	\end{enumerate}
-	
-	
-	
-	
-	
-	
-	
-	\Faka\subsection{Digit Sum or Product}
-	
-	{When dealing with the sum of the digits or the product of them, to find the construction it is very important to consider $ 0 $ and $ 1 $'s in the number.}
-	
-	
-	
-	
-	
-	\Faka\subsection{Diophantine Equations}
-	
-	
-		\begin{enumerate}
-			
-			\item finding some solutions
-			\item trying modular cases
-			\item making some variables depended on other variables
-			\item putting constrains on variables which would make the problems easier
-			\item if there are infinitely many solutions, can you find a construction?
-			\item factorize (this is BIG)
-			\item In these problems, investigation, induction, recursion, constructions etc. are essentials
-			
-		\end{enumerate}
-	
-	
-	
-	
-	\Faka\subsection{Sequences}
-	
-	
-	\Faka\subsection{NT Functions}
-	
-	
-	\Faka\subsection{Construction Problems}
-	
-	
-	\Faka\subsection{Sets satisfying certain properties}
-	
-	
-	\Faka\subsection{Other Small Techniques to Remember}
-	
-	
-		\begin{enumerate}
-			\item $ a-b $ stays invariant upon addition, just as $ \frac{a}{b} $ stays invariant upon multiplication.
-		\end{enumerate}
-	
-	
-	
-	
+
+``Every object in the problem's universe is important, and should be
+considered when approaching the problem.''
+
+\begin{itemize}
+    \item permutation type problem
+    \item do there exist...
+    \item proving identities
+    \item Dunno
+    \item divisibility by primes and prime divisors stuff
+\end{itemize}
+
+\begin{enumerate}
+    \item Add. Everything. Up.
+    \item Infinitude of primes:
+        \begin{enumerate}
+            \item Eulerian infinitude trick
+            \item For large enough numbers, there is a larger prime divisor
+            \item Assuming contradiction, if there are any number co-prime to
+                the product of the primes, then that must be $ 1 $. 
+        \end{enumerate}
+\end{enumerate}
+
+\Faka\subsection{Digit Sum or Product}
+
+When dealing with the sum of the digits or the product of them, to find the
+construction it is very important to consider $ 0 $ and $ 1 $'s in the number.
+
+
+\Faka\subsection{Diophantine Equations}
+
+\begin{enumerate}
+    \item finding some solutions
+    \item trying modular cases
+    \item making some variables depended on other variables
+    \item putting constrains on variables which would make the problems easier
+    \item if there are infinitely many solutions, can you find a construction?
+    \item factorize (this is BIG)
+    \item In these problems, investigation, induction, recursion,
+        constructions etc. are essentials
+\end{enumerate}
+
+\Faka\subsection{Sequences}
+
+
+\Faka\subsection{NT Functions}
+
+
+\Faka\subsection{Construction Problems}
+
+
+\Faka\subsection{Sets satisfying certain properties}
+
+
+\Faka\subsection{Other Small Techniques to Remember}
+
+
+\begin{enumerate}
+    \item $ a-b $ stays invariant upon addition, just as $ \frac{a}{b} $ stays
+        invariant upon multiplication.
+\end{enumerate}
+
 \newpage\section{Lemmas}
-	
-	
-	
-	\lem{Maybe not useful at all}{Let $p\geq 5$ be a prime number. Prove that if $p\mid a^2+ab+b^2$, then $$p^3\mid {a+b}^p-a^p-b^p$$} 
-	
-	
-	\lem{Non-zero digits in base $ b $}{If $b\geq 2$ and $b^n-1\mid a$ then there exist at least $n$ non-zero digits in the representation of $a$ in base $b$}
-	
-	
-	\theo{https://en.wikipedia.org/wiki/Coin_problem}{Frobenius Coin Problem, extended Chicken McNugget}{Given a bunch of coprime integers, one can write all integers after a certain limit as a linear combination of these integers.\\
-		
-	Formally, for any integers $a_1, a_2 \dots a_n$ such that $\gcd(a_1, a_2\dots a_n)=1$, there exists positive integers $m$ such that for any integer $M\geq m$, there are non-negative integers $b_1, b_2 \dots b_n$ such that \[\sum_{i=1}^{n}b_ia_i=M\]}
-	
-		\begin{Remark}
-			If $n=2$ then $m=a_1a_2-a_1-a_2$.\\
-			
-			If $n\geq 2$, then there doesn't exist an explicit formula, but if $\{a_i\}$ are in arithmetic progression, ($a_i=a_1+(i-1)d$) then \[m=\floor*{\frac{a-2}{n-1}}a + (d-1)(a-1) - 1\]
-		\end{Remark}
-	
-	
-	
-	
-	\theobox{https://en.wikipedia.org/wiki/Beatty_sequence}{Beatty's Theorem or Rayleigh Theorem}{If $a, b$ are two irrational numbers such that $\dfrac{1}{a}+\dfrac{1}{b}=1$, then the two sets $\left\{\floor*{ia}\right\}$ and $\left\{\floor*{ib}\right\}$, where $i$ are the positive integers, form a partition of the set of natural numbers.}
-	
-		\rem{Express the two conditions in numeric terms assuming the contrary.}
-		
-		\proof{\emph{No integer belongs to both sets:} Suppose there exists some $ j, k, m $ such that $ j = \floor{ka} = \floor{mb} $. Then the inequalities will hold:
-			\[j\le ka < j+1 \text{ and } j\le mb < j+1\]
-		Which leads to
-			\[j<ka<j+1 \text{ and } j<mb<j+1\]
-		From there, it follows that
-			\[\frac{j}{a}<k<\frac{j+1}{a} \text{ and } \frac{j}{b}<m<\frac{j+1}{b}\]
-		Adding them gives 
-			\[j<k+m<j+1\]
-		Which is false.\\
-		
-		\emph{Every integer belongs to one set:} Suppose there is are integers $ j, k, m $ such that $ \floor{ka} <j <\floor{ka+a} $ and $ \floor{mb} <j <\floor{mb+b} $
-		Which can be written as
-			\[ka<j<ka+a-1 \text{ and } mb<j<mb+b-1\]
-		It follows from here that,
-			\[k<\frac{j}{a}<k+1-\frac{1}{a} \text{ and } m<\frac{j}{b}<m+1-\frac{1}{b}\]
-		Adding them gives us
-			\[k+m<j<k+m+1\]
-		Which, again, is absurd. So the theorem is proved.}
-	
-	
-	\lem{}{Let $x,y$ be co-prime. Then \[\gcd(z,xy) = \gcd(z,x)\gcd(z,y) = \gcd(z \bmod x,x)\gcd(z \bmod y,y)\] \[\implies\gcd(r(a,b),xy))=\gcd(a,x)\gcd(b,y)\] (here $r(a,b)$ denotes the smallest integer that satisfies $r(a,b) \equiv a \bmod x,\ r(a,b) \equiv b \bmod y$)}
-	
-	
-	\lem{}{Let $0 < a_1 < a_2 < · · · < a_(mn+1)$ be $mn + 1$ integers. Prove that you can select either $m + 1$ of them no one of which divides any other, or $n + 1$ of them each dividing the following one.}
-	
-	
-	\theo{https://math.stackexchange.com/questions/1019538/primes-dividing-a-polynomial}{Prime divisors of an integer polynomial}{If $ P(x)\in \Z[x] $, then the set of primes, $ P = \{ p: p\mid P(x) \} $ is infinite.}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	\newpage\subsection{Modular Arithmatic Theorems and Useful Results}
-	
-		\theo{https://en.wikipedia.org/wiki/Wolstenholme's_theorem}{Wolstenholme's Theorem}{For all prime $ p $ the following relation is true:
-			\[ p^2 \ \bigg|\ 1 + \frac{1}{2} + \frac{1}{3} \dots \frac{1}{p-1} = \sum_{i=1}^{p-1} \frac{1}{i} \]}
-		
-			
-			\coro{\[ p \ \bigg|\ 1 + \frac{1}{2^2} + \frac{1}{3^2} \dots \frac{1}{(p-1)^2} = \sum_{i=1}^{p-1} \frac{1}{i^2} \]}
-			
-			
-			\coro{If $ p > 3 $ is a prime, then 
-				\[\binom{2p}{p} \equiv 2\ (mod\ p^3)\]5
-				\[\binom{2p-1}{p-1} \equiv 1\ (mod\ p^3)\]}
-	
-		
-			\lem{}{
-				\[ \frac{1}{(p-i)!} \equiv (-1)^i (i-1)!\ (mod\ p) \]
-				\[ \binom{p-1}{k} \equiv (-1)^k\ (mod\ p) \]
-			}
-		
-		
-			\prob{}{}{E}{\[\binom{p^{n+1}}{p} \equiv p^n\ (mod\ p^{2n+3})\]}
-			
-		
+
+\lem{Maybe not useful at all}{
+    Let $p\geq 5$ be a prime number. Prove that if
+    $p\mid a^2+ab+b^2$, then \[p^3\mid {a+b}^p-a^p-b^p\]
+} 
+
+
+\lem{Non-zero digits in base $ b $}{
+    If $b\geq 2$ and $b^n-1\mid a$ then there exist at least $n$ non-zero
+    digits in the representation of $a$ in base $b$
+}
+
+
+\theo{https://en.wikipedia.org/wiki/Coin_problem}{Frobenius Coin Problem, extended Chicken McNugget}{
+    Given a bunch of coprime integers, one can write all integers after a
+    certain limit as a linear combination of these integers.\\
+
+    Formally, for any integers $a_1, a_2 \dots a_n$ such that $\gcd(a_1,
+    a_2\dots a_n)=1$, there exists positive integers $m$ such that for any
+    integer $M\geq m$, there are non-negative integers $b_1, b_2 \dots b_n$
+    such that \[\sum_{i=1}^{n}b_ia_i=M\]
+}
+
+\begin{Remark}
+    If $n=2$ then $m=a_1a_2-a_1-a_2$.\\
+
+    If $n\geq 2$, then there doesn't exist an explicit formula, but if
+    $\{a_i\}$ are in arithmetic progression, ($a_i=a_1+(i-1)d$) then
+    \[m=\floor*{\frac{a-2}{n-1}}a + (d-1)(a-1) - 1\]
+\end{Remark}
+
+\thmbox{https://en.wikipedia.org/wiki/Beatty_sequence}{Beatty's Theorem or
+    Rayleigh Theorem}{
+    If $a, b$ are two irrational numbers such that $\dfrac{1}{a}+\dfrac{1}{b}=1$,
+    then the two sets $\left\{\floor*{ia}\right\}$ and
+    $\left\{\floor*{ib}\right\}$, where $i$ are the positive integers, form a
+    partition of the set of natural numbers.
+}
+
+\rem{
+    Express the two conditions in numeric terms assuming the contrary.
+}
+
+\proof{
+    \textbf{No integer belongs to both sets:} \\
+
+    Suppose there exists some $ j, k,
+    m $ such that $ j = \floor{ka} = \floor{mb} $. Then the inequalities will
+    hold:
+    \[j\le ka < j+1 \text{ and } j\le mb < j+1\]
+    Which leads to
+    \[j<ka<j+1 \text{ and } j<mb<j+1\]
+    From there, it follows that
+    \[\frac{j}{a}<k<\frac{j+1}{a} \text{ and } \frac{j}{b}<m<\frac{j+1}{b}\]
+    Adding them gives 
+    \[j<k+m<j+1\]
+    Which is false.\\[1em]
+
+    \textbf{Every integer belongs to one set:} \\
+
+    Suppose there is are integers $
+    j, k, m $ such that $ \floor{ka} <j <\floor{ka+a} $ and $ \floor{mb} <j
+    <\floor{mb+b} $
+    Which can be written as
+    \[ka<j<ka+a-1 \text{ and } mb<j<mb+b-1\]
+    It follows from here that,
+    \[k<\frac{j}{a}<k+1-\frac{1}{a} \text{ and } m<\frac{j}{b}<m+1-\frac{1}{b}\]
+    Adding them gives us
+    \[k+m<j<k+m+1\]
+    Which, again, is absurd. So the theorem is proved.
+}
+
+
+\lem{}{
+    Let $x,y$ be co-prime. Then 
+    \[\gcd(z,xy) = \gcd(z,x)\gcd(z,y) = \gcd(z \bmod x,x)\gcd(z \bmod y,y)\] 
+    \[\implies\gcd(r(a,b),xy))=\gcd(a,x)\gcd(b,y)\] 
+
+    (here $r(a,b)$ denotes the smallest integer that satisfies $r(a,b) \equiv
+    a \bmod x,\ r(a,b) \equiv b \bmod y$)
+}
+
+
+\lem{NT version of Erdos Theorem}{
+    Let $0 < a_1 < a_2 < · · · < a_{(mn+1)}$ be $mn + 1$ integers. Prove that you
+    can select either $m + 1$ of them no one of which divides any other, or $n +
+    1$ of them each dividing the following one.
+}
+
+
+\theo{https://math.stackexchange.com/questions/1019538/primes-dividing-a-polynomial}{Prime
+    divisors of an integer polynomial}{
+    If $ P(x)\in \Z[x] $, then the set of primes, $ P = \{ p: p\mid P(x) \} $ is infinite.
+}
+
+
+
+\newpage
+\subsection{Modular Arithmatic Theorems and Useful Results}
+
+\theo{https://en.wikipedia.org/wiki/Wolstenholme's_theorem}{Wolstenholme's Theorem}{
+    For all prime $ p $ the following relation is true:
+    \[ p^2 \ \bigg|\ 1 + \frac{1}{2} + \frac{1}{3} \dots \frac{1}{p-1} =
+    \sum_{i=1}^{p-1} \frac{1}{i} \]
+}
+
+
+\coro{
+    \[ p \ \bigg|\ 1 + \frac{1}{2^2} + \frac{1}{3^2} \dots \frac{1}{(p-1)^2} =
+    \sum_{i=1}^{p-1} \frac{1}{i^2} \]
+}
+
+
+\coro{
+    If $ p > 3 $ is a prime, then 
+    \[\binom{2p}{p} \equiv 2\ (mod\ p^3)\]
+    \[\binom{2p-1}{p-1} \equiv 1\ (mod\ p^3)\]
+}
+
+
+\lem{}{
+    \[ \frac{1}{(p-i)!} \equiv (-1)^i (i-1)!\ (mod\ p) \]
+    \[ \binom{p-1}{k} \equiv (-1)^k\ (mod\ p) \]
+}
+
+
+\prob{}{}{E}{
+    \[\binom{p^{n+1}}{p} \equiv p^n\ (mod\ p^{2n+3})\]
+}
+
+

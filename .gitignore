@@ -3,7 +3,5 @@
 *.fls
 *.log
 *.fdb_latexmk
-*.ilg
-*.ind
 *.synctex.gz
 

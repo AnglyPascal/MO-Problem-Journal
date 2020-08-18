@@ -1,9 +1,1 @@
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+\contentsline {chapter}{Contents}{1}{section*.1}%
