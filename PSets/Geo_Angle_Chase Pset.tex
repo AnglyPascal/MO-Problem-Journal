@@ -1,0 +1,215 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{myfile}
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\makeatletter
+\def\printtitle{					
+	{\centering \@title\par}}
+\makeatother									
+
+\title{\vspace{-4ex} \textbf{Angle Chasing Problems Showcase} }
+\date{National Camp 2018}
+\author{\vspace{-3ex}M. Ahsan Al Mahir \thanks{Thanks to Euclidean Geometry in Mathematical Olympiads (EGMO) - Evan Chen, Yufei Zhao Handouts for being wonderful sources for many of the problems here. They are great resources for further reading.}}
+
+
+\begin{document}
+	
+	\maketitle\bigskip
+	
+	Let's assume that you have learnt all the theorems and lemmas needed for chasing angles. All of these problems can be solved using angle chasing alone (ya literally), but you are free to solve them as you like. But it is highly encouraged that you try them with angle chasing first, as it will toughen up your angle chasing skills :D 
+	
+	\bigskip\section{\textbf{Required Theorems}}
+	
+	You are really gonna need at least these theorems to continue:
+	
+	\theorem{ The sum of the three angles of a triangle equals to $ 180^{\circ} $}
+	
+	\theorem{ In a triangle $ ABC $ with cicrcumcenter $ O $, we have $ \angle BOC=2\times \angle BAC $}
+	
+	\theorem{Let $ ABC $ be a triangle inscribed in a circle $ \omega $. Show that $ AC \perp CB $ if and only if $ AB $ is a diameter of $ \omega $.}
+	
+	\theorem{Let $ O $ and $ H $ denote the circumcenter and orthocenter of an acute $ \triangle ABC $, respectively. Show that $ \angle BAH = \angle CAO $. }
+	
+	\theorem{Let $ ABCD $ be a convex cyclic quadrilateral. Then $ \angle ABC + \angle CDA =
+		180^{\circ} $ and $ \angle ABD = \angle ACD $}
+	
+	\theorem{Let $ ABCD $ be a convex quadrilateral. Then the
+		following are equivalent:
+		\begin{enumerate}
+			\item  $ ABCD $ is cyclic.
+			\item  $ \angle ABC + \angle CDA = 180^{\circ} $.
+			\item  $ \angle ABD = \angle ACD $.
+	\end{enumerate}}
+	
+	\theorem{Suppose $ \triangle ABC $ is inscribed in a circle with
+		center $ O $. Let $ P $ be a point in the plane. Then the following are equivalent:
+		\begin{enumerate}
+			\item  $ PA $ is tangent to $ (ABC) $.
+			\item  $ OA \perp AP $ .
+			\item  $ \angle PAB = \angle ACB $.
+	\end{enumerate}}
+	
+	\bigskip\section{\textbf{Easy}}
+	
+	
+	\prob{Let $ ABC $ be an acute triangle with circumcenter $ O $, and let $ K $ be a
+		point such that $ KA $ is tangent to $ (ABC) $ and $ \angle KCB = 90^{\circ} $. Point $ D $ lies on $ BC $ such that
+		$ KD \parallel AB$. Show that line $ DO $ passes through $ A $.}
+	
+	\probl{}{Extremely Useful}{}{Angles around the centers of a triangle $ ABC $:
+		
+		\begin{enumerate}
+			\item If $ I $ is the incenter of $ ABC $ then $ \angle BIC = 90^{\circ} + \frac{a}{2} , \angle IBC = \frac{b}{2} and \angle ICB = \frac{c}{2} $ .
+			
+			\item If $ H $ is the orthocenter of $ ABC $ then $ \angle BHC = 180^{\circ} - a, \angle HBC = 90^{\circ} - c $ and $ \angle HCB = 90^{\circ} - b $.
+			
+			\item If $ O $ is the circumcenter of $ ABC $ then $ \angle BOC = 2a $ and $ \angle OBC = \angle OCB = 90^{\circ} - a $.
+			
+			\item If $ I_a $ is the $ A $-excenter of $ ABC $ then $ \angle AI_aB = \frac{c}{2} , \angle AI_aC = \frac{b}{2} $ and $ \angle BI_aC = 90^{\circ} - \frac{a}{2} $
+			
+		\end{enumerate}}
+	
+	\probl{}{Extremely Useful}{}{Pedal triangles of the centers of a triangle $ ABC $:
+		
+		\begin{enumerate}
+			\item  If $ DEF $ is the triangle formed by projecting the incenter $ I $ onto sides $ BC, AC $
+			and $ AB $, then $ I $ is the circumcenter of $ DEF $ and $ \angle EDF = 90^{\circ} - \frac{a}{2} $.
+			\item  If $ DEF $ is the triangle formed by projecting the orthocenter $ H $ onto sides $ BC,
+			AC $ and $ AB $, then $ H $ is the incenter of $ DEF $ and $ \angle EDF = 180^{\circ} - 2a $.
+			\item  The medial triangle of $ ABC $ is the pedal triangle of the circumcenter $ O $ of $ ABC $
+			and $ O $ is its orthocenter.
+	\end{enumerate}}
+	
+	\prob{In scalene triangle $ ABC $, let $ K $ be the intersection of the angle bisector of	$\angle A$ and the perpendicular bisector of $ BC $. Prove that the points $ A, B, C, K $ are concyclic.}
+	
+	\prob{Let $AB$ and $CD$ be two segments, and let lines $AC$ and $BD$ meet at $X$. Let the circumcircles of $ABX$ and $CDX$ meet again at $O$. Prove that triangles $OAB$ and $OCD$ are similar.}
+	
+	\prob{	Let $L,M,N$ are the midpoints of $BC,CA,AB$ and $AD,BE,CF$ are altitudes of $\triangle ABC$. Prove that
+		
+		\begin{itemize}
+			\item $O$ is the orthocenter of $\triangle LMN$.
+			\item $H$ is the incenter of $\triangle DEF$.
+			\item $D,E,F,L,M,N$ all lie on a circle.
+			\item Let $BO \cap \bigodot ABC=Q$. Prove that $AQCH$ is a parallelogram
+			\item Prove that the reflection of $ H $ on $ BC $ lies on the circumcenter.
+			\item Prove that the reflection of the \textbf{Euler Line}\footnote{It is the line joining the orthocenter and the circumcenter} on the sides of $ \triangle ABC $
+			concur at the circumcirle.
+	\end{itemize}}
+	
+	
+	\prob{\textbf{(Miquel’s theorem)} Let $ABC$ be a triangle. Points $X, Y$ and $Z$ lie on sides $BC, CA$ and $AB$,	respectively. Prove that the circumcircles of triangles $AYZ, BXZ, CXY$ meet at a common point.}
+	
+	\prob{\textbf{(Simson line)} Let $ABC$ be a triangle, and let $P$ be another point on its circumcircle. Let $X; Y; Z$ be the feet of perpendiculars from $P$ to lines $BC; CA; AB$ respectively. Prove that $X; Y; Z$ are collinear.}
+	
+	\prob{Let $\angle AOB$ be a right angle, $M$ and $N$ points on rays $OA$ and $OB$, respectively. Let $MNPQ$ be a square such that $MN$ separates the points $O$ and $P$. Find the locus of the center of the square when $M$ and $N$ vary.}
+	
+	\prob{An interior point $P$ is chosen in the rectangle $ABCD$ such that $\angle APD + \angle BPC = 180$. Find $\angle DAP + \angle BCP$.}
+	
+	\prob{Let $ ABC $ be an acute triangle inscribed in circle $ \omega $. Let $ X $ be the midpoint of the arc $ BC $ of $ \omega $ not containing $ A $ and define $ Y , Z $ similarly. Show that the orthocenter of $ XYZ $ is the incenter $ I $ of $ ABC $. }
+	
+	\prob{Let $ ABC $ be an acute triangle. Let $ BE $ and $ CF $ be altitudes of $ \triangle ABC $, and denote by $ M $ the midpoint of $ BC $. Prove that $ ME, MF, $ and the line through $ A $ parallel to $ BC $ are all tangents to $ (AEF) $.}
+	
+	\prob{The incircle of $ \triangle ABC $ is tangent to $ BC, CA, AB $ at $ D, E, F $, respectively. Let $ M $ and $ N $ be the midpoints of $ BC $ and $ AC $, respectively. Ray $ BI $ meets line $ EF $ at $ K $. Show that $ BK \perp CK $. Then show $ K $ lies on line $ MN $. }
+	
+	\prob{Prove that if the orthocentre lie on the circumcircle then the triangle is a right angled triangle.}
+	
+	\prob{Prove that the isogonal conjugate of a point is a point at infinity if and only if it lies on the circumcircle.}
+	
+	\prob{Let $ ABC $ be a triangle with orthocenter $ H $. If $ P $ is a point on $ (ABC) $ then its Simson line bisects $ PH $ .}
+	
+	\prob{	Given a triangle $ABC$, let $P$ lie on the circumcircle of the triangle and be the midpoint of the arc $BC$ which does not contain $A$. Draw a straight line $l$ through $P$ so that $l$ is parallel to $AB$. Denote by $k$ the circle which passes through $B$, and is tangent to $l$ at the point $P$. Let $Q$ be the second point of intersection of $k$ and the line $AB$ (if there is no second point of intersection, choose $Q = B$). Prove that $AQ = AC$.	}
+	
+	
+	
+	
+	\bigskip\section{\textbf{Medium}}
+	
+	\probl{}{IMO 2004 P4}{E}{Let $ ABC $ be an acute triangle with orthocenter $ H $, and let $ W $ be a point on the side $ BC $, between $ B $ and $ C $. The points $ M $ and $ N $ are the feet of the altitudes drawn from $ B $ and $ C $, respectively. $ \omega_1 $ is the circumcircle of triangle $ BWN $ and $ X $ is a point such that $ WX $ is a diameter of $ \omega_1 $. Similarly, $ \omega_2 $ is the circumcircle of triangle $ CWM $ and $ Y $ is a point such that $ WY $ is a diameter of $ \omega_2 $. Show that the points $ X, Y, $ and $ H $ are collinear.}
+	
+	\probl{https://artofproblemsolving.com/community/c6h418633p2361970}{IMO Shortlist G1}{E}{Let $ ABC $ be an acute triangle with $ D, E, F $ the feet of the altitudes lying on $ BC, CA, AB $ respectively. One of the intersection points of the line $ EF $ and the circumcircle is $ P $. The lines $ BP $ and $ DF $ meet at point $ Q $. Prove that $ AP = AQ $.}
+	
+	\probl{https://artofproblemsolving.com/community/c6h1508225_simple_parallelogram_geo}{IOM 2017 P1}{E}{Let $ABCD$ be a parallelogram in which angle at $B$ is obtuse and $AD>AB$. Points $K$ and $L$ on $AC$ such that $\angle ADL=\angle KBA$(the points $A, K, C, L$ are all different, with $K$ between $A$ and $L$). The line $BK$ intersects the circumcircle  $\omega$ of $ABC$ at points $B$ and $E$, and the line $EL$ intersects $\omega$ at points $E$ and $F$. Prove that $BF\parallel AC$.}
+	
+	
+	\probl{https://artofproblemsolving.com/community/c6h587990p3480801}{All Russian 2014 Grade 10 Day 1 P4}{E}{Given a triangle $ABC$ with $AB>BC$, let $ \Omega $ be the circumcircle. Let $M$, $N$ lie on the sides $AB$, $BC$ respectively, such that $AM=CN$. Let $K$ be the intersection of $MN$ and $AC$. Let $P$ be the incentre of the triangle $AMK$ and $Q$ be the $K$-excentre of the triangle $CNK$. If $R$ is midpoint of the arc $ABC$ of $ \Omega $ then prove that $RP=RQ$.}
+	
+	\probl{https://artofproblemsolving.com/community/c6h326960p1752047}{USA TST 2000 P2}{E}{Let $ ABCD$ be a cyclic quadrilateral and let $ E$ and $ F$ be the feet of perpendiculars from the intersection of diagonals $ AC$ and $ BD$ to $ AB$ and $ CD$, respectively. Prove that $ EF$ is perpendicular to the line through the midpoints of $ AD$ and $ BC$.}
+	
+	\probl{https://artofproblemsolving.com/community/c6h1289432p6815893}{IRAN 3rd Round 2016 P1}{E}{Let $ABC$ be an arbitrary triangle, $P$ is the intersection point of the altitude from $C$ and the tangent line from $A$ to the circumcircle. The bisector of angle $A$ intersects $BC$ at $D$ . $PD$ intersects $AB$ at $K$, if $H$ is the orthocenter then prove : $HK\perp AD$}
+	
+	\probl{https://artofproblemsolving.com/community/c6t48f6h1519616_geometry}{AoPS}{E}{$I$ is the incenter of $ABC$,  $PI,QI\perp BC$, $PA,QA$ intersect $BC$ at $DE$. Prove: $IADE$ is on a circle.}
+	
+	\probl{https://artofproblemsolving.com/community/c6h1434843p8120660}{IRAN 2nd Round 2016 P6}{E}{Let $ABC$ be a triangle and $X$ be a point on its circumcircle. $Q,P$ lie on a line $BC$ such that $XQ\perp AC , XP\perp AB$. Let $Y$ be the circumcenter of $\triangle XQP$. Prove that $ABC$ is equilateral triangle if and if only $Y$ moves on a circle when $X$ varies on the circumcircle of $ABC$}
+	
+	\probl{}{BAMO 1999, P2}{E}{Let $ O = (0,0), A = (0, a) $, and $ B = (0, b) $, where $ 0 < a < b $ are reals. Let $ \gamma $ be a circle with diameter $ AB $ and let $ P $ be any other point on $ \gamma $. Line $ PA $ meets the $ x $-axis again at $ Q $. Prove that $ \angle BQP = \angle BOP $}
+	
+	\probl{}{CGMO 2012 P5}{M}{Let $ ABC $ be a triangle. The incircle of $ \triangle ABC $ is tangent to $ AB $ and $ AC $ at $ D $ and $ E $ respectively. Let $ O $ denote the circumcenter of $ \triangle BCI $. Prove that $ \angle ODB = \angle OEC $}
+	
+	\probl{}{Canada 1991 P3}{M}{Let $ P $ be a point inside circle $ \omega $. Consider the set of chords of $ \omega $ that contain $ P $. Prove that their midpoints all lie on a circle.}
+	
+	\probl{}{Russia 1996}{M}{Points $ E $ and $ F $ are on side $ BC $ of convex quadrilateral $ ABCD $ (with $ E $ closer than $ F $ to $ B $). It is known that $ \angle BAE = \angle CDF $ and $ \angle EAF = \angle FDE $. Prove that $ \angle FAC = \angle EDB $.}
+	
+	\probl{}{JMO 2011 P5}{M}{Points $ A, B, C, D, E $ lie on a circle $ \omega $ and point $ P $ lies outside the circle. The given points are such that:
+		
+		\begin{itemize}
+			\item lines $ PB $ and $ PD $ are tangent to $ \omega $
+			\item $ P, A, C $ are collinear
+			\item $ DE\parallel AC $
+		\end{itemize}
+		
+		Prove that $ BE $ bisects $ AC $.}
+	
+	\probl{}{Canda 1997 P4}{M}{The point $ O $ is situated inside the parallelogram $ ABCD $ such that $ \angle AOB + \angle COD = 180^{\circ} $. Prove that $ \angle OBC = \angle ODC $.}
+	
+	\probl{}{USAMO 2010 P1}{M}{Let $ AXYZB $ be a convex pentagon inscribed in a semicircle of diameter $ AB $. Denote by $ P , Q, R, S $ the feet of the perpendiculars from $ Y $ onto lines$  AX, BX, AZ, BZ, $ respectively. Prove that the acute angle formed by lines $ PQ $ and $ RS $ is half the size of $ \angle XOZ $, where $ O $ is the midpoint of segment $ AB $. }
+	
+	\probl{https://artofproblemsolving.com/community/c6h1597669p9926981}{Romanian Masters in Mathematics 2018 P1}{M}{Let $ABCD$ be a cyclic quadrilateral an let $P$ be a point on the side $AB.$ The diagonals $AC$ meets the segments $DP$ at $Q.$ The line through $P$ parallel to $CD$ mmets the extension of the side $CB$ beyond $B$ at $K.$ The line through $Q$ parallel to $BD$ meets the extension of the side $CB$ beyond $B$ at $L.$ Prove that the circumcircles of the triangles $BKP$ and $CLQ$ are tangent .}
+	
+	\prob{$ D $ be a point such that $ ABDC $ is a parallelogram and $ E $ be the intersection of the $ B,C $ tangents. Prove that $ D,E $ are isogonal conjugates.}
+	
+	\probl{https://artofproblemsolving.com/community/c5235_2012_china_national_olympiad}{China 2012 P1}{M}{In the triangle $ABC$, $\angle A$ is biggest. On the circumcircle of $\triangle ABC$, let $D$ be the midpoint of $\widehat{ABC}$ and $E$ be the midpoint of $\widehat{ACB}$. The circle $c_1$ passes through $A,B$ and is tangent to $AC$ at $A$, the circle $c_2$ passes through $A,E$ and is tangent $AD$ at $A$. $c_1$ and $c_2$ intersect at $A$ and $P$. Prove that $AP$ bisects $\angle BAC$.}
+	
+	\prob{	Consider a circle $C_1$ and a point $O$ on it. Circle $C_2$ with center $O$, intersects $C_1$ in two points $P$ and $Q$. $C_3$ is a circle which is externally tangent to $C_2$ at $R$ and internally tangent to $C_1$ at $S$ and suppose that $RS$ passes through $Q$. Suppose $X$ and $Y$ are second intersection points of $PR$ and $OR$ with $C_1$. Prove that $QX$ is parallel with $SY$.	}
+	
+	
+	
+	
+	
+	
+	\bigskip\section{Not So Easy...} 
+	
+	That doesn't mean you shouldn't try them...
+	
+	
+	\probl{https://artofproblemsolving.com/community/c6h582820p3444910}{APMO 2014 P5}{H}{Circles $\omega$ and $\Omega$ meet at points $A$ and $B$. Let $M$ be the midpoint of the arc $AB$ of circle $\omega$ ($M$ lies inside $\Omega$). A chord $MP$ of circle $\omega$ intersects $\Omega$ at $Q$ ($Q$ lies inside $\omega$). Let $\ell_P$ be the tangent line to $\omega$ at $P$, and let $\ell_Q$ be the tangent line to $\Omega$ at $Q$. Prove that the circumcircle of the triangle formed by the lines $\ell_P$, $\ell_Q$ and $AB$ is tangent to $\Omega$.}
+	
+	\probl{}{(Poncelet Point)}{H}{
+		\begin{enumerate}
+			\item Prove that for a quadruple $ {W, X, Y, Z} $ of points, the nine point circles of the triangles formed by points in this set, the pedal cicles of the points with respect to the triangle formed by the other three are concurrent. We call this the \textbf{Poncelet Point} of the quadruple. 
+			
+			\item Prove that the \textbf{Feurbach Point} is the Poncelet point of the quadruple $ {A, B, C, I} $ where $ I $ is the incenter of $ \triangle ABC $.
+			
+	\end{enumerate}	}
+	
+	\probl{https://artofproblemsolving.com/community/c6h159997p894696}{Canada 2007 P5}{H}{Let the incircle of triangle $ ABC$ touch sides $ BC,\, CA$ and $ AB$ at $ D,\, E$ and $ F,$ respectively. Let $ \omega,\,\omega_{1},\,\omega_{2}$ and $ \omega_{3}$ denote the circumcircles of triangle $ ABC,\, AEF,\, BDF$ and $ CDE$ respectively. Let $ \omega$ and $ \omega_{1}$ intersect at $ A$ and $ P,\,\omega$ and $ \omega_{2}$ intersect at $ B$ and $ Q,\,\omega$ and $ \omega_{3}$ intersect at $ C$ and $ R.$
+		
+		\begin{itemize}
+			\item Prove that $ \omega_{1},\,\omega_{2}$ and $ \omega_{3}$ intersect in a common point.
+			\item Show that $ PD,\, QE$ and $ RF$ are concurrent.
+		\end{itemize}
+	}
+	
+	\probl{https://artofproblemsolving.com/community/c6h418983p2365045}{IMO 2011 P6}{H}{Let $ABC$ be an acute triangle with circumcircle $\Gamma$. Let $\ell$ be a tangent line to $\Gamma$, and let $\ell_a, \ell_b$ and $\ell_c$ be the lines obtained by reflecting $\ell$ in the lines $BC$, $CA$ and $AB$, respectively. Show that the circumcircle of the triangle determined by the lines $\ell_a, \ell_b$ and $\ell_c$ is tangent to the circle $\Gamma$.}
+	
+	\probl{https://artofproblemsolving.com/community/c6h527557p2996617}{Canda 2013 P5}{H}{Let $O$ denote the circumcentre of an acute-angled triangle $ABC$. Let point $P$ on side $AB$ be such that $\angle BOP = \angle ABC$, and let point $Q$ on side $AC$ be such that $\angle COQ = \angle ACB$. Prove that the reflection of $BC$ in the line $PQ$ is tangent to the circumcircle of triangle $APQ$.}
+	
+	\prob{Let $ ABC $ be an acute-angled triangle, and let $ P $ and $ Q $ be two points on its side $ BC $. Construct a point $ C_1 $ in such a way that the convex quadrilateral $ APBC_1 $ is cyclic, $ QC_1 \parallel CA $, and the points $ C_1 $ and $ Q $ lie on opposite sides of the line $ AB $. Construct a point $ B_1 $ in such a way that the convex quadrilateral $ APCB_1 $ is cyclic, $ QB1 \parallel BA, $ and the points $ B_1 $ and $ Q $ lie on opposite sides of the line $ AC $.
+		
+	Prove that the points $ B_1, C_1, P, $ and $ Q $ lie on a circle}
+	
+	
+	
+	
+\end{document}
