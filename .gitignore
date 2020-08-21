@@ -4,4 +4,4 @@
 *.log
 *.fdb_latexmk
 *.synctex.gz
-
+*.ilg

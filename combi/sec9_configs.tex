@@ -3,252 +3,550 @@
 
 \newpage\section{Exploring Configurations}
 
-	Problems where there is some kind of a configuration is given, the question usually asks to proof or find some specific properties of the configuration.
+Problems where there is some kind of a configuration is given, the question
+usually asks to proof or find some specific properties of the configuration.
 
 
 \subsection{Problems}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1634977p10278658}{ARO 2018 P11.5}{E}{On the table, there're $ 1000 $ cards arranged on a circle. On each card, a positive integer was written so that all $ 1000 $ numbers are distinct. First, Vasya selects one of the card, remove it from the circle, and do the following operation: If on the last card taken out was written positive integer $ k $, count the $ k^{th} $ clockwise card not removed, from that position, then remove it and repeat the operation. This continues until only one card left on the table. Is it possible that, initially, there's a card $ A $ such that, no matter what other card Vasya selects as first card, the one that left is always card $ A $?}\label{problem:constructive_algo_7}
-	
-		\rem{We want to find a configuration, where one card, let's call it $ a $, gets skipped over all the time. Now, controlling the skipping for every move is kinda hard. Instead of doing that, we want to control only one move that skips $ a $, and all other moves will go to the next card in the clockwise rotation. And the card before $ a $ will skip over $ a $, and land of the next card. That being said, the construction is rather trivial.}
-	
-		\solu{Consider the numbering, \[1, 1001!+1, 1002!+1, \dots 1998!+1, 1999!+2\]It's easy to check that it works.}
+\prob{https://artofproblemsolving.com/community/c6h1634977p10278658}{ARO 2018
+    P11.5}{E}{
+    On the table, there're $ 1000 $ cards arranged on a circle. On each
+    card, a positive integer was written so that all $ 1000 $ numbers are
+    distinct. First, Vasya selects one of the card, remove it from the circle, and
+    do the following operation: If on the last card taken out was written positive
+    integer $ k $, count the $ k^{th} $ clockwise card not removed, from that
+    position, then remove it and repeat the operation. This continues until only
+    one card left on the table. Is it possible that, initially, there's a card $ A
+    $ such that, no matter what other card Vasya selects as first card, the one
+    that left is always card $ A $?
+}\label{problem:constructive_algo_7}
 
+\rem{
+    We want to find a configuration, where one card, let's call it $ a $,
+    gets skipped over all the time. Now, controlling the skipping for every move
+    is kinda hard. Instead of doing that, we want to control only one move that
+    skips $ a $, and all other moves will go to the next card in the clockwise
+    rotation. And the card before $ a $ will skip over $ a $, and land of the next
+    card. That being said, the construction is rather trivial.
+}
 
-	\prob{https://artofproblemsolving.com/community/c6h1446909p8271411}{APMO 2017 P3}{H}{Let $ A(n) $ denote the number of sequences $ a_1\geq a_2\geq \dots\geq a_k $ of positive integers for which   $ \sum_{i=1}^k a_k =n $ and each $ a_i+1 $ is a power of two. Let $ B(n) $ denote the number of sequences $ b_1\geq b_2\geq\dots\geq b_k $ of positive integers for which $ \sum_{i=1}^k b_k =n $ and each inequality $ b_j\geq 2b_{j+1} $ holds $ \left( j=1,2\dots m-1\right) $. Prove that $ \vert A(n)\vert =\vert B(n)\vert $ for every positive integer. }\label{problem:add_stuffs_1}\label{problem:bijection_6}
+\solu{
+    Consider the numbering, \[1, 1001!+1, 1002!+1, \dots 1998!+1,
+    1999!+2\]It's easy to check that it works.
+}
 
-		\solu{A sequence of the first type can be rewritten as: \[ n=x_1+3x_2+7x_3\dots +(2^i-1)x_i+\dots (2^k-1)x_k \] Where $ x_i $ are non-negative integers. This motivates us to find a way to represent $ b_i $ as sums of $ ( 2^i-1)x_i $. Then since $ b_j\geq 2b_{j+1} $, we write: $ b_i=2b_{i-1}+x_i $ with $ x_i $ being non-negative integers.}
 
+\prob{https://artofproblemsolving.com/community/c6h1446909p8271411}{APMO 2017
+P3}{H}{Let $ A(n) $ denote the number of sequences $ a_1\geq a_2\geq \dots\geq
+a_k $ of positive integers for which   $ \sum_{i=1}^k a_k =n $ and each $
+a_i+1 $ is a power of two. Let $ B(n) $ denote the number of sequences $
+b_1\geq b_2\geq\dots\geq b_k $ of positive integers for which $ \sum_{i=1}^k
+b_k =n $ and each inequality $ b_j\geq 2b_{j+1} $ holds $ \left( j=1,2\dots
+m-1\right) $. Prove that $ \vert A(n)\vert =\vert B(n)\vert $ for every
+positive integer. }\label{problem:add_stuffs_1}\label{problem:bijection_6}
 
+\solu{A sequence of the first type can be rewritten as: \[
+n=x_1+3x_2+7x_3\dots +(2^i-1)x_i+\dots (2^k-1)x_k \] Where $ x_i $ are
+non-negative integers. This motivates us to find a way to represent $ b_i $ as
+sums of $ ( 2^i-1)x_i $. Then since $ b_j\geq 2b_{j+1} $, we write: $
+b_i=2b_{i-1}+x_i $ with $ x_i $ being non-negative integers.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h215429p1191679}{ISL 2008 C4}{M}{Let $ n $ and $ k $ be positive integers with $ k\geq n $ and $ k-n $ an even number. Let $ 2n $ lamps labeled $ 1,2\dots 2n $ be given, each of which can be either on or off. Initially, all the lamps are off. We consider sequences of steps: at each step one of the lamps is switched (from on to off or from off to on).\\
 
-	Let $ N $ be the number of such sequences consisting of $ k $ steps and resulting in the state where lamps $ 1 $ through $ n $ are all on, and lamps $ n+1 $ through $ 2n $ are all off.\\
 
-	Let $ M $ be number of such sequences consisting of $ k $ steps, resulting in the state where lamps $ 1 $ through $ n $ are all on, and lamps $ n+1 $ through $ 2n $ are all off, but where none of the lamps $ n+1 $ through $ 2n $ is ever switched on.\\
+\prob{https://artofproblemsolving.com/community/c6h215429p1191679}{ISL 2008
+    C4}{M}{Let $ n $ and $ k $ be positive integers with $ k\geq n $ and $ k-n
+    $ an even number. Let $ 2n $ lamps labeled $ 1,2\dots 2n $ be given, each
+    of which can be either on or off. Initially, all the lamps are off. We
+    consider sequences of steps: at each step one of the lamps is switched
+    (from on to off or from off to on).\\
 
-	Determine $ \frac{N}{M} $.}\label{problem:bijection_5}
+    Let $ N $ be the number of such sequences consisting of $ k $ steps and
+    resulting in the state where lamps $ 1 $ through $ n $ are all on, and
+    lamps $ n+1 $ through $ 2n $ are all off.\\
 
-		\solu{These type of problems most of the time have bijection or algo solutions. Think of a way to perform bijection from the set $ S\{M\} \rightarrow S\{N\} $. Find an algorithm to get a sequence of the first type from a sequence of the second type.}
+    Let $ M $ be number of such sequences consisting of $ k $ steps, resulting
+    in the state where lamps $ 1 $ through $ n $ are all on, and lamps $ n+1 $
+    through $ 2n $ are all off, but where none of the lamps $ n+1 $ through $
+    2n $ is ever switched on.\\
 
+Determine $ \frac{N}{M} $.}\label{problem:bijection_5}
 
+\solu{These type of problems most of the time have bijection or algo
+solutions. Think of a way to perform bijection from the set $ S\{M\}
+\rightarrow S\{N\} $. Find an algorithm to get a sequence of the first type
+from a sequence of the second type.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h57380p353058}{USAMO 1996 P4}{E}{An $ n $ -term sequence $ (x_1, x_2, \ldots, x_n) $ in which each term is either 0 or 1 is called a binary sequence of length $ n $. Let $ a_n $ be the number of binary sequences of length $ n $ containing no three consecutive terms equal to 0, 1, 0 in that order. Let $ b_n $ be the number of binary sequences of length $ n $ that contain no four consecutive terms equal to 0, 0, 1, 1 or 1, 1, 0, 0 in that order. Prove that $ b_{n+1} = 2a_n $ for all positive integers $ n $.}\label{problem:bijection_4}
 
-		\solu{These type of problems cries for a nice bijection. That is a way to get from $ a\rightarrow b $ and vice versa. What if there is no $ 0,0,1,1 $ ? Or what if there is no $ 0,1,0 $ ? What is an one way bijection?}
 
+\prob{https://artofproblemsolving.com/community/c6h57380p353058}{USAMO 1996
+P4}{E}{An $ n $ -term sequence $ (x_1, x_2, \ldots, x_n) $ in which each term
+is either 0 or 1 is called a binary sequence of length $ n $. Let $ a_n $ be
+the number of binary sequences of length $ n $ containing no three consecutive
+terms equal to 0, 1, 0 in that order. Let $ b_n $ be the number of binary
+sequences of length $ n $ that contain no four consecutive terms equal to 0,
+0, 1, 1 or 1, 1, 0, 0 in that order. Prove that $ b_{n+1} = 2a_n $ for all
+positive integers $ n $.}\label{problem:bijection_4}
 
+\solu{These type of problems cries for a nice bijection. That is a way to get
+from $ a\rightarrow b $ and vice versa. What if there is no $ 0,0,1,1 $ ? Or
+what if there is no $ 0,1,0 $ ? What is an one way bijection?}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1446905p8271388}{APMO 2017 P1}{M}{We call a $ 5 $ -tuple of integers arrangeable if its elements can be labeled $ a,b,c,d,e $ in some order so that $ a-b+c-d+e=29 $. Determine all $ 2017 $ -tuples of integers $ n_1,n_2,n_3\dots n_{2017} $ such that if we place them in a circle in clockwise order, then any $ 5 $ -tuple of numbers in consecutive positions on the circle is arrangeable. }\label{problem:minus_constant_1}\label{problem:invariant_rules_of_thumb_5}
 
-		\solu{\hrf{minus_constant}{EChen trick}.}
 
+\prob{https://artofproblemsolving.com/community/c6h1446905p8271388}{APMO 2017
+P1}{M}{We call a $ 5 $ -tuple of integers arrangeable if its elements can be
+labeled $ a,b,c,d,e $ in some order so that $ a-b+c-d+e=29 $. Determine all $
+2017 $ -tuples of integers $ n_1,n_2,n_3\dots n_{2017} $ such that if we place
+them in a circle in clockwise order, then any $ 5 $ -tuple of numbers in
+consecutive positions on the circle is arrangeable.
+}\label{problem:minus_constant_1}\label{problem:invariant_rules_of_thumb_5}
 
+\solu{\hrf{minus_constant}{EChen trick}.}
 
-	\prob{https://artofproblemsolving.com/community/c6h41116p258304}{ISL 2004 C1}{E}{There are $ 10001 $ students at an university. Some students join together to form several clubs (a student may belong to different clubs). Some clubs join together to form several societies (a club may belong to different societies). There are a total of $ k $ societies. Find all possible values of $ k $ so that the following conditions are satisfied:
 
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
 
-			\item  Each pair of students are in exactly one club.
+\prob{https://artofproblemsolving.com/community/c6h41116p258304}{ISL 2004
+    C1}{E}{There are $ 10001 $ students at an university. Some students join
+    together to form several clubs (a student may belong to different clubs).
+    Some clubs join together to form several societies (a club may belong to
+    different societies). There are a total of $ k $ societies. Find all
+    possible values of $ k $ so that the following conditions are satisfied:
 
-			\item  For each student and each society, the student is in exactly one club of the society.
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt,
+        font=\footnotesize\bfseries]
 
-			\item  Each club has an odd number of students. In addition, a club with $ {2m+1} $ students ( $ m $ is a positive integer) is in exactly $ m $ societies.
-	\end{enumerate}}\label{problem:double_counting_7}
+        \item  Each pair of students are in exactly one club.
 
-		\solu{Just Double-Counting.}
+        \item  For each student and each society, the student is in exactly
+            one club of the society.
 
-	
-	\prob{https://artofproblemsolving.com/community/c6h17336p118710}{ISL 2002 C1}{E}{Let $ n $ be a positive integer. Each point $ (x,y) $ in the plane, where $ x $ and $ y $ are non-negative integers with $ x+y<n $ , is coloured red or blue, subject to the following condition: if a point $ (x,y) $ is red, then so are all points $ (x',y') $ with $ x'\leq x $ and $ y'\leq y $. Let $ A $ be the number of ways to choose $ n $ blue points with distinct $ x $ -coordinates, and let $ B $ be the number of ways to choose $ n $ blue points with distinct $ y $ -coordinates. Prove that $ A=B $.}\label{problem:induction_type1_5}\label{problem:recursive_solution_2}\label{problem:bijection_1}
+        \item  Each club has an odd number of students. In addition, a club
+with $ {2m+1} $ students ( $ m $ is a positive integer) is in exactly $ m $
+societies.  \end{enumerate}}\label{problem:double_counting_7}
 
+\solu{Just Double-Counting.}
 
-	\prob{https://artofproblemsolving.com/community/c5h476723p2669115}{USAMO 2012 P2}{M}{A circle is divided into $ 432 $ congruent arcs by $ 432 $ points. The points are colored in four colors such that some $ 108 $ points are colored Red, some $ 108 $ points are colored Green, some $ 108 $ points are colored Blue, and the remaining $ 108 $ points are colored Yellow. Prove that one can choose three points of each color in such a way that the four triangles formed by the chosen points of the same color are congruent.}\label{problem:double_counting_6}
 
-		\solu{Double counting saves the day :) The trick is to rotate ;)}
+\prob{https://artofproblemsolving.com/community/c6h17336p118710}{ISL 2002
+C1}{E}{Let $ n $ be a positive integer. Each point $ (x,y) $ in the plane,
+where $ x $ and $ y $ are non-negative integers with $ x+y<n $ , is coloured
+red or blue, subject to the following condition: if a point $ (x,y) $ is red,
+then so are all points $ (x',y') $ with $ x'\leq x $ and $ y'\leq y $. Let $ A
+$ be the number of ways to choose $ n $ blue points with distinct $ x $
+-coordinates, and let $ B $ be the number of ways to choose $ n $ blue points
+with distinct $ y $ -coordinates. Prove that $ A=B
+$.}\label{problem:induction_type1_5}\label{problem:recursive_solution_2}\label{problem:bijection_1}
 
 
+\prob{https://artofproblemsolving.com/community/c5h476723p2669115}{USAMO 2012
+P2}{M}{A circle is divided into $ 432 $ congruent arcs by $ 432 $ points. The
+points are colored in four colors such that some $ 108 $ points are colored
+Red, some $ 108 $ points are colored Green, some $ 108 $ points are colored
+Blue, and the remaining $ 108 $ points are colored Yellow. Prove that one can
+choose three points of each color in such a way that the four triangles formed
+by the chosen points of the same color are
+congruent.}\label{problem:double_counting_6}
 
-	\prob{http://emc.mnm.hr/wp-content/uploads/2018/12/EMC_2018_Seniors_ENG_Solutions-2.pdf}{European Mathematics Cup 2018 P1}{E}{Call a partition of $ n $ a set $ a_1, \dots a_k $ with $ a_1 \le a_2\dots \le a_k $ and $ a_1 + a_2 \dots + a_k =  $. A partition of a positive integer is `even' if all of its elements are even numbers. Similarly, a partition is `odd' if all of its elements are odd. Determine all positive integers $ n $ such that the number of even partitions of $ n $ is equal to the number of odd partitions of $ n $.}
-		
-		\solu{Bijection.}
+\solu{Double counting saves the day :) The trick is to rotate ;)}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h195492p1073989}{APMO 2008 P2}{EM}{Students in a class form groups each of which contains exactly three members such that any two distinct groups have at most one member in common. Prove that, when the class size is $ 46 $ , there is a set of $ 10 $ students in which no group is properly contained.}\label{problem:bijection_8}\label{problem:extremal_case_whole_5}
 
-		\solu{Taking the maximum set that follows the ``in which no group is properly contained'' rule. Now the elements that are \emph{not} in this set, we can connect this element to only one of the pairs from the set. Now defining a bijection, and counting the elements, we are done.}
+\prob{http://emc.mnm.hr/wp-content/uploads/2018/12/EMC_2018_Seniors_ENG_Solutions-2.pdf}{European
+Mathematics Cup 2018 P1}{E}{Call a partition of $ n $ a set $ a_1, \dots a_k $
+with $ a_1 \le a_2\dots \le a_k $ and $ a_1 + a_2 \dots + a_k =  $. A
+partition of a positive integer is `even' if all of its elements are even
+numbers. Similarly, a partition is `odd' if all of its elements are odd.
+Determine all positive integers $ n $ such that the number of even partitions
+of $ n $ is equal to the number of odd partitions of $ n $.}
 
+\solu{Bijection.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h364231p2000940}{IMO SL 1985}{M}{A set of $ 1985 $ points is distributed around the circumference of a circle and each of the points is marked with $ 1 $ or $ -1 $. A point is called ``good'' if the partial sums that can be formed by starting at that point and proceeding around the circle for any distance in either direction are all strictly positive. Show that if the number of points marked with $ -1 $ is less than $ 662 $ , there must be at least one good point.}\label{problem:induction_type1_12}
+\prob{https://artofproblemsolving.com/community/c6h195492p1073989}{APMO 2008
+P2}{EM}{Students in a class form groups each of which contains exactly three
+members such that any two distinct groups have at most one member in common.
+Prove that, when the class size is $ 46 $ , there is a set of $ 10 $ students
+in which no group is properly
+contained.}\label{problem:bijection_8}\label{problem:extremal_case_whole_5}
 
-		\solu{First thing to notice, the number $ 3*661 + 2 = 1985 $. And these numbers are completely random. So what if we try to replace $ 1985 $ by $ n $ ? Will the condition still hold?}
+\solu{Taking the maximum set that follows the ``in which no group is properly
+contained'' rule. Now the elements that are \emph{not} in this set, we can
+connect this element to only one of the pairs from the set. Now defining a
+bijection, and counting the elements, we are done.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h418978p2365036}{IMO 2011 P4}{E}{Let $ n > 0 $ be an integer. We are given a balance and $ n $ weights of weight $ 2^0, 2^1, \cdots, 2^{n-1} $. We are to place each of the $ n $ weights on the balance, one after another, in such a way that the right pan is never heavier than the left pan. At each step we choose one of the weights that has not yet been placed on the balance, and place it on either the left pan or the right pan, until all of the weights have been placed. Determine the number of ways in which this can be done.}\label{problem:recursive_solution_5}
 
-		\solu{Writing the whole process as a sum, we see that only $ 2^0 $ is the odd term here, if we remove that we can divide by $ 2 $ to get a recursive formula.}
+\prob{https://artofproblemsolving.com/community/c6h364231p2000940}{IMO SL
+1985}{M}{A set of $ 1985 $ points is distributed around the circumference of a
+circle and each of the points is marked with $ 1 $ or $ -1 $. A point is
+called ``good'' if the partial sums that can be formed by starting at that
+point and proceeding around the circle for any distance in either direction
+are all strictly positive. Show that if the number of points marked with $ -1
+$ is less than $ 662 $ , there must be at least one good
+point.}\label{problem:induction_type1_12}
 
-		\solu{Calculating wrt to the last placed weight.}
+\solu{First thing to notice, the number $ 3*661 + 2 = 1985 $. And these
+numbers are completely random. So what if we try to replace $ 1985 $ by $ n $
+? Will the condition still hold?}
 
-		\solu{Getting recursive formula considering the position of $ 2^{n-1} $.}
 
+\prob{https://artofproblemsolving.com/community/c6h418978p2365036}{IMO 2011
+P4}{E}{Let $ n > 0 $ be an integer. We are given a balance and $ n $ weights
+of weight $ 2^0, 2^1, \cdots, 2^{n-1} $. We are to place each of the $ n $
+weights on the balance, one after another, in such a way that the right pan is
+never heavier than the left pan. At each step we choose one of the weights
+that has not yet been placed on the balance, and place it on either the left
+pan or the right pan, until all of the weights have been placed. Determine the
+number of ways in which this can be done.}\label{problem:recursive_solution_5}
+
+\solu{Writing the whole process as a sum, we see that only $ 2^0 $ is the odd
+term here, if we remove that we can divide by $ 2 $ to get a recursive
+formula.}
+
+\solu{Calculating wrt to the last placed weight.}
+
+\solu{Getting recursive formula considering the position of $ 2^{n-1} $.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c5h202936p1116367}{USAMO 2008 P3}{H}{Let $ n $ be a positive integer. Denote by $ S_n $ the set of points $ (x, y) $ with integer coordinates such that \[ \left\lvert x\right\rvert + \left\lvert y + \frac{1}{2} \right\rvert < n. \] A path is a sequence of distinct points $ (x_1 , y_1), (x_2, y_2), \ldots, (x_\ell, y_\ell) $ in $ S_n $ such that, for $ i = 2, \ldots, \ell $ , the distance between $ (x_i , y_i) $ and $ (x_{i-1} , y_{i-1} ) $ is $ 1 $ (in other words, the points $ (x_i, y_i) $ and $ (x_{i-1} , y_{i-1} ) $ are neighbors in the lattice of points with integer coordinates). Prove that the points in $ S_n $ cannot be partitioned into fewer than $ n $ paths (a partition of $ S_n $ into $ m $ paths is a set $ \mathcal{P} $ of $ m $ nonempty paths such that each point in $ S_n $ appears in exactly one of the $ m $ paths in $ \mathcal{P} $ ).}\label{problem:alternating_chains_2}\label{problem:coloring_2}
+
+\prob{https://artofproblemsolving.com/community/c5h202936p1116367}{USAMO 2008
+P3}{H}{Let $ n $ be a positive integer. Denote by $ S_n $ the set of points $
+(x, y) $ with integer coordinates such that \[ \left\lvert x\right\rvert +
+\left\lvert y + \frac{1}{2} \right\rvert < n. \] A path is a sequence of
+distinct points $ (x_1 , y_1), (x_2, y_2), \ldots, (x_\ell, y_\ell) $ in $ S_n
+$ such that, for $ i = 2, \ldots, \ell $ , the distance between $ (x_i , y_i)
+$ and $ (x_{i-1} , y_{i-1} ) $ is $ 1 $ (in other words, the points $ (x_i,
+y_i) $ and $ (x_{i-1} , y_{i-1} ) $ are neighbors in the lattice of points
+with integer coordinates). Prove that the points in $ S_n $ cannot be
+partitioned into fewer than $ n $ paths (a partition of $ S_n $ into $ m $
+paths is a set $ \mathcal{P} $ of $ m $ nonempty paths such that each point in
+$ S_n $ appears in exactly one of the $ m $ paths in $ \mathcal{P} $
+).}\label{problem:alternating_chains_2}\label{problem:coloring_2}
+
+
+\solu{Graph + Partition, coloring is just natural. Again, the edges join two
+neighbor lattice points, so checkerboard coloring. But checkerboard doesn't do
+much good. So the next thing we try is to apply some derivations of it,
+pseudo!!! Well, overkill.}
+
+
+\solu{For all n, induction is very natural. The optimal partition (the most
+beautiful one) and the longest path in it, say $ P $ , gives us a way to
+perform induction. As always, we suppose a partition with $ n-1 $ paths. As
+there are a lot of partitions, we need to choose a certain partition, say $
+\mathbb{M} $. Again as our goal is to include $ P $ in $ \mathbb{M} $. So
+suppose that the set with all the points in $ P $ is $ A $. And further more,
+suppose that in $ \mathbb{M} $ there is a path $ Q $ with $ \vert Q\cap A\vert
+$ being maximal among all other partitions of the points. Some some easy case
+work shows that we must have $ P\in \mathbb{M} $.}
 
+
+
+\prob{https://artofproblemsolving.com/community/c5h532235p3041823}{USAMO 2013
+P2}{H}{For a positive integer $ n\geq 3 $ plot $ n $ equally spaced points
+around a circle. Label one of them $ A $ , and place a marker at $ A $. One
+may move the marker forward in a clockwise direction to either the next point
+or the point after that. Hence there are a total of $ 2n $ distinct moves
+available; two from each point. Let $ a_n $ count the number of ways to
+advance around the circle exactly twice, beginning and ending at $ A $ ,
+without repeating a move. Prove that $ a_{n-1}+a_n=2^n $ for all $ n\geq 4
+$.}\label{problem:recursive_solution_4}\label{problem:bijection_7}
+
+
+\solu{Problems where there are multiple possible value of a function
+regardless of the current position, one of dealing with these is to assigning
+labels of these possible values to each points of the function, and this will
+give a combinatorial model and a way to deal it with bijection.}
+
+\solu{First investigate the problem condition, $ a_n + a_{n-1} = 2^n $ , now,
+$ 2^n $ means the number of differently coloring every point black or white,
+and the left side is the number of such paths for $ n $ and $ n-1 $. Which
+means we should try to color the points and see what happens.}
 
-		\solu{Graph + Partition, coloring is just natural. Again, the edges join two neighbor lattice points, so checkerboard coloring. But checkerboard doesn't do much good. So the next thing we try is to apply some derivations of it, pseudo!!! Well, overkill.}
+\proof{EChen's solution: In this problem, the main obstacle seems to be the
+circle condition. And on top of that, on can land on the starting point. So
+things are pretty messed up here. What we want to do is to make things a
+little bit more easy to deal with. So our best option is to change the problem
+so that we get the similar problem with a different explanation. So we change
+the condition circle with matrix, $ 2 $ round with $ 2 $ rows. $ n $ points
+with $ n $ entries in each rows. What we get now is the same problem, just a
+bit easier to deal with. We call this \hl{Tweak The Problem} strategy.}
 
 
-		\solu{For all n, induction is very natural. The optimal partition (the most beautiful one) and the longest path in it, say $ P $ , gives us a way to perform induction. As always, we suppose a partition with $ n-1 $ paths. As there are a lot of partitions, we need to choose a certain partition, say $ \mathbb{M} $. Again as our goal is to include $ P $ in $ \mathbb{M} $. So suppose that the set with all the points in $ P $ is $ A $. And further more, suppose that in $ \mathbb{M} $ there is a path $ Q $ with $ \vert Q\cap A\vert $ being maximal among all other partitions of the points. Some some easy case work shows that we must have $ P\in \mathbb{M} $.}
 
+\prob{}{}{E}{ $ 10 $ persons went to a bookstore. It is known that: Every
+person has bought 3 kinds on books and for every 2 persons, there is at least
+one kind of books which they both have bought. Let $ m_i $ be the number of
+the persons who bought the $ i^{th} $ kind of books and $ M= \max\lbrace
+m_i\rbrace $ Find the smallest possible value of $ M
+$.}\label{problem:double_counting_4}
 
 
-	\prob{https://artofproblemsolving.com/community/c5h532235p3041823}{USAMO 2013 P2}{H}{For a positive integer $ n\geq 3 $ plot $ n $ equally spaced points around a circle. Label one of them $ A $ , and place a marker at $ A $. One may move the marker forward in a clockwise direction to either the next point or the point after that. Hence there are a total of $ 2n $ distinct moves available; two from each point. Let $ a_n $ count the number of ways to advance around the circle exactly twice, beginning and ending at $ A $ , without repeating a move. Prove that $ a_{n-1}+a_n=2^n $ for all $ n\geq 4 $.}\label{problem:recursive_solution_4}\label{problem:bijection_7}
+\prob{https://artofproblemsolving.com/community/c6h86560p504805}{ARO 2006
+    11.3}{M}{On a $49\times 69$ rectangle formed by a grid of lattice squares,
+    all $50\cdot 70$ lattice points are colored blue. Two persons play the
+    following game: In each step, a player colors two blue points red, and
+    draws a segment between these two points. (Different segments can
+    intersect in their interior.) Segments are drawn this way until all
+    formerly blue points are colored red. At this moment, the first player
+    directs all segments drawn - i. e., he takes every segment AB, and
+    replaces it either by the vector $\overrightarrow{AB}$, or by the vector
+    $\overrightarrow{BA}$. If the first player succeeds to direct all the
+    segments drawn in such a way that the sum of the resulting vectors is
+    $\overrightarrow{0}$, then he wins; else, the second player wins.
 
+Which player has a winning strategy?}
 
-		\solu{Problems where there are multiple possible value of a function regardless of the current position, one of dealing with these is to assigning labels of these possible values to each points of the function, and this will give a combinatorial model and a way to deal it with bijection.}
+\proof{The basic idea comes from wishing that the first player might be able
+to copy the second player to ``nullify'' his moves. But since this isn't
+always possible, because no nice symmetry exists on the board, the idea of
+coloring the board with dominoes and copying moves wrt the dominoes comes.
+\index[strat]{copycat!partition!aro 2006 11.3}}
 
-		\solu{First investigate the problem condition, $ a_n + a_{n-1} = 2^n $ , now, $ 2^n $ means the number of differently coloring every point black or white, and the left side is the number of such paths for $ n $ and $ n-1 $. Which means we should try to color the points and see what happens.}
 
-	\proof{EChen's solution: In this problem, the main obstacle seems to be the circle condition. And on top of that, on can land on the starting point. So things are pretty messed up here. What we want to do is to make things a little bit more easy to deal with. So our best option is to change the problem so that we get the similar problem with a different explanation. So we change the condition circle with matrix, $ 2 $ round with $ 2 $ rows. $ n $ points with $ n $ entries in each rows. What we get now is the same problem, just a bit easier to deal with. We call this \hl{Tweak The Problem} strategy.}
+\prob{https://artofproblemsolving.com/community/c6h17338p118714}{ISL 2002
+C3}{EM}{Let $n$ be a positive integer. A sequence of $n$ positive integers
+(not necessarily distinct) is called full if it satisfies the following
+condition: for each positive integer $k\geq2$, if the number $k$ appears in
+the sequence then so does the number $k-1$, and moreover the first occurrence
+of $k-1$ comes before the last occurrence of $k$. For each $n$, how many full
+sequences are
+there?}\label{problem:bijection_13}\label{problem:graph_representation_9}
 
+\proof{After guessing the ans, the first thing that I did was to draw a level
+based graph. Suppose that a full sequence has $ k $ different entries. Then
+the top level contains the positions of $ k $ in the sequence sorted from left
+to right. The next level contains the positions of $ k-1 $ in the sequence
+sorted so, and so on till the last level. What I noticed is that if we draw
+arrows pointing from a larger integer to a smaller integer, the only arrows
+(or more like relations between entries of the sequence) we need to worry
+about are the arrows pointing left to right in each levels, and the arrows
+from the last entry of level $ i $ to the first entry of level $ i+1 $. After
+this, if we try with a smaller case, we see that this leads to a bijection
+from the set of sequences of length $ n $ with $ n $ different integers to the
+set of full-sequences of length $ n $.}
 
 
-	\prob{}{}{E}{ $ 10 $ persons went to a bookstore. It is known that: Every person has bought 3 kinds on books and for every 2 persons, there is at least one kind of books which they both have bought. Let $ m_i $ be the number of the persons who bought the $ i^{th} $ kind of books and $ M= \max\lbrace m_i\rbrace $ Find the smallest possible value of $ M $.}\label{problem:double_counting_4}
+\solu{Another bijection approach is as followed, in a full-sequence, on first
+run, go from right to left, placing integers starting with $ 1 $ onwards on
+the $ 1 $'s in the sequence. on the second run continue counting and placing
+integers on the $ 2 $'s and so on.}
 
-    
-    \prob{https://artofproblemsolving.com/community/c6h86560p504805}{ARO 2006 11.3}{M}{On a $49\times 69$ rectangle formed by a grid of lattice squares, all $50\cdot 70$ lattice points are colored blue. Two persons play the following game: In each step, a player colors two blue points red, and draws a segment between these two points. (Different segments can intersect in their interior.) Segments are drawn this way until all formerly blue points are colored red. At this moment, the first player directs all segments drawn - i. e., he takes every segment AB, and replaces it either by the vector $\overrightarrow{AB}$, or by the vector $\overrightarrow{BA}$. If the first player succeeds to direct all the segments drawn in such a way that the sum of the resulting vectors is $\overrightarrow{0}$, then he wins; else, the second player wins.
-    
-    Which player has a winning strategy?}
-    
-        \proof{The basic idea comes from wishing that the first player might be able to copy the second player to ``nullify'' his moves. But since this isn't always possible, because no nice symmetry exists on the board, the idea of coloring the board with dominoes and copying moves wrt the dominoes comes. \index[strat]{copycat!partition!aro 2006 11.3}}
 
+\solu{Another idea is to prove $ a_n = n a_{n-1} $. To do this, remove the
+rightmost $ 1 $ and do some casework.}
 
-	\prob{https://artofproblemsolving.com/community/c6h17338p118714}{ISL 2002 C3}{EM}{Let $n$ be a positive integer. A sequence of $n$ positive integers (not necessarily distinct) is called full if it satisfies the following condition: for each positive integer $k\geq2$, if the number $k$ appears in the sequence then so does the number $k-1$, and moreover the first occurrence of $k-1$ comes before the last occurrence of $k$. For each $n$, how many full sequences are there?}\label{problem:bijection_13}\label{problem:graph_representation_9}
 
-		\proof{After guessing the ans, the first thing that I did was to draw a level based graph. Suppose that a full sequence has $ k $ different entries. Then the top level contains the positions of $ k $ in the sequence sorted from left to right. The next level contains the positions of $ k-1 $ in the sequence sorted so, and so on till the last level. What I noticed is that if we draw arrows pointing from a larger integer to a smaller integer, the only arrows (or more like relations between entries of the sequence) we need to worry about are the arrows pointing left to right in each levels, and the arrows from the last entry of level $ i $ to the first entry of level $ i+1 $. After this, if we try with a smaller case, we see that this leads to a bijection from the set of sequences of length $ n $ with $ n $ different integers to the set of full-sequences of length $ n $.}
 
+\prob{https://artofproblemsolving.com/community/c6h219938p1219679}{ISL 1994
+C2}{M}{In a certain city, age is reckoned in terms of real numbers rather than
+integers. Every two citizens $x$ and $x'$ either know each other or do not
+know each other. Moreover, if they do not, then there exists a chain of
+citizens $x = x_0, x_1, \ldots, x_n = x'$ for some integer $n \geq 2$ such
+that $ x_{i-1}$ and $x_i$ know each other. In a census, all male citizens
+declare their ages, and there is at least one male citizen. Each female
+citizen provides only the information that her age is the average of the ages
+of all the citizens she knows. Prove that this is enough to determine uniquely
+the ages of all the female citizens.}
 
-		\solu{Another bijection approach is as followed, in a full-sequence, on first run, go from right to left, placing integers starting with $ 1 $ onwards on the $ 1 $'s in the sequence. on the second run continue counting and placing integers on the $ 2 $'s and so on.}
+\solu{Describing the problem using matrix and vector spaces, the problem
+reduces to well known theorems of linear algebra.}
 
 
-		\solu{Another idea is to prove $ a_n = n a_{n-1} $. To do this, remove the rightmost $ 1 $ and do some casework.}
+\prob{https://artofproblemsolving.com/community/c6h93p261}{ISL 2003 C1}{E}{Let
+$A$ be a $101$-element subset of the set $S=\{1,2,\ldots,1000000\}$. Prove
+that there exist numbers $t_1$, $t_2, \ldots, t_{100}$ in $S$ such that the
+sets \[ A_j=\{x+t_j\mid x\in A\},\qquad j=1,2,\ldots,100 \] are pairwise
+disjoint.}
 
+\solu{just count...}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h219938p1219679}{ISL 1994 C2}{M}{In a certain city, age is reckoned in terms of real numbers rather than integers. Every two citizens $x$ and $x'$ either know each other or do not know each other. Moreover, if they do not, then there exists a chain of citizens $x = x_0, x_1, \ldots, x_n = x'$ for some integer $n \geq 2$ such that $ x_{i-1}$ and $x_i$ know each other. In a census, all male citizens declare their ages, and there is at least one male citizen. Each female citizen provides only the information that her age is the average of the ages of all the citizens she knows. Prove that this is enough to determine uniquely the ages of all the female citizens.}
+\prob{https://artofproblemsolving.com/community/c6h1425422p8029376}{EGMO 2017
+    P5}{E}{Let $n\geq2$ be an integer. An $n$-tuple $(a_1,a_2,\dots,a_n)$ of
+    not necessarily different positive integers is expensive if there exists a
+    positive integer $k$ such that 
 
-		\solu{Describing the problem using matrix and vector spaces, the problem reduces to well known theorems of linear algebra.}
+    \[(a_1+a_2)(a_2+a_3)\dots(a_{n-1}+a_n)(a_n+a_1)=2^{2k-1}\]
 
+    a) Find all integers $n\geq2$ for which there exists an expensive
+    $n$-tuple.
 
-	\prob{https://artofproblemsolving.com/community/c6h93p261}{ISL 2003 C1}{E}{Let $A$ be a $101$-element subset of the set $S=\{1,2,\ldots,1000000\}$. Prove that there exist numbers $t_1$, $t_2, \ldots, t_{100}$ in $S$ such that the sets \[ A_j=\{x+t_j\mid x\in A\},\qquad j=1,2,\ldots,100 \] are pairwise disjoint.}
-	
-		\solu{just count...}
+b) Prove that for every odd positive integer $m$ there exists an integer
+$n\geq2$ such that $m$ belongs to an expensive $n$-tuple.}
 
-	
-	\prob{https://artofproblemsolving.com/community/c6h1425422p8029376}{EGMO 2017 P5}{E}{Let $n\geq2$ be an integer. An $n$-tuple $(a_1,a_2,\dots,a_n)$ of not necessarily different positive integers is expensive if there exists a positive integer $k$ such that 
-	
-	\[(a_1+a_2)(a_2+a_3)\dots(a_{n-1}+a_n)(a_n+a_1)=2^{2k-1}\]
-		
-	a) Find all integers $n\geq2$ for which there exists an expensive $n$-tuple.
-		
-	b) Prove that for every odd positive integer $m$ there exists an integer $n\geq2$ such that $m$ belongs to an expensive $n$-tuple.}
-	
-	\rem{gutaguti solution}
-	
-	\solu{All odd $ n $ works, you can prove for even $ n $ by $ +1, -1 $ addition. For the second part, start with the odd number, move on both side, you will eventually reach $ 1 $.}
-	
+\rem{gutaguti solution}
 
+\solu{All odd $ n $ works, you can prove for even $ n $ by $ +1, -1 $
+addition. For the second part, start with the odd number, move on both side,
+you will eventually reach $ 1 $.}
 
-	\prob{https://artofproblemsolving.com/community/c6h84550p490581}{USAMO 2006 P2}{E}{For a given positive integer $k$ find, in terms of $k$, the minimum value of $N$ for which there is a set of $2k + 1$ distinct positive integers that has sum greater than $N$ but every subset of size $k$ has sum at most $\tfrac{N}{2}.$}
-	
-		\solu{Compactness is the optimal decision.}
-		
-		
-		
-	\prob{https://artofproblemsolving.com/community/c6h1076949p4710743}{MOP Problem}{E}{Prove that for any positive integer $c$, there exists an integer $n$ such that $n$ has more 1's in its binary expansion than $n^2+c$ does.}
-	
-		\solu{For $ x= 2^a-1 $, $ x $ and $ x^2 $ have the same number of $ 1's $. So does $ x=2^a-2^b $. But what if increase the number of $ 1's $ in this $ x $ by substracting $ 1 $? Let $ x=2^a - 2^b -1 $. This might work if we can choose nice $ a, b $'s}
 
 
+\prob{https://artofproblemsolving.com/community/c6h84550p490581}{USAMO 2006
+P2}{E}{For a given positive integer $k$ find, in terms of $k$, the minimum
+value of $N$ for which there is a set of $2k + 1$ distinct positive integers
+that has sum greater than $N$ but every subset of size $k$ has sum at most
+$\tfrac{N}{2}.$}
 
-	\prob{https://artofproblemsolving.com/community/c6h1078552p4732509}{EGMO 2015 P2}{EM}{A domino is a $2 \times 1$ or $1 \times 2$ tile. Determine in how many ways exactly $n^2$ dominoes can be placed without overlapping on a $2n \times 2n$ chessboard so that every $2 \times 2$ square contains at least two uncovered unit squares which lie in the same row or column.}
-	
-		\solu{Notice how each of the four kind of dominoes needs to be in a group. So if we separated them into blocks, inverstigation shows that there can only be $ 4 $ blocks and each strictly attached to the sides. The reason why this is happening is pretty obvious. Now those blocks create two paths between the two opposite vertices of the square. This gives our desired bijection.}
-		
-		
-		
-	\prob{https://artofproblemsolving.com/community/c6h148826p841252}{USA TST 2006 P5}{TE}{Let $n$ be a given integer with $n$ greater than $7$ , and let $\mathcal{P}$ be a convex polygon with $n$ sides. Any set of $n-3$ diagonals of $\mathcal{P}$ that do not intersect in the interior of the polygon determine a triangulation of $\mathcal{P}$ into $n-2$ triangles. A triangle in the triangulation of $\mathcal{P}$ is an interior triangle if all of its sides are diagonals of $\mathcal{P}$. Express, in terms of $n$, the number of triangulations of $\mathcal{P}$ with exactly two interior triangles, in closed form.}
-	
-		\solu{Just mindless calculation...}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h418687p2362298}{ISL 2010 C3}{E}{2500 chess kings have to be placed on a $100 \times 100$ chessboard so that
-		
-		\begin{enumerate}
-			\item  no king can capture any other one (i.e. no two kings are placed in two squares sharing a common vertex);
-			\item  each row and each column contains exactly 25 kings.
-		\end{enumerate}
-		
-		Find the number of such arrangements. (Two arrangements differing by rotation or symmetry are supposed to be different.)}
-	
-	
-		
-		\solu{In a $ 2\times 2 $ box, one can place only one king. So we divide the board in that way, and explore...}
-		
-			
+\solu{Compactness is the optimal decision.}
 
-	\prob{https://artofproblemsolving.com/community/c6h1558133_a_tasty_dish_of_graph_theory}{USA Winter TST 2018 P3}{M}{At a university dinner, there are $ 2017 $ mathematicians who each order two distinct entrées, with no two mathematicians ordering the same pair of entrées. The cost of each entrée is equal to the number of mathematicians who ordered it, and the university pays for each mathematician's less expensive entrée (ties broken arbitrarily). Over all possible sets of orders, what is the maximum total amount the university could have paid?}
 
-		\input{dump/USATST_W_2018_P3}
-		
-		\rem{Easy to think in grids, but it was quite difficult to formulate the solution rigorously, I still am not 100\% convinced myself. Next time when I feel like it, I will reconstruct the solution. Roughly it is: take the final 0 value columns, prove that there is only one such, and prove the bounds on the solution before using that instead. Then use general bounding to find the maximum. It's not hard, it's just I don't have time now. GAH!! HSC!!}
-		
-		\rem{Didn't read other solutions too, gonna give a todo}
-		%todo: read other solutions.
+
+\prob{https://artofproblemsolving.com/community/c6h1076949p4710743}{MOP
+Problem}{E}{Prove that for any positive integer $c$, there exists an integer
+$n$ such that $n$ has more 1's in its binary expansion than $n^2+c$ does.}
+
+\solu{For $ x= 2^a-1 $, $ x $ and $ x^2 $ have the same number of $ 1's $. So
+does $ x=2^a-2^b $. But what if increase the number of $ 1's $ in this $ x $
+by substracting $ 1 $? Let $ x=2^a - 2^b -1 $. This might work if we can
+choose nice $ a, b $'s}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1078552p4732509}{EGMO 2015
+P2}{EM}{A domino is a $2 \times 1$ or $1 \times 2$ tile. Determine in how many
+ways exactly $n^2$ dominoes can be placed without overlapping on a $2n \times
+2n$ chessboard so that every $2 \times 2$ square contains at least two
+uncovered unit squares which lie in the same row or column.}
+
+\solu{Notice how each of the four kind of dominoes needs to be in a group. So
+if we separated them into blocks, inverstigation shows that there can only be
+$ 4 $ blocks and each strictly attached to the sides. The reason why this is
+happening is pretty obvious. Now those blocks create two paths between the two
+opposite vertices of the square. This gives our desired bijection.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h148826p841252}{USA TST 2006
+P5}{TE}{Let $n$ be a given integer with $n$ greater than $7$ , and let
+$\mathcal{P}$ be a convex polygon with $n$ sides. Any set of $n-3$ diagonals
+of $\mathcal{P}$ that do not intersect in the interior of the polygon
+determine a triangulation of $\mathcal{P}$ into $n-2$ triangles. A triangle in
+the triangulation of $\mathcal{P}$ is an interior triangle if all of its sides
+are diagonals of $\mathcal{P}$. Express, in terms of $n$, the number of
+triangulations of $\mathcal{P}$ with exactly two interior triangles, in closed
+form.}
+
+\solu{Just mindless calculation...}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h418687p2362298}{ISL 2010
+    C3}{E}{2500 chess kings have to be placed on a $100 \times 100$ chessboard
+    so that
+
+    \begin{enumerate} \item  no king can capture any other one (i.e. no two
+    kings are placed in two squares sharing a common vertex); \item  each row
+    and each column contains exactly 25 kings.  \end{enumerate}
+
+Find the number of such arrangements. (Two arrangements differing by rotation
+or symmetry are supposed to be different.)}
+
+
+
+\solu{In a $ 2\times 2 $ box, one can place only one king. So we divide the
+board in that way, and explore...}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1558133_a_tasty_dish_of_graph_theory}{USA
+    Winter TST 2018 P3}{M}{
+    At a university dinner, there are $ 2017 $
+    mathematicians who each order two distinct entrées, with no two mathematicians
+    ordering the same pair of entrées. The cost of each entrée is equal to the
+    number of mathematicians who ordered it, and the university pays for each
+    mathematician's less expensive entrée (ties broken arbitrarily). Over all
+    possible sets of orders, what is the maximum total amount the university could
+    have paid?
+}
+
+\input{dump/USATST_W_2018_P3}
+
+\rem{Easy to think in grids, but it was quite difficult to formulate the
+solution rigorously, I still am not 100\% convinced myself. Next time when I
+feel like it, I will reconstruct the solution. Roughly it is: take the final 0
+value columns, prove that there is only one such, and prove the bounds on the
+solution before using that instead. Then use general bounding to find the
+maximum. It's not hard, it's just I don't have time now. GAH!! HSC!!}
+
+\rem{Didn't read other solutions too, gonna give a todo}
+%todo: read other solutions.
 
 
 \subsubsection{Conway's Soldiers}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h62194p372309}{ISL 1993 C5}{MH}{On an infinite chessboard, a solitaire game is played as follows: at the start, we have $n^2$ pieces occupying a square of side $n.$ The only allowed move is to jump over an occupied square to an unoccupied one, and the piece which has been jumped over is removed. For which $n$ can the game end with only one piece remaining on the board?}
-	
-		\solu{We want to find an invariant. So we need to find a weight for each of the cells such that any two consecutive cells' values equals to the values of the two cells on the two sides. Some mind bashing gives the idea of mod $ 3 $. And a construction for the other $ n $'s can be easily generated after some casework.}
-		
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h262542p1426437}{ARO 1999 P4}{M}{A frog is placed on each cell of a $n \times n$ square inside an infinite chessboard (so initially there are a total of $n \times n$ frogs). Each move consists of a frog $A$ jumping over a frog $B$ adjacent to it with $A$ landing in the next cell and $B$ disappearing (adjacent means two cells sharing a side). Prove that at least $ \left[\frac{n^2}{3}\right]$ moves are needed to reach a configuration where no more moves are possible.}	
-	
-		\solu{In the final stage, no two neighboring cells are occupied. Could we double count the number of frogs with this information? What about the number of frogs in the original $ n\times n $ board? Another small information needed for this is that we need $ 2 $ moves to ``empty'' a $ 2\times 2 $ board.}
-		
-		
-		
-	
-	
-	
+
+
+\prob{https://artofproblemsolving.com/community/c6h62194p372309}{ISL 1993
+C5}{MH}{On an infinite chessboard, a solitaire game is played as follows: at
+the start, we have $n^2$ pieces occupying a square of side $n.$ The only
+allowed move is to jump over an occupied square to an unoccupied one, and the
+piece which has been jumped over is removed. For which $n$ can the game end
+with only one piece remaining on the board?}
+
+\solu{We want to find an invariant. So we need to find a weight for each of
+the cells such that any two consecutive cells' values equals to the values of
+the two cells on the two sides. Some mind bashing gives the idea of mod $ 3 $.
+And a construction for the other $ n $'s can be easily generated after some
+casework.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h262542p1426437}{ARO 1999
+P4}{M}{A frog is placed on each cell of a $n \times n$ square inside an
+infinite chessboard (so initially there are a total of $n \times n$ frogs).
+Each move consists of a frog $A$ jumping over a frog $B$ adjacent to it with
+$A$ landing in the next cell and $B$ disappearing (adjacent means two cells
+sharing a side). Prove that at least $ \left[\frac{n^2}{3}\right]$ moves are
+needed to reach a configuration where no more moves are possible.}	
+
+\solu{In the final stage, no two neighboring cells are occupied. Could we
+double count the number of frogs with this information? What about the number
+of frogs in the original $ n\times n $ board? Another small information needed
+for this is that we need $ 2 $ moves to ``empty'' a $ 2\times 2 $ board.}
+
+
+
+
+
+
 \subsubsection{Triominos}
 
-	\prob{https://artofproblemsolving.com/community/c6h404324p2254569}{ARO 2011 P10.8}{M}{A $2010\times 2010$ board is divided into corner-shaped figures of three cells. Prove that it is possible to mark one cell in each figure such that each row and each column will have the same number of marked cells.}
-	
-		\solu{First we will mark the corner pieces of the triominos. Then shift the mark to either of the legs. Our objective is to show that we can always do this. First if we only focus on the rows, we can easily show that this can be done using some counting. To show that we can do the same for columns as well, we create a graph from columns and rows to triominos which should be operated on, and using Hall's Marriage we pove the result.}
-		
-		
-	
-	\prob{}{St. Petersburg 2000}{E}{On an infinite checkerboard are placed $111$ non-overlapping corners, L-shaped figures made of $3$ unit squares. Suppose that for any corner, the $2\times 2$ square containing it is entirely covered by the corners. Prove that one can remove some number between $1$ and $110$ of the corners so that the property will be preserved.}
+\prob{https://artofproblemsolving.com/community/c6h404324p2254569}{ARO 2011
+P10.8}{M}{A $2010\times 2010$ board is divided into corner-shaped figures of
+three cells. Prove that it is possible to mark one cell in each figure such
+that each row and each column will have the same number of marked cells.}
+
+\solu{First we will mark the corner pieces of the triominos. Then shift the
+mark to either of the legs. Our objective is to show that we can always do
+this. First if we only focus on the rows, we can easily show that this can be
+done using some counting. To show that we can do the same for columns as well,
+we create a graph from columns and rows to triominos which should be operated
+on, and using Hall's Marriage we pove the result.}
+
+
+
+\prob{}{St. Petersburg 2000}{E}{On an infinite checkerboard are placed $111$
+non-overlapping corners, L-shaped figures made of $3$ unit squares. Suppose
+that for any corner, the $2\times 2$ square containing it is entirely covered
+by the corners. Prove that one can remove some number between $1$ and $110$ of
+the corners so that the property will be preserved.}
 
 
 
 \subsubsection{Dominos}
 
-	\prob{}{}{E}{An $m\times n$ rectangular grid is covered by dominoes. Prove that the vertices of the grid can be coloured using three colours so that any two vertices a distance $1$ apart are colored with different colours if and only if their segment lies on the boundary of a domino.}
-	
-		\solu{Create a graph with the midpoints of the dominos.}
+\prob{}{}{E}{An $m\times n$ rectangular grid is covered by dominoes. Prove
+that the vertices of the grid can be coloured using three colours so that any
+two vertices a distance $1$ apart are colored with different colours if and
+only if their segment lies on the boundary of a domino.}
+
+\solu{Create a graph with the midpoints of the dominos.}

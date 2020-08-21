@@ -1,44 +1,62 @@
-	\begin{solution}[Grid Representation]
-			We put the information in a grid in the usual manner. We take the configuration for which the score (which we define to be the total amount the university has to pay) is maximum.
-			
-			\begin{solution_def}
-				Let $ C_i $ be the price of the dish $ i $. Let $ P_j $ be the pair of dishes $ j $ ordered.
-			\end{solution_def}
-			
-			We now ``sort'' the grid in the following way:
-			\begin{itemize}
-				\item Sort the columns first, from the least expensive to the most.
-				\item Now we have $ 2017 $ binary strings as rows. We sort them decreasingly from top to bottom.
-			\end{itemize}
-		
-			We end up with something like this:
-			\figdf{.3}{USA_TST_2018_P3_1}{}
-			
-			\begin{solution_def}
-				We make some sets:\[ A_i=\{x| x \text{ ordered dish } i \text{ but didn't order any of the dishes } j<i\} \]Let $ a_i = |A_i| $.
-				We also call $ A_i $ block, the $ x $th rows with $ x\in A_i $. It is easy to see that the committee has to pay for dish $ i $ $ a_i $ times.
-			\end{solution_def}
-		
-			Take a $ j $ such that $ a_j=0 $.
-			 
-			If $ j<k $, let \[S_j = \{x\mid \text{In the } j^{th} \text{ column, there is a } 1 \text{ in the set of the rows from } A_x \}\]
-				\figdf{.3}{USA_TST_2018_P3_2}{}
-			In the example of the previous diagram, $ S_4 = \{1, 2, 3\} $
-			
-			Take the largest element of $ S_j $, namely $ t $. We want to move the $ 1 $ in the $ A_t $ block of column $ j $ to another column to the right. Notice that this won't decrease the score, because for each of the mathematician after the block $ A_t $, the score would be non decreasing. If we could do this, we could do this inductively, moving the $ j $th column to the left each move, eventually making it disappear. 
-			
-			So suppose we can't do this. So there is no column on the right of $ t $, that does not have a $ 1 $ in the block $ A_t $. It is straightforward to deduce that $ N=t+a_t $. 
-			
-			From there, we can say:
-				\[a_{t+m}\le a_t-m\text{ and }a_{t-m}\le a_t+m\]
-			So,
-			\begin{align*}
-				2017=\sum a_i &\le (a_t+t-1) +\dots 1 \\
-				\implies 2017 &\le \frac{N(N-1)}{2}\\
-				\implies N&\ge 65
-			\end{align*}
-			
-			We know that the score, $ S= \sum C_ka_k $. where $ a_i $ is strictly decreasing and $ C_i $ is non decreasing. So the maximum sum would have $ C_i=K $ for some constant (by rearrangement inequality). And to have $ K $ maximum, we need $ N $ minimum or $ N=64 $. 
-			
-			And if $ j>k $, the same reason holds. So $ N=65, a_1=63, a_2=62\dots a_63=1 $. But we need another $ a_i=1 $, that has to be on its own. 
-		\end{solution}
+\begin{solution}[Grid Representation] We put the information in a grid in the
+    usual manner. We take the configuration for which the score (which we
+    define to be the total amount the university has to pay) is maximum.
+
+    \begin{solution_def} 
+        Let $ C_i $ be the price of the dish $ i $. Let $ P_j
+        $ be the pair of dishes $ j $ ordered.  
+    \end{solution_def}
+
+    We now ``sort'' the grid in the following way: 
+
+    \begin{itemize} 
+        \item Sort the columns first, from the least expensive to the most.  
+        \item Now we have $ 2017 $ binary strings as rows. We sort them
+            decreasingly from top to bottom.  
+    \end{itemize}
+
+    We end up with something like this: \figdf{.3}{USA_TST_2018_P3_1}{}
+
+    \begin{solution_def} 
+        We make some sets:\[ A_i=\{x| x \text{ ordered dish }
+        i \text{ but didn't order any of the dishes } j<i\} \]Let $ a_i = |A_i| $.
+        We also call $ A_i $ block, the $ x $th rows with $ x\in A_i $. It is easy
+        to see that the committee has to pay for dish $ i $ $ a_i $ times.
+    \end{solution_def}
+
+    Take a $ j $ such that $ a_j=0 $.  If $ j<k $, let 
+    \[S_j = \{x\mid \text{In the } j^{th} \text{ column, there
+    is a } 1 \text{ in the set of the rows from } A_x \}\]
+
+    \figdf{.3}{USA_TST_2018_P3_2}{} 
+
+    In the example of the previous diagram, $ S_4 = \{1, 2, 3\} $\\
+
+    Take the largest element of $ S_j $, namely $ t $. We want to move the $ 1
+    $ in the $ A_t $ block of column $ j $ to another column to the right.
+    Notice that this won't decrease the score, because for each of the
+    mathematician after the block $ A_t $, the score would be non decreasing.
+    If we could do this, we could do this inductively, moving the $ j $th
+    column to the left each move, eventually making it disappear. \\
+
+    So suppose we can't do this. So there is no column on the right of $ t $,
+    that does not have a $ 1 $ in the block $ A_t $. It is straightforward to
+    deduce that $ N=t+a_t $. \\
+
+    From there, we can say: \[a_{t+m}\le a_t-m\text{ and }a_{t-m}\le a_t+m\]
+    So, 
+
+    \begin{align*} 
+        2017=\sum a_i &\le (a_t+t-1) +\dots 1 \\ 
+        \implies 2017 &\le \frac{N(N-1)}{2}\\ 
+        \implies N&\ge 65 
+    \end{align*}
+
+    We know that the score, $ S= \sum C_ka_k $. where $ a_i $ is strictly
+    decreasing and $ C_i $ is non decreasing. So the maximum sum would have $
+    C_i=K $ for some constant (by rearrangement inequality). And to have $ K $
+    maximum, we need $ N $ minimum or $ N=64 $. \\
+
+    And if $ j>k $, the same reason holds. So $ N=65, a_1=63, a_2=62\dots
+    a_{63}=1 $. But we need another $ a_i=1 $, that has to be on its own.
+\end{solution}

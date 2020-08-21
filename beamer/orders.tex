@@ -1,0 +1,48 @@
+% !TEX program = xelatex
+\documentclass[compress]{beamer}
+
+\usepackage[english]{babel}
+\usepackage{metalogo}
+\usepackage{listings}
+\usepackage{fontspec}
+\usepackage{graphicx}
+
+\usetheme{NordWhite}
+
+\setsansfont{Andika New Basic}
+\setmainfont{Yanone Kaffeesatz}
+\setmonofont{Share Tech Mono}
+
+\AtBeginSection[] {
+    \begin{frame}[c,noframenumbering,plain]
+        \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/show/hide]
+    \end{frame}
+}
+
+\AtBeginSubsection[] {
+    \begin{frame}[c, noframenumbering,plain]
+        \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide]
+    \end{frame}
+}
+
+\title{Orders modulo a prime}
+\subtitle{How to make life easier}
+\author{M Ahsan Al Mahir}
+\date{\today}
+
+\begin{document}
+\begin{frame}[plain,noframenumbering]
+    \maketitle
+\end{frame}
+
+\section{Orders}
+\subsection{Fermat's Little Theorem}
+
+\begin{frame}
+    We all know the little theorem
+    \[a^{\phi(n)} \equiv 1\ \left(\text{mod } n\right) \] 
+\end{frame}
+
+\subsection{Lowest such power}
+
+\end{document}

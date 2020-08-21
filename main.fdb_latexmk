@@ -1,34 +1,34 @@
 # Fdb version 3
-["makeindex cat.idx"] 1597844160 "cat.idx" "cat.ind" "cat" 1597844163
-  "cat.idx" 1597844163 512 5039dc63e0b8e265ac7f8f1c2003dbe4 "pdflatex"
+["makeindex cat.idx"] 1597851039 "cat.idx" "cat.ind" "cat" 1597945232
+  "cat.idx" 1597945232 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
-  "cat.ilg"
   "cat.ind"
-["makeindex main.idx"] 1597778784 "main.idx" "main.ind" "main" 1597844163
-  "main.idx" 1597844162 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "cat.ilg"
+["makeindex main.idx"] 1597778784 "main.idx" "main.ind" "main" 1597945232
+  "main.idx" 1597945232 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
-["makeindex prob.idx"] 1597844160 "prob.idx" "prob.ind" "prob" 1597844163
-  "prob.idx" 1597844163 400 19a3eb878d711846d74927b492f45fe0 "pdflatex"
+["makeindex prob.idx"] 1597944332 "prob.idx" "prob.ind" "prob" 1597945232
+  "prob.idx" 1597945232 86 e4262d3f7207893fd09a621928e87d26 "pdflatex"
   (generated)
-  "prob.ilg"
   "prob.ind"
-["makeindex strat.idx"] 1597844160 "strat.idx" "strat.ind" "strat" 1597844163
-  "strat.idx" 1597844163 587 45b2f794a8b973c4dfc023edb01583a0 "pdflatex"
+  "prob.ilg"
+["makeindex strat.idx"] 1597940215 "strat.idx" "strat.ind" "strat" 1597945232
+  "strat.idx" 1597945232 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "strat.ind"
   "strat.ilg"
-["makeindex thm.idx"] 1597844160 "thm.idx" "thm.ind" "thm" 1597844163
-  "thm.idx" 1597844163 270 3f034be131eb64d96a69108da8f1e238 "pdflatex"
+["makeindex thm.idx"] 1597851039 "thm.idx" "thm.ind" "thm" 1597945232
+  "thm.idx" 1597945232 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "thm.ilg"
   "thm.ind"
-["pdflatex"] 1597844162 "main.tex" "main.pdf" "main" 1597844163
-  "/home/ahsan/texmf/tex/latex/local/stylesheets/macros.sty" 1597779304 6869 0006d8280d2373bc33fa8655f9b9f083 ""
+["pdflatex"] 1597945231 "main.tex" "main.pdf" "main" 1597945232
+  "/home/ahsan/texmf/tex/latex/local/stylesheets/macros.sty" 1597846652 6357 4f511046b7cf5e099dbde535fa742674 ""
   "/home/ahsan/texmf/tex/latex/local/stylesheets/mycolors.sty" 1597396088 889 e1bdd45ed5bc9780bc4d7d3ca3e98a49 ""
-  "/home/ahsan/texmf/tex/latex/local/stylesheets/newstyle.sty" 1597779304 2941 05bb28cda3d3a49b68e30df2dd4b5921 ""
-  "/home/ahsan/texmf/tex/latex/local/stylesheets/tcbs.sty" 1597777198 7745 e23123026f33c70031c502e1fbbcf6ea ""
+  "/home/ahsan/texmf/tex/latex/local/stylesheets/newstyle.sty" 1597847916 2998 45d732da35c91a2f71b5fcc32eaba2ed ""
+  "/home/ahsan/texmf/tex/latex/local/stylesheets/tcbs.sty" 1597846654 6817 7ed92f440a2dca778bc01460f102a8db ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1591545468 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1591545468 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm" 1591545468 3072 19a65fbc725cfc66f5a5fc183b9d418b ""
@@ -58,8 +58,6 @@
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb" 1591545468 99823 751429c47edf4a7fddc95e89caf22748 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb" 1591545468 93900 a2f71b17e4843e705710af210010eac4 ""
   "/usr/share/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb" 1591522338 25127 0f921359adc22e3a8c6368d4f349f585 ""
-  "/usr/share/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb" 1591522338 25336 d135e63f9368b9204815755abad3f346 ""
-  "/usr/share/texmf-dist/fonts/type1/public/hfbright/hfbrbs10.pfb" 1591522338 55166 5e2babdc8b661f5b67fd2775c8b6f50e ""
   "/usr/share/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb" 1591522338 34889 a5ba8b20a45b3437534c87396d980b48 ""
   "/usr/share/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb" 1591522338 34876 8d4b38ed6a8c31221cdb5873a0ca9f5c ""
   "/usr/share/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb" 1591522338 41093 104c39afc438ce3e69f72093c24579bd ""
@@ -306,29 +304,32 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1591545468 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1595320845 4724469 fae8ba91363d50b5e13d5b17ff985631 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1595320749 2514048 4d8b6b231cc5fcd4481bfa5e707db3f3 ""
-  "cat.ind" 1597844160 546 b64166613ec2986124716f95f9fbc503 "makeindex cat.idx"
-  "combi/sec3_sets.aux" 1597844163 12657 d9a2210209751b68c6605bcca1f55890 "pdflatex"
-  "combi/sec3_sets.tex" 1597324481 11068 fe41ca599f99912789617b3ad12d735d ""
-  "main.aux" 1597844163 877 05c51acc533801b005e9676e3ca78ee5 "pdflatex"
+  "Pics/apmo_2019_p3_and_IGO_2019_p4.pdf" 1596739367 6690 7c9ad1c7b0752d3b4c09a3c231a787e6 ""
+  "Pics/apmo_2019_p3_and_IGO_2019_p4_0.pdf" 1597944279 5182 a19971e977f20adf4f99f89248b19ac1 ""
+  "Pics/apmo_2019_p3_and_IGO_2019_p4_1.pdf" 1596739367 5362 9fb42eaf3265ce436d3cd067497fefd7 ""
+  "cat.ind" 1597851039 0 d41d8cd98f00b204e9800998ecf8427e "makeindex cat.idx"
+  "geo/bigpics/1_parallels_to_median_and_stuffs.aux" 1597945232 5304 646984165475cdabefa2fd84ab8b8f03 "pdflatex"
+  "geo/bigpics/1_parallels_to_median_and_stuffs.tex" 1597945231 2099 0d49fdf5abe784dbdd4db251527b8730 ""
+  "main.aux" 1597945232 906 4e23847bb984e916640c0756f46ae479 "pdflatex"
   "main.ind" 1597778784 0 d41d8cd98f00b204e9800998ecf8427e "makeindex main.idx"
-  "main.out" 1597844163 287 f7c4927509d7ea76af90ccf5d7381766 "pdflatex"
-  "main.tex" 1597844156 2219 14cd382bf6b91ee8e85a7854b03f532a ""
-  "main.toc" 1597844163 357 e226c4d74d391a5a19a35cef91f49e48 "pdflatex"
+  "main.out" 1597945232 131 a28239a9cbf9dba755adbe6666430c2f "pdflatex"
+  "main.tex" 1597941627 2219 98965300acdc49cbab03befcc0612eaa ""
+  "main.toc" 1597945232 154 09117141bab290dc7d505db71bc01a58 "pdflatex"
   "preamble.sty" 1597779302 1145 e9d3a8011eefd9d4cc68c10b0f4db9d6 ""
-  "prob.ind" 1597844160 487 d21089aeab825dfc396807f87836ea8d "makeindex prob.idx"
-  "strat.ind" 1597844160 769 91687adcadf30a7c0b26ef3799940caf "makeindex strat.idx"
-  "thm.ind" 1597844160 350 9d40089789d0915c01637842cf335b47 "makeindex thm.idx"
+  "prob.ind" 1597944332 130 54e12cdd8b3f593ed9341b57d0ac578d "makeindex prob.idx"
+  "strat.ind" 1597940215 0 d41d8cd98f00b204e9800998ecf8427e "makeindex strat.idx"
+  "thm.ind" 1597851039 0 d41d8cd98f00b204e9800998ecf8427e "makeindex thm.idx"
   (generated)
-  "listofprobs.tex"
-  "listoftheos.tex"
-  "main.out"
-  "combi/sec3_sets.aux"
-  "main.pdf"
-  "main.toc"
-  "prob.idx"
-  "main.aux"
-  "strat.idx"
-  "main.idx"
   "cat.idx"
+  "strat.idx"
   "main.log"
+  "main.idx"
+  "main.toc"
   "thm.idx"
+  "listofprobs.tex"
+  "geo/bigpics/1_parallels_to_median_and_stuffs.aux"
+  "prob.idx"
+  "main.pdf"
+  "main.out"
+  "listoftheos.tex"
+  "main.aux"

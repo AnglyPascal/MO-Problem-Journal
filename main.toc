@@ -1,5 +1,2 @@
 \contentsline {chapter}{Contents}{1}{section*.1}%
-\contentsline {section}{\numberline {0.1}Sets}{2}{section.0.1}%
-\contentsline {subsection}{\numberline {0.1.1}Lemmas}{2}{subsection.0.1.1}%
-\contentsline {subsection}{\numberline {0.1.2}Extremal Set Theory}{4}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {0.1.3}Problems}{5}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {0.0.1}Parallel lines to the $ A $-median}{2}{subsection.0.0.1}%
