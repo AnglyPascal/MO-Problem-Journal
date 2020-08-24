@@ -1,4 +1,12 @@
 \babel@toc {english}{}
-\beamer@sectionintoc {1}{Orders}{2}{0}{1}
-\beamer@subsectionintoc {1}{1}{Fermat's Little Theorem}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Lowest such power}{5}{0}{1}
+\beamer@sectionintoc {1}{Recap}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Euler and Fermat's Theorem}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Modular Inverses}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Bezout's Identity}{17}{0}{1}
+\beamer@sectionintoc {2}{Orders}{19}{0}{2}
+\beamer@subsectionintoc {2}{1}{Why do we care?}{20}{0}{2}
+\beamer@subsectionintoc {2}{2}{So what is ``Order''?}{27}{0}{2}
+\beamer@subsectionintoc {2}{3}{Important Properties of Order}{32}{0}{2}
+\beamer@subsectionintoc {2}{4}{Usage in Problems}{50}{0}{2}
+\beamer@subsectionintoc {2}{5}{Something more fundamental}{83}{0}{2}
+\beamer@subsectionintoc {2}{6}{Conclusion}{94}{0}{2}

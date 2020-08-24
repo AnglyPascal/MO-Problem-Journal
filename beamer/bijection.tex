@@ -6,8 +6,9 @@
 \usepackage{listings}
 \usepackage{fontspec}
 \usepackage{graphicx}
+\usepackage{mathtools}
 
-\usetheme{Nord}
+\usetheme{NordWhite}
 
 \setsansfont{Andika New Basic}
 \setmainfont{Yanone Kaffeesatz}
@@ -213,9 +214,25 @@
 
     \pause\vspace{1em}
 
-    We solve it by finding a bijection between \texttt{choosing $k$ balls from
-    a set of $n$ balls} and \texttt{removing $n-k$ balls from the set of $n$
-    balls to be left with $k$ balls}.
+    We solve it by finding a bijection between \textcolor{NordBlue}{choosing
+        $k$ balls from a set of $n$ balls} and \textcolor{NordBlue}{removing
+        $n-k$ balls from the set of $n$ balls to be left with $k$ balls}.
+\end{frame}
+
+\begin{frame}
+    Another example would be the following identity:
+    \[{n+1 \choose k+1} = {n \choose k+1} + {n \choose k}\]
+
+    \pause\vspace{1em}
+
+    We can solve it by thinking about taking $k+1$ balls from $n+1$ balls as
+    taking the ball no. $1$ and then taking $k$ balls from the rest of the
+    $n$ balls, or not taking the ball no. $1$ and taking $k+1$ balls from the
+    $n$ balls.
+
+    \pause\vspace{1em}
+
+    Where did we use bijection?  
 \end{frame}
 
 
@@ -307,6 +324,84 @@
     Yes, \textcolor{NordBrightBlue}{we found a bijection from the set of ways
     to write $n$ between the set of binary numbers of length $n-1$.} And the
     second set is MUCH easier to compute.
+\end{frame}
+
+\begin{frame}
+    Let's do another similar problem. \vspace{1em}
+
+    \textcolor{NordOrange}{
+        In how many ways can $n$ be written as the sum of $k$ non negative
+        integers?
+    }
+
+    \pause\vspace{1em}
+
+    Like the previous example, \textcolor{NordBlue}{we have $n $ $1$'s, and we
+    want to put $k-1$ either $+$ or $)+($ between them} to group them into
+    numbers that add upto $n$.  But this time \textcolor{NordRed}{we are
+    allowed to put two $)+($'s side by side.}
+
+    \pause\vspace{1em}
+
+    Why?
+
+    \pause\vspace{1em}
+
+    \textcolor{NordBlue}{Because we also need to count the sum when some of
+    the integers are $0$, and $)+(\ )+($ will produce a $0$ in the middle.}
+\end{frame}
+
+\begin{frame}
+    That's why, we first make $n+k-1$ spaces:
+    \textcolor{NordRed}{
+        \[\underbrace{\textunderscore\textunderscore \ \
+                \textunderscore\textunderscore \ \ \dots
+        \textunderscore\textunderscore}_{n+k-1 \text{ dashes}} \] 
+    }
+
+    \pause\vspace{1em}
+    
+    And put $k-1$ $)+($'s in some of them. What will happen then?
+
+    \pause\vspace{1em}
+
+    \textcolor{NordRed}{
+        \[\left(\textunderscore\textunderscore )+( \textunderscore\textunderscore
+        \dots)+\left(\right) + ( \textunderscore\textunderscore\right) \] 
+    }
+
+    \pause\vspace{1em}
+    
+    \textcolor{NordBlue}{We will have $k$ different groups of spaces, some of
+    them being empty.} 
+
+    \pause\vspace{1em}
+
+    And if we put a $1$ in each of the $\textunderscore\textunderscore$, we will
+    get $k$ different nonnegative integers adding upto $n$!
+\end{frame}
+
+\begin{frame}
+    So how many ways are there?
+
+    \pause\vspace{1em}
+
+    We chose $k-1$ spaces to put $)+($ on from $n+k-1$ choices. So the answer
+    is?
+
+    \pause\vspace{1em}
+
+    \[\boxed{{n+k-1 \choose k-1}}\]
+
+    \pause\vspace{1em}
+
+    Where did we use bijection here?
+
+    \pause\vspace{1em}
+
+    We found a bijection between \textcolor{NordBlue}{the set of $k$
+    non-negative integers adding up to $n$} and \textcolor{NordBlue}{the
+    number of ways to select $k-1$ items from $n+k-1$ choices}.
 \end{frame}
 
 
@@ -526,11 +621,11 @@
     \textcolor{NordBlack!30!NordWhite}{(after induction though, always apply
     induction at the very beginning)} and see if you can get anything nice :D
 
-    \pause\vspace{1em}
+    % \pause\vspace{1em}
 
-    \textcolor{NordRed}{Happy Problem Solving and Good Luck for TST}
+    % \textcolor{NordRed}{Happy Problem Solving and Good Luck for TST}
 
-    \textcolor{NordBlack!30!NordWhite}{(you will need it, a lot)}
+    % \textcolor{NordBlack!30!NordWhite}{(you will need it, a lot)}
 \end{frame}
 
 

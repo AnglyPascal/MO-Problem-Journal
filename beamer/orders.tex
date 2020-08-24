@@ -25,7 +25,9 @@
     \end{frame}
 }
 
-\title{Orders modulo a prime}
+\newcommand{\gap}{\pause\vspace{1em}}
+
+\title{Orders Modulo A Prime}
 \subtitle{How to make life easier}
 \author{M Ahsan Al Mahir}
 \date{\today}
@@ -35,14 +37,534 @@
     \maketitle
 \end{frame}
 
-\section{Orders}
-\subsection{Fermat's Little Theorem}
+\section{Recap}
+
+\subsection{Euler and Fermat's Theorem}
 
 \begin{frame}
-    We all know the little theorem
-    \[a^{\phi(n)} \equiv 1\ \left(\text{mod } n\right) \] 
+    We all know the following theorem, right?
+    \[a^{\phi(n)} \equiv 1 \ (\text{mod } n)\]
+    Where $\phi(n)$ is the number of numbers that are coprime to $n$ and are
+    smaller than $n$. 
+
+    \gap
+
+    We can use this theorem in the following way:
+    \[a^m \equiv a^{m \ (\text{mod } \phi(n))} \ (\text{mod } n)\] 
+
 \end{frame}
 
-\subsection{Lowest such power}
+\begin{frame}
+    So for example, if $n = 12, \phi(12) = 4$ and so:
+    \[7^{13} \equiv 7^{13 \ (\text{mod } 4)} \equiv 7^1 \ (\text{mod } 12)\] 
+\end{frame}
+
+\subsection{Modular Inverses}
+
+\begin{frame}
+    If $a$ and $n$ are \texttt{coprime integers}, then there exists a positive integer
+    $b<n$ such that 
+    \[ab \equiv 1 \ (\text{mod } n)\]
+
+    \gap 
+
+    Why do we need inverses? \pause We can use them in place of division by
+    $a$:
+
+    \[\frac{1}{a} \equiv b \ (\text{mod } n)\]
+
+    \gap
+
+    So adding or multiplying by $\frac{1}{a}$ is just adding or multiplying by
+    $b$ modulo $n$.
+\end{frame}
+
+\begin{frame}
+    So if there are two integers $s, t$ such that 
+    \[a^s \equiv a^t \ (\text{mod } n)\]
+    then we can say
+    \[a^{s-t} \equiv 1 \ (\text{mod } n)\]
+
+    \gap
+
+    \textcolor{NordRed}{In other words, if $a$ is coprime to $n$, we can
+    divide congruences modulo $n$ by $a$.}
+\end{frame}
+
+\begin{frame}
+    Note that if $\gcd\left(a, n\right)\neq 1$, then it doesn't hold. 
+
+    \gap
+
+    $6$ can never divide $2a - 1$. 
+
+    \gap
+    Just like that $\gcd(n, a)$ must divide $1$, because it divides $ab-1$.
+    And so the gcd has to be $1$.
+\end{frame}
+
+\subsection{Bezout's Identity}
+
+\begin{frame}
+    Another useful identity to remember is \textcolor{NordOrange}{for all
+        integer $a, b$, we will
+        find two integers $x, y$ such that 
+        \[ax + by = \gcd\left(a, b\right) \]
+    } 
+\end{frame}
+
+
+\section{Orders}
+\subsection{Why do we care?}
+
+\begin{frame}
+    \textcolor{NordOrange}{
+        Suppose you are told to count the remainder of $10^{561}$ when divided by
+        $73$, how would you do it?
+    }
+
+    \gap
+
+    One trick you learned in \textbf{Fermat's Little Theorem} is to reduce the
+    exponent by $\phi(73)$ which happens to be $72$.
+
+    \gap
+
+    You can do:
+    \begin{align*}
+        10^{72} \equiv 1\ (\text{mod } 73)\\
+        \text{ and, } 561 \equiv 57\ (\text{mod } 72)\\
+        \text{so, } 10^{561} \equiv 10^{57} \ (\text{mod } 73) 
+    \end{align*}
+
+    \gap
+    But then again, you need to count \textcolor{NordRed}{$10^{57}$} which is
+    near impossible!!
+\end{frame}
+
+\begin{frame}
+    But what if I told you,
+    \textcolor{NordRed}{\[10^8  \equiv 1 \ (\text{mod } 73)\ \ ?\]}
+
+    \gap
+
+    Then your life would become so easy that you could just write
+    \[10^{561} \equiv 10^{561 \ (\text{mod } 8)} \equiv 10^1 \ (\text{mod } 73)\] 
+\end{frame}
+
+\subsection{So what is ``Order''?}
+
+\begin{frame}{Definition}
+    \textcolor{NordBrightBlue}{If $a$ and $n$ are coprime integers, then the
+        \textcolor{NordRed}{Order of $a$ modulo $n$} is the smallest integer $m$ such
+        that 
+        \textcolor{NordRed}{\[a^m \equiv 1 \ (\text{mod } n)\]}
+    }
+
+    \pause
+
+    We write it as \textcolor{NordRed}{\[\text{Ord}_n(a) = m\]}
+
+    \pause
+
+    In our previous example, since $10^8 \equiv 1 \ (\text{mod } 73)$, we say
+    \[\text{Ord}_{73}(10) = 8\] 
+\end{frame}
+
+\begin{frame}
+    As more example, below are given the orders of $a$ modulo
+    $11$ and $13$:
+    \[
+        \begin{array}{r|rr}
+            a & \text{mod $11$} & \text{mod $13$} \\ \hline
+            1  &  1 &  1 \\
+            2  & 10 & 12 \\
+            3  &  5 &  3 \\
+            4  &  5 &  6 \\
+            5  &  5 &  4 \\
+            6  & 10 & 12
+        \end{array}
+        \qquad
+        \begin{array}{r|rr}
+            a & \text{mod $11$} & \text{mod $13$} \\ \hline
+            7  & 10 & 12 \\
+            8  & 10 &  4 \\
+            9  &  5 &  3 \\
+            10 &  2 &  6 \\
+            11 &    & 12 \\
+            12 &    &  2
+        \end{array}
+    \]
+
+\end{frame}
+
+\subsection{Important Properties of Order}
+
+\begin{frame}
+    An interesting thing you might have noticed in the last slide: all of the
+    orders modulo $11$ were factors of $10 = \phi(11)$, that are $1, 2, 5,
+    10$.
+
+    \gap
+
+    Is this is a coincident or are there more to it?
+\end{frame}
+
+\begin{frame}
+    It turns out it is a fundamental property of orders:
+
+    \gap
+
+    \textcolor{NordRed}{If $m$ is the order of $a$ modulo $n$, then 
+    $m | \phi(n)$}
+
+    \gap
+
+    How do you prove it? 
+
+    \gap
+
+    Suppose $m\not|\ \phi(n)$. So $\phi(n) = mq + r$ for
+    some $q$ and $r$ with $r <m$. (Euclidean division)
+
+    \gap
+
+    Which gives us:
+
+    \[a^{\phi(n)} \equiv a^{mq + r} \equiv {\left(a^m\right)}^q \times a^r \equiv a^r \equiv
+    1 \ (\text{mod } n)\] 
+
+    But $m$ is the smallest such positive number, so $r$ can't be smaller than $m$
+    unless $r =0$ !
+\end{frame}
+
+\begin{frame}
+    \textcolor{NordOrange}{
+        In fact if $m = \text{Ord}_n(a)$ and for some $x$, 
+        \[a^x \equiv 1 \ (\text{mod } n)\]
+        then $m | x$
+    }
+
+    \vspace{1em}
+
+    I leave its proof to you!
+\end{frame}
+
+\begin{frame}
+    \textcolor{NordOrange}{If for some positive integer $s, t$ we have 
+        \[a^s \equiv a^t \ (\text{mod } n)\] then $s \equiv t \ \left(\text{mod }
+        \text{Ord}_n(a)\right)$ 
+    }
+
+    \gap
+
+    We solve it by remembering that $a^{s-t} \equiv 1 \ (\text{mod } n)$ and
+    that $\text{Ord}_n(a) | s-t$. So,
+    \[s \equiv t \ (\text{mod } \text{Ord}_n(a))\] 
+
+\end{frame}
+
+\begin{frame}
+    Now we use the idea of orders to prove the following very important
+    theorem:
+
+    \vspace{1em}
+
+    \textcolor{NordRed}{For an odd prime $p$, if $a^2 \equiv -1 \ (\text{mod }
+        p)$, then 
+    \[4|p-1\]}
+
+    \gap
+
+    Can you solve it using the properties discussed earlier?
+\end{frame}
+
+\begin{frame}
+    First we sqaure up the congruence to get
+    \textcolor{NordRed}{\[\left(a^2\right) ^2 = a^4 \equiv 1 \ (\text{mod } p)\] }
+
+    \pause
+
+    \textcolor{NordBrightBlue}{Then we can say $\text{Ord}_p(a) | 4$ and so
+    $\text{Ord}_p(a)$ is either $1, 2, 4$.} 
+
+    \gap 
+
+    But $\text{Ord}_p(a)$ can't be $1, 2$. Can you see why?
+
+    \gap
+
+    Because then $a^2$ would not be congruent to $-1$ modulo $p$. 
+
+    \gap
+
+    So \textcolor{NordRed}{$\text{Ord}_p(a) = 4$} and that gives us:
+    \[4|\phi(p) \implies 4|p-1\] 
+\end{frame}
+
+\subsection{Usage in Problems}
+
+\begin{frame}
+    Now that we know what orders are, we can try using them in solving
+    problems. Consider the following problem:
+
+    \gap
+
+    \textcolor{NordOrange}{Prove that for all integers $a, n$, we have $n|\phi(a^n-1)$.}
+
+    \gap
+
+    A lot of number theory problems need to be solved by cleverly finding
+    which modulo to take. This is no exception.
+
+    \gap
+
+    From the idea of orders, we know that $\text{Ord}_m | \phi\left(m\right) $
+    right?
+
+    \gap
+
+    \textcolor{NordBrightBlue}{
+        So we want to make $n$ as the order of some integer modulo $a^n-1$.
+    }
+
+\end{frame}
+
+\begin{frame}
+    It turns out $a$ is the integer that we are looking for!! How?
+
+    \gap
+
+    We have $a^n \equiv 1 \ (\text{mod } a^n-1)$. Now for any integer $m < n$,
+    we have 
+    \[a^m -1 < a^n-1 \implies a^n-1\not| a^m-1\]
+
+    \pause
+
+    So $n$ is the smallest integer such that $a^n \equiv 1 \ (\text{mod }
+    a^n-1)$, and so 
+    \textcolor{NordRed}{\[\text{Ord}_{a^n-1}(a) = n\] }
+
+    \gap
+
+    And so we have 
+\[n \left| \phi(a^n-1)\right.\] 
+\end{frame}
+
+\begin{frame}
+    Another problem:
+
+    \vspace{1em}
+
+    \textcolor{NordOrange}{Prove that if $p$ is a prime number, then every
+    prime divisor of $2^p-1$ is greater than $p$.}
+
+    \gap
+
+    A general tip for these kind of ``everything is greater than'' problem, it
+    is usually helpful to assume the contrary. 
+
+    \gap
+
+    In our case, it will help if instead of \texttt{showing that all the prime
+        factors are indeed greater than $p$}, \textcolor{NordBrightBlue}{we assume
+    that there is a prime factor $q$ smaller than $p$}, and show contradiction.
+\end{frame}
+
+\begin{frame}
+    So suppose there exists a prime $q<p$ such that 
+    \[q|2^p-1 \implies 2^p \equiv 1 \ (\text{mod } q)\] 
+
+    \gap
+
+    We use our knowledge of orders and say that
+    \textcolor{NordBrightBlue}{there is an integer $n\le q-1$ such that $2^n
+    \equiv 1 \ (\text{mod } q)$}. Do you see the complication here?
+
+    \gap
+
+    Yes! If such $n$ existed, then \textcolor{NordRed}{that would mean $n|p$}!
+    But it can't be true, since \textcolor{NordRed}{$n\le q-1 < p$ , but
+    divides $p$}, a prime number. 
+
+    \gap
+
+    Wait, but $1|p$, so if $n=1$, it may happen right? 
+
+    \gap
+
+    No! That would mean \textcolor{NordRed}{$q|2^1-1$} which means $q|1$...
+\end{frame}
+
+\begin{frame}
+    So there can't be a prime $q < p$ that divides $2^p-1$, and our problem is
+    solved!
+\end{frame}
+
+\begin{frame}
+    Another problem similar to the previous one:
+
+    \vspace{1em}
+
+    \textcolor{NordOrange}{Prove that if $p$ is a prime, then there is a prime
+    greater than $p$ that divides $p^p-1$.}
+
+    \gap
+
+    Another prime exponent! Remember what we did just a while ago?
+
+    \gap
+
+    We take a prime smaller than $q$ that divides $p^p-1$. We will have that 
+    \textcolor{NordRed}{\[\text{Ord}_q(p) | p\]}
+
+    \pause
+
+    And so $\text{Ord}_q(p) = 1$ and:
+    \textcolor{NordRed}{\[q|p-1\]} 
+\end{frame}
+
+\begin{frame}
+    Do you remember the factorization formula of $a^n-1$??
+    \textcolor{NordBrightBlue}{ \[a^n-1 = (a-1)\left(a^{n-1} + a^{n-2} \dots +
+    a + 1\right) \] }
+
+    \pause
+
+    So, 
+    \[p^p-1 = \left(p-1\right) \left(p^{p-1} + p^{p-2} \dots  + p+1\right) \] 
+
+    \pause
+
+    We have found that if $q<p$, and $q|p^p-1$, then $q|p-1$.
+    \textcolor{NordRed}{But what about the $\left(p^{p-1} + p^{p-2} \dots  +
+    p+1\right)$ part?} No smaller prime divides this number. 
+
+    \gap
+
+    So there \textcolor{NordBrightBlue}{must be a prime bigger than $p$ that
+    divides this number}!!
+\end{frame}
+
+\begin{frame}
+    Now \textcolor{NordOrange}{prove that there is a prime factor of $p^p-1$
+    of the form $pk+1$.}
+
+    \gap
+
+    Just before we proved that there is a prime $q$ larger than $p$ that
+    divides $p^p-1$. Then by order's properties, we need to have
+    \textcolor{NordRed}{\[\text{Ord}_q(p) = p \text{ or } \text{Ord}_q(p) = 1\]}
+
+    \pause
+
+    But it won't be $1$ ! \pause \textcolor{NordBrightBlue}{Because then
+    $q|p-1$, but $q$ is bigger than $p$}!
+
+    \gap
+
+    So \textcolor{NordRed}{the order of $p$ modulo $q$ is $p$, and so
+    $p|\phi(q)$}, which means $p|q-1$. 
+
+    \gap That means \textcolor{NordBrightBlue}{$q-1 = pk \implies q=pk+1$ for
+    some integer $k$}.
+
+\end{frame}
+
+
+\subsection{Something more fundamental}
+
+\begin{frame}
+    As you have seen, orders are really interesting when the modulo is a
+    prime. And since the order always divide $p-1$, a natural question comes
+    up:
+
+    \gap
+
+    \textcolor{NordRed}{When is the order equal to $p-1$?}
+
+    \gap
+
+    We have a special name for such $a$'s for which 
+    \[\text{Ord}_p(a) = p-1\] 
+\end{frame}
+
+\begin{frame}{Primitive Roots}
+    \textcolor{NordRed}{We call an integer $a$ smaller than $p$ a
+    \texttt{Primitive Root} modulo $p$ if the order of $a$ modulo $p$ is $p-1$.}
+
+    \gap
+
+    In our very first example, we saw that for $11$, the primitive roots mod
+    $11$ are 
+    \[2, 6, 7, 8\]\pause
+    And for $13$ the primitive roots mod $13$ are
+    \[2, 6, 7, 11\] 
+
+    \pause
+
+    We won't dive too deep into the world of primitive roots, since it is
+    really Huge, we will just see why they are so important!
+\end{frame}
+
+\begin{frame}
+    \textcolor{NordOrange}{If $g$ is primitive root modulo $p$, then the two
+        sets 
+        \[\left\{g^1, g^2 \dots g^{p-1}\right\} \text{ and } \left\{1, 2,
+        3\dots  p-1\right\}\] 
+        are equal in modulo $p$.
+    }
+
+    \gap
+
+    In the case of $11$, we can work it out by hand, if we take the primitive
+    root $2$ the left set becomes:
+
+    \textcolor{NordBrightBlue}{\[
+            \begin{array}{r|r}
+                g^k & \text{mod $11$} \\ \hline
+                2 & 2 \\
+                4 & 4  \\
+                8 & 8  \\
+                16 & 5 \\
+                32 & 10  \\
+            \end{array}\qquad
+            \begin{array}{r|r}
+                g^k & \text{mod $11$} \\ \hline
+                64 & 9 \\
+                128 & 7  \\
+                265 & 3  \\
+                512 & 6 \\
+                1024 & 1  \\
+            \end{array}
+    \]}
+\end{frame}
+
+\begin{frame}
+    So if we can find a primitive root, we can \textcolor{NordRed}{just keep
+        multiplying it to itself and get the whole set $\left\{1, 2, \dots
+    p-1\right\}$}. Pretty cool huh?
+\end{frame}
+
+\subsection{Conclusion}
+
+\begin{frame}
+    In short, orders are the smallest integer $m$ that gives us $a^m\equiv 1 \
+    (\text{mod } n)$, and they appear everywhere once you start looking for
+    them.
+\end{frame}
+
+\begin{frame}{Further Reading}
+    \textcolor{NordOrange}{$a^n\pm 1$} by Yufei Zhao
+
+    \gap
+
+    \textcolor{NordOrange}{Orders Modulo A Prime} by Evan Chen
+
+    \gap
+
+    \textcolor{NordOrange}{Topics in Number Theory: An Olympiad-Oriented
+    Approach} by Masum Billal and Amir Hossein Parvardi
+\end{frame}
 
 \end{document}
