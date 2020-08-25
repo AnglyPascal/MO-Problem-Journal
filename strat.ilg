@@ -1,6 +1,6 @@
 This is makeindex, version 2.15 [TeX Live 2020] (kpathsea + Thai support).
-Scanning input file strat.idx....done (1 entries accepted, 0 rejected).
-Sorting entries...done (0 comparisons).
-Generating output file strat.ind....done (6 lines written, 0 warnings).
+Scanning input file strat.idx....done (14 entries accepted, 0 rejected).
+Sorting entries....done (54 comparisons).
+Generating output file strat.ind....done (51 lines written, 0 warnings).
 Output written in strat.ind.
 Transcript written in strat.ilg.

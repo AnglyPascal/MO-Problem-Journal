@@ -1,41 +1,8 @@
 \ProvidesPackage{preamble}
 
-\title{
-    \Huge \textbf{BCS Question Bank}
-    \HRule{2pt} \\ [.5cm]\
-    \Large\signature\\[.5cm]\
-    \normalsize \today
-}
-
-%fancy font *_*
-\usepackage{cmbright}
-\usepackage[T1]{fontenc}
-\renewcommand*\familydefault{\sfdefault}
-
-
-%\usepackage{mathastext}
-%\usepackage[rm, light]{roboto}
-
-% \usepackage{eso-pic}                % put things into background 
-% \usepackage{lipsum}                 % for sample text
-% \usepackage{ifthen}
-
-% \AddToShipoutPicture{% from package eso-pic: put something to the background
-%     \AtPageLowerLeft{% start the bar at the left bottom of the page
-%         \color{NordBlue!80}\rule{1cm}{\LenToUnit\paperheight}%
-%     }%
-% }
-
-
-
-% margin
-\setlrmarginsandblock{6em}{6em}{1}
-\setulmarginsandblock{10em}{10em}{1}
-\checkandfixthelayout
-
 
 % indices
-\makeindex[name=cat, title=Categories, options= -s example_style.ist]
+\makeindex[name=def, title=Definition, options= -s example_style.ist]
 \makeindex[name=prob, title=Problems, options= -s example_style.ist]
 \makeindex[name=thm, title=Theorems, options= -s example_style.ist]
 \makeindex[name=strat, title=Strategies, options= -s example_style.ist]

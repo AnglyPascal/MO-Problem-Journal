@@ -1,76 +1,605 @@
 \begin{theindex}
 
-  \item AoPS, \hyperpage{7}
-  \item ARO 1979's Sharper Version, \hyperpage{20}
-  \item ARO 2005 P10.3, P11.2, \hyperpage{15}
-  \item AtCoder GC043 B, \hyperpage{11}
+  \item 169 P20, \hyperpage{132}
+  \item 2017 IGO Advanced P2, \hyperpage{196}
+  \item 2nd Olympiad of Metropolises, \hyperpage{290}
 
   \indexspace
 
-  \item Brazilian MO 2002, ARO 1979, \hyperpage{20}
+  \item A reformulation of Catalan's Numbers, \hyperpage{118}
+  \item All Russia 1999 P9.3, \hyperpage{306}
+  \item All Russia 2000 P11.7, \hyperpage{306}
+  \item All Russia 2000 P9.3, \hyperpage{306}
+  \item All Russia 2002 P11.6, \hyperpage{307}
+  \item All Russia 2014 P9.5, \hyperpage{343}
+  \item All Russia 2017 9.1, \hyperpage{48}
+  \item All Russian 2014 Grade 10 Day 1 P4, \hyperpage{258}
+  \item All Russian Olympiad 2016, Day2, Grade 11, P5, \hyperpage{144}
+  \item All Squares, \hyperpage{338}
+  \item American Mathematical Monthly E2309, \hyperpage{13}
+  \item AoPS, \hyperpage{21}, \hyperpage{104}, \hyperpage{112}, 
+		\hyperpage{261}, \hyperpage{289, 290}, \hyperpage{292}, 
+		\hyperpage{298, 299}, \hyperpage{305}, \hyperpage{307}, 
+		\hyperpage{313}
+  \item AoPS1, \hyperpage{247}
+  \item AoPS2, \hyperpage{296}
+  \item AoPS3, \hyperpage{292}
+  \item AoPS4, \hyperpage{293}
+  \item AoPS5, \hyperpage{298}
+  \item AoPS6, \hyperpage{304}
+  \item AoPS7, \hyperpage{305}
+  \item APMO 1991 P3, \hyperpage{161}
+  \item APMO 1999 P1, \hyperpage{72}
+  \item APMO 1999 P2, \hyperpage{72}
+  \item APMO 1999 P3, \hyperpage{196}, \hyperpage{252}
+  \item APMO 1999 P4, \hyperpage{338}
+  \item APMO 1999 P5, \hyperpage{61}
+  \item APMO 2008 P2, \hyperpage{80}
+  \item APMO 2008 P4, \hyperpage{352}
+  \item APMO 2012 P2, \hyperpage{113}
+  \item APMO 2014 P1, \hyperpage{348}
+  \item APMO 2014 P3, \hyperpage{348}
+  \item APMO 2014 P5, \hyperpage{302}
+  \item APMO 2015 P2, \hyperpage{133}
+  \item APMO 2015 P3, \hyperpage{73}
+  \item APMO 2017 P1, \hyperpage{78}
+  \item APMO 2017 P3, \hyperpage{77}
+  \item APMO 2017 P4, \hyperpage{354}
+  \item APMO 2018 P1, \hyperpage{229}
+  \item APMO 2018 P2, \hyperpage{169}
+  \item APMO 2018 P3, \hyperpage{66}
+  \item APMO 2018 P4, \hyperpage{66}
+  \item APMO 2019 P3, \hyperpage{317}
+  \item Archer - EChen M1P2, \hyperpage{262}
+  \item Archer - EChen M1P3, \hyperpage{248}
+  \item ARMO 2013 Grade 11 Day 2 P4, \hyperpage{289}
+  \item ARO 1979's Sharper Version, \hyperpage{33}
+  \item ARO 1993 P10.4, \hyperpage{91}
+  \item ARO 1999 P10.1, \hyperpage{55}
+  \item ARO 1999 P4, \hyperpage{89}
+  \item ARO 1999 P9.8, \hyperpage{38}
+  \item ARO 2005 P10.3, P11.2, \hyperpage{28}
+  \item ARO 2005 P10.8, \hyperpage{37}
+  \item ARO 2005 P9.4, \hyperpage{43}
+  \item ARO 2006 11.3, \hyperpage{82}
+  \item ARO 2007 P9.7, \hyperpage{122}
+  \item ARO 2008 P9.5, \hyperpage{107}
+  \item ARO 2011 P10.8, \hyperpage{89}
+  \item ARO 2011 P11.6, \hyperpage{121}
+  \item ARO 2013 P9.4, \hyperpage{59}
+  \item ARO 2013 P9.5, \hyperpage{49}
+  \item ARO 2014 P10.8, \hyperpage{122}
+  \item ARO 2014 P9.3, \hyperpage{59}
+  \item ARO 2014 P9.4, \hyperpage{196}
+  \item ARO 2014 P9.7, \hyperpage{121}
+  \item ARO 2014 P9.8, \hyperpage{46}
+  \item ARO 2016 P1, \hyperpage{112}
+  \item ARO 2016 P3, \hyperpage{110}
+  \item ARO 2017 P9.1, \hyperpage{39}
+  \item ARO 2018 10.3, \hyperpage{103}
+  \item ARO 2018 P10.1, \hyperpage{169}
+  \item ARO 2018 P10.2, \hyperpage{196}
+  \item ARO 2018 P10.4, \hyperpage{352}
+  \item ARO 2018 P11.1, \hyperpage{144}
+  \item ARO 2018 P11.2, \hyperpage{161}
+  \item ARO 2018 P11.4, \hyperpage{208}
+  \item ARO 2018 P11.5, \hyperpage{77}
+  \item ARO 2018 P11.6, \hyperpage{311}
+  \item ARO 2018 P9.1, \hyperpage{352}
+  \item ARO 2018 P9.5, \hyperpage{103}
+  \item AtCoder GC033 C, \hyperpage{37}
+  \item AtCoder GC043 B, \hyperpage{24}
+  \item Autumn Tournament, 2012, \hyperpage{244}
 
   \indexspace
 
-  \item China TST 2006, \hyperpage{10}
-  \item Codeforces 1270F, \hyperpage{17}
-  \item CodeForces 1379E, \hyperpage{18}
-  \item Codeforces 330D, \hyperpage{17}
-  \item CodeForces 744B, \hyperpage{11}
-  \item CodeForces 960/C, \hyperpage{14}
-  \item Codeforces 987E, \hyperpage{6}
-  \item Cody Johnson, \hyperpage{8}
+  \item Balkan MO 2017 P1, \hyperpage{342}
+  \item Balkan MO 2017 P3, \hyperpage{187}, \hyperpage{342}
+  \item BdMO 2019 P10, \hyperpage{69}
+  \item Belarus 2001, \hyperpage{42}
+  \item Bewarish 1, \hyperpage{188}
+  \item Binom 2, \hyperpage{7}
+  \item Binom1, \hyperpage{6}
+  \item Brazilian MO 2002, ARO 1979, \hyperpage{33}
+  \item Brazilian Olympic Revenge 2014, \hyperpage{109}
+  \item BrMO 2008, \hyperpage{344}
+  \item Bulgaria 1995, \hyperpage{167}
+  \item Bulgarian IMO TST 2004, Day 3, Problem 3, \hyperpage{104}
+  \item buratinogigle, \hyperpage{209}
+  \item buratinogigle Tough P1, \hyperpage{313}
+  \item buratinogigle's proposed problems for Arab Saudi team 2015, 
+		\hyperpage{189--191}, \hyperpage{251}
+  \item buratinogigle's proposed probs for Arab Saudi team 2015, 
+		\hyperpage{227}
 
   \indexspace
 
-  \item GQMO 2020 P4, \hyperpage{19}
+  \item CGMO 2010 P1, \hyperpage{13}
+  \item CGMO 2016 P3, \hyperpage{330}
+  \item China MO 2018 P2, \hyperpage{119}
+  \item China MO 2018 P5, \hyperpage{119}
+  \item China TST 1995 P5, \hyperpage{143}
+  \item China TST 2005, \hyperpage{345}
+  \item China TST 2006, \hyperpage{23}
+  \item China TST 2011, Quiz 2, D2, P1, \hyperpage{214}
+  \item China TST 2013 T2P2, \hyperpage{334}
+  \item China TST 2015 T1 D2 P3, \hyperpage{35}
+  \item China TST 2015 T1D2P1, \hyperpage{70}
+  \item China TST 2016 T3P2, \hyperpage{65}
+  \item China TST 2018 T1P3, \hyperpage{223}
+  \item China TST 2018 T2P4, \hyperpage{334}
+  \item China TST D2P2, Dual of the Hagge's Circle theorem, 
+		\hyperpage{214}
+  \item Codeforces 101954/G, \hyperpage{91}
+  \item Codeforces 1158D, \hyperpage{70}
+  \item Codeforces 1270F, \hyperpage{31}
+  \item CodeForces 1379E, \hyperpage{31}
+  \item Codeforces 330D, \hyperpage{31}
+  \item CodeForces 744B, \hyperpage{25}
+  \item CodeForces 960/C, \hyperpage{28}
+  \item Codeforces 987E, \hyperpage{20}
+  \item CodeForces 989B, \hyperpage{115}
+  \item CodeForces 989C, \hyperpage{115}
+  \item Cody Johnson, \hyperpage{22}
 
   \indexspace
 
-  \item IMO 1986 P3, \hyperpage{18}
-  \item India TST 2017 D1 P3, \hyperpage{13}
-  \item IOI 2007 P3, \hyperpage{15}
-  \item IOI Practice 2017, \hyperpage{5}
-  \item Iran TST 2018 P1, \hyperpage{5}
-  \item ISL 1994 C3, \hyperpage{7}
-  \item ISL 2003 C4, \hyperpage{13}
-  \item ISL 2005 C2, \hyperpage{5}
-  \item ISL 2006 C6, \hyperpage{21}
-  \item ISL 2012 C1, \hyperpage{7}
-  \item ISL 2014 A1, \hyperpage{8}
-  \item ISL 2014 N1, \hyperpage{17}
-  \item ISL 2014 N3, \hyperpage{9}
-  \item ISL 2016 C1, \hyperpage{5}
+  \item Dunno, \hyperpage{276}
 
   \indexspace
 
-  \item MEMO 2008, Team, P6, \hyperpage{7}
+  \item EGMO 2012 P3, \hyperpage{130}
+  \item EGMO 2015 P2, \hyperpage{85}
+  \item EGMO 2017 P2, \hyperpage{91}
+  \item EGMO 2017 P3, \hyperpage{59}
+  \item EGMO 2017 P5, \hyperpage{84}
+  \item Eight queens puzzle, \hyperpage{68}
+  \item ELMO 2017 P5, \hyperpage{42}
+  \item ELMO 2019 P3, \hyperpage{198}
+  \item European Mathematics Cup 2018 P1, \hyperpage{80}
+  \item European Mathematics Cup 2018 P2, \hyperpage{196}
+  \item European Mathematics Cup 2018 P3, \hyperpage{169}
 
   \indexspace
 
-  \item OIM 1994, PSMiC, \hyperpage{11}
+  \item Four Incenters in a Tangential Quadrilateral, \hyperpage{230}
 
   \indexspace
 
-  \item Polish OI, \hyperpage{14}
-  \item Putnam 2002 A3, \hyperpage{21}
+  \item Generalization, \hyperpage{46}
+  \item Generalization of Iran TST 2017 P5, \hyperpage{289}
+  \item Generalization of Mixtilinear Incirlce, \hyperpage{248}
+  \item Geodip, \hyperpage{231}
+  \item German TST 2004 E7P3, \hyperpage{45}
+  \item GQMO 2020 P3, \hyperpage{174}
+  \item GQMO 2020 P4, \hyperpage{32}
 
   \indexspace
 
-  \item Serbia TST 2015 P3, \hyperpage{16}
+  \item IGO 2014 S5, \hyperpage{242}
+  \item IGO 2017 Advance P3, \hyperpage{191}
+  \item IGO 2017 Advance P4, \hyperpage{195}
+  \item IGO 2018 A3, \hyperpage{65}
+  \item IGO 2018 A5, \hyperpage{196}
+  \item IGO 2019 A5, \hyperpage{203}
+  \item IGO 2019 Advanced P4, \hyperpage{317}
+  \item ILL 1985, \hyperpage{60}
+  \item IMO 1974 P2, \hyperpage{166}
+  \item IMO 1979 P3, \hyperpage{123}
+  \item IMO 1986 P3, \hyperpage{31}
+  \item IMO 1994 P5, \hyperpage{130}
+  \item IMO 1998 P3, \hyperpage{346}
+  \item IMO 2011 P2, \hyperpage{110}
+  \item IMO 2011 P4, \hyperpage{80}
+  \item IMO 2012 P2, \hyperpage{161}
+  \item IMO 2013 P3, \hyperpage{227}
+  \item IMO 2017 P2, \hyperpage{130}
+  \item IMO 2017 P5, \hyperpage{107}
+  \item IMO 2018 P4, \hyperpage{68}
+  \item IMO 2018 P6, \hyperpage{255}
+  \item IMO SL 1985, \hyperpage{80}
+  \item India 1995, \hyperpage{166}
+  \item India IMO Camp 2017, \hyperpage{114}
+  \item India Postals 2015 Set 2, \hyperpage{236}
+  \item India TST, \hyperpage{311}
+  \item India TST 2013 Test 3, P1, \hyperpage{110}
+  \item India TST 2017 D1 P3, \hyperpage{27}
+  \item Indian Postal Coaching 2011, \hyperpage{113}
+  \item Indian TST 2004, \hyperpage{54}
+  \item InfinityDots MO Problem 3, \hyperpage{207}
+  \item IOI 2007 P3, \hyperpage{28}
+  \item IOI 2016 P5, \hyperpage{111}
+  \item IOI 2018 P1, \hyperpage{123}
+  \item IOI Practice 2017, \hyperpage{19}
+  \item IOM 2017 P1, \hyperpage{282}
+  \item Iran 2005, \hyperpage{66}
+  \item Iran 2018 T1P1, \hyperpage{350}
+  \item IRAN 2nd Round 2016 P6, \hyperpage{292}
+  \item IRAN 3rd Round 2010 D3, P5, \hyperpage{292}
+  \item IRAN 3rd Round 2010 D3, P6, \hyperpage{301}
+  \item IRAN 3rd Round 2011 G5, \hyperpage{292}
+  \item Iran 3rd Round 2015 P5, \hyperpage{204}
+  \item IRAN 3rd Round 2016 G6, \hyperpage{299}
+  \item Iran 3rd Round 2016 N3, \hyperpage{340}
+  \item IRAN 3rd Round 2016 P1, \hyperpage{195}
+  \item IRAN 3rd Round 2016 P2, \hyperpage{292}
+  \item Iran 3rd Round G4, \hyperpage{274}
+  \item Iran 3rd Round G4 Generalized version, \hyperpage{274}
+  \item Iran 3rd Round Training 2016, \hyperpage{217}
+  \item Iran MO 3rd round 2017 mid-terms Geometry P3, \hyperpage{312}
+  \item Iran MO 3rd Round N3, \hyperpage{342}
+  \item Iran TST 2002 P3, \hyperpage{106}
+  \item Iran TST 2004 P4, \hyperpage{264}
+  \item Iran TST 2004 P6, \hyperpage{145}
+  \item Iran TST 2007 P2, \hyperpage{114}
+  \item Iran TST 2008 D3P1, \hyperpage{12}
+  \item Iran TST 2008 P12, \hyperpage{233}
+  \item IRAN TST 2009 P2, \hyperpage{345}
+  \item Iran TST 2009 P4, \hyperpage{145}
+  \item Iran TST 2009 P6, \hyperpage{50}
+  \item Iran TST 2012 P4, \hyperpage{104}
+  \item Iran TST 2013 D1P2, \hyperpage{14}
+  \item Iran TST 2014 T1P6, \hyperpage{301}
+  \item IRAN TST 2015 Day 2, P3, \hyperpage{294}
+  \item IRAN TST 2015 Day 3, P2, \hyperpage{288}
+  \item IRAN TST 2015 Day 3, P3, \hyperpage{240}
+  \item Iran TST 2015 P11, \hyperpage{341}
+  \item Iran TST 2015, P4, \hyperpage{341}
+  \item Iran TST 2017 D1P1, \hyperpage{115}
+  \item IRAN TST 2017 Day 1, P3, \hyperpage{288}
+  \item Iran TST 2017 P5, \hyperpage{309}
+  \item Iran TST 2017 T3 P6, \hyperpage{300}
+  \item Iran TST 2018 D2P6, \hyperpage{265}
+  \item Iran TST 2018 P1, \hyperpage{19}
+  \item Iran TST 2018 P3, \hyperpage{229}
+  \item Iran TST 2018 P4, \hyperpage{229}
+  \item Iran TST 2018 T1P3, \hyperpage{307}
+  \item Iran TST 2018 T1P4, \hyperpage{307}
+  \item Iran TST 2018 T2P4, \hyperpage{350}
+  \item Iran TST 2018 T3P6, \hyperpage{308}
+  \item Iran TST ??, \hyperpage{65}
+  \item Iran TST T2P1, \hyperpage{131}
+  \item Iran TST T2P5, \hyperpage{228}
+  \item ISL 1988 P10, \hyperpage{14}
+  \item ISL 1990, \hyperpage{71}
+  \item ISL 1990 P3, \hyperpage{108}
+  \item ISL 1991 P10, \hyperpage{120}
+  \item ISL 1993 C5, \hyperpage{88}
+  \item ISL 1994 A1, \hyperpage{72}
+  \item ISL 1994 A4, \hyperpage{130}
+  \item ISL 1994 C2, \hyperpage{84}
+  \item ISL 1994 C3, \hyperpage{21}
+  \item ISL 1996 A2, \hyperpage{164}
+  \item ISL 1997 P4, \hyperpage{104}
+  \item ISL 1998 A1, \hyperpage{162}
+  \item ISL 1998 C4, \hyperpage{111}
+  \item ISL 1998 C7, \hyperpage{54}
+  \item ISL 1999 A1, \hyperpage{162}
+  \item ISL 1999 G8, \hyperpage{247}
+  \item ISL 2000 N1, \hyperpage{343}
+  \item ISL 2000 N3, \hyperpage{343}
+  \item ISL 2001 A1, \hyperpage{132}, \hyperpage{162}
+  \item ISL 2001 C3, \hyperpage{39}
+  \item ISL 2001 C6, \hyperpage{111}
+  \item ISL 2002 A1, \hyperpage{132}
+  \item ISL 2002 C1, \hyperpage{79}
+  \item ISL 2002 C2, \hyperpage{91}
+  \item ISL 2002 C3, \hyperpage{83}
+  \item ISL 2002 C5, \hyperpage{13}
+  \item ISL 2002 C6, \hyperpage{116}
+  \item ISL 2002 G1, \hyperpage{310}
+  \item ISL 2002 G2, \hyperpage{310}
+  \item ISL 2002 G3, \hyperpage{311}
+  \item ISL 2002 G4, \hyperpage{311}
+  \item ISL 2002 G7, \hyperpage{311}
+  \item ISL 2002 G8, \hyperpage{252}
+  \item ISL 2002 N1, \hyperpage{351}
+  \item ISL 2002 N2, \hyperpage{351}
+  \item ISL 2002 N3, \hyperpage{352}
+  \item ISL 2002 N6, \hyperpage{339}
+  \item ISL 2003 C1, \hyperpage{84}
+  \item ISL 2003 C2, \hyperpage{63}
+  \item ISL 2003 C3, \hyperpage{63}
+  \item ISL 2003 C4, \hyperpage{27}
+  \item ISL 2004 A1, \hyperpage{164}
+  \item ISL 2004 A2, \hyperpage{172}
+  \item ISL 2004 C1, \hyperpage{79}
+  \item ISL 2004 C2, \hyperpage{103}
+  \item ISL 2004 C3, \hyperpage{103}
+  \item ISL 2004 C5, \hyperpage{105}
+  \item ISL 2004 N1, \hyperpage{332}, \hyperpage{349}
+  \item ISL 2004 N2, \hyperpage{341}
+  \item ISL 2004 N3, \hyperpage{336}
+  \item ISL 2004 N4, \hyperpage{330}
+  \item ISL 2005 A1, \hyperpage{150}
+  \item ISL 2005 A2, \hyperpage{131}
+  \item ISL 2005 A3, \hyperpage{170}
+  \item ISL 2005 A4, \hyperpage{131}
+  \item ISL 2005 C1, \hyperpage{47}
+  \item ISL 2005 C2, \hyperpage{19}, \hyperpage{47}
+  \item ISL 2005 C3, \hyperpage{117}
+  \item ISL 2005 C4, \hyperpage{44}
+  \item ISL 2006 C1, \hyperpage{105}
+  \item ISL 2006 C2, \hyperpage{59}
+  \item ISL 2006 C3, \hyperpage{100}
+  \item ISL 2006 C4, \hyperpage{105}
+  \item ISL 2006 C6, \hyperpage{34}
+  \item ISL 2006 G6, \hyperpage{230}, \hyperpage{308}
+  \item ISL 2006 G7, \hyperpage{308}
+  \item ISL 2006 G9, \hyperpage{308}
+  \item ISL 2006 N4, \hyperpage{146}
+  \item ISL 2007 C1, \hyperpage{92}
+  \item ISL 2007 C2, \hyperpage{61}
+  \item ISL 2007 C3, \hyperpage{93}
+  \item ISL 2007 C4, \hyperpage{72}
+  \item ISL 2007 C5, \hyperpage{66}
+  \item ISL 2008 A1, \hyperpage{130}
+  \item ISL 2008 C1, \hyperpage{109}
+  \item ISL 2008 C3, \hyperpage{67}
+  \item ISL 2008 C4, \hyperpage{78}
+  \item ISL 2009 A2, \hyperpage{161}
+  \item ISL 2009 A3, \hyperpage{136}
+  \item ISL 2009 A6, \hyperpage{73}
+  \item ISL 2009 C1, \hyperpage{56}
+  \item ISL 2009 C2, \hyperpage{116}
+  \item ISL 2009 C3, \hyperpage{95}
+  \item ISL 2009 G3, \hyperpage{311}
+  \item ISL 2009 G4, \hyperpage{258}
+  \item ISL 2009 N1, \hyperpage{349}
+  \item ISL 2009 N2, \hyperpage{349}
+  \item ISL 2009 N3, \hyperpage{352}
+  \item ISL 2009 N4, \hyperpage{353}
+  \item ISL 2009 N5, \hyperpage{337}
+  \item ISL 2010 A3, \hyperpage{170}
+  \item ISL 2010 C2, \hyperpage{113}
+  \item ISL 2010 C3, \hyperpage{85}
+  \item ISL 2010 G5, \hyperpage{202}
+  \item ISL 2010 N3, \hyperpage{338}
+  \item ISL 2010 N5, \hyperpage{336}
+  \item ISL 2011 A2, \hyperpage{173}
+  \item ISL 2011 A3, \hyperpage{131}
+  \item ISL 2011 A5, \hyperpage{115}
+  \item ISL 2011 G4, \hyperpage{312}
+  \item ISL 2011 G7, \hyperpage{286}
+  \item ISL 2011 G8, \hyperpage{197}
+  \item ISL 2011 N1, \hyperpage{349}
+  \item ISL 2012 A1, \hyperpage{134}
+  \item ISL 2012 A4, \hyperpage{146}
+  \item ISL 2012 A5, \hyperpage{134}
+  \item ISL 2012 C1, \hyperpage{21}
+  \item ISL 2012 C2, \hyperpage{114}
+  \item ISL 2012 C3, \hyperpage{99}
+  \item ISL 2012 C4, \hyperpage{56}
+  \item ISL 2012 G8, \hyperpage{310}
+  \item ISL 2012 N3, \hyperpage{332}
+  \item ISL 2012 N6, \hyperpage{333}
+  \item ISL 2013 C1, \hyperpage{108}
+  \item ISL 2013 C2, IMO 2013 P2, \hyperpage{60}
+  \item ISL 2013 C3, \hyperpage{47}
+  \item ISL 2013 N1, \hyperpage{336}
+  \item ISL 2013 N2, \hyperpage{73}
+  \item ISL 2013 N5, \hyperpage{332}
+  \item ISL 2014 A1, \hyperpage{22}, \hyperpage{173}
+  \item ISL 2014 A2, \hyperpage{169}
+  \item ISL 2014 C1, \hyperpage{61}
+  \item ISL 2014 C2, \hyperpage{106}
+  \item ISL 2014 C3, \hyperpage{113}
+  \item ISL 2014 C4, \hyperpage{93}
+  \item ISL 2014 G5, \hyperpage{199}
+  \item ISL 2014 G7, \hyperpage{200}
+  \item ISL 2014 N1, \hyperpage{30}, \hyperpage{350}
+  \item ISL 2014 N2, \hyperpage{350}
+  \item ISL 2014 N3, \hyperpage{23}
+  \item ISL 2014 N4, \hyperpage{332}
+  \item ISL 2014 N5, \hyperpage{338}
+  \item ISL 2015 A1, \hyperpage{170}
+  \item ISL 2015 A2, \hyperpage{133}
+  \item ISL 2015 A3, \hyperpage{170}
+  \item ISL 2015 A4, \hyperpage{134}
+  \item ISL 2015 C1, \hyperpage{124}
+  \item ISL 2015 C2, \hyperpage{67}
+  \item ISL 2015 C4, \hyperpage{56}
+  \item ISL 2015 G5, \hyperpage{201}
+  \item ISL 2015 G6, \hyperpage{200}
+  \item ISL 2015 N2, \hyperpage{353}
+  \item ISL 2015 N3, \hyperpage{347}
+  \item ISL 2015 N4, \hyperpage{347}
+  \item ISL 2016 A1, \hyperpage{163}
+  \item ISL 2016 A2, \hyperpage{163}
+  \item ISL 2016 C1, \hyperpage{19}
+  \item ISL 2016 C2, \hyperpage{92}
+  \item ISL 2016 C3, \hyperpage{106}
+  \item ISL 2016 C6, \hyperpage{49}
+  \item ISL 2016 G6, \hyperpage{290}
+  \item ISL 2016 N5, \hyperpage{354}
+  \item ISL 2017 A1, \hyperpage{163}
+  \item ISL 2018 C5, \hyperpage{102}
+  \item ISL 2019 G6, \hyperpage{234}
 
   \indexspace
 
-  \item Taiwan TST 2015 R3D1P1, \hyperpage{16}
-  \item Timus 1578, \hyperpage{11}
-  \item Tournament of Towns 2015F S7, \hyperpage{14}
-  \item Tournament of Towns Spring 2012 S7, \hyperpage{20}
+  \item Jacob Tsimerman Induction, \hyperpage{48}
+  \item Japan MO 2017 P1, \hyperpage{352}
+  \item Japan MO 2017 P2, TST Mock 2018, \hyperpage{351}
+  \item Japan MO 2017 P3, \hyperpage{310, 311}
 
   \indexspace
 
-  \item USA Dec TST 2016, P1, \hyperpage{8}
-  \item USAMO 1998, \hyperpage{21}
-  \item USAMO 2010 P2, \hyperpage{16}
-  \item USAMO 2013 P6, \hyperpage{6}
-  \item USAMO 2015 P4, \hyperpage{12}
+  \item Korean Summer Program TST 2016 1, \hyperpage{174}
+
+  \indexspace
+
+  \item Lithuania ??, \hyperpage{65}
+
+  \indexspace
+
+  \item Math Price for Girls 2017 P4, \hyperpage{64}
+  \item MEMO 2008, Team, P6, \hyperpage{21}
+  \item MEMO 2015 T4, \hyperpage{63}
+  \item Mexican Regional 2014 P6, \hyperpage{107}
+  \item MOP Problem, \hyperpage{85}
+
+  \indexspace
+
+  \item OC Chap2 P2, \hyperpage{51}
+  \item OIM 1994, PSMiC, \hyperpage{24}
+
+  \indexspace
+
+  \item pco 168 P18, \hyperpage{131}
+  \item pco 169 P11, \hyperpage{130}
+  \item pco 169 P15, \hyperpage{130}
+  \item Polish OI, \hyperpage{27}
+  \item Putnam 2002 A3, \hyperpage{34}
+  \item Putnam 2005 B4, \hyperpage{14}
+  \item Putnam 2011 A2, \hyperpage{173}
+  \item Putnam 2013 A3, \hyperpage{173}
+  \item Putnam 2017 A2, \hyperpage{145}
+  \item Putnam 2017 A4, \hyperpage{117}
+
+  \indexspace
+
+  \item Result by Erdos, \hyperpage{117}
+  \item Result by Erdos, Dividing the integers into arithmetic progressions, 
+		\hyperpage{72}
+  \item Rioplatense Olympiad 2013 Problem 6, \hyperpage{217}
+  \item RMM 2018 P4, \hyperpage{349}
+  \item RMM 2018 P6, \hyperpage{303}
+  \item RMM 2019 P1, \hyperpage{55}
+  \item RMM 2019 P2, \hyperpage{196}
+  \item RMM 2019 P3, \hyperpage{101}
+  \item RMM 2019 P4, \hyperpage{69}
+  \item RMM 2019 P5, \hyperpage{133}
+  \item RMM 2020 P3, \hyperpage{51}
+  \item Romanian TST 2003 P5, \hyperpage{151}
+  \item Romanian TST 2006 P2, \hyperpage{151}
+  \item Romanian TST 2008 T1P4, \hyperpage{65}
+  \item Romanian TST 2012 P4, \hyperpage{43}
+  \item Romanian TST 2016 D1P2, \hyperpage{12}
+
+  \indexspace
+
+  \item Saint Petersburg 2001, \hyperpage{121}
+  \item Serbia 2018 P1, \hyperpage{228}
+  \item Serbia 2018 P4, \hyperpage{144}
+  \item Serbia National D2P2, \hyperpage{69}
+  \item Serbia TST 2015 P3, \hyperpage{30}
+  \item Serbia TST 2017 P2, \hyperpage{118}
+  \item Serbia TST 2017 P4, \hyperpage{118}
+  \item Sharygin 2010, \hyperpage{257}
+  \item Sharygin 2010 P3, \hyperpage{254}
+  \item Sharygin 2012 P21, \hyperpage{263}
+  \item Sharygin 2012 P22, \hyperpage{262}
+  \item Simurgh 2019 P1, \hyperpage{354}
+  \item Simurgh 2019 P2, \hyperpage{196}
+  \item Simurgh 2019 P3, \hyperpage{51}
+  \item Somewhere, \hyperpage{3}
+  \item St. Petersburg 2000, \hyperpage{89}
+  \item Swell coloring, \hyperpage{42}
+
+  \indexspace
+
+  \item Taiwan TST 2014 T3P3, \hyperpage{248}
+  \item Taiwan TST 2015 R3D1P1, \hyperpage{30}
+  \item Timus 1578, \hyperpage{25}
+  \item timus 1862, \hyperpage{121}
+  \item Tournament of Towns 2009 S6, \hyperpage{39}
+  \item Tournament of Towns 2015F S7, \hyperpage{27}
+  \item Tournament of Towns 2015S S4, \hyperpage{63}
+  \item Tournament of Towns 2015S S6, \hyperpage{92}
+  \item Tournament of Towns Spring 2012 S7, \hyperpage{33}
+  \item Turkey National MO 2002 P3, \hyperpage{39}
+  \item Turkey TST 2017 P5, \hyperpage{161}
+  \item Turkey TST 2018 P4, \hyperpage{192}
+  \item Tuymaada 2016, P5, \hyperpage{354}
+  \item Two Symmedian Points, \hyperpage{240}
+
+  \indexspace
+
+  \item USA Dec TST 2016, P1, \hyperpage{22}
+  \item USA TST 2000 P2, \hyperpage{260}
+  \item USA TST 2000 P3, \hyperpage{345}
+  \item USA TST 2000 P4, \hyperpage{344}
+  \item USA TST 2002 P2, \hyperpage{346}
+  \item USA TST 2005 P1, \hyperpage{12}
+  \item USA TST 2006 P1, \hyperpage{43}
+  \item USA TST 2006 P5, \hyperpage{85}
+  \item USA TST 2006 P6, \hyperpage{282}
+  \item USA TST 2009 P1, \hyperpage{112}
+  \item USA TST 2010 P8, \hyperpage{4}
+  \item USA TST 2010 P9, \hyperpage{355}
+  \item USA TST 2011 D3P2, \hyperpage{48}
+  \item USA TST 2011 P2, \hyperpage{50}
+  \item USA TST 2014 P2, \hyperpage{333}
+  \item USA TST 2014 P3, \hyperpage{40}
+  \item USA TST 2014 P4, \hyperpage{143}
+  \item USA TST 2017 P1, \hyperpage{116}
+  \item USA TST 2017 P2, \hyperpage{296}
+  \item USA TST 2018 P1, \hyperpage{347}
+  \item USA TST 2018 P2, \hyperpage{136}
+  \item USA TST 2019 P1, \hyperpage{252}
+  \item USA TST 2019 P1 parallel problem, \hyperpage{254}
+  \item USA TST 2019 P2, \hyperpage{353}
+  \item USA TSTST 2015 P5, \hyperpage{350}
+  \item USA Winter TST 2018 P3, \hyperpage{86}
+  \item USA Winter TST 2020 P2, \hyperpage{192}, \hyperpage{194}
+  \item USAMO 1974 P2, \hyperpage{166}
+  \item USAMO 1986 P2, \hyperpage{107}
+  \item USAMO 1996 P4, \hyperpage{78}
+  \item USAMO 1998, \hyperpage{34}
+  \item USAMO 1998 P3, \hyperpage{165}
+  \item USAMO 1999 P1, \hyperpage{108}
+  \item USAMO 1999 P1 generalization, \hyperpage{108}
+  \item USAMO 1999 P6, \hyperpage{227}
+  \item USAMO 2001 P5, \hyperpage{343}
+  \item USAMO 2002 P3, \hyperpage{143}
+  \item USAMO 2004 P2, \hyperpage{345}
+  \item USAMO 2004, P4, \hyperpage{55}
+  \item USAMO 2005 P1, \hyperpage{119}, \hyperpage{123}
+  \item USAMO 2005 P4, \hyperpage{123}
+  \item USAMO 2005 P5, \hyperpage{120}
+  \item USAMO 2006 P2, \hyperpage{84}, \hyperpage{119}, \hyperpage{123}
+  \item USAMO 2006 P5, \hyperpage{123}
+  \item USAMO 2007 P1, \hyperpage{73}
+  \item USAMO 2007 P2, \hyperpage{63}
+  \item USAMO 2007 P5, \hyperpage{346}
+  \item USAMO 2008 P1, \hyperpage{345}
+  \item USAMO 2008 P2, \hyperpage{239}
+  \item USAMO 2008 P3, \hyperpage{81}
+  \item USAMO 2008 P4, \hyperpage{109}
+  \item USAMO 2008 P5, \hyperpage{54}
+  \item USAMO 2009 P2, \hyperpage{123}
+  \item USAMO 2010 P2, \hyperpage{29}
+  \item USAMO 2012 P2, \hyperpage{79}
+  \item USAMO 2012 P4, \hyperpage{346}
+  \item USAMO 2013 P2, \hyperpage{82}
+  \item USAMO 2013 P4, \hyperpage{171}
+  \item USAMO 2013 P5, \hyperpage{347}
+  \item USAMO 2013 P6, \hyperpage{20}
+  \item USAMO 2014 P1, \hyperpage{54}
+  \item USAMO 2014 P5, \hyperpage{188}
+  \item USAMO 2015 P4, \hyperpage{26}
+  \item USAMO 2017 P5, \hyperpage{127}
+  \item USAMO 2018 P4, \hyperpage{349}
+  \item USAMO 2018 P5, \hyperpage{310}
+  \item USJMO 2018 P3, \hyperpage{307}
+
+  \indexspace
+
+  \item Vietnam 1991, \hyperpage{132}
+  \item Vietnam 1998, \hyperpage{166}
+  \item Vietnam 2017 TST P6, \hyperpage{344}
+  \item Vietnam TST 2017 P2, \hyperpage{344}
+  \item Vietnamese TST 2018 P6.a, \hyperpage{224}
+  \item Vietnamese TST 2018 P6.a Generalization, \hyperpage{226}
+
+  \indexspace
+
+  \item WenWuGuangHua Mathematics Workshop, \hyperpage{306, 307}
+
+  \indexspace
+
+  \item Zhao Poly, \hyperpage{144}
+  \item Zhao Polynomials, \hyperpage{144}
 
 \end{theindex}

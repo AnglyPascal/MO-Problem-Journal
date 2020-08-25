@@ -185,7 +185,7 @@ polynomials in $ n\log n $ time.
         A(x) = a_{0} x^{0}+a_{1} x^{1}+\cdots+a_{n-1} x^{n-1} $. We use divide and
         conquer by considering: \begin{align*} A_{0}(x)&=a_{0} x^{0}+a_{2}
             x^{1}+\cdots+a_{n-2} x^{\frac{n}{2}-1} \\ A_{1}(x)&=a_{1} x^{0}+a_{3}
-            x^{1}+\cdots+a_{n-1} x^{\frac{n}{2}-1}\\[.5em] \and A(x) &= A_0(x^2) +
+            x^{1}+\cdots+a_{n-1} x^{\frac{n}{2}-1}\\[.5em] \text{ and } A(x) &= A_0(x^2) +
         xA_1(x^2) \end{align*}
 
         After we have computed $ \text{DFT}(A_0) = (y^0_i)^{\frac{n}{2} - 1}_{i=0}
