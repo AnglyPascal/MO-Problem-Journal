@@ -4,7 +4,7 @@
 \newpage\section{Orthocenter--Circumcircle--NinePoint Circle}
 
 
-\begin{enumerate} 
+\begin{enumerate} [itemsep=0pt]
     \item \href{http://yufeizhao.com/olympiad/imo2008/zhao-circles.pdf}{Circles -
         Yufei Zhao}
     \item \href{http://yufeizhao.com/olympiad/cyclic_quad.pdf}{Big
@@ -24,18 +24,13 @@
 \subsection{Problems}
 
 
-\begin{minipage}{.3\textwidth} 
-    \figdf{1}{ChinaTST2018T1P3_lemm}{}
-\end{minipage}\hfill% 
 \begin{minipage}{.65\textwidth} 
 
     \lem{Collinearity with antipode and center}{
-
-        Let $ A' $ be the antipod of $ A $ in $ \odot ABC $. Let
-        $ BDEC $ be a cyclic quadrilateral with $ D\in AB $ and $ E\in AC $. Let $ P $
+        Let $A'$ be the antipod of $ A $ in $ \odot ABC $. Let
+        $BDEC$ be a cyclic quadrilateral with $ D\in AB $ and $ E\in AC $. Let $ P $
         be the center of $ BDEC $. Also, let $ X=BE\cap CD $. Then $ A', P, X $ are
         collinear.  
-
     } 
 
     \solu{ 
@@ -43,8 +38,10 @@
         Q=\odot ADE \cap \odot ABC $, then $ P, X, Q $ collinear and $ PQ\perp AQ $.
         Which implies that $ P, A', Q $ are collinear.  
     } 
+\end{minipage}\hfill% 
+\begin{minipage}{.3\textwidth} 
+    \figdf{1}{ChinaTST2018T1P3_lemm}{}
 \end{minipage}
-
 
 
 
@@ -551,280 +548,293 @@ common touch point, the problem becomes obvious.}
 }
 
 
-\begin{solution}[Angle Chase] Suppose the bisector of $ \angle BAD $ meet $ BC
-    $ at $ G' $. Then we have, \begin{align*} \angle BG'A &= \frac{\angle
+\begin{solution}[Angle Chase] 
+    Suppose the bisector of $ \angle BAD $ meet $ BC $ at $ G' $. Then we have, 
+    \begin{align*} \angle BG'A &= \frac{\angle
         A-\angle B}{2}\\ \therefore \angle CG'A &= \angle B + \angle BG'A\\
-                                                &=\frac{A+B}{2}\\[1em]
-                                                \implies CG'&=CA\\ \therefore
-                                            \angle G'ID &= \angle B \end{align*}
+        &=\frac{A+B}{2}\\[1em]
+        \implies CG'&=CA\\ \therefore
+        \angle G'ID &= \angle B 
+    \end{align*}
 
-                                            Now, let $ M $ be the midpoint of the minor arc $ BC $. Let $ G=XM\cap BC
-                                            $. So we have \[\triangle MGI \sim \triangle MIX \implies \angle MIG =
-                                            \angle MXI\]
+    Now, let $ M $ be the midpoint of the minor arc $ BC $. Let $ G=XM\cap BC
+    $. So we have \[\triangle MGI \sim \triangle MIX \implies \angle MIG =
+    \angle MXI\]
 
-                                            Let $ XI\cap \odot ABC = N \neq X $. Since $ AC $ is tangent to $ \odot
-                                            AXI $, $ NC\parallel AM $. Which means $$  \angle MXI = \angle B = \angle
-                                            MIG  $$ Which completes our proof by implying that $ G'\equiv G $. 
+    Let $ XI\cap \odot ABC = N \neq X $. Since $ AC $ is tangent to $ \odot
+    AXI $, $ NC\parallel AM $. Which means $$  \angle MXI = \angle B = \angle
+    MIG  $$ Which completes our proof by implying that $ G'\equiv G $. 
 
-                                        \figdf{.4}{elmo_2019_P3}{} \end{solution}
+    \figdf{.4}{elmo_2019_P3}{} 
+\end{solution}
 
 
+
 
+\prob{https://artofproblemsolving.com/community/c6h596927p3542092}{ISL 2014
+    G5}{M}{
+    Convex quadrilateral $ABCD$ has $\angle ABC = \angle CDA = 90^{\circ}$.
+    Point $H$ is the foot of the perpendicular from $A$ to $BD$. Points $S$ and
+    $T$ lie on sides $AB$ and $AD$, respectively, such that $H$ lies inside
+    triangle $SCT$ and \[ \angle CHS - \angle CSB = 90^{\circ}, \quad \angle THC -
+    \angle DTC = 90^{\circ}.\] Prove that line $BD$ is tangent to the circumcircle
+    of triangle $TSH$.
+}
+
+\solu{
+    First construct using nice circles, then prove the center is on $ AH $
+    using angle bisector theorem.  
+    \figdf{.6}{ISL2014G5}{Construction}
+    \figdf{.3}{ISL2014G5_lemma1}{Lemma}
+}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1113194p5083564}{ISL 2014
+    G7}{M}{
+    Let $ABC$ be a triangle with circumcircle $\Omega$ and incentre $I$.
+    Let the line passing through $I$ and perpendicular to $CI$ intersect the
+    segment $BC$ and the arc $BC$ (not containing $A$) of $\Omega$ at points $U$
+    and $V$ , respectively. Let the line passing through $U$ and parallel to $AI$
+    intersect $AV$ at $X$, and let the line passing through $V$ and parallel to
+    $AI$ intersect $AB$ at $Y$ . Let $W$ and $Z$ be the midpoints of $AX$ and
+    $BC$, respectively. Prove that if the points $I, X,$ and $Y$ are collinear,
+    then the points $I, W ,$ and $Z$ are also collinear.
+}
 
-                                        \prob{https://artofproblemsolving.com/community/c6h596927p3542092}{ISL 2014
-                                            G5}{M}{
-                                            Convex quadrilateral $ABCD$ has $\angle ABC = \angle CDA = 90^{\circ}$.
-                                            Point $H$ is the foot of the perpendicular from $A$ to $BD$. Points $S$ and
-                                            $T$ lie on sides $AB$ and $AD$, respectively, such that $H$ lies inside
-                                            triangle $SCT$ and \[ \angle CHS - \angle CSB = 90^{\circ}, \quad \angle THC -
-                                            \angle DTC = 90^{\circ}.\] Prove that line $BD$ is tangent to the circumcircle
-                                            of triangle $TSH$.
-                                        }
+\solu{Draw a nice diagram, and use the parallel property to find circles.
+\figdf{.7}{ISL2014G7}{ISL 2014 G7}}
 
-                                        \solu{First construct using nice circles, then prove the center is on $ AH $
-                                            using angle bisector theorem.  \figdf{.6}{ISL2014G5}{Construction}
-                                        \figdf{.3}{ISL2014G5_lemma1}{Lemma}}
 
 
+\prob{https://artofproblemsolving.com/community/c6h1112748p5079655}{ISL 2015
+    G6}{E}{
+    Let $ABC$ be an acute triangle with $AB > AC$. Let $\Gamma $ be its
+    cirumcircle, $H$ its orthocenter, and $F$ the foot of the altitude from
+    $A$. Let $M$ be the midpoint of $BC$. Let $Q$ be the point on $\Gamma$
+    such that $\angle HQA = 90^{\circ}$ and let $K$ be the point on $\Gamma$
+    such that $\angle HKQ = 90^{\circ}$. Assume that the points $A$, $B$, $C$,
+    $K$ and $Q$ are all different and lie on $\Gamma$ in this order.\\
 
-                                        \prob{https://artofproblemsolving.com/community/c6h1113194p5083564}{ISL 2014
-                                            G7}{M}{
-                                            Let $ABC$ be a triangle with circumcircle $\Omega$ and incentre $I$.
-                                            Let the line passing through $I$ and perpendicular to $CI$ intersect the
-                                            segment $BC$ and the arc $BC$ (not containing $A$) of $\Omega$ at points $U$
-                                            and $V$ , respectively. Let the line passing through $U$ and parallel to $AI$
-                                            intersect $AV$ at $X$, and let the line passing through $V$ and parallel to
-                                            $AI$ intersect $AB$ at $Y$ . Let $W$ and $Z$ be the midpoints of $AX$ and
-                                            $BC$, respectively. Prove that if the points $I, X,$ and $Y$ are collinear,
-                                            then the points $I, W ,$ and $Z$ are also collinear.
-                                        }
+    Prove that the circumcircles of triangles $KQH$ and $FKM$ are tangent to each
+    other.
+}
 
-                                        \solu{Draw a nice diagram, and use the parallel property to find circles.
-                                        \figdf{.7}{ISL2014G7}{ISL 2014 G7}}
+\solu{
+    Draw the tangent line, and find angles.  
+    \figdf{.7}{ISL2015G6}{ISL 2015 G6}
+}
 
 
 
-                                        \prob{https://artofproblemsolving.com/community/c6h1112748p5079655}{ISL 2015
-                                            G6}{E}{
-                                            Let $ABC$ be an acute triangle with $AB > AC$. Let $\Gamma $ be its
-                                            cirumcircle, $H$ its orthocenter, and $F$ the foot of the altitude from
-                                            $A$. Let $M$ be the midpoint of $BC$. Let $Q$ be the point on $\Gamma$
-                                            such that $\angle HQA = 90^{\circ}$ and let $K$ be the point on $\Gamma$
-                                            such that $\angle HKQ = 90^{\circ}$. Assume that the points $A$, $B$, $C$,
-                                            $K$ and $Q$ are all different and lie on $\Gamma$ in this order.\\
+\prob{https://artofproblemsolving.com/community/c6h1268908p6622796}{ISL 2015
+    G5}{M}{
+    Let $ABC$ be a triangle with $CA \neq CB$. Let $D$, $F$, and $G$ be the
+    midpoints of the sides $AB$, $AC$, and $BC$ respectively. A circle $\Gamma$
+    passing through $C$ and tangent to $AB$ at $D$ meets the segments $AF$ and
+    $BG$ at $H$ and $I$, respectively. The points $H'$ and $I'$ are symmetric to
+    $H$ and $I$ about $F$ and $G$, respectively. The line $H'I'$ meets $CD$ and
+    $FG$ at $Q$ and $M$, respectively. The line $CM$ meets $\Gamma$ again at $P$.
+    Prove that $CQ = QP$.
+}
 
-                                            Prove that the circumcircles of triangles $KQH$ and $FKM$ are tangent to each
-                                            other.
-                                        }
+\solu{Don't depend on the figure too much, find facts using facts, not figure.
+\figdf{.7}{ISL2015G5}{ISL 2015 G5}}
 
-                                        \solu{Draw the tangent line, and find angles.  \figdf{.7}{ISL2015G6}{ISL 2015
-                                        G6}}
 
 
 
-                                        \prob{https://artofproblemsolving.com/community/c6h1268908p6622796}{ISL 2015
-                                            G5}{M}{
-                                            Let $ABC$ be a triangle with $CA \neq CB$. Let $D$, $F$, and $G$ be the
-                                            midpoints of the sides $AB$, $AC$, and $BC$ respectively. A circle $\Gamma$
-                                            passing through $C$ and tangent to $AB$ at $D$ meets the segments $AF$ and
-                                            $BG$ at $H$ and $I$, respectively. The points $H'$ and $I'$ are symmetric to
-                                            $H$ and $I$ about $F$ and $G$, respectively. The line $H'I'$ meets $CD$ and
-                                            $FG$ at $Q$ and $M$, respectively. The line $CM$ meets $\Gamma$ again at $P$.
-                                            Prove that $CQ = QP$.
-                                        }
+\prob{https://artofproblemsolving.com/community/c6h418635p2361976}{ISL 2010
+    G5}{E}{
+    Let $ABCDE$ be a convex pentagon such that $BC \parallel AE,$ $AB = BC
+    + AE,$ and $\angle ABC = \angle CDE.$ Let $M$ be the midpoint of $CE,$ and let
+    $O$ be the circumcenter of triangle $BCD.$ Given that $\angle DMO =
+    90^{\circ},$ prove that $2 \angle BDA = \angle CDE.$
+}
 
-                                        \solu{Don't depend on the figure too much, find facts using facts, not figure.
-                                        \figdf{.7}{ISL2015G5}{ISL 2015 G5}}
+\solu{First try to construct the point. Do this the long way, then find a
+    easier way that includes $ B, C $, not $ B, A $ to do that. Then try to
+    translate what $ 90 $ degree condition into angles, and take midpoints, since
+    we have midpoints involved.  
+    \figdf{.7}{ISL2010G5}{ISL 2010 G5}
+}
 
 
 
+\prob{https://artofproblemsolving.com/community/c6h1918849p13155415}{IGO 2019
+    A5}{MH}{
+    Let points $A, B$ and $C$ lie on the parabola $\Delta$ such that the
+    point $H$, orthocenter of triangle $ABC$, coincides with the focus of parabola
+    $\Delta$. Prove that by changing the position of points $A, B$ and $C$ on
+    $\Delta$ so that the orthocenter remain at $H$, inradius of triangle $ABC$
+    remains unchanged.
+}	
 
-                                        \prob{https://artofproblemsolving.com/community/c6h418635p2361976}{ISL 2010
-                                            G5}{E}{
-                                            Let $ABCDE$ be a convex pentagon such that $BC \parallel AE,$ $AB = BC
-                                            + AE,$ and $\angle ABC = \angle CDE.$ Let $M$ be the midpoint of $CE,$ and let
-                                            $O$ be the circumcenter of triangle $BCD.$ Given that $\angle DMO =
-                                            90^{\circ},$ prove that $2 \angle BDA = \angle CDE.$
-                                        }
+\solu{ 
+    \figdf{.7}{IGO2019G5}{IGO 2019 A5} 
+    I think the idea for inversion should have been pretty natural after
+    finding that the incircle is fixed.  
+}
 
-                                        \solu{First try to construct the point. Do this the long way, then find a
-                                            easier way that includes $ B, C $, not $ B, A $ to do that. Then try to
-                                            translate what $ 90 $ degree condition into angles, and take midpoints, since
-                                        we have midpoints involved.  \figdf{.7}{ISL2010G5}{ISL 2010 G5}}
+\prob{https://artofproblemsolving.com/community/c6h1140464p5353018}{Iran 3rd
+    Round 2015 P5}{M}{
+    Let $ABC$ be a triangle with orthocenter $H$ and
+    circumcenter $O$. Let $R$ be the radius of circumcircle of $\triangle ABC$.
+    Let $A',B',C'$ be the points on
+    $\overrightarrow{AH},\overrightarrow{BH},\overrightarrow{CH}$ respectively
+    such that $AH.AA'=R^2,BH.BB'=R^2,CH.CC'=R^2$. Prove that $O$ is incenter of
+    $\triangle A'B'C'$.
+}
 
+\solu{The condition easily leads to a nice construction of the points. It
+    should be trivial to figure that the construction is really important. Also,
+noticing a similarity among the triangles is really important.}
 
 
-                                        \prob{https://artofproblemsolving.com/community/c6h1918849p13155415}{IGO 2019
-                                            A5}{MH}{
-                                            Let points $A, B$ and $C$ lie on the parabola $\Delta$ such that the
-                                            point $H$, orthocenter of triangle $ABC$, coincides with the focus of parabola
-                                            $\Delta$. Prove that by changing the position of points $A, B$ and $C$ on
-                                            $\Delta$ so that the orthocenter remain at $H$, inradius of triangle $ABC$
-                                            remains unchanged.
-                                        }	
 
-                                        \solu{ \figdf{.7}{IGO2019G5}{IGO 2019 A5} I think the idea for inversion
-                                        should have been pretty natural after finding that the incircle is fixed.  }
 
-                                        \prob{https://artofproblemsolving.com/community/c6h1140464p5353018}{Iran 3rd
-                                            Round 2015 P5}{M}{
-                                            Let $ABC$ be a triangle with orthocenter $H$ and
-                                            circumcenter $O$. Let $R$ be the radius of circumcircle of $\triangle ABC$.
-                                            Let $A',B',C'$ be the points on
-                                            $\overrightarrow{AH},\overrightarrow{BH},\overrightarrow{CH}$ respectively
-                                            such that $AH.AA'=R^2,BH.BB'=R^2,CH.CC'=R^2$. Prove that $O$ is incenter of
-                                            $\triangle A'B'C'$.
-                                        }
 
-                                        \solu{The condition easily leads to a nice construction of the points. It
-                                            should be trivial to figure that the construction is really important. Also,
-                                        noticing a similarity among the triangles is really important.}
 
 
+\newpage
+\subsection{The line parallel to BC}
 
 
+\den{Important Points}{
+    Let the line parallel to $ BC $ through $ O $ meet $ AB, AC $ at $ D, E $. 
+    Let $ K $ be the midpoint of $ AH $, $ M $ be the midpoint of $ BC $. $ F $
+    be the feet of $ A $-altitude on $ BC $ and let $ H' $ be the reflection of $
+    H $ on $ F $. Let $ O' $ be the circumcenter of $ KBC $.
+}
 
 
+\lem{}{
+    $ \angle DKC = \angle EKB = 90^{\circ} $
+}\label{lemma:linethroughO_lemma1}
 
-                                        %----------------------------------------------------------------------------------------------------------------------------
+\fig{1}{linethroughO_1}{}
 
 
-                                        \newpage\subsection{The line parallel to $ BC $}
+\lem{}{$
+    CD, BE, OH', AM, KO' $ are concurrent. (by
+    \autoref{isogonality_lemma})
+}\label{lemma:linethroughO_lemma2}
 
+\fig{1}{linethroughO_2}{}
 
-                                        \den{Let the line parallel to $ BC $ through $ O $ meet $ AB, AC $ at $ D, E
-                                            $. Let $ K $ be the midpoint of $ AH $, $ M $ be the midpoint of $ BC $. $ F $
-                                            be the feet of $ A $-altitude on $ BC $ and let $ H' $ be the reflection of $
-                                        H $ on $ F $. Let $ O' $ be the circumcenter of $ KBC $.}
 
+\prob{https://artofproblemsolving.com/community/c6h1412598_circumcircles_intersect_on_ao}{InfinityDots
+    MO Problem 3}{EM}{
+    Let $\triangle ABC$ be an acute triangle with circumcenter
+    $O$ and orthocenter $H$. The line through $O$ parallel to $BC$ intersect $AB$
+    at $D$ and $AC$ at $E$. $X$ is the midpoint of $AH$. Prove that the
+    circumcircles of $\triangle BDX$ and $\triangle CEX$ intersect again at a
+    point on line $AO$.
+}
 
-                                        \lem{}{$
-                                            \angle DKC = \angle EKB = 90^{\circ}
-                                            $
-                                        }\label{lemma:linethroughO_lemma1}
 
-                                        \fig{1}{linethroughO_1}{}
+\solu{Just using \autoref{lemma:linethroughO_lemma1} to get another pair of
+circle where we can apply radical axis arguments.}
 
+\solu{Noticing that the resulting point is the isogonal conjugate of a well
+defined point,}
 
-                                        \lem{}{$
-                                            CD, BE, OH', AM, KO' $ are concurrent. (by
-                                            \hrf{isogonality_lemma}{lemma})
-                                        }\label{lemma:linethroughO_lemma2}
 
-                                        \fig{1}{linethroughO_2}{}
 
+\lem{}{
+    Let $ P, Q $ be on $ AB, AC $ resp. such that $ PQ\parallel BC $. And
+    let $ A' $ be such that $ A'\in \odot ABC, AA'\parallel BC $. Let $ CP\cap BQ
+    = X $, and let the perpendicular bisector of $ BC $ meet $ PQ $ at $ Y $.
+    Prove that $ A', X, Y $ are
+    collinear.
+}\label{lemma:concurrency_in_prallel_lines_with_BC}
 
-                                        \prob{https://artofproblemsolving.com/community/c6h1412598_circumcircles_intersect_on_ao}{InfinityDots
-                                            MO Problem 3}{EM}{
-                                            Let $\triangle ABC$ be an acute triangle with circumcenter
-                                            $O$ and orthocenter $H$. The line through $O$ parallel to $BC$ intersect $AB$
-                                            at $D$ and $AC$ at $E$. $X$ is the midpoint of $AH$. Prove that the
-                                            circumcircles of $\triangle BDX$ and $\triangle CEX$ intersect again at a
-                                            point on line $AO$.
-                                        }
+\solu{No angles... Do Lengths...}
 
+\fig{1}{concurrency_in_prallel_lines_with_BC}{}
 
-                                        \solu{Just using \hrf{lemma:linethroughO_lemma1}{lemma} to get another pair of
-                                        circle where we can apply radical axis arguments.}
 
-                                        \solu{Noticing that the resulting point is the isogonal conjugate of a well
-                                        defined point,}
+\prob{https://artofproblemsolving.com/community/c6h1634961p10278557}{ARO 2018
+    P11.4}{M}{
+    $ P \in AB,\ Q \in AC,\ PQ\parallel BC,\ BQ\cap CP = X $. $ A' $ is
+    the reflection of $ A $ wrt $ BC $. $ A'X\cap \odot APQ = Y $. Prove that $
+    \odot BYC $ is tangent to $ \odot APQ $.
+}
 
+\solu{Of co it can be solved using angle chase,
+    \autoref{lemma:concurrency_in_prallel_lines_with_BC} makes it almost
+trivial.}
 
 
-                                        \lem{}{L
-                                            et $ P, Q $ be on $ AB, AC $ resp. such that $ PQ\parallel BC $. And
-                                            let $ A' $ be such that $ A'\in \odot ABC, AA'\parallel BC $. Let $ CP\cap BQ
-                                            = X $, and let the perpendicular bisector of $ BC $ meet $ PQ $ at $ Y $.
-                                            Prove that $ A', X, Y $ are
-                                            collinear.
-                                        }\label{lemma:concurrency_in_prallel_lines_with_BC}
+\prob{https://artofproblemsolving.com/community/c6h520197}{buratinogigle}{EM}{
+    Let
+    $(O)$ be a circle and $E,F$ are two points inside $(O)$. $(K),(L)$ are two
+    circles passing though $E,F$ and tangent internally to $(O)$ at $A,D$,
+    respectively. $AE,AF$ cut $(O)$ again at $B,C$, respectively. $BF$ cuts
+    $CE$ at $G$. Prove that reflection of $A$ though $EF$ lies on line $DG$.\\
 
-                                        \solu{No angles... Do Lengths...}
+    Rephrasing the problem as such: In the setup of
+    \autoref{lemma:concurrency_in_prallel_lines_with_BC}, let $ A'X\cap
+    \odot ABC = Z $, then $ \odot PQZ $ is tangent to $ \odot ABC $.
+}
 
-                                        \fig{1}{concurrency_in_prallel_lines_with_BC}{}
 
+\solu{Simple angle chase. }
 
-                                        \prob{https://artofproblemsolving.com/community/c6h1634961p10278557}{ARO 2018
-                                            P11.4}{M}{
-                                            $ P \in AB,\ Q \in AC,\ PQ\parallel BC,\ BQ\cap CP = X $. $ A' $ is
-                                            the reflection of $ A $ wrt $ BC $. $ A'X\cap \odot APQ = Y $. Prove that $
-                                            \odot BYC $ is tangent to $ \odot APQ $.
-                                        }
+\solu{Another solution to this is by taking $ D $ as a phantom point.}
 
-                                        \solu{Of co it can be solved using angle chase,
-                                            \hrf{lemma:concurrency_in_prallel_lines_with_BC}{lemma} makes it almost
-                                        trivial.}
+\solu{Another solution is with cross ratios}
 
 
-                                        \prob{https://artofproblemsolving.com/community/c6h520197}{buratinogigle}{EM}{
-                                            Let
-                                            $(O)$ be a circle and $E,F$ are two points inside $(O)$. $(K),(L)$ are two
-                                            circles passing though $E,F$ and tangent internally to $(O)$ at $A,D$,
-                                            respectively. $AE,AF$ cut $(O)$ again at $B,C$, respectively. $BF$ cuts
-                                            $CE$ at $G$. Prove that reflection of $A$ though $EF$ lies on line $DG$.\\
 
-                                            Rephrasing the problem as such: In the setup of
-                                            \hrf{lemma:concurrency_in_prallel_lines_with_BC}{this lemma}, let $ A'X\cap
-                                            \odot ABC = Z $, then $ \odot PQZ $ is tangent to $ \odot ABC $.
-                                        }
 
 
-                                        \solu{Simple angle chase. }
 
-                                        \solu{Another solution to this is by taking $ D $ as a phantom point.}
 
-                                        \solu{Another solution is with cross ratios}
+\newpage
+\subsection{Simson Line and Stuffs}
 
 
+\lem{Simson Line Parallel}{
+    Let $ P $ be a point on the circumcircle, let $ P'
+    $ be the reflection of $ P $ on $ BC $ and let $ PP' \cap \Omega = D $, and
+    let $ l_p $ be the Simson line of $ P $. Prove that $ l_p\parallel AD\parallel
+    HP' $.
+}
 
+\fig{1}{SimsonLineLemma1}{The dotted lines are parallel}
 
 
 
+\lem{Simson Line Angle}{
+    Given triangle $ ABC $ and its circumcircle $ (O) $.
+    Let $ E,F $ be two arbitrary points on $ (O) $. Then the angle between the
+    Simson lines of two points $ E $ and $ F $ is half the measure of the arc $ EF
+    $.
+}
 
-                                        \newpage\subsection{Simson Line and Stuffs}
+\fig{1}{SimsonLineLemma2}{}
 
 
-                                        \lem{Simson Line Parallel}{
-                                            Let $ P $ be a point on the circumcircle, let $ P'
-                                            $ be the reflection of $ P $ on $ BC $ and let $ PP' \cap \Omega = D $, and
-                                            let $ l_p $ be the Simson line of $ P $. Prove that $ l_p\parallel AD\parallel
-                                            HP' $.
-                                        }
 
-                                        \fig{1}{SimsonLineLemma1}{The dotted lines are parallel}
 
+\newpage\subsection{Euler Line}
 
 
-                                        \lem{Simson Line Angle}{
-                                            Given triangle $ ABC $ and its circumcircle $ (O) $.
-                                            Let $ E,F $ be two arbitrary points on $ (O) $. Then the angle between the
-                                            Simson lines of two points $ E $ and $ F $ is half the measure of the arc $ EF
-                                            $.
-                                        }
 
-                                        \fig{1}{SimsonLineLemma2}{}
+\theo{}{Perspectivity Line with Orthic triangle is perpendicular to Euler
+    line}{Let $ DEF $ be the orthic triangle. Then $ BC\cap EF, CA\cap FD, AB\cap
+    ED $ are collinear, and the line is perpendicular to the Euler line. In fact
+this line is the radical axis of the Circumcircle and the NinePoint circle}
 
 
 
 
-                                        \newpage\subsection{Euler Line}
+\lem{}{$
+    DEF $ is orthic triangle of $ ABC $, $ XYZ $ is the orthic triangle
+    of $ DEF $. Prove that the perspective point of $ ABC $ and $ XYZ $ lies on
+    the Euler line of $ ABC $
+}
 
-
-
-                                        \theo{}{Perspectivity Line with Orthic triangle is perpendicular to Euler
-                                            line}{Let $ DEF $ be the orthic triangle. Then $ BC\cap EF, CA\cap FD, AB\cap
-                                            ED $ are collinear, and the line is perpendicular to the Euler line. In fact
-                                        this line is the radical axis of the Circumcircle and the NinePoint circle}
-
-
-
-
-                                        \lem{}{$
-                                            DEF $ is orthic triangle of $ ABC $, $ XYZ $ is the orthic triangle
-                                            of $ DEF $. Prove that the perspective point of $ ABC $ and $ XYZ $ lies on
-                                            the Euler line of $ ABC $
-                                        }
-
-                                        \solu{Thinking the stuff wrt to the incircle and using cross ratio.}
+\solu{Thinking the stuff wrt to the incircle and using cross ratio.}
 

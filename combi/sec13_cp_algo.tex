@@ -1,50 +1,50 @@
 \section{CP Algorithms}
 
-	\begin{myitemize}
-		\item \href{cp-algorithms.com/}{CP Algorithms}
-	\end{myitemize}
+\begin{myitemize}
+\item \href{cp-algorithms.com/}{CP Algorithms}
+\end{myitemize}
 
-	\subsection{Cycle Finding Algorithms}
+\subsection{Cycle Finding Algorithms}
 
-	\algorithm{}{Floyd's cycle-finding algorithm}{
-		This algorithm finds a cycle by using two pointer. These pointers move over the sequence at different speeds. \textbf{In each iteration the first pointer advances to the next element, but the second pointer advances two elements.} It's not hard to see, that if there exists a cycle, the second pointer will make at least one full cycle and then meet the first pointer during the next few cycle loops. \emph{If the cycle length is $\lambda$ and the $\mu$ is the first index at which the cycle starts, then the algorithm will run in $ O(\lambda+\mu) $ time.}
-		
-		This algorithm is also known as \textbf{tortoise and the hare algorithm}, based on the tale in which a tortoise (here a slow pointer) and a hare (here a faster pointer) make a race.
-		
-		It is actually possible to determine the parameter $\lambda$
-		and $\mu$ using this algorithm (also in $ O(\lambda+\mu) $ time and $ O(1) $ space), but here is just the simplified version for finding the cycle at all. The algorithm and returns true as soon as it detects a cycle.}
+\algorithm{}{Floyd's cycle-finding algorithm}{
+    This algorithm finds a cycle by using two pointer. These pointers move over the sequence at different speeds. \textbf{In each iteration the first pointer advances to the next element, but the second pointer advances two elements.} It's not hard to see, that if there exists a cycle, the second pointer will make at least one full cycle and then meet the first pointer during the next few cycle loops. \emph{If the cycle length is $\lambda$ and the $\mu$ is the first index at which the cycle starts, then the algorithm will run in $ O(\lambda+\mu) $ time.}
+
+    This algorithm is also known as \textbf{tortoise and the hare algorithm}, based on the tale in which a tortoise (here a slow pointer) and a hare (here a faster pointer) make a race.
+
+    It is actually possible to determine the parameter $\lambda$
+and $\mu$ using this algorithm (also in $ O(\lambda+\mu) $ time and $ O(1) $ space), but here is just the simplified version for finding the cycle at all. The algorithm and returns true as soon as it detects a cycle.}
 
 \begin{lstlisting}[language=python]
 def floyd(f, x0, n):
-	tortoise = x0
-	hare = x0
-	while(tortoise != hare):
-		tortoise = f(tortoise, n)
-		hare = f(hare, n)
-		hare = f(hare, n)
-	return True
+    tortoise = x0
+    hare = x0
+    while(tortoise != hare):
+        tortoise = f(tortoise, n)
+        hare = f(hare, n)
+        hare = f(hare, n)
+    return True
 \end{lstlisting}
-	
-	\vspace{2em}
-	
-	\algorithm{}{Brent's algorithm}{Brent uses a similar algorithm as Floyd. It also uses two pointer. But instead of advancing the pointers by one and two respectably, we advance them in powers of two. As soon as $ 2^i  $is greater than $\lambda$ and $\mu$, we will find the cycle.}
+
+\vspace{2em}
+
+\algorithm{}{Brent's algorithm}{Brent uses a similar algorithm as Floyd. It also uses two pointer. But instead of advancing the pointers by one and two respectably, we advance them in powers of two. As soon as $ 2^i  $is greater than $\lambda$ and $\mu$, we will find the cycle.}
 
 \begin{lstlisting}[language=python]
 def f(x, n):
-	return (x*x + 3)%n
+    return (x*x + 3)%n
 
 def brent(f, x0, n):
-	tortoise = x0
-	hare = f(x0, n)
-	l = 1
-	while(tortoise != hare):
-		tortoise = f(tortoise, n)
-		for i in range(l):
-			hare = f(hare, n)
-			if(hare == tortoise):
-				return True
-		l *= 2
-	return True
+    tortoise = x0
+    hare = f(x0, n)
+    l = 1
+    while(tortoise != hare):
+        tortoise = f(tortoise, n)
+        for i in range(l):
+            hare = f(hare, n)
+            if(hare == tortoise):
+                return True
+        l *= 2
+    return True
 \end{lstlisting}
 
-	
+

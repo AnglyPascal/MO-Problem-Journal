@@ -1,280 +1,419 @@
-	\graphicspath{{Pics/}}
+\graphicspath{{Pics/}}
 
 \newpage\section{Projective Geometry}
 
 
 \begin{myitemize}
-	\item \href{https://math.mit.edu/~notzeb/cross.pdf}{Cross Ratio - Zarathustra Brady}
-	\item \href{https://artofproblemsolving.com/community/q2h1509866p8957048}{Desargues' Involution Theorem - MarkBcc168}
+    \item \href{https://math.mit.edu/~notzeb/cross.pdf}{Cross Ratio - Zarathustra Brady}
+    \item \href{https://artofproblemsolving.com/community/q2h1509866p8957048}{Desargues'
+        Involution Theorem - MarkBcc168}
 \end{myitemize}
 
 
 \subsection{Definitions}
 
 
-	\den{Projective Plane}{The \emph{projective plane} $ \mathbb{P}^2 $ is a \textit{set of lines} passing through an observation point $ O $ in three dimensional space. A \emph{porjective line} is a plane passing through $ O $, and a \emph{projective point} is a line passing throught $ O $.}
-	
-	\den{Coordinates in Projective Planes}{A point in a projective plane $ \mathbb{P}^2 $ has coordinates $ (p: q: r) $. If $ r=0 $, we say that the point is an \emph{infinite point}. Every line in $ \mathbb{P}^2 $ can also be described with $ (p:q:r) $ in a sense that this line (which is a plane passing through $ O $) has the equation \[pa+qb+rc=0\]}
-	
-	\den{Projection}{We can define \emph{projection} of $ \mathbb{P}^2 $ on some plane $ A^2 $  not passing through $ O $ (for simplicity we will take the plane $ z=1 $) by associating
-	\[ P=(p:q:r)\in \mathbb{P}^2 \to P'=\left(\dfrac{p}{r}:\dfrac{q}{r}:1\right)\in A^2 \]
-	If $ r=0 $, then we say $ P' $ is an infinite point with slope $ \dfrac{q}{p} $.
-	
-	A projective line $ l $ with coordinates $ p:q:r $ gets associated to a line $ l\in A^2 $ likewise. The line at infinity is the line associated with the projective line passing through $ O $ and parallel to $ A^2 $.}
-	
-	\den{Projective Line and Inversive Plane}{Every point in a \emph{projective line} $ \mathbb{P}^1 $ has a coordinate $ (s:t) $ which corresponds to the ordinary point $ x=\dfrac{s}{t} $. The point at infinity will have $ t=0 $. If we let $ s, t $ be complex numbers then the projective line is called the \emph{inversive plane}.}
-	
-	
-	\den{Cross Ratio}{If four points $ A, B, C, D $ lie on a line, their \emph{cross ratio} is defined as 
-		\[(A, B; C, D) = \frac{AC}{BC}\div \frac{AD}{BD}\]
-	If four lines $ l_1, l_2, l_3, l_4 $ pass through a point, then their cross ratio is 
-		\[(l_1, l_2; l_3, l_4) = \frac{\sin\angle l_1l_3}{\sin\angle l_2l_3}\div\frac{\sin\angle l_1l_4}{\sin\angle l_2l_4}\]
-	If four points on the inversive plane has the complex coordinate $ a, b, c, d $, then the cross ratio is defined by
-		\[(A, B; C, D) = \frac{a-c}{b-c}\div \frac{a-d}{c-d}\]}
-	
-	
-	\den{Möbius Transformation}{A \emph{Möbius Transformation} is defined by a transformation $ f_M $ of the inversive plane by a two by two matrix $ \begin{pmatrix}
-		a & b \\
-		c & d 
-	\end{pmatrix} $ with non zero determiant as followed:
-		\[(s:t) \in \mathbb{P}^1 \to (sa+tb\ :\ sc+td)\]
-	Which is in ordinary coordinates:
-		\[f_M(z) = \frac{az+b}{cz+d}\]
-	A Möbius transformation can be thought as a \textit{matrix transformation} of the projective line	(which can be thought as a plane) and then projection on an ordinary line.}
-	
-	\den{Harmonic Conjugate Map}{For any points $ A, B $ on $ \mathbb{P}^1 $, we define
-		\[h_{A, B}(C) = D \text{ if } (A, B; C, D) = -1 \]
-	A harmonic cojugate is a Möbius transformation. And a Möbius transformation that is also an \emph{involution}, i.e. that has $ f(f(x))=x $, is a harmonic conjugate.}
-	
-	\den{Circle Points}{The circle points are the points in $ \mathbb{P}^2 $ with coordinates $ \a=(1:i:0) $ and $ \a'=(-i:1:0) $. These two points are both infinite and imaginary. And \emph{every circle} passes through these two points.x}
-	
-	\den{Coharmonic Points}{Three pairs of points $ \{A, A'\}, \{C, C'\}, \{E, E'\} $ on the same line are called \emph{coharmonic points} iff there exists a pair of points $ \{M, N\} $ on the line such that 
-	\[(M, N; A, B) = (M, N;C, D) = (M, N; E, F)=-1\]}
+\den{Projective Plane}{
+    The \emph{projective plane} $ \mathbb{P}^2 $ is a \textit{set of lines}
+    passing through an observation point $ O $ in three dimensional space. A
+    \emph{porjective line} is a plane passing through $ O $, and a
+    \emph{projective point} is a line passing throught $ O $.
+}
 
-	\den{Involution}{If there exists a point $ X $ on $ l $ such that for the Möbius Transformation $ f:l\to l $, such that $ f(f(X))=X $, then $ f $ is an \emph{involution}.}
-	
-	
-	\theo{}{Properties of Coharmonic Points}{If $ A, B, C, A', B', C' $ lie on a line, no three the same and $ A\ne X $, then the following are equivalent:
-		\begin{enumerate}[itemsep=0pt, left=20pt]
-			\item $ \{A,A'\}, \{B, B'\}, \{C, C'\} $ are coharmonic.
-			\item There is a Möbius Transformation with $ f(A)=A', f(B)=B', f(C)=C' $ which is an involution.
-			\item $ (A, A'; B, C)=(A', A; B', C') $\vspace{.5em}
-			\item $ \dfrac{AC'}{C'B}\dfrac{BA'}{A'C}\dfrac{CB'}{B'A}=-1 $\vspace{.5em}
-			\item $ (A, A'; C, C') = (A, A'; C, B)\ (A, A'; C, B') $
-		\end{enumerate}
-	}
+\den{Coordinates in Projective Planes}{
+    A point in a projective plane $ \mathbb{P}^2 $ has coordinates $ (p: q: r) $.
+    If $ r=0 $, we say that the point is an \emph{infinite point}. Every line in $
+    \mathbb{P}^2 $ can also be described with $ (p:q:r) $ in a sense that this
+    line (which is a plane passing through $ O $) has the equation \[pa+qb+rc=0\]
+}
 
-	\theo{}{Invertible Function on a line}{If $ f $ is an \emph{invertible function} from a line to itself that is defined by some geometric procedure that has no \emph{configuration mess}, then $ f $ preserves cross ratio, and is a Möbius Transformation. Similarly, an invertible Möbius Transformation is an involution on the line.}
-	
-	
-		
-	
-	
+\den{Projection}{
+    We can define \emph{projection} of $ \mathbb{P}^2 $ on some plane $ A^2 $
+    not passing through $ O $ (for simplicity we will take the plane $ z=1 $)
+    by associating
+    \[ P=(p:q:r)\in \mathbb{P}^2 \to P'=\left(\dfrac{p}{r}:\dfrac{q}{r}:1\right)\in A^2 \]
+    If $ r=0 $, then we say $ P' $ is an infinite point with slope $ \dfrac{q}{p} $.
 
-\newpage \subsection{Cross Ratio}
+    A projective line $ l $ with coordinates $ p:q:r $ gets associated to a line $
+    l\in A^2 $ likewise. The line at infinity is the line associated with the
+    projective line passing through $ O $ and parallel to $ A^2 $.
+}
+
+\den{Projective Line and Inversive Plane}{
+Every point in a \emph{projective line} $ \mathbb{P}^1 $ has a coordinate $
+(s:t) $ which corresponds to the ordinary point $ x=\dfrac{s}{t} $. The point
+at infinity will have $ t=0 $. If we let $ s, t $ be complex numbers then the
+projective line is called the \emph{inversive plane}.
+}
 
 
-	\begin{minipage}{.5\linewidth}
-		
-		
-		\theo{}{Pappus's Hexagon Theorem}{Let $ A,B,C $ be on a line, and let $ D,E,F $ be on another line. Let $ X=AE\cap BD,Y=BF\cap CE,Z=CD\cap AF $. Then $ X,Y,Z $ are on a line.}
-		
-		\proof{
-			Let $ CD\cap BF=J, DE\cap BD = K $. We have,
-			\begin{align*}
-			&(D, Z;\ J, C) \\
-			\stackrel{F}{=}\ &(AB\cap FD, A;\ B, C)\\
-			\stackrel{C}{=}\ &(D, X;\ B, K) \\
-			\stackrel{Y}{=}\ &(D, XY\cap DC;\ J, C)
-			\end{align*}
-		}
-	\end{minipage}\hfill%
-	\begin{minipage}{.47\linewidth}
-		\figdf{}{pappu_cross}{}
-	\end{minipage}
+\den{Cross Ratio}{
+    If four points $ A, B, C, D $ lie on a line, their \emph{cross ratio} is defined as 
+    \[(A, B; C, D) = \frac{AC}{BC}\div \frac{AD}{BD}\]
+    If four lines $ l_1, l_2, l_3, l_4 $ pass through a point, then their cross ratio is 
+
+    \[(l_1, l_2; l_3, l_4) = \frac{\sin\angle l_1l_3}{\sin\angle
+    l_2l_3}\div\frac{\sin\angle l_1l_4}{\sin\angle l_2l_4}\]
+
+    If four points on the inversive plane has the complex coordinate $ a, b,
+    c, d $, then the cross ratio is defined by
+    \[(A, B; C, D) = \frac{a-c}{b-c}\div \frac{a-d}{c-d}\]
+}
+
+
+\den{Möbius Transformation}{
+    A \emph{Möbius Transformation} is defined by a transformation $ f_M $ of
+    the inversive plane by a two by two matrix 
+    $ \begin{pmatrix}
+        a & b \\
+        c & d 
+    \end{pmatrix} $
+    with non zero determiant as followed:
+    \[(s:t) \in \mathbb{P}^1 \to (sa+tb\ :\ sc+td)\]
+
+    Which is in ordinary coordinates:
+    \[f_M(z) = \frac{az+b}{cz+d}\]
+
+    A Möbius transformation can be thought as a \textit{matrix transformation} of
+    the projective line	(which can be thought as a plane) and then projection on
+    an ordinary line.
+}
+
+\den{Harmonic Conjugate Map}{
+    For any points $ A, B $ on $ \mathbb{P}^1 $, we define
+    \[h_{A, B}(C) = D \text{ if } (A, B; C, D) = -1 \]
+    A harmonic cojugate is a Möbius transformation. And a Möbius
+    transformation that is also an \emph{involution}, i.e. that has $
+    f(f(x))=x $, is a harmonic conjugate.
+}
+
+\den{Circle Points}{
+    The circle points are the points in $ \mathbb{P}^2 $ with coordinates $
+    \a=(1:i:0) $ and $ \a'=(-i:1:0) $. These two points are both infinite and
+    imaginary. And \emph{every circle} passes through these two points.
+}
+
+\den{Coharmonic Points}{
+    Three pairs of points $ \{A, A'\}, \{C, C'\}, \{E, E'\} $ on the same line
+    are called \emph{coharmonic points} iff there exists a pair of points $
+    \{M, N\} $ on the line such that 
+    \[(M, N; A, B) = (M, N;C, D) = (M, N; E, F)=-1\]
+}
+
+\den{Involution}{
+    If there exists a point $ X $ on $ l $ such that for the Möbius Transformation
+    $ f:l\to l $, such that $ f(f(X))=X $, then $ f $ is an \emph{involution}.
+}
+
+
+\theo{}
+{Properties of Coharmonic Points}{
+    If $ A, B, C, A', B', C' $ lie on a line, no three the same and $A\ne X$,
+    then the following are equivalent:
+
+    \begin{enumerate}[itemsep=0pt, left=20pt]
+        \item $ \{A,A'\}, \{B, B'\}, \{C, C'\} $ are coharmonic.
+        \item There is a Möbius Transformation with $ f(A)=A', f(B)=B',
+            f(C)=C' $ which is an involution.
+        \item $ (A, A'; B, C)=(A', A; B', C') $\vspace{.5em}
+        \item $ \dfrac{AC'}{C'B}\dfrac{BA'}{A'C}\dfrac{CB'}{B'A}=-1 $\vspace{.5em}
+        \item $ (A, A'; C, C') = (A, A'; C, B)\ (A, A'; C, B') $
+    \end{enumerate}
+}
+
+\theo{}
+{Invertible Function on a line}{
+    If $ f $ is an \emph{invertible function} from a line to itself that is
+    defined by some geometric procedure that has no \emph{configuration mess},
+    then $ f $ preserves cross ratio, and is a Möbius Transformation. Similarly,
+    an invertible Möbius Transformation is an involution on the line.
+}
+
+
+\newpage 
+\subsection{Cross Ratio}
+
+\vspace{-4em}
+\begin{minipage}{.5\linewidth}
+    \theo{}
+    {Pappus's Hexagon Theorem}{
+        Let $ A,B,C $ be on a line, and let $ D,E,F $ be on another line. Let
+        $ X=AE\cap BD,Y=BF\cap CE,Z=CD\cap AF $. Then $ X,Y,Z $ are on a line.
+    }
+
+    \proof{
+        Let $ CD\cap BF=J, DE\cap BD = K $. We have,
+        \begin{align*}
+            (D, Z;\ J, C) \stackrel{F}{=}\ &(AB\cap FD, A;\ B, C)\\
+            \stackrel{C}{=}\ (D, X;\ B, K) \stackrel{Y}{=}\ &(D, XY\cap DC;\ J, C)
+        \end{align*}
+    }
+
+    \vspace{-2em}
+
+    \theo{}
+    {Cross Ratio Equality}{
+        Let $ A,B,C,D $ be on a line, and let $ E,F,G,H $ be on another line.
+        Let $X=AF\cap BE, Y=BG\cap CF, Z=CH\cap DG$. Then $ X,Y,Z $ are on a
+        line if and only if $ (A,B;C,D) = (E,F;G,H) $.
+    }	
+
+    \vspace{2em}
+
+    \prob{}
+    {Isogonal Conjugate and cevians}{}{
+        Let $P, Q$ be two points inside $\triangle ABC$. Let $P', Q'$ be the
+        isogonal conjugates of $P, Q$. Let $DEF, WUV$ be the
+        cevian triangles of $P, Q$. Prove that iff $Q'\in EF$, then $P'\in
+        UV$.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.47\linewidth}
+    \vspace{5em}
+    \figdf{.9}{pappu_cross}{}
+    \vspace{2em}
+    \figdf{.8}{pappu_cross_4}{$ (A,B;C,D) = (E,F;G,H) $}
+    \figdf{.9}{cross_ratio_joydip_1}{}
+\end{minipage}
 
 
 
-	\begin{minipage}{.5\linewidth}
-		\figdf{}{pappu_cross_4}{$ (A,B;C,D) = (E,F;G,H) $}
-	\end{minipage}\hfill%
-	\begin{minipage}{.45\linewidth}
-		\theo{}{Cross Ratio Equality}{Let $ A,B,C,D $ be on a line, and let $ E,F,G,H $ be on another line. Let $X=AF\cap BE, Y=BG\cap CF, Z=CH\cap DG$. Then $ X,Y,Z $ are on a line if and only if $ (A,B;C,D) = (E,F;G,H) $.}	
-	\end{minipage}
+\newpage
+\subsection{Involution}
+
+\theo{}
+{Involution on a line}{
+    An involution on a line $ l $ is an inversion around some point on $ l $.
+}
 
 
-	
-	
-\newpage\subsection{Involution}
-	
-	\theo{}{Involution on a line}{An involution on a line $ l $ is an inversion around some point on $ l $.}
-	
-	
-	\theo{}{Involution on a conic}{Let $ f:\mathcal{C}\to \mathcal{C} $ be an involution. Let $ f(X)=X' $ for all $ X\in \mathcal{C} $. Then all $ XX' $ pass through a fixed point $ P $.}
-	
-		\solu{
-			[Polar line, Pascal]
-			Let $ l $ be the polar line of $ P $ wrt $ \mathcal{C} $. Let $ l' $ be the line parallel to $ l $ passing through $ P $. Let $ l'\cap \mathcal{C} = \{X, X'\} $. We show that, if $ A, B\in\mathcal{C} $, and $ A', B' $ are the second intersection of $ AP, BP $ with $ \mathcal{C} $, then, $ \{A, A'\}, \{B, B'\} $ and $ \{X, X'\} $ are coharmonic points wrt $ \mathcal{C} $, that is, for a point $ Q\in \mathcal{C} $, 
-			
-			\[(QX, QX'; QA, QB) = (QX', QX; QA', QB')\]
-			Let $ XA, XB\cap l = A_1, B_1  $, and $ XA', XB'\cap l = A_1', B_1' $. Since the line $ \left(XA\cap X'A', XA'\cap X'A\right) $ is the polar of $ XX'\cap AA' $, $ X', A', A_1' $ are collinear. Similarly for $ X', B', B_1' $. Let $ T $ be the polar point of $ XX' $. \\
-			
-			\begin{minipage}{.7\linewidth}
-				We have, $ T, XB\cap X'A, XA\cap X'B $ collinear by Pascal's theorem on hexagon $ XXABX'X' $. Let, $ T' = (T, XB\cap X'A, XA\cap X'B)\cap l' $. We have,
-				\begin{align*}
-				\frac{XT'}{T'X}=\frac{B_1T}{TA_1'}&=\frac{A_1T}{TB_1'}
-				\implies \frac{TB_1}{TA_1} = \frac{TA_1'}{TB_1'}
-				\end{align*}
-				
-				
-				Now, we have 
-				\begin{align*}
-				X(X, X'; A, B) &= (T,\infty; A_1, B_1)&\\[.5em]
-				&=\frac{TA_1}{TB_1}=\frac{TB_1'}{TA_1'}&&=(\infty, T; A_1', B_1')\\
-				& &&=X(X', X; A', B')
-				\end{align*}
-			\end{minipage}\hfill%
-			\begin{minipage}{.29\linewidth}
-				\figdf{}{involution_conic}{}
-			\end{minipage}
-			
-			\vspace{1em}
-			
-			Which concludes the proof.
-		}		
-		
-		
-		
-		\solu{
-			[Inversion] 
-			First project the conic to a circle, then invert $ \mathcal{C}\to l $ across a point $ P $ on $ \mathcal{C} $. The goal is to show that for every conjugate pair $ X, X' \in \mathcal{C} $ and their image after inversion $ X_1, X_1'\in l $, $ \odot PX_1X_1' $ passes through a fixed point. \\
-			
-			By \autoref{theorem:Involution on a line}, we know that there is a point $ K $ on $ l $ that inverts $ X_1 $ to $ X_1' $. So the circles $ PX_1X_1' $ have radical  axis $ PK $. Which concludes the proof.
-		}	
-	
-	
-	
-	\begin{BoxedTheorem}{Three Conic Law}{}
-		Let $ A, B, C, D $ be any four points, no three on a line. Let $ l $ be a line passing through at most one of them. For a point $ P $ on $ l $, define $ f(P) = P' $, where $ P' $ is the second intersection of $ l $ with the conic passing through $ A, B, C, D, P' $. Then $ f $ is an involution.\\
-		
-		Then for any three points $ X, Y, Z \in l$, $ \{X, f(X)\},\ \{Y, f(Y)\},\ \{Z, f(Z)\} $ are coharmonic, i.e. $ \{X, f(X)\} $ are conjugate pairs of an involution on $ l $,
-	\end{BoxedTheorem}
-	
-	
-	
-	\theo{}{Desargues' Involution Theorem}{Let $ ABCD $ be a quadrilateral, let a conic $ \mathcal{C} $ pass through $ A, B, C, D $. And let a line $ l $ intersect $ (AB, CD), (AD, BC), (AC, BD), \mathcal{C} $ at $ (X_1, X_2), (Y_1, Y_2), (Z_1, Z_2), (W_1, W_2) $. Then \[\{X_1, X_2\}, \{Y_1, Y_2\}, \{Z_1, Z_2\}, \{W_1, W_2\}\] are \textit{coharmonic points} i.e. they are reciprocal pairs of some involution on $ l $.
-		\figdf{.6}{desargues_invo_theorem}{Desargues' Involution Theorem}
-	}
-	
-	\proof{Apply the \textit{Three Conic Law} on $ l $ with points $ A, B, C, D $.}
-	
-	
-	\theo{}{Degenerate Desargues' Involution: 2 Points}{Let $A, B$, be two points on a conic $\mathcal{C}$, let a line $l$ meet $AB, \mathcal{C}$ and the tangents at $A, B$ to $\mathcal{C}$ at $X, (W_1, W_2), (Y_1, Y_2)$. Then $(X, X), (W_1, W_2), (Y_1, Y_2)$ are reciprocal pairs of an involution on $l$.}
-	
-	
-	
+\theo{}{
+    Involution on a conic}{Let $ f:\mathcal{C}\to \mathcal{C} $ be an
+    involution. Let $ f(X)=X' $ for all $ X\in \mathcal{C} $. Then all $ XX' $
+    pass through a fixed point $ P $.
+}
+
+
+\begin{solution}[Polar line, Pascal]
+    Let $ l $ be the polar line of $ P $ wrt $ \mathcal{C} $. Let $ l' $ be
+    the line parallel to $ l $ passing through $ P $. Let $ l'\cap \mathcal{C}
+    = \{X, X'\} $. We show that, if $ A, B\in\mathcal{C} $, and $ A', B' $ are
+    the second intersection of $ AP, BP $ with $ \mathcal{C} $, then, $ \{A,
+    A'\}, \{B, B'\} $ and $ \{X, X'\} $ are coharmonic points wrt $
+    \mathcal{C} $, that is, for a point $ Q\in \mathcal{C} $, 
+
+    \[(QX, QX'; QA, QB) = (QX', QX; QA', QB')\]
+
+    Let $ XA, XB\cap l = A_1, B_1  $, and $ XA', XB'\cap l = A_1', B_1' $.
+    Since the line $ \left(XA\cap X'A', XA'\cap X'A\right) $ is the polar of $
+    XX'\cap AA' $, $ X', A', A_1' $ are collinear. Similarly for $ X', B',
+    B_1' $. Let $ T $ be the polar point of $ XX' $. \\
+
+    \begin{minipage}{.7\linewidth}
+        We have, $ T, XB\cap X'A,\ XA\cap X'B $ collinear by Pascal's theorem
+        on hexagon $ XXABX'X' $. Let, $ T' = (T, XB\cap X'A, XA\cap X'B)\cap
+        l' $. We have,
+
+        \begin{align*}
+            \frac{XT'}{T'X}=\frac{B_1T}{TA_1'}&=\frac{A_1T}{TB_1'}
+            \implies \frac{TB_1}{TA_1} = \frac{TA_1'}{TB_1'}
+        \end{align*}
+
+        Now, we have 
+        \begin{align*}
+            X(X, X'; A, B) &= (T,\infty; A_1, B_1)&\\[.5em]
+                &=\frac{TA_1}{TB_1}=\frac{TB_1'}{TA_1'}&&=(\infty, T; A_1', B_1')\\
+                & &&=X(X', X; A', B')
+        \end{align*}
+    \end{minipage}\hfill%
+    \begin{minipage}{.29\linewidth}
+        \figdf{}{involution_conic}{}
+    \end{minipage}
+
+    \vspace{1em}
+
+    Which concludes the proof.
+\end{solution}
+
+
+\begin{solution}[Inversion] 
+    First project the conic to a circle, then invert $ \mathcal{C}\to l $
+    across a point $ P $ on $ \mathcal{C} $. The goal is to show that for
+    every conjugate pair $ X, X' \in \mathcal{C} $ and their image after
+    inversion $ X_1, X_1'\in l $, $ \odot PX_1X_1' $ passes through a fixed
+    point.
+    By \autoref{theorem:Involution on a line}, we know that there is a point $
+    K $ on $ l $ that inverts $ X_1 $ to $ X_1' $. So the circles $ PX_1X_1' $
+    have radical  axis $ PK $. Which concludes the proof.
+\end{solution}
+
+
+
+\begin{BoxedTheorem}[Three Conic Law]
+    Let $ A, B, C, D $ be any four points, no three on a line. Let $ l $ be a
+    line passing through at most one of them. For a point $ P $ on $ l $,
+    define $ f(P) = P' $, where $ P' $ is the second intersection of $ l $
+    with the conic passing through $ A, B, C, D, P' $. Then $ f $ is an
+    involution.\\
+
+    Then for any three points $ X, Y, Z \in l$, $ \{X, f(X)\},\ \{Y, f(Y)\},\
+    \{Z, f(Z)\} $ are coharmonic, i.e. $ \{X, f(X)\} $ are conjugate pairs of
+    an involution on $ l $,
+\end{BoxedTheorem}
+
+
+
+\theo{}
+{Desargues' Involution Theorem}{
+    Let $ ABCD $ be a quadrilateral, let a conic $ \mathcal{C} $ pass through
+    $ A, B, C, D $. And let a line $ l $ intersect $ (AB, CD), (AD, BC), (AC,
+    BD), \mathcal{C} $ at $ (X_1, X_2), (Y_1, Y_2), (Z_1, Z_2), (W_1, W_2) $.
+    Then \[\{X_1, X_2\}, \{Y_1, Y_2\}, \{Z_1, Z_2\}, \{W_1, W_2\}\] are
+    \textit{coharmonic points} i.e. they are reciprocal pairs of some
+    involution on $ l $.
+}
+\figdf{.8}{desargues_invo_theorem}{Desargues' Involution Theorem}
+
+\proof{
+    Apply the \textit{Three Conic Law} on $ l $ with points $ A, B, C, D $.
+}
+
+
+\theo{}{Degenerate Desargues' Involution: 2 Points}{Let $A, B$, be two points on a conic $\mathcal{C}$, let a line $l$ meet $AB, \mathcal{C}$ and the tangents at $A, B$ to $\mathcal{C}$ at $X, (W_1, W_2), (Y_1, Y_2)$. Then $(X, X), (W_1, W_2), (Y_1, Y_2)$ are reciprocal pairs of an involution on $l$.}
+
+
+\den{Involution on Pencil}{
+    Let $P$ be a point on the plane. Let $\mathcal{L}$ be the set of all line
+    containing $P .$ Then $f: \mathcal{L} \rightarrow \mathcal{L}$ is
+    an \emph{involution on a pencil} of lines if and only if.
+
+    \begin{enumerate}
+        \item For every $\ol{P A}, \ol{P B}, \ol{P C}, \ol{P D} \in
+            \mathcal{L},$ we have
+            \[(\ol{P A}, \ol{P B} ; \ol{P C}, \ol{P D})=(f(\ol{P A}), f(\ol{PB});
+            f(\ol{P C}), f(\ol{P D})) \]
+        \item  $f(f(\ell))=\ell$ for every $\ell \in \mathcal{L} .$
+            Furthermore, we call a pair $(\ell, f(\ell))$ reciprocal pair.
+    \end{enumerate}
+}
+
+\theo{}
+{Dual of Desargues' Involution Theorem}{
+    Let $P, A, B, C, D$ be points on a plane with $\ol{A B} \cap \ol{C D}=E,
+    \ol{A D} \cap \ol{B C}=F .$ Let a conic $\mathcal{C}$ tangent to lines $A
+    B, C D, A D, B C .$ Let $\ol{P X}, \ol{P Y}$ are the tangent line from $P$
+    to $\mathcal{C} .$ Then 
+    \[(\ol{P X}, \ol{P Y}),(\ol{P A}, \ol{P C}),(\ol{P B}, \ol{P D}),(\ol{P
+    E}, \ol{P F})\] 
+    are reciprocal pairs of some involution on pencil of lines through $P$.
+}
+
+\figdf{.8}{dual_desargues}{}
+
+
+
 
 \newpage\subsection{Inversion}
 
-	\href{http://artofproblemsolving.com/community/c5h1101224p5015914}{TelvCohl’s $\sqrt bc$ inversion problem collection}
-
-	
-	
-	\lem{}{WRT a circle $ \omega $ with center $ O $ the polar of a point $ A $ can be constructed as the radical axis of $ \omega $ and the circle with diameter $ OA $.}
-	
-	\lem{}{$ \measuredangle (a, b) = \measuredangle AOB $}
-	
-
-	\theo{}{Pascal's Theorem for Octagons: A special case}{Let $ ABCDA'B'C'D' $ be a octagon inscribed in a conic section. If the points: 
-	
-	\[ AD\cap BC,\ AC'\cap BB',\ AD'\cap CA',\ BD'\cap DA',\ DB'\cap CC' \]
-	
-	are collinear, then so are the points 
-	
-	\[ A'D'\cap B'C',\ A'C\cap B'B,\ A'D\cap C'A,\ B'D\cap D'A,\ D'B\cap C'C \]
-	
-		\figdf{1}{PG1_OctagonalPascal}{If the small Red points are collinear, then the Blue ones are too.}
-	}
-	
-	
-	\theo{}{Inscribed Conic in Pascal's theorem}{$ A_1A_2A_3A_4A_5A_6 $ be a hexagon inscribed in a conic section. Then the hexagon formed by \[A_1A_3\cap A_2A_6,\ A_2A_4\cap A_1A_3,\ A_2A_4\cap A_3A_5,\ A_3A_5\cap A_4A_6,\ A_5A_1\cap A_4A_6,\ A_1A_5\cap A_2A_6\] has an inscribed conic section.}
-
-
-	\prob{}{}{E}{Let $ ABCD $ have an incircle $ (I) $. Let $ (I) $ meet $ AB, BC, CD, DA $ at $ M, N, P, Q $. Let $ K, L $ be the circumcenters of $ AMN, APQ $. $ KL\cap BD = R,\ AI\cap MQ = J $. Prove that $ RA=RJ $.}
-	
-	
-	\prob{}{}{E}{Let the $A$ mixtilinear incircle $(O)$ of $\triangle ABC$ meet $\odot ABC, AC, AB$ at $P, E, F$. Let $M$ be the $BC$ arc midpoint. Let $\mathcal{H}$ be the conic that goes through $E, F, O, P, M$ meet $\odot ABC$ at $X, Y$. Prove that $AA, XY, EF$ are concurrent.}
-	
-	\prob{https://artofproblemsolving.com/community/c6h1140471p5353038}{Iran 3rd Round G4}{EM}{Let $ABC$ be a triangle with incenter $I$. Let $K$ be the midpoint of $AI$ and $BI\cap \odot(\triangle ABC)=M, CI\cap \odot(\triangle ABC)=N$. points $P,Q$ lie on $AM,AN$ respectively such that $\angle ABK=\angle PBC,\angle ACK=\angle QCB$. Prove that $P,Q,I$ are collinear.}
-
-	\solu{Since we are dealing with collinearity, and usually we use harmonic bundle in these cases to show collinearity. But in this problem, there is no harmonic bundle. So we use cross ratio...}
+\href{http://artofproblemsolving.com/community/c5h1101224p5015914}{TelvCohl’s $\sqrt bc$ inversion problem collection}
 
 
 
-	\gene{http://artofproblemsolving.com/community/c6h1140471p5356029}{Iran 3rd Round G4 Generalized version}{Let $ABC$ be a triangle inscribed in circle $(O)$ and $P,Q$ are two isogonal conjugate points. $PB,PC$ cut $(O)$ again at $M,N$. $QA$ cuts $MN$ at $K$. $L$ is isogonal conjugate of $K$. $LB,LC$ cut $AM,AN$ at $S,T$, resp. Prove that $S,Q,T$ are collinear.}
+\lem{}{WRT a circle $ \omega $ with center $ O $ the polar of a point $ A $ can be constructed as the radical axis of $ \omega $ and the circle with diameter $ OA $.}
+
+\lem{}{$ \measuredangle (a, b) = \measuredangle AOB $}
+
+
+\theo{}{Pascal's Theorem for Octagons: A special case}{Let $ ABCDA'B'C'D' $ be a octagon inscribed in a conic section. If the points: 
+
+    \[ AD\cap BC,\ AC'\cap BB',\ AD'\cap CA',\ BD'\cap DA',\ DB'\cap CC' \]
+
+    are collinear, then so are the points 
+
+    \[ A'D'\cap B'C',\ A'C\cap B'B,\ A'D\cap C'A,\ B'D\cap D'A,\ D'B\cap C'C \]
+
+    \figdf{1}{PG1_OctagonalPascal}{If the small Red points are collinear, then the Blue ones are too.}
+}
+
+
+\theo{}{Inscribed Conic in Pascal's theorem}{$ A_1A_2A_3A_4A_5A_6 $ be a hexagon inscribed in a conic section. Then the hexagon formed by \[A_1A_3\cap A_2A_6,\ A_2A_4\cap A_1A_3,\ A_2A_4\cap A_3A_5,\ A_3A_5\cap A_4A_6,\ A_5A_1\cap A_4A_6,\ A_1A_5\cap A_2A_6\] has an inscribed conic section.}
+
+
+\prob{}{}{E}{Let $ ABCD $ have an incircle $ (I) $. Let $ (I) $ meet $ AB, BC, CD, DA $ at $ M, N, P, Q $. Let $ K, L $ be the circumcenters of $ AMN, APQ $. $ KL\cap BD = R,\ AI\cap MQ = J $. Prove that $ RA=RJ $.}
+
+
+\prob{}{}{E}{Let the $A$ mixtilinear incircle $(O)$ of $\triangle ABC$ meet $\odot ABC, AC, AB$ at $P, E, F$. Let $M$ be the $BC$ arc midpoint. Let $\mathcal{H}$ be the conic that goes through $E, F, O, P, M$ meet $\odot ABC$ at $X, Y$. Prove that $AA, XY, EF$ are concurrent.}
+
+\prob{https://artofproblemsolving.com/community/c6h1140471p5353038}{Iran 3rd Round G4}{EM}{Let $ABC$ be a triangle with incenter $I$. Let $K$ be the midpoint of $AI$ and $BI\cap \odot(\triangle ABC)=M, CI\cap \odot(\triangle ABC)=N$. points $P,Q$ lie on $AM,AN$ respectively such that $\angle ABK=\angle PBC,\angle ACK=\angle QCB$. Prove that $P,Q,I$ are collinear.}
+
+\solu{Since we are dealing with collinearity, and usually we use harmonic bundle in these cases to show collinearity. But in this problem, there is no harmonic bundle. So we use cross ratio...}
 
 
 
-	\lem{}{Too long, can't explain, loot at the figure. The dotted lines go through that concurrency point.
-		\figdf{.5}{concurrent_segments_almost_pascal}{Everything concurrs}
-	}
+\gene{http://artofproblemsolving.com/community/c6h1140471p5356029}{Iran 3rd Round G4 Generalized version}{Let $ABC$ be a triangle inscribed in circle $(O)$ and $P,Q$ are two isogonal conjugate points. $PB,PC$ cut $(O)$ again at $M,N$. $QA$ cuts $MN$ at $K$. $L$ is isogonal conjugate of $K$. $LB,LC$ cut $AM,AN$ at $S,T$, resp. Prove that $S,Q,T$ are collinear.}
 
-	\lem{Construction of Involution Center on Line}{Given a line $ l $, four points $ A, B, A', B' $ such that $ A, A' $ and $ B, B' $ are two conjugate pairs of some involution i.e. some inversion on $ l $, find the center $ O $ of inversion.}
-	
-	
-	
-	
-	
+
+
+\lem{}{Too long, can't explain, loot at the figure. The dotted lines go through that concurrency point.
+    \figdf{.5}{concurrent_segments_almost_pascal}{Everything concurrs}
+}
+
+\lem{Construction of Involution Center on Line}{Given a line $ l $, four points $ A, B, A', B' $ such that $ A, A' $ and $ B, B' $ are two conjugate pairs of some involution i.e. some inversion on $ l $, find the center $ O $ of inversion.}
+
+
+
+
+
 
 \newpage\subsection{Problems}
-	
-	\prob{}{Dunno}{E}{Let $ E, F $ be on the lines $ AC, AB $ of $ \triangle ABC $. Let $ P $ be a point on $ EF $. Let $ Q $ be the intersection of the lines through $ E, F $ and parallel to $ BP $ and $ CP $ respectively. Prove that, as $ P $ moves along $ EF $, $ Q $ moves along a line.}
-	
-	\solu{[Cross Ratio]
-	Let $ X \in BF, Y\in CE $ such that $ \dfrac{BX}{XF} = \dfrac{CE}{EA},\ \dfrac{CY}{YA} = \dfrac{BF}{FA} $. With trivial calculation, we have $ XY\parallel BC $ We show that $ Q, X, Y $ are collinear. For that we will show $ FU\parallel EV $ where $ U=BP\cap XY, V=CP\cap XY $. And by reverse Pappu's theorem on $ FPE, UQV $, we will have $ U,Q,V $ collinear. \\
-	
-	\begin{minipage}{.5\linewidth}
-		Let $ K, L = BP, CP\cap XY $. Also, $ S = BC\cap EF $. Then we have, 
-		\[(S, P; F, E) \stackrel{B}{=} (\infty, U; X, K) \stackrel{C}{=} (\infty, V; L, Y)\]
-		\[\implies \frac{XU}{UK} = \frac{LV}{VY}\]
-		
-		But we have, 
-		\begin{align*}
-		\frac{FX}{XB} = \frac{FL}{LC} = \frac{AE}{EC}
-		\end{align*} 
-	\end{minipage}\hfill%
-	\begin{minipage}{.5\linewidth}
-		\figdf{}{mine_(maybe)_1}{}
-	\end{minipage}
-		
-		\vspace{1em}
-		
-	So, $ FX\parallel EL $, and similarly, $ FK\parallel EY $. So by similarity, we have $ FU\parallel EV $.}
 
-	\begin{minipage}{.6\linewidth}
-		\lem{Conic through orthocenter and vertices}{Let $ ABCD $ be a quadrilateral. Let $ G, H $ be the orthocenters of $ \triangle ABC $ and $ \triangle DBC $. Then $ A, B, C, D, G, H $ all lie on a conic.}
-		
-		\proof{
-			Since $ line(AC\cap BD, BG\cap CH) $ is perpendicular to $ BC $, we have $ AG\cap DH, AC\cap BD, BG\cap CH  $ collinear. So by reverse Pascal's theorem, $ A, D, G, H, B, C $ lie on a conic.
-		}
-	\end{minipage}\hfill%
-	\begin{minipage}{.35\linewidth}
-		\figdf{}{orthocenters_on_conic}{}
-	\end{minipage}
+\prob{}{Dunno}{E}{Let $ E, F $ be on the lines $ AC, AB $ of $ \triangle ABC $. Let $ P $ be a point on $ EF $. Let $ Q $ be the intersection of the lines through $ E, F $ and parallel to $ BP $ and $ CP $ respectively. Prove that, as $ P $ moves along $ EF $, $ Q $ moves along a line.}
 
-	
-	
-	\lem{Orthogonal Hyperbola}{Let $ H $  be the orthocenter of $ ABC $. Let $ \mathcal{C} $ be a conic through $ A, B, C, H $. If $ XYZ $ is a triangle with vertices in $ \mathcal{C} $, then the orthocenter $ W $ of $ XYZ $ lies also on $ \mathcal{C} $. Also, the asymptotes of $ \mathcal{C} $ are orthogonal.}
-	
-		\solu{
-		As in \autoref{lemma:Conic through orthocenter and vertices}, the orthocenter ot $ XBC $ lies on $ \mathcal{C} $ too. So the orthocenter of $ XYC $ lies on $ \mathcal{C} $ and so does the orthocenter of $ XYZ $.\\
-		
-		Now we show that asymptotes of $ \mathcal{C} $ are orthogonal.\\
-	
-		Let the two infinity points on $ \mathcal{C} $ be $ s, t $. Consider the triangle $ Ast $. Let its orthocenter be $ B $. Then we have, $ tB\perp sA $. But $ tB $ is parallel to the asymptote through $ t $ and $ sA $ is parallel to the asymptote through $ s $. So the asymptotes themselves are orthogonal.
-		
-		\figdf{.5}{orthogonal_hyperbola}{Hyperbola through $ A, B, C, H $}
-		}
+\solu{[Cross Ratio]
+    Let $ X \in BF, Y\in CE $ such that $ \dfrac{BX}{XF} = \dfrac{CE}{EA},\ \dfrac{CY}{YA} = \dfrac{BF}{FA} $. With trivial calculation, we have $ XY\parallel BC $ We show that $ Q, X, Y $ are collinear. For that we will show $ FU\parallel EV $ where $ U=BP\cap XY, V=CP\cap XY $. And by reverse Pappu's theorem on $ FPE, UQV $, we will have $ U,Q,V $ collinear. \\
 
-	
-	
+    \begin{minipage}{.5\linewidth}
+        Let $ K, L = BP, CP\cap XY $. Also, $ S = BC\cap EF $. Then we have, 
+        \[(S, P; F, E) \stackrel{B}{=} (\infty, U; X, K) \stackrel{C}{=} (\infty, V; L, Y)\]
+        \[\implies \frac{XU}{UK} = \frac{LV}{VY}\]
+
+        But we have, 
+        \begin{align*}
+            \frac{FX}{XB} = \frac{FL}{LC} = \frac{AE}{EC}
+        \end{align*} 
+    \end{minipage}\hfill%
+    \begin{minipage}{.5\linewidth}
+        \figdf{}{mine_(maybe)_1}{}
+    \end{minipage}
+
+    \vspace{1em}
+
+So, $ FX\parallel EL $, and similarly, $ FK\parallel EY $. So by similarity, we have $ FU\parallel EV $.}
+
+\begin{minipage}{.6\linewidth}
+    \lem{Conic through orthocenter and vertices}{Let $ ABCD $ be a quadrilateral. Let $ G, H $ be the orthocenters of $ \triangle ABC $ and $ \triangle DBC $. Then $ A, B, C, D, G, H $ all lie on a conic.}
+
+    \proof{
+        Since $ line(AC\cap BD, BG\cap CH) $ is perpendicular to $ BC $, we have $ AG\cap DH, AC\cap BD, BG\cap CH  $ collinear. So by reverse Pascal's theorem, $ A, D, G, H, B, C $ lie on a conic.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.35\linewidth}
+    \figdf{}{orthocenters_on_conic}{}
+\end{minipage}
+
+
+
+\lem{Orthogonal Hyperbola}{Let $ H $  be the orthocenter of $ ABC $. Let $ \mathcal{C} $ be a conic through $ A, B, C, H $. If $ XYZ $ is a triangle with vertices in $ \mathcal{C} $, then the orthocenter $ W $ of $ XYZ $ lies also on $ \mathcal{C} $. Also, the asymptotes of $ \mathcal{C} $ are orthogonal.}
+
+\solu{
+    As in \autoref{lemma:Conic through orthocenter and vertices}, the orthocenter ot $ XBC $ lies on $ \mathcal{C} $ too. So the orthocenter of $ XYC $ lies on $ \mathcal{C} $ and so does the orthocenter of $ XYZ $.\\
+
+    Now we show that asymptotes of $ \mathcal{C} $ are orthogonal.\\
+
+    Let the two infinity points on $ \mathcal{C} $ be $ s, t $. Consider the triangle $ Ast $. Let its orthocenter be $ B $. Then we have, $ tB\perp sA $. But $ tB $ is parallel to the asymptote through $ t $ and $ sA $ is parallel to the asymptote through $ s $. So the asymptotes themselves are orthogonal.
+
+    \figdf{.5}{orthogonal_hyperbola}{Hyperbola through $ A, B, C, H $}
+}
+
+
+

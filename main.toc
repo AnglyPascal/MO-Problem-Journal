@@ -1,1 +1,5 @@
-\contentsline {chapter}{Contents}{1}{section*.1}%
+\contentsline {chapter}{Contents}{2}{section*.1}%
+\contentsline {section}{\numberline {0.1}Mixtilinear--Curvilinear--Normal In-Excricles}{1}{section.0.1}%
+\contentsline {chapter}{Problems}{7}{section*.8}%
+\contentsline {chapter}{Theorems}{8}{section*.9}%
+\contentsline {chapter}{Definitions}{9}{section*.10}%

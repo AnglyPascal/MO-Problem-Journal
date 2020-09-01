@@ -1,19 +1,18 @@
-\documentclass[a4paper, 11pt, oneside]{memoir}
-\usepackage[article, lightblue]{ahsan}                      
+\documentclass[a4paper, 12pt, oneside]{memoir}
+\usepackage[sexy, ]{ahsan}
 
-\title{
-    \textbf{BCS Question Bank}
-    \HRule{2pt} \\ [.5cm]\
-}
+\title{ \textbf{BCS Question Bank} \HRule{2pt} \\ [.5cm]}
 
 \begin{document}
 
-\thispagestyle{empty} \maketitle\vfill \newpage
-\begingroup{ \hypersetup{hidelinks} \tableofcontents }\endgroup
-\setcounter{page}{1}\newpage
+% \maketitle\vfill \thispagestyle{empty}\newpage
+% \begingroup{ \hypersetup{hidelinks} \tableofcontents }\thispagestyle{empty}\endgroup
+% \newpage
+
+% \setcounter{page}{1}
 
 % \include{thots}
-% \include{for_sharing}
+\include{for_sharing}
 
 
 % \chapter{Combinatorics}
@@ -36,6 +35,7 @@
 % \include{combi/sec13_cp_algo}
 % \include{combi/sec13_permutation}	
 
+
 % \chapter{Algebra}
 % \thispagestyle{empty}
 
@@ -52,7 +52,6 @@
 % \chapter{Geometry}
 % \thispagestyle{empty}
 
-
 % \include{geo/basics}
 % \include{geo/sec1_circum-9p-circle}
 % \include{geo/sec2_cevian}
@@ -62,7 +61,7 @@
 % \include{geo/sec6_circle}
 % \include{geo/sec7_comp-quad}
 % \include{geo/sec8_projective}
-% \include{geo/sec8_5_projective_construction}
+\include{geo/sec8_5_projective_construction}
 % \include{geo/sec9_parallel}
 % \include{geo/sec10_length}
 % \include{geo/sec11_pedal}
@@ -77,17 +76,18 @@
 % \chapter{Number Theory}
 % \thispagestyle{empty}
 
-
 % \include{nt/NUMBER_THEORY}
 % \include{nt/sec1_orders_mod_prime}
 % \include{nt/sec2_primes}
 % \include{nt/sec3_fe_poly}
 % \include{nt/sec4_dioph_eq}
-% \include{nt/sec5_divisibility}		
+% \include{nt/sec5_divisibility}
+\include{nt/sec6_modular_arithmatic}
 % \include{nt/sec0_unsorted}
 
-% \backmatter
 
+
+% \invisiblesection{Index}
 % \printindex[prob]
 % \printindex[thm]
 % \printindex[def]

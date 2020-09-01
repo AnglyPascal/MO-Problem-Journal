@@ -1,0 +1,88 @@
+\section{Modular Arithmatic}
+
+\theo{http://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvMy8yL2QzYjEzOGM0ODE3YzYwZGU4NGFmOTEwZDc0ZGNhODRjOGMyMzZlLnBkZg==&rn=dGh1ZS12NC5wZGY=}
+{Thue's Lemma}{
+    Let $n>1$ be an integer and a be an integer co-prime to $n$. Then there
+    are integers $x, y$ with $0<|x|,|y|<\sqrt{n}$ so that
+    \[ x \equiv a y \ (\mod\ n) \]
+    Such a solution $(x, y)$ is called a ``small solution'' sometimes.
+}
+
+\begin{prooof}
+    Let $r=\lfloor\sqrt{n}\rfloor$ i.e. $r$ is the unique integer for which
+    $r^{2} \leq n<(r+1)^{2}$ The number of pairs $(x, y)$ so that $0 \leq x, y
+    \leq r$ is $(r+1)^{2}$ which is greater than $n .$ Then there must be two
+    different pairs $\left(x_{1}, y_{1}\right)$ and $\left(x_{2},
+    y_{2}\right)$ so that
+    \[\begin{aligned}
+        x_{1}-a y_{1} &\equiv x_{2}-a y_{2} &(\mod\ n) \\
+        x_{1}-x_{2} &\equiv a\left(y_{1}-y_{2}\right) &(\mod\ n) \\
+    \end{aligned}\]
+
+    Let $x=x_{1}-x_{2}$ and $y=y_{1}-y_{2},$ and we get $x \equiv a y\ (\mod\ n)$.
+    Now, we need to show that $0<|x|,|y|<r$ and $x, y \neq 0 .$ Certainly, if
+    one of $x, y$ is zero, the other is zero as well. If both $x$ and $y$ are
+    zero, that would mean that two pairs $\left(x_{1}, y_{1}\right)$ and
+    $\left(x_{2}, y_{2}\right)$ are actually same. That is not the case, and so
+    both $x, y$ can not be $0 .$ Therefore, none of $x$ or $y$ is $0,$ and we are
+    done.
+\end{prooof}
+
+\theo{}
+{Generalization of Thue's Lemma}{
+    Let $\alpha$ and $\beta$ are two real numbers so that $\alpha \beta \geq p$. 
+    Then for an integer $x,$ there are integers $a, b$ with $0<|a|<\alpha$
+    and $0<|b|<\beta$ so that
+    \[a \equiv x b \quad(\mod\ p) \]
+    And we can even make this lemma a two dimensional one.
+}
+
+
+\thmbox{}
+{Fermat's 4n+1 Theorem}{
+    Every prime of the form $4n+1$ can be written as the sum of squares of two
+    coprime integers.
+}
+
+\begin{prooof}
+    We know that there is an $x$ such that 
+    \[x^2 \equiv -1 \ (\mod\ p)\] 
+    And by \autoref{theorem:Thue's Lemma}, there are $a, b$ with
+    $0<\left|a\right|, \left|b\right|< \sqrt{n}$ for which
+    \[\begin{aligned}
+        a &\equiv xb \ &(\mod\ p)\\
+        a^2 &\equiv x^2b^2 \ &(\mod\ p)\\
+        a^2 + b^2 &\equiv 0 \ &(\mod\ p)
+    \end{aligned}\] 
+    Since $a^2+ b^2 < 2p$, we are done.
+\end{prooof}
+
+\theo{}
+{General Fermat's 4n+1 Theorem}{
+    Let $n\in \left\{1, 2, 3\right\}$. If $-n$ is a quadratic residue modulo
+    $p$, then there exists $a, b$ such that $a^2 + nb^2 = p$
+}
+
+\thmbox{}
+{Factors are of the same form}{
+    If $D\in \left\{1, 2, 3\right\}$ and $n = x^2 + Dy^2$ for some $x\perp y$,
+    then all of the factors of $n$ are of the form $a^2 + Db^2$.
+}
+
+\begin{prooof}
+    This is because the product of two numbers of such form is the same form
+    as them:
+    \[\begin{aligned}
+        \left(a^2+Db^2\right)\left(c^2 + Dd^2\right) &=\left(ac-Dbd\right)^2 +
+        D\left(ad+bc\right)^2\\
+        &=\left(ac+Dbd\right)^2 + D\left(ad-bc\right)^2
+    \end{aligned}\] 
+    And by \autoref{theorem:General Fermat's 4n+1 Theorem} the prime factors
+    of $n$ are of the same form. And so all factors of $n$ are of the same form.
+\end{prooof}
+
+
+\thmbox{}
+{Quadratic Residue -3}{
+    $-3$ is a quadratic residue of modulo $p$ iff $p$ is of the form $3k+1$.
+}
