@@ -1,0 +1,59 @@
+\begin{theindex}
+
+  \item Algorithm
+    \subitem Copycat
+      \subsubitem ARO 1999 P9.8, \hyperpage{39}
+
+  \indexspace
+
+  \item Bipartite, \hyperpage{36}
+
+  \indexspace
+
+  \item Extremal
+    \subitem Longest Path
+      \subsubitem AtCoder GC033 C, \hyperpage{39}
+      \subsubitem ChTST 2015 P3, \hyperpage{36}
+    \subitem Object
+      \subsubitem ISL 2001 C3, \hyperpage{40}
+
+  \indexspace
+
+  \item Global
+    \subitem Multiplication
+      \subsubitem GQMO 2020 P3, \hyperpage{167}
+  \item Graph
+    \subitem Bipartite
+      \subsubitem ARO 2005 P10.8, \hyperpage{38}
+      \subsubitem RMM 2020 P3, \hyperpage{51}
+    \subitem Grid $ \to $ Graph
+      \subsubitem ARO 2005 P10.8, \hyperpage{38}
+    \subitem Hall Marriage
+      \subsubitem RMM 2020 P3, \hyperpage{51}
+
+  \indexspace
+
+  \item Induction
+    \subitem Classic
+      \subsubitem ARO 2017 P9.1, \hyperpage{40}
+    \subitem Special
+      \subsubitem RMM 2020 P3, \hyperpage{51}
+  \item Invariant
+    \subitem Monovariant
+      \subsubitem AtCoder GC033 C, \hyperpage{39}
+
+  \indexspace
+
+  \item Local
+    \subitem Add One by One
+      \subsubitem RMM 2020 P3, \hyperpage{51}
+
+  \indexspace
+
+  \item Non-Neighbor Equivalence Class, \hyperpage{36}
+
+  \indexspace
+
+  \item Polyhedron Formula, \hyperpage{36}
+
+\end{theindex}

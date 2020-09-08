@@ -1,6 +1,138 @@
-\contentsline {chapter}{Contents}{0}{section*.1}%
-\contentsline {section}{\numberline {0.1}Conjugates}{1}{section.0.1}%
-\contentsline {subsection}{\numberline {0.1.1}Isogonal Conjugate}{1}{subsection.0.1.1}%
-\contentsline {subsubsection}{\numberline {0.1.1.1}Symmedians}{3}{subsubsection.0.1.1.1}%
-\contentsline {subsection}{\numberline {0.1.2}Isotonic Conjugate}{5}{subsection.0.1.2}%
-\contentsline {subsection}{\numberline {0.1.3}Reflection}{7}{subsection.0.1.3}%
+\contentsline {chapter}{Contents}{2}{section*.1}%
+\contentsline {chapter}{\chapternumberline {1}Combinatorics}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Binomial Identities}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Sets}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Lemmas}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Extremal Set Theory}{10}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Problems}{11}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Algorithmic}{14}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Data Structures}{14}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Minimal Spanning Tree}{14}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Shortest Path Problem}{15}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Other CP Tricks}{16}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Parity of Permutation}{16}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Fast Fourier Transform}{18}{subsection.1.3.6}%
+\contentsline {subsection}{\numberline {1.3.7}Problems}{21}{subsection.1.3.7}%
+\contentsline {subsection}{\numberline {1.3.8}Algorithm Analysis}{33}{subsection.1.3.8}%
+\contentsline {subsection}{\numberline {1.3.9}Covering Area with Squares}{34}{subsection.1.3.9}%
+\contentsline {section}{\numberline {1.4}Graph Theory}{36}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Counting in Graph}{41}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Algorithms in Graph}{45}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Game Theory}{53}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Games}{53}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Problems}{54}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Combinatorial Geometry}{58}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Chessboard Pieces}{67}{subsection.1.6.1}%
+\contentsline {section}{\numberline {1.7}Sequences}{70}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Lemmas}{70}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Generating Function Lemmas}{70}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Sequence Problems}{70}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}Recurrent Sequences}{74}{subsection.1.7.4}%
+\contentsline {section}{\numberline {1.8}Exploring Configurations}{75}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Problems}{75}{subsection.1.8.1}%
+\contentsline {subsubsection}{\numberline {1.8.1.1}Conway's Soldiers}{84}{subsubsection.1.8.1.1}%
+\contentsline {subsubsection}{\numberline {1.8.1.2}Triominos}{85}{subsubsection.1.8.1.2}%
+\contentsline {subsubsection}{\numberline {1.8.1.3}Dominos}{85}{subsubsection.1.8.1.3}%
+\contentsline {subsection}{\numberline {1.8.2}Clearly Bijection}{85}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3}Coloring Problems}{87}{subsection.1.8.3}%
+\contentsline {section}{\numberline {1.9}Linear Algebra}{90}{section.1.9}%
+\contentsline {section}{\numberline {1.10}Double Counting and Other Algebraic Methods}{94}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}Probabilistic Methods}{95}{subsection.1.10.1}%
+\contentsline {section}{\numberline {1.11}Bounding}{96}{section.1.11}%
+\contentsline {section}{\numberline {1.12}Problems}{98}{section.1.12}%
+\contentsline {section}{\numberline {1.13}Local}{117}{section.1.13}%
+\contentsline {section}{\numberline {1.14}CP Algorithms}{118}{section.1.14}%
+\contentsline {subsection}{\numberline {1.14.1}Cycle Finding Algorithms}{118}{subsection.1.14.1}%
+\contentsline {section}{\numberline {1.15}Permutations}{120}{section.1.15}%
+\contentsline {chapter}{\chapternumberline {2}Algebra}{121}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Functional Equations}{122}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Problems}{124}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Weird Ones}{129}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}FE cantonmathguy Seclected Problems}{131}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Polynomials}{135}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Techniques to remember}{135}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}General Problems}{137}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Root Hunting}{139}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}NT Polynomials}{139}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Fourier Transformation}{140}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.6}Irreducibility}{141}{subsection.2.3.6}%
+\contentsline {section}{\numberline {2.4}Inequalities}{146}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Basic Inequalities}{146}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Theorems}{150}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Tricks}{152}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Problems}{154}{subsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.4.1}Smoothing And Convexity}{158}{subsubsection.2.4.4.1}%
+\contentsline {section}{\numberline {2.5}Calculus}{161}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Ad-Hocs}{162}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Factorization}{164}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Bounding}{165}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Manipulation}{166}{subsection.2.6.3}%
+\contentsline {section}{\numberline {2.7}Tricks and Lemmas}{168}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Ad Hocs}{168}{subsection.2.7.1}%
+\contentsline {chapter}{\chapternumberline {3}Geometry}{169}{chapter.3}%
+\contentsline {section}{\numberline {3.1}First Portion}{170}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Second Portion}{173}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Orthocenter--Circumcircle--NinePoint Circle}{179}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Lemmas}{180}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Problems}{182}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}The line parallel to BC}{198}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Simson Line and Stuffs}{202}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Euler Line}{203}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Assorted Diagrams}{205}{subsection.3.3.6}%
+\contentsline {section}{\numberline {3.4}Cevian and Circumcevian Triangles}{206}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Circumcevian Triangle}{206}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Cevian Triangle}{208}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Centers of inside and outside}{211}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Feurbach Point}{228}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Assorted Diagrams}{230}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Conjugates}{231}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Isogonal Conjugate}{231}{subsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.1.1}Symmedians}{233}{subsubsection.3.6.1.1}%
+\contentsline {subsection}{\numberline {3.6.2}Isotonic Conjugate}{235}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Reflection}{237}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Circles that are really touching}{238}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Circles and Radical Axises}{243}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Complete Quadrilateral + Spiral Similarity}{250}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Projective Geometry}{258}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Definitions}{258}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}Cross Ratio}{261}{subsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.10.3}Involution}{262}{subsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.10.4}Inversion}{265}{subsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.10.5}Problems}{268}{subsection.3.10.5}%
+\contentsline {subsection}{\numberline {3.10.6}Projective Constructions}{270}{subsection.3.10.6}%
+\contentsline {section}{\numberline {3.11}Parallelogram Stuff}{274}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Length Relations}{276}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Pedal Triangles}{279}{section.3.13}%
+\contentsline {section}{\numberline {3.14}Pending Problems}{280}{section.3.14}%
+\contentsline {section}{\numberline {3.15}Problems}{284}{section.3.15}%
+\contentsline {section}{\numberline {3.16}Research Stuffs for later}{304}{section.3.16}%
+\contentsline {section}{\numberline {3.17}Big Pictures}{305}{section.3.17}%
+\contentsline {subsection}{\numberline {3.17.1}Parallel lines to the $ A $-median}{306}{subsection.3.17.1}%
+\contentsline {chapter}{\chapternumberline {4}Number Theory}{309}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Tricks}{310}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Digit Sum or Product}{310}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Diophantine Equations}{310}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Sequences}{311}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}NT Functions}{311}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Construction Problems}{311}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}Sets satisfying certain properties}{311}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Other Small Techniques to Remember}{311}{subsection.4.1.7}%
+\contentsline {section}{\numberline {4.2}Lemmas}{312}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Modular Arithmatic Theorems and Useful Results}{314}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Orders Modulo a Prime and Related Stuffs}{315}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Cyclotomic Polynomials}{315}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Quadratic Residue}{317}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Quadratic Residue}{319}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Zsigmondy's Theorem}{320}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Problems}{320}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Primes}{322}{section.4.4}%
+\contentsline {section}{\numberline {4.5}NT Functions and Polynomials}{325}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Diophantine Equations}{327}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Divisibility}{328}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Modular Arithmatic}{330}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Problems}{332}{section.4.9}%
+\contentsline {chapter}{Problems}{345}{section*.152}%
+\contentsline {chapter}{Theorems}{352}{section*.153}%
+\contentsline {chapter}{Definitions}{355}{section*.154}%
+\contentsline {chapter}{Strategies}{356}{section*.155}%
+\contentsline {chapter}{Misc}{357}{section*.156}%
