@@ -1,46 +1,105 @@
 \graphicspath{{Pics/}}
 
-\newpage\section{Conjugates}
-	
-	
-	\subsection{Isogonal Conjugate}
+\newpage
+\section{Conjugates}
 
 
-	\theo{https://artofproblemsolving.com/community/c2771h1181729_isogonal_line_lemma_updated}{Isogonal Line Lemma}{Let $AP,AQ$ are isogonal lines with respect to $\angle BAC$. Let $BP \cap CQ = F$ and $BQ \cap CP = E$. Then $AE,AF$ are isogonal lines with respect to $\angle BAC$.
-		\figdf{.55}{Isogonal_Lemma}{}}
-	
-	\proof{\[A(B, F; P, X) = (B, F; P, X) = C(B, Q; E, X) = (B, Q; E, X) = (X, E; Q, B)\]
-	So if we define a projective transformation that swaps isogonal lines wrt $ \angle BAC $, we see $ AE, AF $ are conjugates of each other.}
-		
-	
-	
-	
-	\prob{}{India Postals 2015 Set 2}{E}{Let $ABCD$ be a convex quadrilateral. In the triangle $ABC$ let $I$ and $J$ be the incenter and the excenter opposite the vertex $A$, respectively. In the triangle $ACD$ let $K$ and $L$ be the incenter and the excenter opposite the vertex $A$, respectively. Show that the lines $IL$ and $JK$, and the bisector of the angle $BCD$ are concurrent.}
-	
-	\solu{Using \autoref{theorem:Isogonal Line Lemma}}
-	
-	
-	\lem{}{Let $ \w_1, \w_2 $ be two circles such that $ \w_1 $ passes through $ A, B $ and is tangent to $ AC $ at $ A $. $ \w_2 $ is defined similarly by swapping $ B $ with $ C $. $ \w_1\cap\w_2 = X $.
-		
-	Let $ \gamma_1, \gamma_2 $ be two circles such that $ \gamma_1 $ passes through $ A, B $ and is tangent to $ BC $ at $ B $. $ \gamma_2 $ is defined similarly by swapping $ B $ with $ C $. $ \gamma_1\cap\gamma_2 = Y $.
-		
-	Then $ X, Y $ are isogonal conjugates wrt $ \triangle ABC $.}	
+\subsection{Isogonal Conjugate}
+
+\begin{minipage}{.5\linewidth}
+    \theo{https://artofproblemsolving.com/community/c2771h1181729}
+    {Isogonal Line Lemma}{
+        Let $AP,AQ$ are isogonal lines with respect to $\angle BAC$. Let $BP \cap
+        CQ = F$ and $BQ \cap CP = E$. Then $AE,AF$ are isogonal lines with respect
+        to $\angle BAC$.
+    }
+
+    \proof{
+        \[\begin{aligned}
+            A(B, F; P, X) &= (B, F; P, X) = C(B, Q; E, X) \\
+                          &= (B, Q; E, X) = (X, E; Q, B) 
+        \end{aligned}\]
+        So if we define a projective transformation that swaps isogonal lines wrt $
+        \angle BAC $, we see $ AE, AF $ are conjugates of each other.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.47\linewidth}
+    \figdf{}{Isogonal_Lemma}{}
+\end{minipage}
 
 
-	
-	\lem{Isogonality in quadrilateral}{For a point $ X $, its isogonal conjugate wrt a quadrilateral $ ABCD $ exists iff \[ \measuredangle BXA + \measuredangle DXC = 180^\circ\]
-		\figdf{1}{isogonal_in_quad}{Isogonality in quadrilateral}}
-
-		\solu{Draw the cirles, look for similarity.}
 
 
-	
-	\lem{Ratio}{Given a $ \triangle ABC $ with isogonal conjugate $ P, $ $ Q. $ Let $ AP, $ $ AQ $ cut the circumcircle of $ \triangle ABC $ again at $ U, $ $ V, $ respectively and let $ D $ $ \equiv $ $ AP $ $ \cap $ $ BC. $ Then \[\frac{AQ}{QV} = \frac{PD}{DU}\]
-		\figdf{.7}{AoPS_c284651h2018537_cute_problem_on_radical_axis_1}{}
-	}
 
-	
-	
+\prob{}
+{India Postals 2015 Set 2}{E}{
+    Let $ABCD$ be a convex quadrilateral. In the triangle $ABC$ let $I$ and
+    $J$ be the incenter and the excenter opposite the vertex $A$,
+    respectively. In the triangle $ACD$ let $K$ and $L$ be the incenter and
+    the excenter opposite the vertex $A$, respectively. Show that the lines
+    $IL$ and $JK$, and the bisector of the angle $BCD$ are concurrent.
+}
+
+\solu{
+    Using \autoref{theorem:Isogonal Line Lemma}
+}
+
+
+\lem{}{ 
+    Let $ \w_1, \w_2 $ be two circles such that $ \w_1 $ passes through $
+    A, B $ and is tangent to $ AC $ at $ A $. $ \w_2 $ is defined similarly by
+    swapping $ B $ with $ C $. $ \w_1\cap\w_2 = X $.
+
+    Let $ \gamma_1, \gamma_2 $ be two circles such that $ \gamma_1 $ passes
+    through $ A, B $ and is tangent to $ BC $ at $ B $. $ \gamma_2 $ is
+    defined similarly by swapping $ B $ with $ C $. $ \gamma_1\cap\gamma_2 = Y$.
+
+    Then $ X, Y $ are isogonal conjugates wrt $ \triangle ABC $.
+}	
+
+
+
+\begin{minipage}{.5\linewidth}
+    \lem{Isogonality in quadrilateral}{
+        For a point $ X $, its isogonal conjugate wrt a quadrilateral $ ABCD $
+        exists iff \[ \measuredangle BXA + \measuredangle DXC = 180^\circ\]
+    }
+    \solu{
+        Draw the cirles, look for similarity.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.49\linewidth}
+\figdf{1}{isogonal_in_quad}{Isogonality in quadrilateral}
+\end{minipage}
+
+
+
+
+
+
+
+\begin{minipage}{.5\linewidth}
+    \lem{Ratio}{
+        Given a $ \triangle ABC $ with isogonal conjugate $ P, $ $ Q. $ Let $ AP,
+        $ $ AQ $ cut the circumcircle of $ \triangle ABC $ again at $ U, $ $ V, $
+        respectively and let $ D $ $ \equiv $ $ AP $ $ \cap $ $ BC. $ Then
+        \[\frac{AQ}{QV} = \frac{PD}{DU}\]
+    }
+    \begin{prooof}
+        By using cross ratio:
+        \[\begin{aligned}
+            (A, F; Q, V) &= C(A, F; Q, V)\\
+                         &=C(D, A; P, V*) =(D, A; P, V*)\\
+                         &=(A, D; V*, P)
+        \end{aligned}\]
+    \end{prooof}
+\end{minipage}\hfill%
+\begin{minipage}{.45\linewidth}
+    \figdf{.9}{AoPS_c284651h2018537_cute_problem_on_radical_axis_1}{}
+\end{minipage}
+
+
+
 
 
 \newpage\subsubsection{Symmedians}
@@ -48,60 +107,106 @@
 
 
 
+\begin{minipage}{.5\linewidth}
+    \den{Symmedians}{
+        In $ \triangle ABC $, let $ T_a, T_b, T_c $ be the meet points of the
+        tangents at $ A, B, C $. Let $ \triangle N_aN_bN_c $ be the cevian
+        triangle of $ AT_a, BT_b, CT_c $. Let $ S $ be the symmedian point of $
+        \triangle ABC $. Let $ M_a, M_b, M_c $ be the midpoints of $ BC, CA, AB $.
+    }
 
-	\den{Symmedians}{In $ \triangle ABC $, let $ T_a, T_b, T_c $ be the meet points of the tangents at $ A, B, C $. Let $ \triangle N_aN_bN_c $ be the cevian triangle of $ AT_a, BT_b, CT_c $. Let $ S $ be the symmedian point of $ \triangle ABC $. Let $ M_a, M_b, M_c $ be the midpoints of $ BC, CA, AB $.}
-	
-	
-	
-	
-	
-	\lem{Most Important Symmedian Property}{Let the circles tangent to $ AC, AB $ at $ A $ and passes through $ B, C $ respectively meet at $ T' $ for the second time. Let $ AT_a\cap \odot ABC = A' $. Let the tangents to $ \odot ABC $ at $ A, A' $ meet $ BC $ at $ T $. Prove that, $ A, T', T_a, \text{ and } T, T', O $ are collinear.
-		\figdf{.7}{Symmedian_Lemma_1}{$ T' $ is quite special!}
-	}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c5h202907p1116181}{USAMO 2008 P2}{E}{Let $ ABC$ be an acute, scalene triangle, and let $ M$, $ N$, and $ P$ be the midpoints of $ {BC}$, $ {CA}$, and $ {AB}$, respectively. Let the perpendicular bisectors of $ {AB}$ and $ {AC}$ intersect ray $ AM$ in points $ D$ and $ E$ respectively, and let lines $ BD$ and $ CE$ intersect in point $ F$, inside of triangle $ ABC$. Prove that points $ A$, $ N$, $ F$, and $ P$ all lie on one circle.
-	\figdf{.5}{USAMO_2008_P2}{USAMO 2008 P2}}
-	
-	
-		\begin{solution}[Phantom Point]
-			First assume $ F\in BD, \text{ and } F=T' $ (Where $ T' $ comes from \autoref{lemma:Most Important Symmedian Property}, and prove that $ F\in CE $.)
-		\end{solution}
-		\begin{solution}[Isogonal Conjugate]
-			Construct the isogonal conjugate of $ F $, which is the intersection of the circles touching $ BC $ and passing through $ A, B $ and $ A, C $.
-		\end{solution}
-		\solu{Using \autoref{theorem:Isogonal Line Lemma} by taking the reflections of $ B , C $ over $ D, F $}
-		
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1095220p4902494}{IRAN TST 2015 Day 3, P3}{M}{$AH$ is the altitude of triangle $ABC$ and $H^\prime$ is the reflection of $H$ trough the midpoint of $BC$. If the tangent lines to the circumcircle of $ABC$ at $B$ and $C$, intersect each other at $X$ and the perpendicular line to $XH^\prime$ at $H^\prime$, intersects $AB$ and $AC$ at $Y$ and $Z$ respectively, prove that $\angle ZXC=\angle YXB$.}
-	
-	
-	
-	\prob{https://web.facebook.com/photo.php?fbid=539157073197109&set=gm.1855250764588621&type=3&theater}{Two Symmedian Points}{E}{Let $E, F$ be the feet of $B, C$-altitudes. Let $K, K_A$ be the symmedian points of $\triangle ABC, \triangle AEF$. Prove that $KK_A\perp BC, KK_A\cap BC = P$ and $KK_A=KP$
-		\figdf{.35}{Two_Symmedian_Points}{$KK_A\perp BC$}
-	}
-	
-	
+    \lem{Most Important Symmedian Property}{
+        Let the circles tangent to $ AC, AB $ at $ A $ and passes through $ B, C $
+        respectively meet at $ T' $ for the second time. Let $ AT_a\cap \odot ABC
+        = A' $. Let the tangents to $ \odot ABC $ at $ A, A' $ meet $ BC $ at $ T
+        $. Prove that, $ A, T', T_a, \text{ and } T, T', O $ are collinear.
+    }
+
+\end{minipage}\hfill%
+\begin{minipage}{.47\linewidth}
+    \figdf{}{Symmedian_Lemma_1}{$ T' $ is quite special!}
+\end{minipage}
+
+\vspace{2em}
+
+
+\begin{minipage}{.5\linewidth}
+    \prob{https://artofproblemsolving.com/community/c5h202907p1116181}
+    {USAMO 2008 P2}{E}{
+        Let $ ABC$ be an acute, scalene triangle, and let $ M$, $ N$, and $ P$
+        be the midpoints of $ {BC}$, $ {CA}$, and $ {AB}$, respectively. Let
+        the perpendicular bisectors of $ {AB}$ and $ {AC}$ intersect ray $ AM$
+        in points $ D$ and $ E$ respectively, and let lines $ BD$ and $ CE$
+        intersect in point $ F$, inside of triangle $ ABC$. Prove that points
+        $ A$, $ N$, $ F$, and $ P$ all lie on one circle.
+    }
+
+    \begin{solution}[Phantom Point]
+        First assume $ F\in BD, \text{ and } F=T' $ (Where $ T' $ comes from
+        \autoref{lemma:Most Important Symmedian Property}, and prove that $
+        F\in CE $.)
+    \end{solution}
+\end{minipage}\hfill%
+\begin{minipage}{.47\linewidth}
+    \figdf{}{USAMO_2008_P2}{USAMO 2008 P2}
+\end{minipage}
+
+\vspace{1em}
+
+\begin{solution}[Isogonal Conjugate]
+    Construct the isogonal conjugate of $ F $, which is the intersection of the circles touching $ BC $ and passing through $ A, B $ and $ A, C $.
+\end{solution}
+\solu{Using \autoref{theorem:Isogonal Line Lemma} by taking the reflections of $ B , C $ over $ D, F $}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1095220p4902494}
+{IRAN TST 2015 Day 3, P3}{M}{
+    $AH$ is the altitude of triangle $ABC$ and $H^\prime$ is the reflection of $H$
+    trough the midpoint of $BC$. If the tangent lines to the circumcircle of $ABC$
+    at $B$ and $C$, intersect each other at $X$ and the perpendicular line to
+    $XH^\prime$ at $H^\prime$, intersects $AB$ and $AC$ at $Y$ and $Z$
+    respectively, prove that $\angle ZXC=\angle YXB$.
+}
+
+
+\begin{minipage}{.5\linewidth}
+    \prob{https://web.facebook.com/photo.php?fbid=539157073197109}
+    {Two Symmedian Points}{E}{
+        Let $E, F$ be the feet of $B, C$-altitudes. Let $K, K_A$ be the symmedian
+        points of $\triangle ABC, \triangle AEF$. Prove that $KK_A\perp BC,
+        KK_A\cap BC = P$ and $KK_A=KP$
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.45\linewidth}
+    \figdf{.8}{Two_Symmedian_Points}{$KK_A\perp BC$}
+\end{minipage}
+
+
+
+
+
+
+
+
+
 \newpage\subsection{Isotonic Conjugate}
 
-	\theo{}{Isotonic Lemma}{Let $ M $ be the midpoint of $ BC $, and $ PQ $ such that $ Q $ is the reflection of $ P $ on $ M $. Two points $ Q, R $ on $ AP, AQ $, $ BQ\cap CR = X,\ BR\cap CQ = Y $. Then $ AX, AY $ are isotonic wrt $ BC $.
-		\fig{1}{Isotonic_Lemma}{}
-	}\label{isotonic_lemma}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h626330p3756450}{IGO 2014 S5}{M}{Two points $P$ and $Q$ lying on side $BC$ of triangle $ABC$ and their distance from the midpoint of $BC$ are equal.The perpendiculars from $P$ and $Q$ to $BC$ intersect $AC$ and $AB$ at $E$ and $F$,respectively.$M$ is point of intersection $PF$ and $EQ$.If $H_1$ and $H_2$ be the orthocenters of triangles $BFP$ and $CEQ$, respectively, prove that $ AM\perp H_1H_2 $.}
-	
-		\solu{We first show that the slope of $ H_1H_2 $ is fixed, and then show that $ AM $ is fixed where we use \hrf{isotonic_lemma}{isotonic lemma}, and finally show that these two lines are perpendicular.}
+\theo{}{Isotonic Lemma}{Let $ M $ be the midpoint of $ BC $, and $ PQ $ such that $ Q $ is the reflection of $ P $ on $ M $. Two points $ Q, R $ on $ AP, AQ $, $ BQ\cap CR = X,\ BR\cap CQ = Y $. Then $ AX, AY $ are isotonic wrt $ BC $.
+    \fig{1}{Isotonic_Lemma}{}
+}\label{isotonic_lemma}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h626330p3756450}{IGO 2014 S5}{M}{Two points $P$ and $Q$ lying on side $BC$ of triangle $ABC$ and their distance from the midpoint of $BC$ are equal.The perpendiculars from $P$ and $Q$ to $BC$ intersect $AC$ and $AB$ at $E$ and $F$,respectively.$M$ is point of intersection $PF$ and $EQ$.If $H_1$ and $H_2$ be the orthocenters of triangles $BFP$ and $CEQ$, respectively, prove that $ AM\perp H_1H_2 $.}
+
+\solu{We first show that the slope of $ H_1H_2 $ is fixed, and then show that $ AM $ is fixed where we use \hrf{isotonic_lemma}{isotonic lemma}, and finally show that these two lines are perpendicular.}
 
 
 
 \newpage\subsection{Reflection}
 
-	\lem{Homothety and Reflection}{Let two oppositely oriented congruent triangles be $ \triangle ABC, \triangle DEF $. Prove that the midpoints of $ AD, BE, CF $ are collinear. 
-		\fig{.7}{homothety+reflection}{Oppositely oriented congruent triangles}
-	}
+\lem{Homothety and Reflection}{Let two oppositely oriented congruent triangles be $ \triangle ABC, \triangle DEF $. Prove that the midpoints of $ AD, BE, CF $ are collinear. 
+    \fig{.7}{homothety+reflection}{Oppositely oriented congruent triangles}
+}
 
-	\prob{}{Autumn Tournament, 2012}{E}{Let two oppositely oriented equilateral triangles be $ \triangle ABC, \triangle DEF $. What is the least possible value of $ \max{\left (AD, BE, CF\right )} $?}
+\prob{}{Autumn Tournament, 2012}{E}{Let two oppositely oriented equilateral triangles be $ \triangle ABC, \triangle DEF $. What is the least possible value of $ \max{\left (AD, BE, CF\right )} $?}

@@ -4,6 +4,7 @@
 \newpage\section{Orthocenter--Circumcircle--NinePoint Circle}
 
 
+Notes everyone need to memorize by heart top to bottom:
 \begin{enumerate} [itemsep=0pt]
     \item \href{http://yufeizhao.com/olympiad/imo2008/zhao-circles.pdf}{Circles -
         Yufei Zhao}
@@ -14,20 +15,22 @@
         - Yufei Zhao} 
 \end{enumerate}
 
+\den{The usual notations}{
+    Unless stated otherwise, we assume that $\triangle ABC$ is an arbitrary
+    triangle, with circumcenter $O$, orthocenter $H$, $\omega$ is the
+    circumcircle. Usually, $DEF$ is the orthic triangle in this chapter. $MNP$
+    is the median triangle.
+}
 
-\subsection{some figures, might be good for something, i dunno}
 
-\figdf{.4}{random_circle_pic_1}{$ H $ lies on the line, Circles vary}
+\newpage
+\subsection{Lemmas}
 
-
-
-\subsection{Problems}
 
 
 \begin{minipage}{.65\textwidth} 
-
     \lem{Collinearity with antipode and center}{
-        Let $A'$ be the antipod of $ A $ in $ \odot ABC $. Let
+        Let $A'$ be the antipode of $ A $ in $ \odot ABC $. Let
         $BDEC$ be a cyclic quadrilateral with $ D\in AB $ and $ E\in AC $. Let $ P $
         be the center of $ BDEC $. Also, let $ X=BE\cap CD $. Then $ A', P, X $ are
         collinear.  
@@ -38,112 +41,66 @@
         Q=\odot ADE \cap \odot ABC $, then $ P, X, Q $ collinear and $ PQ\perp AQ $.
         Which implies that $ P, A', Q $ are collinear.  
     } 
+
+    \lem{Weird point Y}{
+        Let $Y$ be a point on $AC$ such that $\triangle CBY \sim CAB$. Let $E$
+        bet the foot of $B$ on $AC$, let $N$ be the midpoint of $AB$. Then
+        $NE, CO, BE$ are concurrent.
+    }
+    \begin{solution}
+        Draw te circles, $BNKO$ and $BKYC$.
+    \end{solution}
 \end{minipage}\hfill% 
-\begin{minipage}{.3\textwidth} 
-    \figdf{1}{ChinaTST2018T1P3_lemm}{}
+\begin{minipage}{.33\textwidth} 
+    \figdf{}{ChinaTST2018T1P3_lemm}{}
+    \figdf{}{CHKMO_2014_p4_lem_1}{}
 \end{minipage}
 
 
 
 
+\newpage
+\subsection{Problems}
 
-
-
-\begin{minipage}{.6\textwidth}
-
+\begin{minipage}{.55\textwidth}
     \prob{https://artofproblemsolving.com/community/c6h1441717p8209926}{Balkan MO
         2017 P3}{S}{
-
-        Consider an acute-angled triangle $ABC$ with $AB<AC$
-        and let $\omega$ be its circumscribed circle. Let $t_B$ and $t_C$ be
-        the tangents to the circle $\omega$ at points $B$ and $C$,
-        respectively, and let $L$ be their intersection. The straight line
-        passing through the point $B$ and parallel to $AC$ intersects $t_C$ in
-        point $D$. The straight line passing through the point $C$ and
-        parallel to $AB$ intersects $t_B$ in point $E$. The circumcircle of
-        the triangle $BDC$ intersects $AC$ in $T$, where $T$ is located
-        between $A$ and $C$. The circumcircle of the triangle $BEC$ intersects
-        the line $AB$ (or its extension) in $S$, where $B$ is located between
-        $S$ and $A$. Prove that $ST$, $AL$, and $BC$ are concurrent.  
-
+        Let $t_B$ and $t_C$ be the tangents $\omega$ at $B$ and $C$, they meet
+        at $L$. The straight lines passing through $B, C$ and
+        parallel to $AC, AB$ intersects $t_C, t_B$ at points $D, E$
+        respectively. $T = AC \cap \odot BDC, S = AB\cap \odot CBE$. Prove
+        that $ST$, $AL$, and $BC$ are concurrent.  
     }
 
-    \solu{ 
-        You could've thought like: symmedian is there \& and $ \triangle ABC
-        \rightarrow \triangle ACS $ \& concurrent $ \implies $ parallel lines and
-        median concurrency?
+    \begin{solution}
+        We have $\triangle ABT \sim \triangle ACB \sim ASC$, which leads to
+        $BT\parallel CS$, and $AL$ becomes the median of $\triangle ABT$.
+    \end{solution}
 
-        Just need to prove $ BT\parallel CS $.  
-    } 
-\end{minipage}\hfill%
-\begin{minipage}{.4\textwidth} 
-    \figdf{.9}{Balkan_MO_2017_P3}{}
-\end{minipage}
-
-
-
-\begin{minipage}{.5\textwidth}
+    \vspace{1em}
 
     \prob{https://artofproblemsolving.com/community/c4512_2014_usamo}{USAMO
         2014 P5}{E}{
-
-        Let $ABC$ be a triangle with orthocenter $H$ and let $P$ be
-        the second intersection of $\odot AHC$ with the internal bisector of $\angle
-        BAC$. Let $X$ be the circumcenter of triangle $APB$ and $Y$ the orthocenter of
-        triangle $APC$. Prove that the length of segment $XY$ is equal to the
-        circumradius of triangle $ABC$.
-
+        Let $P$ be the second intersection of $\odot AHC$ with the internal
+        bisector of $\angle BAC$. Let $X$ be the circumcenter of triangle
+        $APB$ and $Y$ the orthocenter of triangle $APC$. Prove that the length
+        of segment $XY$ is equal to the circumradius of triangle $ABC$.
     }
 
     \solu{
         No length conditions given, yet we need to prove that two lengths
-        are equal. \emph{Parallelogram} !!!\\ Just need to prove that $ Y\in \odot ABC $
-        \& $ YD\perp AB $
+        are equal. \emph{Parallelogram} !!! Just need to prove that $ Y\in
+        \odot ABC \text{ and } YD\perp AB $
     } 
-\end{minipage}\hfill% 
-\begin{minipage}{.48\textwidth}
-    \figdf{.99}{USAMO_2014_P5}{}
-\end{minipage}	
 
-
-
-
-\begin{minipage}{.5\textwidth} 
-    \prob{}{Bewarish 1}{E}{
-
-        Let $ DEF $ be the
-        orthic triangle, and let $ EF\cap BC = P $. Let the tangent at $ A $ to $
-        \odot ABC $ meet $ BC $ at $ Q $. Let $ T $ be the reflection of $ Q $ over $
-        P $. Let $ K $ be the orthogonal projection of $ H $ on $ AM $. Prove that $
-        \angle OKT = 90 $.
-
-    }
-
-    \solu{
-        Spiral similarity to get rid of $ Q $ and $ T $. Then spiral
-        similarity again to find a trivial circle.
-    } 
-\end{minipage}\hfill%
-\begin{minipage}{.48\textwidth} 
-    \figdf{.99}{Bewarish_1}{} 
-\end{minipage}
-
-
-
-
-
-
-
-
-\begin{minipage}{.5\linewidth}
-    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's
-        proposed problems for Arab Saudi team 2015}{E}{
-        Let $ ABC $ be a triangle
-        with orthocenter $ H $. $ P $ is a point. $ (K) $ is the circle with diameter
-        $ AP $. $ (K) $ cuts $ CA, AB $ again at $ E, F $. $ PH $ cuts $ (K) $ again
-        at $ G $. Tangent line at $ E, F $ of $ (K) $ intersect at $ T $. $ M $ is
-        midpoint of $ BC $. $ L $ is the point on $ MG $ such that $ AL \parallel MT.
-        $ Prove that $ LA \perp LH $.
+    \vspace{1em}
+    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}
+    {Saudi Arab 2015}{E}{
+        $P$ is a point. $(K)$ is the circle with diameter $AP$. $(K)$ cuts $CA, AB$
+        again at $ E, F $. $ PH $ cuts $ (K) $ again at $ G $. Tangent line at
+        $E, F $ of $ (K) $ intersect at $ T $. $ M $ is midpoint of $ BC $. 
+        $L$ is the point on $ MG $ such that $ AL \parallel MT.  $ Prove that
+        $LA \perp LH $.
     }
 
     \begin{solution}[Phantom Point] 
@@ -151,22 +108,38 @@
         spiral similarity to show that $ AL'\parallel MT $.  
     \end{solution}
 \end{minipage}\hfill% 
-\begin{minipage}{.45\linewidth}
-    \figdf{}{SATST2015proposed_by_bura/derakynay1134-1}{} 
+\begin{minipage}{.4\textwidth}
+    \figdf{.7}{Balkan_MO_2017_P3}{}
+    \figdf{.99}{USAMO_2014_P5}{}
+    \figdf{.9}{SATST2015proposed_by_bura/derakynay1134-1}{} 
+\end{minipage}	
+
+\begin{minipage}{.5\textwidth} 
+    \prob{}{Bewarish 1}{E}{
+        Let $ DEF $ be the
+        orthic triangle, and let $ EF\cap BC = P $. Let the tangent at $ A $ to $
+        \odot ABC $ meet $ BC $ at $ Q $. Let $ T $ be the reflection of $ Q $ over $
+        P $. Let $ K $ be the orthogonal projection of $ H $ on $ AM $. Prove that $
+        \angle OKT = 90 $.
+    }
+
+    \solu{
+        Spiral similarity from $O$ to get rid of $Q$ and $T$. Then spiral
+        similarity again from $P$ to get a trivial circle.
+    } 
+\end{minipage}\hfill%
+\begin{minipage}{.48\textwidth} 
+    \figdf{.99}{Bewarish_1}{} 
 \end{minipage}
 
-
-
-\begin{minipage}{.45\linewidth}
-\figdf{}{SATST2015proposed_by_bura/derakynay1134-2}{} \end{minipage}\hfill%
-\begin{minipage}{.5\linewidth}
-    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's
-        proposed problems for Arab Saudi team 2015}{E}{
-        Let $ABC$ be a triangle
-        inscribed circle $(O)$. $P$ lies on $(O)$. The line passes through $P$ and
-        parallel to $BC$ cuts $CA$ at $E$. $K$ is circumcenter of triangle $PCE$ and
-        $L$ is nine point center of triangle $PBC$. Prove that the line passes through
-        $L$ and parallel to $PK,$ always passes through a fixed point when $P$ moves.
+\begin{minipage}{.6\linewidth}
+    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}
+    {Saudi Arab 2015}{E}{
+        $P$ lies on $(O)$. The line passes through $P$ and parallel to $BC$
+        cuts $CA$ at $E$. $K$ is circumcenter of triangle $PCE$ and $L$ is
+        nine point center of triangle $PBC$. Prove that the line passes
+        through $L$ and parallel to $PK,$ always passes through a fixed point
+        when $P$ moves.
     }
 
     \begin{solution}[Construction] 
@@ -176,14 +149,10 @@
         throught $ L $ passes throught the midpoint of $ P'D $ where $ D $ is
         the reflection of $ H $ over $ BC $.  
     \end{solution} 
-\end{minipage}
 
-
-\begin{minipage}{.5\linewidth}
-    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's
-        proposed problems for Arab Saudi team 2015}{E}{
-        Let $ABC$ be acute triangle
-        inscribed circle $(O)$, altitude $AH$, $H$ lies on $BC$. $P$ is a point that
+    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}
+    {Saudi Arab 2015}{E}{
+        Altitude $AH$, $H$ lies on $BC$. $P$ is a point that
         lies on bisector $\angle BAC$ and $P$ is inside triangle $ABC$. Circle
         diameter $AP$ cuts $(O)$ again at $G$. $L$ is projection of $P$ on $AH$.
         Assume that $GL$ bisects $HP$. Prove that $P$ is incenter of $ABC$.
@@ -197,19 +166,17 @@
         DP=DB=DC $.  
     \end{solution} 
 \end{minipage}\hfill%
-\begin{minipage}{.45\linewidth}
+\begin{minipage}{.35\linewidth}
+    \figdf{}{SATST2015proposed_by_bura/derakynay1134-2}{} 
     \figdf{}{SATST2015proposed_by_bura/derakynay1134-4}{} 
 \end{minipage}
 
 
-
-\begin{minipage}{.45\linewidth}
-\figdf{}{SATST2015proposed_by_bura/derakynay1134-5}{} \end{minipage}\hfill%
-\begin{minipage}{.5\linewidth}
-    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's
-        proposed problems for Arab Saudi team 2015}{E}{
-        Let $ABC$ be an acute
-        triangle inscribed circle $(O)$. $M$ lies on small arc $\overline{BC}$ . $P$
+\newpage
+\begin{minipage}{.6\linewidth}
+    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}
+    {Saudi Arab 2015}{E}{
+        $M$ lies on small arc $\overline{BC}$ . $P$
         lies on $AM$. Circle diameter $MP$ cuts $(O)$ again at $N$. $MO$ cuts circle
         diameter $MP$ again at $Q$. $AN$ cuts circle diameter $MP$ again at $R$. Prove
         that $\angle PRA = \angle PQA$.
@@ -217,71 +184,90 @@
 
     \begin{solution}[Angle Chase] Let $ MO \cap \odot ABC = D $. Becase $
         NP\perp MN $, we have $ N, P, D $ collinear, and $ APQD $ cyclic.
-
         So, $ \triangle APQ\sim \triangle ANM \sim \triangle APR $.
     \end{solution} 
+
+    \vspace{1em}
+
+    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}
+    {Saudi Arab 2015}{E}{
+        Let $ABC$ be right triangle with hypotenuse $BC$, bisector $BE$, $E$ lies
+        on $CA$. Assume that circumcircle of triangle $BCE$ cuts segment $AB$
+        again at $F$. $K$ is projection of $A$ on $BC$. $L$ lies on segment $AB$
+        such that $BL = BK$. Prove that $\dfrac{AL}{AF} = \sqrt{\dfrac{BK}{BC}}$.
+    }
+
+    \vspace{1em}
+
+    \prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}
+    {Saudi Arab 2015}{E}{
+        $AD$ is diameter of $(O)$. $M, N$ lie on $BC$ such
+        that $OM \parallel AB$, $ON \parallel AC$. $DM, DN$ cut $(O)$ again at $P, Q$.
+        Prove that $BC = DP = DQ$.
+    }
+
+    \begin{solution}
+        We will prove that $MB = MD$. Since $OD = OA$, we have $EM = MD$. And
+        since $\triangle EBD$ is a right triangle, $MB = ME = MD$. And so the
+        arcs $PB$ and $DC$ are equal.
+    \end{solution}
+\end{minipage}\hfill%
+\begin{minipage}{.35\linewidth}
+    \figdf{}{SATST2015proposed_by_bura/derakynay1134-5}{} 
+    \figdf{}{SATST2015proposed_by_bura/derakynay1134-6}{}
+    \figdf{}{SATST2015proposed_by_bura/derakynay1134-7}{}
 \end{minipage}
 
 
 
 
-
-
-\prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's
-    proposed problems for Arab Saudi team 2015}{E}{
-    Let $ABC$ be right triangle
-    with hypotenuse $BC$, bisector $BE$, $E$ lies on $CA$. Assume that
-    circumcircle of triangle $BCE$ cuts segment $AB$ again at $F$. $K$ is
-    projection of $A$ on $BC$. $L$ lies on segment $AB$ such that $BL = BK$. Prove
-    that $\frac{AL}{AF} = \sqrt{\frac{BK}{BC}}$.
+\newpage
+\prob{http://igo-official.ir/wp-content/uploads/2017/09/4th_IGO_Problems-and-Solutions.pdf}
+{IGO 2017 Advance P3}{E}{
+    Let $O$ be the circumcenter of $\triangle ABC$. Line $CO$ intersects the
+    altitude through $A$ at point $K$. Let $P, M$ be the midpoints of $AK, AC$
+    respectively. If $PO$ intersects $BC$ at $Y$ , and the circumcircle of
+    $\triangle BCM$ meets $AB$ at $X$, prove that $BXOY$ is cyclic
 }
+\begin{minipage}{.5\linewidth}
+\solu{
+    We want to prove that $\angle POX = \angle AMX$. But we also notice by
+    Reim's theorem that $\angle BOY = \angle BMC$, which leads to $\angle XPO
+    = \angle XAM$. \\
 
-\fig{.5}{SATST2015proposed_by_bura/derakynay1134-6}{}%bps_1
-
-
-
-
-
-
-\prob{https://artofproblemsolving.com/community/c74453h1225408_some_geometric_problems}{buratinogigle's
-    proposed problems for Arab Saudi team 2015}{E}{
-    Let $ABC$ be acute triangle
-    inscribed circle $(O)$. $AD$ is diameter of $(O)$. $M, N$ lie on $BC$ such
-    that $OM \parallel AB$, $ON \parallel AC$. $DM, DN$ cut $(O)$ again at $P, Q$.
-    Prove that $BC = DP = DQ$.
+    Now, we want to show that 
+    \[\frac{XA}{AP} = \frac{XM}{OM}\]
+    Which is simple length chase.
 }
-
-\fig{.5}{SATST2015proposed_by_bura/derakynay1134-7}{}
-
-
-
-
-
-\prob{}{}{E}{
-    Let $\triangle ABC$ be a triangle. $F, G$ be arbitrary points on
-    $AB, AC$. Take $D, E$ midpoint of $BF, CG$. Show that the center of nine-point
-    circle of $\triangle ABC,\ \triangle ADE,\ \triangle AFG$ are
-    collinear.
-}\label{eriq_lemma_3}
+\end{minipage}\hfill%
+\begin{minipage}{.49\linewidth}
+    \figdf{}{IGO_2017_Advanced_P3}{}
+\end{minipage}
 
 
 
+\begin{minipage}{.5\linewidth}
+    \prob{}
+    {}{EM}{
+        Let $EF\parallel BC$ be two points on the circumcircle. Let $D$ be the center of
+        $HE$, and let $K$ be the point on $AB$ for which $OK\parallel AF$. Prove that
+        $DK\perp DC$.
+    }
 
-\prob{http://igo-official.ir/wp-content/uploads/2017/09/4th_IGO_Problems-and-Solutions.pdf}{IGO
-    2017 Advance P3}{}{L
-    et $O$ be the circumcenter of $\triangle ABC$. Line $CO$
-    intersects the altitude through $A$ at point $K$. Let $P, M$ be the midpoints
-    of $AK, AC$ respectively. If $PO$ intersects $BC$ at $Y$ , and the
-    circumcircle of $\triangle BCM$ meets $AB$ at $X$, prove that $BXOY$ is
-    cyclic
-}
+    \begin{solution}
+        The main part of the solution is to get rid of $OK$ in some way. We take
+        $T$ to be the point such that $T\in OK$ and $\angle OTC = 90$. And let $S
+        = CT\cap \odot ABC$. Then we have, $ES\perp AB$, and if we can show that
+        $D$ lies on $\odot PTC$, we are done. But then that is straightforward as
+        $DT\parallel FS\parallel CH$ and $DP\parallel EQ$.
+    \end{solution}
+\end{minipage}\hfill%
+\begin{minipage}{.48\linewidth}
+    \figdf{}{bdmo_forum_geo_1}{}
+\end{minipage}
 
 
-\solu{There is no easily measurable angles, in this case use projective
-    geometry. And since we still don't have any easy angles, we look for the
-second way of concyclicity, POP}
-
-
+\newpage
 \prob{https://artofproblemsolving.com/community/c6h1615884p10101617}{Turkey
     TST 2018 P4}{E}{
     In a non-isosceles acute triangle $ABC$, $D$ is the midpoint
@@ -291,8 +277,20 @@ second way of concyclicity, POP}
     to the circumcircle of $AQP$ at $A$ is perpendicular to $BC$.
 }
 
-\solu{Inverting around $ A $.}
-
+\begin{minipage}{.5\linewidth}
+    \begin{solution}[angle chase]
+        Note that $AQ$ is the angle bisector of $\angle BAC$. Using this fact,
+        we can easily prove that $\angle HAQ = \angle APQ$.
+    \end{solution}    
+    \solu{[inversion]
+        Inverting around $A$ with radius $\sqrt{AP\cdot AD}$ sends $EF$ to
+        the circumcircle of $ABC$ and $P$ to $D$. Since $AQ$ bisects $\angle BAC$,
+        we have $DQ'\perp BC$. 
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.47\linewidth}
+    \figdf{}{Turkey_TST_2018_p4}{}
+\end{minipage}
 
 
 \prob{https://artofproblemsolving.com/community/q1h1970138p13654481}{USA
@@ -320,8 +318,11 @@ second way of concyclicity, POP}
     Now, it is easy to see that $ Z, Y, T $ lie on the radical axis of $
     A'D'CB $ and $ ADC'B' $. So we have $ T, X, Y, Z $ collinear.
 
-\figdf{.8}{USA_Winter_TST_2020_P2}{} \end{solution}
+\end{solution}
 
+\figdf{.8}{USA_Winter_TST_2020_P2}{} 
+
+\vspace{1em}
 \begin{solution}[mOvInG pOiNtS, by shawnee03] Fix $\Gamma_1$ and $\Gamma_2$
     (and hence $\ell, T, A, B$) and animate $X$ linearly on $\ell$. Then
 
@@ -355,8 +356,8 @@ second way of concyclicity, POP}
 \end{solution}
 
 
-\gene{https://artofproblemsolving.com/community/c6h1970138p13654501}{USA
-    Winter TST 2020 P2}{
+\gene{https://artofproblemsolving.com/community/c6h1970138p13654501}
+{USA Winter TST 2020 P2}{
     Let $ABCD$ be a cyclic quadrilateral, $X=AC\cap BD$, and
     $Y=AB\cap CD$. Let $T$ be a point on line $XY$, $\Gamma_1$ be the circle
     through $A$ and $C$ tangent to $TA$, and $\Gamma_2$ be the circle through $B$
@@ -364,23 +365,42 @@ second way of concyclicity, POP}
     angles from $T$.
 }
 
-\begin{solution}[Length Chase, by a1267ab]
+\begin{minipage}{.5\linewidth}
+    \begin{solution}[Length Chase, by a1267ab]
+        If the radiuses of $ \Gamma_1 $ and $ \Gamma_2 $ are $ r_1, r_2 $, then we
+        have to show,
+        \[\frac{TA}{r_1}=\frac{TD}{r_2}\]
+        We have, 
+        \[r_1= \frac{AB}{2\sin\angle TAB},\ r_2= \frac{CD}{2\sin\angle TDC}\]
+        To get the sine ratios, we compare the areas of $ \triangle TAB $ and $
+        \triangle TDC $. We have, 
+        \[\begin{aligned}
+            \frac{TA\cdot AB\ \sin\angle TAB}{TD\cdot CD\ \sin\angle TDC} &=
+            \frac{[TAB]}{[TCD]}\\
+            &= \frac{[XAB]}{[XCD]} = \frac{AB^2}{CD^2}\\[.7em]
+            \implies \frac{r_1}{TA}&=\frac{r_2}{TD}
+        \end{aligned}\]
+    \end{solution}
+\end{minipage}\hfill%
+\begin{minipage}{.5\linewidth}
+    \figdf{.9}{USA_Winter_TST_2020_P2_generalization}{} 
+\end{minipage}
 
-    If the radiuses of $ \Gamma_1 $ and $ \Gamma_2 $ are $ r_1, r_2 $, then we
-    have to show,\[\frac{TA}{r_1}=\frac{TD}{r_2}\]
-
-    We have, \[r_1= \frac{AB}{2\sin\angle TAB},\ r_2= \frac{CD}{2\sin\angle
-    TDC}\]
-
-    To get the sine ratios, we compare the areas of $ \triangle TAB $ and $
-    \triangle TDC $. We have, \[\frac{TA\cdot AB\ \sin\angle TAB}{TD\cdot CD\
-        \sin\angle TDC} = \frac{[TAB]}{[TCD]} = \frac{[XAB]}{[XCD]} =
-        \frac{AB^2}{CD^2}\] \[\implies \frac{r_1}{TA}=\frac{r_2}{TD}\]
-
-    \figdf{.6}{USA_Winter_TST_2020_P2_generalization}{} 
-\end{solution}
-
-
+\begin{minipage}{.5\linewidth}
+    \prob{https://artofproblemsolving.com/community/c5h1629606p10226149}
+    {USAJMO 2018 P3}{E}{
+        Let $ABCD$ be a quadrilateral inscribed in circle $\omega$ with
+        $\overline{AC} \perp \overline{BD}$. Let $E$ and $F$ be the
+        reflections of $D$ over lines $BA$ and $BC$, respectively, and let $P$
+        be the intersection of lines $BD$ and $EF$. Suppose that the
+        circumcircle of $\triangle EPD$ meets $\omega$ at $D$ and $Q$, and the
+        circumcircle of $\triangle FPD$ meets $\omega$ at $D$ and $R$. Show
+        that $EQ = FR$.
+    } 
+\end{minipage}\hfill%
+\begin{minipage}{.45\linewidth}
+    \figdf{1}{USAJMO_2018_p3}{}
+\end{minipage}
 
 
 
@@ -396,6 +416,11 @@ second way of concyclicity, POP}
 \solu{Finding a set of Collinear points.}
 
 
+\prob{}{}{E}{
+    Let $\triangle ABC$ be a triangle. $F, G$ be arbitrary points on $AB, AC$.
+    Take $D, E$ midpoint of $BF, CG$. Show that the nine-point centers of
+    $\triangle ABC,\ \triangle ADE,\ \triangle AFG$ are collinear.
+}\label{eriq_lemma_3}
 
 
 \prob{http://igo-official.ir/wp-content/uploads/2017/09/4th_IGO_Problems-and-Solutions.pdf}{IGO 2017 Advance P4}{}{T
@@ -767,9 +792,8 @@ trivial.}
 
 
 \prob{https://artofproblemsolving.com/community/c6h520197}{buratinogigle}{EM}{
-    Let
-    $(O)$ be a circle and $E,F$ are two points inside $(O)$. $(K),(L)$ are two
-    circles passing though $E,F$ and tangent internally to $(O)$ at $A,D$,
+    Let $(O)$ be a circle and $E,F$ are two points inside $(O)$. $(K),(L)$ are
+    two circles passing though $E,F$ and tangent internally to $(O)$ at $A,D$,
     respectively. $AE,AF$ cut $(O)$ again at $B,C$, respectively. $BF$ cuts
     $CE$ at $G$. Prove that reflection of $A$ though $EF$ lies on line $DG$.\\
 
@@ -796,24 +820,26 @@ trivial.}
 
 
 \lem{Simson Line Parallel}{
-    Let $ P $ be a point on the circumcircle, let $ P'
-    $ be the reflection of $ P $ on $ BC $ and let $ PP' \cap \Omega = D $, and
-    let $ l_p $ be the Simson line of $ P $. Prove that $ l_p\parallel AD\parallel
-    HP' $.
+    Let $P$ be a point on the circumcircle, let $P'$ be the reflection of $P$
+    on $BC$ and let $PP'\cap\Omega = Q$, and let $l_p$ be the Simson line of
+    $P$. Prove that $l_p\parallel AD\parallel HP'$.
 }
-
-\fig{1}{SimsonLineLemma1}{The dotted lines are parallel}
-
-
 
 \lem{Simson Line Angle}{
-    Given triangle $ ABC $ and its circumcircle $ (O) $.
-    Let $ E,F $ be two arbitrary points on $ (O) $. Then the angle between the
-    Simson lines of two points $ E $ and $ F $ is half the measure of the arc $ EF
-    $.
+    Given triangle $ABC$ and its circumcircle $(O)$.  Let $E, F$ be two
+    arbitrary points on $(O)$. Then the angle between the Simson lines of
+    two points $E$ and $F$ is half the measure of the arc $EF$.
 }
 
-\fig{1}{SimsonLineLemma2}{}
+
+
+\begin{minipage}{.5\linewidth}
+    \figdf{.7}{SimsonLineLemma1}{\autoref{lemma:Simson Line Parallel}}
+\end{minipage}\hfill%
+\begin{minipage}{.5\linewidth}
+    \figdf{.8}{SimsonLineLemma2}{\autoref{lemma:Simson Line Angle}}
+\end{minipage}
+
 
 
 
@@ -836,5 +862,59 @@ this line is the radical axis of the Circumcircle and the NinePoint circle}
     the Euler line of $ ABC $
 }
 
-\solu{Thinking the stuff wrt to the incircle and using cross ratio.}
+\begin{prooof}
+    Thinking the stuff wrt to the incircle and using cross ratio.
+\end{prooof}
+
+
+\begin{minipage}{.5\linewidth}
+    \lem{Perpendicular on Euler Line}{
+        Let $E, F$ be the feet of altitudes from $B, C$, and let $M, N$ be the
+        midpoints of $AC, AB$. $D = MN\cap AB$. Prove that $AF$ is perpendicular
+        to the euler line.
+    }
+    \begin{prooof}
+        We know that $MNEF$ lie on a circle. So $D$ is the radical center of
+        $\odot MNEF, \odot AMN, \odot AEF$.
+    \end{prooof}
+\end{minipage}\hfill%
+\begin{minipage}{.45\linewidth}
+    \figdf{.9}{perp_to_euler_line}{}
+\end{minipage}
+
+
+
+\begin{minipage}{.54\linewidth}
+    \prob{https://artofproblemsolving.com/community/c6h624551p3740031}
+    {CHKMO 2014 P4}{EM}{
+        Let $\triangle ABC$ be a scalene triangle, and let $D$ and $E$ be points
+        on sides $AB$ and $AC$ respectively such that the circumcircles of
+        triangles $\triangle ACD$ and $\triangle ABE$ are tangent to $BC$. Let $F$
+        be the intersection point of $BC$ and $DE$. Prove that $AF$ is
+        perpendicular to the Euler line of $\triangle ABC$.
+    }
+    \begin{solution}
+        Let $B', C'$ be the points on $AC, AB$ such that $BB' = BA$, $CA = CC'$.
+        By simple angle chasing, we can show that $BE, CD$ are tangent to $\odot
+        BB'CC'$.\\
+
+        Now by Pascal's theorem on $BBB'CCC'$, we can show that $D, E, F$ are
+        collinear where $F = BC\cap B'C'$. Then by \autoref{lemma:Perpendicular on
+        Euler Line}, we have that $AF\perp HO$.
+    \end{solution}
+
+    \lem{Extension of CHKMO}{
+        $AS$, $BB'$, $CC'$ are concurrent.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.45\linewidth}
+    \figdf{.9}{CHKMO_2014_p4}{}
+\end{minipage}
+
+
+
+\newpage
+\subsection{Assorted Diagrams}
+
+\figdf{.5}{random_circle_pic_1}{$ H $ lies on the line, circles vary}
 

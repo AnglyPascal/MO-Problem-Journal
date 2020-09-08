@@ -1,254 +1,377 @@
 \newpage\section{Functional Equations}
 
-	
-	\begin{take_note*}[title={Can't Start? Try These}]{}
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=10pt, parsep=5pt, font=\bfseries]
-			
-			\item GUESS THE POSSIBLE SOLUTIONS.
-			
-			\item SUBSTITUTION 
-			
-			\begin{enumerate}[wide=7mm, label=\alph*, itemsep=10pt, parsep=5pt, font=\bfseries]
-				\item Try EVERY possible substitutions, and write them in a list, dont think during this time.
-				
-				\item Now think what these results give you.
-				
-				\item Find values of $ f(0), f(1), f(2), f(-x) $ etc.
-				
-				\item Tweak the function a little bit, do substitution again.
-				
-				\item Assume some other functions according to the solutions, substitute them to make the fe easier to get info out of.
-			\end{enumerate}
-			
-			\item PROPERTIES OF THE FUNCTION
-			
-			\begin{enumerate}[wide=7mm, label=\alph*, itemsep=10pt, parsep=5pt, font=\bfseries]
-				\item Try proving INJECTIVITY, SURJECTIVITY etc.
-				
-				\item Look for Injectivity or Surjectivity of $ f(x)-f(y) $.
-			\end{enumerate}
-			
-			\item Assume for the sake of contradiction that the value of the function is greater or smaller than the estimated value at some point.
-			
-			\item Sometimes consider the difference of two values of $ f $.
-			
-		\end{enumerate}
-	\end{take_note*}
-	
-	
-	\begin{take_note*}{}
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=10pt, parsep=5pt, font=\bfseries]
-			
-			\item Proving that $f(x)-x$ is injective might come handy in some cases.
-			
-			\item If you're \emph{NOT} able to make one side of the equation equal to $0$, try to make it equal to any real or some particular real. (pco 169 P11)
-			
-			\item Sometimes in integer functions, divisibility of the type $f(1)^{k-1}\mid f(x)^k$ helps.	
-			
-			\item Durr$\dots$ I want things to cancel. 
-			
-		\end{enumerate}
-	\end{take_note*}
-	
-	
-	
-	
-		
-	
-	\newpage\subsection{Problems}
-	
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h474746p2658967}{EGMO 2012 P3}{E}{Find all functions $f:\mathbb{R}\to\mathbb{R}$ such that \[f\left( {yf(x + y) + f(x)} \right) = 4x + 2yf(x + y)\] for all $x,y\in\mathbb{R}$.}
-	
-	
-	
-	
-	
-	\prob{}{pco 169 P11}{M}{Find all $f:\R\rightarrow\R$ such that for all real numbers $x, y$ the following holds: \[ f(x)^2+2yf(x)+f(y)=f(y+f(x)) \]}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h506p1611}{IMO 1994 P5}{MH}{Let $ S$ be the set of all real numbers strictly greater than $-1$. Find all functions $ f: S \to S$ satisfying the two conditions:
-		
-		\begin{enumerate}
-			\item $ f(x + f(y) + xf(y)) = y + f(x) + yf(x)$ for all $ x, y$ in $ S$;
-			\item $ \frac {f(x)}{x}$ is strictly increasing on each of the two intervals $ - 1 < x < 0$ and $ 0 < x$.
-	\end{enumerate}}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h219930p1219657}{ISL 1994 A4}{H}{Let $ \mathbb{R}$ denote the set of all real numbers and $ \mathbb{R}^+$ the subset of all positive ones. Let $ \alpha$ and $ \beta$ be given elements in $ \mathbb{R},$ not necessarily distinct. Find all functions $ f: \mathbb{R}^+ \mapsto \mathbb{R}$ such that: \[ f(x)f(y) = y^{\alpha} f \left( \frac{x}{2} \right) + x^{\beta} f \left( \frac{y}{2} \right) \forall x,y \in \mathbb{R}^+.\]}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1480146p8633190}{IMO 2017 P2}{H}{Let $\mathbb{R}$ be the set of real numbers. Determine all functions $f: \mathbb{R} \rightarrow \mathbb{R}$ such that, for any real numbers $x$ and $y$, \[ f(f(x)f(y)) + f(x+y) = f(xy). \]}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h215430p1191683}{ISL 2008 A1}{E}{Find all functions $ f: (0, \infty) \mapsto (0, \infty)$ (so $ f$ is a function from the positive real numbers) such that
-		\[ \frac {\left( f(w) \right)^2 + \left( f(x) \right)^2}{f(y^2) + f(z^2) } = \frac {w^2 + x^2}{y^2 + z^2} \]
-		for all positive real numbers $ w,x,y,z,$ satisfying $ wx = yz$.}
-	
-	
-	
-	
-	
-	\prob{}{pco 169 P15}{EH}{Find all $a\in\R$ for which there exists a non-constant function $f:(0,1]\rightarrow\R$ such that \[a+f(x+y-xy)+f(x)f(y)\leq f(x)+f(y)\] for all $x, y \in (0,1]$} 
-	
-	
-	
-	
-	
-	\prob{}{pco 168 P18}{E}{Find all functions $f:\R\rightarrow\R$ such that \[f(f(x)+y)=f(x^2-y)+4f(x)y\] for all $x, y \in\R$}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h488535p2737643}{ISL 2011 A3}{M}{Determine all pairs $(f,g)$ of functions from the set of real numbers to itself that satisfy \[g(f(x+y)) = f(x) + (2x + y)g(y)\] for all real numbers $x$ and $y$.}
-	
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h85071p494821}{ISL 2005 A2}{M}{We denote by $\mathbb{R}^+$ the set of all positive real numbers. Find all functions $f: \mathbb R^ + \rightarrow\mathbb R^ +$ which have the property:
-		\[f(x)f(y)=2f(x+yf(x))\]
-		for all positive real numbers $x$ and $y$.}
-	
-	\solu{Let's first substitute. If there existed some $ x $ such that $ f(x)<1 $, we could find a nice substitution. But that leads to a contradiction. So what if we could do something like this for the other cases, $ f(x)<2 $ and $ f(x)>2 $?}
-	
-	
-	
-	
-	
-	
-	\prob{https://alrtofproblemsolving.com/community/c6h78909p452035}{ISL 2005 A4}{M}{Find all functions $ f: \mathbb{R}\to\mathbb{R}$ such that $ f(x+y)+f(x)f(y)=f(xy)+2xy+1$ for all real numbers $ x$ and $ y$.}
-	
-	\solu{Substitution. }
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1627524p10206608}{Iran TST T2P1}{E}{Find all functions $f:\mathbb{R}\rightarrow \mathbb{R}$ that satisfy the following conditions:
-		
-		\begin{enumerate}
-			\item  $x+f(y+f(x))=y+f(x+f(y)) \quad \forall x,y \in \mathbb{R}$
-			
-			\item  The set $I=\left\{\frac{f(x)-f(y)}{x-y}\mid x,y\in \mathbb{R},x\neq y \right\}$ is an interval.
-	\end{enumerate}}
-	
-	
-	
-	
-	
-	\prob{}{169 P20}{E}{Let $a$ be a real number and let $f : \R \rightarrow \R$ be a function satisfying: $f(0) = \frac{1}{2}$ and $$f(x + y) = f(x)f(a - y) + f(y)f(a - x)$$ $\forall x, y \in \R$. Prove that $f$ is constant}
-	
-	
-	
-	
-	
-	\prob{}{Vietnam 1991}{E}{Find all functions $ f : \R \rightarrow \R $ for which
-		\[\frac{1}{2}f(xy)+\frac{1}{2}f(xz)-f(x)f(yz)\geq \frac{1}{4}\]}
-	
-		\solu{Just substitute.}
-	
-	
-	
-	
-	
-	
-	\prob{}{}{M}{Suppose that $f$ and $g$ are two functions defined on the set of positive integers and taking positive integer values. Suppose also that the equations $f(g(n)) = f(n) + 1$ and $g(f(n)) = g(n) + 1$ hold for all positive integer $n$. Prove that $f(n) = g(n)$ for all positive integer $n$.}
-	
-		\solu{Durrr... I want things to cancel... Hint: You want to show $ f(n)-g(n) = 0 $.}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h17330p118698}{ISL 2002 A1}{EM}{Find all functions $f$ from the reals to the reals such that\[f\left(f(x)+y\right)=2x+f\left(f(y)-x\right)\]for all real $x,y$.}
-	
-		\solu{On one of our substitution, we see that there is surjectivity in the equation. So trying to show injectivity is the most intuitive move after that. Again, we have $ x $ on the outside, so we need to make $ x $, $ a $ once and $ b $ once. but we have $ f(y)-x $ which we need to eleminate, keeping $ y $ constant. We can make it either $ a $ or $ b $ since we already have $ f(a)=f(b) $. And again we can take whatever value we want for $ f(y) $.}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h17447p119159}{ISL 2001 A1}{EM}{Let $ T$ denote the set of all ordered triples $ (p,q,r)$ of nonnegative integers. Find all functions $ f: T \rightarrow \mathbb{R}$ satisfying
-		\[ f(p,q,r) = \begin{cases} 0 & \text{if} \; pqr = 0, \\ 1 + \frac{1}{6}(f(p + 1,q - 1,r) + f(p - 1,q + 1,r) & \\ + f(p - 1,q,r + 1) + f(p + 1,q,r - 1) & \\ + f(p,q + 1,r - 1) + f(p,q - 1,r + 1)) & \text{otherwise} \end{cases} \]
-		for all nonnegative integers $ p$, $ q$, $ r$.}
-	
-		\solu{First let us guess the ans. For all points on the $ 3 $ sides, our function gives $ 0 $. We get $ f(1, 1, 1)=1 $. We get $ f(1, 1, 2) = f(1, 2, 1) = f(2, 1, 1) = \frac{3}{2} $. We get $ f(1, 1, 3)=\frac{9}{5} $. We get $ f(1, 2, 2)=\frac{12}{5} $. Now, since for $ pqr=0 $, we have $ f=0 $, we need the expression $ pqr $ on the numerator. And we kinda guess that the denominator is $ p+q+r $. From here the guess is obvious.
-		
-		Now proving that this solution is the only solution. Let the solution be $ g $. Define, $ h := f-g $. Our aim is to prove that $ h=0 $ for all inputs.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1790448p11841779}{RMM 2019 P5}{M}{Determine all functions $f: \mathbb{R} \to \mathbb{R}$ satisfying\[f(x + yf(x)) + f(xy) = f(x) + f(2019y),\]for all real numbers $x$ and $y$.}
-		
-		\solu{After getting $f(yf(0)) = f(y2019)$, one should think of proving that either $ f $ is constant, all zero except $ 0 $, or linear. How to do this?}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1071764p4663900}{APMO 2015 P2}{E}{Let $S = \{2, 3, 4, \ldots\}$ denote the set of integers that are greater than or equal to $2$. Does there exist a function $f : S \to S$ such that \[f (a)f (b) = f (a^2 b^2 )\text{ for all }a, b \in S\text{ with }a \ne b?\]}
-		
-		\solu{Try to break the symmetry, add another variable.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1268817p6621849}{ISL 2015 A2}{E}{Determine all functions $f:\mathbb{Z}\rightarrow\mathbb{Z}$ with the property that \[f(x-f(y))=f(f(x))-f(y)-1\]holds for all $x,y\in\mathbb{Z}$.}
-	
-		\solu{It just flows.}
+\begin{itemize}[left=0pt, itemsep=2em]
+    \item Equating terms:
+        \begin{enumerate}[left=0pt,label=\textbf{\arabic*.}]
+            \item \textbf{Pseudo-symmetry}: If an equation is almost but not
+                completely symmetrical, what happens if you change the order of
+                the variables and compare with what you started with?
+
+            \item \textbf{Fudging}: Can you change one variable so as to alter the
+                equation only slightly? If so, compare with what you started with.
+
+            \item \textbf{Self-cancelation}: Can you make two terms in the same
+                functional equation cancel each other out?
+
+            \item These are the most mechanical ways of getting the same value to
+                show up multiple times, but each problem has its own tricks. If
+                you see an interesting expression pop up, always ask yourself
+                whether you can get it to pop up in a slightly different way too.
+        \end{enumerate}
+    \item Induction, Cauchy
+        \begin{enumerate}[left=0pt,label=\textbf{\arabic*.}]
+            \item If you want to solve a functional equation over the integers or
+                over the rationals, it often helps to inductively calculate
+                something like $f(n x)$ in terms of $f(x)$
+
+            \item A slight variation: if the domain or range of $f$ is $\mathbb{N},$
+                definitely look at induction! In addition to asking what is $f(1),$ you
+                can also ask when is $f(n)=1$
+
+            \item If you want to show $f(x) \geq y,$ it suffices to show
+                $f(x) \geq y-\epsilon$ for all $\epsilon>0 .$ Can you find
+                progressively tighter ways of bounding $f(x)$ and then
+                apply this argument? Many of the hardest functional
+                equations use this kind of idea.
+        \end{enumerate}
+
+    \item Injective, Surjective, Bijective
+        \begin{enumerate}[left=0pt,label=\textbf{\arabic*.}]
+            \item There are many variations on injectivity and you should
+                not be too fixated on the form used here. The main idea is
+                this: if you can show a relationship between $f(x)$ and
+                $f(y),$ what can conclude about $x$ and $y$ ?
+                \begin{enumerate}
+                    \item If $f$ is injective and $f(x)=f(y),$ then $x=y$
+                    \item If $f$ is increasing and $f(x)>f(y),$ then $x>y$
+                    \item Often it helps to start with a weaker version of
+                        injectivity: if $f(x)=f(y)=0,$ then $x=y$
+                    \item Even if $f$ is not injective, we can often still
+                        end up with something useful. For example, if
+                        $f(x)=x^{2}$ is a valid solution, we will not be
+                        able to show $f(x)$ is injective, but perhaps we
+                        can show that if $f(x)=f(y),$ then $x=\pm y .$
+                        That is almost as good.
+                    \item If you can show any kind of injectivity results,
+                        it is often useful to set $x=f(z)$ for some
+                        arbitrary z.
+                \end{enumerate}
+            \item Surjectivity is a little less common but it still comes
+                in a couple flavours. The main idea is this: is there some
+                nasty expression in your equation that you wish could be
+                replaced by $x ?$ If so, prove that expression is
+                surjective, and you are good to go.
+                \begin{enumerate}
+                    \item Usually the nasty expression will be $f$ itself.
+                    \item It does not have to be though. For example, if
+                        you could show $f$ (blah) has some nice property,
+                        then a good follow-up would be to show that blah
+                        is surjective.
+                \end{enumerate}
+        \end{enumerate}
+\end{itemize}
+
+
+\begin{take_note*}[title={Can't Start? Try These}]{}
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=10pt, parsep=5pt, font=\bfseries]
+        \item GUESS THE POSSIBLE SOLUTIONS.
+
+        \item SUBSTITUTION 
+            \begin{enumerate}
+                \item Try EVERY possible substitutions, and write them in a
+                    list, dont think during this time.
+                \item Now think what these results give you.
+                \item Find values of $ f(0), f(1), f(2), f(-x) $ etc.
+                \item Tweak the function a little bit, do substitution again.
+                \item Assume some other functions according to the solutions,
+                    substitute them to make the fe easier to get info out of.
+            \end{enumerate}
+
+        \item PROPERTIES OF THE FUNCTION
+            \begin{enumerate}
+                \item Try proving INJECTIVITY, SURJECTIVITY etc.
+                \item Look for Injectivity or Surjectivity of $ f(x)-f(y) $.
+            \end{enumerate}
+
+        \item Assume for the sake of contradiction that the value of the
+            function is greater or smaller than the estimated value at some
+            point.
+
+        \item Sometimes consider the difference of two values of $ f $.
+    \end{enumerate}
+\end{take_note*}
+
+\begin{take_note*}{}
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=10pt, parsep=5pt, font=\bfseries]
+        \item Proving that $f(x)-x$ is injective might come handy in some cases.
+        \item If you're \emph{NOT} able to make one side of the equation equal
+            to $0$, try to make it equal to any real or some particular real.
+            (pco 169 P11)
+        \item Sometimes in integer functions, divisibility of the type
+            $f(1)^{k-1}\mid f(x)^k$ helps.	
+        \item Durr$\dots$ I want things to cancel. 
+    \end{enumerate}
+\end{take_note*}
+
+
+\newpage\subsection{Problems}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1113162p5083463}{ISL 2015 A4}{M}{Let $\mathbb R$ be the set of real numbers. Determine all functions $f:\mathbb R\to\mathbb R$ that satisfy the equation\[f(x+f(x+y))+f(xy)=x+f(x+y)+yf(x)\]for all real numbers $x$ and $y$.}
-	
-		\solu{When you don't know any heavy techniques, just plug in simple values into the function, and write down all of the equations in a list.}
-		
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h546165p3160554}{ISL 2012 A5}{M}{Find all functions $f:\mathbb{R} \rightarrow \mathbb{R}$ that satisfy the conditions
-		\[f(1+xy)-f(x+y)=f(x)f(y) \quad \text{for all } x,y \in \mathbb{R},\]
-		and $f(-1) \neq 0$.}
-	
-		\solu{In FE, always look back to what you have, and what things can you make from those.}
-		
-		
-	\prob{https://artofproblemsolving.com/community/c6h488500p2737336}{ISL 2012 A1}{E}{Find all functions $f:\mathbb Z\rightarrow \mathbb Z$ such that, for all integers $a,b,c$ that satisfy $a+b+c=0$, the following equality holds:
-		\[f(a)^2+f(b)^2+f(c)^2=2f(a)f(b)+2f(b)f(c)+2f(c)f(a).\]
-		(Here $\mathbb{Z}$ denotes the set of integers.)}
-	
-		\solu{Go with the flow.}
-		
-		
-		
-	\prob{https://artofproblemsolving.com/community/c6h356075p1935849}{ISL 2012 A1}{E}{Find all function $f:\mathbb{R}\rightarrow\mathbb{R}$ such that for all $x,y\in\mathbb{R}$ the following equality holds \[ f(\left\lfloor x\right\rfloor y)=f(x)\left\lfloor f(y)\right\rfloor \] where $\left\lfloor a\right\rfloor $ is greatest integer not greater than $a.$}
-		
-		\solu{Go with the flow.}
-		
-		
-	
-\newpage\section{Weird Ones}
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h289055p1562848}{ISL 2009 A3}{E}{Determine all functions $ f$ from the set of positive integers to the set of positive integers such that, for all positive integers $ a$ and $ b$, there exists a non-degenerate triangle with sides of lengths
-		\[ a, f(b) \text{ and } f(b + f(a) - 1).\]
-	(A triangle is non-degenerate if its vertices are not collinear.)}
-	
-		\solu{$ f(1)>1 \implies\ f $ is periodic $ \implies $ repeatation $ \implies $ contradiction.\\
-		$ f(2)>2 \implies $ strictly increasing $ \implies $ repeatation.}
-		
-		
-		
-	\prob{https://artofproblemsolving.com/community/c6h1558131p9513099}{USA TST 2018 P2}{H}{Find all functions $f: \mathbb{Z}^2 \to [0, 1]$ such that for any integers $x$ and $y$, \[f(x, y) = \frac{f(x - 1, y) + f(x, y - 1)}{2}.\]}
-	
-		\solu{We know that the function has to be a constant function. So it is a intuitive idea considering the difference of two values of the function. Again as we wish to show that this difference is $ 0 $, we have to use either equality of limit. As equality is quite ambiguous in this problem, we approach with limits. We see that $ f(x,y) $ can be written as a term depending on the values of the $ 3 $rd quarter of the plane with $ (x, y) $ as its origin. With infinite values in our hand, we try bounding.}
+\prob{https://artofproblemsolving.com/community/c6h474746p2658967}{EGMO 2012 P3}{E}{Find all functions $f:\mathbb{R}\to\mathbb{R}$ such that \[f\left( {yf(x + y) + f(x)} \right) = 4x + 2yf\left(x + y\right)\] for all $x,y\in\mathbb{R}$.}
+
+
+
+
+
+\prob{}{pco 169 P11}{M}{Find all $f:\R\rightarrow\R$ such that for all real numbers $x, y$ the following holds: \[ f(x)^2+2yf(x)+f(y)=f(y+f(x)) \]}
+
+
+\prob{https://artofproblemsolving.com/community/c6h506p1611}{IMO 1994 P5}{MH}{Let $ S$ be the set of all real numbers strictly greater than $-1$. Find all functions $ f: S \to S$ satisfying the two conditions:
+
+    \begin{enumerate}
+        \item $ f(x + f(y) + xf(y)) = y + f(x) + yf(x)$ for all $ x, y$ in $ S$;
+        \item $ \frac {f(x)}{x}$ is strictly increasing on each of the two intervals $ - 1 < x < 0$ and $ 0 < x$.
+\end{enumerate}
+}
+
+
+\prob{https://artofproblemsolving.com/community/c6h219930p1219657}{ISL 1994 A4}{H}{Let $ \mathbb{R}$ denote the set of all real numbers and $ \mathbb{R}^+$ the subset of all positive ones. Let $ \alpha$ and $ \beta$ be given elements in $ \mathbb{R},$ not necessarily distinct. Find all functions $ f: \mathbb{R}^+ \mapsto \mathbb{R}$ such that: \[ f(x)f(y) = y^{\alpha} f \left( \frac{x}{2} \right) + x^{\beta} f \left( \frac{y}{2} \right) \forall x,y \in \mathbb{R}^+.\]}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1480146p8633190}{IMO 2017 P2}{H}{Let $\mathbb{R}$ be the set of real numbers. Determine all functions $f: \mathbb{R} \rightarrow \mathbb{R}$ such that, for any real numbers $x$ and $y$, \[ f(f(x)f(y)) + f(x+y) = f(xy). \]}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h215430p1191683}{ISL 2008 A1}{E}{Find all functions $ f: (0, \infty) \mapsto (0, \infty)$ (so $ f$ is a function from the positive real numbers) such that
+    \[ \frac {\left( f(w) \right)^2 + \left( f(x) \right)^2}{f(y^2) + f(z^2) } = \frac {w^2 + x^2}{y^2 + z^2} \]
+for all positive real numbers $ w,x,y,z,$ satisfying $ wx = yz$.}
+
+
+
+
+
+\prob{}{pco 169 P15}{EH}{Find all $a\in\R$ for which there exists a non-constant function $f:(0,1]\rightarrow\R$ such that \[a+f(x+y-xy)+f(x)f(y)\leq f(x)+f(y)\] for all $x, y \in (0,1]$} 
+
+
+
+
+
+\prob{}{pco 168 P18}{E}{Find all functions $f:\R\rightarrow\R$ such that \[f(f(x)+y)=f(x^2-y)+4f(x)y\] for all $x, y \in\R$}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h488535p2737643}{ISL 2011 A3}{M}{Determine all pairs $(f,g)$ of functions from the set of real numbers to itself that satisfy \[g(f(x+y)) = f(x) + (2x + y)g(y)\] for all real numbers $x$ and $y$.}
+
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h85071p494821}{ISL 2005 A2}{M}{We denote by $\mathbb{R}^+$ the set of all positive real numbers. Find all functions $f: \mathbb R^ + \rightarrow\mathbb R^ +$ which have the property:
+    \[f(x)f(y)=2f(x+yf(x))\]
+for all positive real numbers $x$ and $y$.}
+
+\solu{Let's first substitute. If there existed some $ x $ such that $ f(x)<1 $, we could find a nice substitution. But that leads to a contradiction. So what if we could do something like this for the other cases, $ f(x)<2 $ and $ f(x)>2 $?}
+
+
+
+
+
+
+\prob{https://alrtofproblemsolving.com/community/c6h78909p452035}{ISL 2005 A4}{M}{Find all functions $ f: \mathbb{R}\to\mathbb{R}$ such that $ f(x+y)+f(x)f(y)=f(xy)+2xy+1$ for all real numbers $ x$ and $ y$.}
+
+\solu{Substitution. }
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1627524p10206608}{Iran TST T2P1}{E}{Find all functions $f:\mathbb{R}\rightarrow \mathbb{R}$ that satisfy the following conditions:
+
+    \begin{enumerate}
+        \item  $x+f(y+f(x))=y+f(x+f(y)) \quad \forall x,y \in \mathbb{R}$
+
+        \item  The set $I=\left\{\frac{f(x)-f(y)}{x-y}\mid x,y\in \mathbb{R},x\neq y \right\}$ is an interval.
+\end{enumerate}}
+
+
+
+
+
+\prob{}{169 P20}{E}{Let $a$ be a real number and let $f : \R \rightarrow \R$ be a function satisfying: $f(0) = \frac{1}{2}$ and $$f(x + y) = f(x)f(a - y) + f(y)f(a - x)$$ $\forall x, y \in \R$. Prove that $f$ is constant}
+
+
+
+
+
+\prob{}{Vietnam 1991}{E}{Find all functions $ f : \R \rightarrow \R $ for which
+\[\frac{1}{2}f(xy)+\frac{1}{2}f(xz)-f(x)f(yz)\geq \frac{1}{4}\]}
+
+\solu{Just substitute.}
+
+
+
+
+
+
+\prob{}{}{M}{Suppose that $f$ and $g$ are two functions defined on the set of positive integers and taking positive integer values. Suppose also that the equations $f(g(n)) = f(n) + 1$ and $g(f(n)) = g(n) + 1$ hold for all positive integer $n$. Prove that $f(n) = g(n)$ for all positive integer $n$.}
+
+\solu{Durrr... I want things to cancel... Hint: You want to show $ f(n)-g(n) = 0 $.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h17330p118698}{ISL 2002 A1}{EM}{Find all functions $f$ from the reals to the reals such that\[f\left(f(x)+y\right)=2x+f\left(f(y)-x\right)\]for all real $x,y$.}
+
+\solu{On one of our substitution, we see that there is surjectivity in the equation. So trying to show injectivity is the most intuitive move after that. Again, we have $ x $ on the outside, so we need to make $ x $, $ a $ once and $ b $ once. but we have $ f(y)-x $ which we need to eleminate, keeping $ y $ constant. We can make it either $ a $ or $ b $ since we already have $ f(a)=f(b) $. And again we can take whatever value we want for $ f(y) $.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h17447p119159}{ISL 2001 A1}{EM}{Let $ T$ denote the set of all ordered triples $ (p,q,r)$ of nonnegative integers. Find all functions $ f: T \rightarrow \mathbb{R}$ satisfying
+    \[ f(p,q,r) = \begin{cases} 0 & \text{if} \; pqr = 0, \\ 1 + \frac{1}{6}(f(p + 1,q - 1,r) + f(p - 1,q + 1,r) & \\ + f(p - 1,q,r + 1) + f(p + 1,q,r - 1) & \\ + f(p,q + 1,r - 1) + f(p,q - 1,r + 1)) & \text{otherwise} \end{cases} \]
+for all nonnegative integers $ p$, $ q$, $ r$.}
+
+\solu{First let us guess the ans. For all points on the $ 3 $ sides, our function gives $ 0 $. We get $ f(1, 1, 1)=1 $. We get $ f(1, 1, 2) = f(1, 2, 1) = f(2, 1, 1) = \frac{3}{2} $. We get $ f(1, 1, 3)=\frac{9}{5} $. We get $ f(1, 2, 2)=\frac{12}{5} $. Now, since for $ pqr=0 $, we have $ f=0 $, we need the expression $ pqr $ on the numerator. And we kinda guess that the denominator is $ p+q+r $. From here the guess is obvious.
+
+Now proving that this solution is the only solution. Let the solution be $ g $. Define, $ h := f-g $. Our aim is to prove that $ h=0 $ for all inputs.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1790448p11841779}{RMM 2019 P5}{M}{Determine all functions $f: \mathbb{R} \to \mathbb{R}$ satisfying\[f(x + yf(x)) + f(xy) = f(x) + f(2019y),\]for all real numbers $x$ and $y$.}
+
+\solu{After getting $f(yf(0)) = f(y2019)$, one should think of proving that either $ f $ is constant, all zero except $ 0 $, or linear. How to do this?}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1071764p4663900}{APMO 2015 P2}{E}{Let $S = \{2, 3, 4, \ldots\}$ denote the set of integers that are greater than or equal to $2$. Does there exist a function $f : S \to S$ such that \[f (a)f (b) = f (a^2 b^2 )\text{ for all }a, b \in S\text{ with }a \ne b?\]}
+
+\solu{Try to break the symmetry, add another variable.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1268817p6621849}{ISL 2015 A2}{E}{Determine all functions $f:\mathbb{Z}\rightarrow\mathbb{Z}$ with the property that \[f(x-f(y))=f(f(x))-f(y)-1\]holds for all $x,y\in\mathbb{Z}$.}
+
+\solu{It just flows.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1113162p5083463}{ISL 2015 A4}{M}{Let $\mathbb R$ be the set of real numbers. Determine all functions $f:\mathbb R\to\mathbb R$ that satisfy the equation\[f(x+f(x+y))+f(xy)=x+f(x+y)+yf(x)\]for all real numbers $x$ and $y$.}
+
+\solu{When you don't know any heavy techniques, just plug in simple values into the function, and write down all of the equations in a list.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h546165p3160554}{ISL 2012 A5}{M}{Find all functions $f:\mathbb{R} \rightarrow \mathbb{R}$ that satisfy the conditions
+    \[f(1+xy)-f(x+y)=f(x)f(y) \quad \text{for all } x,y \in \mathbb{R},\]
+and $f(-1) \neq 0$.}
+
+\solu{In FE, always look back to what you have, and what things can you make from those.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h488500p2737336}{ISL 2012 A1}{E}{Find all functions $f:\mathbb Z\rightarrow \mathbb Z$ such that, for all integers $a,b,c$ that satisfy $a+b+c=0$, the following equality holds:
+    \[f(a)^2+f(b)^2+f(c)^2=2f(a)f(b)+2f(b)f(c)+2f(c)f(a).\]
+(Here $\mathbb{Z}$ denotes the set of integers.)}
+
+\solu{Go with the flow.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h356075p1935849}{ISL 2012 A1}{E}{Find all function $f:\mathbb{R}\rightarrow\mathbb{R}$ such that for all $x,y\in\mathbb{R}$ the following equality holds \[ f(\left\lfloor x\right\rfloor y)=f(x)\left\lfloor f(y)\right\rfloor \] where $\left\lfloor a\right\rfloor $ is greatest integer not greater than $a.$}
+
+\solu{Go with the flow.}
+
+
+
+\newpage\subsection{Weird Ones}
+
+
+\prob{https://artofproblemsolving.com/community/c6h289055p1562848}{ISL 2009 A3}{E}{Determine all functions $ f$ from the set of positive integers to the set of positive integers such that, for all positive integers $ a$ and $ b$, there exists a non-degenerate triangle with sides of lengths
+    \[ a, f(b) \text{ and } f(b + f(a) - 1).\]
+(A triangle is non-degenerate if its vertices are not collinear.)}
+
+\solu{$ f(1)>1 \implies\ f $ is periodic $ \implies $ repeatation $ \implies $ contradiction.\\
+$ f(2)>2 \implies $ strictly increasing $ \implies $ repeatation.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1558131p9513099}{USA TST 2018 P2}{H}{Find all functions $f: \mathbb{Z}^2 \to [0, 1]$ such that for any integers $x$ and $y$, \[f(x, y) = \frac{f(x - 1, y) + f(x, y - 1)}{2}.\]}
+
+\solu{We know that the function has to be a constant function. So it is a intuitive idea considering the difference of two values of the function. Again as we wish to show that this difference is $ 0 $, we have to use either equality of limit. As equality is quite ambiguous in this problem, we approach with limits. We see that $ f(x,y) $ can be written as a term depending on the values of the $ 3 $rd quarter of the plane with $ (x, y) $ as its origin. With infinite values in our hand, we try bounding.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h2192982p16443789}
+{IMEO 2020 P3}{M}{
+    Find all functions $f:\mathbb{R^+} \to \mathbb{R^+}$ such that for all
+    positive real $x, y$ holds
+    \[xf(x)+yf(y)=(x+y)f\left(\frac{x^2+y^2}{x+y}\right)\]
+}
+
+\begin{solution}
+    Note that \[\frac{xf(x)+yf(y)}{x+y} = f\left(\frac{x^2+y^2}{x+y}\right)\] 
+    Which looks just like a linear form. Also since we know that the solution
+    is probably only $f(x) = ax+b$, we pursue this idea. \\
+
+    It can be proved that all the rational points lie on a line. Now what if a
+    irrational lies outside of the line?
+\end{solution}
+
+\begin{solution}[MarkBcc168, geometric]
+    Our first step is to do Vieta Jumping on the functional equation. The main
+    result from this is the following. 
+
+    \begin{claim}
+        $af(a) - bf(b) = (a-b)f(a+b)$ for any $a,b\in\mathbb{R}^+$.
+    \end{claim}
+
+    \begin{prooof}
+        Fix $t,k\in\mathbb{R}^+$ where $t<k$. Let $g(x)=\tfrac{x^2+t^2}{x+t}$.
+        Since $\lim_{x\to\infty}g(x)=\infty$ and $g(t)=t$, there exists $a$
+        such that $g(a) = \tfrac{t^2+a^2}{t+a}=k$. Moreover, by Vieta's
+        Jumping, $g(k-a)=k$. Thus, by considering
+
+        \[\begin{array}{rcrcl} 
+            P(t,a) & \implies & tf(t) + af(a)&=&(a+t)f(k)\qquad\text{ and}
+            \\[4pt] P(t,k-a) & \implies & tf(t) + (k-a)f(k-a)&=&(k-a+t)f(k), 
+        \end{array}\]
+
+        we get that
+        \[af(a) - (k-a)f(k-a) = (2a-k)f(k)\]
+        for any $a,k$ such that $k>a$. Thus, by setting $b=k-a$, we get the
+        desired claim. 
+    \end{prooof}
+
+    Now let's do some geometry. Let $P_x = (x,f(x))$. Then the claim above
+    implies that $P_a, P_b, P_{a+b}$ are colinear whenever
+    $a,b\in\mathbb{R}^+$.\\
+
+    Fix any pairwise distinct $a,b,c\in\mathbb{R}^+$. Set $A=P_a$, $B=P_b$,
+    $C=P_c$, $D=P_{b+c}$, $E=P_{c+a}$, and $F=P_{a+b}$. By the claim, $D\in
+    BC$, $E\in CA$, $F\in AB$, and $AD,BE,CF$ are concurrent at $P_{a+b+c}$.
+    However, we claim that 
+
+    \begin{claim}
+        $D,E,F$ are colinear.
+    \end{claim}
+
+    \begin{prooof}
+        If $A,B,C$ are colinear, then the result is trivial. Otherwise, we use
+        Menelaus theorem. Observe that
+        $$\frac{\overline{BD}}{\overline{DC}} = \frac{b - (b+c)}{(b+c)-c} =
+        -\frac bc$$hence multiplying the result cyclically gives the result. 
+    \end{prooof}
+
+    By Ceva's theorem, both $D,E,F$ being colinear and $AD,BE,CF$ being
+    concurrent can only happen when $A,B,C$ are colinear. This means that
+    $(a,f(a))$, $(b,f(b))$, $(c,f(c))$ are colinear for any
+    $a,b,c\in\mathbb{R}^+$. This concludes, say by varying $c$, that $f$ must
+    be linear.
+\end{solution}

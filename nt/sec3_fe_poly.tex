@@ -1,29 +1,59 @@
 \section{NT Functions and Polynomials}
 
-	\prob{https://artofproblemsolving.com/community/c6h597243p3544096}{ISL 2013 N1}{E}{Let $\mathbb{Z} _{>0}$ be the set of positive integers. Find all functions $f: \mathbb{Z} _{>0}\rightarrow \mathbb{Z} _{>0}$ such that
-		\[ m^2 + f(n) \mid mf(m) +n \]
-	for all positive integers $m$ and $n$.}
-	
-		\solu{Go with the flow.}
-		
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h356076p1935854}{ISL 2010 N5}{M}{Find all functions $g:\mathbb{N}\rightarrow\mathbb{N}$ such that \[\left(g(m)+n\right)\left(g(n)+m\right)\] is a perfect square for all $m,n\in\mathbb{N}.$}
-	
-		\solu{Playig around with some primes give us that for every ``big'' primes, we need to have every residue class present in the range of $ g $. Now with this fact, we can prove the injectivity as well. Now we want to show that $ g(n+1)=g(n)+1 $. How to show that? We can show that by saying that no prime $ p $ exits such that $ p|g(n+1)-g(n) $, in other words, again the residue classes.}
-		
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h27188p169519}{ISL 2004 N3}{E}{Find all functions $ f: \N\to\N$ satisfying
-		\[ \left(f\left(m\right)^{2}+f\left(n\right)\right) \mid \left(m^{2}+n\right)^{2}\]
-		for any two positive integers $ m$ and $ n$.}
-	
-		\solu{\input{dump/isl2004n3}}
-		
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h355799p1932945}{ISL 2009 N5}{E}{Let $P(x)$ be a non-constant polynomial with integer coefficients. Prove that there is no function $T$ from the set of integers into the set of integers such that the number of integers $x$ with $T^n(x)=x$ is equal to $P(n)$ for every $n\geq 1$, where $T^n$ denotes the $n$-fold application of $T$.}
-	
-		\solu{Write down what the problem is actually saying. Integer functions are like cycles, use that.}
-	
-	
+\begin{Remark}
+    The main idea for most NT FEs is to take aid from LARGE integers on the
+    left side of the divisibility.
+\end{Remark}
+
+\prob{https://artofproblemsolving.com/community/c6h597243p3544096}{ISL 2013 N1}{E}{Let $\mathbb{Z} _{>0}$ be the set of positive integers. Find all functions $f: \mathbb{Z} _{>0}\rightarrow \mathbb{Z} _{>0}$ such that
+    \[ m^2 + f(n) \mid mf(m) +n \]
+for all positive integers $m$ and $n$.}
+
+\solu{Go with the flow.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h356076p1935854}{ISL 2010 N5}{M}{Find all functions $g:\mathbb{N}\rightarrow\mathbb{N}$ such that \[\left(g(m)+n\right)\left(g(n)+m\right)\] is a perfect square for all $m,n\in\mathbb{N}.$}
+
+\solu{Playig around with some primes give us that for every ``big'' primes, we need to have every residue class present in the range of $ g $. Now with this fact, we can prove the injectivity as well. Now we want to show that $ g(n+1)=g(n)+1 $. How to show that? We can show that by saying that no prime $ p $ exits such that $ p|g(n+1)-g(n) $, in other words, again the residue classes.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h27188p169519}{ISL 2004 N3}{E}{Find all functions $ f: \N\to\N$ satisfying
+    \[ \left. \left(f\left(m\right)^{2}+f\left(n\right)\right) \right|
+        \left(m^{2}+n\right)^{2}\]
+for any two positive integers $ m$ and $ n$.}
+
+\begin{solution}
+    First get $ f(1)=1 $, then using casework, get $ f(p-1)=p-1 $. Then let $
+    m=(p-1) $, and use the division algorithm to reduce the dividend.
+\end{solution}
+
+\begin{Remark}
+    In nt-fe s with ``divisible'' condition, one occurring idea is to get an
+    infinite set of integers with the desired output value, and somehow keep
+    those numbers only in the divisor, and make them vanish from the dividend.
+    Most of the time, using division algorithm to reduce the dividend does the
+    trick.
+\end{Remark}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h355799p1932945}{ISL 2009 N5}{E}{Let $P(x)$ be a non-constant polynomial with integer coefficients. Prove that there is no function $T$ from the set of integers into the set of integers such that the number of integers $x$ with $T^n(x)=x$ is equal to $P(n)$ for every $n\geq 1$, where $T^n$ denotes the $n$-fold application of $T$.}
+
+\solu{Write down what the problem is actually saying. Integer functions are like cycles, use that.}
+
+
+\prob{}
+{ISL 2019 N4}{M}{
+    Find all functions $f:\mathbb{N} \to \mathbb{N}$ such that for all $a, b
+    \in \mathbb{N}, a+b < C$ for some constant $C$, we have
+    \[a + f(b) | a^2 + bf(a)\] 
+}
+
+\begin{solution}
+    The main idea is to get primes on the left hand side somehow. We want to
+    show for primes, $p|f(p)$.
+\end{solution}
+
+

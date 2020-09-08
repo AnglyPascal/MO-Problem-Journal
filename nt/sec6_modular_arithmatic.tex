@@ -86,3 +86,27 @@
 {Quadratic Residue -3}{
     $-3$ is a quadratic residue of modulo $p$ iff $p$ is of the form $3k+1$.
 }
+\begin{prooof}
+    The only if part is easy with Thue's Lemma. For the if part, we have
+    \[\begin{aligned}
+        \left(\frac{p}{3}\right)\left(\frac{3}{p}\right) &=
+        (-1)^{\left(\frac{p-1}{2}\right) \left(\frac{3-1}{2}\right)}=
+        (-1)^{\left(\frac{p-1}{2}\right) }
+    \end{aligned}\] 
+    Then we casework on $p\equiv 1, -1 \ (\mod\ 4)$ to show that in either
+    case, \[\left(\frac{-3}{p}\right) = 1\]
+\end{prooof}
+
+
+
+\prob{}
+{Thue's Lemma Note}{}{
+    Let $p$ be prime number, prove that there exists $x, y$ such that
+    $p=2x^2+3y^3$ iff $p\equiv 5, 11 \ (\mod\ 24)$.   
+}
+
+\begin{solution}
+    We need to show that $\frac{-3}{2}$ is a quadratic residue mod $p$, and
+    the rest will follow from Thue's Lemma. We do that using the quadratic
+    residue rules for $2$ and $-3$.
+\end{solution}
