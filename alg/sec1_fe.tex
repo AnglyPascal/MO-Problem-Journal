@@ -290,6 +290,44 @@ and $f(-1) \neq 0$.}
 \solu{Go with the flow.}
 
 
+\prob{https://artofproblemsolving.com/community/c6h287852p1555894}
+{ISL 2008 A3}{E}{
+    Let $ S\subseteq\mathbb{R}$ be a set of real numbers. We say that a pair $
+    (f, g)$ of functions from $ S$ into $ S$ is a Spanish Couple on $ S$, if
+    they satisfy the following conditions:
+    \begin{enumerate}
+        \item Both functions are strictly increasing, i.e. $ f(x) < f(y)$ and
+            $ g(x) < g(y)$ for all $ x$, $ y\in S$ with $ x < y$;
+        \item The inequality $ f\left(g\left(g\left(x\right)\right)\right) <
+            g\left(f\left(x\right)\right)$ holds for all $ x\in S$.
+    \end{enumerate}
+    Decide whether there exists a Spanish Couple
+    \begin{itemize}
+        \item on the set $ S = \mathbb{N}$ of positive integers;
+        \item on the set $ S = \{a - \frac {1}{b}: a, b\in\mathbb{N}\}$
+    \end{itemize}
+}
+
+\begin{solution}
+    Inspecting the fe immediately gives us $g(g(x))<f(x)$.
+    Any attempt at constructing a pair for $\mathbb{N}$, fails because
+    eventually $g(x)$ becomes larger than $f(x)$. So there might be something
+    with how $g$ grows that restricts the construction.\\
+
+    This idea motivates us to further inspect the fe. We eventually notice
+    that $g^n(x) < f(x)$ for all $n\in \mathbb{N}$, and that means $S =
+    \mathbb{N}$ just won't work.\\
+
+    Now we begin to suspect that this is definitely why the second set has be
+    constructed that way. Thinking about the basic construction where $f(x) =
+    x+1$, we see that if we think of $g(x)$ as moving $x$ by some step to the
+    right on the number line, we get a better picture of how $f(g(g(x)))$
+    behaves.\\
+
+    And that motivates our solution:
+    \[\boxed{f(x) = x+1,\quad g\left(a-\frac{1}{b}\right) = a - \frac{1}{b+3^a}}\] 
+\end{solution}
+
 
 \newpage\subsection{Weird Ones}
 

@@ -1,70 +1,85 @@
 \graphicspath{{Pics/combi/graph/}}
 
+\newpage
+\section{Graph Theory}
 
-\newpage\section{Graph Theory}
-
-
-\begin{take_note*}{Turning grids into graphs} \begin{itemize} \item One common
-    way to turn a grid into graphs is to create a bipartite graph between the
-    columns and rows such that $ c_i $ and $ r_j $ are connected iff $ (i, j)
-    $ is marked. This way we can find cycles alternating row and column.
-
+\begin{take_note*}{Turning grids into graphs} 
+    \begin{itemize} 
+        \item One common way to turn a grid into graphs is to create a
+            bipartite graph between the columns and rows such that $ c_i $ and
+            $ r_j $ are connected iff $ (i, j) $ is marked. This way we can
+            find cycles alternating row and column.
         \item Creating a bipartite graph between all rows and columns and
-    particular objects. This helps to prove matching.  \end{itemize}
+            particular objects. This helps to prove matching.  
+    \end{itemize}
 \end{take_note*}
 
-\faka
 
+\lem{Bipartite Graph}{
+    Any graph having only even cycles are \emph{Bipartite}.
 
+    \index[strat]{Graph!Bipartite}
+}
 
-\lem{Bipartite Graph Criteria}{Any graph having only even cycles are
-\emph{Bipartite}.}\label{lemma:bipartite_graph}\index{Bipartite}
-
-\begin{multicols}{3} \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt,
-    parsep=0pt, font=\footnotesize\bfseries]
-    \iref{problem:bipartite_graph_1}{AoPS}{}
-    \iref{problem:bipartite_graph_2}{ISL 2004 C3}{}
-    \iref{problem:bipartite_graph_3}{Problem}{}
-    \iref{problem:bipartite_graph_4}{Problem}{} \end{enumerate}
+\begin{multicols}{2} 
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt,
+        font=\footnotesize\bfseries]
+        \iref{problem:bipartite_graph_1}{AoPS}{}
+        \iref{problem:bipartite_graph_2}{ISL 2004 C3}{}
+        \iref{problem:bipartite_graph_3}{Problem}{}
+        \iref{problem:bipartite_graph_4}{Problem}{} 
+    \end{enumerate}
 \end{multicols}
 
 
-\theo{http://www.ams.org/samplings/feature-column/fcarc-eulers-formula}{Euler's
-    Polyhedron Formula}{ \begin{itemize}[wide=0pt] \itemsep-1.5em \item For
-        any polyhedron with $ E, V, F $ edges, vertices's and faces resp. the
-        following relation holds
-        \[V+F=E+2\]\label{lemma:planar_graph_polyhedron} \item In a planar
-graph with $ V $ vertices, $ E $ edges and $ C $ cycles, the following
-condition is always satisfied: \[V-E+C=1\]\label{theorem:planar_graph_theorem}
-\end{itemize}\index{Polyhedron Formula}}
+\theo{http://www.ams.org/samplings/feature-column/fcarc-eulers-formula}
+{Euler's Polyhedron Formula}{
+    For any polyhedron with $ E, V, F $ edges, vertices's and faces resp. the
+    following relation holds \[V+F=E+2\]\label{lemma:planar_graph_polyhedron} 
+
+    In a planar graph with $ V $ vertices, $ E $ edges and $ C $ cycles, the
+    following condition is always satisfied:
+    \[V+C=E+1\]\label{theorem:planar_graph_theorem}
+}
 
 
 
 
-\lem{Criteria of partitioning a graph into disconnected sub-graphs}{If there
-exist no three vertices, $ u,v,w $ that $ uv\in E(G) $ also $ uw, vw\in E(G)
-$, the graph can be partitioned into equivalence classes based on their
-non-neighbors.\index{Non-Neighbor Equivalence
-Class}}\label{lemma:criteria_of_partition_equiv}
+\lem{Criteria of partitioning a graph into disconnected sub-graphs}{
+    If there exist no three vertices, $u, v, w$ that $uv\in E(G)$ also $uw,
+    vw\in E(G)$, the graph can be partitioned into equivalence classes based
+    on their non-neighbors.
+
+    \index[thm]{Non-Neighbor Equivalence Class}
+    \label{lemma:criteria_of_partition_equiv}
+}
 
 
 
-\prob{https://artofproblemsolving.com/community/c6h1063060p4609322}{China TST
-    2015 T1 D2 P3}{E}{There are some players in a Ping Pong tournament, where
+\prob{https://artofproblemsolving.com/community/c6h1063060p4609322}
+{China TST 2015 T1 D2 P3}{E}{
+    There are some players in a Ping Pong tournament, where
     every $2$ players play with each other at most once. Given: \vspace{-.9em}
-    \begin{enumerate} \itemsep-.3em \item Each player wins against at least
-        $a$ players, and loses to at least $b$ players. ($a,b\geq 1$) \item
-        For any two players $A,B$, there exist some players $P_1,...,P_k$
-        ($k\geq 2$) (where $P_1=A$,$P_k=B$), such that $P_i$ wins against
-        $P_{i+1}$ ($i=1,2...,k-1$) \end{enumerate} \vspace{-.9em} Prove that
-    there exist $a+b+1$ distinct players $Q_1,...Q_{a+b+1}$, such that $Q_i$
-wins against $Q_{i+1}$ ($i=1,...,a+b$).\index{Extremal!Longest Path!ChTST 2015
-P3}}
+    \begin{enumerate}  
+        \item Each player wins against at least $a$ players, and loses to at
+            least $b$ players. ($a,b\geq 1$) 
+        \item For any two players $A,B$, there exist some players
+            $P_1,...,P_k$ ($k\geq 2$) (where $P_1=A$,$P_k=B$), such that $P_i$
+            wins against $P_{i+1}$ ($i=1,2...,k-1$) 
+    \end{enumerate} 
+    \vspace{-.9em} 
+
+    Prove that there exist $a+b+1$ distinct players $Q_1,...Q_{a+b+1}$, such that
+    $Q_i$ wins against $Q_{i+1}$ ($i=1,...,a+b$).
+
+    \index[strat]{Extremal!Longest Path!ChTST 2015 P3}
+}
 
 \rem{Typical largest path, some workaround with given constraints problem.}
 
 \solu{Take the largest path starting from $ a_1 $ to $ a_n $.
-    \begin{solution_def} Assume that $ n\le a+b $. Since this is the largest
+    \begin{solution_def} 
+        Assume that $ n\le a+b $. Since this is the largest
         path, $ a $ edges coming out of $ a_n $ are all in $ S=\{a_1, a_2,
         \dots a_n\} $, and $ b $ edges going in $ a_1 $ are all in $ S $. Let
         $ S_1 $ be the set of vertices that $ a_n $ wins against, and $ S_2 $
@@ -77,36 +92,49 @@ P3}}
         a+b $, we have $ S'\ne \varnothing $. \\
 
         We also define: \[ S_1'=\{a_i\mid a_i \text{ defeats } a_{i+1} \text{
-            where } a_{i+1} \in S_1\cap S' \}\] \[S_2'=\{a_i\mid a_{i-1}
-    \text{ defeats } a_{i} \text{ where } a_{i-1} \in S_2\cap S'\}\]
-\end{solution_def} \figdf{.4}{China_TST_2015_T1_D2_P3_1}{} Now, note that for
-any $ x\in S_2' $, $ y\in S_1' $, there is a path between $ x, y $ with $ n $
-vertices. So for all $ x\in S_2' $, there does not exist a vertex outside of $
-S $ that defeats $ x $. And for all $ y\in S_1' $, there doesn't exist a
-vertex outside of $ S $ that loses to $ y $, because of the maximality of $ n
-$. \\
+                where } a_{i+1} \in S_1\cap S' \}\] \[S_2'=\{a_i\mid a_{i-1}
+        \text{ defeats } a_{i} \text{ where } a_{i-1} \in S_2\cap S'\}\]
+    \end{solution_def} 
+
+    \figdf{.4}{China_TST_2015_T1_D2_P3_1}{} 
+
+    Now, note that for any $ x\in S_2' $, $ y\in S_1' $, there is a path
+    between $ x, y $ with $ n $ vertices. So for all $ x\in S_2' $, there does
+    not exist a vertex outside of $ S $ that defeats $ x $. And for all $ y\in
+    S_1' $, there doesn't exist a vertex outside of $ S $ that loses to $ y $,
+    because of the maximality of $ n $. \\
 
     We show that, $ S_1'\cap S_2' \ne \varnothing $. Then there would exist a
     vertex that doesn't have any edge outside of $ S $, meaning it has at
     least $ a+b $ games inside $ S $, proving the result.\\ 
 
     We have, $ S_1', S_2' \subset S'\cup\{a_{l-1}, a_{n-k+1}\} $. We have,
-\begin{align*} |S_1'| &\ge a-k+2\quad [\because a_n \text{ has at most } k-2
-\text{ vertices in } \{a_{n-k+1}, \dots a_n\}]\\ |S_2'| &\ge b-l+3
-\end{align*} But $ |S'|=n-(l-1)-(k)+2 \le a+b-l-k+3 < |S_1'|+|S_2'| $. So $
-S_1'\cap S_2' \ne \varnothing $, and we are done.}
+    \begin{align*} 
+        |S_1'| &\ge a-k+2\quad [\because a_n \text{ has at most } k-2 \text{
+        vertices in } \{a_{n-k+1}, \dots a_n\}]\\ |S_2'| &\ge b-l+3
+    \end{align*} 
+
+    But $ |S'|=n-(l-1)-(k)+2 \le a+b-l-k+3 < |S_1'|+|S_2'| $. So $
+    S_1'\cap S_2' \ne \varnothing $, and we are done.
+}
 
 
 
-\prob{https://artofproblemsolving.com/community/c6h35315p220222}{ARO 2005
-P10.8}{E}{A white plane is partitioned in to cells (in a usual way). A finite
-number of cells are coloured black. Each black cell has an even (0, 2 or 4)
-number of adjacent (by the side) white cells. Prove that one may colour each
-white cell in green or red such that every black cell will have equal number
-of red and green adjacent cells.\index{Graph!Grid $ \to $ Graph!ARO 2005
-P10.8}\index{Graph!Bipartite!ARO 2005 P10.8}}
+\prob{https://artofproblemsolving.com/community/c6h35315p220222}
+{ARO 2005 P10.8}{E}{
+    A white plane is partitioned in to cells (in a usual way). A finite
+    number of cells are coloured black. Each black cell has an even (0, 2 or 4)
+    number of adjacent (by the side) white cells. Prove that one may colour each
+    white cell in green or red such that every black cell will have equal number
+    of red and green adjacent cells.
 
-\solu{First we join the white cells like this: \figdf{.8}{ARO_2005_P10_8}{}
+    \index[strat]{Graph!Grid $ \to $ Graph!ARO 2005 P10.8}
+    \index[strat]{Graph!Bipartite!ARO 2005 P10.8}
+}
+
+\solu{
+    First we join the white cells like this: 
+    \figdf{.8}{ARO_2005_P10_8}{}
     Now, notice that the plane have been divided into some cycles (a black
     cell that has no adjacent black cells is a cycle itself). So we can color
     the plane blue and yellow in a way that no region has the same color as
@@ -125,53 +153,68 @@ P10.8}\index{Graph!Bipartite!ARO 2005 P10.8}}
     also easy to see that there are an even number of straight edges, because
     of going in and out of the regions of a fixed color.\\
 
-So our cycle has an even number of nodes and thus bipartite. We can color the
-graph with two colors, so that along each edge, the two nodes are of different
-color.}
+    So our cycle has an even number of nodes and thus bipartite. We can color the
+    graph with two colors, so that along each edge, the two nodes are of different
+    color.
+}
 
-\rem{There is a simple coloring using this solution. After we color the
-regions of the plane with blue and yellow, we number each column with
-integers. Then on the odd numbered columns, we color all the white cells that
-are in yellow region green and blue region red. And on the even numbered
-columns, we do the opposite. It is easy to check that this coloring works
-using the graph we created before.}
+\rem{
+    There is a simple coloring using this solution. After we color the
+    regions of the plane with blue and yellow, we number each column with
+    integers. Then on the odd numbered columns, we color all the white cells that
+    are in yellow region green and blue region red. And on the even numbered
+    columns, we do the opposite. It is easy to check that this coloring works
+    using the graph we created before.
+}
 
 
 
-\prob{https://atcoder.jp/contests/agc033/tasks/agc033_c}{AtCoder GC033
-    C}{E}{Takahashi and Aoki will play a game on a tree. The tree has $ N $
+\prob{https://atcoder.jp/contests/agc033/tasks/agc033_c}
+{AtCoder GC033 C}{E}{
+    Takahashi and Aoki will play a game on a tree. The tree has $ N $
     vertices numbered $ 1 $ to $ N $, and the $ i $-th of the $ N-1 $ edges
     connects Vertex $ a_i $ and Vertex $ b_i $
 
     At the beginning of the game, each vertex contains a coin. Starting from
     Takahashi, he and Aoki will alternately perform the following operation:
 
-    \begin{itemize} \item Choose a vertex $ v $ that contains one or more
-        coins, and remove all the coins from $ v $.  \item Then, move each
-        coin remaining on the tree to the vertex that is nearest to $ v $
-        among the adjacent vertices of the coin's current vertex.
-\end{itemize}
+    \begin{itemize} 
+        \item Choose a vertex $ v $ that contains one or more
+            coins, and remove all the coins from $ v $.  
+        \item Then, move each coin remaining on the tree to the vertex that is
+            nearest to $v$ among the adjacent vertices of the coin's current vertex.
+    \end{itemize}
 
-The player who becomes unable to play, loses the game. That is, the player who
-takes his turn when there is no coin remaining on the tree, loses the game.
-Determine the winner of the game when both players play
-optimally.\index{Extremal!Longest Path!AtCoder GC033
-C}\index{Invariant!Monovariant!AtCoder GC033 C}}
+    The player who becomes unable to play, loses the game. That is, the player who
+    takes his turn when there is no coin remaining on the tree, loses the game.
+    Determine the winner of the game when both players play
+    optimally.
 
-\solu{First transform the game by removing the idea of coins, and replacing it
-with deleting vertices. Now, notice that the longest path in this tree (i.e.
-the diameter) strictly decreases by $ 1 $ or $ 2 $ each turn depending on the
-move. So it's just a basic predetermined game.}
+    \index[strat]{Extremal!Longest Path!AtCoder GC033 C}
+    \index[strat]{Invariant!Monovariant!AtCoder GC033 C}
+}
+
+\solu{
+    First transform the game by removing the idea of coins, and replacing it
+    with deleting vertices. Now, notice that the longest path in this tree (i.e.
+    the diameter) strictly decreases by $ 1 $ or $ 2 $ each turn depending on the
+    move. So it's just a basic predetermined game.
+}
 
 
-\prob{https://artofproblemsolving.com/community/c6h514375p2889828}{ARO 1999
-P9.8}{M}{There are $2000$ components in a circuit, every two of which were
-initially joined by a wire. The hooligans Vasya and Petya cut the wires one
-after another. Vasya, who starts, cuts one wire on his turn, while Petya cuts
-one or three. The hooligan who cuts the last wire from some component loses.
-Who has the winning strategy?\index{Algorithm!Copycat!ARO 1999 P9.8}}
+\prob{https://artofproblemsolving.com/community/c6h514375p2889828}
+{ARO 1999 P9.8}{M}{
+    There are $2000$ components in a circuit, every two of which were
+    initially joined by a wire. The hooligans Vasya and Petya cut the wires one
+    after another. Vasya, who starts, cuts one wire on his turn, while Petya cuts
+    one or three. The hooligan who cuts the last wire from some component loses.
+    Who has the winning strategy?
+    
+    \index[strat]{Algorithm!Copycat!ARO 1999 P9.8}
+}
 
-\solu{[Copycat] The P-Hooligan Petya has a winning strategy, for he can be
+\solu{[Copycat] 
+    The P-Hooligan Petya has a winning strategy, for he can be
     follow the old cunning trick of never losing. How does he do it?
 
     He starts by secretly partitioning the vertices in two $ 1000 $ degree
@@ -180,64 +223,72 @@ Who has the winning strategy?\index{Algorithm!Copycat!ARO 1999 P9.8}}
     with an invisible marker that only he can see. 
 
     Now the game begins. Petya copies Vasyas moves following these rules:
-    \begin{enumerate} \itemsep.5em \item If Vasya removes an edge $ a_i$ --
-        $a_j $, where $ i\ne j $, then Patya removes the edges $ a_i$ --
-        $b_j,\ a_j$ -- $b_i$ and $ b_i$ -- $b_j $.  \item If Vasya removes
-        $a_j$ -- $b_i$, where $ i\ne j $, then Patya removes the other three
-        edges from the above rule.  \item If Vasya removes $ a_i $--$ b_i $,
-        then Patya looks for another $ b_j $, such that $ a_i $--$ b_j $
-        exists. Then by the symmetry so far maintanined, $ a_j $--$ b_i $ and
-        $ a_j $--$ b_j $ exist too. And Patya can remove $ a_j$--$ b_j $, and
-        swap the names of $ b_j $ and $ b_i $. 
+    \begin{enumerate} 
+        \item If Vasya removes an edge $ a_i$ -- $a_j $, where $ i\ne j $,
+            then Patya removes the edges $ a_i$ -- $b_j,\ a_j$ -- $b_i$ and $
+            b_i$ -- $b_j $.  
+        \item If Vasya removes $a_j$ -- $b_i$, where $ i\ne j $, then Patya
+            removes the other three edges from the above rule.  
+        \item If Vasya removes $ a_i $--$ b_i $, then Patya looks for another
+            $ b_j $, such that $ a_i $--$ b_j $ exists. Then by the symmetry
+            so far maintanined, $ a_j $--$ b_i $ and $ a_j $--$ b_j $ exist
+            too. And Patya can remove $ a_j$--$ b_j $, and swap the names of $
+            b_j $ and $ b_i $. 
 
             But if he can't, then that would mean after Vasya's move $ a_i $
-would become isolated, and Patya would win.  \end{enumerate} It is easy to see
-that the above moves are possible since Patya is always maintaining symmetry
-between $ A, B $. So he can't move means Vasya has already disconnected one of
-the vertices.}
+            would become isolated, and Patya would win.  
+    \end{enumerate} 
+
+    It is easy to see that the above moves are possible since Patya is always
+    maintaining symmetry between $ A, B $. So he can't move means Vasya has
+    already disconnected one of the vertices.
+}
 
 
-\rem{The case with $ 4 $ vertices and $ 6 $ vertices give an idea to copy the
-opponent's moves.}
+\rem{
+    The case with $ 4 $ vertices and $ 6 $ vertices give an idea to copy the
+    opponent's moves.
+}
 
 
 
-\prob{https://artofproblemsolving.com/community/c6h17455p119177}{ISL 2001
-C3}{E}{Define a $ k $-clique to be a set of $ k $ people such that every pair
-of them are acquainted with each other. At a certain party, every pair of $ 3
-$-cliques has at least one person in common, and there are no $ 5 $-cliques.
-Prove that there are two or fewer people at the party whose departure leaves
-no $ 3 $-clique remaining.\index{Extremal!Object!ISL 2001
-C3}}\label{problem:extreme_object_16}
+\prob{https://artofproblemsolving.com/community/c6h17455p119177}
+{ISL 2001 C3}{E}{
+    Define a $ k $-clique to be a set of $ k $ people such that every pair
+    of them are acquainted with each other. At a certain party, every pair of $ 3
+    $-cliques has at least one person in common, and there are no $ 5 $-cliques.
+    Prove that there are two or fewer people at the party whose departure leaves
+    no $ 3 $-clique remaining.
+    
+    \index[strat]{Extremal!Object!ISL 2001 C3}
+}\label{problem:extreme_object_16}
 
 \solu{Casework with the point where most of the triangles are joined.}
 
 
-\prob{https://artofproblemsolving.com/community/c6h1441121p8200413}{ARO 2017
-P9.1}{E}{In a country some cities are connected by one-way flights (there is
-at most one flight between two cities). City $ A $ is called ``available" from
-city $ B $, if there is a flight from $ B $ to $ A $, maybe with some
-transits. It is known, that for every $ 2 $ cities $ P $ and $ Q $, there
-exists a city $ R $, such that $ P $ and $ Q $ are both available from $ R $.
-Prove, that exist city $ A $, such that every city is available from $ A
-$.\index{Induction!Classic!ARO 2017 P9.1}}\label{problem:induction_type1_3}
+\prob{https://artofproblemsolving.com/community/c6h1441121p8200413}
+{ARO 2017 P9.1}{E}{
+    In a country some cities are connected by one-way flights (there is
+    at most one flight between two cities). City $ A $ is called ``available" from
+    city $B$, if there is a flight from $ B $ to $ A $, maybe with some
+    transits. It is known, that for every $2$ cities $P$ and $Q$, there
+    exists a city $R$, such that $P$ and $Q$ are both available from $R$.
+    Prove, that exist city $A$, such that every city is available from $A$.
+
+    \index[strat]{Induction!ARO 2017 P9.1}
+}\label{problem:induction_type1_3}
 
 \solu{Basic induction exercise.}
 
 
-\prob{https://artofproblemsolving.com/community/c6h446932}{Turkey National MO
-2002 P3}{}{Graph Airlines $ (GA)$ operates flights between some of the cities
-of the Republic of Graphia. There are at least three $ GA$ flights from each
-city, and it is possible to travel from any city in Graphia to any city in
-Graphia using $ GA$ flights. $ GA$ decides to discontinue some of its flights.
-Show that this can be done in such a way that it is still possible to travel
-between any two cities using $ GA$ flights, yet at least $ 2/9$ of the cities
-have only one flight.}
+
+
+
 
 
 \prob{https://artofproblemsolving.com/community/c4h365024p2006499}{Tournament
     of Towns 2009 S6}{M}{
-    Anna and Ben decided to visit Archipelago with $2009$ islands. Some pairs of
+    Anna and Ben decided to visit a country with $2009$ islands. Some pairs of
     islands are connected by boats which run both ways. Anna and Ben are playing
     during the trip:
 
@@ -260,7 +311,5 @@ have only one flight.}
 
 
 
-
-
-
-\input{combi/sec5_1_counting_in_graph} \input{combi/sec5_2_graph_alogrithm}
+\input{combi/sec5_1_counting_in_graph} 
+\input{combi/sec5_2_graph_alogrithm}

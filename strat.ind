@@ -1,52 +1,77 @@
 \begin{theindex}
 
-  \item  Induction
-    \subitem CF 1379E , \hyperpage{32}
+\large\Titillium%
+\noindent\texttt{A}\par\nopagebreak
+
+ \item \small Algorithm
+    \subitem Copycat
+      \subsubitem ARO 1999 P9.8 \dotfill \hyperpage{4}
 
   \indexspace
 
-  \item Adding new stuffs
-    \subitem ISL 2002 C5, \hyperpage{12}
+\large\Titillium%
+\noindent\texttt{B}\par\nopagebreak
+
+ \item \small Bounding
+    \subitem Cost function
+      \subsubitem Turkey NMO 2002 P3 \dotfill \hyperpage{12}
 
   \indexspace
 
-  \item Bijection
-    \subitem Binary Representation
-      \subsubitem ISL 1988 P10, \hyperpage{12}
-    \subitem USAMO 2017 P5, \hyperpage{120}
+\large\Titillium%
+\noindent\texttt{C}\par\nopagebreak
+
+ \item \small Construction
+    \subitem Turkey NMO 2002 P3 \dotfill \hyperpage{12}
+ \item \small CopyCat
+    \subitem ToT 2009 S6 \dotfill \hyperpage{5}
 
   \indexspace
 
-  \item CopyCat
-    \subitem ToT 2009 S6, \hyperpage{40}
-  \item copycat
-    \subitem partition
-      \subsubitem aro 2006 11.3, \hyperpage{79}
+\large\Titillium%
+\noindent\texttt{E}\par\nopagebreak
+
+ \item \small Extremal
+    \subitem Longest Path
+      \subsubitem AtCoder GC033 C \dotfill \hyperpage{4}
+      \subsubitem ChTST 2015 P3 \dotfill \hyperpage{1}
+    \subitem Object
+      \subsubitem ISL 2001 C3 \dotfill \hyperpage{5}
 
   \indexspace
 
-  \item Double Counting
-    \subitem USA TST 2005 P1, \hyperpage{11}
+\large\Titillium%
+\noindent\texttt{G}\par\nopagebreak
+
+ \item \small Graph
+    \subitem Bipartite \dotfill \hyperpage{1}
+      \subsubitem ARO 2005 P10.8 \dotfill \hyperpage{3}
+      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
+    \subitem Grid $ \to $ Graph
+      \subsubitem ARO 2005 P10.8 \dotfill \hyperpage{3}
+    \subitem Hall Marriage
+      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
 
   \indexspace
 
-  \item Focus
-    \subitem ISL 2002 C5, \hyperpage{12}
-    \subitem Romanian TST 2016 D1P2, \hyperpage{11}
+\large\Titillium%
+\noindent\texttt{I}\par\nopagebreak
+
+ \item \small Induction
+    \subitem ARO 2017 P9.1 \dotfill \hyperpage{5}
+    \subitem Special
+      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
+ \item \small Invariant
+    \subitem Monovariant
+      \subsubitem AtCoder GC033 C \dotfill \hyperpage{4}
 
   \indexspace
 
-  \item Induction
-    \subitem $n$ is or isn't
-      \subsubitem Iran TST 2013 D1P2, \hyperpage{12}
-    \subitem Iran TST 2008 D3P1, \hyperpage{11}
-    \subitem ISL 2002 C5, \hyperpage{12}
-    \subitem ISL 2008 C2, \hyperpage{120}
-    \subitem Romanian TST 2016 D1P2, \hyperpage{11}
+\large\Titillium%
+\noindent\texttt{L}\par\nopagebreak
 
-  \indexspace
-
-  \item Roots of unity filtering
-    \subitem Iran TST 2013 D1P2, \hyperpage{12}
+ \item \small Local
+    \subitem Add One by One
+      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
 
 \end{theindex}

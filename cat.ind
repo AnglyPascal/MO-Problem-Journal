@@ -1,22 +1,29 @@
 \begin{theindex}
 
-  \item Permutations
-    \subitem ISL 2008 C2, \hyperpage{120}
-    \subitem USAMO 2017 P5, \hyperpage{120}
+\large\Titillium%
+\texttt{P}\par\nopagebreak
+
+ \item \small Permutations
+    \subitem ISL 2008 C2 \dotfill \hyperpage{120}
+    \subitem USAMO 2017 P5 \dotfill \hyperpage{120}
 
   \indexspace
 
-  \item Sets
+\large\Titillium%
+\texttt{S}\par\nopagebreak
+
+ \item \small Sets
     \subitem Local
-      \subsubitem Iran TST 2008 D3P1, \hyperpage{11}
-      \subsubitem ISL 2002 C5, \hyperpage{12}
-      \subsubitem Romanian TST 2016 D1P2, \hyperpage{11}
+      \subsubitem Iran TST 2008 D3P1 \dotfill \hyperpage{11}
+      \subsubitem ISL 2002 C5 \dotfill \hyperpage{12}
+      \subsubitem Romanian TST 2016 D1P2 \dotfill \hyperpage{11}
     \subitem Max-set with property
-      \subsubitem Iran TST 2013 D1P2, \hyperpage{13}
-      \subsubitem USA TST 2005 P1, \hyperpage{11}
+      \subsubitem Iran TST 2013 D1P2 \dotfill \hyperpage{13}
+      \subsubitem USA TST 2005 P1 \dotfill \hyperpage{11}
     \subitem Subsets of $[N]$
-      \subsubitem American Mathematical Monthly E2309, \hyperpage{12}
-      \subsubitem CGMO 2010 P1, \hyperpage{12}
-      \subsubitem ISL 1988 P10, \hyperpage{12}
+      \subsubitem American Mathematical Monthly E2309 \dotfill 
+		\hyperpage{12}
+      \subsubitem CGMO 2010 P1 \dotfill \hyperpage{12}
+      \subsubitem ISL 1988 P10 \dotfill \hyperpage{12}
 
 \end{theindex}
