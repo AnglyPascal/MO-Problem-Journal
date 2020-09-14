@@ -1,15 +1,41 @@
 \begin{theindex}
 
 \large\Titillium%
-\noindent\texttt{C}\par\nopagebreak
+\noindent\texttt{D}\par\nopagebreak
 
- \item \small Cut \dotfill \hyperpage{11}
+ \item \small DFT Matrix \dotfill \hyperpage{7}
+ \item \small Discrete Fourier Transform \dotfill \hyperpage{7}
 
   \indexspace
 
 \large\Titillium%
-\noindent\texttt{N}\par\nopagebreak
+\noindent\texttt{I}\par\nopagebreak
 
- \item \small Nimbers \dotfill \hyperpage{19}
+ \item \small Inverse Discrete Fourier Transform \dotfill \hyperpage{7}
+ \item \small Inversions of a Permutation \dotfill \hyperpage{5}
+
+  \indexspace
+
+\large\Titillium%
+\noindent\texttt{M}\par\nopagebreak
+
+ \item \small Minimum Spanning Tree \dotfill \hyperpage{2}
+
+  \indexspace
+
+\large\Titillium%
+\noindent\texttt{P}\par\nopagebreak
+
+ \item \small Parity of a Permutation \dotfill \hyperpage{5}
+ \item \small Permutation as Composition of Transpositions \dotfill 
+		\hyperpage{4}
+ \item \small Permutations as Matrices \dotfill \hyperpage{5}
+
+  \indexspace
+
+\large\Titillium%
+\noindent\texttt{S}\par\nopagebreak
+
+ \item \small Shortest Path Problem \dotfill \hyperpage{3}
 
 \end{theindex}

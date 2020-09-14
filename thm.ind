@@ -1,65 +1,31 @@
 \begin{theindex}
 
 \large\Titillium%
-\noindent\texttt{A}\par\nopagebreak
+\noindent\texttt{D}\par\nopagebreak
 
- \item \small Average of Degrees \dotfill \hyperpage{6}
-
-  \indexspace
-
-\large\Titillium%
-\noindent\texttt{B}\par\nopagebreak
-
- \item \small Bipartite Graph \dotfill \hyperpage{1}
+ \item \small Definitions of parity are equivalent \dotfill 
+		\hyperpage{5}
 
   \indexspace
 
 \large\Titillium%
-\noindent\texttt{C}\par\nopagebreak
+\noindent\texttt{M}\par\nopagebreak
 
- \item \small Criteria of partitioning a graph into disconnected sub-graphs \dotfill 
-		\hyperpage{1}
-
-  \indexspace
-
-\large\Titillium%
-\noindent\texttt{E}\par\nopagebreak
-
- \item \small Euler's Polyhedron Formula \dotfill \hyperpage{1}
-
-  \indexspace
-
-\large\Titillium%
-\noindent\texttt{N}\par\nopagebreak
-
- \item \small Non-Neighbor Equivalence Class \dotfill \hyperpage{1}
+ \item \small MST Cut \dotfill \hyperpage{2}
+ \item \small MST Cycle \dotfill \hyperpage{2}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{P}\par\nopagebreak
 
- \item \small Prufer sequence \dotfill \hyperpage{11}
+ \item \small Parity of Transpostion Composition \dotfill \hyperpage{4}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{S}\par\nopagebreak
 
- \item \small Sprague-Grund Theorem \dotfill \hyperpage{19}
-
-  \indexspace
-
-\large\Titillium%
-\noindent\texttt{T}\par\nopagebreak
-
- \item \small Turan's theorem \dotfill \hyperpage{6}
-
-  \indexspace
-
-\large\Titillium%
-\noindent\texttt{U}\par\nopagebreak
-
- \item \small unnamed \dotfill \hyperpage{6}
+ \item \small Swap Sort \dotfill \hyperpage{3}
 
 \end{theindex}

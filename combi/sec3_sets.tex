@@ -37,23 +37,37 @@
 
 
 
-
 \lem{}{Let $ S $ be a set with $ n $ elements, and let $ F $ be a family of subsets of $ S $ such that for any pair $ A, B $ in $ F $, $ A \cap B \not= \varnothing $ and $ A \cap B \not= S $. Then $ |F| \leq 2^{n-2} $.}\label{lemma:sets_lemma_4}
 
-\solu{Using the sets in \hrf{lemma:sets_lemma_1}{lemma 1} and \hrf{lemma:sets_lemma_1}{lemma 2}, defining upwards and downwards sets like in \hrf{lemma:sets_lemma_3_Kleitman}{Kleitman's Lemma}.}
+\solu{
+    Using the sets in \autoref{lemma:sets_lemma_1} and
+    \autoref{lemma:sets_lemma_1}, defining upwards and downwards sets like in
+    \autoref{lemma:sets_lemma_3_Kleitman}.
+}
 
 
 
-\lem{The Sunflower Lemma}{A sunflower with $ k $ petals and a core $ X $ is a family of sets $ S_1, S_2,\dots, S_k $ such that $ S_i\cap S_j = X $ for each $ i \neq j $. (The reason for the name is that the Venn diagram representation for such a family resembles a sunflower.) The sets $ S_i \setminus X $ are known as petals and must be nonempty, though $ X $ can be empty. Show that if $ F $ is a family of sets of cardinality $ s $, and $ |F| > s!(k-1)^s $, then $ F $ contains a sunflower with $ k $ petals.}\label{problem:induction_type1_20}\label{problem:extreme_object_10}
+\theo{https://www.wikiwand.com/en/Sunflower_(mathematics)}
+{The Sunflower Lemma}{
+    A \textbf{sunflower} with $ k $ petals and a core $ X $ is a family of sets $ S_1,
+    S_2,\dots, S_k $ such that $ S_i\cap S_j = X $ for each $ i \neq j $. (The
+    reason for the name is that the Venn diagram representation for such a
+    family resembles a sunflower.) The sets $ S_i \setminus X $ are known as
+    petals and must be nonempty, though $ X $ can be empty. \\
+
+    Show that if $ F $ is a family of sets of cardinality $ s $, and $ |F| >
+    s!(k-1)^s $, then $ F $ contains a sunflower with $ k $ petals.
+}\label{problem:induction_type1_20}\label{problem:extreme_object_10}
 
 
 \solu{Applying induction and considering the best case where $ |X|=0 $}
 
 
-\newpage
 \subsection{Extremal Set Theory}
 
-\href{http://math.mit.edu/~cb_lee/18.318/lecture8.pdf}{MIT 18.314 Lecture-8}
+\begin{myitemize}
+    \item \href{http://math.mit.edu/~cb_lee/18.318/lecture8.pdf}{MIT 18.314 Lecture-8}
+\end{myitemize}
 
 
 \theo{}{Mirsky Theorem}{A set $ S $ with a chain of height $ h $ can’t be partitioned into $ t $ anti-chains if $ t < h $. In other words, the minimum number of sets in any anti-chain partition of $ S $ is equal to the maximum height of the chains in $ S $. (And Vice Versa)}\label{theorem:mirsky_theorem}
@@ -71,6 +85,59 @@
 
 
 \prob{}{}{E}{Let $ n\ge 1 $ be an integer and let $ X $ be a set of $ n^2+1 $ positive integers such that in any subset of $ X $ with $ n+1 $ elements there exist two elements $ x\neq y $ such that $ x|y $. Prove that there exists a subset $ \{x_1, x_2\dots x_{n+1} \in X $ such that $ x_i|x_{i+1} $ for all $ i=1, 2, \dots n $.}
+
+
+\den{Sperner Family}{
+    A family of sets in which none of the sets is a strict subset of another
+    is called a \textbf{Sperner family}, that is, an antichain of sets.
+}
+
+
+\theo{https://www.wikiwand.com/en/Lubell–Yamamoto–Meshalkin_inequality}
+{LYM Inequality}{
+    Let $U$ be a set of $n$ elements and $\mathcal{S}$ is a Sperner family of
+    subsets of $U$. If $a_k$ is the number of $k$ element subsets of
+    $\mathcal{S}$, then
+    \[\impeq{\sum^{n}_{k=0}\frac{a_k}{{n \choose k}}\le 1}\] 
+}
+
+\begin{prooof}
+    Rewrite the inequality by 
+    \[\sum^{n}_{k=0} a_k k!(n-k)! \le n!\]
+    The left hand side equals to 
+    \[\sum^{}_{S\in \mathcal{S}} \left|S\right|!
+    \left(n-\left|S\right|\right)!\] 
+    For a $S \in \mathcal{S}$, $\left|S\right|!\left(n-\left|S\right|\right)!$
+    is the number of permutations of $[n]$ for which the first
+    $\left|S\right|$ terms are the elements of $S$. Since the sets of
+    $\mathcal{S}$ doesn't include each other, all of these permutations are
+    different. And so if we count them together, we will get at most all the
+    permutatios of $[n]$, which gives us our desired result.
+\end{prooof}
+
+
+\theo{https://www.wikiwand.com/en/Sperner's_theorem}
+{Sperner's Theorem}{
+    Sperner's theorem bounds the number of sets in any Sperner family. For any
+    Sperner Family $\mathcal{S}$, if the union of those sets is a set of $n$
+    elements, then 
+    \[\left|\mathcal{S}\right|< {n \choose \left\lfloor n/2 \right\rfloor}\] 
+    Where equality holds iff $\mathcal{S}$ is consisted of all subsets of
+    $[n]$ with $\left\lfloor n/2 \right\rfloor$ or $\left\lceil
+    n/2  \right\rceil $ elements.
+}
+
+\begin{prooof}
+    Let $a_k$ be the number of $k$ element subsets of $\mathcal{S}$. Then
+    since ${n\choose \left\lfloor n/2\right\rfloor} \le {n\choose k}$, we have
+    \[\frac{a_k}{{n \choose \left\lfloor n/2\right\rfloor}} \le
+    \frac{a_k}{{n\choose k}}\] 
+    And since the sets doesn't contain each other, we can sum them up and by
+    \autoref{theorem:LYM Inequality}, we get
+    \[\sum^{n}_{k=0} \frac{a_k}{{n\choose \left\lfloor
+    n/2\right\rfloor}} \le \sum^{n}_{k=0} \frac{a_k}{{n\choose k}} \le 1\] 
+\end{prooof}
+
 
 
 
@@ -232,4 +299,170 @@ completely. At this point the problem is trivial.}
 
 
 
-\solu{Try to show \href{bijection}{Bijection} between the result and choosing $m$ or $n$ objects from $m+n$ objects or show that the result is $\binom{m+n}{n}$.}
+\solu{Try to show \href{bijection}{Bisection} between the result and choosing $m$ or $n$ objects from $m+n$ objects or show that the result is $\binom{m+n}{n}$.}
+
+
+\newpage
+\subsection{Hamming Distance}
+
+
+\begin{myitemize}
+    \item \href{https://dgrozev.wordpress.com/2019/11/09/hamming-distance-in-olympiad-problems/} {Blogpost by dgrozev}
+\end{myitemize}
+
+\vspace{1em}
+
+\den{Hamming Distance}{
+    The Hamming distance between two equal-length strings of symbols is the
+    number of positions at which the corresponding symbols are different.
+}
+
+Occasionally we might be able to use the idea of Hamming distance to
+``partition'' a set into sets of equivalence classes. For example consider the
+following problem:
+
+\prob{}
+{}{}{
+    Suppose we have some real numbers $\left(x_{n}\right), n=1,2, \ldots, N$
+    and consider the sums
+    \[ \sum_{i=1}^{N} b_{i} x_{i},\quad b_{i} \in\{0,1\}\]
+    We want to estimate how many among those sums hit a fixed interval
+    $\Delta$ with some length.
+
+    \index[strat]{Hamming distance}
+}
+
+\begin{solution}
+    Suppose a sum $\sum_{i=1}^{N} b_{i} x_{i}$ is inside $\Delta$. \\
+
+    Then changing any bit $b_{i}, i=1,2, \ldots, N$ we leave $\Delta$ if this
+    interval is smaller than the largest $\left|x_{i}\right|, i \in[1 \ldots
+    N]$.\\
+
+    So, for any $N$ -tuple of bits $b=\left(b_{1}, b_{2}, \ldots,
+    b_{N}\right)$ with corresponding sum in $\Delta$, all the other tuples of
+    bits that differ from $b$ in exactly one bit have sums outside $\Delta$.\\
+
+    In fact the set of those bits is the unit sphere around $b$ with respect
+    to the Hamming distance. So no other set on this sphere has the sum in
+    $\Delta$.\\
+
+    Now, we take the set $B$ of all tuples $b=\left(b_{1}, b_{2}, \ldots,
+    b_{N}\right)$ with $\sum_{i=1}^{N} b_{i} x_{i} \in \Delta$. Then for any $b
+    \in B$ the unit sphere 
+    {\color{solC} \[S(b):=\left\{b^{\prime}: b^{\prime} \text{differs from } b
+    \text{ in exactly one bit}\right\}\]}
+    consists of tuples not in $B$. If it happens for $b \in B$, $S(b)$ are
+    disjoint, we can estimate the number of elements in $B$ as
+    \[ |B| \leq \frac{2^{N}}{N+1} \]
+\end{solution}
+
+\newpage
+\prob{https://artofproblemsolving.com/community/c6h1946999p13424041}
+{CIIM 2019 P3}{M}{
+    Let $\{x_n\}_{n\in{}\mathbb{N}}$ be a sequence of non-zero real numbers.
+    For every positive integer $m$, we define:
+    \[X_m=\left\{A\subseteq{}\{0,1,...,m-1\}\left|\quad\left|\sum_{a\in{A}}
+    x_a\right| >\frac{1}{m}\right.\right\}\]
+    Prove that: \[\lim_{n\to\infty} \frac{\vert{}X_n\vert{}}{2^n}=1\]
+
+    \index[strat]{Hamming distance!CIIM 2019 P3}
+}
+
+\begin{Remark}
+    The idea roughly speaking is as follows.
+
+    {\color{impC}For sufficiently large $m$ we map each $A$ having small sum $\sum_{a\in
+    A}x_a$ to a family $F(A)$ of many other sets with big sums.} If those
+    families do not intersect, we obtain that the number of $A$'s with small
+    sums is a small portion of the all subsets. 
+
+    The vague idea is to mark some finite set of distinct elements
+    $x_n$ and for a fixed set $A$ we may add or remove any marked element,
+    depending if it's in $A$ or not. Thus we obtain another sets, but those
+    sets cannot have small sums if the marked elements are appropriately
+    taken.
+\end{Remark}
+
+\begin{solution}[dgrozev]
+    To apply this idea we consider two cases.\\
+
+    \boxed{\textbf{1.}} There are infinitely many distinct numbers among
+    $(x_n)_{n\ge 0}$. \\
+
+    Let us fix some $N\in\mathbb{N}$ and $I$ be a set of $N$ non negative
+    integers (indices) such $x_i, i\in I$ are all distinct. Denote by
+    $\varepsilon$ any positive real number less than $\min \left\{|x_i-x_j|,\
+    |x_i|\right\}, i, j\in I$. \\
+
+    We take any $m$ large enough such that $2/m<\varepsilon$ and $m>\max\{i\in
+    I\}$. Let $A$ is any subset of $\{0,1,\dots,m\}$ satisfying
+
+    \begin{align*}
+        \left|\sum_{a\in A}x_a\right |\leq \frac{1}{m}\qquad\qquad (1) 
+    \end{align*}
+    For any $i\in I$ we construct the set $A_i$ as
+    \[A_i:=\begin{cases} A\cup {i}& \text{if } i\not\in A\\
+    A\setminus\{i\}&\text{if } i\in A \end{cases} \]
+    It can be easily seen
+    \[\displaystyle \left|\sum_{a\in A_i}x_a\right |> \frac{1}{m}\,,\,\forall
+    i\in I\]
+
+    By $F(A)$ we denote the family $\{A_i:i\in I\}$. For any two subsets $A,B$
+    of $\{0,1,\dots,m\}$ satisfying $(1)$, {\color{impC}the corresponding families $F(A),
+    F(B)$ do not meet}.\\
+
+    Indeed, if $X\in F(A)$ and $X\in F(B)$, then $X$
+    differs from $A, B$ only in one element of $I$. That is, $A$
+    differs from $B$ only in two elements that are in $I$. Hence,
+    \[\left|\sum_{a\in A}x_a-\sum_{a\in B}x_a\right|>2/m\]
+    because of the choice of $m$. It means $A$ and $B$ cannot both satisfy
+    $(1)$.\\
+
+    To recap. Let $\mathcal{A}$ be the family of all subsets $A$ of $\left\{0,
+    1,\dots m-1\right\}$ satisfying $(1)$. Then for any $A\in\mathcal{A}$ all
+    sets in $F(A)$ are not in $\mathcal{A}$. Further, $F(A), A\in \mathcal{A}$
+    are disjoint. Since $|F(A)|=N,\forall A\in\mathcal{A}$, we have
+    \[|\mathcal{A}|\leq \frac{2^m}{N+1}\]and henceh
+    \[\displaystyle \frac{|X_m|}{2^m}\geq \frac{N}{N+1}\]
+    Since $N$ could be chosen arbitrary large, the result follows.\\
+
+    \boxed{\textbf{2.}} Only finite values of $(x_n)_{n\ge 0}$ are distinct.\\
+
+    So, suppose $x_n=a$ for infinitely many $n\in \mathbb{N}$. Let $I$ be a
+    finite set of such indices with $|I|=N$ and $m\in \mathbb{N}$ satisfies
+    $2/m<|a|$ and $m\geq \max\{i:i\in I\}$. For any fixed subset $A\subset
+    [0..m]\setminus I$ there exists at most one $k\in\mathbb{N}$ with
+    $\left|\sum_{i\in A}x_i+ka\right|\leq \frac{1}{m}$. Hence the number of
+    subsets $A'\subset I$ with $\left|\sum_{i\in A\cup A'}x_i+ka\right|\leq
+    \frac{1}{m}$ are at most $\dbinom{N}{\lfloor N/2\rfloor}$.\\
+
+    It means the number of sets $A\subset [0..m]$ satisfying $(1)$ are at most
+    $2^{m-N}\dbinom{N}{\lfloor N/2\rfloor}$, thus
+    \[\displaystyle \frac{|X_m|}{2^m}\geq 1-\frac{\lfloor N/2\rfloor}{2^N}\]
+    which proves the desired result.
+\end{solution}
+
+\begin{solution}[Sperner's theorem, IMD2]
+    We call a subset ``bad'' if it doesn't satisfy the inequality.\\
+
+    Now fix an integer $N$. Let $m$ be an integer such that 
+    \[\frac{2}{m}< \min \left\{\left|x_1\right|, \left|x_2\right|\dots
+    \left|x_N\right|\right\}\] 
+    WLOG assume that there are as many positives in the first $N$ terms as
+    there are negatives. Let $P$ be the positive elements subset of
+    $\left\{x_1, x_2\dots x_N\right\}$.\\
+
+    Define $S = \left\{x_1, x_2, \dots x_m\right\} - P$. Then every subset of
+    the first $m$ terms can be written as ${A, B}$, where $A\subseteq P,
+    B\subseteq S$ and the subset is $A\cup B$. \\
+
+    Using this notation, notice that if $A\subset A' \subseteq P$, then both
+    ${A, B}$ and ${A', B}$ can't be bad, because of our choice of $m$. So for
+    a fixed $B\subseteq S$, the largest family of subsets of $P$ is a
+    \emph{Sperner Family} of $P$. Which by Sperner's theorem has size at most
+    \[t_p = {\left|P\right| \choose \left\lfloor\left|P\right|/2\right\rfloor}\] 
+    So the probability of a subset of $\left\{x_1, x_2,\dots x_m\right\}$
+    being bad is $\frac{t_p}{2^p}$, which tends to $0$ for larger choice of
+    $N$.
+\end{solution}

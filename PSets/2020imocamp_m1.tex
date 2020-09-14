@@ -1,0 +1,100 @@
+\begin{center}
+    \LARGE \bfseries Mock 1\\[1em]
+
+    \normalsize\signature
+\end{center}
+
+
+\prob{}
+{}{}{
+    Let $I, G$ be the incenter and the centeroid of $\triangle ABC$. Prove
+    that $IG\perp BC$ iff either $AB = AC$ or $AB + AC = 3BC$.
+}
+\begin{solution}
+    Let $D, H$ be the foot of $I, H$, $M$ the midpoint of $BC$. WLOG assume
+    that $b>c$.\\
+
+    We have $HD = 2MD$ since $G$ lies on $ID$. And we also have $2MD = b-c$.
+    Which means
+    \[\begin{aligned}
+        BH &= BD- HD\\
+           &= \frac{c+a-b}{2} - (b-c)\\
+           &= \frac{3(c-b)+ a}{2}\\
+        \therefore \cos B &= \frac{3(c-b) + a}{2c}
+    \end{aligned}\]
+    By cosine rule, we get
+    \[\begin{aligned}
+        b^2&= a^2 + c^2 - 2ac\cos B\\
+        &= a^2 + c^2 + 3ab - 3ac - a^2 \\
+        \implies b^2 - c^2 &= 3a(b-c)\\
+        (b-c)(b+c)&= 3a(b-c)
+    \end{aligned}\] 
+    Which immediately implies that either $b=c$ or $b+c = 3a$. 
+\end{solution}
+
+
+\prob{}
+{}{}{
+    Prove that for every positive integer $n$, there is a positive integer
+    $a_n$ for which 
+    \[\left(1+\sqrt{5}\right)^n = \sqrt{a_n}+\sqrt{a_n+4^n}\]
+    Also prove that $5\cdot 4^{2009}$ divides $a_{2010}$, and find the
+    quotient.
+}
+
+\begin{solution}
+    We define $x_n, y_n$ by,
+    \[(1+\sqrt{5})^n = x_n + y_n \sqrt{5}\] 
+    Where the recursion relation is given by the matrix
+    \[\begin{bmatrix} 1 & 5 \\ 1 & 1 \end{bmatrix} \begin{bmatrix} x_n \\ y_n
+    \end{bmatrix} = \begin{bmatrix} x_{n+1} \\ y_{n+1} \end{bmatrix}\] 
+    We prove by induction that 
+    \[a_n = \begin{cases}
+        x_n^2 &  n \text{ is odd}\\
+        5y_n^2 & n \text{ is even}
+    \end{cases}\]
+    That is, 
+    \[x_n - 5y_n = (-4)^n\] 
+    The base cases for $n=1, 2$ are easily proved by hand. So suppose for some
+    $n$, we have
+    \[x_n - 5y^n = (-4)^n\] 
+    We have by the recursion relation, 
+    \[\begin{aligned}
+        x_{n+1} &= x_n + 5y_n\\
+        \implies x_{n+1}^2 &= x_n^2 + 25y_n^2 + 10x_ny_n\\[1em]
+        \text{ and } y_{n+1} &= x_n + y_n\\
+        \implies 5y_{n+1}^2 &= 5x_n^2 + 10x_ny_n + 5y_n^2\\[1em]
+        \therefore x_{n+1}^2 - 5y_{n+1}^2 &= 4(5y_n^2 - x_n^2)\\
+                                          &= (-4)^{n+1}
+    \end{aligned}\]
+
+    Now we find a closed form for $y_{2n}$. Note that
+    \[\begin{bmatrix} x_{2n}\\y_{2n} \end{bmatrix} = 2^{n-1}\begin{bmatrix} 3 & 5\\ 1
+        & 3\end{bmatrix}^{n-1} \begin{bmatrix} 6\\2 \end{bmatrix} \] 
+    Which gives us that $2^{n-1}| y_{2n}$, and so, $5\cdot 4^{2009}|a_{2010} =
+    5y_{2010}^2$.\\
+
+    By eigenvalue decomposition, we get
+    \[\begin{bmatrix} 3&5\\1&3 \end{bmatrix}=\frac{1}{2\sqrt{5}}
+    \begin{bmatrix}\sqrt{5}&-\sqrt{5} \\1&1\end{bmatrix}\begin{bmatrix}
+    3+\sqrt{5}&0\\0&3-\sqrt{5}\end{bmatrix} \begin{bmatrix}
+    1 &\sqrt{5} \\-1&\sqrt{5}\end{bmatrix}\] 
+
+    So, we get
+    \[\begin{bmatrix} x_{2n}\\y_{2n} \end{bmatrix} = 2^{n-1}\times
+    \frac{1}{\left(2\sqrt{5}\right)^{n-1}}
+    \begin{bmatrix}\sqrt{5}&-\sqrt{5}\\1&1\end{bmatrix}\begin{bmatrix}
+    \left(3+\sqrt{5}\right)^{n-1}&0\\0&\left(3-\sqrt{5}\right)^{n-1}\end{bmatrix}
+    \begin{bmatrix} 1&\sqrt{5}\\-1&\sqrt{5}\end{bmatrix} \begin{bmatrix} 6\\2
+    \end{bmatrix} \] 
+    The gives us the result of $y_{2n}$,
+    \[y_{2n} = 2^{n-1}\frac{1}{2\sqrt{5}}
+        \left(6\left(3+\sqrt{5}\right)^{n-1} -
+            6\left(3-\sqrt{5}\right)^{n-1} + 2\sqrt{5}\left(3+\sqrt{5}\right)^{n-1} +
+    2\sqrt{5}\left(3-\sqrt{5}\right)^{n-1}\right)\] 
+    Simplifying it we get
+    \[y_{2n} = 2^{n} \times
+        \frac{\left(3+\sqrt{5}\right)^{n} -
+            \left(3-\sqrt{5}\right)^{n}}{2\sqrt{5}}\] 
+
+\end{solution}

@@ -7,6 +7,23 @@
     \href{https://people.bath.ac.uk/masgcs/algorithms.pdf}{Handout by Cody
 Johnson} \end{myitemize} \faka
 
+\begin{take_note*}{When to use algorithms}
+    Rules of thumb to applying algorithms:
+    \begin{enumerate}[left=0pt, label=\boxed{\textbf{\arabic*}}]
+        \item A procedure or operation is given. An algorithm would be a
+            helpful organization of a set of allowed steps
+        \item You seek a construction. An algorithm is a powerful method to
+            construct a configuration satisfying some given conditions
+        \item A complex object or configuration is given that you want to reduce.
+        \item You are looking to represent all positive integers $n$ in
+            some given form. Often you are able to represent the items
+            greedily.
+        \item You are packing anything. Often you are able to pack the items
+            greedily.
+        \item You are looking for a winning strategy. A winning strategy is,
+            by definition, an algorithm to ensure a player of winning a game.
+    \end{enumerate}
+\end{take_note*}
 
 
 \subsection{Data Structures}
@@ -36,19 +53,20 @@ Johnson} \end{myitemize} \faka
 }
 
 
-
 \subsection{Minimal Spanning Tree}
 
 
-
-\den{Minimum Spanning Tree}{
-    A minimum spanning tree or minimum weight spanning
-    tree is a subset of the edges of a connected, edge-weighted (un)directed
-    graph that connects all the vertices's together, without any cycles and
-    with the minimum possible total edge weight.
-    \figdf{.4}{Minimum_spanning_tree}{Minimal Spanning Tree} 
-
-}
+\begin{minipage}{.5\linewidth}
+    \den{Minimum Spanning Tree}{
+        A minimum spanning tree or minimum weight spanning
+        tree is a subset of the edges of a connected, edge-weighted (un)directed
+        graph that connects all the vertices's together, without any cycles and
+        with the minimum possible total edge weight.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.4\linewidth}
+    \figdf{.7}{Minimum_spanning_tree}{Minimal Spanning Tree} 
+\end{minipage}
 
 
 
@@ -102,7 +120,6 @@ Johnson} \end{myitemize} \faka
     not in the tree.
 }
 
-
 \subsection{Shortest Path Problem}
 
 \den{Shortest Path Problem}{
@@ -131,8 +148,6 @@ Johnson} \end{myitemize} \faka
     In any swap sorting algorithm, the number of swaps needed has the same parity.
 }
 
-
-
 \algorithm{https://wcipeg.com/wiki/Convex_hull_trick}
 {Convex Hull Trick}{
     Given a lot of lines on the plane, and a lot of queries each asking for
@@ -141,10 +156,26 @@ Johnson} \end{myitemize} \faka
     adding them to a stack, checking if they are relevant to the `minimal'
     convex hull of those lines.
 }
+\begin{minipage}{.55\linewidth}
+    Notice that the line y=4 will never be the
+    lowest one, regardless of the x-value. Of the remaining three lines, each
+    one is the minimum in a single contiguous interval (possibly having plus
+    or minus infinity as one bound), which are colored green in the figure.
+    \\[1em]
 
-%\fig{.5}{Convex_hull_trick1}{Convex Hull Trick}
+    Thus, if we remove ``irrelevant'' lines such as $y=4$ in this example 
+    and sort the remaining lines by slope, we obtain a collection of $N$ intervals
+    (where N is the number of lines remaining), in each of which one of the lines
+    is the minimal one. If we can determine the endpoints of these intervals, it
+    becomes a simple matter to use binary search to answer each query.
+\end{minipage}\hfill%
+\begin{minipage}{.4\linewidth}
+    \fig{.9}{Convex_hull_trick1}{Convex Hull Trick}
+\end{minipage}
 
 
+
+\newpage
 \subsection{Parity of Permutation}
 
 \begin{myitemize}
@@ -261,7 +292,7 @@ Johnson} \end{myitemize} \faka
     the signs of permutations are multiplicative.
 }
 
-
+\newpage
 \subsection{Fast Fourier Transform}
 
 Let $ A(x) = a_0 + a_1x + \dots a_{n-1}x^{n-1} $ be a polinomial and let $
@@ -357,34 +388,65 @@ Thus, if a direct DFT computes the values of the polynomial at the points at the
 \prob{https://artofproblemsolving.com/community/c6h1623516p10168885}
 {Iran TST 2018 P1}{E}{
     Let $A_1, A_2, ... , A_k$ be the subsets of $\left\{1,2,3,...,n\right\}$
-    such that for all $1\leq i,j\leq k$, $A_i\cap A_j \neq \varnothing$. Prove
-    that there are $n$ distinct positive integers $x_1,x_2,...,x_n$ such that
-    for each $1\leq j\leq k$: 
+    such that for all 
+    \[1\leq i,j\leq k, \quad A_i\cap A_j \neq \varnothing\]
+    Prove that there are $n$ distinct positive integers $x_1,x_2,...,x_n$ such
+    that for each $1\leq j\leq k$: 
     \[\lcm_{i \in A_j}\left\{x_i\right\}>\lcm_{i \notin A_j}\left\{x_i\right\}\]
+
+    \index[strat]{Induction!Iran TST 2018 P1}
+    \index[strat]{Construction!Primes!Iran TST 2018 P1}
 }
 
-\solu{
-    Apply induction on either $ k $ or $ n $.
+\begin{solution}[elegance, a1267ab]
+    Pick $k$ distinct primes $p_1, \dotsc, p_k$. Let $x_i$ be the product of all $p_j$ where $i\in A_j$. By assumption, for any $j, m$, some element of $A_j$ is also in $A_m$, so
+\[\mathrm{lcm}_{i\in A_j}\{x_i\}=p_1\dotsm p_k\]because every prime is represented at least once. On the other hand, $A_j^{c}$ has no element in common with $A_j$, so
+\[\mathrm{lcm}_{i\not\in A_j}\{x_i\}\leq \frac{p_1\dotsm p_k}{p_j}.\]Hence this works.
+\end{solution}
+
+\begin{Remark}
+    This solution probably came from the wish to keep all the $\lcm$'s of the
+    left side equal, and making the right side, in some way, obviously
+    smaller. Also we know that when dealing with $\lcm$ or $\gcd$, it is wise
+    to think about primes.
+\end{Remark}
+
+\solu{[induction]
+    Apply induction on either $k$ or $n$. We can either build another subset
+    of $[n]$ with the help of some primes, or we can extend one more element,
+    and build a new $x_n$, which actually gives similar results to the
+    previous solution.
 }
 
 
 \prob{https://artofproblemsolving.com/community/c6h1480687p8639246}
 {ISL 2016 C1}{TE}{
-    The leader of an IMO team chooses positive integers $ n $ and $ k $
-    with $ n > k $ , and announces them to the deputy leader and a contestant. The
-    leader then secretly tells the deputy leader an $ n $ -digit binary string,
-    and the deputy leader writes down all $ n $ -digit binary strings which differ
-    from the leader’s in exactly $ k $ positions. (For example, if $ n = 3 $ and $
-    k = 1 $ , and if the leader chooses $ 101 $ , the deputy leader would write
-    down $ 001, 111 $ and $ 100 $.) The contestant is allowed to look at the
-    strings written by the deputy leader and guess the leader’s string. What is
-    the minimum number of guesses (in terms of $ n $ and $ k $ ) needed to
-    guarantee the correct answer?
+    The leader of an IMO team chooses positive integers $n$ and $k$
+    with $n > k$, and announces them to the deputy leader and a contestant. The
+    leader then secretly tells the deputy leader an $n$-digit binary string,
+    and the deputy leader writes down all $n$-digit binary strings which differ
+    from the leader’s in exactly $k$ positions. 
+
+    For example, if $n = 3$ and $k = 1$, and if the leader chooses $101$, the
+    deputy leader would write down $001, 111$ and $100$.
+
+    The contestant is allowed to look at the strings written by the deputy
+    leader and guess the leader’s string. What is the minimum number of
+    guesses (in terms of $n$ and $k$) needed to guarantee the correct answer?
+
+    \index[strat]{Construction!Greedy!ISL 2016 C1}
+    \index[strat]{Forget and focus!ISL 2016 C1}
 }\label{problem:constructive_algo_10}
 
-\solu{
-    Small cases check.
+\solu{[dgrozev,
+    \href{https://dgrozev.wordpress.com/2020/09/01/binary-strings-with-the-same-spheres-imo-2016-shortlist-c1/}{blogpost}]
+    Think about the problems in terms of ``Hamming'' distance. Then we need to
+    find the center of a sphere of radius $k$. And what's the nicest thing
+    with center's and points on the sphere? ``Diameters''. So we try to find
+    the points on this sphere with the greatest distance, and we hope to find
+    something about the center from the information.\\
 }
+
 
 
 \prob{https://artofproblemsolving.com/community/c6h44479p281572}
@@ -662,11 +724,14 @@ on all cells in the row and column of this cell.}
 \text{subset of moves} $ being bijective.}
 
 
-\prob{}{OIM 1994, PSMiC}{E}{In every square of an $ n\times n $ board there is
-    a lamp. Initially all the lamps are turned off. Touching a lamp changes the
-    state of all the lamps in its row and its column (including the lamp that was
-    touched). Prove that we can always turn on all the lamps and find the minimum
-number of lamps we have to touch to do this.}	
+\prob{}
+{OIM 1994}{E}{
+    In every square of an $ n\times n $ board there is a lamp. Initially all
+    the lamps are turned off. Touching a lamp changes the state of all the
+    lamps in its row and its column (including the lamp that was touched).
+    Prove that we can always turn on all the lamps and find the minimum number
+    of lamps we have to touch to do this.
+}	
 
 
 \prob{https://atcoder.jp/contests/agc043/tasks/agc043_b}{AtCoder GC043
@@ -706,38 +771,43 @@ mammoth.}\label{problem:greedy_algorithm_3}
 
 
 
-\prob{http://codeforces.com/contest/744/problem/B}{CodeForces 744B}{E}{Given a
-    hidden matrix of $ n\times n,\ n\leq1000 $ where for every $ i $ , $ M_{(i, i)
-    = 0} $ , Luffy's task is to find the minimum value in the $ n $ rows, formarly
-    spoken, he has to find values $ \min_{j=1\dots n,\ j\not=i} M_{(i, j)} $. To
-    do this he can ask the computer questions of following types: In one question,
-    Luffy picks up a set, $ {a_1, a_2\dots a_k} $ with $ a_i, k \leq n $. And
-    gives the computer this set. The computer will respond with $ n $ integers.
-    The $ i $ -th integer will contain the minimum value of $ \min_{j=1\dots k}
-    M_{(i, a_j)}$ . And on top of this, he can only ask $ 20 $ questions. Luffy
-    being the stupid he is, doesn't even have any clue how to do this, you have to
-    help him solving this
-problem.}\label{problem:divide_and_conquer_2}\label{problem:binary_query_1}
+\prob{http://codeforces.com/contest/744/problem/B}
+{Codeforces 744B}{E}{
+    Given a hidden matrix of $ n\times n,\ n\leq1000 $ where for every $ i $ ,
+    $ M_{(i, i) = 0} $ , Luffy's task is to find the minimum value in the $ n
+    $ rows, formarly spoken, he has to find values $ \min_{j=1\dots n,\
+    j\not=i} M_{(i, j)} $. To do this he can ask the computer questions of
+    following types: In one question, Luffy picks up a set, $ {a_1, a_2\dots
+    a_k} $ with $ a_i, k \leq n $. And gives the computer this set. The
+    computer will respond with $ n $ integers.  The $ i $ -th integer will
+    contain the minimum value of $ \min_{j=1\dots k} M_{(i, a_j)}$ . And on
+    top of this, he can only ask $ 20 $ questions. Luffy being the stupid he
+    is, doesn't even have any clue how to do this, you have to help him
+    solving this problem.
 
-
-\solu{
-    If we draw the diagonal in the matrix, we see that we can fit boxes of $
-    2^i \times 2^i $ in there depending on the $ i $ 's value. Now after we have
-    decomposed the matrix into such boxes, we can choose several from them to ask
-    a question. The trick is that for every row, there must be questions asked
-    from each of the boxes this row covers and no question from here must contain
-    the $ (i, i) $ cell.
+    \index[strat]{Divide and Conquer!CF 744B}
+    \index[strat]{Binary Query!CF 744B}
 }
 
-%\fig{.3}{CF744B}{}
+\begin{minipage}{.5\linewidth}
+    \solu{
+        If we draw the diagonal in the matrix, we see that we can fit boxes of $
+        2^i \times 2^i $ in there depending on the $ i $ 's value. Now after we have
+        decomposed the matrix into such boxes, we can choose several from them to ask
+        a question. The trick is that for every row, there must be questions asked
+        from each of the boxes this row covers and no question from here must contain
+        the $ (i, i) $ cell.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.4\linewidth}
+    \figdf{.9}{CF744B}{haha}
+\end{minipage}
 
-
-\solu{
-    The \hrf{problem:binary_query_1}{magical solution} goes as following:
-    For $ i\leq 10 $ , for every $ k=1\dots n $ , include $ k $ in the question if
-    the $ i $ th bit of $ k $ 's binary form is $ 0 $. And then for the second
-    round include $ k $ in the question if the $ i $ th bit of $ k $ 's binary
-    form is $ 1 $.
+\solu{[magical solution]
+    For $i\leq 10$, for every $k=1\dots n$, include $k$ in the question if
+    the $i$th bit of $k$'s binary form is $0$. And then for the second
+    round include $k$ in the question if the $i$ th bit of $k$'s binary
+    form is $1$.
 }
 
 
@@ -787,323 +857,532 @@ grid?}\label{problem:constructive_algo_24}\label{problem:invariant_rules_of_thum
 }	
 
 
-\prob{https://artofproblemsolving.com/community/c6h5758p18993}{ISL 2003
-    C4}{E}{Let $x_1,\ldots, x_n$ and $y_1,\ldots, y_n$ be real numbers. Let $A =
-    (a_{ij})_{1\leq i,j\leq n}$ be the matrix with entries \[a_{ij} =
-        \begin{cases}1,&\text{if }x_i + y_j\geq 0;\\0,&\text{if }x_i + y_j <
-        0.\end{cases}\]Suppose that $B$ is an $n\times n$ matrix with entries $0$, $1$
-        such that the sum of the elements in each row and each column of $B$ is equal
-        to the corresponding sum for the matrix $A$. Prove that
-    $A=B$.}\label{problem:constructive_algo_25}
-
-    \solu{
-        If done after \hrf{problem:constructive_algo_24}{this} problem, this
-        problem seems straigthforward.
-    }
-
-
-
-    \prob{https://artofproblemsolving.com/community/c6h1557188p9502889}{India TST
-        2017 D1 P3}{E}{Let $n \ge 1$ be a positive integer. An $n \times n$ matrix
-        is called \textit{good} if each entry is a non-negative integer, the sum
-        of entries in each row and each column is equal. A \textit{permutation}
-        matrix is an $n \times n$ matrix consisting of $n$ ones and $n(n-1)$
-        zeroes such that each row and each column has exactly one non-zero
-        entry.\\
-
-        Prove that any \textit{good} matrix is a sum of finitely many
-    \textit{permutation} matrices.}
-
-    \solu{
-        Same algo as \hrf{problem:constructive_algo_24}{above}. Either
-        distributing uniformly or gathering all in a diagonal
-    }
-
-
-
-    \prob{https://artofproblemsolving.com/community/c6h1388469p7730613}{Tournament
-        of Towns 2015F S7}{MH}{$N$ children no two of the same height stand in a line.
-        The following two-step procedure is applied: first, the line is split into the
-        least possible number of groups so that in each group all children are
-        arranged from the left to the right in ascending order of their heights (a
-        group may consist of a single child). Second, the order of children in each
-        group is reversed, so now in each group the children stand in descending order
-        of their heights. Prove that in result of applying this procedure $N - 1$
-        times the children in the line would stand from the left to the right in
-    descending order of their heights.}
-
-    \solu{
-        It's obvious that we need to find some invariant or mono-variant. Now,
-        an idea, we need to show that for any $ i $, for it to be on it's rightful
-        place, it doesn't need more than $ N-1 $ moves. How do we show that? Another
-        idea, think about the bad bois on either of its sides. Now, observation,
-        `junctions' decrease with each move. Find the `junctions'.
-    }
-
-
-    \prob{https://main.edu.pl/en/archive/oi/2/sze}{Polish OI}{E}{Given $ n $ jobs,
-        indexed from $ 1, 2\dots n $. Given two sequences of reals, $ \{a_i\}^n_{i=1},
-        \{b_i\}^n_{i=1} $ where, $ 0 \leq a_i, b_i \leq 1 $. If job $ i $ starts at
-        time $ t $ , then the job takes $ h_i(t) = a_it+b_i $ time to finish. Order
-        the jobs in a way such that the total time taken by all of the jobs is the
-    minimum.}\label{problem:forget_and_focus_2}\label{problem:swapping_1}
-
-    \solu{
-        Example of a problem which is solved by investigating two adjacent
-        objects in the optimal arrangement.
-    }
-
-
-
-    \prob{http://codeforces.com/problemset/problem/960/C}{CodeForces
-        960/C}{E}{Pikachu had an array with him. He wrote down all the non-empty
-        subsequences of the array on paper. Note that an array of size $ n $ has $
-        2^n - 1 $ non-empty subsequences in it.\\
-
-        Pikachu being mischievous as he always is, removed all the subsequences in
-        which \[ \text{Maximum element of the subsequence} - \text{Minimum element
-        of subsequence} \geq d \]
-
-        Pikachu was finally left with $ X $ subsequences. \\
-
-        However, he lost the initial array he had, and now is in serious trouble.
-        He still remembers the numbers $ X $ and $ d $. He now wants you to
-        construct any such array which will satisfy the above conditions. All the
-        numbers in the final array should be positive integers less than $ 10^{18}
-        $.\\
-
-        Note the number of elements in the output array should not be more than
-        $10^4$. If no answer is possible, print  $ -1
-    $.}\label{problem:constructive_algo_3}
-
-
-    \prob{https://artofproblemsolving.com/community/c6h35318p220230}{ARO 2005
-        P10.3, P11.2}{M}{Given $ 2005 $ distinct numbers $ a_1,\,a_2,\dots,a_{2005} $.
-        By one question, we may take three different indices $ 1\le i<j<k\le 2005 $
-        and find out the set of numbers  $ \{a_i,\,a_j,\,a_k\} $ (unordered, of
-        course). Find the minimal number of questions, which are necessary to find out
-    all numbers $ a_i $.}\label{problem:constructive_algo_4}
-
-    \solu{
-        The key idea is to ask questions such that it is connected to multiple
-        other questions, and each question uniquely finds out multiple elements
-        together. One by itself immediately after the question has been asked, and one
-        after the next question which is related to this one has been asked. As we
-        find out three elements' values after one question, first, second, third, so,
-        let us find first from the previous question, second from the current
-        question, third from the next question.
-    }
-
-
-
-    \prob{https://wcipeg.com/problem/ioi0713}{IOI 2007 P3}{M}{You are given two
-        sets of integers $ A=\{a_1, a_2 \dots a_n\} $ and $ B=\{b_1, b_2 \dots b_n\} $
-        such that $ a_i \geq b_i $. At move $ i $ you have to pick $ b_i $ distinct
-        integers from the set $ A_i = \{1, 2, \dots a_i\} $. In total, $ (b_1 + b_2
-        +\dots + b_n) $ integers are selected, but not all of these are distinct.
-        Suppose $ k $ distinct integers have been selected, with multiplicities $ c_1,
-        c_2, c_3 \dots c_k $. Your score is defined as \[\sum^k_{i=1}c_i(c_i-1)\] Give
-        an efficient algorithm to select numbers in order to ``minimize'' your
-    score.}\label{problem:constructive_algo_5}\label{problem:swapping_2}
-
-    \solu{
-        Some investigation shows that if $ c_i > c_j + 1 $ and $ i > j $ , then
-        we can always minimize the score. and if $ i < j $ , then we can minimize the
-        score only when $ i, j \in A_k $ but $ i $ has been taken at move $ k $ , but
-        $ j $ hasn't. So in the minimal state, either both $ i, j $ has been taken at
-        move $ k $ , or $ a_k < j $. So the idea is to take elements from $ A_i $ as
-        large as possible, and then taking smaller values after wards if the $ c_i $
-        value of a big element gets more than that of a small element. In this
-        algorithm, we see that we greedily manipulate $ c_i $. So it is a good idea to
-        greedily choose $ c_i $ 's from the very beginning.
-    }
-
-    \solu{
-        \textbf{Solution Algo:} at step $ i $ , take the set $ \{c_1, c_2 \dots
-        c_{a_i}\} $ and take the smallest $ b_i $ from this set, and add $ 1 $ to each
-        of them (in other words, take their index numbers as the numbers to take).
-    }
-
-
-
-    \prob{}{}{E}{Given $ n $ numbers $ \{a_1, a_2, ..., a_n\} $ in arbitrary
-        order, you have to select $ k $ of them such that no two consecutive numbers
-        are selected and their sum is
-    maximized.}\label{problem:constructive_algo_6}\label{problem:swapping_3}
-
-    \solu{
-        Notice that if $ a_i $ is the maximum value, and if $ a_i $ is not
-        counted in the optimal solution, then both of $ a_{i-1}, a_{i+1} $ must be in
-        the optimal solution, and $ a_{i-1} + a_{i+1} > a_i $. And if $ a_i $ is
-        counted in the optimal solution, then none of $ a_{i-1}, a_{i+1} $ can be
-        counted in the optimal solution. So either way, we can remove these three and
-        replace them by a single element to use induction. So remove $ a_{i-1},
-        a_{i+1} $ and replace $ a_i $ by $ a_{i-1} + a_{i+1} - a_i $.
-    }
-
-
-    \prob{https://artofproblemsolving.com/community/c5h347285p1860777}{USAMO 2010
-        P2}{EM}{There are $n$ students standing in a circle, one behind the other. The
-        students have heights $h_1<h_2<\dots <h_n$. If a student with height $h_k$ is
-        standing directly behind a student with height $h_{k-2}$ or less, the two
-        students are permitted to switch places. Prove that it is not possible to make
-        more than $\binom{n}{3}$ such switches before reaching a position in which no
-    further switches are possible.}
-
-
-
-
-    \prob{https://artofproblemsolving.com/community/c6h1070674p4655727}{Serbia TST
-        2015 P3}{H}{We have $2015$ prisinoers. The king gives everyone a hat coloured
-        in one of $5$ colors. Everyone sees all hats expect his own. Now,the King
-        orders them in a line(a prisioner can see all guys behind and in front of
-        him). The king asks the prisinoers one by one does he know the color of his
-        hat.If he answers NO,then he is killed.If he answers YES,then answers which
-        color is his hat,if his answers is true,he goes to freedom,if not,he is
-        killed.All the prisinors can hear did he answer YES or NO,but if he answered
-        YES,they don't know what did he answered(he is killed in public).They can
-        think of a strategy before the King comes,but after that they can't
-        comunicate.What is the largest number of prisinors we can guarentee that can
-    survive?}
-
-
-
-
-    \prob{https://artofproblemsolving.com/community/c6h1113653p5087465}{Taiwan TST
-        2015 R3D1P1}{E}{A plane has several seats on it, each with its own price,
-        as shown below. $2n-2$ passengers wish to take this plane, but none of
-        them wants to sit with any other passenger in the same column or row. The
-        captain realize that, no matter how he arranges the passengers, the total
-        money he can collect is the same. Proof this fact, and compute how much
-    money the captain can collect.  \fig{.5}{TaiwanTST2015R3D1P1}{} }
-
-
-
-    \prob{https://artofproblemsolving.com/community/c6h1113195p5083566}{ISL 2014
-        N1}{E}{Let $n \ge 2$ be an integer, and let $A_n$ be the set \[A_n = \{2^n -
-        2^k\mid k \in \mathbb{Z},\, 0 \le k < n\}.\] Determine the largest positive
-        integer that cannot be written as the sum of one or more (not necessarily
-    distinct) elements of $A_n$ .}
-
-    \solu{
-        Inductive approach
-    }
-
-
-
-    \prob{https://codeforces.com/contest/330/problem/D}{Codeforces
-    330D}{E}{Biridian Forest}
-
-    \solu{
-        Generalize the condition for a meet-up.
-    }
-
-
-
-    \prob{https://codeforces.com/contest/1270/problem/F}{Codeforces
-        1270F}{E}{Let's call a binary string $ s $ awesome, if it has at least $ 1
-        $ symbol \texttt{1} and length of the string is divisible by the number of
-        \texttt{1} in it. In particular, \texttt{1}, \texttt{1010}, \texttt{111}
-        are awesome, but \texttt{0}, \texttt{110}, \texttt{01010} aren't.\\
-
-        You are given a binary string $ s $ of size $ \le 2\times10^5 $. Count the
-    number of its awesome substrings.}
-
-    \solu{
-        The constraint tells us the algorithm should be of complexity $
-        O(n\sqrt{n}) $. Playing with the funtion $ f(i) $ and the divisibility
-        condition gives us some ground to work with. Since we need $ \le
-        c\times\sqrt{n} $ queries around the full string, we remember the prime sieve
-        trick.
-    }
-
-
-
-    \prob{https://artofproblemsolving.com/community/c6h60773p366562}{IMO 1986
-        P3}{M}{To each vertex of a regular pentagon an integer is assigned, so that
-        the sum of all five numbers is positive. If three consecutive vertices are
-        assigned the numbers $x,y,z$ respectively, and $y<0$, then the following
-        operation is allowed: $x,y,z$ are replaced by $x+y,-y,z+y$ respectively. Such
-        an operation is performed repeatedly as long as at least one of the five
-        numbers is negative. Determine whether this procedure necessarily comes to an
-    end after a finite number of steps.}
-
-    \solu{
-        Notice how starting from one negative and moving to consective number on
-        one side moves the number by one vertex nicely.
-    }
-
-
-    \prob{https://codeforces.com/contest/1379/problem/E}{CodeForces 1379E}{E}{Let
-        $G$ be a tree with $n$ vertices that has a root, and every vertex has either 2
-        children or no child. A vertex is said to be ``good'' if the two subtrees of
-        it, say X, Y, satisfy either $V(X) \ge 2V(Y)$ or $V(Y)\ge 2V(X)$ (here $V(X)$
-        is the number of vertices of tree $X$). Find all $k$ such that there is a tree
-        with $n$ vertices with $k$ good vertices, and give a construction to build the
-    tree.}
-
-    \solu{Try recursion, the pattern is quite easy to find.
-        \index[strat]{
-            Induction!CF 1379E
-    }}
-
-    \newpage\subsection{Algorithm Analysis}
-
-    \prob{https://artofproblemsolving.com/community/c6h2112349_for_all_sufficiently_large_n}{GQMO
-        2020 P4}{MH}{Prove that, for all sufficiently large integers $n$, there
-        exists $n$ numbers $a_1, a_2, \dots, a_n$ satisfying the following three
-        conditions:
-
-        Each number $a_i$ is equal to either $-1, 0$ or $1$.  At least
-        $\dfrac{2n}{5}$ of the numbers $a_1, a_2, \dots, a_n$ are non-zero.  The
-        sum $\dfrac{a_1}{1} + \dfrac{a_2}{2} + \dots + \dfrac{a_n}{n}$ is $0$.
-
-        $\textit{Note: Results with 2/5 replaced by a constant } c \textit{ will be
-    awarded points depending on the value of } c$}
-
-
-    \newpage\subsection{Covering Area with Squares}
-
-    \begin{myitemize} 
-    \item \href{https://artofproblemsolving.com/community/
-        c301601h1551769_cover_story_squares}{A nice blog post by ankogonit} 
-    \end{myitemize}
-
-    \prob{https://artofproblemsolving.com/community/c301601h1551769_cover_story_squares}{Brazilian
-        MO 2002, ARO 1979}{E}{Given a finite collection of squares with total area at
-        least $4$, prove that you can cover a unit square completely with these
-    squares (with overlapping allowed, of course).}
-
-    \solu{
-        Maybe motivated by the number $ 4 $ and how nice it would be if all the
-        squares had $ 2 $'s power side lengths, the idea is to shrink every square to
-        a side with side of $ 2 $'s power.
-    }
-
-
-    \prob{}{ARO 1979's Sharper Version}{E}{Given a finite collection of squares
-        with total area at least $3$, prove that you can cover a unit square
-    completely with these squares (with overlapping allowed).}
-
-    \solu{
-        The idea is to greedily cover the unit square by covering the lowest row
-        uncovered. And then using boundings to prove that it is possible.
-    }
-
-
-    \prob{}{}{E}{Prove that a finite collection of squares of total area
-    $\frac{1}{2} $ can be placed inside a unit square without overlap.}
-
-    \solu{
-        The same idea as before.
-    }
-
-
-    \prob{}{Tournament of Towns Spring 2012 S7}{EM}{We attempt to cover the plane
-        with an infinite sequence of rectangles, overlapping allowed.
-        \begin{enumerate} \item Is the task always possible if the area of the
-            $n-$th rectangle is $n^2$ for each $n$?  \item Is the task always
-            possible if each rectangle is a square, and for any number $N$, there
+\prob{https://artofproblemsolving.com/community/c6h5758p18993}
+{ISL 2003 C4}{E}{
+    Let $x_1,\ldots, x_n$ and $y_1,\ldots, y_n$ be real numbers. Let $A =
+    (a_{ij})_{1\leq i,j\leq n}$ be the matrix with entries 
+    \[a_{ij} = \begin{cases}1,&\text{if }x_i + y_j\geq 0;\\0,&\text{if }x_i +
+    y_j < 0.\end{cases}\]
+    Suppose that $B$ is an $n\times n$ matrix with entries $0$, $1$
+    such that the sum of the elements in each row and each column of $B$ is equal
+    to the corresponding sum for the matrix $A$. Prove that
+    $A=B$.
+}\label{problem:constructive_algo_25}
+
+\solu{
+    If done after \hrf{problem:constructive_algo_24}{this} problem, this
+    problem seems straigthforward.
+}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1557188p9502889}{India TST
+    2017 D1 P3}{E}{Let $n \ge 1$ be a positive integer. An $n \times n$ matrix
+    is called \textit{good} if each entry is a non-negative integer, the sum
+    of entries in each row and each column is equal. A \textit{permutation}
+    matrix is an $n \times n$ matrix consisting of $n$ ones and $n(n-1)$
+    zeroes such that each row and each column has exactly one non-zero
+    entry.\\
+
+    Prove that any \textit{good} matrix is a sum of finitely many
+\textit{permutation} matrices.}
+
+\solu{
+    Same algo as \hrf{problem:constructive_algo_24}{above}. Either
+    distributing uniformly or gathering all in a diagonal
+}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1388469p7730613}{Tournament
+    of Towns 2015F S7}{MH}{$N$ children no two of the same height stand in a line.
+    The following two-step procedure is applied: first, the line is split into the
+    least possible number of groups so that in each group all children are
+    arranged from the left to the right in ascending order of their heights (a
+    group may consist of a single child). Second, the order of children in each
+    group is reversed, so now in each group the children stand in descending order
+    of their heights. Prove that in result of applying this procedure $N - 1$
+    times the children in the line would stand from the left to the right in
+descending order of their heights.}
+
+\solu{
+    It's obvious that we need to find some invariant or mono-variant. Now,
+    an idea, we need to show that for any $ i $, for it to be on it's rightful
+    place, it doesn't need more than $ N-1 $ moves. How do we show that? Another
+    idea, think about the bad bois on either of its sides. Now, observation,
+    `junctions' decrease with each move. Find the `junctions'.
+}
+
+
+\prob{https://main.edu.pl/en/archive/oi/2/sze}{Polish OI}{E}{Given $ n $ jobs,
+    indexed from $ 1, 2\dots n $. Given two sequences of reals, $ \{a_i\}^n_{i=1},
+    \{b_i\}^n_{i=1} $ where, $ 0 \leq a_i, b_i \leq 1 $. If job $ i $ starts at
+    time $ t $ , then the job takes $ h_i(t) = a_it+b_i $ time to finish. Order
+    the jobs in a way such that the total time taken by all of the jobs is the
+minimum.}\label{problem:forget_and_focus_2}\label{problem:swapping_1}
+
+\solu{
+    Example of a problem which is solved by investigating two adjacent
+    objects in the optimal arrangement.
+}
+
+
+
+\prob{http://codeforces.com/problemset/problem/960/C}
+{Codeforces 960C}{E}{
+    Pikachu had an array with him. He wrote down all the non-empty
+    subsequences of the array on paper. Note that an array of size $n$ has 
+    $2^n - 1$ non-empty subsequences in it.
+
+    Pikachu being mischievous as he always is, removed all the subsequences in
+    which \[ \text{Maximum element of the subsequence} - \text{Minimum element
+    of subsequence} \geq d \]
+    Pikachu was finally left with $X$ subsequences.
+
+    However, he lost the initial array he had, and now is in serious trouble.
+    He still remembers the numbers $X$ and $d$. He now wants you to
+    construct any such array which will satisfy the above conditions. All the
+    numbers in the final array should be positive integers less than $10^{18}$.
+
+    Note the number of elements in the output array should not be more than
+    $10^4$. If no answer is possible, print $-1$.
+}\label{problem:constructive_algo_3}
+
+
+\prob{https://artofproblemsolving.com/community/c6h35318p220230}
+{ARO 2005 P10.3, P11.2}{M}{
+    Given $2005$ distinct numbers $a_1,a_2,\dots,a_{2005}$. By one question,
+    we may take three different indices $1\le i<j<k\le 2005$ and find out the
+    set of numbers $\{a_i,\,a_j,\,a_k\}$ (unordered, of course). Find the
+    minimal number of questions, which are necessary to find out all numbers
+    $a_i$.
+
+    \index[strat]{Construction!Greedy!ARO 2005 P10.3}
+}\label{problem:constructive_algo_4}
+
+\solu{
+    We want to maximize the amount of information each query gives us. So we
+    need to tie our questions with our previous questions to find as many
+    integers as possible. This leads us to the greedy approach where we circle
+    around the positions.
+}
+
+
+
+\prob{https://wcipeg.com/problem/ioi0713}
+{IOI 2007 P3}{M}{
+    You are given two sets of integers $ A=\{a_1, a_2 \dots a_n\} $ and $
+    B=\{b_1, b_2 \dots b_n\} $ such that $ a_i \geq b_i $.  At move $ i $ you
+    have to pick $ b_i $ distinct integers from the set $ A_i = \{1, 2, \dots
+    a_i\} $. In total, $ (b_1 + b_2 +\dots + b_n) $ integers are selected, but
+    not all of these are distinct.
+
+    Suppose $ k $ distinct integers have been selected, with multiplicities $
+    c_1, c_2, c_3 \dots c_k $. Your score is defined as
+    \[\sum^k_{i=1}c_i(c_i-1)\] 
+    Give an efficient algorithm to select numbers in order to ``minimize''
+    your score.
+
+    \index[strat]{Forget and focus!Swapping!IOI 2007 P3}
+    \index[strat]{Extremal!Optimal case!IOI 2007 P3}
+    \index[strat]{Construction!Greedy!IOI 2007 P3}
+}\label{problem:constructive_algo_5}\label{problem:swapping_2}
+
+\solu{
+    Some investigation shows that if $ c_i > c_j + 1 $ and $ i > j $ , then
+    we can always minimize the score. and if $ i < j $ , then we can minimize the
+    score only when $ i, j \in A_k $ but $ i $ has been taken at move $ k $ , but
+    $ j $ hasn't. \\
+
+    So in the minimal state, either both $ i, j $ has been taken at
+    move $ k $ , or $ a_k < j $. So the idea is to take elements from $ A_i $ as
+    large as possible, and then taking smaller values after wards if the $ c_i $
+    value of a big element gets more than that of a small element. In this
+    algorithm, we see that we greedily manipulate $ c_i $. So it is a good idea to
+    greedily choose $ c_i $ 's from the very beginning.\\
+
+    At step $i$, take the set $ \{c_1, c_2 \dots c_{a_i}\} $ and take the
+    smallest $ b_i $ from this set, and add $ 1 $ to each of them (in other
+    words, take their index numbers as the numbers to take).
+}
+
+
+\prob{}
+{}{E}{
+    Given $ n $ numbers $ \{a_1, a_2, ..., a_n\} $ in arbitrary order, you
+    have to select $ k $ of them such that no two consecutive numbers are
+    selected and their sum is maximized.
+
+    \index[strat]{Forget and focus!Swapping!Classical CP Problem}
+    \index[strat]{Construction!Recursion!Classical CP Problem}
+    \index[strat]{Extremal!Optimal Case!Classical CP Problem}
+}\label{problem:constructive_algo_6}\label{problem:swapping_3}
+
+\begin{solution}
+    Notice that if $ a_i $ is the maximum value, and if $ a_i $ is not
+    counted in the optimal solution, then both of $ a_{i-1}, a_{i+1} $ must be in
+    the optimal solution, and $ a_{i-1} + a_{i+1} > a_i $. And if $ a_i $ is
+    counted in the optimal solution, then none of $ a_{i-1}, a_{i+1} $ can be
+    counted in the optimal solution. So either way, we can remove these three and
+    replace them by a single element to use induction. So remove $ a_{i-1},
+    a_{i+1} $ and replace $ a_i $ by $ a_{i-1} + a_{i+1} - a_i $.
+\end{solution}
+
+
+\prob{https://artofproblemsolving.com/community/c5h347285p1860777}
+{USAMO 2010 P2}{EM}{
+    There are $n$ students standing in a circle, one behind the other. The
+    students have heights $h_1<h_2<\dots <h_n$. If a student with height $h_k$ is
+    standing directly behind a student with height $h_{k-2}$ or less, the two
+    students are permitted to switch places. Prove that it is not possible to make
+    more than $\binom{n}{3}$ such switches before reaching a position in which no
+    further switches are possible.
+
+    \index[strat]{Name Things!USAMO 2010 P2} 
+    \index[strat]{Construction!Recursion!USAMO 2010 P2}
+}
+
+\begin{solution}
+    Instead of just thinking about the switches randomly, we try to count the
+    number $a_k$ of times when the student $k$ switched his position. Trying
+    out some smaller cases with this, we discover the upper bound of each $a_k$.
+\end{solution}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1070674p4655727}
+{Serbia TST 2015 P3}{H}{
+    We have $2015$ prisinoers. The king gives everyone a hat colored
+    in one of $5$ colors. Everyone sees others hats expect his own.
+
+    Now, the King orders them in a line (a prisioner can see all guys behind
+    and in front of him). The King asks the prisinoers one by one if he knows
+    the color of his hat.
+
+    If he answers NO, then he is killed. If he answers YES, then he is asked
+    the color of his hat. If his answer is true, he is freed, if not, he is
+    killed. All the prisinors can hear his YES-NO answer, but if he answered
+    YES, they don't know what he answered (he is killed in public). 
+
+    They can think of a strategy before the King comes, but after that they
+    can't communicate. What is the largest number of prisoners they can guarentee
+    to survive?
+
+    \index[strat]{Construction!Bruteforce!Serbia TST 2015 P3}
+}
+
+\begin{solution}[MellowMelon]
+    Since everyone can see other's caps and hear other's answers, so we can
+    try global approach. Usually in these ``encryption'' problems, we want to
+    use some bits to express an integer that has all the information needed.\\
+
+    In this case, if everyone knows the sum of others cap numbers, then they
+    can easily find their's. They don't even need to know the sum, they can do
+    it with the sum modulo $5$. This idea gives us the answer $2012$, because
+    we need at least $3$ bits to express all $5$ cases.\\
+
+    But wait, what about the YES answer and then getting killed or being
+    freed? We didn't use that at all! It turns out we can use those extra
+    informations to save one more person!\\
+
+    Let $A$ be \#2's hat mod 5 and let $B$ be the sum of \#3 through \#2015 mod
+    5. The goal is for everyone to know $B$ after \#1 and \#2 take their
+    turns.\\
+
+    If $A+B \equiv 0,1 \pmod{4}$ or $(A,B) = (2,2)$ or $(A,B) = (0,4)$, then
+    \#1 says no. Otherwise, \#1 says yes and guesses whatever. Let $X = 0$ if \#1
+    said no and $X = 1$ if \#1 said yes.\\
+
+    If \#2 sees $B = 0$, (s)he says no.\\
+    If \#2 sees $B = 1$, (s)he says yes and guesses hat color $3X$ mod 5.\\
+    If \#2 sees $B = 2$, (s)he says no.\\
+    If \#2 sees $B = 3$, (s)he says yes and guesses hat color $3 + 3X$ mod
+    5.\\
+    If \#2 sees $B = 4$, (s)he says yes and guesses hat color $2 + 2X$ mod
+    5.\\
+
+    If you draw out the five by five grid with all values of $A,B$ and all
+    results of the above, you'll see that the results of \#1's and \#2's
+    guesses uniquely identify $B$ in all cases.
+\end{solution}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1113195p5083566}
+{ISL 2014 N1}{E}{
+    Let $n \ge 2$ be an integer, and let $A_n$ be the set \[A_n = \{2^n -
+    2^k\mid k \in \mathbb{Z},\, 0 \le k < n\}.\] Determine the largest positive
+    integer that cannot be written as the sum of one or more (not necessarily
+    distinct) elements of $A_n$ .
+
+    \index[strat]{Construction!Recursion!ISL 2014 N1}
+}
+
+\begin{solution}
+    We know similar problem from chicken mcnugget theorem, which motivates us
+    to try out some smaller cases. And those cases further motivates us to
+    formulate a conjecture. After the answer has been found, it is not hard to
+    prove that, again by recursively trying to build the sum.
+\end{solution}
+
+\begin{solution}[getrektm9, motivation for the answer]
+    My idea for guessing the answer was observing modulo $2^{n-1}$. I wasn't
+    trying to find the smallest numeber that we can represent as sum of
+    elements from the set with the condition that it is congruent to modulo 1
+    while dividing with $2^{n-1}$. It turns out that the smallest number that
+    we can't represent is exatcly $(n-2)\cdot 2^{n} +1$.\\
+
+    The reason for observing modulo $2^{n-1}$ is that the smallest
+    number in the set is $2^{n-1}$ and later showed that every other residue
+    bigger than 1 can be obtained with the condition that its smallest sum is
+    less than when residue is 1.
+\end{solution}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1113653p5087465}
+{Taiwan TST 2015 R3D1P1}{E}{
+    A plane has several seats on it, each with its own price,
+    as shown below. $2n-2$ passengers wish to take this plane, but none of
+    them wants to sit with any other passenger in the same column or row. The
+    captain realize that, no matter how he arranges the passengers, the total
+    money he can collect is the same. Proof this fact, and compute how much
+    money the captain can collect.  
+
+    \index[strat]{Induction!Taiwan TST 2015 R3D1P1}
+    \index[strat]{Invariant!Taiwan TST 2015 R3D1P1}
+}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        & & & & & n & n & & & & & \\\hline
+        & & & & n & n-1 & n-1 & n & & & & \\\hline
+        & & & n& n-1 & n-2 & n-2 & n-1 & n & & & \\\hline
+        & & $\iddots$ & $\iddots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\ddots$
+        & $\ddots$ & & \\\hline
+        & n& $\dots$ & & $\dots$ & 3 & 3 & $\dots$ & & $\dots$ & n & \\\hline
+        n& n-1& $\dots$ & & 3 & 2 & 2 & 3 & & $\dots$ & n-1 & n\\\hline
+        n-1& $\dots$ & $\dots$ & & 2 & 1 & 1 & 2 & & $\dots$ & $\dots$ & n-1\\\hline
+        $\dots$& $\dots$ & & 2 & 1 &  &  & 1 & 2 & & $\dots$ & $\dots$\\\hline
+        $\vdots$& $\vdots$ &  &  &  &  &  & &  & & $\vdots$ & $\vdots$\\\hline
+        3& 2 & 1 & & &  &  & & & 1 & 2 & 3\\\hline
+        2& 1 &  & &  &  &  &  &  & & 1 & 2\\\hline
+        1 & &  & &  &  &  &  &  & & &  1 \\\hline
+    \end{tabular} 
+    \caption{\autoref{problem:Taiwan TST 2015 R3D1P1}, there are $2n-2$
+    columns and $2n-2$ rows.}
+\end{table}
+
+
+\begin{solution}[induction]
+    This table looks really appropriate for a nice induction approach. We want
+    to prove that the total is $n^2-1$, which tells us how much change we will
+    get by going from $n$ to $n-1$. And the seats that will guarantee that
+    this change will occure are the one in the first row, and the two seats in
+    the last and first columns. But we need to do some work to get them nicely
+    in position. \\
+
+    We use the usual grid movement trick: $(a,b), (c,d) \leftrightarrow (a,d),
+    (c,b)$.
+\end{solution}
+
+\begin{solution}[MellowMelon]
+    The price of the seats in this arrangement are almost like the pricing of
+    the lattice points by $x+y$. And if we give the rows and columns their own
+    prices and change the pricing system like so, we get an easy invariant.
+\end{solution}
+
+
+
+\prob{https://codeforces.com/contest/330/problem/D}{Codeforces
+330D}{E}{Biridian Forest}
+
+\solu{
+    Generalize the condition for a meet-up.
+}
+
+
+
+\prob{https://codeforces.com/contest/1270/problem/F}
+{Codeforces 1270F}{E}{
+    Let's call a binary string $s$ awesome, if it has at least $1$ symbol
+    \texttt{1} and length of the string is divisible by the number of
+    \texttt{1} in it. In particular, \texttt{1}, \texttt{1010}, \texttt{111}
+    are awesome, but \texttt{0}, \texttt{110}, \texttt{01010} aren't.
+
+    You are given a binary string $ s $ of size $ \le 2\times 10^5 $. Count the
+    number of its awesome substrings.  
+
+    \index[strat]{Construction!Codeforces 1270F}
+}
+
+\solu{
+    The constraint tells us the algorithm should be of complexity $
+    O(n\sqrt{n}) $. Playing with the funtion $f(i)$ and the divisibility
+    condition gives us some ground to work with.\\
+
+    Since we need $ \le c\times\sqrt{n} $ queries around the full string, we
+    know we need to use something similar to the prime sieve trick.
+}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h60773p366562}
+{IMO 1986 P3}{M}{
+    To each vertex of a regular pentagon an integer is assigned, so that
+    the sum of all five numbers is positive. If three consecutive vertices are
+    assigned the numbers $x,y,z$ respectively, and $y<0$, then the following
+    operation is allowed: $x,y,z$ are replaced by $x+y,-y,z+y$ respectively. 
+
+    Such an operation is performed repeatedly as long as at least one of the
+    five numbers is negative. Determine whether this procedure necessarily
+    comes to an end after a finite number of steps.
+
+    \index[strat]{Invariant!Sum of squares!IMO 1986 P3}
+    \index[strat]{Construction!Compound moves!IMO 1986 P3}
+}
+
+\begin{solution}[invariant]
+    The move changes a lot except the sum. And if we wanted it to terminate at
+    some point, we know there might be an invariant that decreases
+    monotonically. What is the closest form of invariance to sum? Sum of
+    squares. But sum of squares doesn't tell us much either. But we know
+    sometimes sum of squares of differences bear good results. So we try
+    some of the different functions we get from there.\\
+
+    And voila, if we let 
+    \[f(a_1, a_2, a_3, a_4, a_5) = \sum^{5}_{i=1} \left(a_i - a_{i+2}\right)^2\]
+    we get a value that decreases!
+\end{solution}
+
+\solu{
+    Notice how starting from one negative number and applying the move to the
+    negative number created to its one side and keeping on doing this, we can
+    see the numbers move to the other direction. We use this idea to come up
+    with a compound move to increase the least number. 
+}
+
+
+\prob{https://codeforces.com/contest/1379/problem/E}{Codeforces 1379E}{E}{Let
+    $G$ be a tree with $n$ vertices that has a root, and every vertex has either 2
+    children or no child. A vertex is said to be ``good'' if the two subtrees of
+    it, say X, Y, satisfy either $V(X) \ge 2V(Y)$ or $V(Y)\ge 2V(X)$ (here $V(X)$
+    is the number of vertices of tree $X$). Find all $k$ such that there is a tree
+    with $n$ vertices with $k$ good vertices, and give a construction to build the
+    tree.
+
+    \index[strat]{Construction!Recursion!CF 1379E}
+}
+
+\solu{
+    The first thing we notice is the for even $n$, no such tree exists. Now,
+    binary trees are really nice, because we can build them recursively:
+    Delete the root, and build the two subtrees by recursion. Trying out for some
+    initial values, we get the solution pattern that if $S(n)$ is the set of
+    possible values for $k$, then
+    \[S(n) = \begin{cases}
+        \left\{1, 2, \dots  \dfrac{n-3}{2}\right\} & \text{if } n \ne 2^t-1 \\[1em]        
+        \left\{0, 2, \dots \dfrac{n-3}{2}\right\} & \text{if } n = 2^t-1
+    \end{cases}\] 
+    Which isn't hard to proof by induction.
+}
+
+
+\prob{https://artofproblemsolving.com/community/c6h356196p1936917}
+{ISL 2010 C4}{M}{
+    Each of the six boxes $B_1$, $B_2$, $B_3$, $B_4$, $B_5$, $B_6$ initially
+    contains one coin. The following operations are allowed
+    \begin{enumerate}
+        \item Choose a non-empty box $B_j$, $1\leq j \leq 5$, remove one coin
+            from $B_j$ and add two coins to $B_{j+1}$;
+        \item Choose a non-empty box $B_k$, $1\leq k \leq 4$, remove one coin
+            from $B_k$ and swap the contents (maybe empty) of the boxes
+            $B_{k+1}$ and $B_{k+2}$.
+    \end{enumerate}
+    Determine if there exists a finite sequence of operations of the allowed
+    types, such that the five boxes $B_1$, $B_2$, $B_3$, $B_4$, $B_5$ become
+    empty, while box $B_6$ contains exactly $2010^{2010^{2010}}$ coins.
+    
+    \index[strat]{Construction!Compound Moves!ISL 2010 C4}
+    \index[strat]{Get your hands dirty!ISL 2010 C4}
+}
+
+\begin{solution}
+    The given number is absurdly big, with no apparent reason right now, so we
+    decide to just look for a way to maximize a box as much as we can.\\
+
+    After playing around with this idea, we soon notice that we can make
+    powers of $2$, with some compound moves. Which in turn provides the
+    construction for nested powers of twos. So it might not be impossible to
+    get a large enough nested power of two that is greater than our large
+    number.\\
+
+    But what about ``exactly'' condition? The only move that allows us to
+    reduce is the second move, which requires two boxes at the end, So we need
+    to make the big number appear somewhere in $B_1, B_2, B_3$ or $B_4$.
+\end{solution}
+
+
+
+\newpage
+\subsection{Algorithm Analysis}
+
+\prob{https://artofproblemsolving.com/community/c6h2112349}
+{GQMO 2020 P4}{MH}{
+    Prove that, for all sufficiently large integers $n$, there
+    exists $n$ numbers $a_1, a_2, \dots, a_n$ satisfying the following three
+    conditions:
+
+    Each number $a_i$ is equal to either $-1, 0$ or $1$.  At least
+    $\dfrac{2n}{5}$ of the numbers $a_1, a_2, \dots, a_n$ are non-zero.  The
+    sum $\dfrac{a_1}{1} + \dfrac{a_2}{2} + \dots + \dfrac{a_n}{n}$ is $0$.
+
+    \textit{Note: Results with 2/5 replaced by a constant } c \textit{ will be
+    awarded points depending on the value of } c
+}
+
+
+\newpage\subsection{Covering Area with Squares}
+
+\begin{myitemize} 
+\item \href{https://artofproblemsolving.com/community/
+    c301601h1551769_cover_story_squares}{A nice blog post by ankogonit} 
+\end{myitemize}
+
+\prob{https://artofproblemsolving.com/community/c301601h1551769_cover_story_squares}{Brazilian
+    MO 2002, ARO 1979}{E}{Given a finite collection of squares with total area at
+    least $4$, prove that you can cover a unit square completely with these
+squares (with overlapping allowed, of course).}
+
+\solu{
+    Maybe motivated by the number $ 4 $ and how nice it would be if all the
+    squares had $ 2 $'s power side lengths, the idea is to shrink every square to
+    a side with side of $ 2 $'s power.
+}
+
+
+\prob{}{ARO 1979's Sharper Version}{E}{Given a finite collection of squares
+    with total area at least $3$, prove that you can cover a unit square
+completely with these squares (with overlapping allowed).}
+
+\solu{
+    The idea is to greedily cover the unit square by covering the lowest row
+    uncovered. And then using boundings to prove that it is possible.
+}
+
+
+\prob{}{}{E}{Prove that a finite collection of squares of total area
+$\frac{1}{2} $ can be placed inside a unit square without overlap.}
+
+\solu{
+    The same idea as before.
+}
+
+
+\prob{}{Tournament of Towns Spring 2012 S7}{EM}{We attempt to cover the plane
+    with an infinite sequence of rectangles, overlapping allowed.
+    \begin{enumerate} \item Is the task always possible if the area of the
+        $n-$th rectangle is $n^2$ for each $n$?  \item Is the task always
+        possible if each rectangle is a square, and for any number $N$, there
 exist squares with total area greater than $N$?  \end{enumerate}}
 
 \solu{

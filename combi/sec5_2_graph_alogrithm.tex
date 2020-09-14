@@ -46,47 +46,89 @@
 {German TST 2004 E7P3}{M}{
     We consider graphs with vertices colored black or white. ``Switching" a
     vertex means: coloring it black if it was formerly white, and coloring it
-    white if it was formerly black.\\
+    white if it was formerly black.
 
     Consider a finite graph with all vertices colored white. Now, we can do the
     following operation: Switch a vertex and simultaneously switch all of its
-    neighbours (i. e. all vertices connected to this vertex by an edge). Can we,
+    neighbours (i.e. all vertices connected to this vertex by an edge). Can we,
     just by performing this operation several times, obtain a graph with all
     vertices colored black?
-}\label{problem:induction_type1_30}
 
+    \index[strat]{Induction!German TST 2004 P3}
+    \index[strat]{Constructive Algorithm!Compound moves!German TST 2004 P3}
+}\label{problem:induction_type1_30}
 
 \solu{A classical example of creating complex moves from counter cases.}
 
 
 \prob{https://artofproblemsolving.com/community/c6h589936p3493453}
 {ARO 2014 P9.8}{H}{
-    In a country of $ n $ cities, an express train runs both ways between any
+    In a country of $n$ cities, an express train runs both ways between any
     two cities. For any train, ticket prices either direction are equal, but
     for any different routes these prices are different. Prove that the
-    traveler can select the starting city, leave it and go on, successively, $
-    n-1 $ trains, such that each fare is smaller than that of the previous
+    traveler can select the starting city, leave it and go on, successively,
+    $n-1$ trains, such that each fare is smaller than that of the previous
     fare. (A traveler can enter the same city several times.)
-}\label{tickets}
 
+    \index[strat]{Global!Pigeonhole!ARO 2014 P9.8}
+}
 
 \prob{https://artofproblemsolving.com/community/c6h364267}
-{Generalization}{H}{
+{Generalization of ARO 2014 P9.8}{H}{
     Let $ A $ be a set of $ n $ points in the space. From the family of all
     segments with endpoints in $ A $ , $ q $ segments have been selected and
     colored yellow. Suppose that all yellow segments are of different length.
     Prove that there exists a polygonal line composed of $ m $ yellow
-    segments, where $ m\geq\frac{2q}{n} $ , arranged in order of increasing
+    segments, where $ m\geq\frac{2q}{n}$, arranged in order of increasing
     length.
-}\label{problem:constructive_algo_9}\label{problem:swapping_4}
 
-\solu{
-    Make one person go to every node. Then let the two people on the two sides
-    of the most expensive edge swap their position. This ensures that every
-    edge was used exactly 2 times. Using PHP, we have the desired result.
-    Another solution is by 
-    \autoref{theorem:mirsky_theorem}.
+    \index[strat]{Global!Pigeonhole!ARO 2014 P9.8 Gene}
+    \index[strat]{Constructive Algorithm!Deletetion!ARO 2014 P9.8 Gene}
 }
+
+
+\begin{solution}
+    There are no local information given that we can use to consturct a way,
+    so our only bet is to try some global approach. We want at least one path
+    of length more than $n-1$, and there are a total of $\frac{n(n-1)}{2}$
+    edges. So either we want to partition the edges in $\frac{n}{2}$ paths, or
+    we count each edge twice and then partition then in $n$ paths, giving us
+    our desired result.\\
+
+    We figure out the second approach works. So we want to find $n$ paths that
+    begin at each of the $n$ vertices and cover all the edges twice. This idea
+    soon lead us to the magical solution:\\
+
+    \textit{\color{solC}Let one traveller go to each of the $n$ cities. Then we select the
+    costliest train and swap the two travellers on its two ends. We keep doing
+    this until all the trains have been used.\\}
+
+    This works because every traveller follows a path of gradually decreasing
+    train cost, and every edge is used exactly twice.
+\end{solution} 
+
+\begin{solution}[ninjaturtle]
+    Consider the direct graph where each edge has two directions ($2q$
+    edges). A directed edge $e$ is called \emph{terminal} if there isn't an edge $f$
+    with larger value such that the end vertex of $e$ is the same as the start
+    vertex of $f$.\\
+
+    At step $i$, we remove all terminal edges in the remaining
+    graph. If we can show that each step removes at most $n$ direct edges,
+    then $2q/n$ steps are required to remove all edges, implying there exists
+    a polygonal line of increasing length of length at least $2q/n$.\\
+
+    Let $I_i(a), O_i(a)$ be the in-degree and out-degree of $a$ before step
+    $i$. Assume we are at the time before step $k$. Put $m = O_k(a)$, and let
+    $e$ be the outgoing edge of $a$ with the largest value $v$. Then $v \geq
+    m$. After step $k$, only incoming edges of $a$ with value $ \geq m$ will
+    have possibly been removed. Thus $I_{k+1}(a) \geq m-1 = O_k(a)-1$. Sum it
+    over all $a$
+    \[\#\text{edges before step k+1} = \sum_a I_{k+1}(a) \geq \sum_a O_k(a) -n
+    = \#\text{edges before step k}\] 
+    and we have shown the number of edges
+    after each step decreases by at most $n$.
+\end{solution}
 
 
 
@@ -129,7 +171,7 @@
     \textbf{\Share\color{probC}Better Approximation:} We can actually achieve
     $\frac{1}{4}$ with careful construction.
 
-    \index[strat]{Construction!Turkey NMO 2002 P3}
+    \index[strat]{Constructive Algorithm!Inclusion!Turkey NMO 2002 P3}
     \index[strat]{Bounding!Cost function!Turkey NMO 2002 P3}
 }
 

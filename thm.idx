@@ -1,9 +1,5 @@
-\indexentry{Bipartite Graph|hyperpage}{1}
-\indexentry{Euler's Polyhedron Formula|hyperpage}{1}
-\indexentry{Criteria of partitioning a graph into disconnected sub-graphs|hyperpage}{1}
-\indexentry{Non-Neighbor Equivalence Class|hyperpage}{1}
-\indexentry{Average of Degrees|hyperpage}{6}
-\indexentry{unnamed|hyperpage}{6}
-\indexentry{Turan's theorem|hyperpage}{6}
-\indexentry{Prufer sequence|hyperpage}{11}
-\indexentry{Sprague-Grund Theorem|hyperpage}{19}
+\indexentry{MST Cut|hyperpage}{2}
+\indexentry{MST Cycle|hyperpage}{2}
+\indexentry{Swap Sort|hyperpage}{3}
+\indexentry{Parity of Transpostion Composition|hyperpage}{4}
+\indexentry{Definitions of parity are equivalent|hyperpage}{5}

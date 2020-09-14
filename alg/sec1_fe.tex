@@ -329,6 +329,96 @@ and $f(-1) \neq 0$.}
 \end{solution}
 
 
+\prob{https://artofproblemsolving.com/community/c6h211465p1165901}
+{ISL 2007 A4}{E}{
+    Find all functions $ f: \mathbb{R}^{ + }\to\mathbb{R}^{ + }$ satisfying 
+    \[f\left(x + f\left(y\right)\right) = f\left(x + y\right) + f\left(y\right)\] 
+    for all pairs of positive reals $ x$ and $ y$. Here, $ \mathbb{R}^{ + }$
+    denotes the set of all positive reals.
+}
+
+\begin{solution}[substitution]
+    Set $x = f(y)$, we have
+    \[\begin{aligned}
+        f\left(2f(y)\right) &= f(2y) + 2f(y)\\ 
+        \text{and, } f(x+kf(y)) &= f(x+ky) + kf(y)
+    \end{aligned}\]
+    Now setting $y = 2f(y)$, we get
+    \[\begin{aligned}
+        f\left(x+f(2f(y))\right) &= f\left(x+2f(y)\right) + f(2f(y))\\
+                                 &=f(x+2y) + 4f(y) + f(2y)\\[1em]
+        \text{Also, } f(x+f(2f(y))) &= f(x+f(2y)+2f(y))\\
+        &= f(x+4y) + 2f(y) + f(2y)\\[1em]
+        \implies f(x+4y) &= f(x+2y) + 2f(y) = f(x+2f(y))\\
+    \end{aligned}\] 
+    \begin{equation}
+        \boxed{\therefore f(x+4y) = f(x+2f(y))} \ \forall y\in \mathbb{R}^+
+    \end{equation}
+    If $f$ is injective, then we have $\boxed{f(x) = 2x}$. If not, then
+    suppose $f(a) = f(b)$. Substituting $y = a, b$ we get 
+    \[\begin{aligned}
+        f(x+a) = f(x+b) \ \forall x \in \mathbb{R}^+
+    \end{aligned}\]
+    Combining it with (1), we get that $f(x)$ is a constant function, and so
+    $\boxed{f=0}$.
+\end{solution}
+
+\begin{solution}[cauchy, Raja Oktovin]
+    For any positive real numbers $ z$, we have that 
+    \[f(x+f(y))+z=f(x+y)+f(y)+z\] 
+    \[f(f(x+f(y))+z)=f(f(x+y)+f(y)+z)\] 
+    \[f(x+f(y)+z)+f(x+f(y))=f(x+y+f(y)+z)+f(x+y)\] 
+    \[f(x+y+z)+f(y)+f(x+y)+f(y)=f(x+2y+z)+f(y)+f(x+y)\] 
+    \[f(x+y+z)+f(y)=f(x+2y+z)\] 
+
+    \[\boxed{f(a)+f(b)=f(a+b)}\] and by Cauchy in positive reals, then $
+    f(x)=\alpha x$ for all $ x \in (0, \infty)$. Now it's easy to see that $
+    \alpha=2$, then $ f(x)=2x$ for all positive real numbers $ x$.
+\end{solution}
+
+
+\prob{https://artofproblemsolving.com/community/c6h214702p1187155}
+{ISL 2007 A2}{E}{
+    Consider those functions $ f: \mathbb{N} \mapsto \mathbb{N}$ which satisfy the condition
+    \[f(m + n) \geq f(m)+f(f(n))-1\]
+    for all $ m,n \in \mathbb{N}.$ Find all possible values of $f(2007)$.
+}
+
+\begin{solution}
+    Substituting $n=1$, we have 
+    \[f(m+1) \ge f(m), \quad f(m+1) \ge f(f(m))\]
+    So $f$ is non decreasing. We prove that $f(n) \le n+1$. Suppose not, so
+    there exists a $n$ for which
+    \[\begin{aligned}
+        f(n) \ge n+2&\\
+        \implies f(2^kn) \ge 2^kn + 2^k +1& \qquad \forall k
+    \end{aligned}\] 
+    Since $f$ grows without any bounds, there is a $t$ such that $f(2^t+1)>1$.
+    Then we have,
+    \[\begin{aligned}
+        f(2^tn+2^t+1) &\ge f(2^t+1) + f(f(2^tn)) -1\\
+                      &\ge f(2^t+1)-1 +f(2^tn+2^t+1)\\
+                      &> f(2^tn+2^t+1)
+    \end{aligned}\]
+    A contradiction.\\
+
+    So we get a nice bounding for $f(2007)$, that is $\left\{1, 2, \dots
+    2008\right\}$. It's time to construct functions for that. For $1\le k \le
+    2007$, consider the functions
+    \[f(n) = \begin{cases}
+        1 & \text{if } n < k\\
+        n-k+1 & \text{if } n\ge k
+    \end{cases}\]
+    And for $2008$, consider the function
+    \[f(n) = \begin{cases}
+        n+1 & \text{if } 2007|n\\
+        n & \text{otherwise}
+    \end{cases}\]
+    The constructions comes from the idea that we want $f(f(n)) =f(n)$, and we
+    can use $1$'s to push our values to the right.
+\end{solution}
+
+
 \newpage\subsection{Weird Ones}
 
 

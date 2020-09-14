@@ -1,20 +1,10 @@
 \begin{theindex}
 
 \large\Titillium%
-\noindent\texttt{A}\par\nopagebreak
-
- \item \small Algorithm
-    \subitem Copycat
-      \subsubitem ARO 1999 P9.8 \dotfill \hyperpage{4}
-
-  \indexspace
-
-\large\Titillium%
 \noindent\texttt{B}\par\nopagebreak
 
- \item \small Bounding
-    \subitem Cost function
-      \subsubitem Turkey NMO 2002 P3 \dotfill \hyperpage{12}
+ \item \small Binary Query
+    \subitem CF 744B \dotfill \hyperpage{15}
 
   \indexspace
 
@@ -22,9 +12,32 @@
 \noindent\texttt{C}\par\nopagebreak
 
  \item \small Construction
-    \subitem Turkey NMO 2002 P3 \dotfill \hyperpage{12}
- \item \small CopyCat
-    \subitem ToT 2009 S6 \dotfill \hyperpage{5}
+    \subitem Bruteforce
+      \subsubitem Serbia TST 2015 P3 \dotfill \hyperpage{19}
+    \subitem Codeforces 1270F \dotfill \hyperpage{21}
+    \subitem Compound Moves
+      \subsubitem ISL 2010 C4 \dotfill \hyperpage{23}
+    \subitem Compound moves
+      \subsubitem IMO 1986 P3 \dotfill \hyperpage{22}
+    \subitem Greedy
+      \subsubitem ARO 2005 P10.3 \dotfill \hyperpage{18}
+      \subsubitem IOI 2007 P3 \dotfill \hyperpage{18}
+      \subsubitem ISL 2016 C1 \dotfill \hyperpage{9}
+    \subitem Primes
+      \subsubitem Iran TST 2018 P1 \dotfill \hyperpage{9}
+    \subitem Recursion
+      \subsubitem CF 1379E \dotfill \hyperpage{22}
+      \subsubitem Classical CP Problem \dotfill \hyperpage{18}
+      \subsubitem ISL 2014 N1 \dotfill \hyperpage{20}
+      \subsubitem USAMO 2010 P2 \dotfill \hyperpage{19}
+
+  \indexspace
+
+\large\Titillium%
+\noindent\texttt{D}\par\nopagebreak
+
+ \item \small Divide and Conquer
+    \subitem CF 744B \dotfill \hyperpage{15}
 
   \indexspace
 
@@ -32,25 +45,29 @@
 \noindent\texttt{E}\par\nopagebreak
 
  \item \small Extremal
-    \subitem Longest Path
-      \subsubitem AtCoder GC033 C \dotfill \hyperpage{4}
-      \subsubitem ChTST 2015 P3 \dotfill \hyperpage{1}
-    \subitem Object
-      \subsubitem ISL 2001 C3 \dotfill \hyperpage{5}
+    \subitem Optimal Case
+      \subsubitem Classical CP Problem \dotfill \hyperpage{18}
+    \subitem Optimal case
+      \subsubitem IOI 2007 P3 \dotfill \hyperpage{18}
+
+  \indexspace
+
+\large\Titillium%
+\noindent\texttt{F}\par\nopagebreak
+
+ \item \small Forget and focus
+    \subitem ISL 2016 C1 \dotfill \hyperpage{9}
+    \subitem Swapping
+      \subsubitem Classical CP Problem \dotfill \hyperpage{18}
+      \subsubitem IOI 2007 P3 \dotfill \hyperpage{18}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{G}\par\nopagebreak
 
- \item \small Graph
-    \subitem Bipartite \dotfill \hyperpage{1}
-      \subsubitem ARO 2005 P10.8 \dotfill \hyperpage{3}
-      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
-    \subitem Grid $ \to $ Graph
-      \subsubitem ARO 2005 P10.8 \dotfill \hyperpage{3}
-    \subitem Hall Marriage
-      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
+ \item \small Get your hands dirty
+    \subitem ISL 2010 C4 \dotfill \hyperpage{23}
 
   \indexspace
 
@@ -58,20 +75,19 @@
 \noindent\texttt{I}\par\nopagebreak
 
  \item \small Induction
-    \subitem ARO 2017 P9.1 \dotfill \hyperpage{5}
-    \subitem Special
-      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
+    \subitem Iran TST 2018 P1 \dotfill \hyperpage{9}
+    \subitem Taiwan TST 2015 R3D1P1 \dotfill \hyperpage{20}
  \item \small Invariant
-    \subitem Monovariant
-      \subsubitem AtCoder GC033 C \dotfill \hyperpage{4}
+    \subitem Sum of squares
+      \subsubitem IMO 1986 P3 \dotfill \hyperpage{22}
+    \subitem Taiwan TST 2015 R3D1P1 \dotfill \hyperpage{20}
 
   \indexspace
 
 \large\Titillium%
-\noindent\texttt{L}\par\nopagebreak
+\noindent\texttt{N}\par\nopagebreak
 
- \item \small Local
-    \subitem Add One by One
-      \subsubitem RMM 2020 P3 \dotfill \hyperpage{18}
+ \item \small Name Things
+    \subitem USAMO 2010 P2 \dotfill \hyperpage{19}
 
 \end{theindex}

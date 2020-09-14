@@ -1,290 +1,388 @@
 \graphicspath{{Pics/combi/geo/}}
 
-\newpage\section{Combinatorial Geometry}
+\newpage
+\section{Combinatorial Geometry}
+
+
+\begin{myitemize}
+\item \href{https://blogm4e.files.wordpress.com/2016/08/combinatorial-geometry-maria-monks-mop-2010.pdf}{Combinatorial Geometry - Maria Monk (MOP 2010)}
+\end{myitemize}
+
+
+\begin{take_note*}{}
+    \begin{itemize}[wide=0pt]
+        \item Consider the convex hull made up of the points.
+        \item Consider the extreme points: smallest or highest $ x $ or $ y $ coordinate.
+        \item Find the triangle (quadrilateral, pentagon, etc.)  with the vertices being the points from your set $ S $, so that the area of the triangle is minimal/maximal.
+    \end{itemize}
+\end{take_note*}
+
+\theo{https://en.wikipedia.org/wiki/Helly's_theorem}{Helly's Theorem}{Let $ X_1, ..., X_n $ be a finite collection of convex subsets of $ \R^d $, with $ n > d $. If the intersection of every $ d + 1 $ of these sets is nonempty, then the whole collection has a nonempty intersection; that is,
+\[\bigcap _{j=1}^{n}X_{j}\neq \varnothing\]}
+
+
+\vspace{1em}
+
+\begin{myitemize}
+    \item \href{https://math.berkeley.edu/~moorxu/misc/equiareal.pdf}{Sperner's
+        Lemma - Moor Xu}
+\end{myitemize}
+
+\theo{https://www.wikiwand.com/en/Sperner's_lemma}
+{Sperner's Lemma}{
+    Given a triangle $ABC$, and a triangulation $\mathcal{T}$ of the triangle,
+    the set $S$ of vertices of $\mathcal{T}$ is colored with three colors in
+    such a way that
+    \begin{enumerate}
+        \item $A, B$, and $C$ are colored $1, 2$, and $3$ respectively.
+        \item Each vertex on an edge of $ABC$ is to be colored only with one of the
+            two colors of the ends of its edge. For example, each vertex on $AC$
+            must have a color either $1$ or $3$.
+    \end{enumerate}
+    Then there exists a triangle from $\mathcal{T}$, whose vertices are colored with the
+    three different colors. More precisely, there must be an odd number of
+    such triangles. 
+}
+
+
+\begin{prooof}
+    Consider a graph $G$ built from the triangulation $\mathcal{T}$ as
+    follows:\\
+
+    {\color{solC}The vertices of $G$ are the members of $\mathcal{T}$ plus the
+    area outside the triangle.  Two vertices are connected with an edge if
+    their corresponding areas share a common border with an edge $1$--$2$.\\}
+
+    Note that on the interval $AB$ there is an odd number of borders colored
+    $1$--$2$. Therefore, the vertex of $G$ corresponding to the outer area has
+    an odd degree. \\
+
+    But since in a finite graph there is an even number of
+    vertices with odd degree, in the remaining graph, excluding the
+    outer area, there is {\color{solC}an odd number of vertices with odd
+    degree} corresponding to members of $\mathcal{T}$.\\
+
+    It can be easily seen that the only possible degree of a triangle from
+    $\mathcal{T}$ is $0, 1$, or $2$, and that the degree $1$ corresponds to a
+    triangle colored with the three colors $1, 2$, and $3$.\\
+
+    Thus we have obtained a slightly stronger conclusion, which says that in a
+    triangulation $\mathcal{T}$ there is an odd number (and at least one) of
+    full-colored triangles. 
+\end{prooof}
+
+
+\theo{https://www.wikiwand.com/en/Brouwer_fixed-point_theorem}
+{Brouwer fixed-point theorem}{
+    Let $B^n$ be the $n$th dimensional ball. Then any continuous map
+    $f:B^n \to B^n$ has a fixed point.
+}
+
+
+\theo{}
+{Equiareal Triangulation of a Square}{
+    If we triangulate a square with triangles of equal area, then there must
+    be an even number of triangles used.
+}
 
 
 
-	\begin{myitemize}
-		\item \href{https://blogm4e.files.wordpress.com/2016/08/combinatorial-geometry-maria-monks-mop-2010.pdf}{Combinatorial Geometry - Maria Monk (MOP 2010)}
-	\end{myitemize}
-	
-	
-	\begin{take_note*}{}
-		\begin{itemize}[wide=0pt]
-			\item Consider the convex hull made up of the points.
-			\item Consider the extreme points: smallest or highest $ x $ or $ y $ coordinate.
-			\item Find the triangle (quadrilateral, pentagon, etc.)  with the vertices being the points from your set $ S $, so that the area of the triangle is minimal/maximal.
-		\end{itemize}
-	\end{take_note*}
-	
-	\theo{https://en.wikipedia.org/wiki/Helly's_theorem}{Helly's Theorem}{Let $ X_1, ..., X_n $ be a finite collection of convex subsets of $ \R^d $, with $ n > d $. If the intersection of every $ d + 1 $ of these sets is nonempty, then the whole collection has a nonempty intersection; that is,
-	\[\bigcap _{j=1}^{n}X_{j}\neq \varnothing\]}
-	
 
-	
 
 \newpage
-	
-	
+\subsection{Problems}
 
-
-	\prob{https://artofproblemsolving.com/community/c6h535002p3067558}{ARO 2013 P9.4}{E}{$ N $ lines lie on a plane, no two of which are parallel and no three of which are concurrent. Prove that there exists a non-self-intersecting broken line $ A_1A_2A_3\dots A_N $ with $ N $ parts, such that on each of the $ N $ lines lies exactly one of the $ N $ segments of the line.}\label{problem:constructive_algo_8}\label{problem:induction_type1_7}
+\prob{https://artofproblemsolving.com/community/c6h535002p3067558}{ARO 2013 P9.4}{E}{$ N $ lines lie on a plane, no two of which are parallel and no three of which are concurrent. Prove that there exists a non-self-intersecting broken line $ A_1A_2A_3\dots A_N $ with $ N $ parts, such that on each of the $ N $ lines lies exactly one of the $ N $ segments of the line.}\label{problem:constructive_algo_8}\label{problem:induction_type1_7}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1424941p8024557}{EGMO 2017 P3}{M}{There are $ 2017 $ lines in the plane such that no three of them go through the same point. Turbo the snail sits on a point on exactly one of the lines and starts sliding along the lines in the following fashion: she moves on a given line until she reaches an intersection of two lines. At the intersection, she follows her journey on the other line turning left or right, alternating her choice at each intersection point she reaches. She can only change direction at an intersection point. Can there exist a line segment through which she passes in both directions during her journey?}\label{problem:plane_coloring_1}
+\prob{https://artofproblemsolving.com/community/c6h1424941p8024557}{EGMO 2017 P3}{M}{There are $ 2017 $ lines in the plane such that no three of them go through the same point. Turbo the snail sits on a point on exactly one of the lines and starts sliding along the lines in the following fashion: she moves on a given line until she reaches an intersection of two lines. At the intersection, she follows her journey on the other line turning left or right, alternating her choice at each intersection point she reaches. She can only change direction at an intersection point. Can there exist a line segment through which she passes in both directions during her journey?}\label{problem:plane_coloring_1}
 
-	\solu{The condition that tells us to go either right or left, seems very non-rigorous. So to rigorize this condition, instead of using right or left condition in the direction, we consider what’s on our right and left. (INTUITION) After some experiment we see (not all of us) that if we color the plane with two colors in a way where every neighboring regions have different colors, we find some interesting stuff. (CREATIVITY) With this we are done. \hrf{plane_coloring}{Color the Plane}}
+\solu{The condition that tells us to go either right or left, seems very non-rigorous. So to rigorize this condition, instead of using right or left condition in the direction, we consider what’s on our right and left. (INTUITION) After some experiment we see (not all of us) that if we color the plane with two colors in a way where every neighboring regions have different colors, we find some interesting stuff. (CREATIVITY) With this we are done. \hrf{plane_coloring}{Color the Plane}}
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h101306p571973}{ISL 2006 C2}{TE}{Let $ P $ be a regular $ 2006 $ -gon. A diagonal is called good if its endpoints divide the boundary of $ P $ into two parts, each composed of an odd number of sides of $ P $. The sides of $ P $ are also called good.
+\prob{https://artofproblemsolving.com/community/c6h101306p571973}{ISL 2006 C2}{TE}{Let $ P $ be a regular $ 2006 $ -gon. A diagonal is called good if its endpoints divide the boundary of $ P $ into two parts, each composed of an odd number of sides of $ P $. The sides of $ P $ are also called good.
 
-		Suppose $ P $ has been dissected into triangles by $ 2003 $ diagonals, no two of which have a common point in the interior of $ P $. Find the maximum number of isosceles triangles having two good sides that could appear in such a configuration.}\label{problem:induction_type2_4}\label{problem:bijection_9}
-
-
-	\solu{The straight way, induction.}
-
-	\solu{The intuitive way, bijection. There are at most $ n $ good triangles, there are $ 2n $ edges, so a mapping that takes a two edges to a single good triangle must exist. Finding it is not that hard.}
+Suppose $ P $ has been dissected into triangles by $ 2003 $ diagonals, no two of which have a common point in the interior of $ P $. Find the maximum number of isosceles triangles having two good sides that could appear in such a configuration.}\label{problem:induction_type2_4}\label{problem:bijection_9}
 
 
+\solu{The straight way, induction.}
 
-	\prob{https://artofproblemsolving.com/community/c6h589865p3493114}{ARO 2014 P9.3}{E}{In a convex $ n $ -gon, several diagonals are drawn. Among these diagonals, a diagonal is called good if it intersects exactly one other diagonal drawn (in the interior of the $ n $ -gon). Find the maximum number of good diagonals.}\label{problem:induction_type2_1}
-
-	\solu{There can be two cases, two good diagonals intersecting each other, and no two good diagonals intersecting each other. In the first case, we just use induction, and in the later, all of the good diagonals create a ``triangulation'' of the polygon, which gives us the numbers.}
-
-
-	\prob{https://artofproblemsolving.com/community/c6h1181527p5720110}{ISL 2013 C2, IMO 2013 P2}{E}{A configuration of $ 4027 $ points in the plane is called Colombian if it consists of $ 2013 $ red points and $ 2014 $ blue points, and no three of the points of the configuration are collinear. By drawing some lines, the plane is divided into several regions. An arrangement of lines is good for a Colombian configuration if the following two conditions are satisfied:
-
-		\begin{enumerate}
-
-			\item No line passes through any point of the configuration.
-			\item No region contains points of both colors.
-
-		\end{enumerate}
-
-		Find the least value of $ k $ such that for any Colombian configuration of $ 4027 $ points, there is a good arrangement of $ k $ lines.}\label{problem:sandwiching_points_1}
-
-	\solu{Obviously a n00b would think about induction. The only problem occurs when the convex hull completely consists of red points. In this case, after some investigation, we should get the sandwiching two points idea.}
-
-	\solu{Another way of inductive approach is like this, as the problem condition says that no region contains points of both colors, which means if we connect any two red and blue points, some line must bisect this segment. Now \hrf{problem:convex_hull_1}{it is known} that there is non intersecting partition of the points in to red-blue segments. So suppose in such a partition, we draw bisectors of each segments. Now there will be some holes in this proof. We see that to fill these holes, we have to focus on two red points with their respective blue partners, and draw the two bisectors in a way that separates the two red points form the blue points. So to remove further holes, we get the sandwiching idea.}
-
-
-	\prob{https://artofproblemsolving.com/community/c6h366745p2018324}{ILL 1985}{E}{Let $A$ and $B$ be two finite disjoint sets of points in the plane such that no three distinct points in $A \cup B$ are collinear. Assume that at least one of the sets $A, B$ contains at least five points. Show that there exists a triangle all of whose vertices's are contained in $A$ or in $B$ that does not contain in its interior any point from the other set.}
-
-	\solu{Concentrating on one of the sets five points such that there is no other points of the same set inside the hull of those five points.}\label{problem:convex_hull_2}
+\solu{The intuitive way, bijection. There are at most $ n $ good triangles, there are $ 2n $ edges, so a mapping that takes a two edges to a single good triangle must exist. Finding it is not that hard.}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h79789p456611}{APMO 1999 P5}{M}{Let $S$ be a set of $2n+1$ points in the plane such that no three are collinear and no four concyclic. A circle will be called ``Good'' if it has $ 3 $ points of $S$ on its circumference, $n-1$ points in its interior and $n-1$ points in its exterior. Prove that the number of good circles has the same parity as $n$.}
+\prob{https://artofproblemsolving.com/community/c6h589865p3493114}{ARO 2014 P9.3}{E}{In a convex $ n $ -gon, several diagonals are drawn. Among these diagonals, a diagonal is called good if it intersects exactly one other diagonal drawn (in the interior of the $ n $ -gon). Find the maximum number of good diagonals.}\label{problem:induction_type2_1}
+
+\solu{There can be two cases, two good diagonals intersecting each other, and no two good diagonals intersecting each other. In the first case, we just use induction, and in the later, all of the good diagonals create a ``triangulation'' of the polygon, which gives us the numbers.}
 
 
-		\solu{When thinking about induction, got a feeling that double counting with the number of good circles going through pairs of points might be useful, because a good circle will be counted three times, if we can show that every pair has odd number of good circles, we are done. So, take a pair. Now we need to `sort' the points somehow. See that, we can't sort the points in a trivial way with numbers, so moving to angles. Now setting conditions for a point inside of a circle in terms of angles, we see amazing patter, and an easy way to calculate the number of good circle of that pair of points.}
+\prob{https://artofproblemsolving.com/community/c6h1181527p5720110}{ISL 2013 C2, IMO 2013 P2}{E}{A configuration of $ 4027 $ points in the plane is called Colombian if it consists of $ 2013 $ red points and $ 2014 $ blue points, and no three of the points of the configuration are collinear. By drawing some lines, the plane is divided into several regions. An arrangement of lines is good for a Colombian configuration if the following two conditions are satisfied:
+
+    \begin{enumerate}
+
+        \item No line passes through any point of the configuration.
+        \item No region contains points of both colors.
+
+    \end{enumerate}
+
+Find the least value of $ k $ such that for any Colombian configuration of $ 4027 $ points, there is a good arrangement of $ k $ lines.}\label{problem:sandwiching_points_1}
+
+\solu{Obviously a n00b would think about induction. The only problem occurs when the convex hull completely consists of red points. In this case, after some investigation, we should get the sandwiching two points idea.}
+
+\solu{Another way of inductive approach is like this, as the problem condition says that no region contains points of both colors, which means if we connect any two red and blue points, some line must bisect this segment. Now \hrf{problem:convex_hull_1}{it is known} that there is non intersecting partition of the points in to red-blue segments. So suppose in such a partition, we draw bisectors of each segments. Now there will be some holes in this proof. We see that to fill these holes, we have to focus on two red points with their respective blue partners, and draw the two bisectors in a way that separates the two red points form the blue points. So to remove further holes, we get the sandwiching idea.}
 
 
+\prob{https://artofproblemsolving.com/community/c6h366745p2018324}{ILL 1985}{E}{Let $A$ and $B$ be two finite disjoint sets of points in the plane such that no three distinct points in $A \cup B$ are collinear. Assume that at least one of the sets $A, B$ contains at least five points. Show that there exists a triangle all of whose vertices's are contained in $A$ or in $B$ that does not contain in its interior any point from the other set.}
 
-	\prob{https://artofproblemsolving.com/community/c6h1113183p5083543}{ISL 2014 C1}{E}{Let $ n $ points be given inside a rectangle $ R $ such that no two of them lie on a line parallel to one of the sides of $ R $. The rectangle $ R $ is to be dissected into smaller rectangles with sides parallel to the sides of $ R $ in such a way that none of these rectangles contains any of the given points in its interior. Prove that we have to dissect $ R $ into at least $ n + 1 $ smaller rectangles.}\label{problem:extreme_object_7}\label{problem:double_counting_3}
-
-	\solu{Work with the largest continuous segments, and their endpoints.}
-
-
-
-	\prob{https://artofproblemsolving.com/community/c6h195050p1071295}{ISL 2007 C2}{EM}{A rectangle $ D$ is partitioned in several ($ \ge2$) rectangles with sides parallel to those of $ D$. Given that any line parallel to one of the sides of $ D$, and having common points with the interior of $ D$, also has common interior points with the interior of at least one rectangle of the partition; prove that there is at least one rectangle of the partition having no common points with $ D$'s boundary.}\label{problem:extreme_object_17}
-
-		\solu{There existing such a rectangle means that there is a rectangular region inside of the original rectangle. So what if we walked along the segments, and cut a smaller rectangle from the inside of the rectangle? Like the way in the game.
-		\fig{.7}{2007c2}{}}
-
-		\solu{Starting from one corner, and taking the opposite corner of the rectangle containing that corner, we use infinite decent to reach a contradiction.}
-
-		\solu{Using \hrf{problem:extreme_object_7}{ISL 2014 C1} as a lemma.}
-		
-		\solu{Take one side of the square. Take a ``sandwiched'' rectangle touching that side. If no such rectangle exists, then it's just a special case that can be dealt with ease.}
-
-
-	
-	\prob{https://artofproblemsolving.com/community/c6h5753p18977}{ISL 2003 C2}{E}{Let $D_1,D_2\dots,D_n$ be closed discs in the plane. (A closed disc is the region limited by a circle, taken jointly with this circle.) Suppose that every point in the plane is contained in at most $2003$ discs $D_i$. Prove that there exists a disc $D_k$ which intersects at most $7\cdot 2003 - 1 = 14020$ other discs $D_i$.}
-	
-		\solu{Just go with the natural idea.}
-	
-	\prob{https://artofproblemsolving.com/community/c6h5785p19086}{ISL 2003 C3}{E}{Let $n \geq 5$ be a given integer. Determine the greatest integer $k$ for which there exists a polygon with $n$ vertices (convex or not, with non-selfintersecting boundary) having $k$ internal right angles.}\label{problem:double_counting_10}
-	
-		\solu{double count}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1389042p7736716}{Tournament of Towns 2015S S4}{A convex$N-$gon with equal sides is located inside a circle. Each side is extended in both directions up to the intersection with the circle so that it contains two new segments outside the polygon. Prove that one can paint some of these new $2N$ segments in red and the rest in blue so that the sum of lengths of all the red segments would be the same as for the blue ones.}
-	
-		\solu{Just use what's the most natural, POP, on one vertex point.}
-
-
-	\prob{https://artofproblemsolving.com/community/c6h145844p825495}{USAMO 2007 P2}{E}{A square grid on the Euclidean plane consists of all points $(m,n)$, where $m$ and $n$ are integers. Is it possible to cover all grid points by an infinite family of discs with non-overlapping interiors if each disc in the family has radius at least $5$?}
-	
-		
-	\prob{https://artofproblemsolving.com/community/c6h1135648p5301617}{MEMO 2015 T4}{EM}{Let $N$ be a positive integer. In each of the $N^2$ unit squares of an $N\times N$ board, one of the two diagonals is drawn. The drawn diagonals divide the $N\times N$ board into $K$ regions. For each $N$, determine the smallest and the largest possible values of $K$.
-		\fig{.6}{MEMO2015T4}{}
-	}
-	
-		\solu{An Algorithmic Approach: Consider each diagonal as $ 0 $ or $ 1 $, prove that the maximum configuration is the one with alternating $ 0, 1 $s and the minimum one is the one with all $ 0 $s.}
-		
-		\solu{A Counting Approach: Just count and bound with the minimum areas of the regions.}
-		
-		
-	\prob{}{}{EM}{In every cells of a $ m\times n $ grid, one of the two diagonals are drawn. Prove that there exist a path on these diagonals from left to right or from up to bottom of the grid.}
-	
-		\solu{First remove the cycles, then take the largest path from left to right, and use induction.}
-		
-		
-	
-	\prob{https://artofproblemsolving.com/community/c132h1546693p9385334}{Math Price for Girls 2017 P4}{E}{A lattice point is a point in the plane whose two coordinates are both integers. A lattice line is a line in the plane that contains at least two lattice points. Is it possible to color every lattice point red or blue such that every lattice line contains exactly 2017 red lattice points? Prove that your answer is correct.}
-	
-		\solu{Transfinite induction.}
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h1217113p6063817}{China TST 2016 T3P2}{E}{In the coordinate plane the points with both coordinates being rational numbers are called rational points. For any positive integer $n$, is there a way to use $n$ colours to colour all rational points, every point is coloured one colour, such that any line segment with both endpoints being rational points contains the rational points of every colour?}
-	
-		\solu{Transfinite induction}
-		
-		
-		
-	\prob{https://artofproblemsolving.com/community/c6h1709989p11022201}{IGO 2018 A3}{E}{Find all possible values of integer $n > 3$ such that there is a convex $n$-gon in which, each diagonal is the perpendicular bisector of at least one other diagonal.}
-		
-		\solu{Taking maximum terminal triangle.}
-		
-		
-	\prob{}{Lithuania ??}{E}{Prove that in every polygon there is a diagonal that cuts off a triangle and lies completely within the polygon.}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h202941p1116402}{Romanian TST 2008 T1P4}{E}{Prove that there exists a set $ S$ of $ n - 2$ points inside a convex polygon $ P$ with $ n$ sides, such that any triangle determined by $3$ vertices of $ P$ contains exactly one point from $ S$ inside or on the boundaries.}
-	
-		\solu{Checking small cases inductively quickly shows a construction.}
-		
-		
-	\prob{}{Iran TST ??}{E}{In an isosceles right-angled triangle shaped billiards table, a ball starts moving from one of the vertices adjacent to hypotenuse. When it reaches to one side then it will reflect its path. Prove that if we reach to a vertex then it is not the vertex at initial position}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1662915p10561203}{APMO 2018 P4}{EM}{Let $ABC$ be an equilateral triangle. From the vertex $A$ we draw a ray towards the interior of the triangle such that the ray reaches one of the sides of the triangle. When the ray reaches a side, it then bounces off following the law of reflection, that is, if it arrives with a directed angle $\alpha$, it leaves with a directed angle $180^{\circ}-\alpha$. After $n$ bounces, the ray returns to $A$ without ever landing on any of the other two vertices. Find all possible values of $n$.}
-	
-	
-		\solu{Reflect the whole board when just reflecting the ball doesn't seem to be helping. GLOBAL}
-		
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h195043p1071276}{ISL 2007 C5}{EM}{In the Cartesian coordinate plane define the strips $ S_n = \{(x,y)|n\le x < n + 1\}$, $ n\in\mathbb{Z}$ and color each strip black or white. Prove that any rectangle which is not a square can be placed in the plane so that its vertices have the same color.}
-	
-		\solu{Proceed step by step. See what happens if the parity of $ a, b $ are different. Then the case with two coprimes. In this case, we want to tilt the rectangle to some extent where the desired result is achieved. We just need to show that this is possible. A bit of wishful thinking and a bit of algebra does the rest.}	
-	
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h1662910p10561186}{APMO 2018 P3}{M}{A collection of $n$ squares on the plane is called tri-connected if the following criteria are satisfied:
-		
-	\begin{enumerate}
-		\item  All the squares are congruent.
-		\item  If two squares have a point $P$ in common, then $P$ is a vertex of each of the squares.
-		\item  Each square touches exactly three other squares.
-	\end{enumerate}
-		
-	How many positive integers $n$ are there with $2018\leq n \leq 3018$, such that there exists a collection of $n$ squares that is tri-connected?}
-
-		\solu{Play around to find that $ 6k $ for $ k>4 $ is good. Then play around a little bit more for a different construction. Another construction for $ 6k $ gives rise to a construction for $ 10k $. Which integers can be written as a sum of $ 6k $ and $ 10k $?}
-		
-		
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h1082935p4768413}{Iran 2005}{E}{A simple polygon is one where the perimeter of the polygon does not intersect itself (but is not necessarily convex). Prove that a simple polygon $P$ contains a diagonal which is completely inside $P$ such that the diagonal divides the perimeter into two parts both containing at least $\frac{n}{3} - 1$ vertices. (Do not count the vertices which are endpoints of the diagonal.)}
-	
-		\solu{Triangulate.}	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h287860p1555907}{ISL 2008 C3}{E}{In the coordinate plane consider the set $ S$ of all points with integer coordinates. For a positive integer $ k$, two distinct points $ a$, $ B\in S$ will be called $ k$-friends if there is a point $ C\in S$ such that the area of the triangle $ ABC$ is equal to $ k$. A set $ T\subset S$ will be called $ k$-clique if every two points in $ T$ are $ k$-friends. Find the least positive integer $ k$ for which there exits a $ k$-clique with more than 200 elements.}
-	
-		\solu{When does $ ax+by= c $ have integer solution? Fix one point as origin and check other points friendliness with other points.}
-		
-	
+\solu{Concentrating on one of the sets five points such that there is no other points of the same set inside the hull of those five points.}\label{problem:convex_hull_2}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1112753p5079689}{ISL 2015 C2}{E}{We say that a finite set $\mathcal{S}$ of points in the plane is balanced if, for any two different points $A$ and $B$ in $\mathcal{S}$, there is a point $C$ in $\mathcal{S}$ such that $AC=BC$. We say that $\mathcal{S}$ is centre-free if for any three different points $A$, $B$ and $C$ in $\mathcal{S}$, there is no points $P$ in $\mathcal{S}$ such that $PA=PB=PC$.\\
-		
-		\begin{enumerate}
-			\item Show that for all integers $n\ge 3$, there exists a balanced set consisting of $n$ points.
-			\item Determine all integers $n\ge 3$ for which there exists a balanced centre-free set consisting of $n$ points.
-		\end{enumerate}}
-		
-		\solu{Simple, think about circles, then think about ``center-free'' in a graph theoritic manner.}
-		
-		
-		
+\prob{https://artofproblemsolving.com/community/c6h79789p456611}{APMO 1999 P5}{M}{Let $S$ be a set of $2n+1$ points in the plane such that no three are collinear and no four concyclic. A circle will be called ``Good'' if it has $ 3 $ points of $S$ on its circumference, $n-1$ points in its interior and $n-1$ points in its exterior. Prove that the number of good circles has the same parity as $n$.}
 
 
-\newpage\subsection{Chessboard Pieces}
+\solu{When thinking about induction, got a feeling that double counting with the number of good circles going through pairs of points might be useful, because a good circle will be counted three times, if we can show that every pair has odd number of good circles, we are done. So, take a pair. Now we need to `sort' the points somehow. See that, we can't sort the points in a trivial way with numbers, so moving to angles. Now setting conditions for a point inside of a circle in terms of angles, we see amazing patter, and an easy way to calculate the number of good circle of that pair of points.}
 
 
-	\lem{}{What is the maximum number of knights that can be placed on a chessboard such that no two knights attack each other?}\label{lemma:maximum_knight_problem}
-	
-		\solu{A knight's move always changes the color of the cell.}
-	
-	
 
-	
-	\prob{https://artofproblemsolving.com/community/c6h1671290p10632348P}{IMO 2018 P4}{E/H}{A site is any point $(x, y)$ in the plane such that $x$ and $y$ are both positive integers less than or equal to 20.\\
-	
-	Initially, each of the 400 sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to $\sqrt{5}$. On his turn, Ben places a new blue stone on any unoccupied site. (A site occupied by a blue stone is allowed to be at any distance from any other occupied site.) They stop as soon as a player cannot place a stone.\\
-	
-	Find the greatest $K$ such that Amy can ensure that she places at least $K$ red stones, no matter how Ben places his blue stones.}\label{problem:coloring_3}
-	
-	
-		\solu{Using the \hrf{lemma:maximum_knight_problem}{maximum knight problem} as a lemma.}
-		
-		
-		
-	\prob{}{}{E}{How many rooks can be placed on an $ n\times n $ board such that each rook attacks at most one other rook?}
-		
-		\solu{Use graphs with one set of degrees being rows, and the other set of degrees being columns.}
-	
-	
-	\prob{https://en.wikipedia.org/wiki/Eight_queens_puzzle}{Eight queens puzzle}{}{How many queens can be placed on an $ n\times n $ board such that no queen attacks another queen?}
-	
-		\begin{minipage}[t][][b]{0.195\linewidth}
-			\figdf{1}{queen_88}{}
-		\end{minipage}\hfill%
-		\begin{minipage}[t][][b]{0.342\linewidth}
-			\figdf{1}{queen_1414}{}
-		\end{minipage}\hfill%
-		\begin{minipage}[t][][b]{0.366\linewidth}
-			\figdf{1}{queen_1515}{}
-		\end{minipage}\hfill%
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1417932p7979120}{Serbia National D2P2}{HM}{How many queens can be placed on an $ n\times n $ board such that each queen attacks at most one other queen?}
-	
-	
-	\prob{}{BdMO 2019 P10}{E}{Define a new chess piece named warrior. it can either go three steps forward and one step to the side, or t2wo steps forward and two steps to the side in some orientation. In a $ 2020\times 2020 $ chessboard, prove that the mazimum number of warriors so that none of them attack each other is leass htan or equal to $ \dfrac{2}{5} $ of the number of cells.}
-		
-		\solu{Color and partition}
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h1790447p11841777}{RMM 2019 P4}{EM}{Prove that for every positive integer $n$ there exists a (not necessarily convex) polygon with no three collinear vertices, which admits exactly $n$ diffferent triangulations.\\
-	(A triangulation is a dissection of the polygon into triangles by interior diagonals which have no common interior points with each other nor with the sides of the polygon)}
+\prob{https://artofproblemsolving.com/community/c6h1113183p5083543}{ISL 2014 C1}{E}{Let $ n $ points be given inside a rectangle $ R $ such that no two of them lie on a line parallel to one of the sides of $ R $. The rectangle $ R $ is to be dissected into smaller rectangles with sides parallel to the sides of $ R $ in such a way that none of these rectangles contains any of the given points in its interior. Prove that we have to dissect $ R $ into at least $ n + 1 $ smaller rectangles.}\label{problem:extreme_object_7}\label{problem:double_counting_3}
 
-		\solu{\fig{.5}{RMM2019P4}{Fixes}}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1062931p4608924}{China TST 2015 T1D2P1}{EM}{Prove that : For each integer $n \ge 3$, there exists the positive integers $a_1<a_2< \cdots <a_n$ , such that for $ i=1,2,\cdots,n-2 $ , With $a_{i},a_{i+1},a_{i+2}$ may be formed as a triangle side length , and the area of the triangle is a positive integer.}
-	
-		\solu{First of all we dont need to limit us to integers, we can work with rationals. We want to build $ a_4 $ from $ a_1, a_2, a_3 $. with $ a_4> a_3 $ while keeping the area rational i.e. keeping the height and base rational.}
-		
-		
-		
-	\prob{https://codeforces.com/problemset/problem/1158/D}{Codeforces 1158D}{E}{You are given $ n $ points on the plane, and a sequence $ S $ of length $ n-2 $ consisting of $ L $ and $ R $. You need to generate a sequence of the points $ a_1, a_2\dots a_n $ such that 
-		\begin{itemize}
-			\item the polyline $ a_1a_2\dots a_n $ is not self intersecting.
-			\item the directed segment $ a_{i+1}a_{i+2} $ is on the left side of the the directed segment $ a_{i}a_{i+1} $ if $ S_i = L $, and on the right side if $ S_i = R $.
-		\end{itemize}}
-	
-	
-	
+\solu{Work with the largest continuous segments, and their endpoints.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h195050p1071295}{ISL 2007 C2}{EM}{A rectangle $ D$ is partitioned in several ($ \ge2$) rectangles with sides parallel to those of $ D$. Given that any line parallel to one of the sides of $ D$, and having common points with the interior of $ D$, also has common interior points with the interior of at least one rectangle of the partition; prove that there is at least one rectangle of the partition having no common points with $ D$'s boundary.}\label{problem:extreme_object_17}
+
+\begin{minipage}{.6\linewidth}
+    \solu{
+        There existing such a rectangle means that there is a rectangular region
+        inside of the original rectangle. So what if we walked along the segments,
+        and cut a smaller rectangle from the inside of the rectangle? Like the way
+        in the game.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.4\linewidth}
+    \figdf{.8}{2007c2}{}
+\end{minipage}
+
+
+\solu{Starting from one corner, and taking the opposite corner of the rectangle containing that corner, we use infinite decent to reach a contradiction.}
+
+\solu{Using \hrf{problem:extreme_object_7}{ISL 2014 C1} as a lemma.}
+
+\solu{Take one side of the square. Take a ``sandwiched'' rectangle touching that side. If no such rectangle exists, then it's just a special case that can be dealt with ease.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h5753p18977}{ISL 2003 C2}{E}{Let $D_1,D_2\dots,D_n$ be closed discs in the plane. (A closed disc is the region limited by a circle, taken jointly with this circle.) Suppose that every point in the plane is contained in at most $2003$ discs $D_i$. Prove that there exists a disc $D_k$ which intersects at most $7\cdot 2003 - 1 = 14020$ other discs $D_i$.}
+
+\solu{Just go with the natural idea.}
+
+\prob{https://artofproblemsolving.com/community/c6h5785p19086}{ISL 2003 C3}{E}{Let $n \geq 5$ be a given integer. Determine the greatest integer $k$ for which there exists a polygon with $n$ vertices (convex or not, with non-selfintersecting boundary) having $k$ internal right angles.}\label{problem:double_counting_10}
+
+\solu{double count}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1389042p7736716}{Tournament of Towns 2015S S4}{A convex$N-$gon with equal sides is located inside a circle. Each side is extended in both directions up to the intersection with the circle so that it contains two new segments outside the polygon. Prove that one can paint some of these new $2N$ segments in red and the rest in blue so that the sum of lengths of all the red segments would be the same as for the blue ones.}
+
+\solu{Just use what's the most natural, POP, on one vertex point.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h145844p825495}{USAMO 2007 P2}{E}{A square grid on the Euclidean plane consists of all points $(m,n)$, where $m$ and $n$ are integers. Is it possible to cover all grid points by an infinite family of discs with non-overlapping interiors if each disc in the family has radius at least $5$?}
+
+
+\begin{minipage}{.5\linewidth}
+    \prob{https://artofproblemsolving.com/community/c6h1135648p5301617}
+    {MEMO 2015 T4}{EM}{
+        Let $N$ be a positive integer. In each of the $N^2$ unit squares of an
+        $N\times N$ board, one of the two diagonals is drawn. The drawn
+        diagonals divide the $N\times N$ board into $K$ regions. For each $N$,
+        determine the smallest and the largest possible values of $K$.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.4\linewidth}
+    \figdf{.7}{MEMO2015T4}{}
+\end{minipage}
+
+
+\solu{An Algorithmic Approach: Consider each diagonal as $ 0 $ or $ 1 $, prove that the maximum configuration is the one with alternating $ 0, 1 $s and the minimum one is the one with all $ 0 $s.}
+
+\solu{A Counting Approach: Just count and bound with the minimum areas of the regions.}
+
+
+\prob{}{}{EM}{In every cells of a $ m\times n $ grid, one of the two diagonals are drawn. Prove that there exist a path on these diagonals from left to right or from up to bottom of the grid.}
+
+\solu{First remove the cycles, then take the largest path from left to right, and use induction.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c132h1546693p9385334}{Math Price for Girls 2017 P4}{E}{A lattice point is a point in the plane whose two coordinates are both integers. A lattice line is a line in the plane that contains at least two lattice points. Is it possible to color every lattice point red or blue such that every lattice line contains exactly 2017 red lattice points? Prove that your answer is correct.}
+
+\solu{Transfinite induction.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1217113p6063817}{China TST 2016 T3P2}{E}{In the coordinate plane the points with both coordinates being rational numbers are called rational points. For any positive integer $n$, is there a way to use $n$ colours to colour all rational points, every point is coloured one colour, such that any line segment with both endpoints being rational points contains the rational points of every colour?}
+
+\solu{Transfinite induction}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1709989p11022201}{IGO 2018 A3}{E}{Find all possible values of integer $n > 3$ such that there is a convex $n$-gon in which, each diagonal is the perpendicular bisector of at least one other diagonal.}
+
+\solu{Taking maximum terminal triangle.}
+
+
+\prob{}{Lithuania ??}{E}{Prove that in every polygon there is a diagonal that cuts off a triangle and lies completely within the polygon.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h202941p1116402}{Romanian TST 2008 T1P4}{E}{Prove that there exists a set $ S$ of $ n - 2$ points inside a convex polygon $ P$ with $ n$ sides, such that any triangle determined by $3$ vertices of $ P$ contains exactly one point from $ S$ inside or on the boundaries.}
+
+\solu{Checking small cases inductively quickly shows a construction.}
+
+
+\prob{}{Iran TST ??}{E}{In an isosceles right-angled triangle shaped billiards table, a ball starts moving from one of the vertices adjacent to hypotenuse. When it reaches to one side then it will reflect its path. Prove that if we reach to a vertex then it is not the vertex at initial position}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1662915p10561203}{APMO 2018 P4}{EM}{Let $ABC$ be an equilateral triangle. From the vertex $A$ we draw a ray towards the interior of the triangle such that the ray reaches one of the sides of the triangle. When the ray reaches a side, it then bounces off following the law of reflection, that is, if it arrives with a directed angle $\alpha$, it leaves with a directed angle $180^{\circ}-\alpha$. After $n$ bounces, the ray returns to $A$ without ever landing on any of the other two vertices. Find all possible values of $n$.}
+
+
+\solu{Reflect the whole board when just reflecting the ball doesn't seem to be helping. GLOBAL}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h195043p1071276}{ISL 2007 C5}{EM}{In the Cartesian coordinate plane define the strips $ S_n = \{(x,y)|n\le x < n + 1\}$, $ n\in\mathbb{Z}$ and color each strip black or white. Prove that any rectangle which is not a square can be placed in the plane so that its vertices have the same color.}
+
+\solu{Proceed step by step. See what happens if the parity of $ a, b $ are different. Then the case with two coprimes. In this case, we want to tilt the rectangle to some extent where the desired result is achieved. We just need to show that this is possible. A bit of wishful thinking and a bit of algebra does the rest.}	
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1662910p10561186}{APMO 2018 P3}{M}{A collection of $n$ squares on the plane is called tri-connected if the following criteria are satisfied:
+
+    \begin{enumerate}
+        \item  All the squares are congruent.
+        \item  If two squares have a point $P$ in common, then $P$ is a vertex of each of the squares.
+        \item  Each square touches exactly three other squares.
+    \end{enumerate}
+
+How many positive integers $n$ are there with $2018\leq n \leq 3018$, such that there exists a collection of $n$ squares that is tri-connected?}
+
+\solu{Play around to find that $ 6k $ for $ k>4 $ is good. Then play around a little bit more for a different construction. Another construction for $ 6k $ gives rise to a construction for $ 10k $. Which integers can be written as a sum of $ 6k $ and $ 10k $?}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1082935p4768413}{Iran 2005}{E}{A simple polygon is one where the perimeter of the polygon does not intersect itself (but is not necessarily convex). Prove that a simple polygon $P$ contains a diagonal which is completely inside $P$ such that the diagonal divides the perimeter into two parts both containing at least $\frac{n}{3} - 1$ vertices. (Do not count the vertices which are endpoints of the diagonal.)}
+
+\solu{Triangulate.}	
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h287860p1555907}{ISL 2008 C3}{E}{In the coordinate plane consider the set $ S$ of all points with integer coordinates. For a positive integer $ k$, two distinct points $ a$, $ B\in S$ will be called $ k$-friends if there is a point $ C\in S$ such that the area of the triangle $ ABC$ is equal to $ k$. A set $ T\subset S$ will be called $ k$-clique if every two points in $ T$ are $ k$-friends. Find the least positive integer $ k$ for which there exits a $ k$-clique with more than 200 elements.}
+
+\solu{When does $ ax+by= c $ have integer solution? Fix one point as origin and check other points friendliness with other points.}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1112753p5079689}{ISL 2015 C2}{E}{We say that a finite set $\mathcal{S}$ of points in the plane is balanced if, for any two different points $A$ and $B$ in $\mathcal{S}$, there is a point $C$ in $\mathcal{S}$ such that $AC=BC$. We say that $\mathcal{S}$ is centre-free if for any three different points $A$, $B$ and $C$ in $\mathcal{S}$, there is no points $P$ in $\mathcal{S}$ such that $PA=PB=PC$.\\
+
+    \begin{enumerate}
+        \item Show that for all integers $n\ge 3$, there exists a balanced set consisting of $n$ points.
+        \item Determine all integers $n\ge 3$ for which there exists a balanced centre-free set consisting of $n$ points.
+\end{enumerate}}
+
+\solu{Simple, think about circles, then think about ``center-free'' in a graph theoritic manner.}
+
+
+
+
+
+\newpage
+\subsection{Chessboard Pieces}
+
+
+\lem{}{What is the maximum number of knights that can be placed on a chessboard such that no two knights attack each other?}\label{lemma:maximum_knight_problem}
+
+\solu{A knight's move always changes the color of the cell.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1671290p10632348P}{IMO 2018 P4}{E/H}{A site is any point $(x, y)$ in the plane such that $x$ and $y$ are both positive integers less than or equal to 20.\\
+
+    Initially, each of the 400 sites is unoccupied. Amy and Ben take turns placing stones with Amy going first. On her turn, Amy places a new red stone on an unoccupied site such that the distance between any two sites occupied by red stones is not equal to $\sqrt{5}$. On his turn, Ben places a new blue stone on any unoccupied site. (A site occupied by a blue stone is allowed to be at any distance from any other occupied site.) They stop as soon as a player cannot place a stone.\\
+
+Find the greatest $K$ such that Amy can ensure that she places at least $K$ red stones, no matter how Ben places his blue stones.}\label{problem:coloring_3}
+
+
+\solu{Using the \hrf{lemma:maximum_knight_problem}{maximum knight problem} as a lemma.}
+
+
+
+\prob{}{}{E}{How many rooks can be placed on an $ n\times n $ board such that each rook attacks at most one other rook?}
+
+\solu{Use graphs with one set of degrees being rows, and the other set of degrees being columns.}
+
+
+\prob{https://en.wikipedia.org/wiki/Eight_queens_puzzle}{Eight queens puzzle}{}{How many queens can be placed on an $ n\times n $ board such that no queen attacks another queen?}
+
+\begin{minipage}[t][][b]{0.195\linewidth}
+    \figdf{1}{queen_88}{}
+\end{minipage}\hfill%
+\begin{minipage}[t][][b]{0.342\linewidth}
+    \figdf{1}{queen_1414}{}
+\end{minipage}\hfill%
+\begin{minipage}[t][][b]{0.366\linewidth}
+    \figdf{1}{queen_1515}{}
+\end{minipage}\hfill%
+
+
+\prob{https://artofproblemsolving.com/community/c6h1417932p7979120}{Serbia National D2P2}{HM}{How many queens can be placed on an $ n\times n $ board such that each queen attacks at most one other queen?}
+
+
+\prob{}{BdMO 2019 P10}{E}{Define a new chess piece named warrior. it can either go three steps forward and one step to the side, or t2wo steps forward and two steps to the side in some orientation. In a $ 2020\times 2020 $ chessboard, prove that the mazimum number of warriors so that none of them attack each other is leass htan or equal to $ \dfrac{2}{5} $ of the number of cells.}
+
+\solu{Color and partition}
+
+
+\begin{minipage}{.5\linewidth}
+    \prob{https://artofproblemsolving.com/community/c6h1790447p11841777}
+    {RMM 2019 P4}{EM}{
+        Prove that for every positive integer $n$ there exists a (not
+        necessarily convex) polygon with no three collinear vertices, which
+        admits exactly $n$ diffferent triangulations.
+
+        (A triangulation is a dissection of the polygon into triangles by
+        interior diagonals which have no common interior points with each
+        other nor with the sides of the polygon)
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.4\linewidth}
+    \figdf{.9}{RMM2019P4}{Fixes}
+\end{minipage}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1062931p4608924}{China TST 2015 T1D2P1}{EM}{Prove that : For each integer $n \ge 3$, there exists the positive integers $a_1<a_2< \cdots <a_n$ , such that for $ i=1,2,\cdots,n-2 $ , With $a_{i},a_{i+1},a_{i+2}$ may be formed as a triangle side length , and the area of the triangle is a positive integer.}
+
+\solu{First of all we dont need to limit us to integers, we can work with rationals. We want to build $ a_4 $ from $ a_1, a_2, a_3 $. with $ a_4> a_3 $ while keeping the area rational i.e. keeping the height and base rational.}
+
+
+
+\prob{https://codeforces.com/problemset/problem/1158/D}{Codeforces 1158D}{E}{You are given $ n $ points on the plane, and a sequence $ S $ of length $ n-2 $ consisting of $ L $ and $ R $. You need to generate a sequence of the points $ a_1, a_2\dots a_n $ such that 
+    \begin{itemize}
+        \item the polyline $ a_1a_2\dots a_n $ is not self intersecting.
+        \item the directed segment $ a_{i+1}a_{i+2} $ is on the left side of the the directed segment $ a_{i}a_{i+1} $ if $ S_i = L $, and on the right side if $ S_i = R $.
+\end{itemize}}
+
+
+

@@ -1,117 +1,131 @@
 \subsection{Counting in Graph}
 
-	\lem{Average of Degrees}{In a graph $ G $ with $ n $ vertexes, let $ E $ be the set of all edges. Assign an integer $ f_i $ to every vertex $ v_i $ such that $ f_i $ equals to the everage degree of the neighbors of $ v_i $. We have, \[ \sum_{i=1}^{n} f_i \geq 2|E| \] }\label{lemma:graph_lemma_1}
-	
-	
-	\lem{}{In a graph $ G $ with $ n $ vertexes, let $ E $ be the set of all edges. Assign an integer $ g_i $ to every vertex $ v_i $ such that $ g_i $ equals to the maximum degree among its neighbors. We have, \[ \sum_{i=1}^{n} g_i \geq 2|E| \] }
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h568277p3332307}{USA TST 2014 P3}{H}{Let $n$ be an even positive integer, and let $G$ be an $n$-vertex graph with exactly $\tfrac{n^2}{4}$ edges, where there are no loops or multiple edges (each unordered pair of distinct vertices is joined by either 0 or 1 edge). An unordered pair of distinct vertices $\{x,y\}$ is said to be amicable if they have a common neighbor (there is a vertex $z$ such that $xz$ and $yz$ are both edges). Prove that $G$ has at least $2\textstyle\binom{n/2}{2}$ pairs of vertices which are amicable.}
-	
-		\solu{Define friendship in a different way, bounding below, keeping in mind the equality case. Then using the previous lemma.}
-	
-	
-	\theo{https://en.wikipedia.org/wiki/Turan's_theorem}{Turan's theorem}{Let $ G $ be any graph with $ n $ vertices, such that $ G $ is $ K_{r+1} $ -free. Then $ G $ is the ``Turán's Graph'' and is a complete $ r $ partite graph. And the number of edges in $ G $ is at most 
-	
-		\[\frac {r-1}{r}\cdot \frac {n^{2}}{2}=\left(1-\frac {1}{r}\right)\cdot \frac {n^{2}}{2}\]
-		
-	A special case of Turán's theorem for $ n=2 $ is the \textbf{Mantel's Theorem}. It states that the maximal triangle free graph is a complete bipartite graph with at most $ \left\lfloor\dfrac{n^2}{4}\right\rfloor $ edges.
-		
-	\fig{.4}{turan_graph}{Turán's Graph}}
-	
-	
-		\proof{We need to prove that the maximal graph is the $ r $ partite one, and the rest will follow. We can directly try to prove that this graph is $ r $ colorable, but that is quite troublesome. Instead, we try to show that, we can partition the vertices of $ G $ into equivalence classes based on their non-neighbors. Since this is imply the former. So we need to prove that \hrf{lemma:criteria_of_partition_equiv}{this} holds for this graph.\\ 
-		
-		The way it is done is quite interesting. We need to show that if the criteria doesn't hold in this graph, then this graph is not the maximal graph. How are we going to do that? We compare the degrees of $ u, w $, and replace either $ u $ by $ w $ or $ w $ by $ u $ to get a graph with more edges and without the nasty situation.}
-	
-	
-	
-	\prob{}{}{E}{$ 155 $ birds $ P_1, P_2, \dots, P_{155} $ are sitting down no the boundary of a circle $ C $. Two birds $ P_i, P_j $ are mutually visible if the angle at the center of their cord, $ m(P_iP_j)\le 10^\circ $. Find the smallest number of mutually visible pairs of birds.}
-	
-	
-	\prob{}{}{E}{For a pair $ A = (x_1, y_1) $ and $ B = (x_2, y_2) $ of points on the coordinate plane, let $ d(A, B)  = |x_1 - x_2| + |y_1 - y_2|$. We call a pair $ (A,B) $  of unordered points harmonic if $ 1<d(A,B)\le 2 $. Determine the maximum number of harminc pairs among $ 100 $ points in the plane.}
-	
-	
-	
-	
-	
-	\prob{www.hehe.com}{Swell coloring}{E}{Let $ K_n $ denote the complete graph on $ n $ vertices, that is, the graph with $ n $ vertices's such that every pair of vertices's is connected by an edge. A swell coloring of $ K_n $ is an assignment of a color to each of the edges such that the edges of any triangle are either all of distinct colors or all the same color. Further, more than one color must be used in total (otherwise trivially if all edges are the same color we would have a swell coloring). Show that if $ K_n $ can be swell colored with $ k $ colors, then $ k \geq \sqrt{n} + 1 $.}\label{problem:forget_and_focus_5}
-	
-		\solu{Concentrate on only one vertex.}
-	
-	
-	
-	\prob{www.hehe.com}{Belarus 2001}{MH}{Given $ n $ people, any two are either friends or enemies, and friendship and enmity are mutual. I want to distribute hats to	them, in such a way that any two friends possess a hat of the same color but no two enemies possess a hat of the same color. Each person can receive multiple hats. What is the minimum number of colors required to always guarantee that I can do this?}\label{problem:extremal_case_whole_6}
-	
-		\solu{In this problem, finding the worst case is a big help, because once the answer is guessed, the things become really clear.}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1468154p8509521}{ELMO 2017 P5}{M (8/10)}{The edges of $ K_{2017} $ are each labeled with $ 1, 2 $ or $ 3 $ such that any triangle has sum of labels at least $ 5. $ Determine the minimum possible average of all labels. (Here $ K_{2017} $ is defined as the complete graph on 2017 vertices's, with an edge between every pair of vertices's.)}\label{problem:induction_type1_13}
-	
-	\solu{A starting idea to get the ans: if we discard of all the $ 2 $-edges, we see that in any triangle, one edge has to be a $ 3 $-edge. So... Turan-kinda...}
-	
-		\solu{After getting the ans, and thinking about approaching inductively, if we remove only one vertex, there will be pairs to consider. But if we remove two vertices, we will only need to consider single vertices after the removal of these two vertices.\\
-		
-		Now which pair of vertices are the best choice to remove? Before doing that, lets first think how much change will we get in the sum after we remove two vertices. Since we have the ans, we do quick maffs: 
-		\[m(4m+1) - (m-1)(4m-3) = 8m -3 = 4\times (2m-1) + 1\]
-		
-		Doesn't this indicate that we remove a $ 1 $-edge, so the other edges coming out of the two vertices will sum up to be at least $ 4*(2m-1) $.}
-	
-	
-		\solu{The solution by bern is very pretty. What he probably had thought was:\\
-		
-		If we pick a vertex, say $ u $, and take an $ 1 $-edge from this vertex to another vertex $ v $, we see that there are at least as many $ 3 $-edges in $ u $ than there are $ 1 $-edges in $ v $. Now if to get a more accurate value of $ d_3(u) $ (defined naturally), we need to take the maximum of the values $ d_1(v) $ for all $ v $'s connected to $ u $. \\
-		
-		Now we need to evaluate the number of $ 3 $ edges from the $ d_1 $ values. Can we put a bound on this sum? We have \hrf{lemma:graph_lemma_1}{\textbf{this lemma}}, does this help? Turns out that it does.\\
-		
-		What left is to sum it all up to see if we can get the ans.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h35320p220234}{ARO 2005 P9.4}{M (7/10)}{ $ 100 $ people from $ 50 $ countries, two from each countries, stay on a circle. Prove that one may partition them onto $ 2 $ groups in such way that neither no two countrymen, nor three consecutive people on a circle, are in the same group.\\
-		
-	\textbf{Variant:} There are $ 100 $ people from $ 25 $ countries sitting around a circular table. Prove that they can be separated into four classes, so that no two countrymen are in the same class, nor any two people sitting adjacent in the circle.}\label{problem:hall_marriage_2}
-	
-		\solu{Thinking of the most natural way of eliminating the consecutive condition -- pair two consecutive verices.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h478015p2676752}{Romanian TST 2012 P4}{E (7/10)}{Prove that a finite simple planar graph has an orientation so that every vertex has out-degree at most $ 3 $.}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h148822p841243}{USA TST 2006 P1}{E-M (8/10)}{A communications network consisting of some terminals is called a $3$-connector if among any three terminals, some two of them can directly communicate with each other. A communications network contains a windmill with $n$ blades if there exist $n$ pairs of terminals $\{x_{1},y_{1}\},\{x_{2},y_{2}\},\ldots,\{x_{n},y_{n}\}$ such that each $x_{i}$ can directly communicate with the corresponding $y_{i}$ and there is a hub terminal that can directly communicate with each of the $2n$ terminals $x_{1}, y_{1},\ldots,x_{n}, y_{n}$ . Determine the minimum value of $f (n)$, in terms of $n$, such that a $3$ -connector with $f (n)$ terminals always contains a windmill with $n$ blades.}
-	
-		\solu{Windmills won't be there if among any $ 2n+1 $ vertices, there were one vertex that were not connected to any of the other $ 2n $ vertices. So that means that we are dealing Turan-kinda config here. So we can make several `compact' graphs that are mutually disconnected, and each have at most $ 2n $ verices. Guessing from this, the ans is probably of some form $ k*2n + 1 $. Now we have another condition to consider, $ 3 $-connector. Lets see, if we had $ 3 $ disconnected componets, the resulting graph wouldn't be a $ 3 $-connector. Done...}
-	
-	
-	
-	
-	\prob{}{}{E}{Graph $ G $ on $ n $ vertices has the property that the degree of every vertex is greater than $ 2 $. Prove that for every $ 0 < k < n $, there is a simple path with lenght at least $ n/k $ or, $ k $ cycles, such that every cycle has at least one node which none of the other cycles has, and its lenght is not divisible by $ 3 $.}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h126200p715463}{ISL 2005 C4}{E}{Let $n\geq 3$ be a fixed integer. Each side and each diagonal of a regular $n$-gon is labelled with a number from the set $\left\{1;\;2;\;...;\;r\right\}$ in a way such that the following two conditions are fulfilled:
-	\vspace{-1em}
-		\begin{itemize}
-			\setlength{\itemindent}{-1.5em}
-			\itemsep0em
-			\item Each number from the set $\left\{1,2,\dots r\right\}$ occurs at least once as a label.
-			\item In each triangle formed by three vertices of the $n$-gon, two of the sides are labelled with the same number, and this number is greater than the label of the third side.
-		\end{itemize}
-	\vspace{-1em}
-		\begin{enumerate}
-			\setlength{\itemindent}{-1.2em}
-			\itemsep0em
-			\item Find the maximal $r$ for which such a labelling is possible.
-			\item For this maximal value of $r$, how many such labellings are there?
-		\end{enumerate}
-	}
-	
-		\solu{[Extremal]Take the edges labeled with $ r $, and delete them. Study what is left. For the second part, formulate a recursive function, and try out small cases to find pattern.}
-	
+\lem{Average of Degrees}{In a graph $ G $ with $ n $ vertexes, let $ E $ be the set of all edges. Assign an integer $ f_i $ to every vertex $ v_i $ such that $ f_i $ equals to the everage degree of the neighbors of $ v_i $. We have, \[ \sum_{i=1}^{n} f_i \geq 2|E| \] }\label{lemma:graph_lemma_1}
+
+
+\lem{}{In a graph $ G $ with $ n $ vertexes, let $ E $ be the set of all edges. Assign an integer $ g_i $ to every vertex $ v_i $ such that $ g_i $ equals to the maximum degree among its neighbors. We have, \[ \sum_{i=1}^{n} g_i \geq 2|E| \] }
+
+
+\prob{https://artofproblemsolving.com/community/c6h568277p3332307}{USA TST 2014 P3}{H}{Let $n$ be an even positive integer, and let $G$ be an $n$-vertex graph with exactly $\tfrac{n^2}{4}$ edges, where there are no loops or multiple edges (each unordered pair of distinct vertices is joined by either 0 or 1 edge). An unordered pair of distinct vertices $\{x,y\}$ is said to be amicable if they have a common neighbor (there is a vertex $z$ such that $xz$ and $yz$ are both edges). Prove that $G$ has at least $2\textstyle\binom{n/2}{2}$ pairs of vertices which are amicable.}
+
+\solu{Define friendship in a different way, bounding below, keeping in mind the equality case. Then using the previous lemma.}
+
+
+\begin{minipage}{.6\linewidth}
+    \theo{https://en.wikipedia.org/wiki/Turan's_theorem}
+    {Turan's theorem}{
+        Let $ G $ be any graph with $ n $ vertices, such that $ G $ is $ K_{r+1} $
+        -free. Then $ G $ is the ``Turán's Graph'' and is a complete $ r $ partite
+        graph. And the number of edges in $ G $ is at most 
+
+        \[\frac {r-1}{r}\cdot \frac {n^{2}}{2}=\left(1-\frac {1}{r}\right)\cdot
+        \frac {n^{2}}{2}\]
+
+        A special case of Turán's theorem for $ n=2 $ is the \textbf{Mantel's
+        Theorem}. It states that the maximal triangle free graph is a complete
+        bipartite graph with at most $ \left\lfloor\dfrac{n^2}{4}\right\rfloor $
+        edges.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.37\linewidth}
+\figdf{.9}{Turan_13-4}{Turán's Graph}
+\end{minipage}
+
+\vspace{1em}
+
+
+\proof{We need to prove that the maximal graph is the $ r $ partite one, and the rest will follow. We can directly try to prove that this graph is $ r $ colorable, but that is quite troublesome. Instead, we try to show that, we can partition the vertices of $ G $ into equivalence classes based on their non-neighbors. Since this is imply the former. So we need to prove that \hrf{lemma:criteria_of_partition_equiv}{this} holds for this graph.\\ 
+
+The way it is done is quite interesting. We need to show that if the criteria doesn't hold in this graph, then this graph is not the maximal graph. How are we going to do that? We compare the degrees of $ u, w $, and replace either $ u $ by $ w $ or $ w $ by $ u $ to get a graph with more edges and without the nasty situation.}
+
+
+
+\prob{}{}{E}{$ 155 $ birds $ P_1, P_2, \dots, P_{155} $ are sitting down no the boundary of a circle $ C $. Two birds $ P_i, P_j $ are mutually visible if the angle at the center of their cord, $ m(P_iP_j)\le 10^\circ $. Find the smallest number of mutually visible pairs of birds.}
+
+
+\prob{}{}{E}{For a pair $ A = (x_1, y_1) $ and $ B = (x_2, y_2) $ of points on the coordinate plane, let $ d(A, B)  = |x_1 - x_2| + |y_1 - y_2|$. We call a pair $ (A,B) $  of unordered points harmonic if $ 1<d(A,B)\le 2 $. Determine the maximum number of harminc pairs among $ 100 $ points in the plane.}
+
+
+
+
+
+\prob{www.hehe.com}{Swell coloring}{E}{Let $ K_n $ denote the complete graph on $ n $ vertices, that is, the graph with $ n $ vertices's such that every pair of vertices's is connected by an edge. A swell coloring of $ K_n $ is an assignment of a color to each of the edges such that the edges of any triangle are either all of distinct colors or all the same color. Further, more than one color must be used in total (otherwise trivially if all edges are the same color we would have a swell coloring). Show that if $ K_n $ can be swell colored with $ k $ colors, then $ k \geq \sqrt{n} + 1 $.}\label{problem:forget_and_focus_5}
+
+\solu{Concentrate on only one vertex.}
+
+
+
+\prob{www.hehe.com}{Belarus 2001}{MH}{Given $ n $ people, any two are either friends or enemies, and friendship and enmity are mutual. I want to distribute hats to	them, in such a way that any two friends possess a hat of the same color but no two enemies possess a hat of the same color. Each person can receive multiple hats. What is the minimum number of colors required to always guarantee that I can do this?}\label{problem:extremal_case_whole_6}
+
+\solu{In this problem, finding the worst case is a big help, because once the answer is guessed, the things become really clear.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1468154p8509521}{ELMO 2017 P5}{M (8/10)}{The edges of $ K_{2017} $ are each labeled with $ 1, 2 $ or $ 3 $ such that any triangle has sum of labels at least $ 5. $ Determine the minimum possible average of all labels. (Here $ K_{2017} $ is defined as the complete graph on 2017 vertices's, with an edge between every pair of vertices's.)}\label{problem:induction_type1_13}
+
+\solu{A starting idea to get the ans: if we discard of all the $ 2 $-edges, we see that in any triangle, one edge has to be a $ 3 $-edge. So... Turan-kinda...}
+
+\solu{After getting the ans, and thinking about approaching inductively, if we remove only one vertex, there will be pairs to consider. But if we remove two vertices, we will only need to consider single vertices after the removal of these two vertices.\\
+
+    Now which pair of vertices are the best choice to remove? Before doing that, lets first think how much change will we get in the sum after we remove two vertices. Since we have the ans, we do quick maffs: 
+    \[m(4m+1) - (m-1)(4m-3) = 8m -3 = 4\times (2m-1) + 1\]
+
+Doesn't this indicate that we remove a $ 1 $-edge, so the other edges coming out of the two vertices will sum up to be at least $ 4*(2m-1) $.}
+
+
+\solu{The solution by bern is very pretty. What he probably had thought was:\\
+
+    If we pick a vertex, say $ u $, and take an $ 1 $-edge from this vertex to another vertex $ v $, we see that there are at least as many $ 3 $-edges in $ u $ than there are $ 1 $-edges in $ v $. Now if to get a more accurate value of $ d_3(u) $ (defined naturally), we need to take the maximum of the values $ d_1(v) $ for all $ v $'s connected to $ u $. \\
+
+    Now we need to evaluate the number of $ 3 $ edges from the $ d_1 $ values. Can we put a bound on this sum? We have \hrf{lemma:graph_lemma_1}{\textbf{this lemma}}, does this help? Turns out that it does.\\
+
+What left is to sum it all up to see if we can get the ans.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h35320p220234}{ARO 2005 P9.4}{M (7/10)}{ $ 100 $ people from $ 50 $ countries, two from each countries, stay on a circle. Prove that one may partition them onto $ 2 $ groups in such way that neither no two countrymen, nor three consecutive people on a circle, are in the same group.\\
+
+\textbf{Variant:} There are $ 100 $ people from $ 25 $ countries sitting around a circular table. Prove that they can be separated into four classes, so that no two countrymen are in the same class, nor any two people sitting adjacent in the circle.}\label{problem:hall_marriage_2}
+
+\solu{Thinking of the most natural way of eliminating the consecutive condition -- pair two consecutive verices.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h478015p2676752}{Romanian TST 2012 P4}{E (7/10)}{Prove that a finite simple planar graph has an orientation so that every vertex has out-degree at most $ 3 $.}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h148822p841243}{USA TST 2006 P1}{E-M (8/10)}{A communications network consisting of some terminals is called a $3$-connector if among any three terminals, some two of them can directly communicate with each other. A communications network contains a windmill with $n$ blades if there exist $n$ pairs of terminals $\{x_{1},y_{1}\},\{x_{2},y_{2}\},\ldots,\{x_{n},y_{n}\}$ such that each $x_{i}$ can directly communicate with the corresponding $y_{i}$ and there is a hub terminal that can directly communicate with each of the $2n$ terminals $x_{1}, y_{1},\ldots,x_{n}, y_{n}$ . Determine the minimum value of $f (n)$, in terms of $n$, such that a $3$ -connector with $f (n)$ terminals always contains a windmill with $n$ blades.}
+
+\solu{Windmills won't be there if among any $ 2n+1 $ vertices, there were one vertex that were not connected to any of the other $ 2n $ vertices. So that means that we are dealing Turan-kinda config here. So we can make several `compact' graphs that are mutually disconnected, and each have at most $ 2n $ verices. Guessing from this, the ans is probably of some form $ k*2n + 1 $. Now we have another condition to consider, $ 3 $-connector. Lets see, if we had $ 3 $ disconnected componets, the resulting graph wouldn't be a $ 3 $-connector. Done...}
+
+
+
+
+\prob{}{}{E}{Graph $ G $ on $ n $ vertices has the property that the degree of every vertex is greater than $ 2 $. Prove that for every $ 0 < k < n $, there is a simple path with lenght at least $ n/k $ or, $ k $ cycles, such that every cycle has at least one node which none of the other cycles has, and its lenght is not divisible by $ 3 $.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h126200p715463}{ISL 2005 C4}{E}{Let $n\geq 3$ be a fixed integer. Each side and each diagonal of a regular $n$-gon is labelled with a number from the set $\left\{1;\;2;\;...;\;r\right\}$ in a way such that the following two conditions are fulfilled:
+    \vspace{-1em}
+    \begin{itemize}
+        \setlength{\itemindent}{-1.5em}
+    \itemsep0em
+    \item Each number from the set $\left\{1,2,\dots r\right\}$ occurs at least once as a label.
+    \item In each triangle formed by three vertices of the $n$-gon, two of the sides are labelled with the same number, and this number is greater than the label of the third side.
+\end{itemize}
+\vspace{-1em}
+\begin{enumerate}
+    \setlength{\itemindent}{-1.2em}
+\itemsep0em
+\item Find the maximal $r$ for which such a labelling is possible.
+\item For this maximal value of $r$, how many such labellings are there?
+        \end{enumerate}
+    }
+
+    \solu{[Extremal]Take the edges labeled with $ r $, and delete them. Study what is left. For the second part, formulate a recursive function, and try out small cases to find pattern.}
+

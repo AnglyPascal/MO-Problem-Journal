@@ -1,3 +1,104 @@
 \pagestyle{empty}\section*{About}
 
-Hello, my name is M Ahsan Al Mahir, I am a 
+Hello, my name is M Ahsan Al Mahir, I am a math enthusiast, which you can tell
+from my AoPS user name ``A\textunderscore Math\textunderscore Lover''. This is
+my account of being affiliated with math olympiads for 4 years.
+
+
+
+\newpage \section*{\centering On ``familiarity'' \\ or, How to avoid ``going down the Math
+Rabbit Hole''?}
+
+An excerpt from the \href{https://math.stackexchange.com/questions/617625/on-familiarity-or-how-to-avoid-going-down-the-math-rabbit-hole}{math.stackexchange post} of the same title.
+
+Anyone trying to learn mathematics on his/her own has had the experience of
+``going down the Math Rabbit Hole.''
+
+For example, suppose you come across the novel term vector space, and want to
+learn more about it. You look up various definitions, and they all refer to
+something called a field. So now you're off to learn what a field is, but it's
+the same story all over again: all the definitions you find refer to something
+called a group. Off to learn about what a group is. Ad infinitum. That's what
+I'm calling here ``to go down the Math Rabbit Hole.''
+
+Imagine some nice, helpful fellow came along, and made a big graph of every
+math concept ever, where each concept is one node and related concepts are
+connected by edges. Now you can take a copy of this graph, and color every
+node green based on whether you ``know'' that concept (unknowns can be grey).
+
+How to define ``know"? In this case, when somebody mentions that concept while
+talking about something, do you immediately feel confused and get the urge to
+look the concept up? If no, then you know it (funnily enough, you may be
+deluding yourself into thinking you know something that you completely
+misunderstand, and it would be classed as ``knowing'' based on this rule - but
+that's fine and I'll explain why in a bit). For purposes of determining
+whether you ``know'' it, try to assume that the particular thing the person is
+talking about isn't some intricate argument that hinges on obscure details of
+the concept or bizarre interpretations - it's just mentioned matter-of-factly,
+as a tangential remark.
+
+When you are studying a topic, you are basically picking one grey node and
+trying to color it green. But you may discover that to do this, you must color
+some adjacent grey nodes first. So the moment you discover a prerequisite
+node, you go to color it right away, and put your original topic on hold. But
+this node also has prerequisites, so you put it on hold, and... What you are
+doing is known as a depth first search. It's natural for it to feel like a
+rabbit hole - you are trying to go as deep as possible. The hope is that
+sooner or later you will run into a wall of greens, which is when your long,
+arduous search will have born fruit, and you will get to feel that unique rush
+of climbing back up the stack with your little jewel of recursion terminating
+return value.
+
+Then you get back to coloring your original node and find out about the other
+prerequisite, so now you can do it all over again.
+
+DFS is suited for some applications, but it is bad for others. If your goal is
+to color the whole graph (ie. learn all of math), any strategy will have you
+visit the same number of nodes, so it doesn't matter as much. But if you are
+not seriously attempting to learn everything right now, DFS is not the best
+choice.
+
+\fig{.8}{Pics/dfs}{\url{https://xkcd.com/761/}}
+
+So, the solution to your problem is straightforward - use a more appropriate
+search algorithm!
+
+Immediately obvious is breadth-first search. This means, when reading an
+article (or page, or book chapter), don't rush off to look up every new term
+as soon as you see it. Circle it or make a note of it on a separate paper, but
+force yourself to finish your text even if its completely incomprehensible to
+you without knowing the new term. You will now have a list of prerequisite
+nodes, and can deal with them in a more organized manner.
+
+Compared to your DFS, this already makes it much easier to avoid straying too
+far from your original area of interest. It also has another benefit which is
+not common in actual graph problems: Often in math, and in general,
+understanding is cooperative. If you have a concept A which has prerequisite
+concept B and C, you may find that B is very difficult to understand (it leads
+down a deep rabbit hole), but only if you don't yet know the very easy topic
+C, which if you do, make B very easy to ``get'' because you quickly figure out
+the salient and relevant points (or it may be turn out that knowing either B
+or C is sufficient to learn A). In this case, you really don't want to have a
+learning strategy which will not make sure you do C before B!
+
+BFS not only allows you to exploit cooperativities, but it also allows you to
+manage your time better. After your first pass, let's say you ended up with a
+list of 30 topics you need to learn first. They won't all be equally hard.
+Maybe 10 will take you 5 minutes of skimming wikipedia to figure out. Maybe
+another 10 are so simple, that the first Google Image diagram explains
+everything. Then there will be 1 or 2 which will take days or even months of
+work. You don't want to get tripped up on the big ones while you have the
+small ones to take care of. After all, it may turn out that the big topic is
+not essential, but the small topic is. If that's the case, you would feel very
+silly if you tried to tackle the big topic first! But if the small one proves
+useless, you haven't really lost much energy or time.
+
+Once you're doing BFS, you might as well benefit from the other, very nice and
+clever twists on it, such as Dijkstra or A*. When you have the list of topics,
+can you order them by how promising they seem? Chances are you can, and
+chances are, your intuition will be right. Another thing to do - since
+ultimately, your aim is to link up with some green nodes, why not try to
+prioritize topics which seem like they would be getting closer to things you
+do know? The beauty of A* is that these heuristics don't even have to be very
+correct - even ``wrong'' or ``unrealistic'' heuristics may end up making your
+search faster.
