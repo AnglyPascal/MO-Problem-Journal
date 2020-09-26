@@ -100,7 +100,7 @@
     soon lead us to the magical solution:\\
 
     \textit{\color{solC}Let one traveller go to each of the $n$ cities. Then we select the
-    costliest train and swap the two travellers on its two ends. We keep doing
+        costliest train and swap the two travellers on its two ends. We keep doing
     this until all the trains have been used.\\}
 
     This works because every traveller follows a path of gradually decreasing
@@ -310,22 +310,106 @@ Now there are only edge $ 1 $ s, and lone edge $ 2 $ s. Now dividing the graph $
 
 
 
-\prob{https://artofproblemsolving.com/community/c6h276187p1494557}{Iran TST 2009 P6}{E-M (9/10)}{We have a closed path that goes from one vertex to another neighboring vertex, on the vertices of a $ n\times n$ square which pass throgugh each vertex exactly once. Prove that we have two adjacent vertices such that if we cut the path at these two points then the length of each open paths is at least $ n^2/4 $.}
+\prob{https://artofproblemsolving.com/community/c6h276187p1494557}
+{Iran TST 2009 P6}{E-M (9/10)}{
+    We have a closed path that goes from one vertex to another neighboring
+    vertex, on the vertices of a $ n\times n$ square which pass throgugh each
+    vertex exactly once. Prove that we have two adjacent vertices such that if
+    we cut the path at these two points then the length of each open paths is
+    at least $ n^2/4 $.
 
-\solu{Draw a path, doesn't it look like a snake? Now can we relate the area of the tiled path with its perimeter? If we could do that, we would be able to replace two neighboring vertices by an edge inside the path, which seems to make the problem simpler.}
+    \index[strat]{Different representation!Graph!Iran TST 2009 P6}
+}
+
+\begin{solution}[grobber]
+    After drawing the closed path we notice that it divides the grid into a
+    tree like structure, which we definitely need to explore!\\
+
+    After drawing the tree with the unit squares as vertices, we try to
+    reformulate our problem in our new tree. We want to find an edge of
+    this tree that will divide the tree into two parts, and those two part
+    should have perimeter more than $\frac{n^2}{4}$. \\
+
+    We know of \hrf{theorem:Pick's Theorem}{Pick's Theorem} which lets us
+    relate area with perimiter of such polygons. Which we use to do some
+    bounding. We also need to show that if every vertex in a tree has degree 
+    at most $4$, then there is an edge that divides the tree into two ``big''
+    portions, which we will use.
+\end{solution}
+
+\prob{https://artofproblemsolving.com/community/c6h85771p499536}
+{Iran TST 2006}{E}{
+    Suppose we have a simple polygon (that is it does not intersect itself,
+    but not necessarily convex). Show that this polygon has a diagonal which
+    is completely inside the polygon and the two arcs it creates on the
+    polygon perimeter (the two arcs have 2 vertices in common) both have at
+    least one third of the vertices of the polygon.
+
+    \index[strat]{Different representation!Graph!Iran TST 2006}
+    \index[strat]{Extremal!Iran TST 2006}
+    \index[strat]{Induction!Iran TST 2006}
+}
+
+\begin{solution}[grobber]
+    First we triangulate the polygon. Now we take the diagonal that divides
+    the polygon into two arcs whose difference in length is the least. We show
+    that it satisfies the requirement.
+\end{solution}
+
+\begin{solution}[induction]
+    After the triangulation, we can also do induction on the number of
+    triangles, by removing a ``outer'' triangle.
+\end{solution}
+
+\begin{solution}[graph transformation]
+    We can convert the problem into a graph by considering the triangles as
+    vertices and joining two vertices if they share a common side. Then this
+    graph is a tree of which all vertices have degree at most $3$. And we know
+    that in any graph with maximum degree $3$, there is way to remove an edge
+    to divide the graph into two subgraphs with at least $\frac{n}{3}$
+    vertices.
+\end{solution}
 
 
 
-\prob{https://math.stackexchange.com/questions/1439430/algorithm-to-uniquely-determine-a-number-using-two-adjacent-digits}{OC Chap2 P2}{M (6/10)}{Arutyun and Amayak perform a magic trick as follows. A spectator writes down on a board a sequence of $ N $ (decimal) digits. Amayak covers two adjacent digits by a black disc. Then Arutyun comes and says both closed digits (and their order). For which minimal $ N $ can this trick always work? NOTE: Arutyun and Amayak have a strategy determined beforehand.}\label{problem:bijection_2}\label{problem:hall_marriage_1}
+\prob{https://math.stackexchange.com/questions/1439430/algorithm-to-uniquely-determine-a-number-using-two-adjacent-digits}
+{OC Chap2 P2}{M (6/10)}{\label{problem:bijection_2}\label{problem:hall_marriage_1}
+    Arutyun and Amayak perform a magic trick as follows. A spectator writes
+    down on a board a sequence of $ N $ (decimal) digits. Amayak covers two
+    adjacent digits by a black disc. Then Arutyun comes and says both closed
+    digits (and their order). For which minimal $ N $ can this trick always
+    work? NOTE: Arutyun and Amayak have a strategy determined beforehand.
 
-\solu{We have to actually find a bijection between all of the combinations the spectator can create, and all of the combinations that Arutyun might see when he comes back. Which tells us to use ``Perfect Matching" tricks.}
+    \index[strat]{Graph!Matching!OC Chap2 P2}
+    \index[strat]{Construction!OC Chap2 P2}
+}
 
-\solu{Existential proof: for this trick to always work, they have to make a bijection from a set of $ N $ digits with two covered, to an unique set of $ N $ digits. Consider a bijection from the set of $ 0-9 $ strings with length $ N $ to the set of $ 0-9 $ strings with length $ N $ with $ 2 $ adjacent digits unknown. There exist a bijection iff the two sets satisfy Hall's Marriage Theorem. By double counting we get the value of $ N $ from here.}
+\solu{
+    We have to actually find a bijection between all of the combinations the
+    spectator can create, and all of the combinations that Arutyun might see
+    when he comes back. Which tells us to use ``Perfect Matching" tricks.
+}
+
+\solu{[Existence]
+    For this trick to always work, they have to make a bijection from a set of
+    $N$ digits with two covered, to an unique set of $N$ digits. Consider a
+    bijection from the set of $0-9$ strings with length $N$ to the set of
+    $0-9$ strings with length $N$ with $2$ adjacent digits unknown.  There
+    exist a bijection iff the two sets satisfy Hall's Marriage Theorem.  By
+    double counting we get the value of $N$ from here.
+}
 
 
+\prob{}
+{Simurgh 2019 P3}{E}{
+    Call a graph \textit{symmetric}, if one can put its vertices on the plane
+    such that it becomes symmetric wrt a line (which doesn't pass through any
+    vertex). Find the minimum value of $ k $ such that (the edges of) every
+    graph on $ 100 $ vertices, can be decomposed into $ k $ symmetric
+    subgraph.
 
-\prob{}{Simurgh 2019 P3}{E}{Call a graph \textit{symmetric}, if one can put its vertices on the plane such that it becomes symmetric wrt a line (which doesn't pass through any vertex). Find the minimum value of $ k $ such that (the edges of) every graph on $ 100 $ vertices, can be decomposed into $ k $ symmetric subgraph.}
-
+    \index[strat]{Construction!Simurgh 2019 P3}
+}
 
 
 \prob{https://artofproblemsolving.com/community/c6h2019175p14186360}
@@ -340,8 +424,8 @@ Now there are only edge $ 1 $ s, and lone edge $ 2 $ s. Now dividing the graph $
     Prove that there is a closed route consisting of an odd number of flights
     where no two flights are operated by the same airline.
 
-    \index[strat]{Induction!Special!RMM 2020 P3}
-    \index[strat]{Local!Add One by One!RMM 2020 P3}
+    \index[strat]{Induction!RMM 2020 P3}
+    \index[strat]{Construction!Greedy!RMM 2020 P3}
     \index[strat]{Graph!Hall Marriage!RMM 2020 P3}
     \index[strat]{Graph!Bipartite!RMM 2020 P3}
 }
@@ -351,5 +435,7 @@ Now there are only edge $ 1 $ s, and lone edge $ 2 $ s. Now dividing the graph $
 }
 
 \solu{[Element of Time]
-    Add one edge from each cycle one at a time, without creating a cycle. Our objective is to show that when we reach the maximum stage where one edge creates a cycle, that cycle is of odd length.
+    Add one edge from each cycle one at a time, without creating a cycle. Our
+    objective is to show that when we reach the maximum stage where one edge
+    creates a cycle, that cycle is of odd length.
 }

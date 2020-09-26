@@ -1,111 +1,147 @@
 \newpage\section{Ad-Hocs}
-	
-	
-	\prob{}{ISL 2014 A2}{E}{Define the function $f : (0,1) \rightarrow (0,1)$ by $$f(x)=x^2,\ \text{for}\ x\geq \frac{1}{2}\ \ \text{and}\ \  x+\frac{1}{2},\  \text{for}\  x<\frac{1}{2}$$
-		
-		Let $a$ and $b$ be two real numbers such that $0 < a < b < 1$. We define the sequences an and bn by $a_0 = a, b_0 = b$, and $a_n = f(a_{n-1}), b_n = f(b_{n-1})$ for $n > 0$. Show that there exists a positive integer n such that \[(a_n-a_{n-1})(b_n-b_{n-1})<0\].}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1632763p10256351}{ARO 2018 P10.1}{E}{Determine the number of real roots of the equation $$|x|+|x+1|+\cdots+|x+2018|=x^2+2018x-2019$$}
-	
-	
-	
-	\prob{http://emc.mnm.hr/wp-content/uploads/2018/12/EMC_2018_Seniors_ENG_Solutions-2.pdf}{European Mathematics Cup 2018 P3}{E}{Find all $ k>1 $ such that there exists a set $ S $ such that,
-		\begin{enumerate}
-			\item There exists $ N>0 $ such that, if $ x\in S, then x<N $.
-			\item If $ a, b \in S $, and $ a>b $, then $ k(a-b)\in S $
-		\end{enumerate}}
-	
-		\solu{Find some constraints such as, $ k(a-b) \not> a $, $ S $ has a smallest element. These two combined with a 
-		sequence of decreasing elements of $ S $ is enough to solve this problem.}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1662907p10561170}{APMO 2018 P2}{EM}{Let $f(x)$ and $g(x)$ be given by
-		\[f(x) = \frac{1}{x} + \frac{1}{x-2} + \frac{1}{x-4} + \cdots + \frac{1}{x-2018}\]
-		\[g(x) = \frac{1}{x-1} + \frac{1}{x-3} + \frac{1}{x-5} + \cdots + \frac{1}{x-2017}\]
-	Prove that $|f(x)-g(x)| >2$ for any non-integer real number $x$ satisfying $0 < x < 2018$.}
-
-		\solu{Substract, manipulate, see that for $ \epsilon < 1 $, for $ x = 2k+\epsilon $ it's true, if it's true for $ x=2k+1+\epsilon $. Then for $ x=2k+1+\epsilon $, sustitute the value to find a common term appearing in all of those equations. So if that term were to be greater than $ 2 $, we would be done. How do we test that? Take the first derivative to find the minima.}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1268809p6621766}{ISL 2015 A1}{E}{Suppose that a sequence $a_1,a_2,\ldots$ of positive real numbers satisfies \[a_{k+1}\geq\frac{ka_k}{a_k^2+(k-1)}\]for every positive integer $k$. Prove that $a_1+a_2+\ldots+a_n\geq n$ for every $n\geq2$.}	
-		
-		\solu{Simplify the inequality. And then sum it up.}
-		
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1268841p6622146}{ISL 2015 A3}{M}{Let $n$ be a fixed positive integer. Find the maximum possible value of \[ \sum_{1 \le r < s \le 2n} (s-r-n)x_rx_s, \]where $-1 \le x_i \le 1$ for all $i = 1, \cdots , 2n$.}
-		
-		\solu{The expression is weird, and beautiful. Now if we write the expression as a single variable function, we see that $ x_i \in{1, -1} $. Now, there is $ x_ix_j $ in the expression. So we need to multiply two expressions. Again, see that $ s-r-n $ can be rewritten as $ -(n-s)-(r) $. Now, how do we get an expression like $ x_ix_j $ which can be found in squares, with a coefficient $ (n-s) $ and $ r $? By summing it up $ r $ times, simple.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h418680p2362280}{ISL 2010 A3}{:( E)}{Let $x_1, \ldots , x_{100}$ be nonnegative real numbers such that $x_i + x_{i+1} + x_{i+2} \leq 1$ for all $i = 1, \ldots , 100$ (we put $x_{101 } = x_1, x_{102} = x_2).$ Find the maximal possible value of the sum $S = \sum^{100}_{i=1} x_i x_{i+2}.$}
-	
-		\solu{Bound a small portion of the large sum.}
-		
-		
-	
-	\prob{https://artofproblemsolving.com/community/c6h100731p568958}{ISL 2005 A3}{E}{Four real numbers $ p$, $ q$, $ r$, $ s$ satisfy $ p+q+r+s = 9$ and $ p^{2}+q^{2}+r^{2}+s^{2}= 21$. Prove that there exists a permutation $ \left(a,b,c,d\right)$ of $ \left(p,q,r,s\right)$ such that $ ab-cd \geq 2$.}
-	
-		\solu{Put $ p, q, r, s $ in order, find which permutation must satisfy the condition. Since we know, $ \sum_{sym} pq =30 $, what can we say about the largest sum? How do we get $ pq-rs $ with the equations given to us? What can we do to make the conditions met?}
 
 
-		
-		
-		
-	\newpage\subsection{Factorization}
-	
-		\prob{https://artofproblemsolving.com/community/c5h532407_square_root_equality}{USAMO 2013 P4}{E}{Find all real numbers $x,y,z\geq 1$ satisfying \[\min(\sqrt{x+xyz},\sqrt{y+xyz},\sqrt{z+xyz})=\sqrt{x-1}+\sqrt{y-1}+\sqrt{z-1}.\]}
-		
-			\solu{\textbf{Replacement is never a bad idea to try out.} But the main part is not replacement, but it's factorization. I don't yet know how to find such factorization, but let's find out.}
-			
-			
-			
-	\newpage\subsection{Bounding}
-		
-		\prob{https://artofproblemsolving.com/community/c6h24075p152740}{ISL 2004 A2}{E}{Let $a_0$, $a_1$, $a_2$, ... be an infinite sequence of real numbers satisfying the equation \[a_n=\left|a_{n+1}-a_{n+2}\right|\] for all $n\geq 0$, where $a_0$ and $a_1$ are two different positive reals. Can this sequence $a_0$, $a_1$, $a_2 \dots $ be bounded?}
-		
-			\solu{In bounding problems, name the bounds, then focus on them. \textbf{Another thing: In reals, a variable does not necessarily need to be equal to the bound.}}
-			
-			
-			
-	\newpage\subsection{Manipulation}
-	
-		\prob{https://artofproblemsolving.com/community/c6h488534p2737640}{ISL 2011 A2}{M}{Determine all sequences $(x_1,x_2,\ldots,x_{2011})$ of positive integers, such that for every positive integer $n$ there exists an integer $a$ with \[\sum^{2011}_{j=1} j x^n_j = a^{n+1} + 1\]}
-		
-			\solu{Manipulate the data.\\
-			Since for all $ n $ the statement holds, we can guess there is bounding involved. Can we bound $ x_i $ or $ a $? Tweak the terms and see if there is something nice to work with.}
-		
-		
-		\prob{https://artofproblemsolving.com/community/c6h596930p3542095}{ISL 2014 A1}{E}{Let $a_0 < a_1 < a_2 \ldots$ be an infinite sequence of positive integers. Prove that there exists a unique integer $n\geq 1$ such that
-			\[a_n < \frac{a_0+a_1+a_2+\cdots+a_n}{n} \leq a_{n+1}.\]
-		}
-		
-			\solu{Manipulate the data.\\
-				Either directly, or using the ``$ \Delta $ method"}
-			
-		\prob{https://artofproblemsolving.com/community/c7h449983p2531775}{Putnam 2011 A2}{M}{Let $a_1,a_2,\dots$ and $b_1,b_2,\dots$ be sequences of positive real numbers such that $a_1=b_1=1$ and $b_n=b_{n-1}a_n-2$ for $n=2,3,\dots.$ Assume that the sequence $(b_j)$ is bounded. Prove that \[S=\sum_{n=1}^{\infty}\frac1{a_1\cdots a_n}\] converges, and evaluate $ S $}
-		
-			\solu{Look for partial sum. And in limit problems on contests, it is always a good idea to think about $ \epsilon_n = l-S_n $}
-			
-			
-		\prob{https://artofproblemsolving.com/community/c7h566364p3315667}{Putnam 2013 A3}{E}{Suppose that the real numbers $a_0,a_1,\dots,a_n$ and $x,$ with $0<x<1,$ satisfy \[\frac{a_0}{1-x}+\frac{a_1}{1-x^2}+\cdots+\frac{a_n}{1-x^{n+1}}=0.\] Prove that there exists a real number $y$ with $0<y<1$ such that \[a_0+a_1y+\cdots+a_ny^n=0.\]}
-		
-			\solu{How do you show $ \exists $ root $ \in I $ if you don't want to construct it? Also those geometric sums are begging to be expanded...}
-			
-		\prob{https://artofproblemsolving.com/community/q1h2112343p15298873}{GQMO 2020 P3}{EM}{We call a set of integers $\textit{special}$ if it has $4$ elements and can be partitioned into $2$ disjoint subsets $\{ a,b \}$ and $\{ c, d \}$ such that $ab - cd = 1$. For every positive integer $n$, prove that the set $\{ 1, 2, \dots, 4n \}$ cannot be partitioned into $n$ disjoint special sets.\index{Global!Multiplication!GQMO 2020 P3}}
-			
-			\solu{[Multiply 'em All]
-				Each special set must have exactly two evens and two odds. Now, consider the products of all even numbers and all odd numbers. Clearly the product of the odd parts of each set will be much smaller than the product of the even parts.
-			}
-	
-	
-	    
-	    
-	    
-	    \prob{https://artofproblemsolving.com/community/c6h1291447p6833525}{Korean Summer Program TST 2016 1}{}{Find all real numbers $x_1, \dots, x_{2016}$ that satisfy the following equation for each $1 \le i \le 2016$. (Here $x_{2017} = x_1$.)
-        \[ x_i^2 + x_i - 1 = x_{i+1} \]}
+\prob{}
+{ISL 2014 A2}{E}{
+    Define the function $f : (0,1) \rightarrow (0,1)$ by 
+    \[f(x)=x^2,\ \text{for}\ x\geq \frac{1}{2}\ \ \text{and}\ \
+    x+\frac{1}{2},\ \text{for}\  x<\frac{1}{2}\]
+
+    Let $a$ and $b$ be two real numbers such that $0 < a < b < 1$. We define
+    the sequences an and bn by $a_0 = a, b_0 = b$, and $a_n = f(a_{n-1}), b_n
+    = f(b_{n-1})$ for $n > 0$. Show that there exists a positive integer n
+    such that \[(a_n-a_{n-1})(b_n-b_{n-1})<0\].
+}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1632763p10256351}
+{ARO 2018 P10.1}{E}{
+    Determine the number of real roots of the equation
+    \[|x|+|x+1|+\cdots+|x+2018|=x^2+2018x-2019\]
+}
+
+
+
+\prob{http://emc.mnm.hr/wp-content/uploads/2018/12/EMC_2018_Seniors_ENG_Solutions-2.pdf}
+{European Mathematics Cup 2018 P3}{E}{
+    Find all $ k>1 $ such that there exists a set $ S $ such that,
+    \begin{enumerate}
+        \item There exists $ N>0 $ such that, if $ x\in S, then x<N $.
+        \item If $ a, b \in S $, and $ a>b $, then $ k(a-b)\in S $
+    \end{enumerate}
+}
+
+\solu{
+    Find some constraints such as, $k(a-b) \not> a$, $S$ has a smallest
+    element. These two combined with a sequence of decreasing elements of $S$
+    is enough to solve this problem.
+}
+
+
+\prob{https://artofproblemsolving.com/community/c6h1662907p10561170}
+{APMO 2018 P2}{EM}{
+    Let $f(x)$ and $g(x)$ be given by
+    \[f(x) = \frac{1}{x} + \frac{1}{x-2} + \frac{1}{x-4} + \cdots + \frac{1}{x-2018}\]
+    \[g(x) = \frac{1}{x-1} + \frac{1}{x-3} + \frac{1}{x-5} + \cdots + \frac{1}{x-2017}\]
+    Prove that $|f(x)-g(x)| >2$ for any non-integer real number $x$ satisfying $0
+    < x < 2018$.
+}
+
+\solu{[Subtract, manipulate] 
+    See that for $ \epsilon < 1 $, for $ x = 2k+\epsilon $ it's true, if it's
+    true for $ x=2k+1+\epsilon $. Then for $ x=2k+1+\epsilon $, sustitute the
+    value to find a common term appearing in all of those equations. So if
+    that term were to be greater than $ 2 $, we would be done. How do we test
+    that? Take the first derivative to find the minima.
+}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1268809p6621766}{ISL 2015 A1}{E}{Suppose that a sequence $a_1,a_2,\ldots$ of positive real numbers satisfies \[a_{k+1}\geq\frac{ka_k}{a_k^2+(k-1)}\]for every positive integer $k$. Prove that $a_1+a_2+\ldots+a_n\geq n$ for every $n\geq2$.}	
+
+\solu{Simplify the inequality. And then sum it up.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1268841p6622146}{ISL 2015 A3}{M}{Let $n$ be a fixed positive integer. Find the maximum possible value of \[ \sum_{1 \le r < s \le 2n} (s-r-n)x_rx_s, \]where $-1 \le x_i \le 1$ for all $i = 1, \cdots , 2n$.}
+
+\solu{The expression is weird, and beautiful. Now if we write the expression as a single variable function, we see that $ x_i \in{1, -1} $. Now, there is $ x_ix_j $ in the expression. So we need to multiply two expressions. Again, see that $ s-r-n $ can be rewritten as $ -(n-s)-(r) $. Now, how do we get an expression like $ x_ix_j $ which can be found in squares, with a coefficient $ (n-s) $ and $ r $? By summing it up $ r $ times, simple.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h418680p2362280}{ISL 2010 A3}{:( E)}{Let $x_1, \ldots , x_{100}$ be nonnegative real numbers such that $x_i + x_{i+1} + x_{i+2} \leq 1$ for all $i = 1, \ldots , 100$ (we put $x_{101 } = x_1, x_{102} = x_2).$ Find the maximal possible value of the sum $S = \sum^{100}_{i=1} x_i x_{i+2}.$}
+
+\solu{Bound a small portion of the large sum.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h100731p568958}{ISL 2005 A3}{E}{Four real numbers $ p$, $ q$, $ r$, $ s$ satisfy $ p+q+r+s = 9$ and $ p^{2}+q^{2}+r^{2}+s^{2}= 21$. Prove that there exists a permutation $ \left(a,b,c,d\right)$ of $ \left(p,q,r,s\right)$ such that $ ab-cd \geq 2$.}
+
+\solu{Put $ p, q, r, s $ in order, find which permutation must satisfy the condition. Since we know, $ \sum_{sym} pq =30 $, what can we say about the largest sum? How do we get $ pq-rs $ with the equations given to us? What can we do to make the conditions met?}
+
+
+
+
+
+\newpage\subsection{Factorization}
+
+\prob{https://artofproblemsolving.com/community/c5h532407_square_root_equality}{USAMO 2013 P4}{E}{Find all real numbers $x,y,z\geq 1$ satisfying \[\min(\sqrt{x+xyz},\sqrt{y+xyz},\sqrt{z+xyz})=\sqrt{x-1}+\sqrt{y-1}+\sqrt{z-1}.\]}
+
+\solu{\textbf{Replacement is never a bad idea to try out.} But the main part is not replacement, but it's factorization. I don't yet know how to find such factorization, but let's find out.}
+
+
+
+\newpage\subsection{Bounding}
+
+\prob{https://artofproblemsolving.com/community/c6h24075p152740}{ISL 2004 A2}{E}{Let $a_0$, $a_1$, $a_2$, ... be an infinite sequence of real numbers satisfying the equation \[a_n=\left|a_{n+1}-a_{n+2}\right|\] for all $n\geq 0$, where $a_0$ and $a_1$ are two different positive reals. Can this sequence $a_0$, $a_1$, $a_2 \dots $ be bounded?}
+
+\solu{In bounding problems, name the bounds, then focus on them. \textbf{Another thing: In reals, a variable does not necessarily need to be equal to the bound.}}
+
+
+
+\newpage\subsection{Manipulation}
+
+\prob{https://artofproblemsolving.com/community/c6h488534p2737640}{ISL 2011 A2}{M}{Determine all sequences $(x_1,x_2,\ldots,x_{2011})$ of positive integers, such that for every positive integer $n$ there exists an integer $a$ with \[\sum^{2011}_{j=1} j x^n_j = a^{n+1} + 1\]}
+
+\solu{Manipulate the data.\\
+Since for all $ n $ the statement holds, we can guess there is bounding involved. Can we bound $ x_i $ or $ a $? Tweak the terms and see if there is something nice to work with.}
+
+
+\prob{https://artofproblemsolving.com/community/c6h596930p3542095}{ISL 2014 A1}{E}{Let $a_0 < a_1 < a_2 \ldots$ be an infinite sequence of positive integers. Prove that there exists a unique integer $n\geq 1$ such that
+    \[a_n < \frac{a_0+a_1+a_2+\cdots+a_n}{n} \leq a_{n+1}.\]
+}
+
+\solu{Manipulate the data.\\
+Either directly, or using the ``$ \Delta $ method"}
+
+\prob{https://artofproblemsolving.com/community/c7h449983p2531775}{Putnam 2011 A2}{M}{Let $a_1,a_2,\dots$ and $b_1,b_2,\dots$ be sequences of positive real numbers such that $a_1=b_1=1$ and $b_n=b_{n-1}a_n-2$ for $n=2,3,\dots.$ Assume that the sequence $(b_j)$ is bounded. Prove that \[S=\sum_{n=1}^{\infty}\frac1{a_1\cdots a_n}\] converges, and evaluate $ S $}
+
+\solu{Look for partial sum. And in limit problems on contests, it is always a good idea to think about $ \epsilon_n = l-S_n $}
+
+
+\prob{https://artofproblemsolving.com/community/c7h566364p3315667}{Putnam 2013 A3}{E}{Suppose that the real numbers $a_0,a_1,\dots,a_n$ and $x,$ with $0<x<1,$ satisfy \[\frac{a_0}{1-x}+\frac{a_1}{1-x^2}+\cdots+\frac{a_n}{1-x^{n+1}}=0.\] Prove that there exists a real number $y$ with $0<y<1$ such that \[a_0+a_1y+\cdots+a_ny^n=0.\]}
+
+\solu{How do you show $ \exists $ root $ \in I $ if you don't want to construct it? Also those geometric sums are begging to be expanded...}
+
+\prob{https://artofproblemsolving.com/community/q1h2112343p15298873}
+{GQMO 2020 P3}{EM}{
+    We call a set of integers $\textit{special}$ if it has $4$ elements
+    and can be partitioned into $2$ disjoint subsets $\{ a,b \}$ and $\{ c, d \}$
+    such that $ab - cd = 1$. For every positive integer $n$, prove that the set
+    $\{ 1, 2, \dots, 4n \}$ cannot be partitioned into $n$ disjoint special
+    sets.
+    \index[strat]{Global!Multiplication!GQMO 2020 P3}
+}
+
+\solu{[Multiply 'em All]
+    Each special set must have exactly two evens and two odds. Now, consider the products of all even numbers and all odd numbers. Clearly the product of the odd parts of each set will be much smaller than the product of the even parts.
+}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1291447p6833525}{Korean Summer Program TST 2016 1}{}{Find all real numbers $x_1, \dots, x_{2016}$ that satisfy the following equation for each $1 \le i \le 2016$. (Here $x_{2017} = x_1$.)
+\[ x_i^2 + x_i - 1 = x_{i+1} \]}

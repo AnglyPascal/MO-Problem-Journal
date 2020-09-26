@@ -1,652 +1,653 @@
-\newpage\section{Problems}
+\newpage
+\section{Unsorted Problems}
 
-	
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1632768p10256373}{ARO 2018 10.3}{E}{A positive integer $ k $ is given. Initially, $ N $ cells are marked on an infinite checkered plane. We say that the cross of a cell $ A $ is the set of all cells lying in the same row or in the same column as $ A $. By a turn, it is allowed to mark an unmarked cell $ A $ if the cross of $ A $ contains at least $ k $ marked cells. It appears that every cell can be marked in a sequence of such turns. Determine the smallest possible value of $ N $.}\label{problem:constructive_algo_2}
 
-	\solu{First find the construction.}
+\prob{https://artofproblemsolving.com/community/c6h1632768p10256373}{ARO 2018 10.3}{E}{A positive integer $ k $ is given. Initially, $ N $ cells are marked on an infinite checkered plane. We say that the cross of a cell $ A $ is the set of all cells lying in the same row or in the same column as $ A $. By a turn, it is allowed to mark an unmarked cell $ A $ if the cross of $ A $ contains at least $ k $ marked cells. It appears that every cell can be marked in a sequence of such turns. Determine the smallest possible value of $ N $.}\label{problem:constructive_algo_2}
 
+\solu{First find the construction.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1635128p10279946}{ARO 2018 P9.5}{E}{On the circle, $ 99 $ points are marked, dividing this circle into $ 99 $ equal arcs. Petya and Vasya play the game, taking turns. Petya goes first; on his first move, he paints in red or blue any marked point. Then each player can paint on his own turn, in red or blue, any uncolored marked point adjacent to the already painted one. Vasya wins, if after painting all points there is an equilateral triangle, all three vertices's of which are colored in the same color. Could Petya prevent him?}\label{problem:forget_and_focus_1}
 
-	\solu{Think of what Petya must do to prevent immediate losing.}
+\prob{https://artofproblemsolving.com/community/c6h1635128p10279946}{ARO 2018 P9.5}{E}{On the circle, $ 99 $ points are marked, dividing this circle into $ 99 $ equal arcs. Petya and Vasya play the game, taking turns. Petya goes first; on his first move, he paints in red or blue any marked point. Then each player can paint on his own turn, in red or blue, any uncolored marked point adjacent to the already painted one. Vasya wins, if after painting all points there is an equilateral triangle, all three vertices's of which are colored in the same color. Could Petya prevent him?}\label{problem:forget_and_focus_1}
 
+\solu{Think of what Petya must do to prevent immediate losing.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h24077p152742}{ISL 2004 C2}{E}{Let $ {n} $ and $ k $ be positive integers. There are given $ {n} $ circles in the plane. Every two of them intersect at two distinct points, and all points of intersection they determine are pairwise distinct (i. e. no three circles have a common point). No three circles have a point in common. Each intersection point must be colored with one of $ n $ distinct colors so that each color is used at least once and exactly $ k $ distinct colors occur on each circle. Find all values of $ n\geq 2 $ and $ k $ for which such a coloring is possible.}\label{problem:induction_type1_1}
 
+\prob{https://artofproblemsolving.com/community/c6h24077p152742}{ISL 2004 C2}{E}{Let $ {n} $ and $ k $ be positive integers. There are given $ {n} $ circles in the plane. Every two of them intersect at two distinct points, and all points of intersection they determine are pairwise distinct (i. e. no three circles have a common point). No three circles have a point in common. Each intersection point must be colored with one of $ n $ distinct colors so that each color is used at least once and exactly $ k $ distinct colors occur on each circle. Find all values of $ n\geq 2 $ and $ k $ for which such a coloring is possible.}\label{problem:induction_type1_1}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h40115p251391}{ISL 2004 C3}{E}{The following operation is allowed on a finite graph: Choose an arbitrary cycle of length 4 (if there is any), choose an arbitrary edge in that cycle, and delete it from the graph. For a fixed integer $ {n\ge 4} $ , find the least number of edges of a graph that can be obtained by repeated applications of this operation from the complete graph on $ n $ vertices's (where each pair of vertices's are joined by an edge).}\label{problem:bipartite_graph_2}
 
-	\solu{Walk backwards. or the same thing with \hrf{lemma:bipartite_graph}{Bipartite Graphs}.}
+\prob{https://artofproblemsolving.com/community/c6h40115p251391}{ISL 2004 C3}{E}{The following operation is allowed on a finite graph: Choose an arbitrary cycle of length 4 (if there is any), choose an arbitrary edge in that cycle, and delete it from the graph. For a fixed integer $ {n\ge 4} $ , find the least number of edges of a graph that can be obtained by repeated applications of this operation from the complete graph on $ n $ vertices's (where each pair of vertices's are joined by an edge).}\label{problem:bipartite_graph_2}
 
+\solu{Walk backwards. or the same thing with \hrf{lemma:bipartite_graph}{Bipartite Graphs}.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h476661p2668792}{Iran TST 2012 P4}{E}{Consider $ m+1 $ horizontal and $ n+1 $ vertical lines ( $ m,n\ge 4 $ ) in the plane forming an $ m\times n $ table. Cosider a closed path on the segments of this table such that it does not intersect itself and also it passes through all $ (m-1)(n-1) $ interior vertices's (each vertex is an intersection point of two lines) and it doesn't pass through any of outer vertices. Suppose $ A $ is the number of vertices's such that the path passes through them straight forward, $ B $ number of the table squares that only their two opposite sides are used in the path, and $ C $ number of the table squares that none of their sides is used in the path. Prove that $ A=B-C+m+n-1 $.}\label{problem:double_counting_2}
 
+\prob{https://artofproblemsolving.com/community/c6h476661p2668792}{Iran TST 2012 P4}{E}{Consider $ m+1 $ horizontal and $ n+1 $ vertical lines ( $ m,n\ge 4 $ ) in the plane forming an $ m\times n $ table. Cosider a closed path on the segments of this table such that it does not intersect itself and also it passes through all $ (m-1)(n-1) $ interior vertices's (each vertex is an intersection point of two lines) and it doesn't pass through any of outer vertices. Suppose $ A $ is the number of vertices's such that the path passes through them straight forward, $ B $ number of the table squares that only their two opposite sides are used in the path, and $ C $ number of the table squares that none of their sides is used in the path. Prove that $ A=B-C+m+n-1 $.}\label{problem:double_counting_2}
 
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/q2h1060228p4589671}{AoPS}{E}{Given $ 2n+1 $ irrational numbers, prove that one can pick $ n $ from them s.t. no two of the choosen $ n $ sum up to a rational number.}\label{problem:bipartite_graph_1}\label{problem:graph_representation_3}
 
-	\solu{Use a graph theory representation.}
+\prob{https://artofproblemsolving.com/community/q2h1060228p4589671}{AoPS}{E}{Given $ 2n+1 $ irrational numbers, prove that one can pick $ n $ from them s.t. no two of the choosen $ n $ sum up to a rational number.}\label{problem:bipartite_graph_1}\label{problem:graph_representation_3}
 
+\solu{Use a graph theory representation.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h542686p3131086}{Bulgarian IMO TST 2004, Day 3, Problem 3}{H}{Prove that among any $ 2n+1 $ irrational numbers there are $ n+1 $ numbers such that the sum of any $ k $ of them is irrational, for all $ k \in \{1,2,3,\ldots, n+1 \} $.}\label{problem:add_time_5}\label{problem:constructive_algo_1}
 
-	\solu{We first create a set $ B $ such that any linear combination of the elements in it are irrational. Then for convenience, we add $ 1 $ to it, so that now the sum equals to $ 0 $ of any linear combinations. An algorithm for building it comes into our mind, which leaves some other original elements, which we then later add to the final solution set $ A $ along with the elements in the set $ B $ except $ 1 $.}
+\prob{https://artofproblemsolving.com/community/c6h542686p3131086}{Bulgarian IMO TST 2004, Day 3, Problem 3}{H}{Prove that among any $ 2n+1 $ irrational numbers there are $ n+1 $ numbers such that the sum of any $ k $ of them is irrational, for all $ k \in \{1,2,3,\ldots, n+1 \} $.}\label{problem:add_time_5}\label{problem:constructive_algo_1}
 
+\solu{We first create a set $ B $ such that any linear combination of the elements in it are irrational. Then for convenience, we add $ 1 $ to it, so that now the sum equals to $ 0 $ of any linear combinations. An algorithm for building it comes into our mind, which leaves some other original elements, which we then later add to the final solution set $ A $ along with the elements in the set $ B $ except $ 1 $.}
 
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h176p611}{ISL 1997 P4}{E}{An $ n\times n $ matrix whose entries come from the set $ S = \{1,2, . . . ,2n-1\} $ is called a ``silver matrix'' if, for each $ i = 1,2, . . . , n $ , the $ i $ -th row and the $ i $ -th column together contain all elements of $ S $. Show that:
 
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
+\prob{https://artofproblemsolving.com/community/c6h176p611}{ISL 1997 P4}{E}{An $ n\times n $ matrix whose entries come from the set $ S = \{1,2, . . . ,2n-1\} $ is called a ``silver matrix'' if, for each $ i = 1,2, . . . , n $ , the $ i $ -th row and the $ i $ -th column together contain all elements of $ S $. Show that:
 
-			\item there is no silver matrix for $ n = 1997 $ ;
-			\item silver matrices exist for infinitely many values of $ n $.
-	\end{enumerate}}\label{problem:induction_type1_2}
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
 
-	\solu{Proving that for odd $ n $ 's isn't hard. Then A small try-around with $ n=2, 4 $ , we see a pattern that leads to a construction for $ 2^n $ }
+        \item there is no silver matrix for $ n = 1997 $ ;
+        \item silver matrices exist for infinitely many values of $ n $.
+\end{enumerate}}\label{problem:induction_type1_2}
 
+\solu{Proving that for odd $ n $ 's isn't hard. Then A small try-around with $ n=2, 4 $ , we see a pattern that leads to a construction for $ 2^n $ }
 
 
 
 
 
-	\prob{}{}{E}{A rectangle is completely partitioned into smaller rectangles such that each smaller rectangles has at least one integral side. Prove that the original rectangle also has at least one integral side.}\label{problem:extreme_object_5}
 
-	\solu{Try a special grid system with $.5\times .5 $ boxes.}
+\prob{}{}{E}{A rectangle is completely partitioned into smaller rectangles such that each smaller rectangles has at least one integral side. Prove that the original rectangle also has at least one integral side.}\label{problem:extreme_object_5}
 
-	\solu{Consider the number of corners in the rectangle.}
+\solu{Try a special grid system with $.5\times .5 $ boxes.}
 
+\solu{Consider the number of corners in the rectangle.}
 
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h40197p251895}{ISL 2004 C5}{M}{ $ A $ and $ B $ play a game, given an integer $ N $, $ A $ writes down $ 1 $ first, then every player sees the last number written and if it is $ n $ then in his turn he writes $ n+1 $ or $ 2n $ , but his number cannot be bigger than $ N $. The player who writes $ N $ wins. For which values of $ N $ does $ B $ win?}\label{problem:win_lose_1}
 
-	\solu{Trying with smaller cases, it's easy. Using most important game theory \hrf{win_lose}{trick}.}
+\prob{https://artofproblemsolving.com/community/c6h40197p251895}{ISL 2004 C5}{M}{ $ A $ and $ B $ play a game, given an integer $ N $, $ A $ writes down $ 1 $ first, then every player sees the last number written and if it is $ n $ then in his turn he writes $ n+1 $ or $ 2n $ , but his number cannot be bigger than $ N $. The player who writes $ N $ wins. For which values of $ N $ does $ B $ win?}\label{problem:win_lose_1}
 
+\solu{Trying with smaller cases, it's easy. Using most important game theory \hrf{win_lose}{trick}.}
 
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h155692p874978}{ISL 2006 C1}{E}{We have $ n \geq 2 $ lamps $ L_1, L_2 \dots L_n $ in a row, each of them being either on or off. Every second we simultaneously modify the state of each lamp as follows: if the lamp $ L_i $ and its neighbors (only one neighbor for $ i = 1 $ or $ i = n $ , two neighbors for other $ i $ ) are in the same state, then $ L_i $ is switched off; otherwise, $ L_i $ is switched on. Initially all the lamps are off except the leftmost one which is on.
 
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
+\prob{https://artofproblemsolving.com/community/c6h155692p874978}{ISL 2006 C1}{E}{We have $ n \geq 2 $ lamps $ L_1, L_2 \dots L_n $ in a row, each of them being either on or off. Every second we simultaneously modify the state of each lamp as follows: if the lamp $ L_i $ and its neighbors (only one neighbor for $ i = 1 $ or $ i = n $ , two neighbors for other $ i $ ) are in the same state, then $ L_i $ is switched off; otherwise, $ L_i $ is switched on. Initially all the lamps are off except the leftmost one which is on.
 
-			\item  Prove that there are infinitely many integers $ n $ for which all the lamps will eventually be off.
-			\item  Prove that there are infinitely many integers $ n $ for which the lamps will never be all off
-	\end{enumerate}}\label{problem:induction_type1_4}
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
 
+        \item  Prove that there are infinitely many integers $ n $ for which all the lamps will eventually be off.
+        \item  Prove that there are infinitely many integers $ n $ for which the lamps will never be all off
+\end{enumerate}}\label{problem:induction_type1_4}
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h155696p874991}{ISL 2006 C4}{M}{A cake has the form of an $ n \times n $ square composed of $ n^2 $ unit squares. Strawberries lie on some of the unit squares so that each row or column contains exactly one strawberry; call this arrangement $ \mathbb{A} $.
 
-		Let $ \mathbb{B} $ be another such arrangement. Suppose that every grid rectangle with one vertex at the top left corner of the cake contains no fewer strawberries of arrangement $ \mathbb{B} $ than of arrangement $ \mathbb{A} $. Prove that arrangement $ \mathbb{B} $ can be obtained from $ \mathbb{A} $ by performing a number of switches, defined as follows:
+\prob{https://artofproblemsolving.com/community/c6h155696p874991}{ISL 2006 C4}{M}{A cake has the form of an $ n \times n $ square composed of $ n^2 $ unit squares. Strawberries lie on some of the unit squares so that each row or column contains exactly one strawberry; call this arrangement $ \mathbb{A} $.
 
-		A switch consists in selecting a grid rectangle with only two strawberries, situated at its top right corner and bottom left corner, and moving these two strawberries to the other two corners of that rectangle.}\label{problem:extreme_object_6}
+    Let $ \mathbb{B} $ be another such arrangement. Suppose that every grid rectangle with one vertex at the top left corner of the cake contains no fewer strawberries of arrangement $ \mathbb{B} $ than of arrangement $ \mathbb{A} $. Prove that arrangement $ \mathbb{B} $ can be obtained from $ \mathbb{A} $ by performing a number of switches, defined as follows:
 
-	\solu{When the first approach fails, don't throw that idea yet. Stick to it, as it is most probably the closest to a correct solution. Taking the smallest rectangle with $ 0 $ 's equal to $ 1 $ 's, we see that we can 'shrink' the rectangle. Which leads to a solution instantly.}
+A switch consists in selecting a grid rectangle with only two strawberries, situated at its top right corner and bottom left corner, and moving these two strawberries to the other two corners of that rectangle.}\label{problem:extreme_object_6}
 
+\solu{When the first approach fails, don't throw that idea yet. Stick to it, as it is most probably the closest to a correct solution. Taking the smallest rectangle with $ 0 $ 's equal to $ 1 $ 's, we see that we can 'shrink' the rectangle. Which leads to a solution instantly.}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1113184p5083546}{ISL 2014 C2}{E}{We have $ 2^m $ sheets of paper, with the number $ 1 $ written on each of them. We perform the following operation. In every step we choose two distinct sheets; if the numbers on the two sheets are $ a $ and $ b $ , then we erase these numbers and write the number $ a + b $ on both sheets. Prove that after $ m2^{m -1} $ steps, the sum of the numbers on all the sheets is at least $ 4^m $.}\label{problem:invariant_rules_of_thumb_1}
 
-	\solu{When you know that the problem can be solved using invariants, go through all of the possible invariants (from \href{invariant_rules_of_thumb}{the rules of thumb}). Don't give up on one so quickly. And product and sum are actually more close than you think. Because if you are told to prove some bound on the sum, then product can come very handy. After all there is AM-GM to connect sum and product.}
+\prob{https://artofproblemsolving.com/community/c6h1113184p5083546}{ISL 2014 C2}{E}{We have $ 2^m $ sheets of paper, with the number $ 1 $ written on each of them. We perform the following operation. In every step we choose two distinct sheets; if the numbers on the two sheets are $ a $ and $ b $ , then we erase these numbers and write the number $ a + b $ on both sheets. Prove that after $ m2^{m -1} $ steps, the sum of the numbers on all the sheets is at least $ 4^m $.}\label{problem:invariant_rules_of_thumb_1}
 
+\solu{When you know that the problem can be solved using invariants, go through all of the possible invariants (from \href{invariant_rules_of_thumb}{the rules of thumb}). Don't give up on one so quickly. And product and sum are actually more close than you think. Because if you are told to prove some bound on the sum, then product can come very handy. After all there is AM-GM to connect sum and product.}
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1480694p8639260}{ISL 2016 C3}{E}{Let $ n $ be a positive integer relatively prime to $ 6 $. We paint the vertices's of a regular $ n $ -gon with three colours so that there is an odd number of vertices's of each colour. Show that there exists an isosceles triangle whose three vertices's are of different colours.}\label{problem:double_counting_1}
 
-	\solu{Double Count with the number of points of each colors.}
+\prob{https://artofproblemsolving.com/community/c6h1480694p8639260}{ISL 2016 C3}{E}{Let $ n $ be a positive integer relatively prime to $ 6 $. We paint the vertices's of a regular $ n $ -gon with three colours so that there is an odd number of vertices's of each colour. Show that there exists an isosceles triangle whose three vertices's are of different colours.}\label{problem:double_counting_1}
 
+\solu{Double Count with the number of points of each colors.}
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h5052p15988}{Iran TST 2002 P3}{E}{A ``2-line'' is the area between two parallel lines. Length of ``2-line'' is distance of two parallel lines. We have covered unit circle with some ``2-lines''. Prove sum of lengths of ``2-lines'' is at least $ 2 $.}\label{problem:extreme_object_4}
 
-	\solu{Consider the ``2-line'' of the largest length.}
+\prob{https://artofproblemsolving.com/community/c6h5052p15988}{Iran TST 2002 P3}{E}{A ``2-line'' is the area between two parallel lines. Length of ``2-line'' is distance of two parallel lines. We have covered unit circle with some ``2-lines''. Prove sum of lengths of ``2-lines'' is at least $ 2 $.}\label{problem:extreme_object_4}
 
+\solu{Consider the ``2-line'' of the largest length.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h209803p1155601}{ARO 2008 P9.5}{E}{The distance between two cells of an infinite chessboard is defined as the minimum number to moves needed for a king to move from one to the other. On the board are chosen three cells on pairwise distances equal to $ 100 $. How many cells are there that are at the distance $ 50 $ from each of the three cells?}\label{problem:forget_and_focus_3}
 
+\prob{https://artofproblemsolving.com/community/c6h209803p1155601}{ARO 2008 P9.5}{E}{The distance between two cells of an infinite chessboard is defined as the minimum number to moves needed for a king to move from one to the other. On the board are chosen three cells on pairwise distances equal to $ 100 $. How many cells are there that are at the distance $ 50 $ from each of the three cells?}\label{problem:forget_and_focus_3}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h424768p2403861}{USAMO 1986 P2}{E}{During a certain lecture, each of five mathematicians fell asleep exactly twice. For each pair of mathematicians, there was some moment when both were asleep simultaneously. Prove that, at some moment, three of them were sleeping simultaneously.}\label{problem:graph_representation_1}
 
+\prob{https://artofproblemsolving.com/community/c6h424768p2403861}{USAMO 1986 P2}{E}{During a certain lecture, each of five mathematicians fell asleep exactly twice. For each pair of mathematicians, there was some moment when both were asleep simultaneously. Prove that, at some moment, three of them were sleeping simultaneously.}\label{problem:graph_representation_1}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/q2h607881p3617126}{Mexican Regional 2014 P6}{E}{Let $ A=n\times n $ be a $ \{0, 1\} $ matrix, where each row is different. Prove that you can remove a column such that the resulting $ n\times (n-1) $ matrix has $ n $ different rows.}\label{problem:induction_type2_2}\label{problem:graph_representation_2}
 
-	\solu{Try to represent the sets in a nicer way, with graph. or. Induction on the number of columns deleted and the number or different rows being there.}
+\prob{https://artofproblemsolving.com/community/q2h607881p3617126}{Mexican Regional 2014 P6}{E}{Let $ A=n\times n $ be a $ \{0, 1\} $ matrix, where each row is different. Prove that you can remove a column such that the resulting $ n\times (n-1) $ matrix has $ n $ different rows.}\label{problem:induction_type2_2}\label{problem:graph_representation_2}
 
+\solu{Try to represent the sets in a nicer way, with graph. or. Induction on the number of columns deleted and the number or different rows being there.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1480685p8639240}{IMO 2017 P5}{M}{An integer $ N \ge 2 $ is given. A collection of $ N(N + 1) $ soccer players, no two of whom are of the same height, stand in a row. Show that Sir Alex can always remove $ N(N - 1) $ players from this row leaving a new row of $ 2N $ players in which the following $ N $ conditions hold:
 
-		( $ 1 $ ) no one stands between the two tallest players,
+\prob{https://artofproblemsolving.com/community/c6h1480685p8639240}{IMO 2017 P5}{M}{An integer $ N \ge 2 $ is given. A collection of $ N(N + 1) $ soccer players, no two of whom are of the same height, stand in a row. Show that Sir Alex can always remove $ N(N - 1) $ players from this row leaving a new row of $ 2N $ players in which the following $ N $ conditions hold:
 
-		( $ 2 $ ) no one stands between the third and fourth tallest players,
+    ( $ 1 $ ) no one stands between the two tallest players,
 
-		$ \;\;\vdots $
+    ( $ 2 $ ) no one stands between the third and fourth tallest players,
 
-		( $ N $ ) no one stands between the two shortest players.} \label{problem:matrix_creation_1}
+    $ \;\;\vdots $
 
-	\solu{ $ N(N+1) $ , rows, removing $ \dots $ these things just begs for to be arranged in a \hrf{matrix_creation}{systematic} order. As arranging thing in a matrix is the simplest way, we arrange the bad-bois in a $ N \cdot (N+1) $ matrix. Now finding the algorithm is not very hard.}
+( $ N $ ) no one stands between the two shortest players.} \label{problem:matrix_creation_1}
 
+\solu{ $ N(N+1) $ , rows, removing $ \dots $ these things just begs for to be arranged in a \hrf{matrix_creation}{systematic} order. As arranging thing in a matrix is the simplest way, we arrange the bad-bois in a $ N \cdot (N+1) $ matrix. Now finding the algorithm is not very hard.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h60737p366461}{ISL 1990 P3}{E}{Let $ n \geq 3 $ and consider a set $ E $ of $ 2n - 1 $ distinct points on a circle. Suppose that exactly $ k $ of these points are to be colored black. Such a coloring is good if there is at least one pair of black points such that the interior of one of the arcs between them contains exactly $ n $ points from $ E $. Find the smallest value of $ k $ so that every such coloring of $ k $ points of $ E $ is good.}\label{problem:alternating_chains_1}
 
-	\solu{Creating a graph and using \hrf{alternating_chains}{Alternating Chains Technique}}
+\prob{https://artofproblemsolving.com/community/c6h60737p366461}{ISL 1990 P3}{E}{Let $ n \geq 3 $ and consider a set $ E $ of $ 2n - 1 $ distinct points on a circle. Suppose that exactly $ k $ of these points are to be colored black. Such a coloring is good if there is at least one pair of black points such that the interior of one of the arcs between them contains exactly $ n $ points from $ E $. Find the smallest value of $ k $ so that every such coloring of $ k $ points of $ E $ is good.}\label{problem:alternating_chains_1}
 
+\solu{Creating a graph and using \hrf{alternating_chains}{Alternating Chains Technique}}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h54501p340035}{USAMO 1999 P1}{E}{Some checkers placed on an $ n \times n $ checkerboard satisfy the following conditions:
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\bfseries]
 
-			\item  every square that does not contain a checker shares a side with one that does;
+\prob{https://artofproblemsolving.com/community/c6h54501p340035}{USAMO 1999 P1}{E}{Some checkers placed on an $ n \times n $ checkerboard satisfy the following conditions:
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\bfseries]
 
-			\item  given any pair of squares that contain checkers, there is a sequence of squares containing checkers, starting and ending with the given squares, such that every two consecutive squares of the sequence share a side.
-		\end{enumerate}
-	Prove that at least $ (n^{2}-2)/3 $ checkers have been placed on the board.}\label{problem:add_time_4}
+        \item  every square that does not contain a checker shares a side with one that does;
 
+        \item  given any pair of squares that contain checkers, there is a sequence of squares containing checkers, starting and ending with the given squares, such that every two consecutive squares of the sequence share a side.
+    \end{enumerate}
+Prove that at least $ (n^{2}-2)/3 $ checkers have been placed on the board.}\label{problem:add_time_4}
 
-	\solu{As the problem simply seems to exist, we can't count how much contribution a checker cntaining square contributes to the whole board. So we place \hrf{add_time}{one at a time} and see the changes.}
 
+\solu{As the problem simply seems to exist, we can't count how much contribution a checker cntaining square contributes to the whole board. So we place \hrf{add_time}{one at a time} and see the changes.}
 
-	\gene{www.hehe.com}{USAMO 1999 P1 generalization}{Find the smallest positive integer $ m $ such that if $ m $ squares of an $ n\times n $ board are colored, then there will exist $ 3 $ colored squares whose centers form a right triangle with sides parallel to the edges of the board.}\label{problem:induction_type1_22}
 
+\gene{www.hehe.com}{USAMO 1999 P1 generalization}{Find the smallest positive integer $ m $ such that if $ m $ squares of an $ n\times n $ board are colored, then there will exist $ 3 $ colored squares whose centers form a right triangle with sides parallel to the edges of the board.}\label{problem:induction_type1_22}
 
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h597127p3543383}{ISL 2013 C1}{E}{Let $ n $ be an positive integer. Find the smallest integer $ k $ with the following property; Given any real numbers $ a_1 , \cdots , a_d $ such that $ a_1 + a_2 + \cdots + a_d = n $ and $ 0 \le a_i \le 1 $ for $ i=1,2,\cdots ,d $ , it is possible to partition these numbers into $ k $ groups (some of which may be empty) such that the sum of the numbers in each group is at most $ 1 $.}\label{problem:extremal_case_whole_1}
 
-	\solu{Think about the worst case where $ d $ is the minimum and the ans is $ d $ , it would only be possible if each $ a_i> \frac{1}{2} $ but this can't be true, so, the ans is $ 2n-1 $. Now the ques should become obvious.}
+\prob{https://artofproblemsolving.com/community/c6h597127p3543383}{ISL 2013 C1}{E}{Let $ n $ be an positive integer. Find the smallest integer $ k $ with the following property; Given any real numbers $ a_1 , \cdots , a_d $ such that $ a_1 + a_2 + \cdots + a_d = n $ and $ 0 \le a_i \le 1 $ for $ i=1,2,\cdots ,d $ , it is possible to partition these numbers into $ k $ groups (some of which may be empty) such that the sum of the numbers in each group is at most $ 1 $.}\label{problem:extremal_case_whole_1}
 
+\solu{Think about the worst case where $ d $ is the minimum and the ans is $ d $ , it would only be possible if each $ a_i> \frac{1}{2} $ but this can't be true, so, the ans is $ 2n-1 $. Now the ques should become obvious.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h587946p3480604}{Brazilian Olympic Revenge 2014}{M}{Let $ n $ a positive integer. In a $ 2n\times 2n $ board, $ 1\times n $ and $ n\times 1 $ pieces are arranged without overlap. Call an arrangement maximal if it is impossible to put a new piece in the board without overlapping the previous ones. Find the least $ k $ such that there is a maximal arrangement that uses $ k $ pieces.}\label{problem:add_time_2}\label{problem:extremal_case_whole_2}
 
-	\solu{Intuition gives that there is at least one $ n $ -mino in each row. But we can easily guess that there is no maximal arrangement with $ 2n $ minos. Suppose in a maximal arrangement, there are no vertical $ n $ -mino, that means there are more than $ 2n+1 $ n-minos. So suppose that there is at least one vertical suppose that it lies in a column $ i $ between $ 1 $ and $ n $. Then we have that there is at least one $ n $ -mino in each column in between $ 1 $ and $ i $. If there is one in between $ 1 $ and $ 2n $ , say $ j $ , then there is one in each of the columns on the right side of it. Then we count horizontal $ n $ -minos, we show that $ 2n+1 $ is the answer.}
+\prob{https://artofproblemsolving.com/community/c6h587946p3480604}{Brazilian Olympic Revenge 2014}{M}{Let $ n $ a positive integer. In a $ 2n\times 2n $ board, $ 1\times n $ and $ n\times 1 $ pieces are arranged without overlap. Call an arrangement maximal if it is impossible to put a new piece in the board without overlapping the previous ones. Find the least $ k $ such that there is a maximal arrangement that uses $ k $ pieces.}\label{problem:add_time_2}\label{problem:extremal_case_whole_2}
 
+\solu{Intuition gives that there is at least one $ n $ -mino in each row. But we can easily guess that there is no maximal arrangement with $ 2n $ minos. Suppose in a maximal arrangement, there are no vertical $ n $ -mino, that means there are more than $ 2n+1 $ n-minos. So suppose that there is at least one vertical suppose that it lies in a column $ i $ between $ 1 $ and $ n $. Then we have that there is at least one $ n $ -mino in each column in between $ 1 $ and $ i $. If there is one in between $ 1 $ and $ 2n $ , say $ j $ , then there is one in each of the columns on the right side of it. Then we count horizontal $ n $ -minos, we show that $ 2n+1 $ is the answer.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h287859p1555905}{ISL 2008 C1}{E}{In the plane we consider rectangles whose sides are parallel to the coordinate axes and have positive length. Such a rectangle will be called a box. Two boxes intersect if they have a common point in their interior or on their boundary. Find the largest $ n $ for which there exist $ n $ boxes $ B_1, B_2\dots B_n $ such that $ B_i $ and $ B_j $ intersect if and only if $ i \not\equiv j\pm 1\ (\bmod\ n) $.}\label{problem:add_time_3}\label{problem:extreme_object_2}
 
-	\solu{Instead of focusing on building the boxes from only one side (i.e. starting with $ 1, 2\dots $ , we should include $ n $ in our investigation, and follow from both direction, (i.e. $ 1, 2\dots $ and $ \dots , n-1, n $ ).}
+\prob{https://artofproblemsolving.com/community/c6h287859p1555905}{ISL 2008 C1}{E}{In the plane we consider rectangles whose sides are parallel to the coordinate axes and have positive length. Such a rectangle will be called a box. Two boxes intersect if they have a common point in their interior or on their boundary. Find the largest $ n $ for which there exist $ n $ boxes $ B_1, B_2\dots B_n $ such that $ B_i $ and $ B_j $ intersect if and only if $ i \not\equiv j\pm 1\ (\bmod\ n) $.}\label{problem:add_time_3}\label{problem:extreme_object_2}
 
+\solu{Instead of focusing on building the boxes from only one side (i.e. starting with $ 1, 2\dots $ , we should include $ n $ in our investigation, and follow from both direction, (i.e. $ 1, 2\dots $ and $ \dots , n-1, n $ ).}
 
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c5h202905p1116177}{USAMO 2008 P4}{E}{Let $ \mathcal{P} $ be a convex polygon with $ n $ sides, $ n\ge3 $. Any set of $ n - 3 $ diagonals of $ \mathcal{P} $ that do not intersect in the interior of the polygon determine a triangulation of $ \mathcal{P} $ into $ n - 2 $ triangles. If $ \mathcal{P} $ is regular and there is a triangulation of $ \mathcal{P} $ consisting of only isosceles triangles, find all the possible values of $ n $.}
 
-	\solu{It’s not hard after getting the ans.}\label{problem:extreme_object_1}
+\prob{https://artofproblemsolving.com/community/c5h202905p1116177}{USAMO 2008 P4}{E}{Let $ \mathcal{P} $ be a convex polygon with $ n $ sides, $ n\ge3 $. Any set of $ n - 3 $ diagonals of $ \mathcal{P} $ that do not intersect in the interior of the polygon determine a triangulation of $ \mathcal{P} $ into $ n - 2 $ triangles. If $ \mathcal{P} $ is regular and there is a triangulation of $ \mathcal{P} $ consisting of only isosceles triangles, find all the possible values of $ n $.}
 
+\solu{It’s not hard after getting the ans.}\label{problem:extreme_object_1}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1238107p6307111}{ARO 2016 P3}{M}{We have a sheet of paper, divided into $ 100\times 100 $ unit squares. In some squares, we put right-angled isosceles triangles with $ leg=1 $ (Every triangle lies in one unit square and is half of this square). Every unit grid segment (boundary too) is under one $ leg $ of a triangle. Find maximal number of unit squares, that don't contains any triangles.}
 
-	\solu{What is the minimum number of triangles you can use in a row? Create a good row \hrf{add_time}{one at a time}}\label{problem:add_time_1}
+\prob{https://artofproblemsolving.com/community/c6h1238107p6307111}{ARO 2016 P3}{M}{We have a sheet of paper, divided into $ 100\times 100 $ unit squares. In some squares, we put right-angled isosceles triangles with $ leg=1 $ (Every triangle lies in one unit square and is half of this square). Every unit grid segment (boundary too) is under one $ leg $ of a triangle. Find maximal number of unit squares, that don't contains any triangles.}
 
+\solu{What is the minimum number of triangles you can use in a row? Create a good row \hrf{add_time}{one at a time}}\label{problem:add_time_1}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h546367p3162058}{India TST 2013 Test 3, P1}{E}{For a positive integer $ n $ , a \textit{Sum-Friendly Odd Partition} of $ n $ is a sequence $ \left( a_1, a_2\dots a_k\right) $ of odd positive integers with $ a_1\leq a_2\leq\dots\leq a_k $ and $ a_1+a_2+\dots +a_k = n $ such that for all positive integers $ m\leq n $ , $ m $ can be uniquely written as a subsum $ m = a_{i_1}+a_{i_2}+\dots +a_{i_r} $. (Two subsums $ a_{i_1}+a_{i_2}+\dots +a_{i_r} $ and $ a_{j_1}+a_{j_2}+\dots +a_{j_s} $ with $ i_1< i_2<\dots < i_r $ and $ j_1< j_2 <\dots < j_s $ are considered the same if $ r = s $ and $ a_{i_l}=a_{j_l} $ for $ 1\leq l\leq r $.) For example, $ \left( 1,1,3,3\right) $ is a \textit{sum-friendly odd partition} of $ 8 $. Find the number of sum-friendly odd partitions of $ 9999 $.}\label{problem:recursive_solution_1}
 
-	\solu{Firstly we explore one SFOP \hrf{recursive_solution}{at a time}. Which gives us a way to tell what $ a_{i+1} $ is going to be by looking at $ a_1\dots a_i $.}
+\prob{https://artofproblemsolving.com/community/c6h546367p3162058}{India TST 2013 Test 3, P1}{E}{For a positive integer $ n $ , a \textit{Sum-Friendly Odd Partition} of $ n $ is a sequence $ \left( a_1, a_2\dots a_k\right) $ of odd positive integers with $ a_1\leq a_2\leq\dots\leq a_k $ and $ a_1+a_2+\dots +a_k = n $ such that for all positive integers $ m\leq n $ , $ m $ can be uniquely written as a subsum $ m = a_{i_1}+a_{i_2}+\dots +a_{i_r} $. (Two subsums $ a_{i_1}+a_{i_2}+\dots +a_{i_r} $ and $ a_{j_1}+a_{j_2}+\dots +a_{j_s} $ with $ i_1< i_2<\dots < i_r $ and $ j_1< j_2 <\dots < j_s $ are considered the same if $ r = s $ and $ a_{i_l}=a_{j_l} $ for $ 1\leq l\leq r $.) For example, $ \left( 1,1,3,3\right) $ is a \textit{sum-friendly odd partition} of $ 8 $. Find the number of sum-friendly odd partitions of $ 9999 $.}\label{problem:recursive_solution_1}
 
+\solu{Firstly we explore one SFOP \hrf{recursive_solution}{at a time}. Which gives us a way to tell what $ a_{i+1} $ is going to be by looking at $ a_1\dots a_i $.}
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h418796p2363537}{IMO 2011 P2}{H}{Let $ \mathcal{S} $ be a finite set of at least two points in the plane. Assume that no three points of $ \mathcal S $ are collinear. A windmill is a process that starts with a line $ \ell $ going through a single point $ P \in \mathcal S $. The line rotates clockwise about the pivot $ P $ until the first time that the line meets some other point belonging to $ \mathcal S $. This point, $ Q $ , takes over as the new pivot, and the line now rotates clockwise about $ Q $ , until it next meets a point of $ \mathcal S $. This process continues indefinitely.
 
-		Show that we can choose a point $ P $ in $ \mathcal S $ and a line $ \ell $ going through $ P $ such that the resulting windmill uses each point of $ \mathcal S $ as a pivot infinitely many times.}\label{problem:extreme_object_3}
+\prob{https://artofproblemsolving.com/community/c6h418796p2363537}{IMO 2011 P2}{H}{Let $ \mathcal{S} $ be a finite set of at least two points in the plane. Assume that no three points of $ \mathcal S $ are collinear. A windmill is a process that starts with a line $ \ell $ going through a single point $ P \in \mathcal S $. The line rotates clockwise about the pivot $ P $ until the first time that the line meets some other point belonging to $ \mathcal S $. This point, $ Q $ , takes over as the new pivot, and the line now rotates clockwise about $ Q $ , until it next meets a point of $ \mathcal S $. This process continues indefinitely.
 
-	\solu{Some workaround gives us the idea that the starting line has to be kinda ``\hrf{extreme_object}{in between}'' the points. Formal words could be: the line should divide the set of points in two sets so that the two sets have equal number of points. Once we take a such line, we see that after every move we get a new line which has similar properties of the first line.}
+Show that we can choose a point $ P $ in $ \mathcal S $ and a line $ \ell $ going through $ P $ such that the resulting windmill uses each point of $ \mathcal S $ as a pivot infinitely many times.}\label{problem:extreme_object_3}
 
-	\solu{So moral of the story is that if you get some vague idea that something has to satisfy something-ish, remove the -ish part, and try with a formal assumption.}
+\solu{Some workaround gives us the idea that the starting line has to be kinda ``\hrf{extreme_object}{in between}'' the points. Formal words could be: the line should divide the set of points in two sets so that the two sets have equal number of points. Once we take a such line, we see that after every move we get a new line which has similar properties of the first line.}
 
+\solu{So moral of the story is that if you get some vague idea that something has to satisfy something-ish, remove the -ish part, and try with a formal assumption.}
 
 
 
 
 
-	\prob{http://ioinformatics.org/locations/ioi16/contest/day2/messy.pdf}{IOI 2016 P5}{M}{A computer bug has a permutation $ P $ of length $ 2^k = N $ that changes any string added to a DS according to the permutation, i.e. it makes $ S[i]=S[P[i]] $. Your task it to find the permutation in the following ways:
 
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
+\prob{http://ioinformatics.org/locations/ioi16/contest/day2/messy.pdf}{IOI 2016 P5}{M}{A computer bug has a permutation $ P $ of length $ 2^k = N $ that changes any string added to a DS according to the permutation, i.e. it makes $ S[i]=S[P[i]] $. Your task it to find the permutation in the following ways:
 
-			\item You can add at most $ n\log_{2}n $ $ N $ bit binary strings to the DS.
-			\item You can ask at most $ n\log_{2}n $, in the form of $ N $ bit binary strings. The answer will be ``true'' if the string exists in the DS after the Bug had changed the strings and ``no'' otherwise.
-	\end{enumerate}}\label{problem:divide_and_conquer_5}
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
 
-	\solu{Typical Divide and Conquer approach. You want to do the same thing for $ N = \frac{N}{2} $, and to do so you need to tell exactly what the first $ \frac{N}{2} $ terms of the permutation are. To do this, you can use at most $ N $ questions. This is easy, you first add strings with only one bit present in the first $ \frac{N}{2} $ positions, and then ask $ N $ questions with only one bit in every $ N $ positions. This maps the first $ \frac{N}{2} $ numbers of the permutation to a set of $ \frac{N}{2} $ integers. And we can proceed by induction now.}
+        \item You can add at most $ n\log_{2}n $ $ N $ bit binary strings to the DS.
+        \item You can ask at most $ n\log_{2}n $, in the form of $ N $ bit binary strings. The answer will be ``true'' if the string exists in the DS after the Bug had changed the strings and ``no'' otherwise.
+\end{enumerate}}\label{problem:divide_and_conquer_5}
 
+\solu{Typical Divide and Conquer approach. You want to do the same thing for $ N = \frac{N}{2} $, and to do so you need to tell exactly what the first $ \frac{N}{2} $ terms of the permutation are. To do this, you can use at most $ N $ questions. This is easy, you first add strings with only one bit present in the first $ \frac{N}{2} $ positions, and then ask $ N $ questions with only one bit in every $ N $ positions. This maps the first $ \frac{N}{2} $ numbers of the permutation to a set of $ \frac{N}{2} $ integers. And we can proceed by induction now.}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h17458p119184}{ISL 2001 C6}{M}{For a positive integer $n$ define a sequence of zeros and ones to be balanced if it contains $n$ zeros and $n$ ones. Two balanced sequences $a$ and $b$ are neighbors if you can move one of the $2n$ symbols of $a$ to another position to form $b$. For instance, when $n = 4$, the balanced sequences $01101001$ and $00110101$ are neighbors because the third (or fourth) zero in the first sequence can be moved to the first or second position to form the second sequence. Prove that there is a set $S$ of at most $\frac{1}{n+1} \binom{2n}{n}$ balanced sequences such that every balanced sequence is equal to or is a neighbor of at least one sequence in $S$.}\label{problem:forget_and_focus_4}
 
+\prob{https://artofproblemsolving.com/community/c6h17458p119184}{ISL 2001 C6}{M}{For a positive integer $n$ define a sequence of zeros and ones to be balanced if it contains $n$ zeros and $n$ ones. Two balanced sequences $a$ and $b$ are neighbors if you can move one of the $2n$ symbols of $a$ to another position to form $b$. For instance, when $n = 4$, the balanced sequences $01101001$ and $00110101$ are neighbors because the third (or fourth) zero in the first sequence can be moved to the first or second position to form the second sequence. Prove that there is a set $S$ of at most $\frac{1}{n+1} \binom{2n}{n}$ balanced sequences such that every balanced sequence is equal to or is a neighbor of at least one sequence in $S$.}\label{problem:forget_and_focus_4}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h18502p124456}{ISL 1998 C4}{M}{Let $U=\{1,2,\ldots ,n\}$, where $n\geq 3$. A subset $S$ of $U$ is said to be split by an arrangement of the elements of $U$ if an element not in $S$ occurs in the arrangement somewhere between two elements of $S$. For example, 13542 splits $\{1,2,3\}$ but not $\{3,4,5\}$. Prove that for any $n-2$ subsets of $U$, each containing at least 2 and at most $n-1$ elements, there is an arrangement of the elements of $U$ which splits all of them.}\label{problem:induction_type1_21}\label{problem:extreme_object_11}
 
-	\solu{If we try to apply induction, we see that the sets with $ 2 $ and $ n-1 $ elements create problems, so we handle them first.}
+\prob{https://artofproblemsolving.com/community/c6h18502p124456}{ISL 1998 C4}{M}{Let $U=\{1,2,\ldots ,n\}$, where $n\geq 3$. A subset $S$ of $U$ is said to be split by an arrangement of the elements of $U$ if an element not in $S$ occurs in the arrangement somewhere between two elements of $S$. For example, 13542 splits $\{1,2,3\}$ but not $\{3,4,5\}$. Prove that for any $n-2$ subsets of $U$, each containing at least 2 and at most $n-1$ elements, there is an arrangement of the elements of $U$ which splits all of them.}\label{problem:induction_type1_21}\label{problem:extreme_object_11}
 
+\solu{If we try to apply induction, we see that the sets with $ 2 $ and $ n-1 $ elements create problems, so we handle them first.}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h289581p1566044}{USA TST 2009 P1}{M}{Let $m$ and $n$ be positive integers. Mr. Fat has a set $S$ containing every rectangular tile with integer side lengths and area of a power of $2$. Mr. Fat also has a rectangle $R$ with dimensions $2^m \times 2^n$ and a $1 \times 1$ square removed from one of the corners. Mr. Fat wants to choose $m + n$ rectangles from $S$, with respective areas $2^0, 2^1, \ldots, 2^{m + n - 1}$, and then tile $R$ with the chosen rectangles. Prove that this can be done in at most $(m + n)!$ ways.}\label{problem:bijection_10}\label{problem:extreme_object_12}
 
-	\solu{The fact that this can be done in $ (m+n)! $ asks for a bijective proof. Now an intuition gives us that we have to sort the tiles wrt the missing square in some way. Now since the numbers }
+\prob{https://artofproblemsolving.com/community/c6h289581p1566044}{USA TST 2009 P1}{M}{Let $m$ and $n$ be positive integers. Mr. Fat has a set $S$ containing every rectangular tile with integer side lengths and area of a power of $2$. Mr. Fat also has a rectangle $R$ with dimensions $2^m \times 2^n$ and a $1 \times 1$ square removed from one of the corners. Mr. Fat wants to choose $m + n$ rectangles from $S$, with respective areas $2^0, 2^1, \ldots, 2^{m + n - 1}$, and then tile $R$ with the chosen rectangles. Prove that this can be done in at most $(m + n)!$ ways.}\label{problem:bijection_10}\label{problem:extreme_object_12}
 
+\solu{The fact that this can be done in $ (m+n)! $ asks for a bijective proof. Now an intuition gives us that we have to sort the tiles wrt the missing square in some way. Now since the numbers }
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1238105p6307095}{ARO 2016 P1}{E}{There are $ 30 $ teams in \textbf{NBA} and every team play $ 82 $ games in the year. Bosses of \textbf{NBA} want to divide all teams on Western and Eastern Conferences (not necessarily equally), such that the number of games between teams from different conferences is half of the number of all games. Can they do it?}
 
-	\solu{You want to divide something. Check the parity.}\label{problem:invariant_rules_of_thumb_7}
+\prob{https://artofproblemsolving.com/community/c6h1238105p6307095}{ARO 2016 P1}{E}{There are $ 30 $ teams in \textbf{NBA} and every team play $ 82 $ games in the year. Bosses of \textbf{NBA} want to divide all teams on Western and Eastern Conferences (not necessarily equally), such that the number of games between teams from different conferences is half of the number of all games. Can they do it?}
 
+\solu{You want to divide something. Check the parity.}\label{problem:invariant_rules_of_thumb_7}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1288343p6805414}{AoPS}{M}{Each edge of a polyhedron is oriented with an arrow such that at each vertex, there is at least one arrow leaving the vertex and at least one arrow entering the vertex. Prove that there exists a face on the polyhedron such that the edges on its boundary form a directed cycle.}\label{problem:extreme_object_13}
 
-	\solu{The trick which is used to prove Euler's Polyhedron theorem.}
+\prob{https://artofproblemsolving.com/community/c6h1288343p6805414}{AoPS}{M}{Each edge of a polyhedron is oriented with an arrow such that at each vertex, there is at least one arrow leaving the vertex and at least one arrow entering the vertex. Prove that there exists a face on the polyhedron such that the edges on its boundary form a directed cycle.}\label{problem:extreme_object_13}
 
+\solu{The trick which is used to prove Euler's Polyhedron theorem.}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h596929p3542094}{ISL 2014 C3}{M}{Let $ n \ge 2 $ be an integer. Consider an $ n \times n $ chessboard consisting of $ n^2 $ unit squares. A configuration of $ n $ rooks on this board is peaceful if every row and every column contains exactly one rook. Find the greatest positive integer $ k $ such that, for each peaceful configuration of $ n $ rooks, there is a $ k \times k $ square which does not contain a rook on any of its $ k^2 $ unit squares.}\label{problem:extremal_case_whole_7}
 
-	\solu{Guessing the "Correct" ans is the challenge, think of the worst case you can produce.}
+\prob{https://artofproblemsolving.com/community/c6h596929p3542094}{ISL 2014 C3}{M}{Let $ n \ge 2 $ be an integer. Consider an $ n \times n $ chessboard consisting of $ n^2 $ unit squares. A configuration of $ n $ rooks on this board is peaceful if every row and every column contains exactly one rook. Find the greatest positive integer $ k $ such that, for each peaceful configuration of $ n $ rooks, there is a $ k \times k $ square which does not contain a rook on any of its $ k^2 $ unit squares.}\label{problem:extremal_case_whole_7}
 
+\solu{Guessing the "Correct" ans is the challenge, think of the worst case you can produce.}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h472958p2648127}{APMO 2012 P2}{E}{Into each box of a $ n \times n $ square grid, a real number greater than or equal to $ 0 $ and less than or equal to $ 1 $ is inserted. Consider splitting the grid into $2$ non-empty rectangles consisting of boxes of the grid by drawing a line parallel either to the horizontal or the vertical side of the grid. Suppose that for at least one of the resulting rectangles the sum of the numbers in the boxes within the rectangle is less than or equal to $ 1 $, no matter how the grid is split into $2$ such rectangles. Determine the maximum possible value for the sum of all the $ n \times n $ numbers inserted into the boxes. Find the ans for $ k $-dimension grids too.}\label{problem:extreme_object_14}
 
+\prob{https://artofproblemsolving.com/community/c6h472958p2648127}{APMO 2012 P2}{E}{Into each box of a $ n \times n $ square grid, a real number greater than or equal to $ 0 $ and less than or equal to $ 1 $ is inserted. Consider splitting the grid into $2$ non-empty rectangles consisting of boxes of the grid by drawing a line parallel either to the horizontal or the vertical side of the grid. Suppose that for at least one of the resulting rectangles the sum of the numbers in the boxes within the rectangle is less than or equal to $ 1 $, no matter how the grid is split into $2$ such rectangles. Determine the maximum possible value for the sum of all the $ n \times n $ numbers inserted into the boxes. Find the ans for $ k $-dimension grids too.}\label{problem:extreme_object_14}
 
-	\solu{As the maximal rectangle defines other smaller rectangles in it, we take that.}
 
+\solu{As the maximal rectangle defines other smaller rectangles in it, we take that.}
 
 
 
-	\prob{www.hehe.com}{Indian Postal Coaching 2011}{M}{Consider $ 2011^2 $ points arranged in the form of a $ 2011 \times 2011 $ grid. What is the maximum number of points that can be chosen among them so that no four of them form the vertices's of either an isosceles trapezium or a rectangle whose parallel sides are parallel to the grid lines?}\label{problem:forget_and_focus_6}
 
-	\solu{Since we need to maintain the relation of perpendicular bisectors, we focus on perp bisectors and the points on one line only and then count.}
+\prob{www.hehe.com}{Indian Postal Coaching 2011}{M}{Consider $ 2011^2 $ points arranged in the form of a $ 2011 \times 2011 $ grid. What is the maximum number of points that can be chosen among them so that no four of them form the vertices's of either an isosceles trapezium or a rectangle whose parallel sides are parallel to the grid lines?}\label{problem:forget_and_focus_6}
 
+\solu{Since we need to maintain the relation of perpendicular bisectors, we focus on perp bisectors and the points on one line only and then count.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h418686p2362296}{ISL 2010 C2}{M}{On some planet, there are $2^N$ countries $(N \geq 4).$ Each country has a flag $N$ units wide and one unit high composed of $N$ fields of size $1 \times 1,$ each field being either yellow or blue. No two countries have the same flag. We say that a set of $N$ flags is diverse if these flags can be arranged into an $N \times N$ square so that all $N$ fields on its main diagonal will have the same color. Determine the smallest positive integer $M$ such that among any $M$ distinct flags, there exist $N$ flags forming a diverse set.}\label{problem:induction_type1_6}
 
+\prob{https://artofproblemsolving.com/community/c6h418686p2362296}{ISL 2010 C2}{M}{On some planet, there are $2^N$ countries $(N \geq 4).$ Each country has a flag $N$ units wide and one unit high composed of $N$ fields of size $1 \times 1,$ each field being either yellow or blue. No two countries have the same flag. We say that a set of $N$ flags is diverse if these flags can be arranged into an $N \times N$ square so that all $N$ fields on its main diagonal will have the same color. Determine the smallest positive integer $M$ such that among any $M$ distinct flags, there exist $N$ flags forming a diverse set.}\label{problem:induction_type1_6}
 
-	\solu{Using induction we see that if we have found the value of $ M $ for $ N-1 $, then possibly the value for $ M_N $ is twice as large than $ M_{N-1} $. With some further calculation, we see that if we have $ 2*M_{N-1}-1 = M_N $, then we can pick half of them and apply induction and still be left with a `lot' of flags to choose the $ N $th element of the diverse set.\\\\ After that the only work left is to proof for $ N=4 $. Which is easy casework.}
 
-	\solu{Another way to prove the ans, is to prove the bound for any non-diverse set. In this case, we use hall's marriage to prove the contradiction.}
+\solu{Using induction we see that if we have found the value of $ M $ for $ N-1 $, then possibly the value for $ M_N $ is twice as large than $ M_{N-1} $. With some further calculation, we see that if we have $ 2*M_{N-1}-1 = M_N $, then we can pick half of them and apply induction and still be left with a `lot' of flags to choose the $ N $th element of the diverse set.\\\\ After that the only work left is to proof for $ N=4 $. Which is easy casework.}
 
+\solu{Another way to prove the ans, is to prove the bound for any non-diverse set. In this case, we use hall's marriage to prove the contradiction.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h147501p834073}{Iran TST 2007 P2}{E}{Let $A$ be the largest subset of $\{1,\dots,n\}$ such that for each $x\in A$, $x$ divides at most one other element in $A$. Prove that \[\frac{2n}3\leq |A|\leq \left\lceil \frac{3n}4\right\rceil. \]}\label{problem:divide_and_conquer_6}
 
-	\solu{Partition the set optimally.}
+\prob{https://artofproblemsolving.com/community/c6h147501p834073}{Iran TST 2007 P2}{E}{Let $A$ be the largest subset of $\{1,\dots,n\}$ such that for each $x\in A$, $x$ divides at most one other element in $A$. Prove that \[\frac{2n}3\leq |A|\leq \left\lceil \frac{3n}4\right\rceil. \]}\label{problem:divide_and_conquer_6}
 
+\solu{Partition the set optimally.}
 
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1485051p8702069}{India IMO Camp 2017}{H}{Find all positive integers $ n $ s.t. the set $ \{1, 2, \dots, 3n\} $ can be partitioned into $ n $ triplets $ (a_i, b_i, c_i) $ such that $ a_i+b_i=c_i $ for all $ 1 \le i \le n $.}\label{problem:constructive_algo_11}
 
+\prob{https://artofproblemsolving.com/community/c6h1485051p8702069}{India IMO Camp 2017}{H}{Find all positive integers $ n $ s.t. the set $ \{1, 2, \dots, 3n\} $ can be partitioned into $ n $ triplets $ (a_i, b_i, c_i) $ such that $ a_i+b_i=c_i $ for all $ 1 \le i \le n $.}\label{problem:constructive_algo_11}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h546169p3160560}{ISL 2012 C2}{TE}{Let $ n \geq 1 $ be an integer. What is the maximum number of disjoint pairs of elements of the set $ \{ 1,2,\ldots , n \} $ such that the sums of the different pairs are different integers not exceeding $ n $ ?}\label{problem:constructive_algo_12}
 
-	\solu{As Usual, first find the ans. Using double counting is quite natural. Working with small cases easily gives a construction.}
+\prob{https://artofproblemsolving.com/community/c6h546169p3160560}{ISL 2012 C2}{TE}{Let $ n \geq 1 $ be an integer. What is the maximum number of disjoint pairs of elements of the set $ \{ 1,2,\ldots , n \} $ such that the sums of the different pairs are different integers not exceeding $ n $ ?}\label{problem:constructive_algo_12}
 
+\solu{As Usual, first find the ans. Using double counting is quite natural. Working with small cases easily gives a construction.}
 
 
 
-	\prob{http://codeforces.com/problemset/problem/989/C}{CodeForces 989C}{E}{}\label{problem:constructive_algo_13}
 
+\prob{http://codeforces.com/problemset/problem/989/C}{CodeForces 989C}{E}{}\label{problem:constructive_algo_13}
 
 
 
-	\prob{http://codeforces.com/problemset/problem/989/B}{CodeForces 989B}{E}{}\label{problem:constructive_algo_14}
 
+\prob{http://codeforces.com/problemset/problem/989/B}{CodeForces 989B}{E}{}\label{problem:constructive_algo_14}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h488537p2737645}{ISL 2011 A5}{MH}{Prove that for every positive integer $ n $ , the set $ \{2, 3, \ldots, 3n+1\} $ can be partitioned into $ n $ triples in such a way that the numbers from each triple are the lengths of the sides of some obtuse triangle.}\label{problem:constructive_algo_15}
 
-	\solu{What is the best way to choose the side lengths of an obtuse triangle? Obviously by maintaining some strict rules to get the third side from the first two sides and making the rules invariant. One way of doing this is to take $ (a,b,a+b-1) $.
+\prob{https://artofproblemsolving.com/community/c6h488537p2737645}{ISL 2011 A5}{MH}{Prove that for every positive integer $ n $ , the set $ \{2, 3, \ldots, 3n+1\} $ can be partitioned into $ n $ triples in such a way that the numbers from each triple are the lengths of the sides of some obtuse triangle.}\label{problem:constructive_algo_15}
 
-		After that, some (literally this is the hardest part of the problem) experiment to find a construction. First, we try to partition the set into tuples of our desired form, but we soon realize that that can’t be done so easily. So we try a little bit of different approach and make one tuple different from the others. Luckily this approach gives us a nice construction.}
+\solu{What is the best way to choose the side lengths of an obtuse triangle? Obviously by maintaining some strict rules to get the third side from the first two sides and making the rules invariant. One way of doing this is to take $ (a,b,a+b-1) $.
 
+After that, some (literally this is the hardest part of the problem) experiment to find a construction. First, we try to partition the set into tuples of our desired form, but we soon realize that that can’t be done so easily. So we try a little bit of different approach and make one tuple different from the others. Luckily this approach gives us a nice construction.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1423008p8003911}{Iran TST 2017 D1P1}{TE}{In the country of Sugarland, there are $ 13 $ students in the IMO team selection camp. $ 6 $ team selection tests were taken and the results have came out. Assume that no students have the same score on the same test. To select the IMO team, the national committee of math Olympiad have decided to choose a permutation of these $ 6 $ tests and starting from the first test, the person with the highest score between the remaining students will become a member of the team. The committee is having a session to choose the permutation.
 
-		Is it possible that all $ 13 $ students have a chance of being a team member?}\label{problem:constructive_algo_16}
+\prob{https://artofproblemsolving.com/community/c6h1423008p8003911}{Iran TST 2017 D1P1}{TE}{In the country of Sugarland, there are $ 13 $ students in the IMO team selection camp. $ 6 $ team selection tests were taken and the results have came out. Assume that no students have the same score on the same test. To select the IMO team, the national committee of math Olympiad have decided to choose a permutation of these $ 6 $ tests and starting from the first test, the person with the highest score between the remaining students will become a member of the team. The committee is having a session to choose the permutation.
 
-	\solu{If a student is in $ x^{th} $ place in a test $ t_y $ , and he has a chance to get into the team iff the $ 1^th, 2^th\dots {x-1}^th $ persons in test $ t_y $ are already in the team. So $ x\leq 5 $. Make a $ 6\cdot 6 $ grid with place $ \cdot $ test. WHY?? Because it makes the best sense among other possible choices of the grid. A little bit of work produces a configuration where every student has a chance to get into the team.}
+Is it possible that all $ 13 $ students have a chance of being a team member?}\label{problem:constructive_algo_16}
 
+\solu{If a student is in $ x^{th} $ place in a test $ t_y $ , and he has a chance to get into the team iff the $ 1^th, 2^th\dots {x-1}^th $ persons in test $ t_y $ are already in the team. So $ x\leq 5 $. Make a $ 6\cdot 6 $ grid with place $ \cdot $ test. WHY?? Because it makes the best sense among other possible choices of the grid. A little bit of work produces a configuration where every student has a chance to get into the team.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h355784p1932924}{ISL 2009 C2}{M}{For any integer $ n\geq 2 $ , let $ N(n) $ be the maximum number of triples $ (a_i, b_i, c_i) $ , $ i=1, 2 \ldots, N(n) $ , consisting of nonnegative integers $ a_i $ , $ b_i $ and $ c_i $ such that the following two conditions are satisfied:
 
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
+\prob{https://artofproblemsolving.com/community/c6h355784p1932924}{ISL 2009 C2}{M}{For any integer $ n\geq 2 $ , let $ N(n) $ be the maximum number of triples $ (a_i, b_i, c_i) $ , $ i=1, 2 \ldots, N(n) $ , consisting of nonnegative integers $ a_i $ , $ b_i $ and $ c_i $ such that the following two conditions are satisfied:
 
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
 
-			\item $ a_i+b_i+c_i=n $ for all $ i=1, \ldots, N(n) $ ,
-			\item If $ i\neq j $ then $ a_i\neq a_j $ , $ b_i\neq b_j $ and $ c_i\neq c_j $
 
-		\end{enumerate}
+        \item $ a_i+b_i+c_i=n $ for all $ i=1, \ldots, N(n) $ ,
+        \item If $ i\neq j $ then $ a_i\neq a_j $ , $ b_i\neq b_j $ and $ c_i\neq c_j $
 
-		Determine $ N(n) $ for all $ n\geq 2 $.}\label{problem:constructive_algo_17}
+    \end{enumerate}
 
-	\solu{Find an upper bound. It’s easy. Then with some experiment, we see that this upper bound is achievable. So our next task is to find a construction. As it is related to $ 3 $ , we first try with $ n=3k $. Some experiment and experience gives us a construction.}
+Determine $ N(n) $ for all $ n\geq 2 $.}\label{problem:constructive_algo_17}
 
+\solu{Find an upper bound. It’s easy. Then with some experiment, we see that this upper bound is achievable. So our next task is to find a construction. As it is related to $ 3 $ , we first try with $ n=3k $. Some experiment and experience gives us a construction.}
 
 
 
 
-	\prob{}{}{M}{Let $ n $ be an integer. What is the maximum number of disjoint pairs of elements of the set $ \{ 1,2,\ldots , n \} $ such that the sums of the different pairs are different integers not exceeding $ n $ ?} \label{problem:constructive_algo_18}
 
+\prob{}{}{M}{Let $ n $ be an integer. What is the maximum number of disjoint pairs of elements of the set $ \{ 1,2,\ldots , n \} $ such that the sums of the different pairs are different integers not exceeding $ n $ ?} \label{problem:constructive_algo_18}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h17342p118721}{ISL 2002 C6}{H}{Let n be an even positive integer. Show that there is a permutation $ (x_1,x_2 \dots x_n) $ of $ (1,2\dots n) $ such that for every $ 1\leq i\leq n $ , the number $ x_{i+1} $ is one of the numbers $ 2x_i,2x_i-1,2x_i-n,2x_i-n-1 $. Hereby, we use the cyclic subscript convention, so that $ x_{n+1} $ means $ x_1 $.}\label{problem:graph_representation_5}
 
-	\medskip Some experiments show that our graph has more than $ 2 $ incoming and outgoing degree in all vertexes expect the first and last vertexes. So our lemma won’t work yet. To make use of our lemma we take a graph with half of the vertexes of our original graph and make each vertex $ v_{2k} $ represent two integers: $ (2k-1, 2k) $. Simple argument shows that this graph has an Euler Circuit, and surprisingly this itself is sufficient, as we can follow this circuit to get every integers in the interval $ [1,n] $.
+\prob{https://artofproblemsolving.com/community/c6h17342p118721}{ISL 2002 C6}{H}{Let n be an even positive integer. Show that there is a permutation $ (x_1,x_2 \dots x_n) $ of $ (1,2\dots n) $ such that for every $ 1\leq i\leq n $ , the number $ x_{i+1} $ is one of the numbers $ 2x_i,2x_i-1,2x_i-n,2x_i-n-1 $. Hereby, we use the cyclic subscript convention, so that $ x_{n+1} $ means $ x_1 $.}\label{problem:graph_representation_5}
 
+\medskip Some experiments show that our graph has more than $ 2 $ incoming and outgoing degree in all vertexes expect the first and last vertexes. So our lemma won’t work yet. To make use of our lemma we take a graph with half of the vertexes of our original graph and make each vertex $ v_{2k} $ represent two integers: $ (2k-1, 2k) $. Simple argument shows that this graph has an Euler Circuit, and surprisingly this itself is sufficient, as we can follow this circuit to get every integers in the interval $ [1,n] $.
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1352165p7389115}{USA TST 2017 P1}{E}{In a sports league, each team uses a set of at most $ t $ signature colors. A set $ S $ of teams is color-identifiable if one can assign each team in $ S $ one of their signature colors, such that no team in $ S $ is assigned any signature color of a different team in $ S $.\\
 
-		For all positive integers $ n $ and $ t $, determine the maximum integer $ g(n, t) $ such that: In any sports league with exactly $ n $ distinct colors present over all teams, one can always find a color-identifiable set of size at least $ g(n, t) $.}\label{problem:extremal_case_whole_8}
+\prob{https://artofproblemsolving.com/community/c6h1352165p7389115}{USA TST 2017 P1}{E}{In a sports league, each team uses a set of at most $ t $ signature colors. A set $ S $ of teams is color-identifiable if one can assign each team in $ S $ one of their signature colors, such that no team in $ S $ is assigned any signature color of a different team in $ S $.\\
 
-	\solu{First, guess the answer, then try taking the minimal set.}
+For all positive integers $ n $ and $ t $, determine the maximum integer $ g(n, t) $ such that: In any sports league with exactly $ n $ distinct colors present over all teams, one can always find a color-identifiable set of size at least $ g(n, t) $.}\label{problem:extremal_case_whole_8}
 
+\solu{First, guess the answer, then try taking the minimal set.}
 
 
 
 
-	\prob{https://artofproblemsolving.com/community/c7h1554574p9472772}{Putnam 2017 A4}{E}{$ 2N $ students take a quiz in which the possible scores are $ 0, 1\dots 10 $. It is given that each of these scores appeared at least once, and the average of their scores is $ 7.4 $. Prove that the students can be divided into two sets of $ N $ student with both sets having an average score of $ 7.4 $.}\label{problem:constructive_algo_19}
 
-	\solu{We take a set $ S_1=\{0, 1\dots 10\} $. Basically we have to partition the set of $ 2N $ into two equal sets with equal sum. So we pair $ S $ , and other leftovers and see what happens.}
+\prob{https://artofproblemsolving.com/community/c7h1554574p9472772}{Putnam 2017 A4}{E}{$ 2N $ students take a quiz in which the possible scores are $ 0, 1\dots 10 $. It is given that each of these scores appeared at least once, and the average of their scores is $ 7.4 $. Prove that the students can be divided into two sets of $ N $ student with both sets having an average score of $ 7.4 $.}\label{problem:constructive_algo_19}
 
+\solu{We take a set $ S_1=\{0, 1\dots 10\} $. Basically we have to partition the set of $ 2N $ into two equal sets with equal sum. So we pair $ S $ , and other leftovers and see what happens.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h126193p715430}{ISL 2005 C3}{MH}{Consider a $m\times n$ rectangular board consisting of $mn$ unit squares. Two of its unit squares are called adjacent if they have a common edge, and a path is a sequence of unit squares in which any two consecutive squares are adjacent. Two paths are called non-intersecting if they don't share any common squares.\\
 
-		Each unit square of the rectangular board can be colored black or white. We speak of a coloring of the board if all its $mn$ unit squares are colored.\\
+\prob{https://artofproblemsolving.com/community/c6h126193p715430}{ISL 2005 C3}{MH}{Consider a $m\times n$ rectangular board consisting of $mn$ unit squares. Two of its unit squares are called adjacent if they have a common edge, and a path is a sequence of unit squares in which any two consecutive squares are adjacent. Two paths are called non-intersecting if they don't share any common squares.\\
 
-		Let $N$ be the number of colorings of the board such that there exists at least one black path from the left edge of the board to its right edge. Let $M$ be the number of colorings of the board for which there exist at least two non-intersecting black paths from the left edge of the board to its right edge.\\
+    Each unit square of the rectangular board can be colored black or white. We speak of a coloring of the board if all its $mn$ unit squares are colored.\\
 
-		Prove that $N^{2}\geq M\times 2^{mn}$.}\label{problem:bijection_11}
+    Let $N$ be the number of colorings of the board such that there exists at least one black path from the left edge of the board to its right edge. Let $M$ be the number of colorings of the board for which there exist at least two non-intersecting black paths from the left edge of the board to its right edge.\\
 
-	\solu{Bijective relation problem, the condition has $ \times $, means we find a combinatorial model for the R.H.S. which is a pair of boards satisfying conditions. We want to show a surjection from this model to the model on the L.H.S.}
+Prove that $N^{2}\geq M\times 2^{mn}$.}\label{problem:bijection_11}
 
+\solu{Bijective relation problem, the condition has $ \times $, means we find a combinatorial model for the R.H.S. which is a pair of boards satisfying conditions. We want to show a surjection from this model to the model on the L.H.S.}
 
 
-	\prob{www.hehe.com}{Result by Erdos}{MH}{Given two \emph{different} sequence of integers $ (a_1, a_2\dots a_n), (b_1, b_2, \dots b_n) $ such that two $ \frac{n(n-1)}{2} $-tuples \[ a_1+a_2, a_1+a_3\dots a_{n-1}a_n\ \text{ and }\ b_1+b_2, b_1+b_3\dots b_{n-1}b_n \] are equal upto permutation. Prove that $ n=2^k $ for some $ k $.}\label{problem:generating_function_1}\label{algebraic_manipulation}
 
+\prob{www.hehe.com}{Result by Erdos}{MH}{Given two \emph{different} sequence of integers $ (a_1, a_2\dots a_n), (b_1, b_2, \dots b_n) $ such that two $ \frac{n(n-1)}{2} $-tuples \[ a_1+a_2, a_1+a_3\dots a_{n-1}a_n\ \text{ and }\ b_1+b_2, b_1+b_3\dots b_{n-1}b_n \] are equal upto permutation. Prove that $ n=2^k $ for some $ k $.}\label{problem:generating_function_1}\label{algebraic_manipulation}
 
-	\prob{www.hehe.com}{A reformulation of Catalan's Numbers}{MH}{Let $ n\geq 3 $ students all have different heights. In how many ways can they be arranged such that the heights of any three of them are not from left to right in the order: medium, tall, short?}\label{problem:catalan_recursion_1}\label{problem:generating_function_3}
 
-	\solu{The proof uses derivatives to construct a polynomial similar to a \textbf{Maclaurin Series}.}
+\prob{www.hehe.com}{A reformulation of Catalan's Numbers}{MH}{Let $ n\geq 3 $ students all have different heights. In how many ways can they be arranged such that the heights of any three of them are not from left to right in the order: medium, tall, short?}\label{problem:catalan_recursion_1}\label{problem:generating_function_3}
 
+\solu{The proof uses derivatives to construct a polynomial similar to a \textbf{Maclaurin Series}.}
 
-	\prob{}{}{E}{There are $n$ cubic polynomials with three distinct real roots each. Call them $P_1(x), P_2(x),\dots, P_n(x)$. Furthermore for any two polynomials $P_i, P_j$, $P_i(x)P_j(x)=0$ has exactly $5$ distinct real roots. Let $S$ be the set of roots of the equation \[P_1(x)P_2(x)\dots P_n(x)=0\]. Prove that
 
-		\begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
+\prob{}{}{E}{There are $n$ cubic polynomials with three distinct real roots each. Call them $P_1(x), P_2(x),\dots, P_n(x)$. Furthermore for any two polynomials $P_i, P_j$, $P_i(x)P_j(x)=0$ has exactly $5$ distinct real roots. Let $S$ be the set of roots of the equation \[P_1(x)P_2(x)\dots P_n(x)=0\]. Prove that
 
+    \begin{enumerate}[wide=0em, label=\arabic*, itemsep=0pt, parsep=0pt, font=\footnotesize\bfseries]
 
-			\item If for each $a, b$ there is exactly one $i \in \{1, \dots n\}$ such that $P_i(a)=P_i(b)=0$, then $n=7$.
-			\item If $n>7$, $|S| = 2n+1$.
 
-	\end{enumerate}}\label{problem:extremal_case_whole_9}
+        \item If for each $a, b$ there is exactly one $i \in \{1, \dots n\}$ such that $P_i(a)=P_i(b)=0$, then $n=7$.
+        \item If $n>7$, $|S| = 2n+1$.
 
+\end{enumerate}}\label{problem:extremal_case_whole_9}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1450192p8312110}{Serbia TST 2017 P2}{E}{Initially a pair $(x, y)$ is written on the board, such that exactly one of it's coordinates is odd. On such a pair we perform an operation to get pair $(\frac x 2, y+\frac x 2)$ if $2|x$ and $(x+\frac y 2, \frac y 2)$ if $2|y$. Prove that for every odd $n>1$ there is a even positive integer $b<n$ such that starting from the pair $(n, b)$ we will get the pair $(b, n)$ after finitely many operations.}\label{problem:invariant_rules_of_thumb_8}
 
-	\solu{Finding a construction through investigation and realizing that the infos and operations on $ x $ only defines the changes are enough for this problem.}
+\prob{https://artofproblemsolving.com/community/c6h1450192p8312110}{Serbia TST 2017 P2}{E}{Initially a pair $(x, y)$ is written on the board, such that exactly one of it's coordinates is odd. On such a pair we perform an operation to get pair $(\frac x 2, y+\frac x 2)$ if $2|x$ and $(x+\frac y 2, \frac y 2)$ if $2|y$. Prove that for every odd $n>1$ there is a even positive integer $b<n$ such that starting from the pair $(n, b)$ we will get the pair $(b, n)$ after finitely many operations.}\label{problem:invariant_rules_of_thumb_8}
 
+\solu{Finding a construction through investigation and realizing that the infos and operations on $ x $ only defines the changes are enough for this problem.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1450624p8316894}{Serbia TST 2017 P4}{E}{We have an $n \times n$ square divided into unit squares. Each side of unit square is called unit segment. Some isosceles right triangles of hypotenuse $2$ are put on the square so all their vertices's are also vertices's of unit squares. For which $n$ it is possible that every unit segment belongs to exactly one triangle (unit segment belongs to a triangle even if it's on the border of the triangle)?}\label{problem:constructive_algo_20}
 
-	\solu{Finding $ n $ is even, seeing $ 4 $ fails...}
+\prob{https://artofproblemsolving.com/community/c6h1450624p8316894}{Serbia TST 2017 P4}{E}{We have an $n \times n$ square divided into unit squares. Each side of unit square is called unit segment. Some isosceles right triangles of hypotenuse $2$ are put on the square so all their vertices's are also vertices's of unit squares. For which $n$ it is possible that every unit segment belongs to exactly one triangle (unit segment belongs to a triangle even if it's on the border of the triangle)?}\label{problem:constructive_algo_20}
 
+\solu{Finding $ n $ is even, seeing $ 4 $ fails...}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1545675p9374373}{China MO 2018 P2}{M}{Let $n$ and $k$ be positive integers and let
-		\[T = \{ (x,y,z) \in \mathbb{N}^3 \mid 1 \leq x,y,z \leq n \}\]
-		be the length $n$ lattice cube. Suppose that $3n^2 - 3n + 1 + k$ points of $T$ are colored red such that if $P$ and $Q$ are red points and $PQ$ is parallel to one of the coordinate axes, then the whole line segment $PQ$ consists of only red points.\\
 
-		Prove that there exists at least $k$ unit cubes of length $1$, all of whose vertices's are colored red.}\label{problem:double_counting_8}
+\prob{https://artofproblemsolving.com/community/c6h1545675p9374373}{China MO 2018 P2}{M}{Let $n$ and $k$ be positive integers and let
+    \[T = \{ (x,y,z) \in \mathbb{N}^3 \mid 1 \leq x,y,z \leq n \}\]
+    be the length $n$ lattice cube. Suppose that $3n^2 - 3n + 1 + k$ points of $T$ are colored red such that if $P$ and $Q$ are red points and $PQ$ is parallel to one of the coordinate axes, then the whole line segment $PQ$ consists of only red points.\\
 
+Prove that there exists at least $k$ unit cubes of length $1$, all of whose vertices's are colored red.}\label{problem:double_counting_8}
 
-	\solu{The inductive solution is tedious, and since we have to count the number of ``good'' boxes, we can try double counting. Explicitly counting all the ``good'' boxes.}
 
+\solu{The inductive solution is tedious, and since we have to count the number of ``good'' boxes, we can try double counting. Explicitly counting all the ``good'' boxes.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h1546234p9380562}{China MO 2018 P5}{MH}{Let $n \geq 3$ be an odd number and suppose that each square in a $n \times n$ chessboard is colored either black or white. Two squares are considered adjacent if they are of the same color and share a common vertex and two squares $a,b$ are considered connected if there exists a sequence of squares $c_1,\ldots,c_k$ with $c_1 = a, c_k = b$ such that $c_i, c_{i+1}$ are adjacent for $i=1,2,\ldots,k-1$.\\
 
-		Find the maximal number $M$ such that there exists a coloring admitting $M$ pairwise disconnected squares.}
+\prob{https://artofproblemsolving.com/community/c6h1546234p9380562}{China MO 2018 P5}{MH}{Let $n \geq 3$ be an odd number and suppose that each square in a $n \times n$ chessboard is colored either black or white. Two squares are considered adjacent if they are of the same color and share a common vertex and two squares $a,b$ are considered connected if there exists a sequence of squares $c_1,\ldots,c_k$ with $c_1 = a, c_k = b$ such that $c_i, c_{i+1}$ are adjacent for $i=1,2,\ldots,k-1$.\\
 
-	\solu{It's not hard to get the ans, now that the answer is guesses, and we have tried to prove with induction and couldn't find anything good, we try double counting. We notice that all the connected components in the $ n\times n $ are planar graphs. Now we use Euler's \hrf{theorem:planar_graph_theorem}{theorem} on Planar Graphs to find a value of $ M $ wrt to other values, and we double count the other values.}
+Find the maximal number $M$ such that there exists a coloring admitting $M$ pairwise disconnected squares.}
 
+\solu{It's not hard to get the ans, now that the answer is guesses, and we have tried to prove with induction and couldn't find anything good, we try double counting. We notice that all the connected components in the $ n\times n $ are planar graphs. Now we use Euler's \hrf{theorem:planar_graph_theorem}{theorem} on Planar Graphs to find a value of $ M $ wrt to other values, and we double count the other values.}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h84550p490581}{USAMO 2006 P2}{E}{For a given positive integer $k$ find, in terms of $k$, the minimum value of $N$ for which there is a set of $2k + 1$ distinct positive integers that has sum greater than $N$ but every subset of size $k$ has sum at most $\tfrac{N}{2}.$}\label{problem:extremal_case_whole_10}
 
-	\solu{The best or simple looking set is the set of consecutive integers. So if there are some `holes', we can fill them up to some extent, this opens two sub-cases.}
+\prob{https://artofproblemsolving.com/community/c6h84550p490581}{USAMO 2006 P2}{E}{For a given positive integer $k$ find, in terms of $k$, the minimum value of $N$ for which there is a set of $2k + 1$ distinct positive integers that has sum greater than $N$ but every subset of size $k$ has sum at most $\tfrac{N}{2}.$}\label{problem:extremal_case_whole_10}
 
+\solu{The best or simple looking set is the set of consecutive integers. So if there are some `holes', we can fill them up to some extent, this opens two sub-cases.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h34314p213007}{USAMO 2005 P1}{E}{Determine all composite positive integers $n$ for which it is possible to arrange all divisors of $n$ that are greater than $ 1 $ in a circle so that no two adjacent divisors are relatively prime.}\label{problem:induction_type1_23}
 
+\prob{https://artofproblemsolving.com/community/c6h34314p213007}{USAMO 2005 P1}{E}{Determine all composite positive integers $n$ for which it is possible to arrange all divisors of $n$ that are greater than $ 1 $ in a circle so that no two adjacent divisors are relatively prime.}\label{problem:induction_type1_23}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h84558p490682}{USAMO 2005 P5}{E}{A mathematical frog jumps along the number line. The frog starts at $1$, and jumps according to the following rule: if the frog is at integer $n$, then it can jump either to $n+1$ or to $n + 2^{m_n+1}$ where $2^{m_n}$ is the largest power of $2$ that is a factor of $n$. Show that if $k \geq 2$ is a positive integer and $i$ is a nonnegative integer, then the minimum number of jumps needed to reach $2^ik$ is greater than the minimum number of jumps needed to reach $2^i.$}\label{problem:induction_type1_24}
 
-	\solu{The main idea is to notice that the operation only uses powers of $ 2 $. And it depends on only the power of $ 2 $ in the integers, and in the sequence of $ 2 $-powers, the operation is very nice.}
+\prob{https://artofproblemsolving.com/community/c6h84558p490682}{USAMO 2005 P5}{E}{A mathematical frog jumps along the number line. The frog starts at $1$, and jumps according to the following rule: if the frog is at integer $n$, then it can jump either to $n+1$ or to $n + 2^{m_n+1}$ where $2^{m_n}$ is the largest power of $2$ that is a factor of $n$. Show that if $k \geq 2$ is a positive integer and $i$ is a nonnegative integer, then the minimum number of jumps needed to reach $2^ik$ is greater than the minimum number of jumps needed to reach $2^i.$}\label{problem:induction_type1_24}
 
+\solu{The main idea is to notice that the operation only uses powers of $ 2 $. And it depends on only the power of $ 2 $ in the integers, and in the sequence of $ 2 $-powers, the operation is very nice.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h60727p366446}{ISL 1991 P10}{E}{Suppose $ \,G\,$ is a connected graph with $ \,k\,$ edges. Prove that it is possible to label the edges $ 1,2,\ldots ,k\,$ in such a way that at each vertex which belongs to two or more edges, the greatest common divisor of the integers labeling those edges is equal to $ 1 $.}\label{problem:induction_type1_27}
 
+\prob{https://artofproblemsolving.com/community/c6h60727p366446}{ISL 1991 P10}{E}{Suppose $ \,G\,$ is a connected graph with $ \,k\,$ edges. Prove that it is possible to label the edges $ 1,2,\ldots ,k\,$ in such a way that at each vertex which belongs to two or more edges, the greatest common divisor of the integers labeling those edges is equal to $ 1 $.}\label{problem:induction_type1_27}
 
 
-	\prob{}{}{E}{A robot has $ n $ modes, and programmed as such: in mode $ i $ the robot will go at a speed of $ i \text{ms}^{-1} $ for $ i $ seconds. At the beginning of its journey, you have to give it a permutation of $ \{1, 2, \dots n \} $. What is the maximum distance you can make the robot go?}\label{problem:swapping_5}
 
+\prob{}{}{E}{A robot has $ n $ modes, and programmed as such: in mode $ i $ the robot will go at a speed of $ i \text{ms}^{-1} $ for $ i $ seconds. At the beginning of its journey, you have to give it a permutation of $ \{1, 2, \dots n \} $. What is the maximum distance you can make the robot go?}\label{problem:swapping_5}
 
 
-	\prob{}{}{E}{A slight variation of the previous problem, in this case, the problem goes at a speed of $ (n-1) \text{ms}^{-1} $ for $ i $ seconds in mode $ i $.}\label{problem:swapping_6}
 
+\prob{}{}{E}{A slight variation of the previous problem, in this case, the problem goes at a speed of $ (n-1) \text{ms}^{-1} $ for $ i $ seconds in mode $ i $.}\label{problem:swapping_6}
 
 
 
-	\prob{}{}{E}{$ m $ people each ordered $ n $ books but because Ittihad was the mailman, he messed up. Everyone got $ n $ books but not necessarily the one they wanted you need to fix this. To go to a house from another house it takes one hour. You can carry one book with you during any trip (at most one). You know who has which books and all books are different (i,e, $ n * m $ different books). Prove that you can always finish the job in $ m*(n+\frac{1}{2}) $ hours}\label{problem:graph_representation_6}
 
-	\solu{Thinking about the penultimate step, when we have to go to a house empty handed. Thinking in this way gives us a way to pair the houses up, and since pairing...}
+\prob{}{}{E}{$ m $ people each ordered $ n $ books but because Ittihad was the mailman, he messed up. Everyone got $ n $ books but not necessarily the one they wanted you need to fix this. To go to a house from another house it takes one hour. You can carry one book with you during any trip (at most one). You know who has which books and all books are different (i,e, $ n * m $ different books). Prove that you can always finish the job in $ m*(n+\frac{1}{2}) $ hours}\label{problem:graph_representation_6}
 
-	\solu{Another way to do this is to convert it to a multi-graph. Now go to a house and return with a book means removing two edges from that vertex. We play around with it for sometime}
+\solu{Thinking about the penultimate step, when we have to go to a house empty handed. Thinking in this way gives us a way to pair the houses up, and since pairing...}
 
+\solu{Another way to do this is to convert it to a multi-graph. Now go to a house and return with a book means removing two edges from that vertex. We play around with it for sometime}
 
 
 
-	\prob{}{}{E}{There are $ n $ campers in a camp and they will try to solve a IMO P6 but everyone has a confidence threshold (they will solve the problem by group solving). For example Laxem has threshold $ 5 $. I.e. if he's in the group, the group needs to contain at least $ 5 $ people (him included). A group is `confident' when everyone of the team is confident. Now MM wants to make a list of possible ``perfect confident'' groups. I.e. groups that are confident but adding anyone else will destroy the confidence. How long can his list be?}\label{problem:extreme_object_15}
 
+\prob{}{}{E}{There are $ n $ campers in a camp and they will try to solve a IMO P6 but everyone has a confidence threshold (they will solve the problem by group solving). For example Laxem has threshold $ 5 $. I.e. if he's in the group, the group needs to contain at least $ 5 $ people (him included). A group is `confident' when everyone of the team is confident. Now MM wants to make a list of possible ``perfect confident'' groups. I.e. groups that are confident but adding anyone else will destroy the confidence. How long can his list be?}\label{problem:extreme_object_15}
 
 
-	\prob{http://acm.timus.ru/problem.aspx?space=1&num=1862}{timus 1862}{ME}{}\label{problem:binary_heap_1}\label{problem:graph_representation_7}
 
+\prob{http://acm.timus.ru/problem.aspx?space=1&num=1862}{timus 1862}{ME}{}\label{problem:binary_heap_1}\label{problem:graph_representation_7}
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h589935p3493451}{ARO 2014 P9.7}{E}{In a country, mathematicians chose an $\alpha> 2$ and issued coins in denominations of 1 ruble, as well as $\alpha ^k$ rubles for each positive integer k. $\alpha$ was chosen so that the value of each coins, except the smallest, was irrational. Is it possible that any natural number of rubles can be formed with at most 6 of each denomination of coins?}\label{problem:recursive_solution_6}
 
+\prob{https://artofproblemsolving.com/community/c6h589935p3493451}{ARO 2014 P9.7}{E}{In a country, mathematicians chose an $\alpha> 2$ and issued coins in denominations of 1 ruble, as well as $\alpha ^k$ rubles for each positive integer k. $\alpha$ was chosen so that the value of each coins, except the smallest, was irrational. Is it possible that any natural number of rubles can be formed with at most 6 of each denomination of coins?}\label{problem:recursive_solution_6}
 
 
-	\prob{www.hehe.com}{Saint Petersburg 2001}{MH}{The number $n$ is written on a board. $A$ and $B$ take turns, each turn consisting of replacing the number $n$ on the board with $n - 1$ or $\floor{\frac{n+1}{2}}$. The player who writes the number $1$ wins. Who has the winning strategy?}\label{problem:recursive_solution_7}
 
-	\solu{Recursively building the losing positions.}
+\prob{www.hehe.com}{Saint Petersburg 2001}{MH}{The number $n$ is written on a board. $A$ and $B$ take turns, each turn consisting of replacing the number $n$ on the board with $n - 1$ or $\floor{\frac{n+1}{2}}$. The player who writes the number $1$ wins. Who has the winning strategy?}\label{problem:recursive_solution_7}
 
+\solu{Recursively building the losing positions.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h405391p2262420}{ARO 2011 P11.6}{E}{There are more than $n^2$ stones on the table. Peter and Vasya play a game, Peter starts. Each turn, a player can take any prime number less than $n$ stones, or any multiple of $n$ stones, or $1$ stone. Prove that Peter always can take the last stone (regardless of Vasya's strategy).}\label{problem:pairing_and_copying_1}
 
+\prob{https://artofproblemsolving.com/community/c6h405391p2262420}{ARO 2011 P11.6}{E}{There are more than $n^2$ stones on the table. Peter and Vasya play a game, Peter starts. Each turn, a player can take any prime number less than $n$ stones, or any multiple of $n$ stones, or $1$ stone. Prove that Peter always can take the last stone (regardless of Vasya's strategy).}\label{problem:pairing_and_copying_1}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h147159p832730}{ARO 2007 P9.7}{E}{Two players by turns draw diagonals in a regular $(2n+1)$-gon ($n>1$). It is forbidden to draw a diagonal, which was already drawn, or intersects an odd number of already drawn diagonals. The player, who has no legal move, loses. Who has a winning strategy?}\label{problem:graph_representation_8}
 
-	\solu{Turning the diagonals as vertices, and connection being intersections, we get a graph to play the game on. We then count the degrees.}
+\prob{https://artofproblemsolving.com/community/c6h147159p832730}{ARO 2007 P9.7}{E}{Two players by turns draw diagonals in a regular $(2n+1)$-gon ($n>1$). It is forbidden to draw a diagonal, which was already drawn, or intersects an odd number of already drawn diagonals. The player, who has no legal move, loses. Who has a winning strategy?}\label{problem:graph_representation_8}
 
+\solu{Turning the diagonals as vertices, and connection being intersections, we get a graph to play the game on. We then count the degrees.}
 
 
-	\prob{}{}{E}{After tiling a $ 6\times 6 $ box with dominoes, prove that a line parallel to the sides of the box can be drawn that this line doesn't cut any dominoes.}\label{problem:double_counting_9}
 
-	\solu{Double count how many lines ``cut'' a domino, and domino number.}
+\prob{}{}{E}{After tiling a $ 6\times 6 $ box with dominoes, prove that a line parallel to the sides of the box can be drawn that this line doesn't cut any dominoes.}\label{problem:double_counting_9}
 
+\solu{Double count how many lines ``cut'' a domino, and domino number.}
 
 
-	\prob{}{}{E}{There are $ 100 $ points on the plane. You have to cover them with discs, so that any two disks are at a distance of $ 1 $. Prove that you can do this in such a way that the total diameter of the disks is $ < 100 $.}\label{problem:induction_type1_28}
 
-	\solu{As the number $ 100 $ is very random, we suspect that is true for all values. So we can use induction}
+\prob{}{}{E}{There are $ 100 $ points on the plane. You have to cover them with discs, so that any two disks are at a distance of $ 1 $. Prove that you can do this in such a way that the total diameter of the disks is $ < 100 $.}\label{problem:induction_type1_28}
 
+\solu{As the number $ 100 $ is very random, we suspect that is true for all values. So we can use induction}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h589938p3493455}{ARO 2014 P10.8}{M}{Given are $n$ pairwise intersecting convex $k$-gons on the plane. Any of them can be transferred to any other by a homothety with a positive coefficient. Prove that there is a point in a plane belonging to at least $1 +\frac{n-1}{2k}$ of these $k$-gons.}\label{problem:changing_term_1}
 
-	\solu{The most natural such point should be a vertex of a polygon. And these kinda problems use PHP more often, so we will have to divide by $k$ somewhere. Again to find the polygon to use the PHP we will have to divide by $n$ also. So we want to have $nk$ in the denominator. We change the term to achieve this and Ta-Da! we get a fine term to work with.}
+\prob{https://artofproblemsolving.com/community/c6h589938p3493455}{ARO 2014 P10.8}{M}{Given are $n$ pairwise intersecting convex $k$-gons on the plane. Any of them can be transferred to any other by a homothety with a positive coefficient. Prove that there is a point in a plane belonging to at least $1 +\frac{n-1}{2k}$ of these $k$-gons.}\label{problem:changing_term_1}
 
+\solu{The most natural such point should be a vertex of a polygon. And these kinda problems use PHP more often, so we will have to divide by $k$ somewhere. Again to find the polygon to use the PHP we will have to divide by $n$ also. So we want to have $nk$ in the denominator. We change the term to achieve this and Ta-Da! we get a fine term to work with.}
 
 
-	\prob{https://ioi2018.jp/wp-content/tasks/contest1/combo.pdf}{IOI 2018 P1}{E}{}\label{problem:induction_type1_29}
 
+\prob{https://ioi2018.jp/wp-content/tasks/contest1/combo.pdf}{IOI 2018 P1}{E}{}\label{problem:induction_type1_29}
 
 
 
-	
 
 
 
-	--------------------
 
 
+--------------------
 
 
-	
 
 
 
-	\prob{https://artofproblemsolving.com/community/c6h34314p213007}{USAMO 2005 P1}{E}{Determine all composite positive integers $n$ for which it is possible to arrange all divisors of $n$ that are greater than 1 in a circle so that no two adjacent divisors are relatively prime.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h34317p213012}{USAMO 2005 P4}{E}{Legs $L_1, L_2, L_3, L_4$ of a square table each have length $n$, where $n$ is a positive integer. For how many ordered 4-tuples $(k_1, k_2, k_3, k_4)$ of nonnegative integers can we cut a piece of length $k_i$ from the end of leg $L_i \; (i=1,2,3,4)$ and still have a stable table?
 
-		(The table is stable if it can be placed so that all four of the leg ends touch the floor. Note that a cut leg of length 0 is permitted.)}
+\prob{https://artofproblemsolving.com/community/c6h34314p213007}{USAMO 2005 P1}{E}{Determine all composite positive integers $n$ for which it is possible to arrange all divisors of $n$ that are greater than 1 in a circle so that no two adjacent divisors are relatively prime.}
 
 
-	\prob{https://artofproblemsolving.com/community/c6h84550p490581}{USAMO 2006 P2}{M}{For a given positive integer $k$ find, in terms of $k$, the minimum value of $N$ for which there is a set of $2k + 1$ distinct positive integers that has sum greater than $N$ but every subset of size $k$ has sum at most $\tfrac{N}{2}.$}
+\prob{https://artofproblemsolving.com/community/c6h34317p213012}{USAMO 2005 P4}{E}{Legs $L_1, L_2, L_3, L_4$ of a square table each have length $n$, where $n$ is a positive integer. For how many ordered 4-tuples $(k_1, k_2, k_3, k_4)$ of nonnegative integers can we cut a piece of length $k_i$ from the end of leg $L_i \; (i=1,2,3,4)$ and still have a stable table?
 
+(The table is stable if it can be placed so that all four of the leg ends touch the floor. Note that a cut leg of length 0 is permitted.)}
 
-	\prob{https://artofproblemsolving.com/community/c6h84558p490682}{USAMO 2006 P5}{M}{A mathematical frog jumps along the number line. The frog starts at $1$, and jumps according to the following rule: if the frog is at integer $n$, then it can jump either to $n+1$ or to $n + 2^{m_n+1}$ where $2^{m_n}$ is the largest power of $2$ that is a factor of $n.$ Show that if $k \geq 2$ is a positive integer and $i$ is a nonnegative integer, then the minimum number of jumps needed to reach $2^ik$ is greater than the minimum number of jumps needed to reach $2^i$.}	
 
+\prob{https://artofproblemsolving.com/community/c6h84550p490581}{USAMO 2006 P2}{M}{For a given positive integer $k$ find, in terms of $k$, the minimum value of $N$ for which there is a set of $2k + 1$ distinct positive integers that has sum greater than $N$ but every subset of size $k$ has sum at most $\tfrac{N}{2}.$}
 
-	\prob{https://artofproblemsolving.com/community/c5h274370p1485139}{USAMO 2009 P2}{EM}{Let $n$ be a positive integer. Determine the size of the largest subset of $\{ -n, -n+1, \dots, n-1, n\}$ which does not contain three elements $a$, $b$, $c$ (not necessarily distinct) satisfying $a+b+c=0$.}
 
+\prob{https://artofproblemsolving.com/community/c6h84558p490682}{USAMO 2006 P5}{M}{A mathematical frog jumps along the number line. The frog starts at $1$, and jumps according to the following rule: if the frog is at integer $n$, then it can jump either to $n+1$ or to $n + 2^{m_n+1}$ where $2^{m_n}$ is the largest power of $2$ that is a factor of $n.$ Show that if $k \geq 2$ is a positive integer and $i$ is a nonnegative integer, then the minimum number of jumps needed to reach $2^ik$ is greater than the minimum number of jumps needed to reach $2^i$.}	
 
-	
-	\prob{https://artofproblemsolving.com/community/c6h61012p367352}{IMO 1979 P3}{}{Two circles in a plane intersect. $A$ is one of the points of intersection. Starting simultaneously from $A$ two points move with constant speed, each travelling along its own circle in the same sense. The two points return to $A$ simultaneously after one revolution. Prove that there is a fixed point $P$ in the plane such that the two points are always equidistant from $P.$}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+\prob{https://artofproblemsolving.com/community/c5h274370p1485139}{USAMO 2009 P2}{EM}{Let $n$ be a positive integer. Determine the size of the largest subset of $\{ -n, -n+1, \dots, n-1, n\}$ which does not contain three elements $a$, $b$, $c$ (not necessarily distinct) satisfying $a+b+c=0$.}
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h61012p367352}{IMO 1979 P3}{}{Two circles in a plane intersect. $A$ is one of the points of intersection. Starting simultaneously from $A$ two points move with constant speed, each travelling along its own circle in the same sense. The two points return to $A$ simultaneously after one revolution. Prove that there is a fixed point $P$ in the plane such that the two points are always equidistant from $P.$}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,16 +1,14 @@
 \graphicspath{{Pics/}}
 
-
-\newpage\section{Orthocenter--Circumcircle--NinePoint Circle}
-
+\newpage
+\section{Orthocenter--Circumcircle--NinePoint Circle}
 
 Notes everyone need to memorize by heart top to bottom:
 \begin{enumerate} [itemsep=0pt]
     \item \href{http://yufeizhao.com/olympiad/imo2008/zhao-circles.pdf}{Circles -
         Yufei Zhao}
-    \item \href{http://yufeizhao.com/olympiad/cyclic_quad.pdf}{Big
-        Picture - Yufei Zhao} \item
-        \href{http://yufeizhao.com/olympiad/power_of_a_point.pdf}{POP - Yufei Zhao}
+    \item \href{http://yufeizhao.com/olympiad/cyclic_quad.pdf}{Big Picture - Yufei Zhao} 
+    \item \href{http://yufeizhao.com/olympiad/power_of_a_point.pdf}{POP - Yufei Zhao}
     \item \href{http://yufeizhao.com/olympiad/three_geometry_lemmas.pdf}{3 Lemmas
         - Yufei Zhao} 
 \end{enumerate}
@@ -21,11 +19,6 @@ Notes everyone need to memorize by heart top to bottom:
     circumcircle. Usually, $DEF$ is the orthic triangle in this chapter. $MNP$
     is the median triangle.
 }
-
-
-\newpage
-\subsection{Lemmas}
-
 
 
 \begin{minipage}{.65\textwidth} 
@@ -42,6 +35,12 @@ Notes everyone need to memorize by heart top to bottom:
         Which implies that $ P, A', Q $ are collinear.  
     } 
 
+\end{minipage}\hfill% 
+\begin{minipage}{.33\textwidth} 
+    \figdf{}{ChinaTST2018T1P3_lemm}{}
+\end{minipage}
+
+\begin{minipage}{.65\linewidth}
     \lem{Weird point Y}{
         Let $Y$ be a point on $AC$ such that $\triangle CBY \sim CAB$. Let $E$
         bet the foot of $B$ on $AC$, let $N$ be the midpoint of $AB$. Then
@@ -50,14 +49,10 @@ Notes everyone need to memorize by heart top to bottom:
     \begin{solution}
         Draw te circles, $BNKO$ and $BKYC$.
     \end{solution}
-\end{minipage}\hfill% 
-\begin{minipage}{.33\textwidth} 
-    \figdf{}{ChinaTST2018T1P3_lemm}{}
+\end{minipage}\hfill%
+\begin{minipage}{.33\linewidth}
     \figdf{}{CHKMO_2014_p4_lem_1}{}
 \end{minipage}
-
-
-
 
 \newpage
 \subsection{Problems}
@@ -113,6 +108,8 @@ Notes everyone need to memorize by heart top to bottom:
     \figdf{.99}{USAMO_2014_P5}{}
     \figdf{.9}{SATST2015proposed_by_bura/derakynay1134-1}{} 
 \end{minipage}	
+
+\newpage
 
 \begin{minipage}{.5\textwidth} 
     \prob{}{Bewarish 1}{E}{
@@ -223,7 +220,7 @@ Notes everyone need to memorize by heart top to bottom:
 
 \newpage
 \prob{http://igo-official.ir/wp-content/uploads/2017/09/4th_IGO_Problems-and-Solutions.pdf}
-{IGO 2017 Advance P3}{E}{
+{IGO 2017 A3}{E}{
     Let $O$ be the circumcenter of $\triangle ABC$. Line $CO$ intersects the
     altitude through $A$ at point $K$. Let $P, M$ be the midpoints of $AK, AC$
     respectively. If $PO$ intersects $BC$ at $Y$ , and the circumcircle of
@@ -403,52 +400,90 @@ Notes everyone need to memorize by heart top to bottom:
 \end{minipage}
 
 
-
-\prob{https://artofproblemsolving.com/community/c6h1289432p6815893}{IRAN 3rd
-    Round 2016 P1}{E}{
+\prob{https://artofproblemsolving.com/community/c6h1289432p6815893}
+{IRAN 3rd Round 2016 P1}{E}{
     Let $ABC$ be an arbitrary triangle, $P$ is the intersection
     point of the altitude from $C$ and the tangent line from $A$ to the
     circumcircle. The bisector of angle $A$ intersects $BC$ at $D$. $PD$
     intersects $AB$ at $K$, if $H$ is the orthocenter then prove : $HK\perp AD$
 }
 
-
 \solu{Finding a set of Collinear points.}
 
 
-\prob{}{}{E}{
+\prob{}
+{}{E}{
     Let $\triangle ABC$ be a triangle. $F, G$ be arbitrary points on $AB, AC$.
     Take $D, E$ midpoint of $BF, CG$. Show that the nine-point centers of
     $\triangle ABC,\ \triangle ADE,\ \triangle AFG$ are collinear.
 }\label{eriq_lemma_3}
 
 
-\prob{http://igo-official.ir/wp-content/uploads/2017/09/4th_IGO_Problems-and-Solutions.pdf}{IGO 2017 Advance P4}{}{T
-    hree circles $W_1 , W_2$ and $W_3$  touches a line $l$ at
-    $A ,B ,C$  respectively ($B$ lies between $A$ and $C$ ). $W_2$ touches  $W_1$
+\prob{http://igo-official.ir/wp-content/uploads/2017/09/4th_IGO_Problems-and-Solutions.pdf}
+{IGO 2017 A4}{}{
+    Three circles $W_1 , W_2$ and $W_3$  touches a line $l$ at
+    $A ,B ,C$  respectively ($B$ lies between $A$ and $C$). $W_2$ touches  $W_1$
     and $W_3$. Let $l_2$ be the other common external tangent of  $W_1$ and $W_3$.
     $l_2$ cuts $W_2$ at $X ,Y$. Perpendicular to $l$ at $B$ intersects $W_2$ again
     at $K$. Prove that $KX$ and $KY$ are tangent to the circle with diameter
     $AC$.
 }
 
-\solu{Finding a Orthocenter Figure in these circle simplifies the problem a
-lot.}
+\figdf{}{IGO_2017_A4}{}
+
+\begin{solution}
+    Using the names of the vertices in the diagram, we let $UV$ be a segment
+    parallel to $O_1, O_2$. Step by step we prove that
+    \begin{enumerate}
+        \item $O$ is the center of $SHB$, then $O, O_1, O_2$ are collinear.
+        \item $ZM$ bisects $\angle XZY$. 
+        \item $BUZVM$ is cyclic.
+        \item $ZU^2 = ZH.ZB$.
+    \end{enumerate}
+\end{solution}
 
 
 
-\prob{https://artofproblemsolving.com/community/c6h1513396p8996816}{2017 IGO
-    Advanced P2}{E}{
-    We have six pairwise non-intersecting circles that the radius
-    of each is at least one (no circle lies in the interior of any other circle).
-    Prove that the radius of any circle intersecting all the six circles, is at
-    least one.
+\prob{https://artofproblemsolving.com/community/c6h1513396p8996816}
+{IGO 2017 A2}{E}{
+    We have six pairwise non-intersecting circles that the radius of each is
+    at least one (no circle lies in the interior of any other circle). Prove
+    that the radius of any circle intersecting all the six circles, is at least one.
 }
 
+\begin{solution}
+    We first expand the circles so that they touch each other in a ring like
+    shape. Then we take the largest diameter of the convex hexagon with the
+    centers. We show that any circle that intersects those two cirlces must
+    have radius at least $1$.
+\end{solution}
+
+\prob{https://artofproblemsolving.com/community/c6h1709992p11022223}
+{IGO 2017 A4}{M}{
+    Quadrilateral $ABCD$ is circumscribed around a circle. Diagonals $AC,BD$
+    are not perpendicular to each other. The angle bisectors of angles between
+    these diagonals, intersect the segments $AB,BC,CD$ and $DA$ at points
+    $K,L,M$ and $N$. Given that $KLMN$ is cyclic, prove that so is $ABCD$.
+}
+
+\begin{minipage}{.5\linewidth}
+    \begin{solution}
+        If we let $K', L', M', N'$ be the points where the incenter touches the
+        sides, then we wish to prove that $K= K'$ and so on. To prove this, we
+        first prove that $KL, MN, AC$ are concurrent. \\
+
+        Then we prove that $K'L'$ and $M'N'$ also passes through the same
+        point. This lets us use the lemmas of complete cyclic quadrilaterals.
+    \end{solution}
+\end{minipage}\hfill%
+\begin{minipage}{.5\linewidth}
+    \figdf{.9}{IGO_2018_A4}{}
+\end{minipage}
 
 
-\prob{https://artofproblemsolving.com/community/c6h1632766p10256362}{ARO 2018
-    P10.2}{E}{
+
+\prob{https://artofproblemsolving.com/community/c6h1632766p10256362}
+{ARO 2018 P10.2}{E}{
     Let $\triangle ABC$ be an acute-angled triangle with $AB<AC$. Let
     $M$ and $N$ be the midpoints of $AB$ and $AC$, respectively; let $AD$ be an
     altitude in this triangle. A point $K$ is chosen on the segment $MN$ so that
@@ -458,9 +493,8 @@ lot.}
 
 
 
-
-\prob{https://artofproblemsolving.com/community/c6h587992p3480807}{ARO 2014
-    P9.4}{E}{
+\prob{https://artofproblemsolving.com/community/c6h587992p3480807}
+{ARO 2014 P9.4}{E}{
     Let $M$ be the midpoint of the side $AC$ of acute-angled triangle
     $ABC$ with $AB>BC$. Let $\Omega $ be the circumcircle of $ ABC$. The tangents
     to $ \Omega $ at the points $A$ and $C$ meet at $P$, and $BP$ and $AC$
@@ -471,8 +505,8 @@ lot.}
 
 
 
-\prob{https://artofproblemsolving.com/community/c6h79788p456609}{APMO 1999
-    P3}{E}{
+\prob{https://artofproblemsolving.com/community/c6h79788p456609}
+{APMO 1999 P3}{E}{
     Let $\Gamma_1$ and $\Gamma_2$ be two circles intersecting at $P$ and
     $Q$. The common tangent, closer to $P$, of $\Gamma_1$ and $\Gamma_2$ touches
     $\Gamma_1$ at $A$ and $\Gamma_2$ at $B$. The tangent of $\Gamma_1$ at $P$
@@ -483,7 +517,8 @@ lot.}
 
 
 
-\prob{}{Simurgh 2019 P2}{E}{
+\prob{}
+{Simurgh 2019 P2}{E}{
     Let $ ABC $ be an isosceles triangle, $ AB=AC $.
     Suppoe that $ Q $ is a point such that $ AQ=AB,\ AQ||BC $. Let $ P $ be the
     foot of perpendicular line from $ Q $ to $ BC $. Prove that the circle with
@@ -492,9 +527,24 @@ lot.}
 
 
 
-\prob{http://emc.mnm.hr/wp-content/uploads/2018/12/EMC_2018_Seniors_ENG_Solutions-2.pdf}{European
-    Mathematics Cup 2018 P2}{E}{
-    Later
+\prob{http://emc.mnm.hr/wp-content/uploads/2018/12/EMC_2018_Seniors_ENG_Solutions-2.pdf}
+{European Mathematics Cup 2018 P2}{E}{
+    Let $ABC$ be a triangle with $|AB|<|AC|$. Let $k$ be the circumcircle
+    of $\triangle ABC$ and let $O$ be the center of $k$. Point $M$ is the
+    midpoint of the arc $\widehat{BC}$ of $k$ not containing $A$. Let $D$ be
+    the second intersection of the perpendicular line from $M$ to $AB$ with
+    $k$ and $E$ be the second intersection of the perpendicular line from $M$
+    to $AC$ with $k$. 
+
+    Points $X$ and $Y$ are the intersections of $CD$ and
+    $BE$ with $OM$ respectively. Denote by $k_{b}$ and $k_{c}$ circumcircles
+    of triangles $BDX$ and $CEY$ respectively. Let $G$ and $H$ be the
+    second intersections of $k_{b}$ and $k_{c}$ with $AB$ and $AC$
+    respectively. Denote by $k_{a}$ the circumcircle of triangle $AGH$.
+
+    Prove that $O$ is the circumcenter of $\triangle O_{a}O_{b}O_{c},$ where
+    $O_{a}, O_{b}, O_{c}$ are the centers of $k_{a}, k_{b}, k_{c}$
+    respectively.
 }
 
 
@@ -531,13 +581,14 @@ lot.}
     Now let $I_1, I_2, I_3$ and $I_4$ be the incenters of $AGF, DGE, CHE, BHF$
     respectively. Then $I_1I_2$ and $I_3I_4$ are the external bisectors of
     angles $EGF$ and $EHF$ respectively, and by symmetry about $EF$ these
-    lines intersect at a (possibly ideal) point $X \in EF$. Finally, we may
-    angle chase to find that $E, I_1, I_2, F$ and $E, I_3, I_4, F$ are
-    quadruples of concyclic points. If $I_1I_2$ is parallel to $I_3I_4$ then
-    we may easily conclude by symmetry about the perpendicular bisector of
-    $EF$. Otherwise by Power of a Point from $X$ we have $XI_1 \cdot XI_2 = XE
-    \cdot XF = XI_3 \cdot XI_4$, so $I_1, I_2, I_3, I_4$ are concyclic, as
-    desired.
+    lines intersect at a (possibly ideal) point $X \in EF$.\\
+
+    Finally, we may angle chase to find that $E, I_1, I_2, F$ and $E, I_3,
+    I_4, F$ are quadruples of concyclic points. If $I_1I_2$ is parallel to
+    $I_3I_4$ then we may easily conclude by symmetry about the perpendicular
+    bisector of $EF$. Otherwise by Power of a Point from $X$ we have $XI_1
+    \cdot XI_2 = XE \cdot XF = XI_3 \cdot XI_4$, so $I_1, I_2, I_3, I_4$ are
+    concyclic, as desired.
 \end{solution}
 
 
@@ -546,18 +597,26 @@ lot.}
 
 
 
-\prob{https://artofproblemsolving.com/community/c6h418983p2365045}{ISL 2011
-    G8}{EM}{
+\prob{https://artofproblemsolving.com/community/c6h418983p2365045}
+{ISL 2011 G8}{EM}{
     Let $ABC$ be an acute triangle with circumcircle $\Gamma$. Let $\ell$
     be a tangent line to $\Gamma$, and let $\ell_a, \ell_b$ and $\ell_c$ be the
     lines obtained by reflecting $\ell$ in the lines $BC$, $CA$ and $AB$,
     respectively. Show that the circumcircle of the triangle determined by the
     lines $\ell_a, \ell_b$ and $\ell_c$ is tangent to the circle $\Gamma$.
 }
+\figdf{.8}{ISL_2011_G8}{}
 
-\solu{Find the translated triangle circumscribed in $ \odot ABC $. Once you
-    find the properties of this triangle and the relations between this and the
-common touch point, the problem becomes obvious.}
+\solu{
+    The main problem here are the reflected lines. We need to somehow know
+    more about them. So we come up with some ways to construct the three lines
+    without drawing the tangent $l$, which leads us to the reflection of $D$
+    over the three sides idea. 
+
+    And after doing some angle chasing to find out the angles of the triangle,
+    we begin to see relationships between the reflection points and the
+    vertices of the triangle.
+}
 
 
 
@@ -651,22 +710,21 @@ common touch point, the problem becomes obvious.}
 }
 
 
-
-\prob{https://artofproblemsolving.com/community/c6h1268908p6622796}{ISL 2015
-    G5}{M}{
-    Let $ABC$ be a triangle with $CA \neq CB$. Let $D$, $F$, and $G$ be the
-    midpoints of the sides $AB$, $AC$, and $BC$ respectively. A circle $\Gamma$
-    passing through $C$ and tangent to $AB$ at $D$ meets the segments $AF$ and
-    $BG$ at $H$ and $I$, respectively. The points $H'$ and $I'$ are symmetric to
-    $H$ and $I$ about $F$ and $G$, respectively. The line $H'I'$ meets $CD$ and
-    $FG$ at $Q$ and $M$, respectively. The line $CM$ meets $\Gamma$ again at $P$.
-    Prove that $CQ = QP$.
-}
-
-\solu{Don't depend on the figure too much, find facts using facts, not figure.
-\figdf{.7}{ISL2015G5}{ISL 2015 G5}}
-
-
+\begin{minipage}{.5\linewidth}
+    \prob{https://artofproblemsolving.com/community/c6h1268908p6622796}{ISL 2015
+        G5}{M}{
+        Let $ABC$ be a triangle with $CA \neq CB$. Let $D$, $F$, and $G$ be the
+        midpoints of the sides $AB$, $AC$, and $BC$ respectively. A circle $\Gamma$
+        passing through $C$ and tangent to $AB$ at $D$ meets the segments $AF$ and
+        $BG$ at $H$ and $I$, respectively. The points $H'$ and $I'$ are symmetric to
+        $H$ and $I$ about $F$ and $G$, respectively. The line $H'I'$ meets $CD$ and
+        $FG$ at $Q$ and $M$, respectively. The line $CM$ meets $\Gamma$ again at $P$.
+        Prove that $CQ = QP$.
+    }
+\end{minipage}\hfill%
+\begin{minipage}{.46\linewidth}
+    \figdf{}{ISL2015G5}{ISL 2015 G5}
+\end{minipage}
 
 
 \prob{https://artofproblemsolving.com/community/c6h418635p2361976}{ISL 2010

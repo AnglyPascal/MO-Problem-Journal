@@ -1,6 +1,11 @@
 \subsection{Counting in Graph}
 
-\lem{Average of Degrees}{In a graph $ G $ with $ n $ vertexes, let $ E $ be the set of all edges. Assign an integer $ f_i $ to every vertex $ v_i $ such that $ f_i $ equals to the everage degree of the neighbors of $ v_i $. We have, \[ \sum_{i=1}^{n} f_i \geq 2|E| \] }\label{lemma:graph_lemma_1}
+\lem{Average of Degrees}{
+    In a graph $ G $ with $ n $ vertexes, let $ E $ be the set of all edges.
+    Assign an integer $ f_i $ to every vertex $ v_i $ such that $ f_i $ equals to
+    the everage degree of the neighbors of $ v_i $. We have, \[ \sum_{i=1}^{n} f_i
+    \geq 2|E| \] 
+}\label{lemma:graph_lemma_1}
 
 
 \lem{}{In a graph $ G $ with $ n $ vertexes, let $ E $ be the set of all edges. Assign an integer $ g_i $ to every vertex $ v_i $ such that $ g_i $ equals to the maximum degree among its neighbors. We have, \[ \sum_{i=1}^{n} g_i \geq 2|E| \] }
@@ -28,7 +33,7 @@
     }
 \end{minipage}\hfill%
 \begin{minipage}{.37\linewidth}
-\figdf{.9}{Turan_13-4}{Turán's Graph}
+    \figdf{.9}{Turan_13-4}{Turán's Graph}
 \end{minipage}
 
 \vspace{1em}
@@ -129,3 +134,43 @@ What left is to sum it all up to see if we can get the ans.}
 
     \solu{[Extremal]Take the edges labeled with $ r $, and delete them. Study what is left. For the second part, formulate a recursive function, and try out small cases to find pattern.}
 
+
+\prob{https://artofproblemsolving.com/community/c6h2091306p15108216}
+{St Petersburg 2020 P11.7}{}{
+    $N$ oligarchs built a country with $N$ cities with each one of them owning
+    one city. In addition, each oligarch built some roads such that the
+    maximal amount of roads an oligarch can build between two cities is $1$
+    (note that there can be more than $1$ road going through two cities, but
+    they would belong to different oligarchs).
+
+    A total of $d$ roads were built. Some oligarchs wanted to create a
+    corporation by combining their cities and roads so that from any city of
+    the corporation you can go to any city of the corporation using only
+    corporation roads (roads can go to other cities outside corporation) but
+    it turned out that no group of less than $N$ oligarchs can create a
+    corporation. What is the maximal amount that $d$ can have?
+}
+
+\begin{solution}
+    At first I thought about ``cuts'' where we can only have roads owned by one
+    oligarch, but it proved to be really complex to work with. So I thought
+    about constructing the best solution. Trying it out for $3, 4$ immediately
+    gave the idea to construct optimally. Now on forward to proving it.\\
+
+    The proof is roughly as followed. We will show that if we remove the
+    oligarch indexed $N$, then we need to remove at most ${N \choose 2}$
+    roads. Since there is no road owned by $N$ that connects to city $N$, the
+    roads owned by $N$ forms a forest of graphs with the other cities.\\
+
+    We show that for every edge in that forest, there is one less road leaving
+    city $N$. Which we do by induction. We take the set $\left\{1, 2, \dots
+    N-1\right\}$, one of these cities has no road with $N$. WLOG, it is $1$.
+    Then inductively we can assume that city $i$ can have at most $i-1$ roads
+    with $N$.\\
+
+    Now for each $i$, starting with $N-1$, and ending at $1$, we show that in
+    reality, $i$ can have at most $i-1 - V_N(i)$ where $V_N(i)$ is the number
+    of roads owned by $N$ leaving $i$. It works inductively, and so after it,
+    we can just remove $N$, and assume our inductive hypothisis. Which gives
+    us our answer of \[\boxed{{N \choose 3}}\] 
+\end{solution}

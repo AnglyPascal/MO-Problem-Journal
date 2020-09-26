@@ -1,41 +1,80 @@
 \begin{theindex}
 
-\large\Titillium%
-\noindent\texttt{D}\par\nopagebreak
-
- \item \small DFT Matrix \dotfill \hyperpage{7}
- \item \small Discrete Fourier Transform \dotfill \hyperpage{7}
-
-  \indexspace
-
-\large\Titillium%
-\noindent\texttt{I}\par\nopagebreak
-
- \item \small Inverse Discrete Fourier Transform \dotfill \hyperpage{7}
- \item \small Inversions of a Permutation \dotfill \hyperpage{5}
+  \item Circle Points, \hyperpage{269}
+  \item Coharmonic Points, \hyperpage{269}
+  \item Convexity, \hyperpage{159}
+  \item Coordinates in Projective Planes, \hyperpage{268}
+  \item Cross Ratio, \hyperpage{268}
+  \item Curvilinear Incircle, \hyperpage{251}
+  \item Cut, \hyperpage{54}
+  \item Cyclotomic Formulas, \hyperpage{323}
 
   \indexspace
 
-\large\Titillium%
-\noindent\texttt{M}\par\nopagebreak
-
- \item \small Minimum Spanning Tree \dotfill \hyperpage{2}
+  \item DFT Matrix, \hyperpage{24}
+  \item Discrete Fourier Transform, \hyperpage{24}
 
   \indexspace
 
-\large\Titillium%
-\noindent\texttt{P}\par\nopagebreak
-
- \item \small Parity of a Permutation \dotfill \hyperpage{5}
- \item \small Permutation as Composition of Transpositions \dotfill 
-		\hyperpage{4}
- \item \small Permutations as Matrices \dotfill \hyperpage{5}
+  \item Feurbach Point, \hyperpage{238}
+  \item Further Construction, \hyperpage{314}
 
   \indexspace
 
-\large\Titillium%
-\noindent\texttt{S}\par\nopagebreak
+  \item Generalization of Mixtilinear Incirlce, \hyperpage{250}
 
- \item \small Shortest Path Problem \dotfill \hyperpage{3}
+  \indexspace
+
+  \item Hamming Distance, \hyperpage{14}
+  \item Harmonic Conjugate Map, \hyperpage{269}
+  \item Homogeneous Expression, \hyperpage{165}
+
+  \indexspace
+
+  \item Important Points, \hyperpage{209}
+  \item Incenter and Co., \hyperpage{222}
+  \item Inverse Discrete Fourier Transform, \hyperpage{24}
+  \item Inversions of a Permutation, \hyperpage{22}
+  \item Involution, \hyperpage{269}
+  \item Involution on Pencil, \hyperpage{273}
+  \item Isodynamic Points, \hyperpage{226}
+
+  \indexspace
+
+  \item Jacobi Symbol, \hyperpage{327}
+
+  \indexspace
+
+  \item Majorizes, \hyperpage{159}
+  \item Mean Values, \hyperpage{159}
+  \item Minimum Spanning Tree, \hyperpage{19}
+  \item Mixtilinear Circle, \hyperpage{248}
+  \item Mobius Function, \hyperpage{323}
+  \item Möbius Transformation, \hyperpage{269}
+
+  \indexspace
+
+  \item Nimbers, \hyperpage{63}
+
+  \indexspace
+
+  \item Parity of a Permutation, \hyperpage{22}
+  \item Pedal Triangles, \hyperpage{288}
+  \item Permutation as Composition of Transpositions, \hyperpage{21}
+  \item Permutations as Matrices, \hyperpage{22}
+  \item Projection, \hyperpage{268}
+  \item Projective Line and Inversive Plane, \hyperpage{268}
+  \item Projective Plane, \hyperpage{268}
+
+  \indexspace
+
+  \item Shortest Path Problem, \hyperpage{20}
+  \item Skeleton Diagram, \hyperpage{314}
+  \item Sperner Family, \hyperpage{9}
+  \item Symmedians, \hyperpage{243}
+
+  \indexspace
+
+  \item The usual notations, \hyperpage{189}
 
 \end{theindex}

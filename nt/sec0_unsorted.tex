@@ -1,463 +1,464 @@
-\newpage\section{Problems}
+\newpage
+\section{Unsorted Problems}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	\prob{}{}{E}{Let $ n $ be an odd integer, and let $ S=\{x \mid 1\leq x\leq n,\ (x, n)=(x+1, n)=1 \}$. Prove that \[\prod_{x\in S} x = 1\ (mod\ n)\]}
-	
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1087607p4817090}{Iran TST 2015, P4}{M}{Let $n$ is a fixed natural number. Find the least $k$ such that for every set $A$ of $k$ natural numbers, there exists a subset of $A$ with an even number of elements which the sum of its members is divisible by $n$.}\label{problem:sets_scp_2}
-	
-	\solu{Odd-Even, so lets first try for odd $n$'s. It is quite easy.\\
-		
-		So now, for evens, lets first try the simplest kind of evens. As we need a set with an even number of elements, this tells us to pair things up. We can try to partition $A$ into pairs of \emph{e-e}'s and \emph{o-o}'s. This gives us our desired result. }
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1097731p4930943}{Iran TST 2015 P11}{M}{We call a permutation $(a_1,a_2 \dots a_n)$ of the set $\lbrace 1,2\dots n\rbrace $ ``good" if for any three natural numbers $i<j<k$,  $$n \nmid a_i+a_k-2a_j$$ find all natural numbers $n\geq 3$ such that there exist a ``good" permutation of the set $\lbrace 1,2\dots n\rbrace $.}\label{problem:construction_2}
-	
-	\solu{Looking for ``possibilities'' for the first element, we get some more restrictions for the values of other terms.}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h30906p191396}{ISL 2004 N2}{M}{The function $f: \N \rightarrow \N$ satisfies  $f(n)=\sum_{k=1}^{n} \gcd⁡(k,n)$, $n\in \N$ .
-		
-		\begin{enumerate}
-			\item Prove that $f(mn)=f(m)f(n)$ for every two relatively prime $m,n \in \N$. 
-			
-			\item Prove that for each $a\in \N$ the equation $f(x)=ax$ has a solution. 
-			
-			\item Find all $a\in \N$ such that the equation $f(x)=ax$ has a unique solution.  
-	\end{enumerate}}\label{problem:nt_functions_1}
-	
-	\solu{Why not casually try to multiply $f(m)$ and $f(n)$?? And also find a formula for $n=\text{prime power}$.}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1441692p8209533}{Balkan MO 2017 P1}{S}{Find all ordered pairs of positive integers $(x,y)$ such that: $x^3+y^3=x^2+42xy+y^2$.}\label{problem:diophantine_equations_1}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1441693p8209540}{Balkan MO 2017 P3}{E}{Find all functions $f:\mathbb{N} \rightarrow \mathbb{N}$ satisfying \[n+f(m)\mid f(n)+nf(m)\] for all $n,m \in \N$.}\label{problem:nt_functions_2}
-	
-	\solu{Check sizes and bound for large $n$.}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1140077p5349209}{Iran MO 3rd Round N3}{E}{Let $p>5$ be a prime number and $A=\lbrace b_1,b_2\dots b_{\frac{p-1}{2}} \rbrace $ be the set of all quadratic residues modulo $p$, excluding zero. Prove that there doesn't exist any natural $a,c$ satisfying $\gcd⁡(ac,p)=1$ such that set $B=\lbrace x\mid x=ay+c, y\in A\rbrace $ and set $A$ are disjoint modulo $p$.}
-	
-	\solu{Sum it up.}
-	
-	\solu{For every integer $a,b$ and prime $p$ such that, $\gcd(a,p) = \gcd(b,p) = 1$, there exist $(x,y)$ such that $x^2\equiv ay^2+c\ (\bmod\ p)$.}
-	
-	\solu{For a prime $p$, there exists an integer $x$ such that $x$ and $x+1$ both are quadratic residues $(\bmod\ p)$.}
-	
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h587988p3480796}{All Russia 2014 P9.5}{E}{Define $m(n)$ to be the greatest proper natural divisor of $n$. Find all  $n\in \N$ such that $n+m(n)$ is a power of $10$.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h15033p106668}{ISL 2000 N1}{E}{Determine all positive integers $n\geq 2$ that satisfy the following condition: for all $a$ and $b$ relatively prime to $n$ we have $a\equiv b\ (\bmod \ n)$ iff $ab\equiv 1\ (\bmod \ n)$.}
-	
-	\solu{Don't forget the details.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h57607p354115}{ISL 2000 N3}{M}{Does there exist a positive integer $n$ such that $n$ has exactly $2000$ prime divisors (not necessarily distinct) and $n\mid 2^n+1$?}
-	
-	\solu{\hl{Goriber Bondhu Induction}. As the number $2000$ seems so out of the place, we replace $2000$ by $k$. Now suppose that for some $k$, the condition works. For simplicity let $k=p^i$ for some $i$, as it is quite clear that there is another prime $q$ that divides $2^k+1$, let $k'=kq$. So $k'$ also satisfies the condition. So it is quite intuitive to think that for every $x$ there exist some $p$ and $i$ for which $2^{p^i}+1$ has $x$ prime factors. So we search for such $p$.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h54051p8591436}{USAMO 2001 P5}{H}{   Let $S$ be a set of integers (not necessarily positive) such that
-		
-		\begin{enumerate}
-			\item There exist $a,b\in S$ with $\gcd⁡(a,b)= \gcd⁡(a-2,b-2)=1$;
-			\item If $x$ and $y$ are elements of $S$ (possibly equal), then $x^2-y\in S$
-		\end{enumerate}
-		
-		Prove that $S$ is the set of all integers.}
-	
-	\solu{One possible intuition could be trying to make the problem statement a little bit more stable, like the term $x^2-y$ is not so symmetric. So trying to make it a little bit more symmetric can come handy. }
-	
-	\solu{If $c,x,y\in S$ then we can easily see that $A(x^2-y^2)-c\in S$ for all $A\in \Z.$ We take this a little too far and show that if $c,x,y,u,v \in S$, then $A(x^2-y^2)+B(u^2-v^2)-c\in S$ for all $A,B\in \Z$ . So if we can find such $x,y,u,v$ such that $\gcd⁡(x^2-y^2,u^2-v^2 )=1$, we are almost done by \href{https://en.wikipedia.org/wiki/Coin_problem}{Frobenius Coin Problem}. So we start looking for integers that can be obtained from $a,b$. After some playing around we get the feeling (or maybe not) that we need one more pair. Again playing around for some time we find three pairs. FCP gives us an upper bound for all integers that are not in $S$. Easily we include them in $S$. }
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1411300p7929731}{Vietnam TST 2017 P2}{M}{For each positive integer $n$, set $x_n=\binom{2n}{n}$}
-	
-	\begin{enumerate}
-		\item{Prove that if $\frac{2017^k}{2}<n<2017^k$ for some positive integer $k$ then $2017\mid x_n$.}
-		\item{Find all positive integer $h>1$ such that there exist positive integers $N,T$ such that the sequence $(x_n)$ for $n>N$, is periodic $(bmod h)$ with period $T$.}
-	\end{enumerate} 
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1411405p7930479}{Vietnam 2017 TST P6}{H}{For each integer $n>0$, a permutation $\left( a_1,a_2\dots a_{2n}\right)$ of $1,2\dots 2n$ is called \textit{beautiful} if for every $1\leq i<j\leq 2n$, $a_i+a_{n+i}=2n+1$ and $a_i-a_{i+1}\not\equiv a_j-a_{j+1}\ (\bmod\ 2n+1)$ (suppose that $a_i=a_{2n+i}$).}
-	
-	\begin{enumerate}
-		\item{For $n=6$, point out a \textit{beautiful} permutation.}
-		\item{Prove that there exists a \textit{beautiful} permutation for every $n$.}
-	\end{enumerate}
-	
-	\solu{Trial and Error.}
-	
-	
-	
-	
-	\prob{}{BrMO 2008}{M}{Find all sequences ${a_i }_{i=0}^{\infty}$ of rational numbers which follow the following conditions:}
-	
-	\begin{enumerate}
-		\item $a_n=2a_{n-1}^2-1$ for all $n>0$
-		\item $a_i=a_j$ for some $i,j>0$, $i\neq j$
-	\end{enumerate} 
-	
-	\solu{Trial and Error. Don't forget that you only need the numbers to be rational.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h61959p371496}{USA TST 2000 P4}{E}{Let $n$ be a positive integer. Prove that $$\sum_{i=0}^{n} \binom{n}{i}^{-1} = \frac{n+1}{2^{n+1}}\left( \sum_{i=0}^{n+1} \frac{2^i}{i} \right)$$}
-	
-	\solu{*Positive Integer*, nuff said.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h26386p165203}{USA TST 2000 P3}{EH \hl{NOT TRIED}}{Let $p$ be a prime number. For integers $r,s$ such that $rs(r^2-s^2)$ is not divisible by $p$, let $f(r,s)$ denote the number of integers $1\leq n\leq p$ such that $\lbrace \frac{rn}{p}\rbrace$ and $\lbrace \frac{sn}{p} \rbrace$ are either both less than $\frac{1}{2}$ or both greater than  $\frac{1}{2}$. Prove that there exists $N>0$ such that for $p\geq N$ and all $r,s$, $$\ceil*{\frac{(p-1)}{3}} \leq f(r,s)\leq \floor*{\frac{2(p-1)}{3}}$$}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h98980p558654}{China TST 2005}{EH \hl{NOT TRIED}}{Let $n$ be a positive integer and $f_n=2^{2^n}+1$. Prove that for all $n\geq 3$, there exists a prime factor of $f_n$ which is larger than $2^{n+2}(n+1)$ $[$ Stronger Version: $2^{n+4}(n+1)$ $]$.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h275813p1492629}{IRAN TST 2009 P2}{H \hl{NOT TRIED}}{Let $a$ be a fixed natural number. Prove that the set of prime divisors of $2^{2^n}+a$ for $n=1,2,3\dots$ is infinite.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h5395p8757714}{USAMO 2004 P2}{E}{Suppose $a_1,a_2\dots a_n$ are integers whose greatest common divisor is $1$. Let $S$ be a set of integers with the following properties:
-		
-		\begin{enumerate}
-			
-			\item $a_i\in S$
-			\item For $i,j=1,2\dots n$ (not necessarily distinct), $a_i-a_j\in S$.
-			\item For any integers $x,y\in S$, if $x+y\in S$, then $x-y\in S$.
-			
-		\end{enumerate}
-		Prove that $S$ must be equal to the set of all integers.}
-	
-	\solu{First we see that if $d=\gcd⁡(x,y)$ and $x,y\in S$ then $d\in S$. So all we have to do is to find two $x,y$ with $d=1$.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c5h202909p1116186}{USAMO 2008 P1}{E}{Prove that for each positive integer $n$, there are pairwise relatively prime integers $k_0, k_1\dots k_n$, all strictly greater than $1$, such that $k_0k_1\dots k_{n-1}$ is the product of two consecutive integers.}
-	
-	\solu{*Positive Integer $n$* nuff said.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h145849p825508}{USAMO 2007 P5}{M}{Prove that for every nonnegative integer $n$, the number $7^{7^n}+1$ is the product of at least $2n + 3$ (not necessarily distinct) primes.}
-	
-	\solu{When you try to apply induction, always name the hypothesis. In this case name $7^{7^n}+1=a_n$. And try to relate $a_n$ with $a_{n+1}$.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h18496p124439}{IMO 1998 P3}{E}{For any positive integer $n$, let $\tau (n)$ denote the number of its positive divisors (including $1$ and itself). Determine all positive integers $m$ for which there exists a positive integer $n$ such that $\frac{\tau (n^2)}{\tau (n)}=m$.}
-	
-	\solu{Easy go with the flow.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h5843p19346}{USA TST 2002 P2}{M}{Let $p>5$ be a prime number. For any integer $x$, define $$f_p (x)=\sum_{k=1}^{p-1} \frac{1}{(px+k)^2}$$ Prove that for any two integers $x,y$, $$p^3\mid f(x)-f(y)$$}
-	
-	\solu{If there is $f(x)-f(y)$ for all $x,y$, then always make one of those equal to $0$ or in other words make one side constant}
-	\solu{All fractional sum problems should be solved by some expression manipulation.}
-	\solu{Sometimes try adding things up.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c5h476852p2669997}{USAMO 2012 P4}{E}{Find all functions $f:\Z^+ \rightarrow \Z^+$ (where $\Z^+$ is the set of positive integers) such that $f(n!) = f(n)!$ for all positive integers $n$ and such that $\left( m - n\right)$ divides $f(m) - f(n)$ for all distinct positive integers $m,n$.}
-	
-	*Positive Integer $n$* nuff said.
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c5h532408p3043754}{USAMO 2013 P5}{M}{Given positive integers $m$ and $n$, prove that there is a positive integer $c$ such that the numbers $cm$ and $cn$ have the same number of occurrences of each non-zero digit when written in base ten.}
-	
-	What if we make $cm$ and $cn$ have the same digits, occuring same number of time, when the digits are sorted? This will make the things a whole lot easier. Again for more simplicity, what if the arrangement of the digits in both of these numbers are ``almost'' the same? Like, if the digits are in blocks and if decomposed into such blocks, we get the same set for both of those problems? This idea of simplicity is more that enough to ``Simplify'' a problem. Call this strategry \hl{Simplify}.
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1268845p6622169}{ISL 2015 N4}{M}{Suppose that $a_0, a_1, \cdots $ and $b_0, b_1, \cdots$ are two sequences of positive integers such that $a_0, b_0 \ge 2$ and \[ a_{n+1} = \gcd{(a_n, b_n)} + 1, \qquad b_{n+1} = \operatorname{lcm}{(a_n, b_n)} - 1. \]Show that the sequence $a_n$ is eventually periodic; in other words, there exist integers $N \ge 0$ and $t > 0$ such that $a_{n+t} = a_n$ for all $n \ge N$.}
-	
-	Like most NT probs, pure investigation. We see that the function $a_n$ is mostly decreasing, but it is increasing as well. But the increase rate is not greater than the decrease rate. After some time playing around, we see that the value of $a_n$ rises gradually and then suddenly drops. But the peak value of $a_n$ doesn't seem to increase. Well, this is true, we prove that. After that, we are mostly done, we just show that eventually the least value of $a_n$ becomes stable as well. We use the intuitions we get from working around.
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1268874p6622379}{ISL 2015 N3}{E-M}{Let $m$ and $n$ be positive integers such that $m>n$. Define $x_k=\frac{m+k}{n+k}$ for $k=1,2,\ldots,n+1$. Prove that if all the numbers $x_1,x_2,\ldots,x_{n+1}$ are integers, then $x_1x_2\ldots x_{n+1}-1$ is divisible by an odd prime.}
-	
-	As there are powers of $2$, we use the powers of $2$.
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1558130p9513094}{USA TST 2018 P1}{E}{Let $n \ge 2$ be a positive integer, and let $\sigma(n)$ denote the sum of the positive divisors of $n$. Prove that the $n^{\text{th}}$ smallest positive integer relatively prime to $n$ is at least $\sigma(n)$, and determine for which $n$ equality holds.} \tg{even-odd}
-	
-	
-	Pretty starightforward, as the ques suggests, there are fewer than $n$ coprimes in the interval $[1, \sigma(n)]$, we directly show this. [as consttructions don't seem to be trivial/ easy to get] Inclusion/Exclusion all the way. But remember, not checking floors can get you doomed.
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h582821p3444911}{APMO 2014 P3}{M}{Find all positive integers $n$ such that for any integer $k$ there exists an integer $a$ for which $a^3+a-k$ is divisible by $n$.}  \tg{factorize, quadratic residue, complete residue class}
-	
-	\solu{You have to show that the set $\{x\mid x\equiv a^3+a\ (mod\ p)$ is equal to the set $\{1\dots p-1\}$. So some properties shared by a set as a whole must be satisfied by both of the sets. The quickest such properties that come into mind are the summation of the set and the product of the set. While the former doesnt help out much, the later seems promising. Where we get a nice relation that we have to satisfy: $$\prod^{p-1}_{i=0} a^2+1 \equiv 1\ (mod\ p)$$
-		
-		One way of concluding from here is to use the quadratic residue ideas, or using the fact that $x^2+1=(x+i)(x-i)$. The later requires some higher tricks tho.}
-	
-	\solu{The most natural way must be to show that for any prime $p$ we will find two integers $p\nmid (a-b)$, and $p\mid a^2+b^2+ab+1$, factorizing the later and getting two squares and a constant gives us our desired result.} 
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h582817p3444907}{APMO 2014 P1}{M}{For a positive integer $m$ denote by $S(m)$ and $P(m)$ the sum and product, respectively, of the digits of $m$. Show that for each positive integer $n$, there exist positive integers $a_1, a_2, \ldots, a_n$ satisfying the following conditions: \[ S(a_1) < S(a_2) < \cdots < S(a_n) \text{ and } S(a_i) = P(a_{i+1}) \quad (i=1,2,\ldots,n). \](We let $a_{n+1} = a_1$.)}
-	
-	\solu{$1$ is the only integer that increases the sum, but doesnt change the product. This may seem trivial, but on problems like this where both the sum and the product of the digits of a number are concerned, this tiny little fact can change everything.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1598148p9931686}{RMM 2018 P4}{E}{Let $a,b,c,d$ be positive integers such that $ad \neq bc$ and $gcd(a,b,c,d)=1$. Let $S$ be the set of values attained by $\gcd(an+b,cn+d)$ as $n$ runs through the positive integers. Show that $S$ is the set of all positive divisors of some positive integer.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h488539p2737648}{ISL 2011 N1}{E}{For any integer $d > 0,$ let $f(d)$ be the smallest possible integer that has exactly $d$ positive divisors (so for example we have $f(1)=1, f(5)=16,$ and $f(6)=12$). Prove that for every integer $k \geq 0$ the number $f\left(2^k\right)$ divides $f\left(2^{k+1}\right).$}
-	
-	\solu{Construct the function for $ 2^n $.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h34224p212395}{ISL 2004 N1}{E}{Let $\tau(n)$ denote the number of positive divisors of the positive integer $n$. Prove that there exist infinitely many positive integers $a$ such that the equation $ \tau(an)=n $ does not have a positive integer solution $n$.}
-	
-	\solu{Infinitely many, divisor, what else should come to mind except prime powers...}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c5h1630183p10232389}{USAMO 2018 P4}{E}{Let $ p $ be a prime number and let $ a_1, a_2 \dots a_p $ be integers. Prove that there exists an integer $ k $ s.t. the $ S=\{a_i+ik\} $ has at least $ \frac{p}{2} $ elements modulo $ p $}
-	
-	\solu{As the only thing that is holding ourselves down is the equivalence of any two elements of $ S $, we investigate it furthur. It is a good idea to represent by graphs.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h288838p1561571}{ISL 2009 N1}{E}{Let $ n$ be a positive integer and let $ a_1,a_2,a_3,\ldots,a_k$ $ ( k\ge 2)$ be distinct integers in the set $ { 1,2,\ldots,n}$ such that $ n$ divides $ a_i(a_{i + 1} - 1)$ for $ i = 1,2,\ldots,k - 1$. Prove that $ n$ does not divide $ a_k(a_1 - 1).$}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h355796p1932941}{ISL 2009 N2}{E}{A positive integer $N$ is called balanced, if $N=1$ or if $N$ can be written as a product of an even number of not necessarily distinct primes. Given positive integers $a$ and $b$, consider the polynomial $P$ defined by $P(x)=(x+a)(x+b)$.
-		
-		\begin{enumerate}
-			\item  Prove that there exist distinct positive integers $a$ and $b$ such that all the number $P(1)$, $P(2)$,$\ldots$, $P(50)$ are balanced.
-			\item  Prove that if $P(n)$ is balanced for all positive integers $n$, then $a=b$
-	\end{enumerate}}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1106802p5017821}{USA TSTST 2015 P5}{EM}{Let $\varphi(n)$ denote the number of positive integers less than $n$ that are relatively prime to $n$. Prove that there exists a positive integer $m$ for which the equation $\varphi(n)=m$ has at least $2015$ solutions in $n$.}
-	
-	\solu{When does the equation has multiple solutions? Suppose $ m=\prod^{t}_{i=1} p_i^{\alpha _i}(p_i-1) $ then $ \Phi (n)=m $ has multiple solutions if for some $ p's $ in $ m $, their product is one less from another prime. Which gives us necessary intuition to construct a $ m $ for which there are A LOT of solutions for the equation.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1623516p10168885}{Iran 2018 T1P1}{M}{Let $A_1, A_2, ... , A_k$ be the subsets of $\left\{1,2,3,...,n\right\}$ such that for all $1\leq i,j\leq k$:$A_i\cap A_j \neq \varnothing$. Prove that there are $n$ distinct positive integers $x_1,x_2,...,x_n$ such that for each $1\leq j\leq k$:
-		$$lcm_{i \in A_j}\left\{x_i\right\}>lcm_{i \notin A_j}\left\{x_i\right\}$$}
-	
-	\solu{Main part of the problem is to notice that the first $ |A_i| $ columns of the matrix has $ 1 $ from all of the rows. Which triggers the idea of giving one prime to every row, and count $ x_i $'s with them.}
-	
-	
-	
-	
-	\prob{}{Iran TST 2018 T2P4}{E}{Call a positive integer ``useful but not optimized " (!), if it can be written as a sum of distinct powers of $ 3 $ and powers of $ 5 $. Prove that there exist infinitely many positive integers which they are not "useful but not optimized".
-		
-		e.g. $ 37 $ is a ``useful but not optimized" number since $ 37=(3^0+3^1+3^3)+(5^0+5^1) $}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1113196p5083567}{ISL 2014 N2}{E}{Determine all pairs $(x, y)$ of positive integers such that \[\sqrt[3]{7x^2-13xy+7y^2}=|x-y|+1.\]}
-	
-	\solu{Always factor, before everything else.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1113195p5083566}{ISL 2014 N1}{M}{Let $n \ge 2$ be an integer, and let $A_n$ be the set \[A_n = \{2^n - 2^k\mid k \in \mathbb{Z},\, 0 \le k < n\}.\] Determine the largest positive integer that cannot be written as the sum of one or more (not necessarily distinct) elements of $A_n$ .}
-	
-	\solu{In every problem, conjecture from smaller case, and check if the conjecture is true in bigger cases.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h17324p118686}{ISL 2002 N1}{E}{What is the smallest positive integer $t$ such that there exist integers $x_1,x_2,\ldots,x_t$ with \[x^3_1+x^3_2+\,\ldots\,+x^3_t=2002^{2002}\,?\]}
-	
-	\solu{$ 1000 + 1000 + 1 + 1 $.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h17325p118687}{ISL 2002 N2}{M}{Let $n\geq2$ be a positive integer, with divisors $1=d_1<d_2<\,\ldots<d_k=n$. Prove that $d_1d_2+d_2d_3+\,\ldots\,+d_{k-1}d_k$ is always less than $n^2$, and determine when it is a divisor of $n^2$.}
-	
-	\solu{In problems with all of the divisors of $ n $ involved, it is a good choice to substitute $ d_i = \frac{n}{d_{k-i+1}} $. That way, you get the exact same set, represented differently, with $ n $ involved.  And $ \sum^n_{i=1} \frac{1}{i * (i+1)} = \frac{n}{n+1} $}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1381512p7662201}{Japan MO 2017 P2, TST Mock 2018}{M}{Let $N$ be a positive integer. There are positive integers $a_{1}, a_{2},\cdots, a_{N}$ and all of them are not multiples of $2^{N+1}$. For each integer $n\geq N+1$, set $a_{n}$ as below:
-		
-		If the remainder of $a_{k}$ divided by $2^{n}$ is the smallest of the remainder of $a_{1},\cdots, a_{n-1}$ divided by $2^{n}$, set $a_{n}=2a_{k}$. If there are several integers $k$ which satisfy the above condition, put the biggest one.
-		
-		Prove the existence of a positive integer $M$ which satisfies $a_{n}=a_{M}$ for $n\geq M$.}
-	
-	\solu{Things must go far...}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h17326p118690}{ISL 2002 N3}{E}{Let $p_1,p_2,\ldots,p_n$ be distinct primes greater than $3$. Show that $2^{p_1p_2\cdots p_n}+1$ has at least $4^n$ divisors.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1381503p7662145}{Japan MO 2017 P1}{E}{Let $a,b,c$ be positive integers. Prove that $lcm(a,b) \neq lcm(a+c,b+c)$.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h355797p1932942}{ISL 2009 N3}{M}{Let $f$ be a non-constant function from the set of positive integers into the set of positive integer, such that $a-b$ divides $f(a)-f(b)$ for all distinct positive integers $a$, $b$. Prove that there exist infinitely many primes $p$ such that $p$ divides $f(c)$ for some positive integer $c$.}
-	
-	\solu{Notice if $ f(1)=1 $, we can easily prove the result, so assume that $ f(1)=c $. Now see that, if we can somehow, create another function $ g $ from the domain and range of $ f $ with the same properties as $ f $, and with $ g(1)=1 $, we will be done. So to do this, we need to perform some kind of division by $ c $.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1635125p10279911}{ARO 2018 P9.1}{E}{Suppose $a_1,a_2, \dots$ is an infinite strictly increasing sequence of positive integers and $p_1, p_2, \dots$ is a sequence of distinct primes such that $p_n \mid a_n$ for all $n \ge 1$. It turned out that $a_n-a_k=p_n-p_k$ for all $n,k \ge 1$. Prove that the sequence $(a_n)_n$ consists only of prime numbers.}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1632770p10262924}{ARO 2018 P10.4}{H}{Initially, a positive integer is written on the blackboard. Every second, one adds to the number on the board the product of all its nonzero digits, writes down the results on the board, and erases the previous number. Prove that there exists a positive integer which will be added infinitely many times.}
-	
-	\proof{Using Bounding and the}
-	
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h195495p1073993}{APMO 2008 P4}{E}{Consider the function $ f: \mathbb{N}_0\to\mathbb{N}_0 $ , where $ \mathbb{N}_0 $ is the set of all non-negative	integers, defined by the following conditions :
-		
-		\[ f(0) = 0,\ \ f(2n) = 2f(n) \ \text{ and }\ f(2n + 1) = n + 2f(n) \ \ \text{ for all } n\geq 0 \]
-		
-		\begin{enumerate}
-			\item  Determine the three sets $ L = \{ n | f(n) < f(n + 1) \} $, $ E = \{n | f(n) = f(n + 1) \} $, and $ G = \{n | f(n) > f(n + 1) \} $.
-			
-			\item  For each $ k \geq 0 $, find a formula for $ a_k = \max\{f(n) : 0 \leq n \leq 2^k\} $ in terms of $ k $.
-	\end{enumerate}}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h355798p1932944}{ISL 2009 N4}{E}{Find all positive integers $n$ such that there exists a sequence of positive integers $a_1$, $a_2$,$\ldots$, $a_n$ satisfying: \[a_{k+1}=\frac{a_k^2+1}{a_{k-1}+1}-1\] for every $k$ with $2\leq k\leq n-1$.}
-	
-	\solu{Rewriting the condition, and doing some parity check. Then assuming the contrary and taking extreme case.}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1268852p6622214}{ISL 2015 N2}{E}{Let $a$ and $b$ be positive integers such that $a! + b!$ divides $a!b!$. Prove that $3a \ge 2b + 2$.}
-	
-	\solu{Size Chase}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1751589p11419598}{USA TST 2019 P2}{MH}{Let $\mathbb{Z}/n\mathbb{Z}$ denote the set of integers considered modulo $n$ (hence $\mathbb{Z}/n\mathbb{Z}$ has $n$ elements). Find all positive integers $n$ for which there exists a bijective function $g: \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$, such that the $ 101 $ functions
-		\[g(x),\ \quad g(x) + x,\ \quad g(x) + 2x,\ \quad \dots, \quad g(x) + 100x\]
-		are all bijections on $\mathbb{Z}/n\mathbb{Z}$.}	
-	
-	\solu{A very nice problem. We get the motivation by trying the cases for $ 2,\ 3 $ replacing $ 101 $. In the case of $ 2 $, we just consider the sum $ \sum g(x) $. We get that $ 2\nmid n $. So in the case of $ 3 $, we conjecture that $ 3\nmid n $. But we can't prove this similarly as before. Whats the most common `sum-type' invariant after the normal sum? Sum of the Squares.\\
-		
-		Now that we have proved that $ (6, n) = 1 $, most probably our conjecture is correct. So lets try for any $ k $, we need to show that $ (k!, n) = 1 $. In the case of $ 3 $, we used the $ 2 $nd power sum. So probably to prove that $ k\nmid n $ we need to take the $ (k-1) $th power sum.\\
-		
-		Now the real thing begins. In the case of $ 3 $, doesn't the modular sum equation looks something like the first \hrf{finite_difference}{finite difference}? This rings a bell that whenever there is powers involved, we should consider using the derivatives. For $ (k-1) $th power, the $ (k-1) $th derivative that is.\\
-		
-		Another thing here, in the case of $ 3 $, we did something like \[\sum \left(g(x)+2x\right)^2 - \sum \left(g(x)+x\right)^2 \equiv \sum \left(g(x)+x\right)^2 - \sum \left(g(x)\right)^2 \equiv 0\ (\text{mod} n)\]\\
-		We try something similar again.}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1276422p6696487}{Tuymaada 2016, P5}{E}{The ratio of prime numbers $p$ and $q$ does not exceed $ 2 $ ($p\ne q$). Prove that there are two consecutive positive integers such that the largest prime divisor of one of them is $p$ and that of the other is $q$.}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1480706p8639282}{ISL 2016 N5}{M}{Let $a$ be a positive integer which is not a perfect square, and consider the equation \[k = \frac{x^2-a}{x^2-y^2}.\]Let $A$ be the set of positive integers $k$ for which the equation admits a solution in $\mathbb Z^2$ with $x>\sqrt{a}$, and let $B$ be the set of positive integers for which the equation admits a solution in $\mathbb Z^2$ with $0\leq x<\sqrt{a}$. Show that $A=B$.}
-	
-	\solu{Building $ x_2, y_2 $ from $ x_1, y_1 $ in the most simple and dumb way.}
-	
-	
-	
-	\prob{}{Simurgh 2019 P1}{E}{Prove that there exists a $ 10\times 10 $ table of 'different' positive integers such that, if we define $ r_i, s_i $ be te product of the elements of the $ i $th row and $ i $th column respectively, then $ r_1, r_2\dots r_{10} $ and $ s_1, s_2\dots s_{10} $ form a non-constant arithmetic progression.}\label{problem:simurgh_2019_p3}
-	
-	\solu{We want to keep things simple. The simpliest arithmetic progression is the $ a, 2a, 3a \dots $ one. Again, we have $ r_1r_2\dots r_{10} = s_1s_2\dots s_{10} $, we can wish that $ r_i = s_i $. With these two assumptions, we can hope that we will find a table with the two sequences being a constant arithmetic progression.}
-	
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h1446913p8271420}{APMO 2017 P4}{EM}{Call a rational number $r$ powerful if $r$ can be expressed in the form $\dfrac{p^k}{q}$ for some relatively prime positive integers $p, q$ and some integer $k >1$. Let $a, b, c$ be positive rational numbers such that $abc = 1$. Suppose there exist positive integers $x, y, z$ such that $a^x + b^y + c^z$ is an integer. Prove that $a, b, c$ are all powerful.}
-	
-	
-	\prob{https://artofproblemsolving.com/community/c6h358783p1960094}{USA TST 2010 P9}{H}{Determine whether or not there exists a positive integer $k$ such that $p = 6k+1$ is a prime and
-		\[\binom{3k}{k} \equiv 1 \pmod{p}\]}
-	
-	
-	\solu{$\binom{3k}{k}\equiv 1 \implies \binom{3k}{2k} \equiv 1 $ which implies,
-		\[\binom{3k}{0}+\binom{3k}{k}+\binom{3k}{2k}+\binom{3k}{3k}\equiv 4\ (mod\ p)\]
-		Which gives the idea to find how the following term works in mod $ p $ 
-		\[\sum_{i=0}^{\infty} \binom{n}{ki} \text{ for any arbitrary } k\]
-		From \autoref{Dealing with binomial terms with a common factor} we know a nice way of representing it with the $ k^{th} $ roots of unity. Roots of unity are primitive roots mod prime.}	
-	
-	
+
+
+
+
+
+
+
+
+\prob{}{}{E}{Let $ n $ be an odd integer, and let $ S=\{x \mid 1\leq x\leq n,\ (x, n)=(x+1, n)=1 \}$. Prove that \[\prod_{x\in S} x = 1\ (mod\ n)\]}
+
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1087607p4817090}{Iran TST 2015, P4}{M}{Let $n$ is a fixed natural number. Find the least $k$ such that for every set $A$ of $k$ natural numbers, there exists a subset of $A$ with an even number of elements which the sum of its members is divisible by $n$.}\label{problem:sets_scp_2}
+
+\solu{Odd-Even, so lets first try for odd $n$'s. It is quite easy.\\
+
+So now, for evens, lets first try the simplest kind of evens. As we need a set with an even number of elements, this tells us to pair things up. We can try to partition $A$ into pairs of \emph{e-e}'s and \emph{o-o}'s. This gives us our desired result. }
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1097731p4930943}{Iran TST 2015 P11}{M}{We call a permutation $(a_1,a_2 \dots a_n)$ of the set $\lbrace 1,2\dots n\rbrace $ ``good" if for any three natural numbers $i<j<k$,  $$n \nmid a_i+a_k-2a_j$$ find all natural numbers $n\geq 3$ such that there exist a ``good" permutation of the set $\lbrace 1,2\dots n\rbrace $.}\label{problem:construction_2}
+
+\solu{Looking for ``possibilities'' for the first element, we get some more restrictions for the values of other terms.}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h30906p191396}{ISL 2004 N2}{M}{The function $f: \N \rightarrow \N$ satisfies  $f(n)=\sum_{k=1}^{n} \gcd⁡(k,n)$, $n\in \N$ .
+
+    \begin{enumerate}
+        \item Prove that $f(mn)=f(m)f(n)$ for every two relatively prime $m,n \in \N$. 
+
+        \item Prove that for each $a\in \N$ the equation $f(x)=ax$ has a solution. 
+
+        \item Find all $a\in \N$ such that the equation $f(x)=ax$ has a unique solution.  
+\end{enumerate}}\label{problem:nt_functions_1}
+
+\solu{Why not casually try to multiply $f(m)$ and $f(n)$?? And also find a formula for $n=\text{prime power}$.}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1441692p8209533}{Balkan MO 2017 P1}{S}{Find all ordered pairs of positive integers $(x,y)$ such that: $x^3+y^3=x^2+42xy+y^2$.}\label{problem:diophantine_equations_1}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1441693p8209540}{Balkan MO 2017 P3}{E}{Find all functions $f:\mathbb{N} \rightarrow \mathbb{N}$ satisfying \[n+f(m)\mid f(n)+nf(m)\] for all $n,m \in \N$.}\label{problem:nt_functions_2}
+
+\solu{Check sizes and bound for large $n$.}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1140077p5349209}{Iran MO 3rd Round N3}{E}{Let $p>5$ be a prime number and $A=\lbrace b_1,b_2\dots b_{\frac{p-1}{2}} \rbrace $ be the set of all quadratic residues modulo $p$, excluding zero. Prove that there doesn't exist any natural $a,c$ satisfying $\gcd⁡(ac,p)=1$ such that set $B=\lbrace x\mid x=ay+c, y\in A\rbrace $ and set $A$ are disjoint modulo $p$.}
+
+\solu{Sum it up.}
+
+\solu{For every integer $a,b$ and prime $p$ such that, $\gcd(a,p) = \gcd(b,p) = 1$, there exist $(x,y)$ such that $x^2\equiv ay^2+c\ (\bmod\ p)$.}
+
+\solu{For a prime $p$, there exists an integer $x$ such that $x$ and $x+1$ both are quadratic residues $(\bmod\ p)$.}
+
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h587988p3480796}{All Russia 2014 P9.5}{E}{Define $m(n)$ to be the greatest proper natural divisor of $n$. Find all  $n\in \N$ such that $n+m(n)$ is a power of $10$.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h15033p106668}{ISL 2000 N1}{E}{Determine all positive integers $n\geq 2$ that satisfy the following condition: for all $a$ and $b$ relatively prime to $n$ we have $a\equiv b\ (\bmod \ n)$ iff $ab\equiv 1\ (\bmod \ n)$.}
+
+\solu{Don't forget the details.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h57607p354115}{ISL 2000 N3}{M}{Does there exist a positive integer $n$ such that $n$ has exactly $2000$ prime divisors (not necessarily distinct) and $n\mid 2^n+1$?}
+
+\solu{\hl{Goriber Bondhu Induction}. As the number $2000$ seems so out of the place, we replace $2000$ by $k$. Now suppose that for some $k$, the condition works. For simplicity let $k=p^i$ for some $i$, as it is quite clear that there is another prime $q$ that divides $2^k+1$, let $k'=kq$. So $k'$ also satisfies the condition. So it is quite intuitive to think that for every $x$ there exist some $p$ and $i$ for which $2^{p^i}+1$ has $x$ prime factors. So we search for such $p$.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h54051p8591436}{USAMO 2001 P5}{H}{   Let $S$ be a set of integers (not necessarily positive) such that
+
+    \begin{enumerate}
+        \item There exist $a,b\in S$ with $\gcd⁡(a,b)= \gcd⁡(a-2,b-2)=1$;
+        \item If $x$ and $y$ are elements of $S$ (possibly equal), then $x^2-y\in S$
+    \end{enumerate}
+
+Prove that $S$ is the set of all integers.}
+
+\solu{One possible intuition could be trying to make the problem statement a little bit more stable, like the term $x^2-y$ is not so symmetric. So trying to make it a little bit more symmetric can come handy. }
+
+\solu{If $c,x,y\in S$ then we can easily see that $A(x^2-y^2)-c\in S$ for all $A\in \Z.$ We take this a little too far and show that if $c,x,y,u,v \in S$, then $A(x^2-y^2)+B(u^2-v^2)-c\in S$ for all $A,B\in \Z$ . So if we can find such $x,y,u,v$ such that $\gcd⁡(x^2-y^2,u^2-v^2 )=1$, we are almost done by \href{https://en.wikipedia.org/wiki/Coin_problem}{Frobenius Coin Problem}. So we start looking for integers that can be obtained from $a,b$. After some playing around we get the feeling (or maybe not) that we need one more pair. Again playing around for some time we find three pairs. FCP gives us an upper bound for all integers that are not in $S$. Easily we include them in $S$. }
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1411300p7929731}{Vietnam TST 2017 P2}{M}{For each positive integer $n$, set $x_n=\binom{2n}{n}$}
+
+\begin{enumerate}
+    \item{Prove that if $\frac{2017^k}{2}<n<2017^k$ for some positive integer $k$ then $2017\mid x_n$.}
+    \item{Find all positive integer $h>1$ such that there exist positive integers $N,T$ such that the sequence $(x_n)$ for $n>N$, is periodic $(bmod h)$ with period $T$.}
+\end{enumerate} 
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1411405p7930479}{Vietnam 2017 TST P6}{H}{For each integer $n>0$, a permutation $\left( a_1,a_2\dots a_{2n}\right)$ of $1,2\dots 2n$ is called \textit{beautiful} if for every $1\leq i<j\leq 2n$, $a_i+a_{n+i}=2n+1$ and $a_i-a_{i+1}\not\equiv a_j-a_{j+1}\ (\bmod\ 2n+1)$ (suppose that $a_i=a_{2n+i}$).}
+
+\begin{enumerate}
+    \item{For $n=6$, point out a \textit{beautiful} permutation.}
+    \item{Prove that there exists a \textit{beautiful} permutation for every $n$.}
+\end{enumerate}
+
+\solu{Trial and Error.}
+
+
+
+
+\prob{}{BrMO 2008}{M}{Find all sequences ${a_i }_{i=0}^{\infty}$ of rational numbers which follow the following conditions:}
+
+\begin{enumerate}
+    \item $a_n=2a_{n-1}^2-1$ for all $n>0$
+    \item $a_i=a_j$ for some $i,j>0$, $i\neq j$
+\end{enumerate} 
+
+\solu{Trial and Error. Don't forget that you only need the numbers to be rational.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h61959p371496}{USA TST 2000 P4}{E}{Let $n$ be a positive integer. Prove that $$\sum_{i=0}^{n} \binom{n}{i}^{-1} = \frac{n+1}{2^{n+1}}\left( \sum_{i=0}^{n+1} \frac{2^i}{i} \right)$$}
+
+\solu{*Positive Integer*, nuff said.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h26386p165203}{USA TST 2000 P3}{EH \hl{NOT TRIED}}{Let $p$ be a prime number. For integers $r,s$ such that $rs(r^2-s^2)$ is not divisible by $p$, let $f(r,s)$ denote the number of integers $1\leq n\leq p$ such that $\lbrace \frac{rn}{p}\rbrace$ and $\lbrace \frac{sn}{p} \rbrace$ are either both less than $\frac{1}{2}$ or both greater than  $\frac{1}{2}$. Prove that there exists $N>0$ such that for $p\geq N$ and all $r,s$, $$\ceil*{\frac{(p-1)}{3}} \leq f(r,s)\leq \floor*{\frac{2(p-1)}{3}}$$}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h98980p558654}{China TST 2005}{EH \hl{NOT TRIED}}{Let $n$ be a positive integer and $f_n=2^{2^n}+1$. Prove that for all $n\geq 3$, there exists a prime factor of $f_n$ which is larger than $2^{n+2}(n+1)$ $[$ Stronger Version: $2^{n+4}(n+1)$ $]$.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h275813p1492629}{IRAN TST 2009 P2}{H \hl{NOT TRIED}}{Let $a$ be a fixed natural number. Prove that the set of prime divisors of $2^{2^n}+a$ for $n=1,2,3\dots$ is infinite.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h5395p8757714}{USAMO 2004 P2}{E}{Suppose $a_1,a_2\dots a_n$ are integers whose greatest common divisor is $1$. Let $S$ be a set of integers with the following properties:
+
+    \begin{enumerate}
+
+        \item $a_i\in S$
+        \item For $i,j=1,2\dots n$ (not necessarily distinct), $a_i-a_j\in S$.
+        \item For any integers $x,y\in S$, if $x+y\in S$, then $x-y\in S$.
+
+    \end{enumerate}
+Prove that $S$ must be equal to the set of all integers.}
+
+\solu{First we see that if $d=\gcd⁡(x,y)$ and $x,y\in S$ then $d\in S$. So all we have to do is to find two $x,y$ with $d=1$.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c5h202909p1116186}{USAMO 2008 P1}{E}{Prove that for each positive integer $n$, there are pairwise relatively prime integers $k_0, k_1\dots k_n$, all strictly greater than $1$, such that $k_0k_1\dots k_{n-1}$ is the product of two consecutive integers.}
+
+\solu{*Positive Integer $n$* nuff said.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h145849p825508}{USAMO 2007 P5}{M}{Prove that for every nonnegative integer $n$, the number $7^{7^n}+1$ is the product of at least $2n + 3$ (not necessarily distinct) primes.}
+
+\solu{When you try to apply induction, always name the hypothesis. In this case name $7^{7^n}+1=a_n$. And try to relate $a_n$ with $a_{n+1}$.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h18496p124439}{IMO 1998 P3}{E}{For any positive integer $n$, let $\tau (n)$ denote the number of its positive divisors (including $1$ and itself). Determine all positive integers $m$ for which there exists a positive integer $n$ such that $\frac{\tau (n^2)}{\tau (n)}=m$.}
+
+\solu{Easy go with the flow.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h5843p19346}{USA TST 2002 P2}{M}{Let $p>5$ be a prime number. For any integer $x$, define $$f_p (x)=\sum_{k=1}^{p-1} \frac{1}{(px+k)^2}$$ Prove that for any two integers $x,y$, $$p^3\mid f(x)-f(y)$$}
+
+\solu{If there is $f(x)-f(y)$ for all $x,y$, then always make one of those equal to $0$ or in other words make one side constant}
+\solu{All fractional sum problems should be solved by some expression manipulation.}
+\solu{Sometimes try adding things up.}
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c5h476852p2669997}{USAMO 2012 P4}{E}{Find all functions $f:\Z^+ \rightarrow \Z^+$ (where $\Z^+$ is the set of positive integers) such that $f(n!) = f(n)!$ for all positive integers $n$ and such that $\left( m - n\right)$ divides $f(m) - f(n)$ for all distinct positive integers $m,n$.}
+
+*Positive Integer $n$* nuff said.
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c5h532408p3043754}{USAMO 2013 P5}{M}{Given positive integers $m$ and $n$, prove that there is a positive integer $c$ such that the numbers $cm$ and $cn$ have the same number of occurrences of each non-zero digit when written in base ten.}
+
+What if we make $cm$ and $cn$ have the same digits, occuring same number of time, when the digits are sorted? This will make the things a whole lot easier. Again for more simplicity, what if the arrangement of the digits in both of these numbers are ``almost'' the same? Like, if the digits are in blocks and if decomposed into such blocks, we get the same set for both of those problems? This idea of simplicity is more that enough to ``Simplify'' a problem. Call this strategry \hl{Simplify}.
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1268845p6622169}{ISL 2015 N4}{M}{Suppose that $a_0, a_1, \cdots $ and $b_0, b_1, \cdots$ are two sequences of positive integers such that $a_0, b_0 \ge 2$ and \[ a_{n+1} = \gcd{(a_n, b_n)} + 1, \qquad b_{n+1} = \operatorname{lcm}{(a_n, b_n)} - 1. \]Show that the sequence $a_n$ is eventually periodic; in other words, there exist integers $N \ge 0$ and $t > 0$ such that $a_{n+t} = a_n$ for all $n \ge N$.}
+
+Like most NT probs, pure investigation. We see that the function $a_n$ is mostly decreasing, but it is increasing as well. But the increase rate is not greater than the decrease rate. After some time playing around, we see that the value of $a_n$ rises gradually and then suddenly drops. But the peak value of $a_n$ doesn't seem to increase. Well, this is true, we prove that. After that, we are mostly done, we just show that eventually the least value of $a_n$ becomes stable as well. We use the intuitions we get from working around.
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1268874p6622379}{ISL 2015 N3}{E-M}{Let $m$ and $n$ be positive integers such that $m>n$. Define $x_k=\frac{m+k}{n+k}$ for $k=1,2,\ldots,n+1$. Prove that if all the numbers $x_1,x_2,\ldots,x_{n+1}$ are integers, then $x_1x_2\ldots x_{n+1}-1$ is divisible by an odd prime.}
+
+As there are powers of $2$, we use the powers of $2$.
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h1558130p9513094}{USA TST 2018 P1}{E}{Let $n \ge 2$ be a positive integer, and let $\sigma(n)$ denote the sum of the positive divisors of $n$. Prove that the $n^{\text{th}}$ smallest positive integer relatively prime to $n$ is at least $\sigma(n)$, and determine for which $n$ equality holds.} \tg{even-odd}
+
+
+Pretty starightforward, as the ques suggests, there are fewer than $n$ coprimes in the interval $[1, \sigma(n)]$, we directly show this. [as consttructions don't seem to be trivial/ easy to get] Inclusion/Exclusion all the way. But remember, not checking floors can get you doomed.
+
+
+
+
+\prob{https://artofproblemsolving.com/community/c6h582821p3444911}{APMO 2014 P3}{M}{Find all positive integers $n$ such that for any integer $k$ there exists an integer $a$ for which $a^3+a-k$ is divisible by $n$.}  \tg{factorize, quadratic residue, complete residue class}
+
+\solu{You have to show that the set $\{x\mid x\equiv a^3+a\ (mod\ p)$ is equal to the set $\{1\dots p-1\}$. So some properties shared by a set as a whole must be satisfied by both of the sets. The quickest such properties that come into mind are the summation of the set and the product of the set. While the former doesnt help out much, the later seems promising. Where we get a nice relation that we have to satisfy: $$\prod^{p-1}_{i=0} a^2+1 \equiv 1\ (mod\ p)$$
+
+    One way of concluding from here is to use the quadratic residue ideas, or using the fact that $x^2+1=(x+i)(x-i)$. The later requires some higher tricks tho.}
+
+    \solu{The most natural way must be to show that for any prime $p$ we will find two integers $p\nmid (a-b)$, and $p\mid a^2+b^2+ab+1$, factorizing the later and getting two squares and a constant gives us our desired result.} 
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h582817p3444907}{APMO 2014 P1}{M}{For a positive integer $m$ denote by $S(m)$ and $P(m)$ the sum and product, respectively, of the digits of $m$. Show that for each positive integer $n$, there exist positive integers $a_1, a_2, \ldots, a_n$ satisfying the following conditions: \[ S(a_1) < S(a_2) < \cdots < S(a_n) \text{ and } S(a_i) = P(a_{i+1}) \quad (i=1,2,\ldots,n). \](We let $a_{n+1} = a_1$.)}
+
+    \solu{$1$ is the only integer that increases the sum, but doesnt change the product. This may seem trivial, but on problems like this where both the sum and the product of the digits of a number are concerned, this tiny little fact can change everything.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1598148p9931686}{RMM 2018 P4}{E}{Let $a,b,c,d$ be positive integers such that $ad \neq bc$ and $gcd(a,b,c,d)=1$. Let $S$ be the set of values attained by $\gcd(an+b,cn+d)$ as $n$ runs through the positive integers. Show that $S$ is the set of all positive divisors of some positive integer.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h488539p2737648}{ISL 2011 N1}{E}{For any integer $d > 0,$ let $f(d)$ be the smallest possible integer that has exactly $d$ positive divisors (so for example we have $f(1)=1, f(5)=16,$ and $f(6)=12$). Prove that for every integer $k \geq 0$ the number $f\left(2^k\right)$ divides $f\left(2^{k+1}\right).$}
+
+    \solu{Construct the function for $ 2^n $.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h34224p212395}{ISL 2004 N1}{E}{Let $\tau(n)$ denote the number of positive divisors of the positive integer $n$. Prove that there exist infinitely many positive integers $a$ such that the equation $ \tau(an)=n $ does not have a positive integer solution $n$.}
+
+    \solu{Infinitely many, divisor, what else should come to mind except prime powers...}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c5h1630183p10232389}{USAMO 2018 P4}{E}{Let $ p $ be a prime number and let $ a_1, a_2 \dots a_p $ be integers. Prove that there exists an integer $ k $ s.t. the $ S=\{a_i+ik\} $ has at least $ \frac{p}{2} $ elements modulo $ p $}
+
+    \solu{As the only thing that is holding ourselves down is the equivalence of any two elements of $ S $, we investigate it furthur. It is a good idea to represent by graphs.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h288838p1561571}{ISL 2009 N1}{E}{Let $ n$ be a positive integer and let $ a_1,a_2,a_3,\ldots,a_k$ $ ( k\ge 2)$ be distinct integers in the set $ { 1,2,\ldots,n}$ such that $ n$ divides $ a_i(a_{i + 1} - 1)$ for $ i = 1,2,\ldots,k - 1$. Prove that $ n$ does not divide $ a_k(a_1 - 1).$}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h355796p1932941}{ISL 2009 N2}{E}{A positive integer $N$ is called balanced, if $N=1$ or if $N$ can be written as a product of an even number of not necessarily distinct primes. Given positive integers $a$ and $b$, consider the polynomial $P$ defined by $P(x)=(x+a)(x+b)$.
+
+        \begin{enumerate}
+            \item  Prove that there exist distinct positive integers $a$ and $b$ such that all the number $P(1)$, $P(2)$,$\ldots$, $P(50)$ are balanced.
+            \item  Prove that if $P(n)$ is balanced for all positive integers $n$, then $a=b$
+    \end{enumerate}}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1106802p5017821}{USA TSTST 2015 P5}{EM}{Let $\varphi(n)$ denote the number of positive integers less than $n$ that are relatively prime to $n$. Prove that there exists a positive integer $m$ for which the equation $\varphi(n)=m$ has at least $2015$ solutions in $n$.}
+
+    \solu{When does the equation has multiple solutions? Suppose $ m=\prod^{t}_{i=1} p_i^{\alpha _i}(p_i-1) $ then $ \Phi (n)=m $ has multiple solutions if for some $ p's $ in $ m $, their product is one less from another prime. Which gives us necessary intuition to construct a $ m $ for which there are A LOT of solutions for the equation.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1623516p10168885}{Iran 2018 T1P1}{M}{Let $A_1, A_2, ... , A_k$ be the subsets of $\left\{1,2,3,...,n\right\}$ such that for all $1\leq i,j\leq k$:$A_i\cap A_j \neq \varnothing$. Prove that there are $n$ distinct positive integers $x_1,x_2,...,x_n$ such that for each $1\leq j\leq k$:
+    $$lcm_{i \in A_j}\left\{x_i\right\}>lcm_{i \notin A_j}\left\{x_i\right\}$$}
+
+    \solu{Main part of the problem is to notice that the first $ |A_i| $ columns of the matrix has $ 1 $ from all of the rows. Which triggers the idea of giving one prime to every row, and count $ x_i $'s with them.}
+
+
+
+
+    \prob{}{Iran TST 2018 T2P4}{E}{Call a positive integer ``useful but not optimized " (!), if it can be written as a sum of distinct powers of $ 3 $ and powers of $ 5 $. Prove that there exist infinitely many positive integers which they are not "useful but not optimized".
+
+    e.g. $ 37 $ is a ``useful but not optimized" number since $ 37=(3^0+3^1+3^3)+(5^0+5^1) $}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1113196p5083567}{ISL 2014 N2}{E}{Determine all pairs $(x, y)$ of positive integers such that \[\sqrt[3]{7x^2-13xy+7y^2}=|x-y|+1.\]}
+
+    \solu{Always factor, before everything else.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1113195p5083566}{ISL 2014 N1}{M}{Let $n \ge 2$ be an integer, and let $A_n$ be the set \[A_n = \{2^n - 2^k\mid k \in \mathbb{Z},\, 0 \le k < n\}.\] Determine the largest positive integer that cannot be written as the sum of one or more (not necessarily distinct) elements of $A_n$ .}
+
+    \solu{In every problem, conjecture from smaller case, and check if the conjecture is true in bigger cases.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h17324p118686}{ISL 2002 N1}{E}{What is the smallest positive integer $t$ such that there exist integers $x_1,x_2,\ldots,x_t$ with \[x^3_1+x^3_2+\,\ldots\,+x^3_t=2002^{2002}\,?\]}
+
+    \solu{$ 1000 + 1000 + 1 + 1 $.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h17325p118687}{ISL 2002 N2}{M}{Let $n\geq2$ be a positive integer, with divisors $1=d_1<d_2<\,\ldots<d_k=n$. Prove that $d_1d_2+d_2d_3+\,\ldots\,+d_{k-1}d_k$ is always less than $n^2$, and determine when it is a divisor of $n^2$.}
+
+    \solu{In problems with all of the divisors of $ n $ involved, it is a good choice to substitute $ d_i = \frac{n}{d_{k-i+1}} $. That way, you get the exact same set, represented differently, with $ n $ involved.  And $ \sum^n_{i=1} \frac{1}{i * (i+1)} = \frac{n}{n+1} $}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1381512p7662201}{Japan MO 2017 P2, TST Mock 2018}{M}{Let $N$ be a positive integer. There are positive integers $a_{1}, a_{2},\cdots, a_{N}$ and all of them are not multiples of $2^{N+1}$. For each integer $n\geq N+1$, set $a_{n}$ as below:
+
+        If the remainder of $a_{k}$ divided by $2^{n}$ is the smallest of the remainder of $a_{1},\cdots, a_{n-1}$ divided by $2^{n}$, set $a_{n}=2a_{k}$. If there are several integers $k$ which satisfy the above condition, put the biggest one.
+
+    Prove the existence of a positive integer $M$ which satisfies $a_{n}=a_{M}$ for $n\geq M$.}
+
+    \solu{Things must go far...}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h17326p118690}{ISL 2002 N3}{E}{Let $p_1,p_2,\ldots,p_n$ be distinct primes greater than $3$. Show that $2^{p_1p_2\cdots p_n}+1$ has at least $4^n$ divisors.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1381503p7662145}{Japan MO 2017 P1}{E}{Let $a,b,c$ be positive integers. Prove that $lcm(a,b) \neq lcm(a+c,b+c)$.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h355797p1932942}{ISL 2009 N3}{M}{Let $f$ be a non-constant function from the set of positive integers into the set of positive integer, such that $a-b$ divides $f(a)-f(b)$ for all distinct positive integers $a$, $b$. Prove that there exist infinitely many primes $p$ such that $p$ divides $f(c)$ for some positive integer $c$.}
+
+    \solu{Notice if $ f(1)=1 $, we can easily prove the result, so assume that $ f(1)=c $. Now see that, if we can somehow, create another function $ g $ from the domain and range of $ f $ with the same properties as $ f $, and with $ g(1)=1 $, we will be done. So to do this, we need to perform some kind of division by $ c $.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1635125p10279911}{ARO 2018 P9.1}{E}{Suppose $a_1,a_2, \dots$ is an infinite strictly increasing sequence of positive integers and $p_1, p_2, \dots$ is a sequence of distinct primes such that $p_n \mid a_n$ for all $n \ge 1$. It turned out that $a_n-a_k=p_n-p_k$ for all $n,k \ge 1$. Prove that the sequence $(a_n)_n$ consists only of prime numbers.}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1632770p10262924}{ARO 2018 P10.4}{H}{Initially, a positive integer is written on the blackboard. Every second, one adds to the number on the board the product of all its nonzero digits, writes down the results on the board, and erases the previous number. Prove that there exists a positive integer which will be added infinitely many times.}
+
+    \proof{Using Bounding and the}
+
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h195495p1073993}{APMO 2008 P4}{E}{Consider the function $ f: \mathbb{N}_0\to\mathbb{N}_0 $ , where $ \mathbb{N}_0 $ is the set of all non-negative	integers, defined by the following conditions :
+
+        \[ f(0) = 0,\ \ f(2n) = 2f(n) \ \text{ and }\ f(2n + 1) = n + 2f(n) \ \ \text{ for all } n\geq 0 \]
+
+        \begin{enumerate}
+            \item  Determine the three sets $ L = \{ n | f(n) < f(n + 1) \} $, $ E = \{n | f(n) = f(n + 1) \} $, and $ G = \{n | f(n) > f(n + 1) \} $.
+
+            \item  For each $ k \geq 0 $, find a formula for $ a_k = \max\{f(n) : 0 \leq n \leq 2^k\} $ in terms of $ k $.
+    \end{enumerate}}
+
+
+    \prob{https://artofproblemsolving.com/community/c6h355798p1932944}{ISL 2009 N4}{E}{Find all positive integers $n$ such that there exists a sequence of positive integers $a_1$, $a_2$,$\ldots$, $a_n$ satisfying: \[a_{k+1}=\frac{a_k^2+1}{a_{k-1}+1}-1\] for every $k$ with $2\leq k\leq n-1$.}
+
+    \solu{Rewriting the condition, and doing some parity check. Then assuming the contrary and taking extreme case.}
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1268852p6622214}{ISL 2015 N2}{E}{Let $a$ and $b$ be positive integers such that $a! + b!$ divides $a!b!$. Prove that $3a \ge 2b + 2$.}
+
+    \solu{Size Chase}
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1751589p11419598}{USA TST 2019 P2}{MH}{Let $\mathbb{Z}/n\mathbb{Z}$ denote the set of integers considered modulo $n$ (hence $\mathbb{Z}/n\mathbb{Z}$ has $n$ elements). Find all positive integers $n$ for which there exists a bijective function $g: \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$, such that the $ 101 $ functions
+        \[g(x),\ \quad g(x) + x,\ \quad g(x) + 2x,\ \quad \dots, \quad g(x) + 100x\]
+    are all bijections on $\mathbb{Z}/n\mathbb{Z}$.}	
+
+    \solu{A very nice problem. We get the motivation by trying the cases for $ 2,\ 3 $ replacing $ 101 $. In the case of $ 2 $, we just consider the sum $ \sum g(x) $. We get that $ 2\nmid n $. So in the case of $ 3 $, we conjecture that $ 3\nmid n $. But we can't prove this similarly as before. Whats the most common `sum-type' invariant after the normal sum? Sum of the Squares.\\
+
+        Now that we have proved that $ (6, n) = 1 $, most probably our conjecture is correct. So lets try for any $ k $, we need to show that $ (k!, n) = 1 $. In the case of $ 3 $, we used the $ 2 $nd power sum. So probably to prove that $ k\nmid n $ we need to take the $ (k-1) $th power sum.\\
+
+        Now the real thing begins. In the case of $ 3 $, doesn't the modular sum equation looks something like the first \hrf{finite_difference}{finite difference}? This rings a bell that whenever there is powers involved, we should consider using the derivatives. For $ (k-1) $th power, the $ (k-1) $th derivative that is.\\
+
+        Another thing here, in the case of $ 3 $, we did something like \[\sum \left(g(x)+2x\right)^2 - \sum \left(g(x)+x\right)^2 \equiv \sum \left(g(x)+x\right)^2 - \sum \left(g(x)\right)^2 \equiv 0\ (\text{mod} n)\]\\
+    We try something similar again.}
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1276422p6696487}{Tuymaada 2016, P5}{E}{The ratio of prime numbers $p$ and $q$ does not exceed $ 2 $ ($p\ne q$). Prove that there are two consecutive positive integers such that the largest prime divisor of one of them is $p$ and that of the other is $q$.}
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1480706p8639282}{ISL 2016 N5}{M}{Let $a$ be a positive integer which is not a perfect square, and consider the equation \[k = \frac{x^2-a}{x^2-y^2}.\]Let $A$ be the set of positive integers $k$ for which the equation admits a solution in $\mathbb Z^2$ with $x>\sqrt{a}$, and let $B$ be the set of positive integers for which the equation admits a solution in $\mathbb Z^2$ with $0\leq x<\sqrt{a}$. Show that $A=B$.}
+
+    \solu{Building $ x_2, y_2 $ from $ x_1, y_1 $ in the most simple and dumb way.}
+
+
+
+    \prob{}{Simurgh 2019 P1}{E}{Prove that there exists a $ 10\times 10 $ table of 'different' positive integers such that, if we define $ r_i, s_i $ be te product of the elements of the $ i $th row and $ i $th column respectively, then $ r_1, r_2\dots r_{10} $ and $ s_1, s_2\dots s_{10} $ form a non-constant arithmetic progression.}\label{problem:simurgh_2019_p3}
+
+    \solu{We want to keep things simple. The simpliest arithmetic progression is the $ a, 2a, 3a \dots $ one. Again, we have $ r_1r_2\dots r_{10} = s_1s_2\dots s_{10} $, we can wish that $ r_i = s_i $. With these two assumptions, we can hope that we will find a table with the two sequences being a constant arithmetic progression.}
+
+
+
+    \prob{https://artofproblemsolving.com/community/c6h1446913p8271420}{APMO 2017 P4}{EM}{Call a rational number $r$ powerful if $r$ can be expressed in the form $\dfrac{p^k}{q}$ for some relatively prime positive integers $p, q$ and some integer $k >1$. Let $a, b, c$ be positive rational numbers such that $abc = 1$. Suppose there exist positive integers $x, y, z$ such that $a^x + b^y + c^z$ is an integer. Prove that $a, b, c$ are all powerful.}
+
+
+    \prob{https://artofproblemsolving.com/community/c6h358783p1960094}{USA TST 2010 P9}{H}{Determine whether or not there exists a positive integer $k$ such that $p = 6k+1$ is a prime and
+    \[\binom{3k}{k} \equiv 1 \pmod{p}\]}
+
+
+    \solu{$\binom{3k}{k}\equiv 1 \implies \binom{3k}{2k} \equiv 1 $ which implies,
+        \[\binom{3k}{0}+\binom{3k}{k}+\binom{3k}{2k}+\binom{3k}{3k}\equiv 4\ (mod\ p)\]
+        Which gives the idea to find how the following term works in mod $ p $ 
+        \[\sum_{i=0}^{\infty} \binom{n}{ki} \text{ for any arbitrary } k\]
+    From \autoref{Dealing with binomial terms with a common factor} we know a nice way of representing it with the $ k^{th} $ roots of unity. Roots of unity are primitive roots mod prime.}	
+
+
