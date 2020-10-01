@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.3.5}Algorithm Analysis}{45}{subsection.2.3.5}% 
 \contentsline {subsection}{\numberline {2.3.6}Covering Area with Squares}{46}{subsection.2.3.6}% 
 \contentsline {section}{\numberline {2.4}Graph Theory}{48}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}Counting in Graph}{52}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.1}Counting in Graph}{53}{subsection.2.4.1}% 
 \contentsline {subsection}{\numberline {2.4.2}Algorithms in Graph}{58}{subsection.2.4.2}% 
 \contentsline {section}{\numberline {2.5}Game Theory}{67}{section.2.5}% 
 \contentsline {subsection}{\numberline {2.5.1}Games}{67}{subsection.2.5.1}% 

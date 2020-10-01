@@ -605,7 +605,7 @@
 
  \item \small unknown source \dotfill \hyperpage{4}, \hyperpage{14}, 
 		\hyperpage{19}, \hyperpage{34}, \hyperpage{36}, 
-		\hyperpage{39}, \hyperpage{46}, \hyperpage{53, 54}, 
+		\hyperpage{39}, \hyperpage{46}, \hyperpage{54}, 
 		\hyperpage{56}, \hyperpage{59}, \hyperpage{77}, 
 		\hyperpage{80}, \hyperpage{93}, \hyperpage{99}, 
 		\hyperpage{117}, \hyperpage{127, 128}, 
@@ -622,7 +622,7 @@
  \item \small USA TST 2000 P4 \dotfill \hyperpage{350}
  \item \small USA TST 2002 P2 \dotfill \hyperpage{351}
  \item \small USA TST 2005 P1 \dotfill \hyperpage{16}
- \item \small USA TST 2006 P1 \dotfill \hyperpage{55}
+ \item \small USA TST 2006 P1 \dotfill \hyperpage{56}
  \item \small USA TST 2006 P5 \dotfill \hyperpage{95}
  \item \small USA TST 2006 P6 \dotfill \hyperpage{289}
  \item \small USA TST 2009 P1 \dotfill \hyperpage{123}
@@ -633,6 +633,7 @@
  \item \small USA TST 2014 P2 \dotfill \hyperpage{338}
  \item \small USA TST 2014 P3 \dotfill \hyperpage{53}
  \item \small USA TST 2014 P4 \dotfill \hyperpage{154}
+ \item \small USA TST 2014 P5 \dotfill \hyperpage{52}
  \item \small USA TST 2017 P1 \dotfill \hyperpage{127}
  \item \small USA TST 2017 P2 \dotfill \hyperpage{302}
  \item \small USA TST 2018 P1 \dotfill \hyperpage{352}
