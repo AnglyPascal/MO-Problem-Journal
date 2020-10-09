@@ -8,90 +8,94 @@
 
 \begin{document}
 
-% \maketitle\vfill \thispagestyle{empty}\newpage
-% \include{about}
-% \begingroup{\hypersetup{hidelinks}\tableofcontents}\thispagestyle{empty}\endgroup
-% \setcounter{page}{0}
+\maketitle \vfill \thispagestyle{empty} \newpage
 
-\include{thots}
+\begingroup{
+    \setcounter{page}{1} \pagenumbering{Roman}
+    \hypersetup{hidelinks} \tableofcontents
+    \newpage \thispagestyle{empty} \mbox{} \newpage
+}\endgroup
+
+
 % \include{for_sharing}
 % \include{PSets/2020imocamp_m1}
 
+\include{about}
+\setcounter{page}{1} \pagenumbering{arabic}
+
+\chapter{Combinatorics}
+\thispagestyle{empty}
+
+\include{combi/sec2_binom_iden}
+\include{combi/sec3_sets}
+\include{combi/sec4_algo}
+\include{combi/sec5_graph}
+\include{combi/sec6_game}
+\include{combi/sec7_combi_geo}
+\include{combi/sec8_sequences}
+\include{combi/sec8_1_Recursion}
+\include{combi/sec9_configs}
+\include{combi/sec9_1_coloring_problems}
+\include{combi/sec10_algebraic}
+\include{combi/sec11_bounding}
+\include{combi/sec13_cp_algo}
+\include{combi/sec13_permutation}	
+\include{combi/sec12_not_sorted}
 
 
-% \chapter{Combinatorics}
-% \thispagestyle{empty}
+\chapter{Algebra}
+\thispagestyle{empty}
 
-% \include{combi/sec2_binom_iden}
-% \include{combi/sec3_sets}
-% \include{combi/sec4_algo}
-% \include{combi/sec5_graph}
-% \include{combi/sec6_game}
-% \include{combi/sec7_combi_geo}
-% \include{combi/sec8_sequences}
-% \include{combi/sec8_1_Recursion}
-% \include{combi/sec9_configs}
-% \include{combi/sec9_1_coloring_problems}
-% \include{combi/sec10_algebraic}
-% \include{combi/sec11_bounding}
-% \include{combi/sec13_cp_algo}
-% \include{combi/sec13_permutation}	
-% \include{combi/sec12_not_sorted}
+\include{alg/sec1_fe}
+\include{alg/sec1_5_selected_probs}
+\include{alg/sec2_poly}
+\include{alg/sec2_1_irreducibility}
+\include{alg/sec3_ineq}
+\include{alg/sec5_ad_hoc}
 
 
-% \chapter{Algebra}
-% \thispagestyle{empty}
+\chapter{Geometry}
+\thispagestyle{empty}
 
-% \include{alg/sec1_fe}
-% \include{alg/sec1_5_selected_probs}
-% \include{alg/sec2_poly}
-% \include{alg/sec2_1_irreducibility}
-% \include{alg/sec3_ineq}
-% \include{alg/sec5_ad_hoc}
+\include{geo/basics}
+\include{geo/sec1_circum-9p-circle}
+\include{geo/sec2_cevian}
+\include{geo/sec3_in-ex-circle}
+\include{geo/sec4_conjugates}
+\include{geo/sec5_mixti_curvi-linear}
+\include{geo/sec6_circle}
+\include{geo/sec7_comp-quad}
+\include{geo/sec8_projective}
+\include{geo/sec8_5_projective_construction}
+\include{geo/sec9_parallel}
+\include{geo/sec10_length}
+\include{geo/sec11_pedal}
+\include{geo/sec12_pending}
+\include{geo/sec13_problems}
+\include{geo/sec14_research4later}
 
-
-% \chapter{Geometry}
-% \thispagestyle{empty}
-
-% \include{geo/basics}
-% \include{geo/sec1_circum-9p-circle}
-% \include{geo/sec2_cevian}
-% \include{geo/sec3_in-ex-circle}
-% \include{geo/sec4_conjugates}
-% \include{geo/sec5_mixti_curvi-linear}
-% \include{geo/sec6_circle}
-% \include{geo/sec7_comp-quad}
-% \include{geo/sec8_projective}
-% \include{geo/sec8_5_projective_construction}
-% \include{geo/sec9_parallel}
-% \include{geo/sec10_length}
-% \include{geo/sec11_pedal}
-% \include{geo/sec12_pending}
-% \include{geo/sec13_problems}
-% \include{geo/sec14_research4later}
-
-% \section{Big Pictures}
-% \include{geo/bigpics/1_parallels_to_median_and_stuffs}
+\section{Big Pictures}
+\include{geo/bigpics/1_parallels_to_median_and_stuffs}
 
 
-% \chapter{Number Theory}
-% \thispagestyle{empty}
+\chapter{Number Theory}
+\thispagestyle{empty}
 
-% \include{nt/NUMBER_THEORY}
-% \include{nt/sec1_orders_mod_prime}
-% \include{nt/sec2_primes}
-% \include{nt/sec3_fe_poly}
-% \include{nt/sec4_dioph_eq}
-% \include{nt/sec5_divisibility}
-% \include{nt/sec6_modular_arithmatic}
-% \include{nt/sec0_unsorted}
+\include{nt/NUMBER_THEORY}
+\include{nt/sec1_orders_mod_prime}
+\include{nt/sec2_primes}
+\include{nt/sec3_fe_poly}
+\include{nt/sec4_dioph_eq}
+\include{nt/sec5_divisibility}
+\include{nt/sec6_modular_arithmatic}
+\include{nt/sec0_unsorted}
 
 
-% \invisiblesection{Index}
-% \printindex[prob]
-% \printindex[thm]
-% \printindex[def]
-% \printindex[strat]
-% \printindex
+\invisiblesection{Index}
+\printindex[prob]
+\printindex[thm]
+\printindex[def]
+\printindex[strat]
+\printindex
 
 \end{document}
