@@ -4,17 +4,10 @@
 \noindent\texttt{A}\par\nopagebreak
 
  \item \small Adding new stuffs
-<<<<<<< HEAD
     \subitem ISL 2002 C5 \dotfill \hyperpage{12}
  \item \small Algorithm
     \subitem Copycat
       \subsubitem ARO 1999 P9.8 \dotfill \hyperpage{47}
-=======
-    \subitem ISL 2002 C5 \dotfill \hyperpage{17}
- \item \small Algorithm
-    \subitem Copycat
-      \subsubitem ARO 1999 P9.8 \dotfill \hyperpage{51}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -23,7 +16,6 @@
 
  \item \small Bijection
     \subitem Binary Representation
-<<<<<<< HEAD
       \subsubitem ISL 1988 P10 \dotfill \hyperpage{12}
     \subitem USAMO 2017 P5 \dotfill \hyperpage{113}
  \item \small Binary Query
@@ -31,15 +23,6 @@
  \item \small Bounding
     \subitem Cost function
       \subsubitem Turkey NMO 2002 P3 \dotfill \hyperpage{56}
-=======
-      \subsubitem ISL 1988 P10 \dotfill \hyperpage{17}
-    \subitem USAMO 2017 P5 \dotfill \hyperpage{115}
- \item \small Binary Query
-    \subitem CF 744B \dotfill \hyperpage{36}
- \item \small Bounding
-    \subitem Cost function
-      \subsubitem Turkey NMO 2002 P3 \dotfill \hyperpage{60}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -48,7 +31,6 @@
 
  \item \small Construction
     \subitem Bruteforce
-<<<<<<< HEAD
       \subsubitem Serbia TST 2015 P3 \dotfill \hyperpage{36}
     \subitem Codeforces 1270F \dotfill \hyperpage{38}
     \subitem Compound Moves
@@ -81,40 +63,6 @@
  \item \small copycat
     \subitem partition
       \subsubitem aro 2006 11.3 \dotfill \hyperpage{91}
-=======
-      \subsubitem Serbia TST 2015 P3 \dotfill \hyperpage{40}
-    \subitem Codeforces 1270F \dotfill \hyperpage{42}
-    \subitem Compound Moves
-      \subsubitem ISL 2010 C4 \dotfill \hyperpage{44}
-    \subitem Compound moves
-      \subsubitem IMO 1986 P3 \dotfill \hyperpage{43}
-    \subitem Greedy
-      \subsubitem ARO 2005 P10.3 \dotfill \hyperpage{39}
-      \subsubitem IOI 2007 P3 \dotfill \hyperpage{39}
-      \subsubitem ISL 2016 C1 \dotfill \hyperpage{30}
-      \subsubitem RMM 2020 P3 \dotfill \hyperpage{66}
-    \subitem OC Chap2 P2 \dotfill \hyperpage{66}
-    \subitem Primes
-      \subsubitem Iran TST 2018 P1 \dotfill \hyperpage{30}
-    \subitem Recursion
-      \subsubitem CF 1379E \dotfill \hyperpage{43}
-      \subsubitem Classical CP Problem \dotfill \hyperpage{39}
-      \subsubitem ISL 2014 N1 \dotfill \hyperpage{41}
-      \subsubitem USAMO 2010 P2 \dotfill \hyperpage{40}
-    \subitem Simurgh 2019 P3 \dotfill \hyperpage{66}
- \item \small Constructive Algorithm
-    \subitem Compound moves
-      \subsubitem German TST 2004 P3 \dotfill \hyperpage{58}
-    \subitem Deletetion
-      \subsubitem ARO 2014 P9.8 Gene \dotfill \hyperpage{59}
-    \subitem Inclusion
-      \subsubitem Turkey NMO 2002 P3 \dotfill \hyperpage{60}
- \item \small CopyCat
-    \subitem ToT 2009 S6 \dotfill \hyperpage{52}
- \item \small copycat
-    \subitem partition
-      \subsubitem aro 2006 11.3 \dotfill \hyperpage{93}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -123,21 +71,12 @@
 
  \item \small Different representation
     \subitem Graph
-<<<<<<< HEAD
       \subsubitem Iran TST 2006 \dotfill \hyperpage{61}
       \subsubitem Iran TST 2009 P6 \dotfill \hyperpage{61}
  \item \small Divide and Conquer
     \subitem CF 744B \dotfill \hyperpage{32}
  \item \small Double Counting
     \subitem USA TST 2005 P1 \dotfill \hyperpage{11}
-=======
-      \subsubitem Iran TST 2006 \dotfill \hyperpage{65}
-      \subsubitem Iran TST 2009 P6 \dotfill \hyperpage{65}
- \item \small Divide and Conquer
-    \subitem CF 744B \dotfill \hyperpage{36}
- \item \small Double Counting
-    \subitem USA TST 2005 P1 \dotfill \hyperpage{16}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -145,7 +84,6 @@
 \noindent\texttt{E}\par\nopagebreak
 
  \item \small Extremal
-<<<<<<< HEAD
     \subitem Iran TST 2006 \dotfill \hyperpage{61}
     \subitem Longest Path
       \subsubitem AtCoder GC033 C \dotfill \hyperpage{47}
@@ -157,19 +95,6 @@
     \subitem Optimal case
       \subsubitem IOI 2007 P3 \dotfill \hyperpage{35}
       \subsubitem Polish OI \dotfill \hyperpage{34}
-=======
-    \subitem Iran TST 2006 \dotfill \hyperpage{65}
-    \subitem Longest Path
-      \subsubitem AtCoder GC033 C \dotfill \hyperpage{51}
-      \subsubitem ChTST 2015 P3 \dotfill \hyperpage{48}
-    \subitem Object
-      \subsubitem ISL 2001 C3 \dotfill \hyperpage{52}
-    \subitem Optimal Case
-      \subsubitem Classical CP Problem \dotfill \hyperpage{39}
-    \subitem Optimal case
-      \subsubitem IOI 2007 P3 \dotfill \hyperpage{39}
-      \subsubitem Polish OI \dotfill \hyperpage{38}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -177,7 +102,6 @@
 \noindent\texttt{F}\par\nopagebreak
 
  \item \small Focus
-<<<<<<< HEAD
     \subitem ISL 2002 C5 \dotfill \hyperpage{12}
     \subitem Romanian TST 2016 D1P2 \dotfill \hyperpage{11}
  \item \small Forget and focus
@@ -186,16 +110,6 @@
       \subsubitem Classical CP Problem \dotfill \hyperpage{35}
       \subsubitem IOI 2007 P3 \dotfill \hyperpage{35}
       \subsubitem Polish OI \dotfill \hyperpage{34}
-=======
-    \subitem ISL 2002 C5 \dotfill \hyperpage{17}
-    \subitem Romanian TST 2016 D1P2 \dotfill \hyperpage{16}
- \item \small Forget and focus
-    \subitem ISL 2016 C1 \dotfill \hyperpage{30}
-    \subitem Swapping
-      \subsubitem Classical CP Problem \dotfill \hyperpage{39}
-      \subsubitem IOI 2007 P3 \dotfill \hyperpage{39}
-      \subsubitem Polish OI \dotfill \hyperpage{38}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -203,7 +117,6 @@
 \noindent\texttt{G}\par\nopagebreak
 
  \item \small Generating Function
-<<<<<<< HEAD
     \subitem Erdos, Arithmatic Progression \dotfill \hyperpage{80}
  \item \small Get your hands dirty
     \subitem APMO 2015 P3 \dotfill \hyperpage{83}
@@ -225,42 +138,14 @@
       \subsubitem RMM 2020 P3 \dotfill \hyperpage{62}
     \subitem Matching
       \subsubitem OC Chap2 P2 \dotfill \hyperpage{62}
-=======
-    \subitem Erdos, Arithmatic Progression \dotfill \hyperpage{83}
- \item \small Get your hands dirty
-    \subitem APMO 2015 P3 \dotfill \hyperpage{86}
-    \subitem ISL 2008 A4 \dotfill \hyperpage{87}
-    \subitem ISL 2010 C4 \dotfill \hyperpage{44}
- \item \small Global
-    \subitem Multiplication
-      \subsubitem GQMO 2020 P3 \dotfill \hyperpage{182}
-    \subitem Pigeonhole
-      \subsubitem ARO 2014 P9.8 \dotfill \hyperpage{58}
-      \subsubitem ARO 2014 P9.8 Gene \dotfill \hyperpage{59}
- \item \small Graph
-    \subitem Bipartite \dotfill \hyperpage{48}
-      \subsubitem ARO 2005 P10.8 \dotfill \hyperpage{50}
-      \subsubitem RMM 2020 P3 \dotfill \hyperpage{66}
-    \subitem Grid $ \to $ Graph
-      \subsubitem ARO 2005 P10.8 \dotfill \hyperpage{50}
-    \subitem Hall Marriage
-      \subsubitem RMM 2020 P3 \dotfill \hyperpage{66}
-    \subitem Matching
-      \subsubitem OC Chap2 P2 \dotfill \hyperpage{66}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{H}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Hamming distance \dotfill \hyperpage{14}
     \subitem CIIM 2019 P3 \dotfill \hyperpage{15}
-=======
- \item \small Hamming distance \dotfill \hyperpage{19}
-    \subitem CIIM 2019 P3 \dotfill \hyperpage{20}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -269,7 +154,6 @@
 
  \item \small Induction
     \subitem $n$ is or isn't
-<<<<<<< HEAD
       \subsubitem Iran TST 2013 D1P2 \dotfill \hyperpage{12}
     \subitem APMO 1999 P2 \dotfill \hyperpage{81}
     \subitem ARO 2017 P9.1 \dotfill \hyperpage{48}
@@ -296,34 +180,6 @@
     \subitem Sum of squares
       \subsubitem IMO 1986 P3 \dotfill \hyperpage{39}
     \subitem Taiwan TST 2015 R3D1P1 \dotfill \hyperpage{37}
-=======
-      \subsubitem Iran TST 2013 D1P2 \dotfill \hyperpage{18}
-    \subitem APMO 1999 P2 \dotfill \hyperpage{84}
-    \subitem ARO 2017 P9.1 \dotfill \hyperpage{52}
-    \subitem German TST 2004 P3 \dotfill \hyperpage{58}
-    \subitem Iran TST 2006 \dotfill \hyperpage{65}
-    \subitem Iran TST 2008 D3P1 \dotfill \hyperpage{16}
-    \subitem Iran TST 2018 P1 \dotfill \hyperpage{30}
-    \subitem ISL 1990 \dotfill \hyperpage{83}
-    \subitem ISL 1994 A1 \dotfill \hyperpage{84}
-    \subitem ISL 2002 C5 \dotfill \hyperpage{17}
-    \subitem ISL 2008 A4 \dotfill \hyperpage{87}
-    \subitem ISL 2008 C2 \dotfill \hyperpage{115}
-    \subitem ISL 2013 N2 \dotfill \hyperpage{86}
-    \subitem RMM 2020 P3 \dotfill \hyperpage{66}
-    \subitem Romanian TST 2016 D1P2 \dotfill \hyperpage{16}
-    \subitem Taiwan TST 2015 R3D1P1 \dotfill \hyperpage{41}
- \item \small Invariant
-    \subitem Monovariant
-      \subsubitem APMO 2015 P3 \dotfill \hyperpage{86}
-      \subsubitem AtCoder GC033 C \dotfill \hyperpage{51}
-      \subsubitem USAMO 2007 P1 \dotfill \hyperpage{86}
-    \subitem Sum of Squares
-      \subsubitem ISL 2007 C4 \dotfill \hyperpage{85}
-    \subitem Sum of squares
-      \subsubitem IMO 1986 P3 \dotfill \hyperpage{43}
-    \subitem Taiwan TST 2015 R3D1P1 \dotfill \hyperpage{41}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -331,17 +187,10 @@
 \noindent\texttt{N}\par\nopagebreak
 
  \item \small Name Things
-<<<<<<< HEAD
     \subitem USAMO 2010 P2 \dotfill \hyperpage{36}
  \item \small Name things
     \subitem APMO 1999 P1 \dotfill \hyperpage{80}
     \subitem ISL 2009 A6 \dotfill \hyperpage{82}
-=======
-    \subitem USAMO 2010 P2 \dotfill \hyperpage{40}
- \item \small Name things
-    \subitem APMO 1999 P1 \dotfill \hyperpage{83}
-    \subitem ISL 2009 A6 \dotfill \hyperpage{85}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -349,19 +198,11 @@
 \noindent\texttt{R}\par\nopagebreak
 
  \item \small Rearrange
-<<<<<<< HEAD
     \subitem APMO 2015 P3 \dotfill \hyperpage{83}
     \subitem ISL 1994 A1 \dotfill \hyperpage{81}
  \item \small Roots of unity filtering
     \subitem Erdos, Arithmatic Progression \dotfill \hyperpage{80}
     \subitem Iran TST 2013 D1P2 \dotfill \hyperpage{12}
-=======
-    \subitem APMO 2015 P3 \dotfill \hyperpage{86}
-    \subitem ISL 1994 A1 \dotfill \hyperpage{84}
- \item \small Roots of unity filtering
-    \subitem Erdos, Arithmatic Progression \dotfill \hyperpage{83}
-    \subitem Iran TST 2013 D1P2 \dotfill \hyperpage{18}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -369,10 +210,6 @@
 \noindent\texttt{S}\par\nopagebreak
 
  \item \small Sum them up
-<<<<<<< HEAD
     \subitem APMO 1999 P2 \dotfill \hyperpage{81}
-=======
-    \subitem APMO 1999 P2 \dotfill \hyperpage{84}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
 \end{theindex}

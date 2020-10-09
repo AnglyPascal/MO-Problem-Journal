@@ -3,7 +3,6 @@
 \large\Titillium%
 \noindent\texttt{C}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Circle Points \dotfill \hyperpage{271}
  \item \small Coharmonic Points \dotfill \hyperpage{271}
  \item \small Convexity \dotfill \hyperpage{161}
@@ -12,42 +11,22 @@
  \item \small Curvilinear Incircle \dotfill \hyperpage{253}
  \item \small Cut \dotfill \hyperpage{54}
  \item \small Cyclotomic Formulas \dotfill \hyperpage{326}
-=======
- \item \small Circle Points \dotfill \hyperpage{274}
- \item \small Coharmonic Points \dotfill \hyperpage{274}
- \item \small Convexity \dotfill \hyperpage{163}
- \item \small Coordinates in Projective Planes \dotfill \hyperpage{273}
- \item \small Cross Ratio \dotfill \hyperpage{273}
- \item \small Curvilinear Incircle \dotfill \hyperpage{256}
- \item \small Cut \dotfill \hyperpage{58}
- \item \small Cyclotomic Formulas \dotfill \hyperpage{330}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{D}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small DFT Matrix \dotfill \hyperpage{24}
  \item \small Discrete Fourier Transform \dotfill \hyperpage{24}
-=======
- \item \small DFT Matrix \dotfill \hyperpage{28}
- \item \small Discrete Fourier Transform \dotfill \hyperpage{28}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{F}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Feurbach Point \dotfill \hyperpage{240}
  \item \small Further Construction \dotfill \hyperpage{317}
-=======
- \item \small Feurbach Point \dotfill \hyperpage{243}
- \item \small Further Construction \dotfill \hyperpage{321}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -55,33 +34,22 @@
 \noindent\texttt{G}\par\nopagebreak
 
  \item \small Generalization of Mixtilinear Incirlce \dotfill 
-<<<<<<< HEAD
 		\hyperpage{252}
-=======
-		\hyperpage{255}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{H}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Hamming Distance \dotfill \hyperpage{14}
  \item \small Harmonic Conjugate Map \dotfill \hyperpage{271}
  \item \small Homogeneous Expression \dotfill \hyperpage{167}
-=======
- \item \small Hamming Distance \dotfill \hyperpage{19}
- \item \small Harmonic Conjugate Map \dotfill \hyperpage{274}
- \item \small Homogeneous Expression \dotfill \hyperpage{169}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{I}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Important Points \dotfill \hyperpage{211}
  \item \small Incenter and Co. \dotfill \hyperpage{224}
  \item \small Inverse Discrete Fourier Transform \dotfill 
@@ -90,66 +58,38 @@
  \item \small Involution \dotfill \hyperpage{271}
  \item \small Involution on Pencil \dotfill \hyperpage{275}
  \item \small Isodynamic Points \dotfill \hyperpage{228}
-=======
- \item \small Important Points \dotfill \hyperpage{213}
- \item \small Incenter and Co. \dotfill \hyperpage{226}
- \item \small Inverse Discrete Fourier Transform \dotfill 
-		\hyperpage{28}
- \item \small Inversions of a Permutation \dotfill \hyperpage{27}
- \item \small Involution \dotfill \hyperpage{274}
- \item \small Involution on Pencil \dotfill \hyperpage{278}
- \item \small Isodynamic Points \dotfill \hyperpage{230}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{J}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Jacobi Symbol \dotfill \hyperpage{330}
-=======
- \item \small Jacobi Symbol \dotfill \hyperpage{334}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{M}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Majorizes \dotfill \hyperpage{161}
  \item \small Mean Values \dotfill \hyperpage{161}
  \item \small Minimum Spanning Tree \dotfill \hyperpage{19}
  \item \small Mixtilinear Circle \dotfill \hyperpage{250}
  \item \small Mobius Function \dotfill \hyperpage{326}
  \item \small Möbius Transformation \dotfill \hyperpage{271}
-=======
- \item \small Majorizes \dotfill \hyperpage{163}
- \item \small Mean Values \dotfill \hyperpage{163}
- \item \small Minimum Spanning Tree \dotfill \hyperpage{24}
- \item \small Mixtilinear Circle \dotfill \hyperpage{253}
- \item \small Mobius Function \dotfill \hyperpage{330}
- \item \small Möbius Transformation \dotfill \hyperpage{274}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{N}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Nimbers \dotfill \hyperpage{63}
-=======
- \item \small Nimbers \dotfill \hyperpage{67}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{P}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Parity of a Permutation \dotfill \hyperpage{22}
  \item \small Pedal Triangles \dotfill \hyperpage{290}
  \item \small Permutation as Composition of Transpositions \dotfill 
@@ -159,44 +99,22 @@
  \item \small Projective Line and Inversive Plane \dotfill 
 		\hyperpage{270}
  \item \small Projective Plane \dotfill \hyperpage{270}
-=======
- \item \small Parity of a Permutation \dotfill \hyperpage{27}
- \item \small Pedal Triangles \dotfill \hyperpage{294}
- \item \small Permutation as Composition of Transpositions \dotfill 
-		\hyperpage{26}
- \item \small Permutations as Matrices \dotfill \hyperpage{27}
- \item \small Projection \dotfill \hyperpage{273}
- \item \small Projective Line and Inversive Plane \dotfill 
-		\hyperpage{273}
- \item \small Projective Plane \dotfill \hyperpage{273}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{S}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small Shortest Path Problem \dotfill \hyperpage{20}
  \item \small Skeleton Diagram \dotfill \hyperpage{317}
  \item \small Sperner Family \dotfill \hyperpage{9}
  \item \small Symmedians \dotfill \hyperpage{245}
-=======
- \item \small Shortest Path Problem \dotfill \hyperpage{25}
- \item \small Skeleton Diagram \dotfill \hyperpage{321}
- \item \small Sperner Family \dotfill \hyperpage{14}
- \item \small Symmedians \dotfill \hyperpage{248}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{T}\par\nopagebreak
 
-<<<<<<< HEAD
  \item \small The usual notations \dotfill \hyperpage{191}
-=======
- \item \small The usual notations \dotfill \hyperpage{193}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
 \end{theindex}

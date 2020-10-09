@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 \indexentry{Sperner Family|hyperpage}{9}
 \indexentry{Hamming Distance|hyperpage}{14}
 \indexentry{Minimum Spanning Tree|hyperpage}{19}
@@ -42,48 +41,3 @@
 \indexentry{Cyclotomic Formulas|hyperpage}{326}
 \indexentry{Mobius Function|hyperpage}{326}
 \indexentry{Jacobi Symbol|hyperpage}{330}
-=======
-\indexentry{Sperner Family|hyperpage}{14}
-\indexentry{Hamming Distance|hyperpage}{19}
-\indexentry{Minimum Spanning Tree|hyperpage}{24}
-\indexentry{Shortest Path Problem|hyperpage}{25}
-\indexentry{Permutation as Composition of Transpositions|hyperpage}{26}
-\indexentry{Inversions of a Permutation|hyperpage}{27}
-\indexentry{Parity of a Permutation|hyperpage}{27}
-\indexentry{Permutations as Matrices|hyperpage}{27}
-\indexentry{DFT Matrix|hyperpage}{28}
-\indexentry{Discrete Fourier Transform|hyperpage}{28}
-\indexentry{Inverse Discrete Fourier Transform|hyperpage}{28}
-\indexentry{Cut|hyperpage}{58}
-\indexentry{Nimbers|hyperpage}{67}
-\indexentry{Majorizes|hyperpage}{163}
-\indexentry{Mean Values|hyperpage}{163}
-\indexentry{Convexity|hyperpage}{163}
-\indexentry{Homogeneous Expression|hyperpage}{169}
-\indexentry{The usual notations|hyperpage}{193}
-\indexentry{Important Points|hyperpage}{213}
-\indexentry{Incenter and Co.|hyperpage}{226}
-\indexentry{Isodynamic Points|hyperpage}{230}
-\indexentry{Feurbach Point|hyperpage}{243}
-\indexentry{Symmedians|hyperpage}{248}
-\indexentry{Mixtilinear Circle|hyperpage}{253}
-\indexentry{Generalization of Mixtilinear Incirlce|hyperpage}{255}
-\indexentry{Curvilinear Incircle|hyperpage}{256}
-\indexentry{Projective Plane|hyperpage}{273}
-\indexentry{Coordinates in Projective Planes|hyperpage}{273}
-\indexentry{Projection|hyperpage}{273}
-\indexentry{Projective Line and Inversive Plane|hyperpage}{273}
-\indexentry{Cross Ratio|hyperpage}{273}
-\indexentry{Möbius Transformation|hyperpage}{274}
-\indexentry{Harmonic Conjugate Map|hyperpage}{274}
-\indexentry{Circle Points|hyperpage}{274}
-\indexentry{Coharmonic Points|hyperpage}{274}
-\indexentry{Involution|hyperpage}{274}
-\indexentry{Involution on Pencil|hyperpage}{278}
-\indexentry{Pedal Triangles|hyperpage}{294}
-\indexentry{Skeleton Diagram|hyperpage}{321}
-\indexentry{Further Construction|hyperpage}{321}
-\indexentry{Cyclotomic Formulas|hyperpage}{330}
-\indexentry{Mobius Function|hyperpage}{330}
-\indexentry{Jacobi Symbol|hyperpage}{334}
->>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
