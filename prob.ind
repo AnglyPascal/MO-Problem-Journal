@@ -3,8 +3,13 @@
 \large\Titillium%
 \noindent\texttt{Symbols}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small 169 P20 \dotfill \hyperpage{138}
  \item \small 2nd Olympiad of Metropolises \dotfill \hyperpage{293}
+=======
+ \item \small 169 P20 \dotfill \hyperpage{140}
+ \item \small 2nd Olympiad of Metropolises \dotfill \hyperpage{297}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -12,6 +17,7 @@
 \noindent\texttt{A}\par\nopagebreak
 
  \item \small A reformulation of Catalan's Numbers \dotfill 
+<<<<<<< HEAD
 		\hyperpage{126}
  \item \small After Inverting Around D \dotfill \hyperpage{230}
  \item \small All Russia 1999 P9.3 \dotfill \hyperpage{308}
@@ -102,12 +108,105 @@
  \item \small AtCoder GC033 C \dotfill \hyperpage{46}
  \item \small AtCoder GC043 B \dotfill \hyperpage{31}
  \item \small Autumn Tournament, 2012 \dotfill \hyperpage{249}
+=======
+		\hyperpage{128}
+ \item \small After Inverting Around D \dotfill \hyperpage{232}
+ \item \small All Russia 1999 P9.3 \dotfill \hyperpage{312}
+ \item \small All Russia 2000 P11.7 \dotfill \hyperpage{312}
+ \item \small All Russia 2000 P9.3 \dotfill \hyperpage{312}
+ \item \small All Russia 2002 P11.6 \dotfill \hyperpage{313}
+ \item \small All Russia 2014 P9.5 \dotfill \hyperpage{348}
+ \item \small All Russia 2017 9.1 \dotfill \hyperpage{62}
+ \item \small All Russian 2014 Grade 10 Day 1 P4 \dotfill 
+		\hyperpage{265}
+ \item \small All Russian Olympiad 2016, Day2, Grade 11, P5 \dotfill 
+		\hyperpage{155}
+ \item \small All Squares \dotfill \hyperpage{342}
+ \item \small American Mathematical Monthly E2309 \dotfill 
+		\hyperpage{16}
+ \item \small AoPS \dotfill \hyperpage{32}, \hyperpage{117}, 
+		\hyperpage{124}, \hyperpage{268}, \hyperpage{296, 297}, 
+		\hyperpage{299}, \hyperpage{305, 306}, 
+		\hyperpage{311, 312}, \hyperpage{319}
+ \item \small AoPS1 \dotfill \hyperpage{254}
+ \item \small AoPS2 \dotfill \hyperpage{303}
+ \item \small AoPS3 \dotfill \hyperpage{299}
+ \item \small AoPS4 \dotfill \hyperpage{300}
+ \item \small AoPS5 \dotfill \hyperpage{305}
+ \item \small AoPS6 \dotfill \hyperpage{310}
+ \item \small AoPS7 \dotfill \hyperpage{311}
+ \item \small APMO 1991 P3 \dotfill \hyperpage{171}
+ \item \small APMO 1999 P1 \dotfill \hyperpage{83}
+ \item \small APMO 1999 P2 \dotfill \hyperpage{84}
+ \item \small APMO 1999 P3 \dotfill \hyperpage{203}, \hyperpage{259}
+ \item \small APMO 1999 P4 \dotfill \hyperpage{342}
+ \item \small APMO 1999 P5 \dotfill \hyperpage{74}
+ \item \small APMO 2008 P2 \dotfill \hyperpage{91}
+ \item \small APMO 2008 P4 \dotfill \hyperpage{357}
+ \item \small APMO 2012 P2 \dotfill \hyperpage{124}
+ \item \small APMO 2014 P1 \dotfill \hyperpage{353}
+ \item \small APMO 2014 P3 \dotfill \hyperpage{353}
+ \item \small APMO 2014 P5 \dotfill \hyperpage{308}
+ \item \small APMO 2015 P2 \dotfill \hyperpage{141}
+ \item \small APMO 2015 P3 \dotfill \hyperpage{86}
+ \item \small APMO 2017 P1 \dotfill \hyperpage{89}
+ \item \small APMO 2017 P3 \dotfill \hyperpage{100}
+ \item \small APMO 2017 P4 \dotfill \hyperpage{359}
+ \item \small APMO 2018 P1 \dotfill \hyperpage{236}
+ \item \small APMO 2018 P2 \dotfill \hyperpage{177}
+ \item \small APMO 2018 P3 \dotfill \hyperpage{78}
+ \item \small APMO 2018 P4 \dotfill \hyperpage{78}
+ \item \small APMO 2019 P3 \dotfill \hyperpage{323}
+ \item \small Application of Aollonius Circle and Incenter Lemma \dotfill 
+		\hyperpage{229}
+ \item \small Archer - EChen M1P2 \dotfill \hyperpage{268}
+ \item \small Archer - EChen M1P3 \dotfill \hyperpage{255}
+ \item \small ARMO 2013 Grade 11 Day 2 P4 \dotfill \hyperpage{296}
+ \item \small ARO 1979's Sharper Version \dotfill \hyperpage{46}
+ \item \small ARO 1993 P10.4 \dotfill \hyperpage{102}
+ \item \small ARO 1999 P10.1 \dotfill \hyperpage{69}
+ \item \small ARO 1999 P4 \dotfill \hyperpage{99}
+ \item \small ARO 1999 P9.8 \dotfill \hyperpage{51}
+ \item \small ARO 2005 P10.3, P11.2 \dotfill \hyperpage{38}
+ \item \small ARO 2005 P10.8 \dotfill \hyperpage{49}
+ \item \small ARO 2005 P9.4 \dotfill \hyperpage{55}
+ \item \small ARO 2006 11.3 \dotfill \hyperpage{93}
+ \item \small ARO 2007 P9.7 \dotfill \hyperpage{132}
+ \item \small ARO 2008 P9.5 \dotfill \hyperpage{119}
+ \item \small ARO 2011 P10.8 \dotfill \hyperpage{99}
+ \item \small ARO 2011 P11.6 \dotfill \hyperpage{132}
+ \item \small ARO 2013 P9.4 \dotfill \hyperpage{73}
+ \item \small ARO 2013 P9.5 \dotfill \hyperpage{64}
+ \item \small ARO 2014 P10.8 \dotfill \hyperpage{132}
+ \item \small ARO 2014 P9.3 \dotfill \hyperpage{73}
+ \item \small ARO 2014 P9.4 \dotfill \hyperpage{203}
+ \item \small ARO 2014 P9.7 \dotfill \hyperpage{131}
+ \item \small ARO 2014 P9.8 \dotfill \hyperpage{58}
+ \item \small ARO 2016 P1 \dotfill \hyperpage{124}
+ \item \small ARO 2016 P3 \dotfill \hyperpage{121}
+ \item \small ARO 2017 P9.1 \dotfill \hyperpage{52}
+ \item \small ARO 2018 10.3 \dotfill \hyperpage{116}
+ \item \small ARO 2018 P10.1 \dotfill \hyperpage{177}
+ \item \small ARO 2018 P10.2 \dotfill \hyperpage{203}
+ \item \small ARO 2018 P10.4 \dotfill \hyperpage{357}
+ \item \small ARO 2018 P11.1 \dotfill \hyperpage{155}
+ \item \small ARO 2018 P11.2 \dotfill \hyperpage{171}
+ \item \small ARO 2018 P11.4 \dotfill \hyperpage{215}
+ \item \small ARO 2018 P11.5 \dotfill \hyperpage{89}
+ \item \small ARO 2018 P11.6 \dotfill \hyperpage{317}
+ \item \small ARO 2018 P9.1 \dotfill \hyperpage{356}
+ \item \small ARO 2018 P9.5 \dotfill \hyperpage{116}
+ \item \small AtCoder GC033 C \dotfill \hyperpage{50}
+ \item \small AtCoder GC043 B \dotfill \hyperpage{35}
+ \item \small Autumn Tournament, 2012 \dotfill \hyperpage{252}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{B}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Balkan MO 2017 P1 \dotfill \hyperpage{343}
  \item \small Balkan MO 2017 P3 \dotfill \hyperpage{193}, 
 		\hyperpage{344}
@@ -128,12 +227,35 @@
 		\hyperpage{255}
  \item \small buratinogigle's proposed probs for Arab Saudi team 2015 \dotfill 
 		\hyperpage{232}
+=======
+ \item \small Balkan MO 2017 P1 \dotfill \hyperpage{347}
+ \item \small Balkan MO 2017 P3 \dotfill \hyperpage{195}, 
+		\hyperpage{348}
+ \item \small BdMO 2019 P10 \dotfill \hyperpage{81}
+ \item \small Belarus 2001 \dotfill \hyperpage{54}
+ \item \small Bewarish 1 \dotfill \hyperpage{196}
+ \item \small Binom 2 \dotfill \hyperpage{11}
+ \item \small Binom1 \dotfill \hyperpage{10}
+ \item \small Brazilian MO 2002, ARO 1979 \dotfill \hyperpage{46}
+ \item \small Brazilian Olympic Revenge 2014 \dotfill \hyperpage{121}
+ \item \small BrMO 2008 \dotfill \hyperpage{349}
+ \item \small Bulgaria 1995 \dotfill \hyperpage{176}
+ \item \small Bulgarian IMO TST 2004, Day 3, Problem 3 \dotfill 
+		\hyperpage{117}
+ \item \small buratinogigle \dotfill \hyperpage{215}
+ \item \small buratinogigle Tough P1 \dotfill \hyperpage{319}
+ \item \small buratinogigle's proposed problems for Arab Saudi team 2015 \dotfill 
+		\hyperpage{258}
+ \item \small buratinogigle's proposed probs for Arab Saudi team 2015 \dotfill 
+		\hyperpage{234}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{C}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small CGMO 2010 P1 \dotfill \hyperpage{12}
  \item \small CGMO 2016 P3 \dotfill \hyperpage{331}
  \item \small China MO 2018 P2 \dotfill \hyperpage{127}
@@ -163,6 +285,37 @@
  \item \small CodeForces 989B \dotfill \hyperpage{124}
  \item \small CodeForces 989C \dotfill \hyperpage{124}
  \item \small Cody Johnson \dotfill \hyperpage{29}
+=======
+ \item \small CGMO 2010 P1 \dotfill \hyperpage{17}
+ \item \small CGMO 2016 P3 \dotfill \hyperpage{335}
+ \item \small China MO 2018 P2 \dotfill \hyperpage{129}
+ \item \small China MO 2018 P5 \dotfill \hyperpage{129}
+ \item \small China TST 1995 P5 \dotfill \hyperpage{154}
+ \item \small China TST 2005 \dotfill \hyperpage{350}
+ \item \small China TST 2006 \dotfill \hyperpage{34}
+ \item \small China TST 2011, Quiz 2, D2, P1 \dotfill \hyperpage{222}
+ \item \small China TST 2013 T2P2 \dotfill \hyperpage{339}
+ \item \small China TST 2015 T1 D2 P3 \dotfill \hyperpage{48}
+ \item \small China TST 2015 T1D2P1 \dotfill \hyperpage{82}
+ \item \small China TST 2016 T3P2 \dotfill \hyperpage{77}
+ \item \small China TST 2018 T1P3 \dotfill \hyperpage{230}
+ \item \small China TST 2018 T2P4 \dotfill \hyperpage{339}
+ \item \small China TST D2P2, Dual of the Hagge's Circle theorem \dotfill 
+		\hyperpage{222}
+ \item \small CHKMO 2014 P4 \dotfill \hyperpage{219}
+ \item \small CIIM 2019 P3 \dotfill \hyperpage{20}
+ \item \small Codeforces 101954/G \dotfill \hyperpage{102}
+ \item \small Codeforces 1158D \dotfill \hyperpage{82}
+ \item \small Codeforces 1270F \dotfill \hyperpage{42}
+ \item \small Codeforces 1379E \dotfill \hyperpage{43}
+ \item \small Codeforces 330D \dotfill \hyperpage{42}
+ \item \small Codeforces 744B \dotfill \hyperpage{35}
+ \item \small Codeforces 960C \dotfill \hyperpage{38}
+ \item \small Codeforces 987E \dotfill \hyperpage{31}
+ \item \small CodeForces 989B \dotfill \hyperpage{126}
+ \item \small CodeForces 989C \dotfill \hyperpage{125}
+ \item \small Cody Johnson \dotfill \hyperpage{33}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -170,14 +323,20 @@
 \noindent\texttt{D}\par\nopagebreak
 
  \item \small Dividing the integers into arithmetic progressions, Erdos \dotfill 
+<<<<<<< HEAD
 		\hyperpage{80}
  \item \small Dunno \dotfill \hyperpage{279}
+=======
+		\hyperpage{83}
+ \item \small Dunno \dotfill \hyperpage{283}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{E}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small EGMO 2012 P3 \dotfill \hyperpage{136}
  \item \small EGMO 2015 P2 \dotfill \hyperpage{93}
  \item \small EGMO 2017 P2 \dotfill \hyperpage{100}
@@ -189,6 +348,19 @@
  \item \small European Mathematics Cup 2018 P1 \dotfill \hyperpage{88}
  \item \small European Mathematics Cup 2018 P2 \dotfill \hyperpage{202}
  \item \small European Mathematics Cup 2018 P3 \dotfill \hyperpage{175}
+=======
+ \item \small EGMO 2012 P3 \dotfill \hyperpage{138}
+ \item \small EGMO 2015 P2 \dotfill \hyperpage{95}
+ \item \small EGMO 2017 P2 \dotfill \hyperpage{102}
+ \item \small EGMO 2017 P3 \dotfill \hyperpage{73}
+ \item \small EGMO 2017 P5 \dotfill \hyperpage{94}
+ \item \small Eight queens puzzle \dotfill \hyperpage{80}
+ \item \small ELMO 2017 P5 \dotfill \hyperpage{54}
+ \item \small ELMO 2019 P3 \dotfill \hyperpage{206}
+ \item \small European Mathematics Cup 2018 P1 \dotfill \hyperpage{90}
+ \item \small European Mathematics Cup 2018 P2 \dotfill \hyperpage{204}
+ \item \small European Mathematics Cup 2018 P3 \dotfill \hyperpage{177}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -196,13 +368,18 @@
 \noindent\texttt{F}\par\nopagebreak
 
  \item \small Four Incenters in a Tangential Quadrilateral \dotfill 
+<<<<<<< HEAD
 		\hyperpage{235}
+=======
+		\hyperpage{237}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{G}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Generalization of ARO 2014 P9.8 \dotfill \hyperpage{54}
  \item \small Generalization of Iran TST 2017 P5 \dotfill 
 		\hyperpage{292}
@@ -210,12 +387,22 @@
  \item \small German TST 2004 E7P3 \dotfill \hyperpage{54}
  \item \small GQMO 2020 P3 \dotfill \hyperpage{180}
  \item \small GQMO 2020 P4 \dotfill \hyperpage{41}
+=======
+ \item \small Generalization of ARO 2014 P9.8 \dotfill \hyperpage{58}
+ \item \small Generalization of Iran TST 2017 P5 \dotfill 
+		\hyperpage{296}
+ \item \small Geodip \dotfill \hyperpage{238}
+ \item \small German TST 2004 E7P3 \dotfill \hyperpage{58}
+ \item \small GQMO 2020 P3 \dotfill \hyperpage{182}
+ \item \small GQMO 2020 P4 \dotfill \hyperpage{45}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{I}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small IGO 2014 S5 \dotfill \hyperpage{247}
  \item \small IGO 2017 A2 \dotfill \hyperpage{201}
  \item \small IGO 2017 A3 \dotfill \hyperpage{196}
@@ -468,55 +655,338 @@
  \item \small ISL 2019 G6 \dotfill \hyperpage{239}
  \item \small ISL 2019 N4 \dotfill \hyperpage{337}
  \item \small Isogonal Conjugate and cevians \dotfill \hyperpage{273}
+=======
+ \item \small IGO 2014 S5 \dotfill \hyperpage{250}
+ \item \small IGO 2017 A2 \dotfill \hyperpage{203}
+ \item \small IGO 2017 A3 \dotfill \hyperpage{198}
+ \item \small IGO 2017 A4 \dotfill \hyperpage{202, 203}
+ \item \small IGO 2018 A3 \dotfill \hyperpage{77}
+ \item \small IGO 2018 A5 \dotfill \hyperpage{204}
+ \item \small IGO 2019 A5 \dotfill \hyperpage{211}
+ \item \small IGO 2019 Advanced P4 \dotfill \hyperpage{322}
+ \item \small ILL 1985 \dotfill \hyperpage{74}
+ \item \small IMEO 2020 P3 \dotfill \hyperpage{146}
+ \item \small IMO 1974 P2 \dotfill \hyperpage{176}
+ \item \small IMO 1979 P3 \dotfill \hyperpage{133}
+ \item \small IMO 1986 P3 \dotfill \hyperpage{43}
+ \item \small IMO 1994 P5 \dotfill \hyperpage{138}
+ \item \small IMO 1998 P3 \dotfill \hyperpage{351}
+ \item \small IMO 2011 P2 \dotfill \hyperpage{122}
+ \item \small IMO 2011 P4 \dotfill \hyperpage{91}
+ \item \small IMO 2012 P2 \dotfill \hyperpage{172}
+ \item \small IMO 2013 P3 \dotfill \hyperpage{234}
+ \item \small IMO 2017 P2 \dotfill \hyperpage{138}
+ \item \small IMO 2017 P5 \dotfill \hyperpage{119}
+ \item \small IMO 2018 P4 \dotfill \hyperpage{80}
+ \item \small IMO 2018 P6 \dotfill \hyperpage{262}
+ \item \small IMO SL 1985 \dotfill \hyperpage{91}
+ \item \small India 1995 \dotfill \hyperpage{175}
+ \item \small India IMO Camp 2017 \dotfill \hyperpage{125}
+ \item \small India Postals 2015 Set 2 \dotfill \hyperpage{246}
+ \item \small India TST \dotfill \hyperpage{317}
+ \item \small India TST 2013 Test 3, P1 \dotfill \hyperpage{122}
+ \item \small India TST 2017 D1 P3 \dotfill \hyperpage{37}
+ \item \small Indian Postal Coaching 2011 \dotfill \hyperpage{124}
+ \item \small Indian TST 2004 \dotfill \hyperpage{68}
+ \item \small InfinityDots MO Problem 3 \dotfill \hyperpage{214}
+ \item \small IOI 2007 P3 \dotfill \hyperpage{39}
+ \item \small IOI 2016 P5 \dotfill \hyperpage{122}
+ \item \small IOI 2018 P1 \dotfill \hyperpage{133}
+ \item \small IOI Practice 2017 \dotfill \hyperpage{31}
+ \item \small IOM 2017 P1 \dotfill \hyperpage{289}
+ \item \small Iran 2005 \dotfill \hyperpage{78}
+ \item \small Iran 2018 T1P1 \dotfill \hyperpage{355}
+ \item \small IRAN 2nd Round 2016 P6 \dotfill \hyperpage{299}
+ \item \small IRAN 3rd Round 2010 D3, P5 \dotfill \hyperpage{299}
+ \item \small IRAN 3rd Round 2010 D3, P6 \dotfill \hyperpage{307}
+ \item \small IRAN 3rd Round 2011 G5 \dotfill \hyperpage{299}
+ \item \small Iran 3rd Round 2015 P5 \dotfill \hyperpage{212}
+ \item \small IRAN 3rd Round 2016 G6 \dotfill \hyperpage{306}
+ \item \small Iran 3rd Round 2016 N3 \dotfill \hyperpage{344}
+ \item \small IRAN 3rd Round 2016 P1 \dotfill \hyperpage{201}
+ \item \small IRAN 3rd Round 2016 P2 \dotfill \hyperpage{299}
+ \item \small Iran 3rd Round G4 \dotfill \hyperpage{281}
+ \item \small Iran 3rd Round G4 Generalized version \dotfill 
+		\hyperpage{281}
+ \item \small Iran 3rd Round Training 2016 \dotfill \hyperpage{225}
+ \item \small Iran MO 3rd round 2017 mid-terms Geometry P3 \dotfill 
+		\hyperpage{318}
+ \item \small Iran MO 3rd Round N3 \dotfill \hyperpage{348}
+ \item \small Iran TST 2002 P3 \dotfill \hyperpage{119}
+ \item \small Iran TST 2004 P4 \dotfill \hyperpage{271}
+ \item \small Iran TST 2004 P6 \dotfill \hyperpage{156}
+ \item \small Iran TST 2006 \dotfill \hyperpage{65}
+ \item \small Iran TST 2007 P2 \dotfill \hyperpage{125}
+ \item \small Iran TST 2008 D3P1 \dotfill \hyperpage{16}
+ \item \small Iran TST 2008 P12 \dotfill \hyperpage{240}
+ \item \small IRAN TST 2009 P2 \dotfill \hyperpage{350}
+ \item \small Iran TST 2009 P4 \dotfill \hyperpage{156}
+ \item \small Iran TST 2009 P6 \dotfill \hyperpage{65}
+ \item \small Iran TST 2012 P4 \dotfill \hyperpage{116}
+ \item \small Iran TST 2013 D1P2 \dotfill \hyperpage{17}
+ \item \small Iran TST 2014 T1P6 \dotfill \hyperpage{307}
+ \item \small IRAN TST 2015 Day 2, P3 \dotfill \hyperpage{301}
+ \item \small IRAN TST 2015 Day 3, P2 \dotfill \hyperpage{295}
+ \item \small IRAN TST 2015 Day 3, P3 \dotfill \hyperpage{248}
+ \item \small Iran TST 2015 P11 \dotfill \hyperpage{347}
+ \item \small Iran TST 2015, P4 \dotfill \hyperpage{347}
+ \item \small Iran TST 2017 D1P1 \dotfill \hyperpage{126}
+ \item \small IRAN TST 2017 Day 1, P3 \dotfill \hyperpage{295}
+ \item \small Iran TST 2017 P5 \dotfill \hyperpage{315}
+ \item \small Iran TST 2017 T3 P6 \dotfill \hyperpage{306}
+ \item \small Iran TST 2018 D2P6 \dotfill \hyperpage{272}
+ \item \small Iran TST 2018 P1 \dotfill \hyperpage{30}
+ \item \small Iran TST 2018 P3 \dotfill \hyperpage{236}
+ \item \small Iran TST 2018 P4 \dotfill \hyperpage{236}
+ \item \small Iran TST 2018 T1P3 \dotfill \hyperpage{313}
+ \item \small Iran TST 2018 T1P4 \dotfill \hyperpage{313}
+ \item \small Iran TST 2018 T2P4 \dotfill \hyperpage{355}
+ \item \small Iran TST 2018 T3P6 \dotfill \hyperpage{313}
+ \item \small Iran TST ?? \dotfill \hyperpage{78}
+ \item \small Iran TST T2P1 \dotfill \hyperpage{139}
+ \item \small Iran TST T2P5 \dotfill \hyperpage{235}
+ \item \small ISL 1988 P10 \dotfill \hyperpage{17}
+ \item \small ISL 1990 \dotfill \hyperpage{83}
+ \item \small ISL 1990 P3 \dotfill \hyperpage{120}
+ \item \small ISL 1991 P10 \dotfill \hyperpage{130}
+ \item \small ISL 1993 C5 \dotfill \hyperpage{98}
+ \item \small ISL 1994 A1 \dotfill \hyperpage{84}
+ \item \small ISL 1994 A4 \dotfill \hyperpage{138}
+ \item \small ISL 1994 C2 \dotfill \hyperpage{94}
+ \item \small ISL 1994 C3 \dotfill \hyperpage{32}
+ \item \small ISL 1996 A2 \dotfill \hyperpage{174}
+ \item \small ISL 1997 P4 \dotfill \hyperpage{117}
+ \item \small ISL 1998 A1 \dotfill \hyperpage{172}
+ \item \small ISL 1998 C4 \dotfill \hyperpage{123}
+ \item \small ISL 1998 C7 \dotfill \hyperpage{68}
+ \item \small ISL 1999 A1 \dotfill \hyperpage{173}
+ \item \small ISL 2000 N1 \dotfill \hyperpage{348}
+ \item \small ISL 2000 N3 \dotfill \hyperpage{348}
+ \item \small ISL 2001 A1 \dotfill \hyperpage{140}, \hyperpage{172}
+ \item \small ISL 2001 C3 \dotfill \hyperpage{52}
+ \item \small ISL 2001 C6 \dotfill \hyperpage{123}
+ \item \small ISL 2002 A1 \dotfill \hyperpage{140}
+ \item \small ISL 2002 C1 \dotfill \hyperpage{90}
+ \item \small ISL 2002 C2 \dotfill \hyperpage{102}
+ \item \small ISL 2002 C3 \dotfill \hyperpage{93}
+ \item \small ISL 2002 C5 \dotfill \hyperpage{17}
+ \item \small ISL 2002 C6 \dotfill \hyperpage{127}
+ \item \small ISL 2002 G1 \dotfill \hyperpage{316}
+ \item \small ISL 2002 G2 \dotfill \hyperpage{316}
+ \item \small ISL 2002 G3 \dotfill \hyperpage{317}
+ \item \small ISL 2002 G4 \dotfill \hyperpage{317}
+ \item \small ISL 2002 G7 \dotfill \hyperpage{317}
+ \item \small ISL 2002 G8 \dotfill \hyperpage{259}
+ \item \small ISL 2002 N1 \dotfill \hyperpage{355}
+ \item \small ISL 2002 N2 \dotfill \hyperpage{356}
+ \item \small ISL 2002 N3 \dotfill \hyperpage{356}
+ \item \small ISL 2002 N6 \dotfill \hyperpage{343}
+ \item \small ISL 2003 C1 \dotfill \hyperpage{94}
+ \item \small ISL 2003 C2 \dotfill \hyperpage{76}
+ \item \small ISL 2003 C3 \dotfill \hyperpage{76}
+ \item \small ISL 2003 C4 \dotfill \hyperpage{37}
+ \item \small ISL 2004 A1 \dotfill \hyperpage{174}
+ \item \small ISL 2004 A2 \dotfill \hyperpage{180}
+ \item \small ISL 2004 C1 \dotfill \hyperpage{89}
+ \item \small ISL 2004 C2 \dotfill \hyperpage{116}
+ \item \small ISL 2004 C3 \dotfill \hyperpage{116}
+ \item \small ISL 2004 C5 \dotfill \hyperpage{117}
+ \item \small ISL 2004 N1 \dotfill \hyperpage{337}, \hyperpage{354}
+ \item \small ISL 2004 N2 \dotfill \hyperpage{347}
+ \item \small ISL 2004 N3 \dotfill \hyperpage{340}
+ \item \small ISL 2004 N4 \dotfill \hyperpage{335}
+ \item \small ISL 2005 A1 \dotfill \hyperpage{161}
+ \item \small ISL 2005 A2 \dotfill \hyperpage{139}
+ \item \small ISL 2005 A3 \dotfill \hyperpage{178}
+ \item \small ISL 2005 A4 \dotfill \hyperpage{139}
+ \item \small ISL 2005 C1 \dotfill \hyperpage{61}
+ \item \small ISL 2005 C2 \dotfill \hyperpage{31}, \hyperpage{62}
+ \item \small ISL 2005 C3 \dotfill \hyperpage{128}
+ \item \small ISL 2005 C4 \dotfill \hyperpage{56}
+ \item \small ISL 2006 C1 \dotfill \hyperpage{118}
+ \item \small ISL 2006 C2 \dotfill \hyperpage{73}
+ \item \small ISL 2006 C3 \dotfill \hyperpage{110}
+ \item \small ISL 2006 C4 \dotfill \hyperpage{118}
+ \item \small ISL 2006 C6 \dotfill \hyperpage{46}
+ \item \small ISL 2006 G6 \dotfill \hyperpage{236}, \hyperpage{314}
+ \item \small ISL 2006 G7 \dotfill \hyperpage{314}
+ \item \small ISL 2006 G9 \dotfill \hyperpage{314}
+ \item \small ISL 2006 N4 \dotfill \hyperpage{156}
+ \item \small ISL 2007 A2 \dotfill \hyperpage{144}
+ \item \small ISL 2007 A3 \dotfill \hyperpage{171}
+ \item \small ISL 2007 A4 \dotfill \hyperpage{143}
+ \item \small ISL 2007 C1 \dotfill \hyperpage{103}
+ \item \small ISL 2007 C2 \dotfill \hyperpage{75}
+ \item \small ISL 2007 C3 \dotfill \hyperpage{103}
+ \item \small ISL 2007 C4 \dotfill \hyperpage{85}
+ \item \small ISL 2007 C5 \dotfill \hyperpage{78}
+ \item \small ISL 2008 A1 \dotfill \hyperpage{138}
+ \item \small ISL 2008 A3 \dotfill \hyperpage{142}
+ \item \small ISL 2008 A4 \dotfill \hyperpage{87}
+ \item \small ISL 2008 C1 \dotfill \hyperpage{121}
+ \item \small ISL 2008 C2 \dotfill \hyperpage{115}
+ \item \small ISL 2008 C3 \dotfill \hyperpage{79}
+ \item \small ISL 2008 C4 \dotfill \hyperpage{100}
+ \item \small ISL 2009 A2 \dotfill \hyperpage{171}
+ \item \small ISL 2009 A3 \dotfill \hyperpage{146}
+ \item \small ISL 2009 A6 \dotfill \hyperpage{85}
+ \item \small ISL 2009 C1 \dotfill \hyperpage{70}
+ \item \small ISL 2009 C2 \dotfill \hyperpage{126}
+ \item \small ISL 2009 C3 \dotfill \hyperpage{105}
+ \item \small ISL 2009 G3 \dotfill \hyperpage{317}
+ \item \small ISL 2009 G4 \dotfill \hyperpage{265}
+ \item \small ISL 2009 N1 \dotfill \hyperpage{354}
+ \item \small ISL 2009 N2 \dotfill \hyperpage{354}
+ \item \small ISL 2009 N3 \dotfill \hyperpage{356}
+ \item \small ISL 2009 N4 \dotfill \hyperpage{357}
+ \item \small ISL 2009 N5 \dotfill \hyperpage{340}
+ \item \small ISL 2010 A3 \dotfill \hyperpage{178}
+ \item \small ISL 2010 C2 \dotfill \hyperpage{125}
+ \item \small ISL 2010 C3 \dotfill \hyperpage{96}
+ \item \small ISL 2010 C4 \dotfill \hyperpage{44}
+ \item \small ISL 2010 G5 \dotfill \hyperpage{210}
+ \item \small ISL 2010 N3 \dotfill \hyperpage{342}
+ \item \small ISL 2010 N5 \dotfill \hyperpage{340}
+ \item \small ISL 2011 A2 \dotfill \hyperpage{181}
+ \item \small ISL 2011 A3 \dotfill \hyperpage{139}
+ \item \small ISL 2011 A5 \dotfill \hyperpage{126}
+ \item \small ISL 2011 G4 \dotfill \hyperpage{318}
+ \item \small ISL 2011 G7 \dotfill \hyperpage{293}
+ \item \small ISL 2011 G8 \dotfill \hyperpage{205}
+ \item \small ISL 2011 N1 \dotfill \hyperpage{354}
+ \item \small ISL 2012 A1 \dotfill \hyperpage{142}
+ \item \small ISL 2012 A4 \dotfill \hyperpage{157}
+ \item \small ISL 2012 A5 \dotfill \hyperpage{142}
+ \item \small ISL 2012 C1 \dotfill \hyperpage{32}
+ \item \small ISL 2012 C2 \dotfill \hyperpage{125}
+ \item \small ISL 2012 C3 \dotfill \hyperpage{109}
+ \item \small ISL 2012 C4 \dotfill \hyperpage{70}
+ \item \small ISL 2012 G8 \dotfill \hyperpage{316}
+ \item \small ISL 2012 N3 \dotfill \hyperpage{337}
+ \item \small ISL 2012 N6 \dotfill \hyperpage{338}
+ \item \small ISL 2013 C1 \dotfill \hyperpage{121}
+ \item \small ISL 2013 C2, IMO 2013 P2 \dotfill \hyperpage{74}
+ \item \small ISL 2013 C3 \dotfill \hyperpage{61}
+ \item \small ISL 2013 N1 \dotfill \hyperpage{340}
+ \item \small ISL 2013 N2 \dotfill \hyperpage{86}
+ \item \small ISL 2013 N5 \dotfill \hyperpage{337}
+ \item \small ISL 2014 A1 \dotfill \hyperpage{33}, \hyperpage{181}
+ \item \small ISL 2014 A2 \dotfill \hyperpage{177}
+ \item \small ISL 2014 C1 \dotfill \hyperpage{75}
+ \item \small ISL 2014 C2 \dotfill \hyperpage{118}
+ \item \small ISL 2014 C3 \dotfill \hyperpage{124}
+ \item \small ISL 2014 C4 \dotfill \hyperpage{104}
+ \item \small ISL 2014 G5 \dotfill \hyperpage{207}
+ \item \small ISL 2014 G7 \dotfill \hyperpage{208}
+ \item \small ISL 2014 N1 \dotfill \hyperpage{41}, \hyperpage{355}
+ \item \small ISL 2014 N2 \dotfill \hyperpage{355}
+ \item \small ISL 2014 N3 \dotfill \hyperpage{34}
+ \item \small ISL 2014 N4 \dotfill \hyperpage{337}
+ \item \small ISL 2014 N5 \dotfill \hyperpage{342}
+ \item \small ISL 2015 A1 \dotfill \hyperpage{178}
+ \item \small ISL 2015 A2 \dotfill \hyperpage{141}
+ \item \small ISL 2015 A3 \dotfill \hyperpage{178}
+ \item \small ISL 2015 A4 \dotfill \hyperpage{141}
+ \item \small ISL 2015 C1 \dotfill \hyperpage{90}
+ \item \small ISL 2015 C2 \dotfill \hyperpage{79}
+ \item \small ISL 2015 C4 \dotfill \hyperpage{69}
+ \item \small ISL 2015 G5 \dotfill \hyperpage{210}
+ \item \small ISL 2015 G6 \dotfill \hyperpage{209}
+ \item \small ISL 2015 N2 \dotfill \hyperpage{357}
+ \item \small ISL 2015 N3 \dotfill \hyperpage{352}
+ \item \small ISL 2015 N4 \dotfill \hyperpage{352}
+ \item \small ISL 2016 A1 \dotfill \hyperpage{173}
+ \item \small ISL 2016 A2 \dotfill \hyperpage{173}
+ \item \small ISL 2016 C1 \dotfill \hyperpage{30}
+ \item \small ISL 2016 C2 \dotfill \hyperpage{103}
+ \item \small ISL 2016 C3 \dotfill \hyperpage{119}
+ \item \small ISL 2016 C6 \dotfill \hyperpage{63}
+ \item \small ISL 2016 G6 \dotfill \hyperpage{297}
+ \item \small ISL 2016 N5 \dotfill \hyperpage{358}
+ \item \small ISL 2017 A1 \dotfill \hyperpage{173}
+ \item \small ISL 2018 C5 \dotfill \hyperpage{112}
+ \item \small ISL 2019 G6 \dotfill \hyperpage{241}
+ \item \small ISL 2019 N4 \dotfill \hyperpage{341}
+ \item \small Isogonal Conjugate and cevians \dotfill \hyperpage{276}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{J}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Jacob Tsimerman Induction \dotfill \hyperpage{59}
  \item \small Japan MO 2017 P1 \dotfill \hyperpage{352}
  \item \small Japan MO 2017 P2, TST Mock 2018 \dotfill \hyperpage{352}
  \item \small Japan MO 2017 P3 \dotfill \hyperpage{312, 313}
+=======
+ \item \small Jacob Tsimerman Induction \dotfill \hyperpage{63}
+ \item \small Japan MO 2017 P1 \dotfill \hyperpage{356}
+ \item \small Japan MO 2017 P2, TST Mock 2018 \dotfill \hyperpage{356}
+ \item \small Japan MO 2017 P3 \dotfill \hyperpage{316, 317}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{K}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Korean Summer Program TST 2016 1 \dotfill \hyperpage{180}
+=======
+ \item \small Korean Summer Program TST 2016 1 \dotfill \hyperpage{182}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{L}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Lithuania ?? \dotfill \hyperpage{74}
+=======
+ \item \small Lithuania ?? \dotfill \hyperpage{77}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{M}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Math Price for Girls 2017 P4 \dotfill \hyperpage{74}
  \item \small MEMO 2008, Team, P6 \dotfill \hyperpage{28}
  \item \small MEMO 2015 T4 \dotfill \hyperpage{73}
  \item \small Mexican Regional 2014 P6 \dotfill \hyperpage{117}
  \item \small MOP Problem \dotfill \hyperpage{93}
+=======
+ \item \small Math Price for Girls 2017 P4 \dotfill \hyperpage{77}
+ \item \small MEMO 2008, Team, P6 \dotfill \hyperpage{32}
+ \item \small MEMO 2015 T4 \dotfill \hyperpage{76}
+ \item \small Mexican Regional 2014 P6 \dotfill \hyperpage{119}
+ \item \small MOP Problem \dotfill \hyperpage{95}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{O}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small OC Chap2 P2 \dotfill \hyperpage{62}
  \item \small OIM 1994 \dotfill \hyperpage{31}
+=======
+ \item \small OC Chap2 P2 \dotfill \hyperpage{66}
+ \item \small OIM 1994 \dotfill \hyperpage{35}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{P}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small pco 168 P18 \dotfill \hyperpage{137}
  \item \small pco 169 P11 \dotfill \hyperpage{136}
  \item \small pco 169 P15 \dotfill \hyperpage{136}
@@ -527,12 +997,25 @@
  \item \small Putnam 2013 A3 \dotfill \hyperpage{179}
  \item \small Putnam 2017 A2 \dotfill \hyperpage{154}
  \item \small Putnam 2017 A4 \dotfill \hyperpage{125}
+=======
+ \item \small pco 168 P18 \dotfill \hyperpage{139}
+ \item \small pco 169 P11 \dotfill \hyperpage{138}
+ \item \small pco 169 P15 \dotfill \hyperpage{138}
+ \item \small Polish OI \dotfill \hyperpage{38}
+ \item \small Putnam 2002 A3 \dotfill \hyperpage{47}
+ \item \small Putnam 2005 B4 \dotfill \hyperpage{18}
+ \item \small Putnam 2011 A2 \dotfill \hyperpage{181}
+ \item \small Putnam 2013 A3 \dotfill \hyperpage{181}
+ \item \small Putnam 2017 A2 \dotfill \hyperpage{156}
+ \item \small Putnam 2017 A4 \dotfill \hyperpage{127}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{R}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Result by Erdos \dotfill \hyperpage{126}
  \item \small Rioplatense Olympiad 2013 Problem 6 \dotfill 
 		\hyperpage{223}
@@ -549,12 +1032,31 @@
  \item \small Romanian TST 2008 T1P4 \dotfill \hyperpage{74}
  \item \small Romanian TST 2012 P4 \dotfill \hyperpage{51}
  \item \small Romanian TST 2016 D1P2 \dotfill \hyperpage{11}
+=======
+ \item \small Result by Erdos \dotfill \hyperpage{128}
+ \item \small Rioplatense Olympiad 2013 Problem 6 \dotfill 
+		\hyperpage{225}
+ \item \small RMM 2018 P4 \dotfill \hyperpage{353}
+ \item \small RMM 2018 P6 \dotfill \hyperpage{309}
+ \item \small RMM 2019 P1 \dotfill \hyperpage{69}
+ \item \small RMM 2019 P2 \dotfill \hyperpage{204}
+ \item \small RMM 2019 P3 \dotfill \hyperpage{111}
+ \item \small RMM 2019 P4 \dotfill \hyperpage{81}
+ \item \small RMM 2019 P5 \dotfill \hyperpage{141}
+ \item \small RMM 2020 P3 \dotfill \hyperpage{66}
+ \item \small Romanian TST 2003 P5 \dotfill \hyperpage{162}
+ \item \small Romanian TST 2006 P2 \dotfill \hyperpage{162}
+ \item \small Romanian TST 2008 T1P4 \dotfill \hyperpage{77}
+ \item \small Romanian TST 2012 P4 \dotfill \hyperpage{55}
+ \item \small Romanian TST 2016 D1P2 \dotfill \hyperpage{16}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{S}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Saint Petersburg 2001 \dotfill \hyperpage{130}
  \item \small Saudi Arab 2015 \dotfill \hyperpage{193--195}
  \item \small Serbia 2018 P1 \dotfill \hyperpage{233}
@@ -574,12 +1076,34 @@
  \item \small St Petersburg 2020 P11.7 \dotfill \hyperpage{52}
  \item \small St. Petersburg 2000 \dotfill \hyperpage{97}
  \item \small Swell coloring \dotfill \hyperpage{50}
+=======
+ \item \small Saint Petersburg 2001 \dotfill \hyperpage{132}
+ \item \small Saudi Arab 2015 \dotfill \hyperpage{195--197}
+ \item \small Serbia 2018 P1 \dotfill \hyperpage{235}
+ \item \small Serbia 2018 P4 \dotfill \hyperpage{155}
+ \item \small Serbia National D2P2 \dotfill \hyperpage{81}
+ \item \small Serbia TST 2015 P3 \dotfill \hyperpage{40}
+ \item \small Serbia TST 2017 P2 \dotfill \hyperpage{129}
+ \item \small Serbia TST 2017 P4 \dotfill \hyperpage{129}
+ \item \small Sharygin 2010 \dotfill \hyperpage{264}
+ \item \small Sharygin 2010 P3 \dotfill \hyperpage{261}
+ \item \small Sharygin 2012 P21 \dotfill \hyperpage{270}
+ \item \small Sharygin 2012 P22 \dotfill \hyperpage{269}
+ \item \small Simurgh 2019 P1 \dotfill \hyperpage{358}
+ \item \small Simurgh 2019 P2 \dotfill \hyperpage{204}
+ \item \small Simurgh 2019 P3 \dotfill \hyperpage{66}
+ \item \small Somewhere \dotfill \hyperpage{7}
+ \item \small St Petersburg 2020 P11.7 \dotfill \hyperpage{56}
+ \item \small St. Petersburg 2000 \dotfill \hyperpage{99}
+ \item \small Swell coloring \dotfill \hyperpage{54}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{T}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Taiwan TST 2014 T3P3 \dotfill \hyperpage{253}
  \item \small Taiwan TST 2015 R3D1P1 \dotfill \hyperpage{37}
  \item \small Thue's Lemma Note \dotfill \hyperpage{342}
@@ -596,12 +1120,32 @@
  \item \small Turkey TST 2018 P4 \dotfill \hyperpage{197}
  \item \small Tuymaada 2016, P5 \dotfill \hyperpage{354}
  \item \small Two Symmedian Points \dotfill \hyperpage{246}
+=======
+ \item \small Taiwan TST 2014 T3P3 \dotfill \hyperpage{256}
+ \item \small Taiwan TST 2015 R3D1P1 \dotfill \hyperpage{41}
+ \item \small Thue's Lemma Note \dotfill \hyperpage{346}
+ \item \small Thue's Note \dotfill \hyperpage{3}
+ \item \small Timus 1578 \dotfill \hyperpage{35}
+ \item \small timus 1862 \dotfill \hyperpage{131}
+ \item \small Tournament of Towns 2009 S6 \dotfill \hyperpage{52}
+ \item \small Tournament of Towns 2015F S7 \dotfill \hyperpage{37}
+ \item \small Tournament of Towns 2015S S4 \dotfill \hyperpage{76}
+ \item \small Tournament of Towns 2015S S6 \dotfill \hyperpage{103}
+ \item \small Tournament of Towns Spring 2012 S7 \dotfill 
+		\hyperpage{46}
+ \item \small Turkey National MO 2002 P3 \dotfill \hyperpage{60}
+ \item \small Turkey TST 2017 P5 \dotfill \hyperpage{172}
+ \item \small Turkey TST 2018 P4 \dotfill \hyperpage{199}
+ \item \small Tuymaada 2016, P5 \dotfill \hyperpage{358}
+ \item \small Two Symmedian Points \dotfill \hyperpage{249}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{U}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small unknown source \dotfill \hyperpage{9}, \hyperpage{14}, 
 		\hyperpage{30}, \hyperpage{32}, \hyperpage{35}, 
 		\hyperpage{42}, \hyperpage{50}, \hyperpage{52}, 
@@ -685,12 +1229,99 @@
  \item \small USAMO 2018 P4 \dotfill \hyperpage{350}
  \item \small USAMO 2018 P5 \dotfill \hyperpage{312}
  \item \small USJMO 2018 P3 \dotfill \hyperpage{309}
+=======
+ \item \small unknown source \dotfill \hyperpage{4}, \hyperpage{14}, 
+		\hyperpage{19}, \hyperpage{34}, \hyperpage{36}, 
+		\hyperpage{39}, \hyperpage{46}, \hyperpage{54}, 
+		\hyperpage{56}, \hyperpage{59}, \hyperpage{77}, 
+		\hyperpage{80}, \hyperpage{93}, \hyperpage{99}, 
+		\hyperpage{117}, \hyperpage{127, 128}, 
+		\hyperpage{131, 132}, \hyperpage{140}, \hyperpage{161}, 
+		\hyperpage{186--192}, \hyperpage{198}, \hyperpage{202}, 
+		\hyperpage{230}, \hyperpage{235}, \hyperpage{255}, 
+		\hyperpage{258}, \hyperpage{266}, \hyperpage{268}, 
+		\hyperpage{280, 281}, \hyperpage{295}, \hyperpage{297}, 
+		\hyperpage{309}, \hyperpage{315, 316}, \hyperpage{318}, 
+		\hyperpage{329}, \hyperpage{347}
+ \item \small USA Dec TST 2016, P1 \dotfill \hyperpage{33}
+ \item \small USA TST 2000 P2 \dotfill \hyperpage{267}
+ \item \small USA TST 2000 P3 \dotfill \hyperpage{350}
+ \item \small USA TST 2000 P4 \dotfill \hyperpage{350}
+ \item \small USA TST 2002 P2 \dotfill \hyperpage{351}
+ \item \small USA TST 2005 P1 \dotfill \hyperpage{16}
+ \item \small USA TST 2006 P1 \dotfill \hyperpage{56}
+ \item \small USA TST 2006 P5 \dotfill \hyperpage{95}
+ \item \small USA TST 2006 P6 \dotfill \hyperpage{289}
+ \item \small USA TST 2009 P1 \dotfill \hyperpage{123}
+ \item \small USA TST 2010 P8 \dotfill \hyperpage{8}
+ \item \small USA TST 2010 P9 \dotfill \hyperpage{359}
+ \item \small USA TST 2011 D3P2 \dotfill \hyperpage{63}
+ \item \small USA TST 2011 P2 \dotfill \hyperpage{64}
+ \item \small USA TST 2014 P2 \dotfill \hyperpage{338}
+ \item \small USA TST 2014 P3 \dotfill \hyperpage{53}
+ \item \small USA TST 2014 P4 \dotfill \hyperpage{154}
+ \item \small USA TST 2014 P5 \dotfill \hyperpage{52}
+ \item \small USA TST 2017 P1 \dotfill \hyperpage{127}
+ \item \small USA TST 2017 P2 \dotfill \hyperpage{302}
+ \item \small USA TST 2018 P1 \dotfill \hyperpage{352}
+ \item \small USA TST 2018 P2 \dotfill \hyperpage{146}
+ \item \small USA TST 2019 P1 \dotfill \hyperpage{259}
+ \item \small USA TST 2019 P1 parallel problem \dotfill \hyperpage{261}
+ \item \small USA TST 2019 P2 \dotfill \hyperpage{357}
+ \item \small USA TSTST 2015 P5 \dotfill \hyperpage{354}
+ \item \small USA Winter TST 2018 P3 \dotfill \hyperpage{96}
+ \item \small USA Winter TST 2020 P2 \dotfill \hyperpage{199}, 
+		\hyperpage{201}
+ \item \small USAJMO 2018 P3 \dotfill \hyperpage{201}
+ \item \small USAMO 1974 P2 \dotfill \hyperpage{175}
+ \item \small USAMO 1986 P2 \dotfill \hyperpage{119}
+ \item \small USAMO 1996 P4 \dotfill \hyperpage{100}
+ \item \small USAMO 1998 \dotfill \hyperpage{47}
+ \item \small USAMO 1998 P3 \dotfill \hyperpage{175}
+ \item \small USAMO 1999 P1 \dotfill \hyperpage{120}
+ \item \small USAMO 1999 P1 generalization \dotfill \hyperpage{120}
+ \item \small USAMO 1999 P6 \dotfill \hyperpage{235}
+ \item \small USAMO 2001 P5 \dotfill \hyperpage{349}
+ \item \small USAMO 2002 P3 \dotfill \hyperpage{154}
+ \item \small USAMO 2004 P2 \dotfill \hyperpage{350}
+ \item \small USAMO 2004, P4 \dotfill \hyperpage{69}
+ \item \small USAMO 2005 P1 \dotfill \hyperpage{130}, \hyperpage{133}
+ \item \small USAMO 2005 P4 \dotfill \hyperpage{133}
+ \item \small USAMO 2005 P5 \dotfill \hyperpage{130}
+ \item \small USAMO 2006 P2 \dotfill \hyperpage{95}, \hyperpage{130}, 
+		\hyperpage{133}
+ \item \small USAMO 2006 P5 \dotfill \hyperpage{133}
+ \item \small USAMO 2007 P1 \dotfill \hyperpage{86}
+ \item \small USAMO 2007 P2 \dotfill \hyperpage{76}
+ \item \small USAMO 2007 P5 \dotfill \hyperpage{351}
+ \item \small USAMO 2008 P1 \dotfill \hyperpage{351}
+ \item \small USAMO 2008 P2 \dotfill \hyperpage{248}
+ \item \small USAMO 2008 P3 \dotfill \hyperpage{92}
+ \item \small USAMO 2008 P4 \dotfill \hyperpage{121}
+ \item \small USAMO 2008 P5 \dotfill \hyperpage{68}
+ \item \small USAMO 2009 P2 \dotfill \hyperpage{133}
+ \item \small USAMO 2010 P2 \dotfill \hyperpage{39}
+ \item \small USAMO 2012 P2 \dotfill \hyperpage{90}
+ \item \small USAMO 2012 P4 \dotfill \hyperpage{351}
+ \item \small USAMO 2013 P2 \dotfill \hyperpage{92}
+ \item \small USAMO 2013 P4 \dotfill \hyperpage{179}
+ \item \small USAMO 2013 P5 \dotfill \hyperpage{352}
+ \item \small USAMO 2013 P6 \dotfill \hyperpage{32}
+ \item \small USAMO 2014 P1 \dotfill \hyperpage{68}
+ \item \small USAMO 2014 P5 \dotfill \hyperpage{195}
+ \item \small USAMO 2015 P4 \dotfill \hyperpage{36}
+ \item \small USAMO 2017 P5 \dotfill \hyperpage{115}
+ \item \small USAMO 2018 P4 \dotfill \hyperpage{354}
+ \item \small USAMO 2018 P5 \dotfill \hyperpage{316}
+ \item \small USJMO 2018 P3 \dotfill \hyperpage{313}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{V}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Vietnam 1991 \dotfill \hyperpage{138}
  \item \small Vietnam 1998 \dotfill \hyperpage{174}
  \item \small Vietnam 2017 TST P6 \dotfill \hyperpage{345}
@@ -698,6 +1329,15 @@
  \item \small Vietnamese TST 2018 P6.a \dotfill \hyperpage{230}
  \item \small Vietnamese TST 2018 P6.a Generalization \dotfill 
 		\hyperpage{232}
+=======
+ \item \small Vietnam 1991 \dotfill \hyperpage{140}
+ \item \small Vietnam 1998 \dotfill \hyperpage{176}
+ \item \small Vietnam 2017 TST P6 \dotfill \hyperpage{349}
+ \item \small Vietnam TST 2017 P2 \dotfill \hyperpage{349}
+ \item \small Vietnamese TST 2018 P6.a \dotfill \hyperpage{232}
+ \item \small Vietnamese TST 2018 P6.a Generalization \dotfill 
+		\hyperpage{234}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
@@ -705,14 +1345,23 @@
 \noindent\texttt{W}\par\nopagebreak
 
  \item \small WenWuGuangHua Mathematics Workshop \dotfill 
+<<<<<<< HEAD
 		\hyperpage{308, 309}
+=======
+		\hyperpage{312, 313}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{Z}\par\nopagebreak
 
+<<<<<<< HEAD
  \item \small Zhao Poly \dotfill \hyperpage{153}
  \item \small Zhao Polynomials \dotfill \hyperpage{152}
+=======
+ \item \small Zhao Poly \dotfill \hyperpage{155}
+ \item \small Zhao Polynomials \dotfill \hyperpage{154}
+>>>>>>> baa462e4ea24d9a77d107478c39764746d8d7fb3
 
 \end{theindex}
