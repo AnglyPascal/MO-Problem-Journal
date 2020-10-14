@@ -1,4 +1,4 @@
-# BCS_Question_Bank
+# Math Olympiad Problem Journal
 A journal of theorems, lemmas and problems for Mathematical Olympiads. 
 
 At the moment of compiling, this journal has 682 randomly ordered problems, 210 theorems
