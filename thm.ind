@@ -3,18 +3,18 @@
 \large\Titillium%
 \noindent\texttt{Symbols}\par\nopagebreak
 
- \item \small $ n-1 $ Equal Values \dotfill \hyperpage{160}
- \item \small 2 is a quadratic residue \dotfill \hyperpage{327}
+ \item \small $ n-1 $ Equal Values \dotfill \hyperpage{161}
+ \item \small 2 is a quadratic residue \dotfill \hyperpage{328}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{A}\par\nopagebreak
 
- \item \small Antipode and Incenter \dotfill \hyperpage{222}
+ \item \small Antipode and Incenter \dotfill \hyperpage{223}
  \item \small Apollonius Circle and Incenter, ISL 2002 G7 \dotfill 
-		\hyperpage{223}
- \item \small Arc Midpoint as Centers \dotfill \hyperpage{222}
+		\hyperpage{224}
+ \item \small Arc Midpoint as Centers \dotfill \hyperpage{223}
  \item \small Average of Degrees \dotfill \hyperpage{48}
 
   \indexspace
@@ -23,11 +23,11 @@
 \noindent\texttt{B}\par\nopagebreak
 
  \item \small Beatty's Theorem or Rayleigh Theorem \dotfill 
-		\hyperpage{322}
+		\hyperpage{323}
  \item \small Bipartite Graph \dotfill \hyperpage{43}
- \item \small Bound on roots \dotfill \hyperpage{156}
- \item \small Bounds On Roots \dotfill \hyperpage{153}
- \item \small Brocard Points \dotfill \hyperpage{219}
+ \item \small Bound on roots \dotfill \hyperpage{157}
+ \item \small Bounds On Roots \dotfill \hyperpage{154}
+ \item \small Brocard Points \dotfill \hyperpage{220}
  \item \small Brouwer fixed-point theorem \dotfill \hyperpage{67}
 
   \indexspace
@@ -36,24 +36,24 @@
 \noindent\texttt{C}\par\nopagebreak
 
  \item \small Catalan Recursion \dotfill \hyperpage{78}
- \item \small Cauchy-Schward Inequality \dotfill \hyperpage{163}
+ \item \small Cauchy-Schward Inequality \dotfill \hyperpage{164}
  \item \small Cauchy-Schwarz Inequality Complex form \dotfill 
-		\hyperpage{163}
+		\hyperpage{164}
  \item \small Coefficients form a Decreasing Sequence \dotfill 
-		\hyperpage{153}
- \item \small Cohn's Criterion \dotfill \hyperpage{156}
+		\hyperpage{154}
+ \item \small Cohn's Criterion \dotfill \hyperpage{157}
  \item \small Collinearity with antipode and center \dotfill 
-		\hyperpage{188}
- \item \small Concurrent Lines in Incenter \dotfill \hyperpage{223}
+		\hyperpage{189}
+ \item \small Concurrent Lines in Incenter \dotfill \hyperpage{224}
  \item \small Conic through orthocenter and vertices \dotfill 
-		\hyperpage{278}
- \item \small Constant is LARGE \dotfill \hyperpage{153}
- \item \small Construction of Feurbach Point \dotfill \hyperpage{239}
+		\hyperpage{279}
+ \item \small Constant is LARGE \dotfill \hyperpage{154}
+ \item \small Construction of Feurbach Point \dotfill \hyperpage{240}
  \item \small Construction of Involution Center on Line \dotfill 
-		\hyperpage{276}
+		\hyperpage{277}
  \item \small Criteria of partitioning a graph into disconnected sub-graphs \dotfill 
 		\hyperpage{43}
- \item \small Cross Ratio Equality \dotfill \hyperpage{271}
+ \item \small Cross Ratio Equality \dotfill \hyperpage{272}
 
   \indexspace
 
@@ -61,15 +61,15 @@
 \noindent\texttt{D}\par\nopagebreak
 
  \item \small Dealing with binomial terms with a common factor \dotfill 
-		\hyperpage{152}
+		\hyperpage{153}
  \item \small Definitions of parity are equivalent \dotfill 
 		\hyperpage{22}
  \item \small Degenerate Desargues' Involution: 2 Points \dotfill 
-		\hyperpage{273}
- \item \small Desargues' Involution Theorem \dotfill \hyperpage{273}
+		\hyperpage{274}
+ \item \small Desargues' Involution Theorem \dotfill \hyperpage{274}
  \item \small Dilworth's Theorem \dotfill \hyperpage{9}
  \item \small Dual of Desargues' Involution Theorem \dotfill 
-		\hyperpage{274}
+		\hyperpage{275}
 
   \indexspace
 
@@ -77,81 +77,81 @@
 \noindent\texttt{E}\par\nopagebreak
 
  \item \small E.R.I.Q. (Equal Ration in Quadrilateral) Lemma \dotfill 
-		\hyperpage{286}
+		\hyperpage{287}
  \item \small Erdos Ko Rado theorem \dotfill \hyperpage{8}
  \item \small Erdos-Mordell Theorem (Forum Geometricorum Volume 1 (2001) 7-8) \dotfill 
-		\hyperpage{288}
+		\hyperpage{289}
  \item \small Erdos-Szekeres Theorem \dotfill \hyperpage{9}
- \item \small Euler's Criterion \dotfill \hyperpage{329}
+ \item \small Euler's Criterion \dotfill \hyperpage{330}
  \item \small Euler's Polyhedron Formula \dotfill \hyperpage{43}
- \item \small Extension of CHKMO \dotfill \hyperpage{214}
+ \item \small Extension of CHKMO \dotfill \hyperpage{215}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{F}\par\nopagebreak
 
- \item \small Factors are of the same form \dotfill \hyperpage{341}
- \item \small Fermat's 4n+1 Theorem \dotfill \hyperpage{340}
- \item \small Finite Differences \dotfill \hyperpage{147}
- \item \small Fontene's First Theorem \dotfill \hyperpage{289}
- \item \small Fontene's Second Theorem \dotfill \hyperpage{289}
+ \item \small Factors are of the same form \dotfill \hyperpage{342}
+ \item \small Fermat's 4n+1 Theorem \dotfill \hyperpage{341}
+ \item \small Finite Differences \dotfill \hyperpage{148}
+ \item \small Fontene's First Theorem \dotfill \hyperpage{290}
+ \item \small Fontene's Second Theorem \dotfill \hyperpage{290}
  \item \small Frobenius Coin Problem, extended Chicken McNugget \dotfill 
-		\hyperpage{322}
- \item \small Fuhrmann Circle \dotfill \hyperpage{234}
+		\hyperpage{323}
+ \item \small Fuhrmann Circle \dotfill \hyperpage{235}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{G}\par\nopagebreak
 
- \item \small Gauss's Criterion \dotfill \hyperpage{329}
- \item \small General Fermat's 4n+1 Theorem \dotfill \hyperpage{341}
- \item \small Generalization of Thue's Lemma \dotfill \hyperpage{340}
+ \item \small Gauss's Criterion \dotfill \hyperpage{330}
+ \item \small General Fermat's 4n+1 Theorem \dotfill \hyperpage{342}
+ \item \small Generalization of Thue's Lemma \dotfill \hyperpage{341}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{H}\par\nopagebreak
 
- \item \small Hagge's circles \dotfill \hyperpage{216}
+ \item \small Hagge's circles \dotfill \hyperpage{217}
  \item \small Helly's Theorem \dotfill \hyperpage{66}
- \item \small Holder's Inequality \dotfill \hyperpage{163}
- \item \small Homothety and Reflection \dotfill \hyperpage{247}
+ \item \small Holder's Inequality \dotfill \hyperpage{164}
+ \item \small Homothety and Reflection \dotfill \hyperpage{248}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{I}\par\nopagebreak
 
- \item \small Incircle Touchpoint and Cevian \dotfill \hyperpage{222}
+ \item \small Incircle Touchpoint and Cevian \dotfill \hyperpage{223}
  \item \small Inscribed Conic in Pascal's theorem \dotfill 
-		\hyperpage{275}
- \item \small Insimilicenter \dotfill \hyperpage{224}
- \item \small Invertible Function on a line \dotfill \hyperpage{270}
- \item \small Involution on a conic \dotfill \hyperpage{272}
- \item \small Involution on a line \dotfill \hyperpage{272}
- \item \small ISL 1999 G8 \dotfill \hyperpage{249}
- \item \small Isogonal Conjugate Lemma \dotfill \hyperpage{218}
- \item \small Isogonal Line Lemma \dotfill \hyperpage{241}
- \item \small Isogonality in quadrilateral \dotfill \hyperpage{242}
- \item \small Isotonic Lemma \dotfill \hyperpage{245}
- \item \small It Exists \dotfill \hyperpage{238}
+		\hyperpage{276}
+ \item \small Insimilicenter \dotfill \hyperpage{225}
+ \item \small Invertible Function on a line \dotfill \hyperpage{271}
+ \item \small Involution on a conic \dotfill \hyperpage{273}
+ \item \small Involution on a line \dotfill \hyperpage{273}
+ \item \small ISL 1999 G8 \dotfill \hyperpage{250}
+ \item \small Isogonal Conjugate Lemma \dotfill \hyperpage{219}
+ \item \small Isogonal Line Lemma \dotfill \hyperpage{242}
+ \item \small Isogonality in quadrilateral \dotfill \hyperpage{243}
+ \item \small Isotonic Lemma \dotfill \hyperpage{246}
+ \item \small It Exists \dotfill \hyperpage{239}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{J}\par\nopagebreak
 
- \item \small Jacobi's Theorem \dotfill \hyperpage{220}
- \item \small Jensen's Inequality \dotfill \hyperpage{159}
+ \item \small Jacobi's Theorem \dotfill \hyperpage{221}
+ \item \small Jensen's Inequality \dotfill \hyperpage{160}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{K}\par\nopagebreak
 
- \item \small Karamata's Inequality \dotfill \hyperpage{160}
+ \item \small Karamata's Inequality \dotfill \hyperpage{161}
  \item \small Kleitman lemma \dotfill \hyperpage{8}
 
   \indexspace
@@ -159,9 +159,9 @@
 \large\Titillium%
 \noindent\texttt{L}\par\nopagebreak
 
- \item \small Lagrange Interpolation Theorem \dotfill \hyperpage{147}
- \item \small Leading Coefficient is LARGE \dotfill \hyperpage{153}
- \item \small Line parallel to BC through I \dotfill \hyperpage{223}
+ \item \small Lagrange Interpolation Theorem \dotfill \hyperpage{148}
+ \item \small Leading Coefficient is LARGE \dotfill \hyperpage{154}
+ \item \small Line parallel to BC through I \dotfill \hyperpage{224}
  \item \small Linear map that reverses the order of multiplication \dotfill 
 		\hyperpage{100}
  \item \small LYM Inequality \dotfill \hyperpage{9}
@@ -171,22 +171,22 @@
 \large\Titillium%
 \noindent\texttt{M}\par\nopagebreak
 
- \item \small Mannheim's Theorem \dotfill \hyperpage{218}
- \item \small Mannheim's Theorem's Converse \dotfill \hyperpage{219}
+ \item \small Mannheim's Theorem \dotfill \hyperpage{219}
+ \item \small Mannheim's Theorem's Converse \dotfill \hyperpage{220}
  \item \small Maximality of the Area of a Cyclic Quadrilateral \dotfill 
-		\hyperpage{284}
- \item \small Maybe not useful at all \dotfill \hyperpage{322}
+		\hyperpage{285}
+ \item \small Maybe not useful at all \dotfill \hyperpage{323}
  \item \small Midline Concurrency with Incircle Touchpoints \dotfill 
-		\hyperpage{223}
- \item \small Minkowski \dotfill \hyperpage{161}
+		\hyperpage{224}
+ \item \small Minkowski \dotfill \hyperpage{162}
  \item \small Mirsky Theorem \dotfill \hyperpage{9}
- \item \small Mobius Inverison Formula \dotfill \hyperpage{326}
+ \item \small Mobius Inverison Formula \dotfill \hyperpage{327}
  \item \small Monsky's theorem \dotfill \hyperpage{67}
  \item \small Most Important Symmedian Property \dotfill 
-		\hyperpage{243}
+		\hyperpage{244}
  \item \small MST Cut \dotfill \hyperpage{19}
  \item \small MST Cycle \dotfill \hyperpage{19}
- \item \small Muirhead's Inequality \dotfill \hyperpage{159}
+ \item \small Muirhead's Inequality \dotfill \hyperpage{160}
  \item \small Multiplication Order \dotfill \hyperpage{100}
 
   \indexspace
@@ -194,88 +194,88 @@
 \large\Titillium%
 \noindent\texttt{N}\par\nopagebreak
 
- \item \small Newton-Gauss Line \dotfill \hyperpage{261}
+ \item \small Newton-Gauss Line \dotfill \hyperpage{262}
  \item \small Non-Neighbor Equivalence Class \dotfill \hyperpage{43}
- \item \small Non-zero digits in base $ b $ \dotfill \hyperpage{322}
- \item \small NT version of Erdos Theorem \dotfill \hyperpage{323}
+ \item \small Non-zero digits in base $ b $ \dotfill \hyperpage{323}
+ \item \small NT version of Erdos Theorem \dotfill \hyperpage{324}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{O}\par\nopagebreak
 
- \item \small Orthogonal Hyperbola \dotfill \hyperpage{279}
+ \item \small Orthogonal Hyperbola \dotfill \hyperpage{280}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{P}\par\nopagebreak
 
- \item \small Pappus's Hexagon Theorem \dotfill \hyperpage{271}
+ \item \small Pappus's Hexagon Theorem \dotfill \hyperpage{272}
  \item \small Parity of Transpostion Composition \dotfill 
 		\hyperpage{21}
  \item \small Pascal's Theorem for Octagons: A special case \dotfill 
-		\hyperpage{275}
- \item \small Paul Yui Theorem \dotfill \hyperpage{223}
+		\hyperpage{276}
+ \item \small Paul Yui Theorem \dotfill \hyperpage{224}
  \item \small Pedal Triangles of Isodynamic Points \dotfill 
-		\hyperpage{225}
- \item \small Perpendicular on Euler Line \dotfill \hyperpage{213}
- \item \small Perron's Criterion \dotfill \hyperpage{154}
+		\hyperpage{226}
+ \item \small Perpendicular on Euler Line \dotfill \hyperpage{214}
+ \item \small Perron's Criterion \dotfill \hyperpage{155}
  \item \small Perron's Criterion's Generalization (Dominating Term) \dotfill 
-		\hyperpage{154}
+		\hyperpage{155}
  \item \small Perspectivity Line with Orthic triangle is perpendicular to Euler line \dotfill 
-		\hyperpage{213}
+		\hyperpage{214}
  \item \small Pick's Theorem \dotfill \hyperpage{67}
- \item \small Polars in Incircle \dotfill \hyperpage{235}
- \item \small Poncelet's Porism \dotfill \hyperpage{229}
- \item \small Popoviciu's inequality \dotfill \hyperpage{163}
- \item \small Power function convexity \dotfill \hyperpage{161}
+ \item \small Polars in Incircle \dotfill \hyperpage{236}
+ \item \small Poncelet's Porism \dotfill \hyperpage{230}
+ \item \small Popoviciu's inequality \dotfill \hyperpage{164}
+ \item \small Power function convexity \dotfill \hyperpage{162}
  \item \small Prime divisors of an integer polynomial \dotfill 
-		\hyperpage{323}
+		\hyperpage{324}
  \item \small Prime Divisors of Cyclotomic Polynomials \dotfill 
-		\hyperpage{326}
- \item \small Primes in a recursive sequence \dotfill \hyperpage{333}
- \item \small Properties of Coharmonic Points \dotfill \hyperpage{269}
+		\hyperpage{327}
+ \item \small Primes in a recursive sequence \dotfill \hyperpage{334}
+ \item \small Properties of Coharmonic Points \dotfill \hyperpage{270}
  \item \small Prufer sequence \dotfill \hyperpage{53}
- \item \small Pseudo Miquel's Theorem \dotfill \hyperpage{253}
+ \item \small Pseudo Miquel's Theorem \dotfill \hyperpage{254}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{Q}\par\nopagebreak
 
- \item \small QM-AM-GM-HM \dotfill \hyperpage{159}
+ \item \small QM-AM-GM-HM \dotfill \hyperpage{160}
  \item \small Quadratic non-residue mod infitely many primes \dotfill 
-		\hyperpage{327}
- \item \small Quadratic Reciprocity \dotfill \hyperpage{327}
- \item \small Quadratic Residue -3 \dotfill \hyperpage{341}
- \item \small Quadratic Residue Law \dotfill \hyperpage{329}
+		\hyperpage{328}
+ \item \small Quadratic Reciprocity \dotfill \hyperpage{328}
+ \item \small Quadratic Residue -3 \dotfill \hyperpage{342}
+ \item \small Quadratic Residue Law \dotfill \hyperpage{330}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{R}\par\nopagebreak
 
- \item \small Ratio \dotfill \hyperpage{242}
+ \item \small Ratio \dotfill \hyperpage{243}
  \item \small Root BC Inversion in Mixtilinear Circles \dotfill 
-		\hyperpage{251}
- \item \small Rouché's Theorem \dotfill \hyperpage{153}
+		\hyperpage{252}
+ \item \small Rouché's Theorem \dotfill \hyperpage{154}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{S}\par\nopagebreak
 
- \item \small Sawayama and Thebault's theorem \dotfill \hyperpage{252}
- \item \small Simson Line Angle \dotfill \hyperpage{212}
- \item \small Simson Line Parallel \dotfill \hyperpage{212}
+ \item \small Sawayama and Thebault's theorem \dotfill \hyperpage{253}
+ \item \small Simson Line Angle \dotfill \hyperpage{213}
+ \item \small Simson Line Parallel \dotfill \hyperpage{213}
  \item \small Sperner's Lemma \dotfill \hyperpage{66}
  \item \small Sperner's Theorem \dotfill \hyperpage{10}
  \item \small Sprague-Grund Theorem \dotfill \hyperpage{62}
- \item \small Steiner's Isogonal Cevian Lemma \dotfill \hyperpage{287}
- \item \small Substitutions \dotfill \hyperpage{164}
+ \item \small Steiner's Isogonal Cevian Lemma \dotfill \hyperpage{288}
+ \item \small Substitutions \dotfill \hyperpage{165}
  \item \small Sum of Mobius functions of divisors \dotfill 
-		\hyperpage{325}
+		\hyperpage{326}
  \item \small Swap Sort \dotfill \hyperpage{18}
 
   \indexspace
@@ -284,12 +284,12 @@
 \noindent\texttt{T}\par\nopagebreak
 
  \item \small Tangential Quadrilateral Incenters \dotfill 
-		\hyperpage{232}
- \item \small Terquem's Cevian Theorem \dotfill \hyperpage{218}
+		\hyperpage{233}
+ \item \small Terquem's Cevian Theorem \dotfill \hyperpage{219}
  \item \small The Sunflower Lemma \dotfill \hyperpage{8}
- \item \small Thue's Lemma \dotfill \hyperpage{340}
- \item \small Titu's Lemma \dotfill \hyperpage{163}
- \item \small Triangle Inequality \dotfill \hyperpage{159}
+ \item \small Thue's Lemma \dotfill \hyperpage{341}
+ \item \small Titu's Lemma \dotfill \hyperpage{164}
+ \item \small Triangle Inequality \dotfill \hyperpage{160}
  \item \small Turan's theorem \dotfill \hyperpage{48}
 
   \indexspace
@@ -299,13 +299,13 @@
 
  \item \small unnamed \dotfill \hyperpage{4}, \hyperpage{8}, 
 		\hyperpage{48}, \hyperpage{75}, \hyperpage{83}, 
-		\hyperpage{106}, \hyperpage{153}, \hyperpage{165}, 
-		\hyperpage{179, 180}, \hyperpage{208}, \hyperpage{210}, 
-		\hyperpage{213}, \hyperpage{222}, \hyperpage{241}, 
-		\hyperpage{248}, \hyperpage{260--262}, 
-		\hyperpage{275, 276}, \hyperpage{289}, 
-		\hyperpage{316, 317}, \hyperpage{323, 324}, 
-		\hyperpage{326}
+		\hyperpage{106}, \hyperpage{154}, \hyperpage{166}, 
+		\hyperpage{180, 181}, \hyperpage{209}, \hyperpage{211}, 
+		\hyperpage{214}, \hyperpage{223}, \hyperpage{242}, 
+		\hyperpage{249}, \hyperpage{261--263}, 
+		\hyperpage{276, 277}, \hyperpage{290}, 
+		\hyperpage{317, 318}, \hyperpage{324, 325}, 
+		\hyperpage{327}
 
   \indexspace
 
@@ -320,23 +320,23 @@
 \large\Titillium%
 \noindent\texttt{W}\par\nopagebreak
 
- \item \small Weighted AM-GM \dotfill \hyperpage{159}
- \item \small Weighted Power Mean \dotfill \hyperpage{162}
- \item \small Weird point Y \dotfill \hyperpage{188}
- \item \small Wolstenholme's Theorem \dotfill \hyperpage{324}
+ \item \small Weighted AM-GM \dotfill \hyperpage{160}
+ \item \small Weighted Power Mean \dotfill \hyperpage{163}
+ \item \small Weird point Y \dotfill \hyperpage{189}
+ \item \small Wolstenholme's Theorem \dotfill \hyperpage{325}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{Y}\par\nopagebreak
 
- \item \small Young's Inequality \dotfill \hyperpage{161}
+ \item \small Young's Inequality \dotfill \hyperpage{162}
 
   \indexspace
 
 \large\Titillium%
 \noindent\texttt{Z}\par\nopagebreak
 
- \item \small Zsigmondy's Theorem \dotfill \hyperpage{330}
+ \item \small Zsigmondy's Theorem \dotfill \hyperpage{331}
 
 \end{theindex}
